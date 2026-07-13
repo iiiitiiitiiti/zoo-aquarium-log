@@ -1,0 +1,241 @@
+import { type FormEvent, useEffect, useRef, useState } from "react";
+import type { Facility } from "./types";
+import type { Visit, VisitDraft, VisitStore } from "./visits";
+
+interface VisitFormState {
+  id: string;
+  editing: boolean;
+  date: string;
+  rating: string;
+  memo: string;
+  visitor: string;
+}
+
+function today() {
+  const date = new Date();
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
+
+function displayDate(value: string) {
+  const [year, month, day] = value.split("-").map(Number);
+  return `${year}年${month}月${day}日`;
+}
+
+export default function VisitPanel({
+  facility,
+  store,
+  onBack,
+}: {
+  facility: Facility;
+  store: VisitStore;
+  onBack: () => void;
+}) {
+  const [visits, setVisits] = useState<Visit[]>();
+  const [form, setForm] = useState<VisitFormState>();
+  const [error, setError] = useState("");
+  const [saving, setSaving] = useState(false);
+  const submittingRef = useRef(false);
+
+  useEffect(
+    () => store.subscribe(
+      facility.id,
+      setVisits,
+      () => setError("記録を読み込めませんでした。通信環境を確認してください"),
+    ),
+    [facility.id, store],
+  );
+
+  function openNewVisit() {
+    setError("");
+    setForm({
+      id: store.newId(),
+      editing: false,
+      date: today(),
+      rating: "",
+      memo: "",
+      visitor: "",
+    });
+  }
+
+  function openEditVisit(visit: Visit) {
+    setError("");
+    setForm({
+      id: visit.id,
+      editing: true,
+      date: visit.date,
+      rating: visit.rating?.toString() ?? "",
+      memo: visit.memo ?? "",
+      visitor: visit.visitor ?? "",
+    });
+  }
+
+  async function saveVisit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (submittingRef.current) return;
+    if (!form) return;
+    if (!form.date) {
+      setError("訪問日を入力してください");
+      return;
+    }
+    if (form.memo.length > 2000) {
+      setError("メモは2000文字以内で入力してください");
+      return;
+    }
+
+    const draft: Omit<VisitDraft, "id"> = {
+      facilityId: facility.id,
+      date: form.date,
+      ...(form.rating ? { rating: Number(form.rating) } : {}),
+      ...(form.memo ? { memo: form.memo } : {}),
+      ...(form.visitor ? { visitor: form.visitor } : {}),
+    };
+
+    setError("");
+    submittingRef.current = true;
+    setSaving(true);
+    try {
+      if (form.editing) {
+        await store.update(form.id, draft);
+      } else {
+        await store.create({ id: form.id, ...draft });
+      }
+      setForm(undefined);
+    } catch {
+      setError("記録を保存できませんでした。もう一度お試しください");
+    } finally {
+      submittingRef.current = false;
+      setSaving(false);
+    }
+  }
+
+  async function removeVisit(visit: Visit) {
+    if (!window.confirm(`${displayDate(visit.date)}の記録を削除しますか？`)) return;
+    setError("");
+    try {
+      await store.remove(visit.id);
+    } catch {
+      setError("記録を削除できませんでした。もう一度お試しください");
+    }
+  }
+
+  const duplicateDate = form && visits?.some(
+    (visit) => visit.id !== form.id && visit.date === form.date,
+  );
+
+  return (
+    <main className="app-shell detail-shell">
+      <header className="detail-hero">
+        <button className="back-button" type="button" onClick={onBack}>← 施設一覧</button>
+        <p className="eyebrow">VISIT FIELD NOTE</p>
+        <h1>{facility.name}</h1>
+        <p>{facility.pref} {facility.city}</p>
+        <a href={facility.url} target="_blank" rel="noreferrer">公式サイトを見る ↗</a>
+      </header>
+
+      <section className="visit-section" aria-labelledby="visit-heading">
+        <div className="visit-heading">
+          <div>
+            <p>MY LOG</p>
+            <h2 id="visit-heading">訪問記録</h2>
+          </div>
+          {!form && <button type="button" onClick={openNewVisit}>訪問記録を追加</button>}
+        </div>
+
+        {error && <p className="visit-error" role="alert">{error}</p>}
+
+        {form && (
+          <form className="visit-form" onSubmit={saveVisit} noValidate>
+            <div className="form-row">
+              <label>
+                訪問日
+                <input
+                  type="date"
+                  value={form.date}
+                  onChange={(event) => setForm({ ...form, date: event.target.value })}
+                />
+              </label>
+              <label>
+                評価
+                <select
+                  value={form.rating}
+                  onChange={(event) => setForm({ ...form, rating: event.target.value })}
+                >
+                  <option value="">なし</option>
+                  <option value="1">★</option>
+                  <option value="2">★★</option>
+                  <option value="3">★★★</option>
+                  <option value="4">★★★★</option>
+                  <option value="5">★★★★★</option>
+                </select>
+              </label>
+            </div>
+            {duplicateDate && <p className="duplicate-note">同じ日の記録があります。このまま保存できます。</p>}
+            <label>
+              メモ・感想
+              <textarea
+                value={form.memo}
+                maxLength={2000}
+                onChange={(event) => setForm({ ...form, memo: event.target.value })}
+                placeholder="印象に残った生きものや出来事"
+              />
+            </label>
+            <label>
+              一緒に行った人
+              <input
+                type="text"
+                value={form.visitor}
+                maxLength={100}
+                onChange={(event) => setForm({ ...form, visitor: event.target.value })}
+                placeholder="例：家族"
+              />
+            </label>
+            <div className="form-actions">
+              <button type="button" className="secondary" onClick={() => setForm(undefined)}>キャンセル</button>
+              <button type="submit" disabled={saving}>
+                {saving ? "保存しています…" : form.editing ? "変更を保存" : "記録を保存"}
+              </button>
+            </div>
+          </form>
+        )}
+
+        {visits === undefined ? (
+          <p className="visit-status">記録を読み込んでいます</p>
+        ) : visits.length === 0 ? (
+          <div className="visit-empty">
+            <span aria-hidden="true">○</span>
+            <h3>まだ訪問記録がありません</h3>
+            <p>最初の思い出を残してみましょう。</p>
+          </div>
+        ) : (
+          <ul className="visit-list">
+            {visits.map((visit) => (
+              <li key={visit.id}>
+                <div className="visit-date">
+                  <strong>{displayDate(visit.date)}</strong>
+                  {visit.rating && <span aria-label={`評価${visit.rating}`}>{"★".repeat(visit.rating)}</span>}
+                </div>
+                {visit.memo && <p>{visit.memo}</p>}
+                {visit.visitor && <small>一緒に行った人：{visit.visitor}</small>}
+                <div className="visit-actions">
+                  <button
+                    type="button"
+                    aria-label={`${displayDate(visit.date)}の記録を編集`}
+                    onClick={() => openEditVisit(visit)}
+                  >編集</button>
+                  <button
+                    type="button"
+                    aria-label={`${displayDate(visit.date)}の記録を削除`}
+                    onClick={() => removeVisit(visit)}
+                  >削除</button>
+                </div>
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
+    </main>
+  );
+}

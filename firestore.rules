@@ -1,0 +1,125 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isHousehold(hid) {
+      return request.auth != null
+        && request.auth.uid == hid
+        && hid == "cbs9TeeZukMBRkHg5iIw9aMXw1W2";
+    }
+
+    function validVisit(data) {
+      return data.keys().hasAll([
+          "facilityId", "date", "createdAt", "updatedAt"
+        ])
+        && data.keys().hasOnly([
+          "facilityId", "date", "rating", "memo", "visitor",
+          "createdAt", "updatedAt"
+        ])
+        && data.facilityId is string
+        && data.facilityId.size() >= 1
+        && data.facilityId.size() <= 128
+        && data.date is string
+        && data.date.matches("^\\d{4}-\\d{2}-\\d{2}$")
+        && (!("rating" in data)
+          || (data.rating is int && data.rating >= 1 && data.rating <= 5))
+        && (!("memo" in data)
+          || (data.memo is string && data.memo.size() <= 2000))
+        && (!("visitor" in data)
+          || (data.visitor is string && data.visitor.size() <= 100))
+        && data.createdAt is timestamp
+        && data.updatedAt is timestamp;
+    }
+
+    function validMark(data) {
+      return data.keys().hasAll(["wishlist", "favorite"])
+        && data.keys().hasOnly(["wishlist", "favorite"])
+        && data.wishlist is bool
+        && data.favorite is bool;
+    }
+
+    function validSourceUrl(value) {
+      return value is string
+        && value.size() >= 1
+        && value.size() <= 1000;
+    }
+
+    function validSourceUrls(values) {
+      return values is list
+        && values.size() >= 1
+        && values.size() <= 10
+        && validSourceUrl(values[0])
+        && (values.size() < 2 || validSourceUrl(values[1]))
+        && (values.size() < 3 || validSourceUrl(values[2]))
+        && (values.size() < 4 || validSourceUrl(values[3]))
+        && (values.size() < 5 || validSourceUrl(values[4]))
+        && (values.size() < 6 || validSourceUrl(values[5]))
+        && (values.size() < 7 || validSourceUrl(values[6]))
+        && (values.size() < 8 || validSourceUrl(values[7]))
+        && (values.size() < 9 || validSourceUrl(values[8]))
+        && (values.size() < 10 || validSourceUrl(values[9]));
+    }
+
+    function validFacility(data) {
+      return data.keys().hasAll([
+          "id", "name", "kana", "pref", "city", "type",
+          "lat", "lng", "url", "sourceUrls", "status", "lastVerifiedAt"
+        ])
+        && data.keys().hasOnly([
+          "id", "name", "kana", "pref", "city", "type",
+          "lat", "lng", "url", "sourceUrls", "status", "lastVerifiedAt"
+        ])
+        && data.id is string
+        && data.id.matches("^custom_[a-zA-Z0-9_-]+$")
+        && data.name is string
+        && data.name.size() >= 1
+        && data.name.size() <= 200
+        && data.kana is string
+        && data.kana.size() <= 200
+        && data.pref is string
+        && data.pref.size() <= 20
+        && data.city is string
+        && data.city.size() <= 100
+        && data.type in ["zoo", "aquarium", "both", "other"]
+        && data.lat is number
+        && data.lat >= -90
+        && data.lat <= 90
+        && data.lng is number
+        && data.lng >= -180
+        && data.lng <= 180
+        && data.url is string
+        && data.url.size() <= 1000
+        && validSourceUrls(data.sourceUrls)
+        && data.status in ["open", "closed", "suspended"]
+        && data.lastVerifiedAt is string
+        && data.lastVerifiedAt.matches("^\\d{4}-\\d{2}-\\d{2}$");
+    }
+
+    match /households/{hid}/visits/{visitId} {
+      allow read, delete: if isHousehold(hid);
+
+      allow create: if isHousehold(hid)
+        && validVisit(request.resource.data)
+        && request.resource.data.createdAt == request.time
+        && request.resource.data.updatedAt == request.time;
+
+      allow update: if isHousehold(hid)
+        && validVisit(request.resource.data)
+        && request.resource.data.createdAt == resource.data.createdAt
+        && request.resource.data.updatedAt == request.time;
+    }
+
+    match /households/{hid}/marks/{facilityId} {
+      allow read, delete: if isHousehold(hid);
+      allow create, update: if isHousehold(hid)
+        && validMark(request.resource.data);
+    }
+
+    match /households/{hid}/customFacilities/{facilityId} {
+      allow read, delete: if isHousehold(hid);
+      allow create, update: if isHousehold(hid)
+        && facilityId == request.resource.data.id
+        && validFacility(request.resource.data);
+    }
+  }
+}
