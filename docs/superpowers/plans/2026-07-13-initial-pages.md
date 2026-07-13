@@ -12,7 +12,7 @@
 
 - アプリ本体は最大幅480pxの1カラムとし、PCでも中央にスマホ幅で表示する。
 - 配色は forest `#173F35`、leaf `#2F6B50`、water `#2A7180`、sky `#DCEFF0`、paper `#F7F4E8`、ink `#18231F` を使う。
-- 外部フォントを読み込まない。
+- Google Fonts の `LINE Seed JP`（400 / 700 / 800）を読み込み、全UIへ適用する。
 - Viteの `base` は `/zoo-aquarium-log/` とする。
 - 初期版ではFirebase、訪問記録、地図、統計、未保存状態のUIを実装しない。
 
