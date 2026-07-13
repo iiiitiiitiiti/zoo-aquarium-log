@@ -1,0 +1,37 @@
+const idPattern = /^[a-z0-9]+(?:_[a-z0-9]+)*$/;
+const datePattern = /^\d{4}-\d{2}-\d{2}$/;
+
+function isHttpUrl(value) {
+  try {
+    const url = new URL(value);
+    return url.protocol === "https:" || url.protocol === "http:";
+  } catch {
+    return false;
+  }
+}
+
+export function validateFacilities(facilities) {
+  if (!Array.isArray(facilities) || facilities.length === 0) {
+    return ["施設は1件以上必要です"];
+  }
+
+  const errors = [];
+  const seenIds = new Set();
+
+  facilities.forEach((facility, index) => {
+    const label = `[${index}] ${facility?.name ?? "名称未設定"}`;
+
+    if (!idPattern.test(facility?.id ?? "")) errors.push(`${label}: IDは小文字スネークケースにしてください`);
+    if (facility?.id?.startsWith("custom_")) errors.push(`${label}: custom_ は手動追加施設の予約IDです`);
+    if (seenIds.has(facility?.id)) errors.push(`${label}: IDが重複しています (${facility.id})`);
+    seenIds.add(facility?.id);
+
+    if (typeof facility?.lat !== "number" || facility.lat < -90 || facility.lat > 90) errors.push(`${label}: 緯度は-90から90の数値にしてください`);
+    if (typeof facility?.lng !== "number" || facility.lng < -180 || facility.lng > 180) errors.push(`${label}: 経度は-180から180の数値にしてください`);
+    if (!isHttpUrl(facility?.url)) errors.push(`${label}: 公式URLが不正です`);
+    if (!Array.isArray(facility?.sourceUrls) || facility.sourceUrls.length === 0 || facility.sourceUrls.some((url) => !isHttpUrl(url))) errors.push(`${label}: 一次情報URLを1件以上指定してください`);
+    if (!datePattern.test(facility?.lastVerifiedAt ?? "")) errors.push(`${label}: 確認日はYYYY-MM-DD形式にしてください`);
+  });
+
+  return errors;
+}
