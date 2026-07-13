@@ -1,0 +1,9 @@
+{
+  "name": "zoo-aquarium-log",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:data": "node --test tests/facilities.test.mjs"
+  }
+}
