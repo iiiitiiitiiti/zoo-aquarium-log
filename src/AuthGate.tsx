@@ -1,21 +1,31 @@
-import { type FormEvent, type ReactNode, useEffect, useState } from "react";
+import { type FormEvent, type ReactNode, useEffect, useRef, useState } from "react";
 
 export interface AuthClient {
   onAuthStateChanged(listener: (signedIn: boolean) => void): () => void;
   signIn(password: string): Promise<void>;
+  signOut(): Promise<void>;
+}
+
+export interface AuthSessionControls {
+  onSignOut(): Promise<void>;
+  signingOut: boolean;
+  signOutError: string;
 }
 
 export default function AuthGate({
   children,
   client,
 }: {
-  children: ReactNode;
+  children: (controls: AuthSessionControls) => ReactNode;
   client: AuthClient;
 }) {
   const [signedIn, setSignedIn] = useState<boolean>();
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [submitting, setSubmitting] = useState(false);
+  const [signingOut, setSigningOut] = useState(false);
+  const [signOutError, setSignOutError] = useState("");
+  const signingOutRef = useRef(false);
 
   useEffect(() => client.onAuthStateChanged(setSignedIn), [client]);
 
@@ -38,6 +48,22 @@ export default function AuthGate({
     }
   }
 
+  async function handleSignOut() {
+    if (signingOutRef.current) return;
+
+    signingOutRef.current = true;
+    setSigningOut(true);
+    setSignOutError("");
+    try {
+      await client.signOut();
+    } catch {
+      setSignOutError("ログアウトできませんでした。もう一度お試しください");
+    } finally {
+      signingOutRef.current = false;
+      setSigningOut(false);
+    }
+  }
+
   if (signedIn === undefined) {
     return (
       <main className="auth-shell auth-loading" aria-live="polite">
@@ -47,7 +73,13 @@ export default function AuthGate({
     );
   }
 
-  if (signedIn) return children;
+  if (signedIn) {
+    return children({
+      onSignOut: handleSignOut,
+      signingOut,
+      signOutError,
+    });
+  }
 
   return (
     <main className="auth-shell">

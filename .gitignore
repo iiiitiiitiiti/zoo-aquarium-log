@@ -6,4 +6,5 @@ dist/
 .DS_Store
 Thumbs.db
 .worktrees/
+.superpowers/
 *.tsbuildinfo
