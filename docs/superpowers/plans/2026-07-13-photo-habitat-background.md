@@ -50,7 +50,7 @@
 src/photoAssets.test.ts を作成する。
 
 ~~~ts
-import { readFileSync, statSync } from "node:fs";
+import { existsSync, readFileSync, statSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 
 const photos = [
@@ -70,6 +70,7 @@ describe("habitat background photos", () => {
   it.each(photos)(
     "$path is a local WebP no larger than 300KB",
     ({ path }) => {
+      expect(existsSync(path)).toBe(true);
       const bytes = readFileSync(path);
 
       expect(bytes.subarray(0, 4).toString("ascii")).toBe("RIFF");
@@ -97,7 +98,7 @@ Run:
 npm test -- --run src/photoAssets.test.ts
 ~~~
 
-Expected: ENOENT で src/assets/zoo-habitat.webp が存在しないためFAIL。
+Expected: src/assets/zoo-habitat.webp の存在確認が expected true / received false でFAIL。
 
 - [ ] **Step 3: 720×1280pxのWebPをローカルへ取得する**
 
