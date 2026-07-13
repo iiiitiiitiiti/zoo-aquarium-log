@@ -1,7 +1,7 @@
-import { render, screen } from "@testing-library/react";
+import { act, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it } from "vitest";
-import AuthGate, { type AuthClient } from "./AuthGate";
+import AuthGate, { type AuthClient, type AuthSessionControls } from "./AuthGate";
 
 class FakeAuthClient implements AuthClient {
   private listener: ((signedIn: boolean) => void) | undefined;
@@ -108,19 +108,37 @@ describe("AuthGate", () => {
   it("ログアウト中はボタンを無効にする", async () => {
     const user = userEvent.setup();
     const client = new FakeAuthClient();
-    client.signOutPromise = new Promise<void>(() => undefined);
+    let controls: AuthSessionControls | undefined;
+    let releaseSignOut: () => void = () => undefined;
+    client.signOutPromise = new Promise<void>((resolve) => {
+      releaseSignOut = () => resolve();
+    });
     render(
       <AuthGate client={client}>
-        {({ onSignOut, signingOut }) => (
-          <button onClick={onSignOut} disabled={signingOut}>ログアウト</button>
-        )}
+        {(nextControls) => {
+          controls = nextControls;
+          return (
+            <button onClick={nextControls.onSignOut} disabled={nextControls.signingOut}>
+              ログアウト
+            </button>
+          );
+        }}
       </AuthGate>,
     );
     client.emit(true);
 
     await user.click(await screen.findByRole("button", { name: "ログアウト" }));
+    act(() => {
+      void controls?.onSignOut();
+    });
 
+    expect(client.signOutCalls).toBe(1);
     expect(screen.getByRole("button", { name: "ログアウト" })).toBeDisabled();
+
+    await act(async () => {
+      releaseSignOut();
+      await client.signOutPromise;
+    });
   });
 
   it("ログアウト失敗時はアプリを表示したままエラーを出す", async () => {
