@@ -1,5 +1,7 @@
 const idPattern = /^[a-z0-9]+(?:_[a-z0-9]+)*$/;
 const datePattern = /^\d{4}-\d{2}-\d{2}$/;
+const allowedTypes = new Set(["zoo", "aquarium", "both", "other"]);
+const allowedStatuses = new Set(["open", "closed", "suspended"]);
 
 function isHttpUrl(value) {
   try {
@@ -20,6 +22,11 @@ export function validateFacilities(facilities) {
 
   facilities.forEach((facility, index) => {
     const label = `[${index}] ${facility?.name ?? "名称未設定"}`;
+    for (const [key, title] of [["name", "名称"], ["kana", "読み仮名"], ["pref", "都道府県"], ["city", "市区町村"]]) {
+      if (typeof facility?.[key] !== "string" || facility[key].trim() === "") errors.push(`${label}: ${title}は必須です`);
+    }
+    if (!allowedTypes.has(facility?.type)) errors.push(`${label}: 種別が不正です`);
+    if (!allowedStatuses.has(facility?.status)) errors.push(`${label}: 営業状態が不正です`);
 
     if (!idPattern.test(facility?.id ?? "")) errors.push(`${label}: IDは小文字スネークケースにしてください`);
     if (facility?.id?.startsWith("custom_")) errors.push(`${label}: custom_ は手動追加施設の予約IDです`);

@@ -1,11 +1,23 @@
 # zoo-aquarium-log
 
-全国の動物園・水族館をリストアップし、家族で訪問記録をつけるスマホ中心の Web アプリ（PWA）。
+全国の動物園・水族館をリストアップし、家族で訪問記録をつけるスマホ中心の Web アプリ（PWA予定）。
 
-- 実装プラン: [docs/plan.md](docs/plan.md)（要件・構成・実装ステップ。Codex レビュー反映済み）
-- 構成（予定）: 静的施設マスタ JSON ＋ Firebase Firestore ＋ Vite + React + TypeScript ＋ GitHub Pages
-- 状態: プラン確定済み・実装未着手（2026-07-13）
+- 公開URL: https://iiiitiiitiiti.github.io/zoo-aquarium-log/
+- 実装プラン: [docs/plan.md](docs/plan.md)
+- 初期公開版: 公式情報で確認したパイロット20施設の検索・種別絞り込み
+- 構成: Vite + React + TypeScript。今後 Firebase Firestore とPWA対応を追加予定
+
+## 開発
+
+```bash
+npm install
+npm run dev
+npm run test:data
+npm test -- --run
+npm run build
+```
 
 ## 運用メモ
 
 - Mac ⇔ Windows の受け渡しはこのリポジトリ（GitHub）経由で行う
+- `main` へのpushでGitHub ActionsからPagesへデプロイする

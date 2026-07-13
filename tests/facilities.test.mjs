@@ -52,3 +52,19 @@ test("rejects invalid coordinates, URLs, and verification dates", () => {
   assert.ok(errors.some((error) => error.includes("一次情報URL")));
   assert.ok(errors.some((error) => error.includes("確認日")));
 });
+
+import { readFile } from "node:fs/promises";
+
+test("rejects missing fields and unknown enum values", () => {
+  const errors = validateFacilities([{ ...validFacility, name: "", kana: "", pref: "", city: "", type: "park", status: "unknown" }]);
+  for (const field of ["名称", "読み仮名", "都道府県", "市区町村", "種別", "営業状態"]) {
+    assert.ok(errors.some((error) => error.includes(field)), `${field} error is missing`);
+  }
+});
+
+test("pilot master contains 20 valid facilities", async () => {
+  const json = await readFile(new URL("../src/data/facilities.json", import.meta.url), "utf8");
+  const facilities = JSON.parse(json);
+  assert.equal(facilities.length, 20);
+  assert.deepEqual(validateFacilities(facilities), []);
+});
