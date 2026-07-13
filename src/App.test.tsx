@@ -23,10 +23,18 @@ describe("App",()=>{
   expect(screen.getByText("海遊館")).toBeInTheDocument();
  });
  it("shows guidance when there are no results",async()=>{ const user=userEvent.setup(); render(<App />); await user.type(screen.getByRole("searchbox"),"存在しない"); expect(screen.getByText(/見つかりませんでした/)).toBeInTheDocument(); });
- it("opens official sites in a new tab",()=>{ render(<App />); expect(screen.getAllByRole("link",{name:/公式サイト/})[0]).toHaveAttribute("target","_blank"); });
+ it("施設カードから詳細ページへ移動し、公式サイトは詳細ページに表示する",async()=>{
+  const user=userEvent.setup(); render(<App visitStore={visitStore} />);
+  const card=screen.getByRole("link",{name:/札幌市円山動物園/});
+  expect(card).toHaveAttribute("href","#facility/hokkaido_maruyama_zoo");
+  expect(screen.queryByRole("link",{name:/公式サイト/})).not.toBeInTheDocument();
+  await user.click(card);
+  expect(screen.getByRole("heading",{name:"札幌市円山動物園"})).toBeInTheDocument();
+  expect(screen.getByRole("link",{name:/公式サイト/})).toHaveAttribute("target","_blank");
+ });
  it("opens a facility visit log and returns to the list",async()=>{
   const user=userEvent.setup(); render(<App visitStore={visitStore} />);
-  await user.click(screen.getAllByRole("button",{name:"記録を見る"})[0]);
+  await user.click(screen.getByRole("link",{name:/札幌市円山動物園/}));
   expect(screen.getByRole("heading",{name:"札幌市円山動物園"})).toBeInTheDocument();
   await user.click(screen.getByRole("button",{name:/施設一覧/}));
   expect(screen.getByText("20施設を掲載")).toBeInTheDocument();
@@ -39,7 +47,7 @@ describe("App",()=>{
   await user.click(screen.getByRole("button",{name:"ログアウト"}));
   expect(onSignOut).toHaveBeenCalledOnce();
 
-  await user.click(screen.getAllByRole("button",{name:"記録を見る"})[0]);
+  await user.click(screen.getByRole("link",{name:/札幌市円山動物園/}));
   expect(screen.queryByRole("button",{name:"ログアウト"})).not.toBeInTheDocument();
  });
 });

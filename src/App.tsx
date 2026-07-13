@@ -108,30 +108,25 @@ export default function App({
         ) : (
           <ul className="facility-list">
             {shown.map((facility, index) => (
-              <li key={facility.id} className="facility-card">
-                <div className="card-index">{String(index + 1).padStart(2, "0")}</div>
-                <div className="card-body">
-                  <div className="badges">
-                    <span>{typeLabels[facility.type]}</span>
-                    <span className="open">営業中</span>
+              <li key={facility.id}>
+                <a
+                  className="facility-card"
+                  href={"#facility/" + facility.id}
+                  onClick={(event) => {
+                    event.preventDefault();
+                    setSelectedFacility(facility);
+                  }}
+                >
+                  <div className="card-index">{String(index + 1).padStart(2, "0")}</div>
+                  <div className="card-body">
+                    <div className="badges">
+                      <span>{typeLabels[facility.type]}</span>
+                      <span className="open">営業中</span>
+                    </div>
+                    <h3>{facility.name}</h3>
+                    <p>{facility.pref} {facility.city}</p>
                   </div>
-                  <h3>{facility.name}</h3>
-                  <p>{facility.pref} {facility.city}</p>
-                  <div className="card-actions">
-                    {visitStore && (
-                      <button
-                        className="record-button"
-                        type="button"
-                        onClick={() => setSelectedFacility(facility)}
-                      >
-                        記録を見る
-                      </button>
-                    )}
-                    <a href={facility.url} target="_blank" rel="noreferrer">
-                      公式サイトを見る <span aria-hidden="true">↗</span>
-                    </a>
-                  </div>
-                </div>
+                </a>
               </li>
             ))}
           </ul>
