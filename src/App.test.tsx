@@ -2,6 +2,16 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it } from "vitest";
 import App from "./App";
+import type { VisitStore } from "./visits";
+
+const visitStore: VisitStore = {
+ newId:()=> "visit-id",
+ create:async()=>undefined,
+ update:async()=>undefined,
+ remove:async()=>undefined,
+ subscribe:(_facilityId,onVisits)=>{ onVisits([]); return ()=>undefined; },
+};
+
 describe("App",()=>{
  it("shows, searches and filters facilities",async()=>{
   const user=userEvent.setup(); render(<App />);
@@ -14,4 +24,11 @@ describe("App",()=>{
  });
  it("shows guidance when there are no results",async()=>{ const user=userEvent.setup(); render(<App />); await user.type(screen.getByRole("searchbox"),"存在しない"); expect(screen.getByText(/見つかりませんでした/)).toBeInTheDocument(); });
  it("opens official sites in a new tab",()=>{ render(<App />); expect(screen.getAllByRole("link",{name:/公式サイト/})[0]).toHaveAttribute("target","_blank"); });
+ it("opens a facility visit log and returns to the list",async()=>{
+  const user=userEvent.setup(); render(<App visitStore={visitStore} />);
+  await user.click(screen.getAllByRole("button",{name:"記録を見る"})[0]);
+  expect(screen.getByRole("heading",{name:"札幌市円山動物園"})).toBeInTheDocument();
+  await user.click(screen.getByRole("button",{name:/施設一覧/}));
+  expect(screen.getByText("20施設を掲載")).toBeInTheDocument();
+ });
 });

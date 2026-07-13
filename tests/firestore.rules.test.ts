@@ -1,0 +1,158 @@
+import { readFileSync } from "node:fs";
+import { afterAll, afterEach, beforeAll, describe, test } from "vitest";
+import {
+  assertFails,
+  assertSucceeds,
+  initializeTestEnvironment,
+  type RulesTestEnvironment,
+} from "@firebase/rules-unit-testing";
+import {
+  collection,
+  collectionGroup,
+  doc,
+  getDoc,
+  getDocs,
+  serverTimestamp,
+  setDoc,
+} from "firebase/firestore";
+
+const PROJECT_ID = "demo-zoo-aquarium-log";
+const HOUSEHOLD_UID = "cbs9TeeZukMBRkHg5iIw9aMXw1W2";
+const OTHER_UID = "another-household";
+
+let testEnv: RulesTestEnvironment;
+
+const validVisit = () => ({
+  facilityId: "tokyo-ueno-zoo",
+  date: "2026-07-13",
+  rating: 5,
+  memo: "家族で訪問しました 🐼",
+  visitor: "家族",
+  createdAt: serverTimestamp(),
+  updatedAt: serverTimestamp(),
+});
+
+beforeAll(async () => {
+  testEnv = await initializeTestEnvironment({
+    projectId: PROJECT_ID,
+    firestore: {
+      rules: readFileSync("firestore.rules", "utf8"),
+    },
+  });
+});
+
+afterEach(async () => {
+  await testEnv.clearFirestore();
+});
+
+afterAll(async () => {
+  await testEnv.cleanup();
+});
+
+describe("Firestore household rules", () => {
+  test("世帯アカウントは正しい訪問記録を保存できる", async () => {
+    const db = testEnv.authenticatedContext(HOUSEHOLD_UID).firestore();
+    const visitRef = doc(db, "households", HOUSEHOLD_UID, "visits", "visit-1");
+
+    await assertSucceeds(setDoc(visitRef, validVisit()));
+  });
+
+  test("未認証ユーザーの読み書きを拒否する", async () => {
+    const db = testEnv.unauthenticatedContext().firestore();
+    const visitRef = doc(db, "households", HOUSEHOLD_UID, "visits", "visit-1");
+
+    await assertFails(getDoc(visitRef));
+    await assertFails(setDoc(visitRef, validVisit()));
+  });
+
+  test("別UIDから世帯データへのアクセスを拒否する", async () => {
+    const db = testEnv.authenticatedContext(OTHER_UID).firestore();
+    const visitRef = doc(db, "households", HOUSEHOLD_UID, "visits", "visit-1");
+
+    await assertFails(getDoc(visitRef));
+    await assertFails(setDoc(visitRef, validVisit()));
+  });
+
+  test("collection group queryを拒否する", async () => {
+    await testEnv.withSecurityRulesDisabled(async (context) => {
+      await setDoc(
+        doc(context.firestore(), "households", HOUSEHOLD_UID, "visits", "visit-1"),
+        { ...validVisit(), createdAt: new Date(), updatedAt: new Date() },
+      );
+    });
+    const db = testEnv.authenticatedContext(HOUSEHOLD_UID).firestore();
+
+    await assertFails(getDocs(collectionGroup(db, "visits")));
+  });
+
+  test("不正なフィールドを含む訪問記録を拒否する", async () => {
+    const db = testEnv.authenticatedContext(HOUSEHOLD_UID).firestore();
+    const visitRef = doc(collection(db, "households", HOUSEHOLD_UID, "visits"));
+
+    await assertFails(setDoc(visitRef, { ...validVisit(), owner: "attacker" }));
+  });
+
+  test("2000文字を超えるメモを拒否する", async () => {
+    const db = testEnv.authenticatedContext(HOUSEHOLD_UID).firestore();
+    const visitRef = doc(collection(db, "households", HOUSEHOLD_UID, "visits"));
+
+    await assertFails(setDoc(visitRef, { ...validVisit(), memo: "あ".repeat(2001) }));
+  });
+
+  test("評価範囲外と作成日時の改ざんを拒否する", async () => {
+    const db = testEnv.authenticatedContext(HOUSEHOLD_UID).firestore();
+    const visits = collection(db, "households", HOUSEHOLD_UID, "visits");
+
+    await assertFails(setDoc(doc(visits), { ...validVisit(), rating: 0 }));
+    await assertFails(setDoc(doc(visits), { ...validVisit(), createdAt: new Date(0) }));
+  });
+
+  test("行きたい・お気に入りはbooleanだけ許可する", async () => {
+    const db = testEnv.authenticatedContext(HOUSEHOLD_UID).firestore();
+    const validRef = doc(db, "households", HOUSEHOLD_UID, "marks", "tokyo-ueno-zoo");
+    const invalidRef = doc(db, "households", HOUSEHOLD_UID, "marks", "other-zoo");
+
+    await assertSucceeds(setDoc(validRef, { wishlist: true, favorite: false }));
+    await assertFails(setDoc(invalidRef, { wishlist: "yes", favorite: false }));
+  });
+
+  test("手動施設のID一致とsourceUrls要素型を検証する", async () => {
+    const db = testEnv.authenticatedContext(HOUSEHOLD_UID).firestore();
+    const customFacility = {
+      id: "custom_family_zoo",
+      name: "家族動物園",
+      kana: "かぞくどうぶつえん",
+      pref: "東京都",
+      city: "台東区",
+      type: "zoo",
+      lat: 35.7,
+      lng: 139.7,
+      url: "https://example.com/",
+      sourceUrls: ["https://example.com/"],
+      status: "open",
+      lastVerifiedAt: "2026-07-13",
+    };
+
+    await assertSucceeds(setDoc(
+      doc(db, "households", HOUSEHOLD_UID, "customFacilities", customFacility.id),
+      customFacility,
+    ));
+    await assertFails(setDoc(
+      doc(db, "households", HOUSEHOLD_UID, "customFacilities", "custom_wrong_id"),
+      customFacility,
+    ));
+    await assertFails(setDoc(
+      doc(db, "households", HOUSEHOLD_UID, "customFacilities", "custom_bad_source"),
+      { ...customFacility, id: "custom_bad_source", sourceUrls: [123] },
+    ));
+  });
+
+  test("未定義のサブコレクションは拒否する", async () => {
+    const db = testEnv.authenticatedContext(HOUSEHOLD_UID).firestore();
+
+    await assertFails(setDoc(
+      doc(db, "households", HOUSEHOLD_UID, "privateNotes", "note-1"),
+      { text: "許可されていないデータ" },
+    ));
+  });
+});
