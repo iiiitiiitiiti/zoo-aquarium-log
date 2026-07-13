@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import App from "./App";
 import type { VisitStore } from "./visits";
 
@@ -30,5 +30,16 @@ describe("App",()=>{
   expect(screen.getByRole("heading",{name:"札幌市円山動物園"})).toBeInTheDocument();
   await user.click(screen.getByRole("button",{name:/施設一覧/}));
   expect(screen.getByText("20施設を掲載")).toBeInTheDocument();
+ });
+ it("shows logout on the facility list but not the detail view",async()=>{
+  const user=userEvent.setup();
+  const onSignOut=vi.fn(async()=>undefined);
+  render(<App visitStore={visitStore} onSignOut={onSignOut} />);
+
+  await user.click(screen.getByRole("button",{name:"ログアウト"}));
+  expect(onSignOut).toHaveBeenCalledOnce();
+
+  await user.click(screen.getAllByRole("button",{name:"記録を見る"})[0]);
+  expect(screen.queryByRole("button",{name:"ログアウト"})).not.toBeInTheDocument();
  });
 });

@@ -10,6 +10,10 @@ const visitStore = new FirestoreVisitStore(db, HOUSEHOLD_UID);
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <AuthGate client={firebaseAuthClient}><App visitStore={visitStore} /></AuthGate>
+    <div className="site-stage">
+      <AuthGate client={firebaseAuthClient}>
+        {(controls) => <App visitStore={visitStore} {...controls} />}
+      </AuthGate>
+    </div>
   </StrictMode>,
 );

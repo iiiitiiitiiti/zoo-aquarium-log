@@ -34,4 +34,7 @@ export const firebaseAuthClient: AuthClient = {
       throw new Error("Unexpected household account");
     }
   },
+  async signOut() {
+    await signOut(auth);
+  },
 };

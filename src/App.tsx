@@ -19,7 +19,17 @@ const typeLabels: Record<FacilityType, string> = {
   other: "その他",
 };
 
-export default function App({ visitStore }: { visitStore?: VisitStore }) {
+export default function App({
+  visitStore,
+  onSignOut,
+  signingOut = false,
+  signOutError = "",
+}: {
+  visitStore?: VisitStore;
+  onSignOut?: () => Promise<void>;
+  signingOut?: boolean;
+  signOutError?: string;
+}) {
   const [query, setQuery] = useState("");
   const [type, setType] = useState<FacilityType | "all">("all");
   const [selectedFacility, setSelectedFacility] = useState<Facility>();
@@ -41,7 +51,20 @@ export default function App({ visitStore }: { visitStore?: VisitStore }) {
   return (
     <main className="app-shell">
       <header className="hero">
-        <p className="eyebrow">FAMILY FIELD NOTE</p>
+        <div className="hero-session">
+          <p className="eyebrow">FAMILY FIELD NOTE</p>
+          {onSignOut && (
+            <button
+              className="session-button"
+              type="button"
+              onClick={onSignOut}
+              disabled={signingOut}
+            >
+              {signingOut ? "終了中…" : "ログアウト"}
+            </button>
+          )}
+        </div>
+        {signOutError && <p className="session-error" role="alert">{signOutError}</p>}
         <h1>動物園・<br />水族館ログ</h1>
         <p className="lead">次は、どの生きものに会いに行こう？</p>
         <span className="route" aria-hidden="true" />
