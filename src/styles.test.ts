@@ -13,6 +13,12 @@ describe("responsive styles", () => {
     );
   });
 
+  it("keeps the deep-water background fixed while content scrolls", () => {
+    expect(styles).toMatch(
+      /\.site-stage\{[^}]*background-attachment:fixed/,
+    );
+  });
+
   it("uses a high-contrast focus indicator for logout", () => {
     expect(styles).toMatch(
       /\.session-button:focus-visible\{[^}]*outline-color:#f7f4e8/,
