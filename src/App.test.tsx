@@ -47,6 +47,25 @@ describe("App",()=>{
   await user.click(summary);
   expect(summary).toHaveAttribute("aria-expanded","false");
  });
+ it("resets all facility filters",async()=>{
+  const user=userEvent.setup(); render(<App />);
+  const summary=screen.getByRole("button",{name:/施設を探す/});
+  expect(screen.queryByRole("button",{name:"条件をリセット"})).not.toBeInTheDocument();
+  await user.click(summary);
+  const reset=screen.getByRole("button",{name:"条件をリセット"});
+  expect(reset).toBeDisabled();
+  await user.type(screen.getByRole("searchbox"),"上野");
+  await user.click(screen.getByRole("button",{name:"水族館"}));
+  await user.selectOptions(screen.getByRole("combobox",{name:"都道府県"}),"東京都");
+  await user.click(screen.getByRole("button",{name:"休園中"}));
+  expect(reset).toBeEnabled();
+  await user.click(reset);
+  expect(screen.getByRole("searchbox")).toHaveValue("");
+  expect(screen.getByRole("combobox",{name:"都道府県"})).toHaveValue("all");
+  expect(screen.getByRole("group",{name:"種別"}).querySelector('[aria-pressed="true"]')).toHaveTextContent("すべて");
+  expect(screen.getByRole("group",{name:"営業状態"}).querySelector('[aria-pressed="true"]')).toHaveTextContent("すべて");
+  expect(reset).toBeDisabled();
+ });
  it("施設カードから詳細ページへ移動し、公式サイトは詳細ページに表示する",async()=>{
   const user=userEvent.setup(); render(<App visitStore={visitStore} />);
   const card=screen.getByRole("link",{name:/札幌市円山動物園/});

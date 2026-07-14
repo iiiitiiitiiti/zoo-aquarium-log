@@ -72,4 +72,9 @@ describe("responsive styles", () => {
     expect(styles).toContain("@media(prefers-reduced-motion:reduce){.controls-body{transition:none}");
   });
 
+  it("styles the filter reset button", () => {
+    expect(styles).toContain(".filter-reset{width:100%;margin-top:16px;");
+    expect(styles).toContain(".filter-reset:disabled{cursor:not-allowed;opacity:.45}");
+  });
+
 });
