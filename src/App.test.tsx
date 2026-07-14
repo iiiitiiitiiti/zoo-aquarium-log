@@ -50,6 +50,10 @@ function readBlob(blob: Blob) {
  });
 }
 
+async function openQuickActions(user: ReturnType<typeof userEvent.setup>) {
+ await user.click(screen.getByText("その他の操作"));
+}
+
 afterEach(() => {
  vi.restoreAllMocks();
  vi.unstubAllGlobals();
@@ -186,6 +190,7 @@ describe("App",()=>{
   };
   render(<App visitStore={exportVisitStore} markStore={markStore} customFacilityStore={customFacilityStore} />);
 
+  await openQuickActions(user);
   const button=await screen.findByRole("button",{name:"JSONを保存"});
   expect(button).toBeEnabled();
   await user.click(button);
@@ -199,6 +204,7 @@ describe("App",()=>{
   await waitFor(()=>expect(revokeObjectURL).toHaveBeenCalledWith("blob:export"));
  });
  it("keeps export disabled until visits, marks, and custom facilities are ready",async()=>{
+  const user=userEvent.setup();
   let emitVisits: ((visits: Visit[])=>void)|undefined;
   let emitMarks: ((marks: Record<string,{wishlist:boolean;favorite:boolean}>)=>void)|undefined;
   let emitCustomFacilities: ((facilities: typeof exportFacility[])=>void)|undefined;
@@ -218,6 +224,7 @@ describe("App",()=>{
   };
   vi.stubGlobal("URL", { ...globalThis.URL, createObjectURL:vi.fn(() => "blob:export"), revokeObjectURL:vi.fn() });
   render(<App visitStore={loadingVisitStore} markStore={loadingMarkStore} customFacilityStore={loadingCustomFacilityStore} />);
+  await openQuickActions(user);
   const button=screen.getByRole("button",{name:"JSONを保存"});
   expect(button).toBeDisabled();
   emitVisits?.([]);
@@ -228,6 +235,7 @@ describe("App",()=>{
   await waitFor(()=>expect(button).toBeEnabled());
  });
  it("keeps export disabled when a data subscription fails",async()=>{
+  const user=userEvent.setup();
   const failingVisitStore: VisitStore={
    ...visitStore,
    subscribeAll:(_onVisits,onError)=>{ onError(new Error("failed")); return ()=>undefined; },
@@ -244,7 +252,24 @@ describe("App",()=>{
   };
   vi.stubGlobal("URL", { ...globalThis.URL, createObjectURL:vi.fn(() => "blob:export"), revokeObjectURL:vi.fn() });
   render(<App visitStore={failingVisitStore} markStore={markStore} customFacilityStore={customFacilityStore} />);
+  await openQuickActions(user);
   expect(await screen.findByRole("button",{name:"JSONを保存"})).toBeDisabled();
+ });
+ it("hides the rare actions until the quick action panel is opened",async()=>{
+  const user=userEvent.setup();
+  render(<App customFacilityStore={{
+   create:async()=>exportFacility,
+   update:async()=>exportFacility,
+   remove:async()=>undefined,
+   subscribe:(onFacilities)=>{ onFacilities([]); return ()=>undefined; },
+  }} />);
+  const panel=screen.getByText("その他の操作").closest("details");
+  expect(panel).toBeInTheDocument();
+  expect(panel).not.toHaveAttribute("open");
+  await openQuickActions(user);
+  expect(panel).toHaveAttribute("open");
+  expect(screen.getByRole("button",{name:"施設を追加"})).toBeInTheDocument();
+  expect(screen.getByRole("button",{name:"JSONを保存"})).toBeInTheDocument();
  });
  it("keeps the export button visible when search results are empty",async()=>{
   const user=userEvent.setup();
@@ -253,15 +278,21 @@ describe("App",()=>{
   await user.click(screen.getByRole("button",{name:/施設を探す/}));
   await user.type(screen.getByRole("searchbox"),"存在しない施設");
   expect(screen.getByText(/見つかりませんでした/)).toBeInTheDocument();
+  await openQuickActions(user);
   expect(screen.getByRole("button",{name:"JSONを保存"})).toBeInTheDocument();
  });
- it("shows the add and export actions directly below the search controls",()=>{
+ it("shows the add and export actions directly below the search controls",async()=>{
+  const user=userEvent.setup();
   render(<App customFacilityStore={{
    create:async()=>exportFacility,
    update:async()=>exportFacility,
    remove:async()=>undefined,
    subscribe:(onFacilities)=>{ onFacilities([]); return ()=>undefined; },
   }} />);
+  const panel=screen.getByText("その他の操作").closest("details");
+  expect(panel).toBeInTheDocument();
+  expect(panel).not.toHaveAttribute("open");
+  await openQuickActions(user);
   const actions=screen.getByRole("group",{name:"クイックアクション"});
   const resultsHeading=screen.getByRole("heading",{name:facilityCountText});
   expect(actions).toContainElement(screen.getByRole("button",{name:"施設を追加"}));
