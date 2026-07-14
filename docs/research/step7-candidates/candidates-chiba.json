@@ -1,0 +1,305 @@
+{
+  "block": "千葉県",
+  "generatedAt": "2026-07-15",
+  "coverage": {
+    "sources": [
+      "Wikipedia（日本の動物園一覧、犬吠埼マリンパーク、行川アイランド、神野寺(君津市)、谷津遊園、世界一ちっちゃな水族館 各ページ）",
+      "千葉県公式観光サイト ちば観光ナビ (maruchiba.jp)",
+      "汎用Web検索（じゃらんnet、いこーよ、ウォーカープラス、公式サイト等）"
+    ],
+    "searchTermsUsed": [
+      "動物園", "水族館", "サファリパーク", "昆虫館", "爬虫類館", "鳥類園/バードパーク",
+      "ふれあい牧場/動物ふれあい施設", "屋内型動物園", "閉園/閉館", "新規オープン"
+    ],
+    "rounds": 2,
+    "note": "2巡目（屋内型動物園・印西ふれあい施設・新規オープン確認等の別戦略検索）で新規候補が複数出たため終了。3巡目は新規候補ゼロを想定し打ち切り。"
+  },
+  "candidates": [
+    {
+      "name": "千葉市動物公園",
+      "pref": "千葉県",
+      "city": "千葉市若葉区",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/%E5%8D%83%E8%91%89%E5%B8%82%E5%8B%95%E7%89%A9%E5%85%AC%E5%9C%92", "https://www.city.chiba.jp/zoo/"],
+      "typeGuess": "動物園",
+      "disposition": "existing",
+      "matchExistingId": "chiba_chiba_zoo",
+      "excludeReason": null,
+      "note": "2025年3月に動物科学館が「生命の森 熱帯雨林」としてリニューアル。"
+    },
+    {
+      "name": "市川市動植物園",
+      "pref": "千葉県",
+      "city": "市川市",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%8B%95%E7%89%A9%E5%9C%92%E4%B8%80%E8%A6%A7"],
+      "typeGuess": "動物園",
+      "disposition": "existing",
+      "matchExistingId": "chiba_ichikawa_zoo",
+      "excludeReason": null,
+      "note": "大町公園内。市川市自然博物館を併設（同一施設扱い）。"
+    },
+    {
+      "name": "市原ぞうの国",
+      "pref": "千葉県",
+      "city": "市原市",
+      "foundUrls": ["https://zounokuni.com/", "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%8B%95%E7%89%A9%E5%9C%92%E4%B8%80%E8%A6%A7"],
+      "typeGuess": "動物園",
+      "disposition": "existing",
+      "matchExistingId": "chiba_ichihara_zou_no_kuni",
+      "excludeReason": null,
+      "note": "現在は「ANIMAL WONDER REZOURT」ブランドの一部。隣接のサユリワールドは別候補として記載。"
+    },
+    {
+      "name": "鴨川シーワールド",
+      "pref": "千葉県",
+      "city": "鴨川市",
+      "foundUrls": ["https://www.kamogawa-seaworld.jp/"],
+      "typeGuess": "水族館",
+      "disposition": "existing",
+      "matchExistingId": "chiba_kamogawa_sea_world",
+      "excludeReason": null,
+      "note": "シャチの飼育・展示で著名。"
+    },
+    {
+      "name": "サユリワールド",
+      "pref": "千葉県",
+      "city": "市原市",
+      "foundUrls": ["https://sayuri-world.com/", "https://zounokuni.com/guide-sw/", "https://zounokuni.com/info/"],
+      "typeGuess": "ふれあい牧場・動物園",
+      "disposition": "review",
+      "matchExistingId": "chiba_ichihara_zou_no_kuni",
+      "excludeReason": null,
+      "note": "市原ぞうの国と隣接し無料シャトルバスで連絡。運営は同一グループ（アニマルワンダーリゾウト）だが単独チケット・単独ブランドあり。既存IDに含めるか別施設として起票するか要判断。"
+    },
+    {
+      "name": "マザー牧場",
+      "pref": "千葉県",
+      "city": "富津市",
+      "foundUrls": ["https://www.motherfarm.co.jp/animal/fureai/", "https://maruchiba.jp/spot/detail_10327.html", "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%82%B6%E3%83%BC%E7%89%A7%E5%A0%B4"],
+      "typeGuess": "ふれあい牧場",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "カピバラ・マーラ・リクガメ・ミニブタ等の常設ふれあいエリアあり。動物展示が主要来場目的の一つ。"
+    },
+    {
+      "name": "成田ゆめ牧場",
+      "pref": "千葉県",
+      "city": "成田市",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/%E6%88%90%E7%94%B0%E3%82%86%E3%82%81%E7%89%A7%E5%A0%B4", "https://www.nrtk.jp/enjoy/attraction/yumebokujo.html"],
+      "typeGuess": "ふれあい牧場",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "羊・ヤギとのふれあい、乳搾り体験等の常設動物展示エリアあり。"
+    },
+    {
+      "name": "袖ケ浦ふれあいどうぶつ縁",
+      "pref": "千葉県",
+      "city": "袖ケ浦市",
+      "foundUrls": ["https://www.sodegaura-animal.jp/", "https://maruchiba.jp/spot/detail_10297.html"],
+      "typeGuess": "ふれあい牧場",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "ダチョウ・カピバラ・ヒツジ・ヤギ・ウサギ等、来園目的が動物ふれあいそのものの専業施設。"
+    },
+    {
+      "name": "世界の昆虫爬虫類王国（東京ドイツ村内）",
+      "pref": "千葉県",
+      "city": "袖ケ浦市",
+      "foundUrls": ["https://t-doitsumura.co.jp/experience/insect-reptile-kingdom/"],
+      "typeGuess": "昆虫館・爬虫類館",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "花のテーマパーク「東京ドイツ村」内の独立課金施設（別料金1,000円）。常設展示エリアとして基準に合致。"
+    },
+    {
+      "name": "KABAZOO（セブンパークアリオ柏店）",
+      "pref": "千葉県",
+      "city": "柏市",
+      "foundUrls": ["https://kabazoo-kashiwa.amebaownd.com/", "https://sevenpark-kashiwa.ario.jp/shop/2300000037/"],
+      "typeGuess": "屋内型動物園",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "ショッピングモール内の常設屋内型動物園。動物取扱業登録あり（公式サイトに表示）。動物カフェ様式との境界は要確認だが常設展示主体のためnew判定。"
+    },
+    {
+      "name": "世界一ちっちゃな水族館",
+      "pref": "千葉県",
+      "city": "銚子市",
+      "foundUrls": ["https://maruchiba.jp/spot/detail_11255.html", "https://ja.wikipedia.org/wiki/%E4%B8%96%E7%95%8C%E4%B8%80%E3%81%A1%E3%81%A3%E3%81%A1%E3%82%83%E3%81%AA%E6%B0%B4%E6%97%8F%E9%A4%A8", "https://choshi-aquarium.jimdofree.com/"],
+      "typeGuess": "水族館",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "銚子海洋研究所内、2019年開業の小規模水族館。約30種の海洋生物を常設展示。現在も営業中。"
+    },
+    {
+      "name": "exstion（エクッション）印西ふれあい牧場",
+      "pref": "千葉県",
+      "city": "印西市",
+      "foundUrls": ["https://inzaiparque.com/exstion/", "https://exstion-fureai-lp.com/"],
+      "typeGuess": "ふれあい牧場",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "ヤギ・ポニー・馬・小動物とのふれあい・乗馬体験を常設提供。"
+    },
+    {
+      "name": "Moff animal world（BIGHOPガーデンモール印西店）",
+      "pref": "千葉県",
+      "city": "印西市",
+      "foundUrls": ["https://www.bighop.jp/shop/index.jsp?bf=1&fmt=6&shopid=2130", "https://moff-moff.jp/en/animal-cafe/shop/moff-animal-watch/"],
+      "typeGuess": "屋内型動物園",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "80種以上の動物と触れ合える屋内型動物園（県内最大級と紹介）。同運営の「Moff animal cafe」（幕張新都心店等）は動物カフェ業態のため別候補として除外扱い。"
+    },
+    {
+      "name": "Moff animal cafe（イオンモール幕張新都心店）",
+      "pref": "千葉県",
+      "city": "千葉市美浜区",
+      "foundUrls": ["https://moff-moff.jp/animal-cafe/shop/makuhari/"],
+      "typeGuess": "動物カフェ",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "動物カフェ",
+      "note": "同ブランドの「animal world」（印西店）は屋内動物園として別候補で new 判定。カフェ業態はカフェ利用者が主目的のため除外。"
+    },
+    {
+      "name": "清水公園ポニー牧場",
+      "pref": "千葉県",
+      "city": "野田市",
+      "foundUrls": ["https://www.shimizu-kouen.com/pony", "https://zfc.jp/en/zoolist/246"],
+      "typeGuess": "ふれあい牧場",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "ポニー・ヤギ・ウサギ・モルモット・フクロウ・リクガメを常設展示。2026年5月リニューアルオープン。"
+    },
+    {
+      "name": "ふなばしアンデルセン公園（どうぶつふれあい広場／ワンパク王国）",
+      "pref": "千葉県",
+      "city": "船橋市",
+      "foundUrls": ["https://www.park-funabashi.or.jp/and/amap/wa-0014.html", "https://www.park-funabashi.or.jp/and/amap/list2.html"],
+      "typeGuess": "ふれあい施設（公園内）",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "都市公園（ワンパク王国ゾーン）内の常設ヤギ・ヒツジ・ウサギ・モルモットふれあい広場。公園全体が入園目的でありふれあい広場単体が主目的とは言い切れないため要判断。"
+    },
+    {
+      "name": "佐倉草ぶえの丘（ふれあい動物園）",
+      "pref": "千葉県",
+      "city": "佐倉市",
+      "foundUrls": ["https://kusabue.shiteikanri-sakura.jp/", "https://www.sakurashi-kankou.or.jp/facility/kusabue/", "https://sakura-yotsukaido-yachimata.goguynet.jp/2025/06/03/kusabuenooka-doubutu/"],
+      "typeGuess": "ふれあい施設（公園内）",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "日祝日のみ開催のふれあい動物園コーナー（ポニー・ウサギ・ヒヨコ・モルモット・カメ）。常設運営ではなく開催日限定のため要判断。"
+    },
+    {
+      "name": "犬吠埼マリンパーク",
+      "pref": "千葉県",
+      "city": "銚子市",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%90%A0%E5%9F%BC%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%91%E3%83%BC%E3%82%AF"],
+      "typeGuess": "水族館",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "閉園済み",
+      "note": "2018年1月31日閉館。建物解体が2025年10月時点で進行中とされる。"
+    },
+    {
+      "name": "行川アイランド",
+      "pref": "千葉県",
+      "city": "勝浦市",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/%E8%A1%8C%E5%B7%9D%E3%82%A2%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89", "https://toyokeizai.net/articles/-/695261"],
+      "typeGuess": "動植物園",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "閉園済み",
+      "note": "2001年8月閉園。南国系動物・鳥類（フラミンゴショー等）を展示していた大型レジャー施設。"
+    },
+    {
+      "name": "アロハガーデンたてやま（旧・南房パラダイス動植物園）",
+      "pref": "千葉県",
+      "city": "館山市",
+      "foundUrls": ["https://www.fukeiki.com/2025/03/aloha-garden-tateyama-close.html", "https://www.nikkei.com/article/DGXZQOCC021ZT0S5A300C2000000/"],
+      "typeGuess": "動植物園",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "閉園済み",
+      "note": "2025年3月31日閉園。コロナ禍・鳥インフルエンザ感染による営業停止が業績悪化の要因とされる。"
+    },
+    {
+      "name": "神野寺「十二支園」跡",
+      "pref": "千葉県",
+      "city": "君津市",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/%E7%A5%9E%E9%87%8E%E5%AF%BA_(%E5%90%9B%E6%B4%A5%E5%B8%82)", "https://note.com/nostalgia_zoo/n/n9ea79fbb3cb1"],
+      "typeGuess": "動物園（寺院併設）",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "閉園済み",
+      "note": "1979年のトラ脱走事件で知られる寺院併設の小規模動物園「十二支園」。現在は跡地のみで動物展示は行われていない。閉園時期は未特定。"
+    },
+    {
+      "name": "谷津遊園（谷津動植物園）",
+      "pref": "千葉県",
+      "city": "習志野市",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/%E8%B0%B7%E6%B4%A5%E9%81%8A%E5%9C%92", "https://www.ariescom.jp/entry/yatsuyuen"],
+      "typeGuess": "動植物園",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "閉園済み",
+      "note": "1982年12月閉園。跡地は谷津公園・谷津バラ園等に転用。"
+    },
+    {
+      "name": "白浜フラワーパーク",
+      "pref": "千葉県",
+      "city": "南房総市",
+      "foundUrls": ["https://hinata-spot.me/spots/shirahama-flower-park", "https://tanachannell.com/7614"],
+      "typeGuess": "植物園（動物展示の有無不明瞭）",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "閉園済み",
+      "note": "花園として営業終了し、現在はキャンプ場「白浜フラワーパーク Ocean's」に転換。過去に動物展示（ホタル等）があった可能性の言及があるが常設の動物園機能があったか未確認。既に閉園扱いのため除外。"
+    },
+    {
+      "name": "勝浦海中展望塔（かつうら海中公園）",
+      "pref": "千葉県",
+      "city": "勝浦市",
+      "foundUrls": ["https://www.bura-bo.com/1s1k03/", "https://maruchiba.jp/spot/detail_10392.html"],
+      "typeGuess": "海中展望施設",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "野生観察のみ",
+      "note": "水深8mの窓から自然環境下の野生魚を観察する展望塔。飼育水槽での展示ではなく、天然海域の野生観察のみのため除外基準に該当。"
+    },
+    {
+      "name": "幕張レプタイルズワールド",
+      "pref": "千葉県",
+      "city": "千葉市美浜区",
+      "foundUrls": ["https://makuhari.reptilesworld.jp/"],
+      "typeGuess": "爬虫類イベント",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "期間限定",
+      "note": "爬虫類・エキゾチックアニマルの即売会形式のイベント。常設展示施設ではない。"
+    },
+    {
+      "name": "THE REPTILES HOUSE",
+      "pref": "千葉県",
+      "city": "千葉市花見川区",
+      "foundUrls": ["https://townguide.10kai.co.jp/shopping/pet/chiba-hanamigawa-shinkemigawa-w565-20241120/"],
+      "typeGuess": "爬虫類専門店",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "ペットショップ",
+      "note": "爬虫類の販売を主とする専門店。"
+    }
+  ]
+}

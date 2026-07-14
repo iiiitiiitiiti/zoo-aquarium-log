@@ -1,0 +1,150 @@
+{
+  "block": "九州沖縄",
+  "generatedAt": "2026-07-15",
+  "coverage": {
+    "福岡県": {
+      "sources": ["Wikipedia一覧(動物園/水族館)", "jorudan県別リスト", "汎用Web検索(種別ごと)", "各施設公式/観光サイト"],
+      "rounds": 2,
+      "note": "既存6件に加え、トリアス・ひびき動物ワールド・ピクニカ共和国・だざいふ遊園地・のこのしま・農事センター・宮ZOO・やながわ有明海水族館等を新規発見。くるめウス・遠賀川河口堰は防災/公共施設内のミニ展示コーナーで判定要review。箱崎水族館・福岡水族館・三潴町アンデスファームはいずれも閉園済みの歴史的施設のためexcluded。2巡目(jorudan/Wikipedia切替)で新規候補が収束したため列挙完了と判断。"
+    },
+    "佐賀県": {
+      "sources": ["Wikipedia一覧(動物園/水族館)", "jorudan県別リスト", "汎用Web検索(市町村別: 佐賀市/唐津市/伊万里市/武雄市/鹿島市)", "佐賀県観光公式サイトあそぼーさが"],
+      "rounds": 2,
+      "note": "既存収録0件を踏まえ特に丁寧に調査。複数の情報源で『佐賀県には（JAZA加盟の）動物園はない』ことを確認した一方、ふれあい系施設は6件発見: 三瀬ルベール牧場どんぐり村(佐賀市)、武雄・嬉野メルヘン村(武雄市)、りんちゃん牧場ふれあいパーク(伊万里市)、どさんこミラファーム(唐津市)、神野公園こども遊園地内の小動物園(佐賀市)、干潟交流館なな海(鹿島市・道の駅鹿島内のミニ水族館)。1巡目は種別別検索、2巡目は市町村別検索という異なる戦略で実施し、2巡目で新規候補が収束したため列挙完了と判断。0件ではなく6件の候補ありという結論。"
+    },
+    "長崎県": {
+      "sources": ["Wikipedia一覧(動物園/水族館)", "jorudan県別リスト", "汎用Web検索", "長崎県観光公式サイトながさき旅ネット", "壱岐観光ナビ"],
+      "rounds": 2,
+      "note": "本土のほか離島（対馬・壱岐・五島）を個別検索。対馬は対馬野生生物保護センター（環境省運営、ツシマヤマネコ常設公開だが保護研究施設の性格が強くreview）を発見。壱岐は壱岐イルカパーク＆リゾートを発見。五島列島では動植物展示系の常設施設は発見できず（椿油体験施設等はヒットしたが対象外）。九十九島水族館海きらら・むつごろう水族館(休館・2026年3月閉館予定)・唐比ふれあい牧場・大崎自然公園くじゃく園・長崎公園どうぶつひろば・のもざきの小さな水族館サンゴ礁の家を新規発見。西海橋水族館は歴史的閉館のためexcluded。"
+    },
+    "熊本県": {
+      "sources": ["Wikipedia一覧(動物園/水族館)", "jorudan県別リスト", "汎用Web検索"],
+      "rounds": 2,
+      "note": "既存1件(熊本市動植物園)に加え、阿蘇カドリー・ドミニオン、海中水族館シードーナツ(天草)、阿蘇ミルク牧場、阿蘇ファームランドふれあい動物王国、南阿蘇ふれあい動物園フェアリーテール、グリーンランドワンちゃんとゆかいな動物広場、四季の里旭志SHIKINOSATO ZOOを新規発見。月廻り公園は動物展示の実態を十分確認できずreview。天草・阿蘇エリアは牧場系施設が多い地域特性を確認。"
+    },
+    "大分県": {
+      "sources": ["Wikipedia一覧(動物園/水族館)", "jorudan県別リスト", "汎用Web検索"],
+      "rounds": 2,
+      "note": "既存2件に加え、高崎山自然動物園、別府ラクテンチ、くじゅう自然動物園、うみたま体験パークつくみイルカ島、山地獄(別府地獄めぐりの一つ、ミニ動物園)、番匠おさかな館(道の駅やよい)を新規発見。わんわん花みち園は犬中心のふれあい施設でペット的性格が強くreview。別府エリアの地獄めぐり系ミニ動物園は他にもある可能性があるが山地獄以外は動物展示が確認できず対象外とした。"
+    },
+    "宮崎県": {
+      "sources": ["Wikipedia一覧(動物園/水族館)", "jorudan県別リスト", "汎用Web検索"],
+      "rounds": 2,
+      "note": "既存1件に加え、すみえファミリー水族館、高千穂峡淡水魚水族館、出の山淡水魚水族館、志布志湾大黒イルカランド(串間市)、串間いちご畑ゆめ牧場を新規発見。大淀川学習館は川の自然科学館で生体展示が主目的ではないためexcluded。えびの牧場・城山小動物園・宮崎サファリパークはいずれも閉園済みでexcluded。"
+    },
+    "鹿児島県": {
+      "sources": ["Wikipedia一覧(動物園/水族館)", "jorudan県別リスト", "汎用Web検索", "十島村公式サイト", "奄美市/かごしまの旅公式サイト"],
+      "rounds": 2,
+      "note": "本土のほか奄美大島・徳之島・種子島・屋久島を個別検索。奄美大島で奄美海洋展示館・奄美観光ハブセンター(review、ハブ展示ショー中心)を発見。徳之島は徳之島フルーツガーデンがヒットしたが植物園が主体で動物展示の実態が薄くreview。種子島・屋久島では独立した動物園・水族館・ふれあい施設は発見できなかった（十島村中之島のトカラ馬牧場は種子島・屋久島ではないが近接離島として発見、放牧見学のみで正式な施設性が弱くreview）。本土では長崎鼻パーキングガーデン(指宿市)、鹿屋市小動物園を新規発見。鹿児島大学附属入来牧場は畜産研究教育施設のためexcluded。"
+    },
+    "沖縄県": {
+      "sources": ["Wikipedia一覧(動物園/水族館)", "jorudan県別リスト", "汎用Web検索", "おきなわ物語(沖縄観光公式)"],
+      "rounds": 2,
+      "note": "本島のほか宮古島・石垣島・西表島等の八重山、久米島を個別検索。宮古島でまいぱり宮古島熱帯果樹園(review、フルーツ園が主体)、しろう農園ふれあい農園、NPO法人宮古島アニマルパーク(review→予約制・支援者限定のためexcluded寄り)を発見。石垣島でドルフィンファンタジー石垣島、石垣やいま村リスザルの森、平野アニマルテラスを発見。西表島では独立した動物展示施設は発見できず。久米島で久米島ウミガメ館を発見。本島ではDMMかりゆし水族館、沖縄金魚ミュージアム、おきなわワールドハブ博物公園、ダチョウらんど沖縄、東南植物楽園(美らヤシパークオキナワ)、ヤンバルクイナ生態展示学習施設クイナの森、やんばるライオンを新規発見。OKINAWAフルーツらんど・八重山鍾乳洞動植物園・亜熱帯植物楽園は動物展示の実態確認が不十分でreview。ミニミニ動物園は閉園でexcluded。"
+    }
+  },
+  "candidates": [
+    { "name": "大牟田市動物園", "pref": "福岡県", "city": "大牟田市", "foundUrls": ["https://sp.jorudan.co.jp/zoo_aqua/fukuoka.html"], "typeGuess": "zoo", "disposition": "existing", "matchExistingId": "fukuoka_omuta_zoo", "excludeReason": "", "note": "既存収録済み" },
+    { "name": "到津の森公園", "pref": "福岡県", "city": "北九州市", "foundUrls": ["https://sp.jorudan.co.jp/zoo_aqua/fukuoka.html"], "typeGuess": "zoo", "disposition": "existing", "matchExistingId": "fukuoka_itozu_no_mori", "excludeReason": "", "note": "既存収録済み" },
+    { "name": "久留米市鳥類センター", "pref": "福岡県", "city": "久留米市", "foundUrls": ["https://sp.jorudan.co.jp/zoo_aqua/fukuoka.html"], "typeGuess": "zoo", "disposition": "existing", "matchExistingId": "fukuoka_kurume_bird_center", "excludeReason": "", "note": "既存収録済み" },
+    { "name": "福岡市動植物園", "pref": "福岡県", "city": "福岡市", "foundUrls": ["https://zoo.city.fukuoka.lg.jp/"], "typeGuess": "zoo", "disposition": "existing", "matchExistingId": "fukuoka_fukuoka_zoo", "excludeReason": "", "note": "既存収録済み" },
+    { "name": "海の中道海浜公園動物の森", "pref": "福岡県", "city": "福岡市", "foundUrls": ["https://sp.jorudan.co.jp/zoo_aqua/fukuoka.html"], "typeGuess": "zoo", "disposition": "existing", "matchExistingId": "fukuoka_uminaka_animal_forest", "excludeReason": "", "note": "既存収録済み" },
+    { "name": "マリンワールド海の中道", "pref": "福岡県", "city": "福岡市", "foundUrls": ["https://sp.jorudan.co.jp/zoo_aqua/fukuoka.html"], "typeGuess": "aquarium", "disposition": "existing", "matchExistingId": "fukuoka_marine_world_uminonakamichi", "excludeReason": "", "note": "既存収録済み" },
+    { "name": "トリアスふれあい動物園", "pref": "福岡県", "city": "糟屋郡久山町", "foundUrls": ["https://www.biopark.co.jp/toriuszoo/", "https://hisayama.net/spot/%E3%81%B5%E3%82%8C%E3%81%82%E3%81%84%E5%8F%82%E5%8A%A0%E5%9E%8B%E3%81%AE%E3%83%9F%E3%83%8B%E5%8B%95%E7%89%A9%E5%9C%92%E3%80%8C%E3%83%88%E3%83%AA%E3%82%A2%E3%82%B9%E3%81%B5%E3%82%8C%E3%81%82%E3%81%84"], "typeGuess": "zoo", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "長崎バイオパーク運営のサテライトZOO。商業施設トリアス内、ふれあい参加型ミニ動物園" },
+    { "name": "ひびき動物ワールド", "pref": "福岡県", "city": "北九州市若松区", "foundUrls": ["https://kitakyushucity.guide/spots/detail/47a3905b-400a-494a-bbd2-e60cbf3d20b4", "https://hibikinadagp.org/facility/%E3%82%AB%E3%83%B3%E3%82%AC%E3%83%AB%E3%83%BC%E5%BA%83%E5%A0%B4/"], "typeGuess": "zoo", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "響灘緑地(グリーンパーク)内、国内有数の有袋類飼育施設。カンガルー約350頭" },
+    { "name": "ふれあい動物園ピクニカ共和国", "pref": "福岡県", "city": "飯塚市", "foundUrls": ["https://piknica.com/", "https://www.jalan.net/kankou/spt_40205cc3540153642/"], "typeGuess": "zoo", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "八木山高原の固定施設。移動動物園業務も兼業だが常設園あり" },
+    { "name": "だざいふ遊園地なかよしどうぶつらんど", "pref": "福岡県", "city": "太宰府市", "foundUrls": ["https://www.dazaifuyuuenchi.com/nature/", "https://www.crossroadfukuoka.jp/spot/10025"], "typeGuess": "zoo", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "だざいふ遊園地内の独立した常設ふれあい動物エリア" },
+    { "name": "のこのしまアイランドパークミニ動物園", "pref": "福岡県", "city": "福岡市西区(能古島)", "foundUrls": ["https://nokonoshima.com/activities/mini_zoo"], "typeGuess": "zoo", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "能古島の自然公園内、ヤギ・ウサギ・ポニー等のミニ動物園" },
+    { "name": "北九州市立総合農事センター(花農丘公園)", "pref": "福岡県", "city": "北九州市", "foundUrls": ["https://k-nouji.com/", "https://www.crossroadfukuoka.jp/spot/13126"], "typeGuess": "zoo", "disposition": "review", "matchExistingId": null, "excludeReason": "", "note": "農業公園が主体だが木曽馬・小倉牛の放牧見学、ヤギ・ポニー・カピバラふれあいあり。動物展示が主目的か要判定" },
+    { "name": "宮ZOO", "pref": "福岡県", "city": "福津市", "foundUrls": ["https://imachika.com/item/5a3602fd23679c77efda4291/"], "typeGuess": "zoo", "disposition": "review", "matchExistingId": null, "excludeReason": "", "note": "小規模個人経営の動物園。馬・ヤギ・カラス・ヘビ等。公式サイト未確認のため詳細要確認" },
+    { "name": "やながわ有明海水族館", "pref": "福岡県", "city": "柳川市", "foundUrls": ["https://kamesukeiyuu.wixsite.com/yanasui", "https://fukuoka-times.jp/yanagawa-ariakekai-aquarium/"], "typeGuess": "aquarium", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "個人運営の手作り水族館。有明海生物・淡水魚展示、入館200円" },
+    { "name": "筑後川防災施設くるめウス", "pref": "福岡県", "city": "久留米市", "foundUrls": ["http://kurumeus.net/"], "typeGuess": "aquarium", "disposition": "review", "matchExistingId": null, "excludeReason": "", "note": "筑後川の防災・学習施設に併設された無料のミニ淡水魚水族館。主目的は防災学習で水族館は付随的" },
+    { "name": "遠賀川河口堰ミニ水族館コーナー", "pref": "福岡県", "city": "中間市周辺", "foundUrls": ["https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E6%B0%B4%E6%97%8F%E9%A4%A8"], "typeGuess": "aquarium", "disposition": "review", "matchExistingId": null, "excludeReason": "", "note": "Wikipedia一覧記載のみで単独確認未了。河口堰施設内のミニ展示コーナーとみられる" },
+    { "name": "箱崎水族館", "pref": "福岡県", "city": "福岡市", "foundUrls": ["https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E6%B0%B4%E6%97%8F%E9%A4%A8"], "typeGuess": "aquarium", "disposition": "excluded", "matchExistingId": null, "excludeReason": "closed", "note": "歴史的に閉館済みの施設" },
+    { "name": "福岡水族館", "pref": "福岡県", "city": "福岡市", "foundUrls": ["https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E6%B0%B4%E6%97%8F%E9%A4%A8"], "typeGuess": "aquarium", "disposition": "excluded", "matchExistingId": null, "excludeReason": "closed", "note": "歴史的に閉館済みの施設" },
+    { "name": "三潴町アンデスファーム", "pref": "福岡県", "city": "久留米市(旧三潴町)", "foundUrls": ["https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%8B%95%E7%89%A9%E5%9C%92%E4%B8%80%E8%A6%A7"], "typeGuess": "zoo", "disposition": "excluded", "matchExistingId": null, "excludeReason": "closed", "note": "閉園済み" },
+
+    { "name": "三瀬ルベール牧場どんぐり村", "pref": "佐賀県", "city": "佐賀市", "foundUrls": ["https://www.dongurimura.com/", "https://www.sagabai.com/main/?cont=kanko&fid=75"], "typeGuess": "other", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "フランス風観光牧場。山羊とふれあえる動物館、小動物館、ふれあい広場あり。乗馬体験は2025年11月で終了予定" },
+    { "name": "武雄・嬉野メルヘン村(森とリスの遊園地メルヘン村)", "pref": "佐賀県", "city": "武雄市", "foundUrls": ["https://www.marchen-mura.jp/", "https://www.marchen-mura.jp/facilities/cat/animal/"], "typeGuess": "zoo", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "小動物とふれあえる森の遊園地、動物園エリアあり" },
+    { "name": "りんちゃん牧場ふれあいパーク", "pref": "佐賀県", "city": "伊万里市", "foundUrls": ["https://rinboku.jp/", "https://imari-kankou.com/enjoy/%E3%82%8A%E3%82%93%E3%81%A1%E3%82%83%E3%82%93%E7%89%A7%E5%A0%B4-%E3%81%B5%E3%82%8C%E3%81%82%E3%81%84%E3%83%91%E3%83%BC%E3%82%AF/"], "typeGuess": "zoo", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "2021年開園、家族経営の『日本一小さい動物園』を自称。約40種60頭" },
+    { "name": "どさんこミラファーム", "pref": "佐賀県", "city": "唐津市", "foundUrls": ["https://dosanko-mirafarm.net/"], "typeGuess": "other", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "馬に乗れる動物ふれあい牧場、古民家民宿併設" },
+    { "name": "神野公園こども遊園地小動物園", "pref": "佐賀県", "city": "佐賀市", "foundUrls": ["https://kouno.haut.jp/", "https://www.city.saga.lg.jp/main/900.html"], "typeGuess": "zoo", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "こども遊園地内の小動物園。鳥類・ウサギ等飼育。園リニューアルで一部動物は専門施設へ移動済み" },
+    { "name": "干潟交流館なな海", "pref": "佐賀県", "city": "鹿島市", "foundUrls": ["https://www.city.saga-kashima.lg.jp/main/21870.html", "https://saga-kashima-kankou.com/en/spot/4148"], "typeGuess": "aquarium", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "道の駅鹿島内。有明海の干潟生物(ムツゴロウ・ワラスボ等)を展示するミニ水族館" },
+
+    { "name": "長崎バイオパーク", "pref": "長崎県", "city": "西海市", "foundUrls": ["https://sp.jorudan.co.jp/zoo_aqua/nagasaki.html"], "typeGuess": "zoo", "disposition": "existing", "matchExistingId": "nagasaki_biopark", "excludeReason": "", "note": "既存収録済み" },
+    { "name": "九十九島動植物園森きらら", "pref": "長崎県", "city": "佐世保市", "foundUrls": ["https://sp.jorudan.co.jp/zoo_aqua/nagasaki.html"], "typeGuess": "zoo", "disposition": "existing", "matchExistingId": "nagasaki_morikirara", "excludeReason": "", "note": "既存収録済み" },
+    { "name": "長崎ペンギン水族館", "pref": "長崎県", "city": "長崎市", "foundUrls": ["https://sp.jorudan.co.jp/zoo_aqua/nagasaki.html"], "typeGuess": "aquarium", "disposition": "existing", "matchExistingId": "nagasaki_penguin_aquarium", "excludeReason": "", "note": "既存収録済み" },
+    { "name": "九十九島水族館海きらら", "pref": "長崎県", "city": "佐世保市", "foundUrls": ["https://www.umikirara.jp/en/", "https://www.nagasaki-tabinet.com/guide/291"], "typeGuess": "aquarium", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "森きらら(動植物園)とは別施設・別料金の水族館。イルカパフォーマンス、クラゲシンフォニードーム等" },
+    { "name": "むつごろう水族館", "pref": "長崎県", "city": "諫早市", "foundUrls": ["http://www.kantakunosato.co.jp/aquarium/20221001-aquarium/", "https://sp.jorudan.co.jp/zoo_aqua/spot_13050.html"], "typeGuess": "aquarium", "disposition": "review", "matchExistingId": null, "excludeReason": "", "note": "諫早ゆうゆうランド干拓の里内。2022年10月から休館中、2026年3月29日をもって完全閉館予定。suspended/closed判定はマスタ側で要判断" },
+    { "name": "唐比ふれあい牧場", "pref": "長崎県", "city": "諫早市", "foundUrls": ["https://www.city.isahaya.nagasaki.jp/soshiki/43/1671.html"], "typeGuess": "other", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "唐比湿地公園内、無料の放牧ふれあい牧場。牛・馬・羊・山羊・うさぎ等" },
+    { "name": "大崎自然公園くじゃく園", "pref": "長崎県", "city": "未確認(要確認)", "foundUrls": ["https://www.nagasaki-tabinet.com/guide/460"], "typeGuess": "zoo", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "入園無料。約200羽のインドクジャクのドーム型ケージ、フラミンゴ・ポニー等のふれあい広場あり。市区町村は次工程で要確認" },
+    { "name": "長崎公園どうぶつひろば", "pref": "長崎県", "city": "長崎市", "foundUrls": ["https://www.nagasaki-kouen.com/zoo/"], "typeGuess": "zoo", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "明治期からの歴史ある小規模ミニ動物園。ニホンザル・鳥類等" },
+    { "name": "のもざきの小さな水族館サンゴ礁の家", "pref": "長崎県", "city": "長崎市(野母崎)", "foundUrls": ["https://www.nomozaki-suizokukan.com/"], "typeGuess": "aquarium", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "2024年8月開館の個人運営の小規模水族館。野母崎の魚・サンゴ約25水槽" },
+    { "name": "対馬野生生物保護センター", "pref": "長崎県", "city": "対馬市", "foundUrls": ["https://www.env.go.jp/nature/kisho/wildlifecenter/tsushima.html", "https://www.torayama-twcc.jp/"], "typeGuess": "other", "disposition": "review", "matchExistingId": null, "excludeReason": "", "note": "環境省・県・市共同運営。ツシマヤマネコを常設公開しているが、性格は保護研究センターに近い。研究施設として除外対象か要判定" },
+    { "name": "壱岐イルカパーク＆リゾート", "pref": "長崎県", "city": "壱岐市", "foundUrls": ["https://irukapark.com/", "https://www.ikikankou.com/spot/10078"], "typeGuess": "other", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "壱岐島北部の天然入り江を利用したイルカふれあい施設。2019年4月リニューアル" },
+    { "name": "西海橋水族館", "pref": "長崎県", "city": "佐世保市/西海市", "foundUrls": ["https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E6%B0%B4%E6%97%8F%E9%A4%A8"], "typeGuess": "aquarium", "disposition": "excluded", "matchExistingId": null, "excludeReason": "closed", "note": "1958-1988年、歴史的に閉館済み" },
+
+    { "name": "熊本市動植物園", "pref": "熊本県", "city": "熊本市", "foundUrls": ["https://sp.jorudan.co.jp/zoo_aqua/kumamoto.html"], "typeGuess": "zoo", "disposition": "existing", "matchExistingId": "kumamoto_kumamoto_zoo", "excludeReason": "", "note": "既存収録済み" },
+    { "name": "阿蘇カドリー・ドミニオン", "pref": "熊本県", "city": "阿蘇市", "foundUrls": ["https://www.cuddly.co.jp/"], "typeGuess": "zoo", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "クマをメインに扱う体験型動物園。60種350頭" },
+    { "name": "海中水族館シードーナツ(天草パールガーデン)", "pref": "熊本県", "city": "上天草市", "foundUrls": ["https://amakusapearl.com/sea/"], "typeGuess": "aquarium", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "西日本唯一の海に浮かぶドーナツ型水族館。約200種2000点" },
+    { "name": "阿蘇ミルク牧場(らくのうマザーズ)", "pref": "熊本県", "city": "阿蘇郡西原村", "foundUrls": ["https://aso-milk.jp/"], "typeGuess": "other", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "酪農体験型牧場。動物ふれあい広場(牛・馬・ヤギ・羊)あり" },
+    { "name": "阿蘇ファームランドふれあい動物王国", "pref": "熊本県", "city": "阿蘇郡南阿蘇村", "foundUrls": ["https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%8B%95%E7%89%A9%E5%9C%92%E4%B8%80%E8%A6%A7"], "typeGuess": "zoo", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "阿蘇ファームランド内の常設ふれあい動物エリア" },
+    { "name": "南阿蘇ふれあい動物園フェアリーテール", "pref": "熊本県", "city": "阿蘇郡高森町", "foundUrls": ["https://fairytale-zoo.com/"], "typeGuess": "zoo", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "旧牛舎跡地を利用したふれあい動物園。約25種200頭" },
+    { "name": "グリーンランドワンちゃんとゆかいな動物広場", "pref": "熊本県", "city": "荒尾市", "foundUrls": ["https://www.greenland.co.jp/park/attraction/animalplaza/"], "typeGuess": "zoo", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "遊園地グリーンランド内の常設動物ふれあいエリア。犬・ヤギ・羊・ミニブタ等" },
+    { "name": "四季の里旭志(SHIKINOSATO ZOO)", "pref": "熊本県", "city": "菊池市", "foundUrls": ["https://www.shikinosato.info/zoo"], "typeGuess": "zoo", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "アクティブツーリズム複合施設内のふれあい動物広場" },
+    { "name": "月廻り公園", "pref": "熊本県", "city": "阿蘇郡高森町", "foundUrls": ["https://pandanocoto.com/article/zoo_pref/kumamoto"], "typeGuess": "other", "disposition": "review", "matchExistingId": null, "excludeReason": "", "note": "動物展示の実態・規模を十分確認できておらずreview" },
+
+    { "name": "九州自然動物公園アフリカンサファリ", "pref": "大分県", "city": "宇佐市", "foundUrls": ["https://sp.jorudan.co.jp/zoo_aqua/oita.html"], "typeGuess": "zoo", "disposition": "existing", "matchExistingId": "oita_african_safari", "excludeReason": "", "note": "既存収録済み" },
+    { "name": "大分マリーンパレス水族館うみたまご", "pref": "大分県", "city": "大分市", "foundUrls": ["https://sp.jorudan.co.jp/zoo_aqua/oita.html"], "typeGuess": "aquarium", "disposition": "existing", "matchExistingId": "oita_umitamago", "excludeReason": "", "note": "既存収録済み" },
+    { "name": "高崎山自然動物園", "pref": "大分県", "city": "大分市", "foundUrls": ["https://www.visit-oita.jp/spots/detail/4631"], "typeGuess": "zoo", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "野生ニホンザル約1000頭を間近で観察できる自然動物園" },
+    { "name": "別府ラクテンチ", "pref": "大分県", "city": "別府市", "foundUrls": ["https://rakutenchi.jp/animal/"], "typeGuess": "zoo", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "動物園と遊園地の複合施設。動物エリアは入場無料でチンパンジー・ペンギン等展示" },
+    { "name": "くじゅう自然動物園", "pref": "大分県", "city": "玖珠郡九重町", "foundUrls": ["https://www.oita-zoo.com/"], "typeGuess": "zoo", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "放し飼いの鹿・ヤギ・ラマ・ポニー等と散歩できる小規模私営動物園" },
+    { "name": "うみたま体験パークつくみイルカ島", "pref": "大分県", "city": "津久見市", "foundUrls": ["https://www.tsukumi-irukajima.jp/"], "typeGuess": "other", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "うみたまごと津久見市の連携施設。イルカとのふれあい体験型パーク" },
+    { "name": "山地獄", "pref": "大分県", "city": "別府市", "foundUrls": ["https://mediall.jp/landmark/50630", "https://beppu-midoubaru.jp/yama-hell/"], "typeGuess": "zoo", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "別府地獄めぐりの一つ。温泉熱を利用したミニ動物園(カピバラ・フラミンゴ・ヤギ等)" },
+    { "name": "番匠おさかな館(道の駅やよい)", "pref": "大分県", "city": "佐伯市", "foundUrls": ["https://www.visit-saiki.jp/spots/detail/64777216-480a-4055-93c1-b66615cb08eb"], "typeGuess": "aquarium", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "道の駅やよい内の淡水魚水族館。番匠川の生物と世界の熱帯淡水魚" },
+    { "name": "わんわん花みち園", "pref": "大分県", "city": "中津市", "foundUrls": ["https://www.honda.co.jp/dog/travel/data/hanamiti/"], "typeGuess": "other", "disposition": "review", "matchExistingId": null, "excludeReason": "", "note": "犬を中心としたふれあいテーマパーク。ペット的性格が強く動物園基準への該当性は要判定" },
+
+    { "name": "宮崎市フェニックス自然動物園", "pref": "宮崎県", "city": "宮崎市", "foundUrls": ["https://www.miyazaki-city-zoo.jp/"], "typeGuess": "zoo", "disposition": "existing", "matchExistingId": "miyazaki_phoenix_zoo", "excludeReason": "", "note": "既存収録済み" },
+    { "name": "すみえファミリー水族館", "pref": "宮崎県", "city": "延岡市", "foundUrls": ["https://sp.jorudan.co.jp/zoo_aqua/miyazaki.html"], "typeGuess": "aquarium", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "須美江家族旅行村内の小規模水族館" },
+    { "name": "高千穂峡淡水魚水族館", "pref": "宮崎県", "city": "西臼杵郡高千穂町", "foundUrls": ["https://takachiho-kanko.info/sightseeing/11/"], "typeGuess": "aquarium", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "五ヶ瀬川水系の淡水魚中心、約80種展示" },
+    { "name": "出の山淡水魚水族館", "pref": "宮崎県", "city": "小林市", "foundUrls": ["https://www.city.kobayashi.lg.jp/soshikikarasagasu/keizaibushokokankoka/kankojoho/6/1235.html"], "typeGuess": "aquarium", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "出の山公園内。チョウザメ・オオサンショウウオ等100種1500匹" },
+    { "name": "志布志湾大黒イルカランド", "pref": "宮崎県", "city": "串間市", "foundUrls": ["http://irukaland.com/"], "typeGuess": "other", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "イルカふれあい体験型テーマパーク。所在地は宮崎県串間市(志布志湾に面する)" },
+    { "name": "串間いちご畑ゆめ牧場", "pref": "宮崎県", "city": "串間市", "foundUrls": ["https://pandanocoto.com/article/zoo/zoo-kushima"], "typeGuess": "other", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "イチゴ狩り等と併設のヤギ・ヒツジふれあい牧場" },
+    { "name": "大淀川学習館", "pref": "宮崎県", "city": "宮崎市", "foundUrls": ["https://oyodo.miyabunkyo.com/"], "typeGuess": "other", "disposition": "excluded", "matchExistingId": null, "excludeReason": "研究施設", "note": "大淀川流域の自然に関する展示を主とする科学館。生体展示が主目的ではない" },
+    { "name": "えびの牧場", "pref": "宮崎県", "city": "えびの市", "foundUrls": ["https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%8B%95%E7%89%A9%E5%9C%92%E4%B8%80%E8%A6%A7"], "typeGuess": "other", "disposition": "excluded", "matchExistingId": null, "excludeReason": "closed", "note": "閉園済み" },
+    { "name": "城山小動物園", "pref": "宮崎県", "city": "都城市", "foundUrls": ["https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%8B%95%E7%89%A9%E5%9C%92%E4%B8%80%E8%A6%A7"], "typeGuess": "zoo", "disposition": "excluded", "matchExistingId": null, "excludeReason": "closed", "note": "閉園済み" },
+    { "name": "宮崎サファリパーク", "pref": "宮崎県", "city": "都城市", "foundUrls": ["https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%8B%95%E7%89%A9%E5%9C%92%E4%B8%80%E8%A6%A7"], "typeGuess": "zoo", "disposition": "excluded", "matchExistingId": null, "excludeReason": "closed", "note": "閉園済み" },
+
+    { "name": "いおワールドかごしま水族館", "pref": "鹿児島県", "city": "鹿児島市", "foundUrls": ["https://sp.jorudan.co.jp/zoo_aqua/kagoshima.html"], "typeGuess": "aquarium", "disposition": "existing", "matchExistingId": "kagoshima_ioworld_aquarium", "excludeReason": "", "note": "既存収録済み" },
+    { "name": "鹿児島市平川動物公園", "pref": "鹿児島県", "city": "鹿児島市", "foundUrls": ["https://sp.jorudan.co.jp/zoo_aqua/kagoshima.html"], "typeGuess": "zoo", "disposition": "existing", "matchExistingId": "kagoshima_hirakawa_zoo", "excludeReason": "", "note": "既存収録済み" },
+    { "name": "長崎鼻パーキングガーデン", "pref": "鹿児島県", "city": "指宿市", "foundUrls": ["http://nagasakibana.com/"], "typeGuess": "zoo", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "薩摩半島最南端。亜熱帯植物園+放し飼いの原猿・鳥類等の動植物園、開園50年" },
+    { "name": "鹿屋市小動物園(鹿屋中央公園)", "pref": "鹿児島県", "city": "鹿屋市", "foundUrls": ["https://www.city.kanoya.lg.jp/mobile/kouhou/shisetsu/kanko/012.html"], "typeGuess": "zoo", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "大隅半島唯一の動物園。1977年開設、ウサギ・モルモット・ヤギ・クジャク等" },
+    { "name": "奄美海洋展示館", "pref": "鹿児島県", "city": "奄美市(奄美大島)", "foundUrls": ["https://www.city.amami.lg.jp/kanko/shisetsu/kyoiku/003.html"], "typeGuess": "aquarium", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "大浜海浜公園内の水族館。離島(奄美大島)" },
+    { "name": "奄美観光ハブセンター", "pref": "鹿児島県", "city": "奄美市(奄美大島)", "foundUrls": ["https://www.kagoshima-kankou.com/guide/70266"], "typeGuess": "other", "disposition": "review", "matchExistingId": null, "excludeReason": "", "note": "1974年設立、ハブ約40種を飼育・展示。ハブ対マングースショー等の観光施設要素が強く、爬虫類館として含めるか要判定。離島(奄美大島)" },
+    { "name": "トカラ馬牧場", "pref": "鹿児島県", "city": "鹿児島郡十島村(中之島)", "foundUrls": ["https://www.pref.kagoshima.jp/suisuinavi/2795.html", "https://www.tokara.jp/tourism/profile/nakanoshima/"], "typeGuess": "other", "disposition": "review", "matchExistingId": null, "excludeReason": "", "note": "県天然記念物トカラ馬の放牧地。柵越しの自由見学のみで正式な入場施設・料金体系がなく施設としての該当性が弱い。鹿児島港から定期船7時間の秘境離島" },
+    { "name": "鹿児島大学農学部附属農場入来牧場", "pref": "鹿児島県", "city": "薩摩川内市", "foundUrls": ["https://ace1.agri.kagoshima-u.ac.jp/iriki/"], "typeGuess": "other", "disposition": "excluded", "matchExistingId": null, "excludeReason": "研究施設", "note": "大学の畜産教育研究農場。一般来場者向けの動物園ではない" },
+    { "name": "徳之島フルーツガーデン", "pref": "鹿児島県", "city": "大島郡徳之島町", "foundUrls": ["https://nisikawa.net/fruitsgarden/"], "typeGuess": "other", "disposition": "review", "matchExistingId": null, "excludeReason": "", "note": "亜熱帯植物園が主体。『動物などがいます』との記述はあるが独立した常設動物展示エリアの実態は未確認。離島(徳之島)" },
+
+    { "name": "沖縄こどもの国", "pref": "沖縄県", "city": "沖縄市", "foundUrls": ["https://sp.jorudan.co.jp/zoo_aqua/okinawa.html"], "typeGuess": "zoo", "disposition": "existing", "matchExistingId": "okinawa_kodomo_no_kuni", "excludeReason": "", "note": "既存収録済み" },
+    { "name": "ネオパークオキナワ", "pref": "沖縄県", "city": "名護市", "foundUrls": ["https://sp.jorudan.co.jp/zoo_aqua/okinawa.html"], "typeGuess": "zoo", "disposition": "existing", "matchExistingId": "okinawa_neopark", "excludeReason": "", "note": "既存収録済み" },
+    { "name": "沖縄美ら海水族館", "pref": "沖縄県", "city": "国頭郡本部町", "foundUrls": ["https://sp.jorudan.co.jp/zoo_aqua/okinawa.html"], "typeGuess": "aquarium", "disposition": "existing", "matchExistingId": "okinawa_churaumi_aquarium", "excludeReason": "", "note": "既存収録済み" },
+    { "name": "DMMかりゆし水族館", "pref": "沖縄県", "city": "豊見城市", "foundUrls": ["https://kariyushi-aquarium.com/"], "typeGuess": "aquarium", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "イーアス沖縄豊崎内の新しいコンセプト型水族館" },
+    { "name": "沖縄金魚ミュージアム", "pref": "沖縄県", "city": "豊見城市", "foundUrls": ["https://okinawakingyomuseum.com/"], "typeGuess": "aquarium", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "2025年4月開館。沖縄アウトレットモールあしびなー内、金魚2000匹55種の体験型アクアリウム施設" },
+    { "name": "久米島ウミガメ館", "pref": "沖縄県", "city": "島尻郡久米島町", "foundUrls": ["https://kumejimataro.okinawa/"], "typeGuess": "aquarium", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "奥武島。ウミガメ保護施設、離島(久米島)" },
+    { "name": "ドルフィンファンタジー石垣島", "pref": "沖縄県", "city": "石垣市", "foundUrls": ["https://df-ishigaki.com/"], "typeGuess": "aquarium", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "離島(石垣島)、離島ターミナル近くのイルカふれあい施設" },
+    { "name": "石垣やいま村リスザルの森", "pref": "沖縄県", "city": "石垣市", "foundUrls": ["https://www.yaimamura.com/"], "typeGuess": "zoo", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "八重山文化テーマパーク内の常設リスザル展示・ふれあいエリア(60頭以上)。離島(石垣島)" },
+    { "name": "平野アニマルテラス", "pref": "沖縄県", "city": "石垣市", "foundUrls": ["https://www.hiranoanimalterrace.com/"], "typeGuess": "zoo", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "柵のないオープンスペースでカピバラ等とふれあう施設。離島(石垣島)" },
+    { "name": "まいぱり宮古島熱帯果樹園", "pref": "沖縄県", "city": "宮古島市", "foundUrls": ["https://maipari.jp/"], "typeGuess": "other", "disposition": "review", "matchExistingId": null, "excludeReason": "", "note": "熱帯果樹園が主体。宮古馬・ヤギとのふれあいパドックあり。離島(宮古島)、動物展示が主目的かは要判定" },
+    { "name": "しろう農園ふれあい農園", "pref": "沖縄県", "city": "宮古島市", "foundUrls": ["https://www.shirou-nouen.com/farm"], "typeGuess": "other", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "ヤギ・犬とのふれあい体験農園(ヤギの散歩・ミルクあげ等)。離島(宮古島)" },
+    { "name": "NPO法人宮古島アニマルパーク", "pref": "沖縄県", "city": "宮古島市", "foundUrls": ["https://reserva.be/npomap385/about"], "typeGuess": "zoo", "disposition": "excluded", "matchExistingId": null, "excludeReason": "研究施設", "note": "希少動物(琉球犬等)保護目的のNPO施設。見学は支援者限定・予約制で一般常設公開ではない。離島(宮古島)" },
+    { "name": "おきなわワールドハブ博物公園", "pref": "沖縄県", "city": "南城市", "foundUrls": ["https://www.gyokusendo.co.jp/okinawaworld/"], "typeGuess": "other", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "観光複合施設おきなわワールド内の独立したハブ展示・ショーエリア(爬虫類館相当)" },
+    { "name": "ダチョウらんど沖縄", "pref": "沖縄県", "city": "国頭郡今帰仁村", "foundUrls": ["https://zfc.jp/en/zoolist/183"], "typeGuess": "zoo", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "ダチョウの餌やり・ロデオ体験施設" },
+    { "name": "東南植物楽園(美らヤシパークオキナワ)", "pref": "沖縄県", "city": "沖縄市", "foundUrls": ["https://www.southeast-botanical.jp/explore/animal.php"], "typeGuess": "zoo", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "植物園だが約50種の動物ふれあいプラザ(カピバラ・リスザル等)と鳥類ショーがあり独立展示エリアとして該当" },
+    { "name": "OKINAWAフルーツらんど", "pref": "沖縄県", "city": "国頭郡本部町", "foundUrls": ["https://www.jalan.net/kankou/spt_47209ga3550154620/"], "typeGuess": "other", "disposition": "review", "matchExistingId": null, "excludeReason": "", "note": "亜熱帯フルーツ・植物のテーマパークが主体。色鮮やかな鳥とのふれあいがあるが動物展示が主目的かは要判定" },
+    { "name": "ヤンバルクイナ生態展示学習施設クイナの森", "pref": "沖縄県", "city": "国頭郡国頭村", "foundUrls": ["https://kuinapark.com/kuina"], "typeGuess": "zoo", "disposition": "new", "matchExistingId": null, "excludeReason": "", "note": "安田くいなふれあい公園内。ヤンバルクイナを間近で観察できる世界唯一の生態展示施設" },
+    { "name": "やんばるライオン", "pref": "沖縄県", "city": "国頭郡国頭村", "foundUrls": ["https://360navi.com/okinawa/motobu/motobu-ostrich/"], "typeGuess": "zoo", "disposition": "review", "matchExistingId": null, "excludeReason": "", "note": "やんばるの山中にある小規模動物園。ライオン・ヘビ等とのふれあい体験。詳細な運営実態・現況の確認が不十分" },
+    { "name": "八重山鍾乳洞動植物園", "pref": "沖縄県", "city": "石垣市", "foundUrls": ["https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%8B%95%E7%89%A9%E5%9C%92%E4%B8%80%E8%A6%A7"], "typeGuess": "other", "disposition": "review", "matchExistingId": null, "excludeReason": "", "note": "Wikipedia一覧記載のみで単独確認未了。鍾乳洞観光施設に動植物園が付随している可能性。離島(石垣島)" },
+    { "name": "亜熱帯植物楽園", "pref": "沖縄県", "city": "未確認(要確認)", "foundUrls": ["https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%8B%95%E7%89%A9%E5%9C%92%E4%B8%80%E8%A6%A7"], "typeGuess": "other", "disposition": "review", "matchExistingId": null, "excludeReason": "", "note": "Wikipedia一覧記載のみで単独確認未了。東南植物楽園の旧称/別称の可能性もあり要精査(重複の可能性)" },
+    { "name": "ミニミニ動物園", "pref": "沖縄県", "city": "未確認", "foundUrls": ["https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%8B%95%E7%89%A9%E5%9C%92%E4%B8%80%E8%A6%A7"], "typeGuess": "zoo", "disposition": "excluded", "matchExistingId": null, "excludeReason": "closed", "note": "閉園済み" }
+  ]
+}

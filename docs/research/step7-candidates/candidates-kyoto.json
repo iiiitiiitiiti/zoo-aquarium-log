@@ -1,0 +1,256 @@
+{
+  "block": "京都府",
+  "generatedAt": "2026-07-15",
+  "coverage": {
+    "sources": [
+      "Wikipedia（個別施設ページ・京都市動物園/福知山市動物園/丹後魚っ知館/嵐山モンキーパークいわたやま）",
+      "自治体・観光公式サイト（八幡市役所、綾部市観光協会、丹後王国「食のみやこ」公式、宮津市公式、三段池公園公式、福知山観光協会、関西電力プレスリリース）",
+      "汎用Web検索（Google経由: 動物園/水族館/サファリパーク/昆虫館/爬虫類館/鳥類園/ふれあい牧場の種別ごと検索、京都市内・丹後/舞鶴/宮津/福知山/綾部/南丹/京田辺など地域別検索）"
+    ],
+    "rounds": 4,
+    "note": "4巡目で新規候補ゼロを確認して打ち切り。サファリパーク・爬虫類館・鳥類園の独立施設は京都府内で確認できず（フクロウの森等は動物カフェとして除外）。"
+  },
+  "candidates": [
+    {
+      "name": "京都市動物園",
+      "pref": "京都府",
+      "city": "京都市左京区",
+      "foundUrls": [
+        "https://ja.wikipedia.org/wiki/京都市動物園",
+        "https://zoo.city.kyoto.lg.jp/zoo/"
+      ],
+      "typeGuess": "zoo",
+      "disposition": "existing",
+      "matchExistingId": "kyoto_kyoto_city_zoo",
+      "excludeReason": null,
+      "note": "既存マスタと一致。"
+    },
+    {
+      "name": "京都水族館",
+      "pref": "京都府",
+      "city": "京都市下京区",
+      "foundUrls": [
+        "https://www.kyoto-aquarium.com/",
+        "https://www.kyoto-kankou.or.jp/info_search/9546"
+      ],
+      "typeGuess": "aquarium",
+      "disposition": "existing",
+      "matchExistingId": "kyoto_kyoto_aquarium",
+      "excludeReason": null,
+      "note": "既存マスタと一致。"
+    },
+    {
+      "name": "嵐山モンキーパークいわたやま",
+      "pref": "京都府",
+      "city": "京都市西京区",
+      "foundUrls": [
+        "https://ja.wikipedia.org/wiki/嵐山モンキーパークいわたやま",
+        "https://ja.kyoto.travel/tourism/single01.php?category_id=2&tourism_id=1156"
+      ],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "岩田山中腹の野猿公苑。約120〜130頭のニホンザルを餌付け飼育し常設・有料入園（大人800円）。JAZA非加盟の可能性が高いが常設・生体展示・一般来場の基準は満たす。"
+    },
+    {
+      "name": "福知山市動物園（三段池RAVIHOUSE動物園）",
+      "pref": "京都府",
+      "city": "福知山市",
+      "foundUrls": [
+        "https://ja.wikipedia.org/wiki/福知山市動物園",
+        "https://fukuchiyamazoo.jp/",
+        "https://www.sandanike-kouen.or.jp/zoo/",
+        "https://dokkoise.com/spot/fukuchiyama_zoo/"
+      ],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "三段池公園内の市立動物園。北近畿唯一の動物園と紹介される。2021年8月〜命名権契約で「三段池RAVIHOUSE動物園」の呼称も併用。"
+    },
+    {
+      "name": "八幡市子ども動物園（さくら近隣公園内）",
+      "pref": "京都府",
+      "city": "八幡市",
+      "foundUrls": [
+        "https://www.city.yawata.kyoto.jp/0000002969.html",
+        "https://iko-yo.net/facilities/11030"
+      ],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "市立の小規模こども動物園。ヤギ・クジャク・ミニチュアホース等8種展示、市民無料。"
+    },
+    {
+      "name": "綾部ふれあい牧場",
+      "pref": "京都府",
+      "city": "綾部市",
+      "foundUrls": [
+        "https://www.ayabe-kankou.net/spot/fureaibokujyo/",
+        "https://fureaiboku.exblog.jp/"
+      ],
+      "typeGuess": "fureai_farm",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "馬・羊・ヤギ・ウサギ・ネコ等と常設でふれあえる入場無料の牧場。動物とのふれあいが主目的。"
+    },
+    {
+      "name": "丹後王国「食のみやこ」動物ふれあい施設（小さな動物園・動物ふれあい牧場）",
+      "pref": "京都府",
+      "city": "京丹後市",
+      "foundUrls": [
+        "https://tangooukoku.com/map-ja/zoo-2/",
+        "https://tangooukoku.com/map-ja/fureai-bokujo/",
+        "https://tangooukoku.com/"
+      ],
+      "typeGuess": "fureai_farm",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "道の駅「丹後王国」内の「小さな動物園」（ヒツジ・ヤギ・リクガメ等）と「動物ふれあい牧場」（ポニー乗馬等）。同一敷地・共通の道の駅入園（無料、園内エリアとして一体）のため1施設として計上。"
+    },
+    {
+      "name": "京都花園教会水族館",
+      "pref": "京都府",
+      "city": "京都市右京区",
+      "foundUrls": [
+        "https://www.kyoto-museums.jp/museum/west/2226/",
+        "https://www.kyotohanasui.com/en",
+        "https://intojapanwaraku.com/rock/culture-rock/51214/"
+      ],
+      "typeGuess": "aquarium",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "花園教会が運営する私設水族館。淡水魚中心に180種500点以上、アルダブラゾウガメ等の爬虫類も展示。週末一般公開・入場無料、環境省等の認定実績あり。JAZA非加盟の私設水族館として候補。"
+    },
+    {
+      "name": "丹後魚っ知館（関西電力宮津エネルギー研究所）",
+      "pref": "京都府",
+      "city": "宮津市",
+      "foundUrls": [
+        "https://ja.wikipedia.org/wiki/丹後魚っ知館",
+        "https://www.kepco.co.jp/corporate/pr/2023/pdf/20230411_2j.pdf",
+        "https://www.city.miyazu.kyoto.jp/site/citypro/10524.html"
+      ],
+      "typeGuess": "aquarium",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "閉園済み",
+      "note": "関西電力のPR施設。2023年5月30日閉館（宮津エネルギー研究所1・2号機廃止に伴う効率化）。"
+    },
+    {
+      "name": "京都のフクロウの森",
+      "pref": "京都府",
+      "city": "京都市中京区",
+      "foundUrls": [
+        "https://owls-cats-forest.com/free/owls-kyoto",
+        "https://www.jalan.net/kankou/maj_261000000/g2_79/"
+      ],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "動物カフェ",
+      "note": "新京極の商業ビル内フクロウふれあいカフェ。じゃらん等で「動物カフェ」ジャンルに分類。"
+    },
+    {
+      "name": "京都ひょう猫の森",
+      "pref": "京都府",
+      "city": "京都市中京区",
+      "foundUrls": [
+        "https://owls-cats-forest.com/free/cats-kyoto"
+      ],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "動物カフェ",
+      "note": "ベンガルキャット専門の猫カフェ。フクロウの森と同グループ運営。"
+    },
+    {
+      "name": "京都豆柴CAFE",
+      "pref": "京都府",
+      "city": "京都市中京区",
+      "foundUrls": [
+        "https://owls-cats-forest.com/free/mameshiba-kyoto"
+      ],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "動物カフェ",
+      "note": "豆柴カフェ。フクロウの森と同グループ運営。"
+    },
+    {
+      "name": "オオクワ京都昆虫館",
+      "pref": "京都府",
+      "city": "向日市",
+      "foundUrls": [
+        "https://ookuwa-kyoto.com/",
+        "https://www.pref.kyoto.jp/sangyo-sien/company/ookuwa.html"
+      ],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "ペットショップ・販売業（昆虫専門店、標本・生体販売が主目的）",
+      "note": "クワガタ・カブトムシの生体・標本を扱う昆虫専門ショップ。一般来場者向けの常設展示施設ではなく小売店。"
+    },
+    {
+      "name": "動物ふれあいLuff",
+      "pref": "京都府",
+      "city": "京田辺市",
+      "foundUrls": [
+        "https://luff-safamily.com/",
+        "https://www.jalan.net/kankou/spt_guide000000225490/"
+      ],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "商業ビル内・予約制90分ふれあい体験（ミーアキャット等の小動物・エキゾチックアニマル）。動物カフェに近い業態で、常設の動物園・牧場と呼べるか要判断。"
+    },
+    {
+      "name": "舞鶴ふるるファーム",
+      "pref": "京都府",
+      "city": "舞鶴市",
+      "foundUrls": [
+        "https://fururufarm.com/",
+        "https://iko-yo.net/facilities/362"
+      ],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "農村体験・宿泊・飲食が中心の複合レジャー施設で、動物ふれあい（ウサギ・ヤギ・ヒツジ・ポニー）は体験メニューの一部。動物展示が来場の主目的と言えるか要確認。"
+    },
+    {
+      "name": "るり渓やぎ農園",
+      "pref": "京都府",
+      "city": "南丹市",
+      "foundUrls": [
+        "https://www.ruri-yagi.com/",
+        "https://www.jalan.net/kankou/spt_26213cb3512104010/"
+      ],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "山羊を飼育し乳製品（アイス・ヨーグルト・チーズ）を製造販売する循環型農業の会社。来場者向けふれあい・搾乳体験も行うが、酪農・製造販売が主業か観光ふれあい牧場かの位置づけ要確認。"
+    },
+    {
+      "name": "京都市青少年科学センター（チョウの家・淡水魚コーナー）",
+      "pref": "京都府",
+      "city": "京都市伏見区",
+      "foundUrls": [
+        "https://www.edu.city.kyoto.jp/science/",
+        "https://kids.rurubu.jp/article/91381/"
+      ],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "科学館内に年間通じて観察できる「チョウの家」（1日数回の限定公開時間あり）と鴨川の生き物を展示する淡水魚コーナーがある。施設全体の主目的は科学教育で、動物展示は展示の一部。独立した常設展示エリアとして計上すべきか要判断。"
+    }
+  ]
+}

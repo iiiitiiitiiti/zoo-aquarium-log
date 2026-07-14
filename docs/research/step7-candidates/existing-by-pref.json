@@ -1,0 +1,844 @@
+{
+ "北海道": [
+  {
+   "id": "hokkaido_asahiyama_zoo",
+   "name": "旭川市旭山動物園",
+   "city": "旭川市"
+  },
+  {
+   "id": "hokkaido_otaru_aquarium",
+   "name": "おたる水族館",
+   "city": "小樽市"
+  },
+  {
+   "id": "hokkaido_obihiro_zoo",
+   "name": "おびひろ動物園",
+   "city": "帯広市"
+  },
+  {
+   "id": "hokkaido_kushiro_zoo",
+   "name": "釧路市動物園",
+   "city": "釧路市"
+  },
+  {
+   "id": "hokkaido_maruyama_zoo",
+   "name": "札幌市円山動物園",
+   "city": "札幌市"
+  },
+  {
+   "id": "hokkaido_aoao_sapporo",
+   "name": "AOAO SAPPORO",
+   "city": "札幌市"
+  },
+  {
+   "id": "hokkaido_sunpiaza_aquarium",
+   "name": "新さっぽろサンピアザ水族館",
+   "city": "札幌市"
+  },
+  {
+   "id": "hokkaido_chitose_aquarium",
+   "name": "サケのふるさと 千歳水族館",
+   "city": "千歳市"
+  },
+  {
+   "id": "hokkaido_noboribetsu_nixe",
+   "name": "登別マリンパークニクス",
+   "city": "登別市"
+  }
+ ],
+ "青森県": [
+  {
+   "id": "aomori_asamushi_aquarium",
+   "name": "青森県営浅虫水族館",
+   "city": "青森市"
+  },
+  {
+   "id": "aomori_yayoi_ikoi_hiroba",
+   "name": "弥生いこいの広場",
+   "city": "弘前市"
+  }
+ ],
+ "岩手県": [
+  {
+   "id": "iwate_safari_park",
+   "name": "岩手サファリパーク",
+   "city": "一関市"
+  },
+  {
+   "id": "iwate_morioka_zoomo",
+   "name": "盛岡市動物公園ZOOMO",
+   "city": "盛岡市"
+  }
+ ],
+ "宮城県": [
+  {
+   "id": "miyagi_uminomori_aquarium",
+   "name": "仙台うみの杜水族館",
+   "city": "仙台市"
+  },
+  {
+   "id": "miyagi_yagiyama_zoo",
+   "name": "仙台市八木山動物公園",
+   "city": "仙台市"
+  }
+ ],
+ "秋田県": [
+  {
+   "id": "akita_omoriyama_zoo",
+   "name": "秋田市大森山動物園～あきぎんオモリンの森～",
+   "city": "秋田市"
+  },
+  {
+   "id": "akita_oga_aquarium_gao",
+   "name": "男鹿水族館GAO",
+   "city": "男鹿市"
+  }
+ ],
+ "山形県": [
+  {
+   "id": "yamagata_kamo_aquarium",
+   "name": "鶴岡市立加茂水族館",
+   "city": "鶴岡市"
+  }
+ ],
+ "福島県": [
+  {
+   "id": "fukushima_kawasemi_aquarium",
+   "name": "アクアマリンいなわしろカワセミ水族館",
+   "city": "猪苗代町"
+  },
+  {
+   "id": "fukushima_aquamarine_fukushima",
+   "name": "アクアマリンふくしま",
+   "city": "いわき市"
+  }
+ ],
+ "茨城県": [
+  {
+   "id": "ibaraki_oarai_aquarium",
+   "name": "アクアワールド茨城県大洗水族館",
+   "city": "大洗町"
+  },
+  {
+   "id": "ibaraki_kamine_zoo",
+   "name": "日立市かみね動物園",
+   "city": "日立市"
+  }
+ ],
+ "栃木県": [
+  {
+   "id": "tochigi_utsunomiya_zoo",
+   "name": "宇都宮動物園",
+   "city": "宇都宮市"
+  },
+  {
+   "id": "tochigi_nakagawa_aquarium",
+   "name": "栃木県なかがわ水遊園",
+   "city": "大田原市"
+  },
+  {
+   "id": "tochigi_nasu_animal_kingdom",
+   "name": "那須どうぶつ王国",
+   "city": "那須町"
+  },
+  {
+   "id": "tochigi_nasu_safari_park",
+   "name": "那須サファリパーク",
+   "city": "那須町"
+  }
+ ],
+ "群馬県": [
+  {
+   "id": "gunma_kiryugaoka_zoo",
+   "name": "桐生が岡動物園",
+   "city": "桐生市"
+  },
+  {
+   "id": "gunma_safari_park",
+   "name": "群馬サファリパーク",
+   "city": "富岡市"
+  }
+ ],
+ "埼玉県": [
+  {
+   "id": "saitama_omiya_zoo",
+   "name": "大宮公園小動物園",
+   "city": "さいたま市"
+  },
+  {
+   "id": "saitama_osaki_zoo",
+   "name": "大崎公園子供動物園",
+   "city": "さいたま市"
+  },
+  {
+   "id": "saitama_chikozan_zoo",
+   "name": "狭山市立智光山公園こども動物園",
+   "city": "狭山市"
+  },
+  {
+   "id": "saitama_saitama_aquarium",
+   "name": "さいたま水族館",
+   "city": "羽生市"
+  },
+  {
+   "id": "saitama_kodomo_zoo",
+   "name": "埼玉県こども動物自然公園",
+   "city": "東松山市"
+  },
+  {
+   "id": "saitama_tobu_zoo",
+   "name": "東武動物公園",
+   "city": "宮代町"
+  }
+ ],
+ "千葉県": [
+  {
+   "id": "chiba_ichikawa_zoo",
+   "name": "市川市動植物園",
+   "city": "市川市"
+  },
+  {
+   "id": "chiba_ichihara_zou_no_kuni",
+   "name": "市原ぞうの国",
+   "city": "市原市"
+  },
+  {
+   "id": "chiba_kamogawa_sea_world",
+   "name": "鴨川シーワールド",
+   "city": "鴨川市"
+  },
+  {
+   "id": "chiba_chiba_zoo",
+   "name": "千葉市動物公園",
+   "city": "千葉市"
+  }
+ ],
+ "東京都": [
+  {
+   "id": "tokyo_adachi_seibutsuen",
+   "name": "足立区生物園",
+   "city": "足立区"
+  },
+  {
+   "id": "tokyo_kasai_aquarium",
+   "name": "葛西臨海水族園",
+   "city": "江戸川区"
+  },
+  {
+   "id": "tokyo_edogawa_shizen_zoo",
+   "name": "江戸川区自然動物園",
+   "city": "江戸川区"
+  },
+  {
+   "id": "tokyo_oshima_park_zoo",
+   "name": "大島公園動物園",
+   "city": "大島町"
+  },
+  {
+   "id": "tokyo_shinagawa_aquarium",
+   "name": "しながわ水族館",
+   "city": "品川区"
+  },
+  {
+   "id": "tokyo_sumida_aquarium",
+   "name": "すみだ水族館",
+   "city": "墨田区"
+  },
+  {
+   "id": "tokyo_ueno_zoo",
+   "name": "恩賜上野動物園",
+   "city": "台東区"
+  },
+  {
+   "id": "tokyo_sunshine_aquarium",
+   "name": "サンシャイン水族館",
+   "city": "豊島区"
+  },
+  {
+   "id": "tokyo_hamura_zoo",
+   "name": "羽村市動物公園",
+   "city": "羽村市"
+  },
+  {
+   "id": "tokyo_tama_zoo",
+   "name": "多摩動物公園",
+   "city": "日野市"
+  },
+  {
+   "id": "tokyo_machida_risuen",
+   "name": "町田リス園",
+   "city": "町田市"
+  },
+  {
+   "id": "tokyo_maxell_aqua_park",
+   "name": "マクセル アクアパーク品川",
+   "city": "港区"
+  },
+  {
+   "id": "tokyo_inokashira_zoo",
+   "name": "井の頭自然文化園",
+   "city": "武蔵野市"
+  }
+ ],
+ "神奈川県": [
+  {
+   "id": "kanagawa_yomiuriland_ashikakan",
+   "name": "よみうりランドアシカ館",
+   "city": "川崎市"
+  },
+  {
+   "id": "kanagawa_kawasui_aquarium",
+   "name": "カワスイ 川崎水族館",
+   "city": "川崎市"
+  },
+  {
+   "id": "kanagawa_yumemigasaki_zoo",
+   "name": "夢見ヶ崎動物公園",
+   "city": "川崎市"
+  },
+  {
+   "id": "kanagawa_zoorasia",
+   "name": "よこはま動物園ズーラシア",
+   "city": "横浜市"
+  },
+  {
+   "id": "kanagawa_hakkeijima_seaparadise",
+   "name": "横浜・八景島シーパラダイス",
+   "city": "横浜市"
+  },
+  {
+   "id": "kanagawa_nogeyama_zoo",
+   "name": "横浜市立野毛山動物園",
+   "city": "横浜市"
+  },
+  {
+   "id": "kanagawa_kanazawa_zoo",
+   "name": "横浜市立金沢動物園",
+   "city": "横浜市"
+  }
+ ],
+ "新潟県": [
+  {
+   "id": "niigata_umigatari",
+   "name": "上越市立水族博物館 うみがたり",
+   "city": "上越市"
+  },
+  {
+   "id": "niigata_teradomari_aquarium",
+   "name": "長岡市寺泊水族博物館",
+   "city": "長岡市"
+  },
+  {
+   "id": "niigata_marinepia_nihonkai",
+   "name": "新潟市水族館 マリンピア日本海",
+   "city": "新潟市"
+  }
+ ],
+ "富山県": [
+  {
+   "id": "toyama_uozu_aquarium",
+   "name": "魚津水族館",
+   "city": "魚津市"
+  },
+  {
+   "id": "toyama_takaoka_kojo_zoo",
+   "name": "高岡古城公園動物園",
+   "city": "高岡市"
+  },
+  {
+   "id": "toyama_family_park",
+   "name": "富山市ファミリーパーク",
+   "city": "富山市"
+  }
+ ],
+ "石川県": [
+  {
+   "id": "ishikawa_notojima_aquarium",
+   "name": "のとじま水族館",
+   "city": "七尾市"
+  },
+  {
+   "id": "ishikawa_ishikawa_zoo",
+   "name": "いしかわ動物園",
+   "city": "能美市"
+  }
+ ],
+ "福井県": [
+  {
+   "id": "fukui_echizen_matsushima_aquarium",
+   "name": "越前松島水族館",
+   "city": "坂井市"
+  },
+  {
+   "id": "fukui_nishiyama_zoo",
+   "name": "鯖江市西山動物園",
+   "city": "鯖江市"
+  }
+ ],
+ "山梨県": [
+  {
+   "id": "yamanashi_fuji_yusui_aquarium",
+   "name": "山梨県立富士湧水の里水族館",
+   "city": "忍野村"
+  },
+  {
+   "id": "yamanashi_kofu_yuki_zoo",
+   "name": "甲府市遊亀公園附属動物園",
+   "city": "甲府市"
+  }
+ ],
+ "長野県": [
+  {
+   "id": "nagano_iida_zoo",
+   "name": "飯田市立動物園",
+   "city": "飯田市"
+  },
+  {
+   "id": "nagano_omachi_sanpaku_zoo",
+   "name": "市立大町山岳博物館付属園",
+   "city": "大町市"
+  },
+  {
+   "id": "nagano_komoro_zoo",
+   "name": "小諸市動物園",
+   "city": "小諸市"
+  },
+  {
+   "id": "nagano_suzaka_zoo",
+   "name": "須坂市動物園",
+   "city": "須坂市"
+  },
+  {
+   "id": "nagano_chausuyama_zoo",
+   "name": "長野市茶臼山動物園",
+   "city": "長野市"
+  }
+ ],
+ "岐阜県": [
+  {
+   "id": "gifu_aquatotto_aquarium",
+   "name": "世界淡水魚園水族館 アクア・トト ぎふ",
+   "city": "各務原市"
+  }
+ ],
+ "静岡県": [
+  {
+   "id": "shizuoka_izu_shaboten_zoo",
+   "name": "伊豆シャボテン動物公園",
+   "city": "伊東市"
+  },
+  {
+   "id": "shizuoka_nihondaira_zoo",
+   "name": "静岡市立日本平動物園",
+   "city": "静岡市"
+  },
+  {
+   "id": "shizuoka_tokai_univ_marine_museum",
+   "name": "東海大学海洋科学博物館",
+   "city": "静岡市"
+  },
+  {
+   "id": "shizuoka_fuji_safari_park",
+   "name": "富士サファリパーク",
+   "city": "裾野市"
+  },
+  {
+   "id": "shizuoka_hamamatsu_zoo",
+   "name": "浜松市動物園",
+   "city": "浜松市"
+  },
+  {
+   "id": "shizuoka_izu_animal_kingdom",
+   "name": "伊豆アニマルキングダム",
+   "city": "東伊豆町"
+  },
+  {
+   "id": "shizuoka_atagawa_banana_wani",
+   "name": "熱川バナナワニ園",
+   "city": "東伊豆町"
+  },
+  {
+   "id": "shizuoka_rakujuen",
+   "name": "三島市立公園楽寿園",
+   "city": "三島市"
+  }
+ ],
+ "愛知県": [
+  {
+   "id": "aichi_japan_monkey_centre",
+   "name": "日本モンキーセンター",
+   "city": "犬山市"
+  },
+  {
+   "id": "aichi_higashi_park_zoo",
+   "name": "東公園動物園",
+   "city": "岡崎市"
+  },
+  {
+   "id": "aichi_kuragaike_zoo",
+   "name": "鞍ケ池公園動物園",
+   "city": "豊田市"
+  },
+  {
+   "id": "aichi_toyohashi_nonhoi_park",
+   "name": "豊橋総合動植物公園",
+   "city": "豊橋市"
+  },
+  {
+   "id": "aichi_nagoya_port_aquarium",
+   "name": "名古屋港水族館",
+   "city": "名古屋市"
+  },
+  {
+   "id": "aichi_higashiyama_zoo",
+   "name": "東山動植物園",
+   "city": "名古屋市"
+  },
+  {
+   "id": "aichi_sealife_nagoya",
+   "name": "名古屋シーライフ水族館",
+   "city": "名古屋市"
+  },
+  {
+   "id": "aichi_hekinan_aquarium",
+   "name": "碧南海浜水族館",
+   "city": "碧南市"
+  }
+ ],
+ "三重県": [
+  {
+   "id": "mie_ise_sea_paradise",
+   "name": "ゼロ距離水族館 伊勢シーパラダイス",
+   "city": "伊勢市"
+  },
+  {
+   "id": "mie_gokatsura_animal_park",
+   "name": "ごかつら池どうぶつパーク",
+   "city": "多気町"
+  },
+  {
+   "id": "mie_toba_aquarium",
+   "name": "鳥羽水族館",
+   "city": "鳥羽市"
+  }
+ ],
+ "滋賀県": [
+  {
+   "id": "shiga_biwako_museum",
+   "name": "滋賀県立琵琶湖博物館",
+   "city": "草津市"
+  }
+ ],
+ "京都府": [
+  {
+   "id": "kyoto_kyoto_city_zoo",
+   "name": "京都市動物園",
+   "city": "京都市"
+  },
+  {
+   "id": "kyoto_kyoto_aquarium",
+   "name": "京都水族館",
+   "city": "京都市"
+  }
+ ],
+ "大阪府": [
+  {
+   "id": "osaka_satsukiyama_zoo",
+   "name": "池田市立五月山動物園",
+   "city": "池田市"
+  },
+  {
+   "id": "osaka_kaiyukan",
+   "name": "海遊館",
+   "city": "大阪市"
+  },
+  {
+   "id": "osaka_tennoji_zoo",
+   "name": "天王寺動物園",
+   "city": "大阪市"
+  },
+  {
+   "id": "osaka_nifrel",
+   "name": "生きているミュージアム ニフレル",
+   "city": "吹田市"
+  }
+ ],
+ "兵庫県": [
+  {
+   "id": "hyogo_oji_zoo",
+   "name": "神戸市立王子動物園",
+   "city": "神戸市"
+  },
+  {
+   "id": "hyogo_kobe_animal_kingdom",
+   "name": "神戸どうぶつ王国",
+   "city": "神戸市"
+  },
+  {
+   "id": "hyogo_kobe_suma_seaworld",
+   "name": "神戸須磨シーワールド",
+   "city": "神戸市"
+  },
+  {
+   "id": "hyogo_atoa",
+   "name": "átoa",
+   "city": "神戸市"
+  },
+  {
+   "id": "hyogo_kinosaki_marine_world",
+   "name": "城崎マリンワールド",
+   "city": "豊岡市"
+  },
+  {
+   "id": "hyogo_himeji_zoo",
+   "name": "姫路市立動物園",
+   "city": "姫路市"
+  },
+  {
+   "id": "hyogo_himeji_central_park",
+   "name": "姫路セントラルパーク",
+   "city": "姫路市"
+  },
+  {
+   "id": "hyogo_himeji_aquarium",
+   "name": "姫路市立水族館",
+   "city": "姫路市"
+  },
+  {
+   "id": "hyogo_england_hill",
+   "name": "淡路ファームパーク イングランドの丘",
+   "city": "南あわじ市"
+  }
+ ],
+ "奈良県": [
+  {
+   "id": "nara_uda_animal_park",
+   "name": "うだ・アニマルパーク",
+   "city": "宇陀市"
+  }
+ ],
+ "和歌山県": [
+  {
+   "id": "wakayama_adventure_world",
+   "name": "アドベンチャーワールド",
+   "city": "白浜町"
+  },
+  {
+   "id": "wakayama_wakayama_castle_zoo",
+   "name": "和歌山城公園動物園",
+   "city": "和歌山市"
+  }
+ ],
+ "鳥取県": [
+  {
+   "id": "tottori_karo_kanikkokan",
+   "name": "とっとり賀露かにっこ館",
+   "city": "鳥取市"
+  }
+ ],
+ "島根県": [
+  {
+   "id": "shimane_aquas",
+   "name": "島根県立しまね海洋館アクアス",
+   "city": "浜田市"
+  }
+ ],
+ "岡山県": [
+  {
+   "id": "okayama_ikeda_zoo",
+   "name": "池田動物園",
+   "city": "岡山市"
+  },
+  {
+   "id": "okayama_tamano_marine_museum",
+   "name": "玉野市立玉野海洋博物館",
+   "city": "玉野市"
+  }
+ ],
+ "広島県": [
+  {
+   "id": "hiroshima_miyajima_aquarium",
+   "name": "宮島水族館",
+   "city": "廿日市市"
+  },
+  {
+   "id": "hiroshima_asa_zoo",
+   "name": "広島市安佐動物公園",
+   "city": "広島市"
+  },
+  {
+   "id": "hiroshima_fukuyama_zoo",
+   "name": "タカオ福山動物園",
+   "city": "福山市"
+  }
+ ],
+ "山口県": [
+  {
+   "id": "yamaguchi_tokiwa_zoo",
+   "name": "ときわ動物園",
+   "city": "宇部市"
+  },
+  {
+   "id": "yamaguchi_kaikyokan",
+   "name": "下関市立しものせき水族館「海響館」",
+   "city": "下関市"
+  },
+  {
+   "id": "yamaguchi_tokuyama_zoo",
+   "name": "周南市徳山動物園",
+   "city": "周南市"
+  },
+  {
+   "id": "yamaguchi_akiyoshidai_safari",
+   "name": "秋吉台自然動物公園サファリランド",
+   "city": "美祢市"
+  }
+ ],
+ "徳島県": [
+  {
+   "id": "tokushima_tokushima_zoo",
+   "name": "とくしま動物園 STELLA PRESCHOOL ANIMAL KINGDOM",
+   "city": "徳島市"
+  }
+ ],
+ "香川県": [
+  {
+   "id": "kagawa_shikoku_aquarium",
+   "name": "四国水族館",
+   "city": "宇多津町"
+  }
+ ],
+ "愛媛県": [
+  {
+   "id": "ehime_tobe_zoo",
+   "name": "愛媛県立とべ動物園",
+   "city": "砥部町"
+  },
+  {
+   "id": "ehime_osakana_kan",
+   "name": "虹の森公園おさかな館",
+   "city": "松野町"
+  }
+ ],
+ "高知県": [
+  {
+   "id": "kochi_wanpark_animal_land",
+   "name": "わんぱーくこうちアニマルランド",
+   "city": "高知市"
+  },
+  {
+   "id": "kochi_katurahama_aquarium",
+   "name": "桂浜水族館",
+   "city": "高知市"
+  },
+  {
+   "id": "kochi_noichi_zoo",
+   "name": "高知県立のいち動物公園",
+   "city": "香南市"
+  }
+ ],
+ "福岡県": [
+  {
+   "id": "fukuoka_omuta_zoo",
+   "name": "大牟田市動物園",
+   "city": "大牟田市"
+  },
+  {
+   "id": "fukuoka_itozu_no_mori",
+   "name": "到津の森公園",
+   "city": "北九州市"
+  },
+  {
+   "id": "fukuoka_kurume_bird_center",
+   "name": "久留米市鳥類センター",
+   "city": "久留米市"
+  },
+  {
+   "id": "fukuoka_fukuoka_zoo",
+   "name": "福岡市動植物園",
+   "city": "福岡市"
+  },
+  {
+   "id": "fukuoka_uminaka_animal_forest",
+   "name": "海の中道海浜公園動物の森",
+   "city": "福岡市"
+  },
+  {
+   "id": "fukuoka_marine_world_uminonakamichi",
+   "name": "マリンワールド海の中道",
+   "city": "福岡市"
+  }
+ ],
+ "長崎県": [
+  {
+   "id": "nagasaki_biopark",
+   "name": "長崎バイオパーク",
+   "city": "西海市"
+  },
+  {
+   "id": "nagasaki_morikirara",
+   "name": "九十九島動植物園森きらら",
+   "city": "佐世保市"
+  },
+  {
+   "id": "nagasaki_penguin_aquarium",
+   "name": "長崎ペンギン水族館",
+   "city": "長崎市"
+  }
+ ],
+ "熊本県": [
+  {
+   "id": "kumamoto_kumamoto_zoo",
+   "name": "熊本市動植物園",
+   "city": "熊本市"
+  }
+ ],
+ "大分県": [
+  {
+   "id": "oita_african_safari",
+   "name": "九州自然動物公園アフリカンサファリ",
+   "city": "宇佐市"
+  },
+  {
+   "id": "oita_umitamago",
+   "name": "大分マリーンパレス水族館「うみたまご」",
+   "city": "大分市"
+  }
+ ],
+ "宮崎県": [
+  {
+   "id": "miyazaki_phoenix_zoo",
+   "name": "宮崎市フェニックス自然動物園",
+   "city": "宮崎市"
+  }
+ ],
+ "鹿児島県": [
+  {
+   "id": "kagoshima_ioworld_aquarium",
+   "name": "いおワールドかごしま水族館",
+   "city": "鹿児島市"
+  },
+  {
+   "id": "kagoshima_hirakawa_zoo",
+   "name": "鹿児島市平川動物公園",
+   "city": "鹿児島市"
+  }
+ ],
+ "沖縄県": [
+  {
+   "id": "okinawa_kodomo_no_kuni",
+   "name": "沖縄こどもの国",
+   "city": "沖縄市"
+  },
+  {
+   "id": "okinawa_neopark",
+   "name": "ネオパークオキナワ",
+   "city": "名護市"
+  },
+  {
+   "id": "okinawa_churaumi_aquarium",
+   "name": "沖縄美ら海水族館",
+   "city": "本部町"
+  }
+ ]
+}

@@ -1,0 +1,345 @@
+{
+  "block": "三重県",
+  "generatedAt": "2026-07-15",
+  "coverage": {
+    "三重県": {
+      "sources": [
+        "Wikipedia 日本の動物園一覧",
+        "ホームメイト 三重県の動物園一覧 (https://www.homemate-research-zoo.com/24/list/)",
+        "ホームメイト 三重県の水族館一覧 (https://www.homemate-research-aquarium.com/24/list/)",
+        "観光三重 公式サイト (kankomie.or.jp)",
+        "各施設公式サイト・地域ニュースサイト",
+        "汎用Web検索（動物園/水族館/サファリパーク/昆虫館/爬虫類館/鳥類園/ふれあい牧場の種別ごと、および市町村別クエリ）"
+      ],
+      "rounds": 3,
+      "note": "1巡目: 種別横断検索（動物園/水族館/サファリパーク/昆虫館/ふれあい牧場）で主要施設を把握。2巡目: 個別施設の詳細確認と町村別検索（紀宝町・いなべ市・桑名市・御浜町・津市・菰野町等）で新規候補を追加発見。3巡目: 亀山市・志摩市・ペンギン展示・猛禽類展示という切り口、およびWikipedia一覧・ホームメイト一覧との突合で新規候補ゼロを確認（亀山市に動物園なし、志摩市は志摩マリンランド閉館のみ、ペンギン検索は既知施設のみ、二見シーパラダイスは伊勢シーパラダイスの旧称と判明）。3巡目で新規ゼロを確認したため収束と判断。"
+    }
+  },
+  "candidates": [
+    {
+      "name": "大内山動物園",
+      "pref": "三重県",
+      "city": "度会郡大紀町",
+      "foundUrls": [
+        "http://www.oouchiyama-zoo.com/",
+        "https://www.homemate-research-zoo.com/24/list/"
+      ],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "個人経営でライオン・トラ等の猛獣を飼育する全国でも珍しい私立動物園。既存収録リストに未掲載。"
+    },
+    {
+      "name": "タケガワふれあい動物園",
+      "pref": "三重県",
+      "city": "松阪市",
+      "foundUrls": [
+        "https://www.matsusaka-kanko.com/org/org/%E4%B8%80%E7%A4%BE%E3%82%BF%E3%82%B1%E3%82%AC%E3%83%AF%E3%81%B5%E3%82%8C%E3%81%82%E3%81%84%E5%8B%95%E7%89%A9%E5%9C%92/",
+        "https://takegawafureaizoo.stores.jp/",
+        "https://yomotto.jp/2025/06/26/3092061/"
+      ],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "保護動物専門のふれあい動物園。松阪市新松ヶ島町から同市伊勢寺町2613-13へ移転計画中で、開園目安は2026年8～9月（用地の農地転用許可手続きが難航し当初予定の2026年春から延期）。移転元の現在の営業状況・移転先の開業実績は未確認のためreviewに近い扱いを推奨（後工程で公式サイト確認要）。"
+    },
+    {
+      "name": "赤目滝水族館",
+      "pref": "三重県",
+      "city": "名張市",
+      "foundUrls": [
+        "https://akame-aquarium.com/",
+        "https://www.kankomie.or.jp/spot/22178",
+        "https://www.homemate-research-aquarium.com/24/list/"
+      ],
+      "typeGuess": "aquarium",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "2024年4月、赤目四十八滝の玄関口に「日本サンショウウオセンター」から改称・リニューアルオープン。オオサンショウウオ（特別天然記念物）ほか渓谷産の魚類・両生類・水生昆虫を展示。"
+    },
+    {
+      "name": "鳥羽湾めぐりとイルカ島（日向島）",
+      "pref": "三重県",
+      "city": "鳥羽市",
+      "foundUrls": [
+        "https://shima-marineleisure.com/toba/island"
+      ],
+      "typeGuess": "aquarium",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "鳥羽湾の無人島「日向島」の通称。入園無料。イルカ・アシカショー、イルカタッチ、カワウソ展示など生体展示・ふれあいを常設で実施。鳥羽水族館とは別法人（志摩マリンレジャー運営）の別施設。"
+    },
+    {
+      "name": "道の駅 紀宝町ウミガメ公園（ウミガメ水族館）",
+      "pref": "三重県",
+      "city": "南牟婁郡紀宝町",
+      "foundUrls": [
+        "https://umigame.info/",
+        "https://umigame.info/information/"
+      ],
+      "typeGuess": "aquarium",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "ウミガメの保護研究拠点。館内の「ウミガメ水族館」でウミガメ・リクガメ・淡水ガメ10種以上、熊野灘の海水魚水槽、タッチングプールを展示。入館無料。"
+    },
+    {
+      "name": "水辺の里公園 自然水族館",
+      "pref": "三重県",
+      "city": "いなべ市大安町",
+      "foundUrls": [
+        "https://www.city.inabe.mie.jp/kyoiku/shizen/1013261/index.html"
+      ],
+      "typeGuess": "aquarium",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "いなべ市教育委員会運営の小規模施設。宇賀川・員弁川の河川環境を再現し、アブラハヤ・カワムツ等の淡水魚を横から観察できる水槽展示。現況の開館時間・料金は市公式ページに明記なく後工程で要確認。"
+    },
+    {
+      "name": "ひつじみかん牧場",
+      "pref": "三重県",
+      "city": "南牟婁郡御浜町",
+      "foundUrls": [
+        "https://hitsujimikan.jimdofree.com/",
+        "https://www.kankomie.or.jp/spot/23389"
+      ],
+      "typeGuess": "other",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "2017年開業。みかん畑の一角で羊約20頭の餌やり・ふれあいが主目的の牧場。入場無料、水曜・雨天休。"
+    },
+    {
+      "name": "南部丘陵公園（小動物園エリア）",
+      "pref": "三重県",
+      "city": "四日市市",
+      "foundUrls": [
+        "http://mie.lin.gr.jp/fureai/farm007.htm",
+        "https://www.kankomie.or.jp/spot/3565"
+      ],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "四日市市最大の総合公園内に、ウサギ・モルモット・クジャク・ヤギ・ヒツジ等を飼育する「小動物園」コーナーあり（日曜13:30-14:30ふれあいタイム等）。公園全体はスポーツ施設等も含む総合公園で、動物展示が来園の主目的とまでは言えない可能性があり、独立施設として収録すべきか要判断。"
+    },
+    {
+      "name": "伊賀の里モクモク手づくりファーム（のんびり牧場ゾーン）",
+      "pref": "三重県",
+      "city": "伊賀市",
+      "foundUrls": [
+        "https://www.moku-moku.com/farm/nonbiri.html",
+        "https://www.moku-moku.com/"
+      ],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "農業公園。ミニブタの散歩・乳しぼり体験・ポニー乗馬等の動物ふれあいゾーンがあるが、施設全体は手作り体験・食・宿泊・買い物が中心で、動物展示が来園の主目的とは言い切れない大型複合施設。独立収録の要否は要判断。"
+    },
+    {
+      "name": "ごかつら池どうぶつパーク",
+      "pref": "三重県",
+      "city": "多気郡多気町",
+      "foundUrls": [
+        "https://gokatsura.jp/",
+        "https://www.town.taki.mie.jp/life/soshiki/kikakuchosei/kanko_event/furusatomura/4110.html"
+      ],
+      "typeGuess": "zoo",
+      "disposition": "existing",
+      "matchExistingId": "mie_gokatsura_animal_park",
+      "excludeReason": "",
+      "note": "既存収録済み。旧称「花と動物ふれあい広場」がリニューアル改修を経て2024年6月29日に現名称で再オープン。旧称でもWikipedia等に掲載されているが同一施設。"
+    },
+    {
+      "name": "鳥羽水族館",
+      "pref": "三重県",
+      "city": "鳥羽市",
+      "foundUrls": [
+        "https://www.homemate-research-aquarium.com/24/list/"
+      ],
+      "typeGuess": "aquarium",
+      "disposition": "existing",
+      "matchExistingId": "mie_toba_aquarium",
+      "excludeReason": "",
+      "note": "既存収録済み。"
+    },
+    {
+      "name": "ゼロ距離水族館 伊勢シーパラダイス",
+      "pref": "三重県",
+      "city": "伊勢市",
+      "foundUrls": [
+        "https://ise-seaparadise.com/",
+        "https://ja.wikipedia.org/wiki/%E3%82%BC%E3%83%AD%E8%B7%9D%E9%9B%A2%E6%B0%B4%E6%97%8F%E9%A4%A8%E4%BC%8A%E5%8B%A2%E3%82%B7%E3%83%BC%E3%83%91%E3%83%A9%E3%83%80%E3%82%A4%E3%82%B9"
+      ],
+      "typeGuess": "aquarium",
+      "disposition": "existing",
+      "matchExistingId": "mie_ise_sea_paradise",
+      "excludeReason": "",
+      "note": "既存収録済み。旧称「二見シーパラダイス」（1966-）→「伊勢夫婦岩ふれあい水族館シーパラダイス」（2016-）→現名称（2024-）。同一施設の名称変遷。"
+    },
+    {
+      "name": "志摩マリンランド",
+      "pref": "三重県",
+      "city": "志摩市",
+      "foundUrls": [
+        "https://ja.wikipedia.org/wiki/%E5%BF%97%E6%91%A9%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%A9%E3%83%B3%E3%83%89"
+      ],
+      "typeGuess": "aquarium",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "閉園済み",
+      "note": "老朽化により2021年3月31日をもって営業休止。跡地は未活用のまま。"
+    },
+    {
+      "name": "四日市市ふれあい牧場",
+      "pref": "三重県",
+      "city": "四日市市",
+      "foundUrls": [
+        "https://www.kankomie.or.jp/spot/3910"
+      ],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "閉園済み",
+      "note": "令和7年（2025年）11月30日をもって閉園。"
+    },
+    {
+      "name": "日本カモシカセンター",
+      "pref": "三重県",
+      "city": "三重郡菰野町",
+      "foundUrls": [
+        "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%82%AB%E3%83%A2%E3%82%B7%E3%82%AB%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC"
+      ],
+      "typeGuess": "zoo",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "閉園済み",
+      "note": "御在所岳山頂にあった世界唯一のカモシカ専門動物園。2006年11月30日閉園。動物は各地の動物園へ移送。"
+    },
+    {
+      "name": "サニーワールド長島",
+      "pref": "三重県",
+      "city": "桑名市",
+      "foundUrls": [
+        "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%8B%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89%E9%95%B7%E5%B3%B6"
+      ],
+      "typeGuess": "zoo",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "閉園済み",
+      "note": "名鉄グループ運営の熱帯動物園。1968年開園、1985年に動物園営業終了しスポーツレジャー施設へ転換（現・長島スポーツランド）。"
+    },
+    {
+      "name": "紙の昆虫館",
+      "pref": "三重県",
+      "city": "伊勢市二見町",
+      "foundUrls": [
+        "https://www.iseshima-kanko.jp/spot/121120"
+      ],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "紙製の昆虫模型・アート作品を展示する施設で生体展示ではない。生きた動物・水生生物の展示という包含基準を満たさない。"
+    },
+    {
+      "name": "りんたろう昆虫博物館",
+      "pref": "三重県",
+      "city": "伊賀市",
+      "foundUrls": [
+        "https://insect.rintaro.work/"
+      ],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "カブトムシ・クワガタ等の生体販売を主業とする専門ショップに標本展示コーナーを併設した形態。ペットショップに近く、標本展示部分は剥製/標本のみに該当するため除外基準に合致。"
+    },
+    {
+      "name": "ふれあいどうぶつカフェ fuu",
+      "pref": "三重県",
+      "city": "鈴鹿市",
+      "foundUrls": [
+        "https://news.yahoo.co.jp/expert/articles/b8179e5d8bcb1760b0821ae5e6c52f07a1b8c0f5"
+      ],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "カピバラ・フラミンゴ・ヤギ・フクロウ等がいる動物カフェ。2023年1月開業。除外基準「動物カフェ」に該当。"
+    },
+    {
+      "name": "保護猫カフェ285",
+      "pref": "三重県",
+      "city": "津市",
+      "foundUrls": [
+        "https://neco.285.co.jp/"
+      ],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "保護猫と触れ合える猫カフェ。除外基準「動物カフェ」に該当。"
+    },
+    {
+      "name": "松阪農業公園ベルファーム",
+      "pref": "三重県",
+      "city": "松阪市",
+      "foundUrls": [
+        "https://www.bellfarm.jp/about/",
+        "https://ja.wikipedia.org/wiki/%E6%9D%BE%E9%98%AA%E8%BE%B2%E6%A5%AD%E5%85%AC%E5%9C%92%E3%83%99%E3%83%AB%E3%83%95%E3%82%A1%E3%83%BC%E3%83%A0"
+      ],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "イングリッシュガーデン・体験講座・飲食・買い物が中心の農業公園で、常設の動物展示エリアは確認できず。動物展示を主目的とする施設という包含基準を満たさない。"
+    },
+    {
+      "name": "三重県上野森林公園",
+      "pref": "三重県",
+      "city": "伊賀市",
+      "foundUrls": [
+        "https://ueno-forest-park.jp/",
+        "https://kids.rurubu.jp/article/66617/"
+      ],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "県営の里山公園。ビジターコテージ展示室は昆虫標本とパネル展示が中心で、常設の生体展示施設ではない。剥製/標本のみに近く除外基準に合致。"
+    },
+    {
+      "name": "REP GYM",
+      "pref": "三重県",
+      "city": "伊賀市",
+      "foundUrls": [
+        "https://rep-gym.com/"
+      ],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "爬虫類専門ショップ（予約制見学）。ペットショップに該当し除外基準に合致。"
+    },
+    {
+      "name": "isereptiles",
+      "pref": "三重県",
+      "city": "伊勢市",
+      "foundUrls": [
+        "https://isereptiles.com/style07.aspx"
+      ],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "爬虫類繁殖・販売の専門ショップ。ペットショップに該当し除外基準に合致。"
+    }
+  ]
+}

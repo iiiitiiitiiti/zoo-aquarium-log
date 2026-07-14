@@ -1,0 +1,273 @@
+{
+  "block": "滋賀県",
+  "generatedAt": "2026-07-15T00:00:00+09:00",
+  "coverage": {
+    "rounds": 3,
+    "sources": [
+      "Wikipedia(一覧/カテゴリ)",
+      "県・市町観光公式サイト(pref.shiga.lg.jp, koka-portal.jp, takashima-kanko.jp 等)",
+      "汎用Web検索(施設公式サイト・地域メディア・比較サイト)"
+    ],
+    "searchTermsUsed": [
+      "動物園", "水族館", "サファリパーク", "昆虫館", "爬虫類館", "鳥類園", "ふれあい牧場", "動物ふれあい施設",
+      "閉園/廃業 確認クエリ"
+    ],
+    "note": "3巡目で新規候補ゼロを確認して打ち切り。"
+  },
+  "candidates": [
+    {
+      "name": "滋賀県立琵琶湖博物館",
+      "pref": "滋賀県",
+      "city": "草津市",
+      "foundUrls": ["https://www.biwahaku.jp/exhibition/aqua.html"],
+      "typeGuess": "水族館(淡水魚中心・博物館併設)",
+      "disposition": "existing",
+      "matchExistingId": "shiga_biwako_museum",
+      "excludeReason": null,
+      "note": "existing-by-pref.json の登録施設。水族展示室あり。"
+    },
+    {
+      "name": "めっちゃおもろい動物園",
+      "pref": "滋賀県",
+      "city": "甲賀市水口町北泉1-7",
+      "foundUrls": [
+        "https://koka-portal.jp/%E3%82%81%E3%81%A3%E3%81%A1%E3%82%83%E3%81%8A%E3%82%82%E3%82%8D%E3%81%84%E5%8B%95%E7%89%A9%E5%9C%92/",
+        "https://news.p-mom.net/2021/11/30/"
+      ],
+      "typeGuess": "動物園(屋内・ふれあい型)",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "2021年6月開園。滋賀県唯一の室内動物園を謳う。ショッピングモール隣接だが常設独立施設。"
+    },
+    {
+      "name": "滋賀農業公園ブルーメの丘（動物ふれあい広場・ふれあい昆虫爬虫類ワールド）",
+      "pref": "滋賀県",
+      "city": "蒲生郡日野町西大路843",
+      "foundUrls": ["https://www.blumenooka.jp/touch/"],
+      "typeGuess": "農業公園内ふれあい牧場+昆虫爬虫類館(複合)",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "農業公園内の常設エリア。動物ふれあい広場と昆虫爬虫類展示（ヘラクレスオオカブト等）を含む。"
+    },
+    {
+      "name": "成田ふれあい牧場",
+      "pref": "滋賀県",
+      "city": "甲賀市甲南町新治696",
+      "foundUrls": ["https://narita-fureai.net/", "https://iko-yo.net/facilities/14360"],
+      "typeGuess": "ふれあい牧場(乳牛中心)",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "乳牛約300頭のほかヤギ・羊・ポニー・豚等。入場無料。"
+    },
+    {
+      "name": "山田牧場",
+      "pref": "滋賀県",
+      "city": "甲賀市信楽町神山2077",
+      "foundUrls": ["https://www.no-fu-yamadabokujyou.com/"],
+      "typeGuess": "ふれあい牧場(牛・ポニー・ヤギ等)",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "入場無料・年中無休。乳製品販売所併設。"
+    },
+    {
+      "name": "滋賀県畜産技術振興センター ふれあい広場",
+      "pref": "滋賀県",
+      "city": "蒲生郡日野町山本695",
+      "foundUrls": ["https://www.pref.shiga.lg.jp/chikugi/fureai/326375.html"],
+      "typeGuess": "ふれあい牧場(公的施設)",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "県の畜産技術振興センターが一部開放。羊・ウサギ・ポニー等。入場無料。"
+    },
+    {
+      "name": "道の駅 アグリパーク竜王 動物ふれあい広場",
+      "pref": "滋賀県",
+      "city": "蒲生郡竜王町山之上6526",
+      "foundUrls": ["https://www.aguri-p.com/animal.html"],
+      "typeGuess": "ふれあい牧場(道の駅併設)",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "ポニー・ウサギ・ヤギ・ヒツジ等。有料。"
+    },
+    {
+      "name": "滋賀県南郷水産センター",
+      "pref": "滋賀県",
+      "city": "大津市黒津4-5-1",
+      "foundUrls": ["http://www.suisan-center.com/", "https://www.pref.shiga.lg.jp/gt-shiga/destination/316889.html"],
+      "typeGuess": "水族館・釣り／つかみどり体験施設",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "1966年開館。生きた魚の展示・ふれあい・釣りが主体。現状は営業中（火曜定休、年始休み等あり）。"
+    },
+    {
+      "name": "小さな水族館 びわこベース",
+      "pref": "滋賀県",
+      "city": "大津市木戸1383-1",
+      "foundUrls": ["https://www.biwako-base.com/", "https://shigatoco.com/toco/biwakobase/"],
+      "typeGuess": "水族館(淡水生物・生息域外保全)",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "2022年7月開館。琵琶湖博物館元飼育員が運営。常時100種以上展示。開館日は金土日祝のみ。"
+    },
+    {
+      "name": "観光養老牧場 メタセコイアと馬の森",
+      "pref": "滋賀県",
+      "city": "高島市マキノ町寺久保833-1",
+      "foundUrls": ["https://mhf.tcc-japan.com/", "https://prtimes.jp/main/html/rd/p/000000006.000116137.html"],
+      "typeGuess": "ふれあい牧場(引退競走馬・ポニー)",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "2025年4月19日グランドオープン。引退競走馬・ミニチュアホースと常時ふれあい可能。"
+    },
+    {
+      "name": "ローザンベリー多和田 羊のふれあい牧場",
+      "pref": "滋賀県",
+      "city": "米原市多和田610-2",
+      "foundUrls": ["https://www.rb-tawada.com/facility/play/fureai/"],
+      "typeGuess": "ふれあい牧場(羊・複合レジャー施設内)",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "花畑・レジャー複合施設内の常設ふれあい牧場エリア。"
+    },
+    {
+      "name": "ビートルランド・米原",
+      "pref": "滋賀県",
+      "city": "米原市",
+      "foundUrls": ["https://www.beetleland-maibara.com/"],
+      "typeGuess": "昆虫館(甲虫ふれあい・屋内常設)",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "カブトムシ・クワガタと常時ふれあえる屋内展示施設。"
+    },
+    {
+      "name": "安曇川山羊農園 ワカゴロウと愉快な動物たち",
+      "pref": "滋賀県",
+      "city": "高島市安曇川町南古賀",
+      "foundUrls": [
+        "https://shiga.press/travel/%E6%BB%8B%E8%B3%80%E3%81%AE%E3%80%8C%E5%8B%95%E7%89%A9%E3%81%A8%E3%81%AE%E3%81%B5%E3%82%8C%E3%81%82%E3%81%84%E3%80%8D%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88%E3%80%907%E9%81%B8%E3%80%91%E7%99%92%E3%81%97/",
+        "https://www.facebook.com/p/%E5%AE%89%E6%9B%87%E5%B7%9D%E5%B1%B1%E7%BE%8A%E8%BE%B2%E5%9C%92-100010109948098/"
+      ],
+      "typeGuess": "ふれあい牧場(ヤギ・小動物)",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "地域メディアで「動物園・観光園タイプ」として他の常設ふれあい施設と並列掲載。詳細な営業体制は後工程で公式確認要。"
+    },
+    {
+      "name": "忠連谷ひつじの里",
+      "pref": "滋賀県",
+      "city": "東近江市池之脇町",
+      "foundUrls": [
+        "http://www.shigahochi.co.jp/info.php?type=article&id=A0015961",
+        "https://ameblo.jp/0365bk7kv/entry-12474421266.html"
+      ],
+      "typeGuess": "石窯パン工房併設のヒツジふれあい施設",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "「ワイルドキッチン石窯パン工房」がメインでヒツジ十数頭は併設という位置づけに見える。動物展示が来場の主目的かどうか公式サイトで要確認。"
+    },
+    {
+      "name": "寿長生の郷 ヤギ農地",
+      "pref": "滋賀県",
+      "city": "大津市大石龍門4丁目",
+      "foundUrls": [
+        "https://shigatoco.com/toco/sunainosato/",
+        "https://co-trip.jp/article/654361"
+      ],
+      "typeGuess": "和菓子・里山施設内のヤギ放牧エリア",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "叶匠寿庵の和菓子・里山散策施設で、ヤギは除草目的の放牧が人気アトラクション化したもの。主目的は和菓子・里山体験の可能性が高く要確認。"
+    },
+    {
+      "name": "びわ湖わんわん王国",
+      "pref": "滋賀県",
+      "city": "守山市",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/%E3%81%B3%E3%82%8F%E6%B9%96%E3%82%8F%E3%82%93%E3%82%8F%E3%82%93%E7%8E%8B%E5%9B%BD"],
+      "typeGuess": "動物園(犬のテーマパーク)",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "閉園済み",
+      "note": "1998年10月開園、2005年1月31日閉園。犬約80種360頭を展示していた。"
+    },
+    {
+      "name": "めっちゃさわれる動物園（ピエリ守山）",
+      "pref": "滋賀県",
+      "city": "守山市今浜町",
+      "foundUrls": ["https://animals-peace.net/zoo/fureai/mecchazoo-close2019jan.html"],
+      "typeGuess": "動物園(ショッピングモール内ふれあい型)",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "閉園済み",
+      "note": "堀井動物園が運営。2019年1月15日閉園。運営元は後に無許可飼育で動物取扱業登録取消（2020年）。"
+    },
+    {
+      "name": "滋賀サファリ博物館",
+      "pref": "滋賀県",
+      "city": "甲賀市信楽町",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/%E6%BB%8B%E8%B3%80%E3%82%B5%E3%83%95%E3%82%A1%E3%83%AA%E5%8D%9A%E7%89%A9%E9%A4%A8"],
+      "typeGuess": "剥製標本博物館(生体展示なし)",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "閉園済み",
+      "note": "2025年5月11日閉館。加えて展示は剥製標本のみで生体展示ではなく、いずれにせよ包含基準を満たさない。"
+    },
+    {
+      "name": "ビラデスト今津 世界の昆虫展とカブトムシの里",
+      "pref": "滋賀県",
+      "city": "高島市今津町",
+      "foundUrls": ["https://villagedest.com/nature01/", "https://www.pref.shiga.lg.jp/gt-shiga/destination/319664.html"],
+      "typeGuess": "昆虫ふれあいイベント(季節限定)",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "期間限定展示",
+      "note": "アウトドア施設「ビラデスト今津」内で毎年夏(7月中旬〜8月中旬)に開催される期間限定イベント。常設ではない。"
+    },
+    {
+      "name": "湖北野鳥センター／琵琶湖水鳥・湿地センター",
+      "pref": "滋賀県",
+      "city": "長浜市湖北町今西1731",
+      "foundUrls": ["http://www.biwa.ne.jp/nio/"],
+      "typeGuess": "野鳥観察施設",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "野生観察のみ",
+      "note": "野生の水鳥を観察小屋・観察路から観察する施設で、飼育・常設展示ではない。"
+    },
+    {
+      "name": "みなくち子どもの森自然館",
+      "pref": "滋賀県",
+      "city": "甲賀市水口町北内貴10",
+      "foundUrls": ["https://www.city.koka.lg.jp/kodomonomori/"],
+      "typeGuess": "自然史博物館(ジオラマ・標本中心)",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "剥製/標本のみ",
+      "note": "化石・ジオラマ・昆虫標本等が中心の博物館。園内「昆虫広場」も里山ビオトープでの野生観察が主体で常設生体展示ではない。"
+    },
+    {
+      "name": "多賀町立博物館",
+      "pref": "滋賀県",
+      "city": "犬上郡多賀町四手976-2",
+      "foundUrls": ["https://www.town.taga.lg.jp/akebono/museum/"],
+      "typeGuess": "総合博物館(標本中心)",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "剥製/標本のみ",
+      "note": "多賀町の自然・文化を扱う総合博物館。昆虫標本はあるが生体展示施設ではない。"
+    }
+  ]
+}
