@@ -62,4 +62,8 @@ describe("responsive styles", () => {
     );
   });
 
+  it("keeps the facility count heading compact", () => {
+    expect(styles).toContain(".results-heading h2{margin:0;font-size:16px}");
+  });
+
 });
