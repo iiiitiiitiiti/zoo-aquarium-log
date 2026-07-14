@@ -51,7 +51,7 @@ function readBlob(blob: Blob) {
 }
 
 async function openQuickActions(user: ReturnType<typeof userEvent.setup>) {
- await user.click(screen.getByText("その他の操作"));
+ await user.click(screen.getByRole("button",{name:"その他の操作"}));
 }
 
 afterEach(() => {
@@ -263,11 +263,11 @@ describe("App",()=>{
    remove:async()=>undefined,
    subscribe:(onFacilities)=>{ onFacilities([]); return ()=>undefined; },
   }} />);
-  const panel=screen.getByText("その他の操作").closest("details");
-  expect(panel).toBeInTheDocument();
-  expect(panel).not.toHaveAttribute("open");
+  const summary=screen.getByRole("button",{name:"その他の操作"});
+  expect(summary).toHaveAttribute("aria-expanded","false");
+  expect(screen.queryByRole("button",{name:"JSONを保存"})).not.toBeInTheDocument();
   await openQuickActions(user);
-  expect(panel).toHaveAttribute("open");
+  expect(summary).toHaveAttribute("aria-expanded","true");
   expect(screen.getByRole("button",{name:"施設を追加"})).toBeInTheDocument();
   expect(screen.getByRole("button",{name:"JSONを保存"})).toBeInTheDocument();
  });
@@ -289,9 +289,8 @@ describe("App",()=>{
    remove:async()=>undefined,
    subscribe:(onFacilities)=>{ onFacilities([]); return ()=>undefined; },
   }} />);
-  const panel=screen.getByText("その他の操作").closest("details");
-  expect(panel).toBeInTheDocument();
-  expect(panel).not.toHaveAttribute("open");
+  const summary=screen.getByRole("button",{name:"その他の操作"});
+  expect(summary).toHaveAttribute("aria-expanded","false");
   await openQuickActions(user);
   const actions=screen.getByRole("group",{name:"クイックアクション"});
   const resultsHeading=screen.getByRole("heading",{name:facilityCountText});
