@@ -4,8 +4,8 @@ import { describe, expect, it } from "vitest";
 const photos = [
   {
     path: "src/assets/zoo-habitat.webp",
-    credit: "CHUTTERSNAP",
-    source: "https://unsplash.com/photos/yjOp7klp6ag",
+    credit: "AI-generated for this project with OpenAI image generation",
+    source: "",
   },
   {
     path: "src/assets/aquarium-habitat.webp",
@@ -27,12 +27,12 @@ describe("habitat background photos", () => {
     },
   );
 
-  it("records the photographer and source URL for each photo", () => {
+  it("records the source or generation note for each photo", () => {
     const credits = readFileSync("src/assets/photo-credits.md", "utf8");
 
     for (const { credit, source } of photos) {
       expect(credits).toContain(credit);
-      expect(credits).toContain(source);
+      if (source) expect(credits).toContain(source);
     }
   });
 });
