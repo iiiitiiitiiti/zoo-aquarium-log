@@ -186,7 +186,7 @@ describe("App",()=>{
   };
   render(<App visitStore={exportVisitStore} markStore={markStore} customFacilityStore={customFacilityStore} />);
 
-  const button=await screen.findByRole("button",{name:"データをJSONで保存"});
+  const button=await screen.findByRole("button",{name:"JSONを保存"});
   expect(button).toBeEnabled();
   await user.click(button);
 
@@ -218,7 +218,7 @@ describe("App",()=>{
   };
   vi.stubGlobal("URL", { ...globalThis.URL, createObjectURL:vi.fn(() => "blob:export"), revokeObjectURL:vi.fn() });
   render(<App visitStore={loadingVisitStore} markStore={loadingMarkStore} customFacilityStore={loadingCustomFacilityStore} />);
-  const button=screen.getByRole("button",{name:"データをJSONで保存"});
+  const button=screen.getByRole("button",{name:"JSONを保存"});
   expect(button).toBeDisabled();
   emitVisits?.([]);
   expect(button).toBeDisabled();
@@ -244,7 +244,7 @@ describe("App",()=>{
   };
   vi.stubGlobal("URL", { ...globalThis.URL, createObjectURL:vi.fn(() => "blob:export"), revokeObjectURL:vi.fn() });
   render(<App visitStore={failingVisitStore} markStore={markStore} customFacilityStore={customFacilityStore} />);
-  expect(await screen.findByRole("button",{name:"データをJSONで保存"})).toBeDisabled();
+  expect(await screen.findByRole("button",{name:"JSONを保存"})).toBeDisabled();
  });
  it("keeps the export button visible when search results are empty",async()=>{
   const user=userEvent.setup();
@@ -253,6 +253,20 @@ describe("App",()=>{
   await user.click(screen.getByRole("button",{name:/施設を探す/}));
   await user.type(screen.getByRole("searchbox"),"存在しない施設");
   expect(screen.getByText(/見つかりませんでした/)).toBeInTheDocument();
-  expect(screen.getByRole("button",{name:"データをJSONで保存"})).toBeInTheDocument();
+  expect(screen.getByRole("button",{name:"JSONを保存"})).toBeInTheDocument();
+ });
+ it("shows the add and export actions directly below the search controls",()=>{
+  render(<App customFacilityStore={{
+   create:async()=>exportFacility,
+   update:async()=>exportFacility,
+   remove:async()=>undefined,
+   subscribe:(onFacilities)=>{ onFacilities([]); return ()=>undefined; },
+  }} />);
+  const actions=screen.getByRole("group",{name:"クイックアクション"});
+  const resultsHeading=screen.getByRole("heading",{name:facilityCountText});
+  expect(actions).toContainElement(screen.getByRole("button",{name:"施設を追加"}));
+  expect(actions).toContainElement(screen.getByRole("button",{name:"JSONを保存"}));
+  expect(actions.compareDocumentPosition(resultsHeading) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+  expect(screen.queryByRole("button",{name:"掲載されていない施設を追加"})).not.toBeInTheDocument();
  });
 });
