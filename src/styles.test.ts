@@ -87,6 +87,8 @@ describe("responsive styles", () => {
   it("styles the collapsed quick actions", () => {
     expect(styles).toContain(".quick-actions{margin:16px 16px 0;border:1px solid #d7ddd5;border-radius:16px");
     expect(styles).toContain(".quick-actions-summary{display:flex;align-items:center;justify-content:space-between");
+    expect(styles).toContain('.controls-summary:after{content:"＋";color:#2a7180;font-size:20px;line-height:1}');
+    expect(styles).toContain('.quick-actions-summary:after{content:"＋";color:#2a7180;font-size:20px;line-height:1}');
     expect(styles).toContain(".quick-actions-body{max-height:0;opacity:0;");
     expect(styles).toContain(".quick-actions.is-open .quick-actions-body{max-height:220px;opacity:1;");
     expect(styles).toContain(".quick-action:disabled{cursor:not-allowed;opacity:.45}");
