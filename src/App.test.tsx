@@ -1,9 +1,12 @@
 import { render, screen, waitFor } from "@testing-library/react";
+import { Timestamp } from "firebase/firestore";
 import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import App from "./App";
+import type { CustomFacilityStore } from "./customFacilities";
 import facilitiesJson from "./data/facilities.json";
-import type { VisitStore } from "./visits";
+import type { MarkStore } from "./marks";
+import type { Visit, VisitStore } from "./visits";
 
 const facilityCountText = `${facilitiesJson.length}施設を掲載`;
 
@@ -14,6 +17,43 @@ const visitStore: VisitStore = {
  remove:async()=>undefined,
  subscribeAll:(onVisits)=>{ onVisits([]); return ()=>undefined; },
 };
+
+const exportVisit: Visit = {
+ id:"visit-export",
+ facilityId:"deleted_custom_facility",
+ date:"2026-07-01",
+ memo:"日本語のメモ 🐘",
+ createdAt:Timestamp.fromDate(new Date("2026-07-01T01:02:03.000Z")),
+ updatedAt:Timestamp.fromDate(new Date("2026-07-02T01:02:03.000Z")),
+};
+const exportFacility = {
+ id:"custom_export",
+ name:"家族の水族館",
+ kana:"かぞくのすいぞくかん",
+ pref:"東京都",
+ city:"台東区",
+ type:"aquarium" as const,
+ lat:35.7,
+ lng:139.8,
+ url:"https://example.com/aquarium",
+ sourceUrls:["https://example.com/aquarium"],
+ status:"open" as const,
+ lastVerifiedAt:"2026-07-14",
+};
+
+function readBlob(blob: Blob) {
+ return new Promise<string>((resolve, reject) => {
+  const reader=new FileReader();
+  reader.onload=()=>resolve(String(reader.result));
+  reader.onerror=()=>reject(reader.error);
+  reader.readAsText(blob);
+ });
+}
+
+afterEach(() => {
+ vi.restoreAllMocks();
+ vi.unstubAllGlobals();
+});
 
 describe("App",()=>{
  it("shows, searches and filters facilities",async()=>{
@@ -125,5 +165,94 @@ describe("App",()=>{
   emitVisits?.([]);
   emitMarks?.({});
   await waitFor(()=>expect(screen.getByRole("button",{name:"訪問済み"})).toBeEnabled());
+ });
+ it("downloads the shared data as UTF-8 JSON",async()=>{
+  const user=userEvent.setup();
+  const blobs: Blob[]=[];
+  const createObjectURL=vi.fn((blob: Blob)=>{ blobs.push(blob); return "blob:export"; });
+  const revokeObjectURL=vi.fn();
+  vi.stubGlobal("URL", { ...globalThis.URL, createObjectURL, revokeObjectURL });
+  const click=vi.spyOn(HTMLAnchorElement.prototype,"click").mockImplementation(()=>undefined);
+  const exportVisitStore: VisitStore={...visitStore,subscribeAll:(onVisits)=>{ onVisits([exportVisit]); return ()=>undefined; }};
+  const markStore: MarkStore={
+   setFlag:vi.fn(async()=>undefined),
+   subscribe:(onMarks)=>{ onMarks({deleted_custom_facility:{wishlist:true,favorite:false}}); return ()=>undefined; },
+  };
+  const customFacilityStore: CustomFacilityStore={
+   create:async()=>exportFacility,
+   update:async()=>exportFacility,
+   remove:async()=>undefined,
+   subscribe:(onFacilities)=>{ onFacilities([exportFacility]); return ()=>undefined; },
+  };
+  render(<App visitStore={exportVisitStore} markStore={markStore} customFacilityStore={customFacilityStore} />);
+
+  const button=await screen.findByRole("button",{name:"データをJSONで保存"});
+  expect(button).toBeEnabled();
+  await user.click(button);
+
+  expect(click).toHaveBeenCalledOnce();
+  expect(createObjectURL).toHaveBeenCalledOnce();
+  const data=JSON.parse(await readBlob(blobs[0]));
+  expect(data.visits[0]).toMatchObject({facilityId:"deleted_custom_facility",memo:"日本語のメモ 🐘"});
+  expect(data.marks).toEqual([{facilityId:"deleted_custom_facility",wishlist:true,favorite:false}]);
+  expect(data.customFacilities[0]).toMatchObject({name:"家族の水族館"});
+  await waitFor(()=>expect(revokeObjectURL).toHaveBeenCalledWith("blob:export"));
+ });
+ it("keeps export disabled until visits, marks, and custom facilities are ready",async()=>{
+  let emitVisits: ((visits: Visit[])=>void)|undefined;
+  let emitMarks: ((marks: Record<string,{wishlist:boolean;favorite:boolean}>)=>void)|undefined;
+  let emitCustomFacilities: ((facilities: typeof exportFacility[])=>void)|undefined;
+  const loadingVisitStore: VisitStore={
+   ...visitStore,
+   subscribeAll:(onVisits)=>{ emitVisits=onVisits; return ()=>undefined; },
+  };
+  const loadingMarkStore: MarkStore={
+   setFlag:vi.fn(async()=>undefined),
+   subscribe:(onMarks)=>{ emitMarks=onMarks; return ()=>undefined; },
+  };
+  const loadingCustomFacilityStore: CustomFacilityStore={
+   create:async()=>exportFacility,
+   update:async()=>exportFacility,
+   remove:async()=>undefined,
+   subscribe:(onFacilities)=>{ emitCustomFacilities=onFacilities; return ()=>undefined; },
+  };
+  vi.stubGlobal("URL", { ...globalThis.URL, createObjectURL:vi.fn(() => "blob:export"), revokeObjectURL:vi.fn() });
+  render(<App visitStore={loadingVisitStore} markStore={loadingMarkStore} customFacilityStore={loadingCustomFacilityStore} />);
+  const button=screen.getByRole("button",{name:"データをJSONで保存"});
+  expect(button).toBeDisabled();
+  emitVisits?.([]);
+  expect(button).toBeDisabled();
+  emitMarks?.({});
+  expect(button).toBeDisabled();
+  emitCustomFacilities?.([]);
+  await waitFor(()=>expect(button).toBeEnabled());
+ });
+ it("keeps export disabled when a data subscription fails",async()=>{
+  const failingVisitStore: VisitStore={
+   ...visitStore,
+   subscribeAll:(_onVisits,onError)=>{ onError(new Error("failed")); return ()=>undefined; },
+  };
+  const markStore: MarkStore={
+   setFlag:vi.fn(async()=>undefined),
+   subscribe:(onMarks)=>{ onMarks({}); return ()=>undefined; },
+  };
+  const customFacilityStore: CustomFacilityStore={
+   create:async()=>exportFacility,
+   update:async()=>exportFacility,
+   remove:async()=>undefined,
+   subscribe:(onFacilities)=>{ onFacilities([]); return ()=>undefined; },
+  };
+  vi.stubGlobal("URL", { ...globalThis.URL, createObjectURL:vi.fn(() => "blob:export"), revokeObjectURL:vi.fn() });
+  render(<App visitStore={failingVisitStore} markStore={markStore} customFacilityStore={customFacilityStore} />);
+  expect(await screen.findByRole("button",{name:"データをJSONで保存"})).toBeDisabled();
+ });
+ it("keeps the export button visible when search results are empty",async()=>{
+  const user=userEvent.setup();
+  vi.stubGlobal("URL", { ...globalThis.URL, createObjectURL:vi.fn(() => "blob:export"), revokeObjectURL:vi.fn() });
+  render(<App />);
+  await user.click(screen.getByRole("button",{name:/施設を探す/}));
+  await user.type(screen.getByRole("searchbox"),"存在しない施設");
+  expect(screen.getByText(/見つかりませんでした/)).toBeInTheDocument();
+  expect(screen.getByRole("button",{name:"データをJSONで保存"})).toBeInTheDocument();
  });
 });

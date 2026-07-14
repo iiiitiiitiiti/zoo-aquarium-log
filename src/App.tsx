@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import AddFacilityPanel from "./AddFacilityPanel";
+import { buildExport, buildExportFilename } from "./buildExport";
 import facilitiesJson from "./data/facilities.json";
 import { filterFacilities, type VisitStatusFilter } from "./filterFacilities";
 import type { CustomFacilityStore } from "./customFacilities";
@@ -71,7 +72,8 @@ export default function App({
   const [visitError, setVisitError] = useState("");
   const [marks, setMarks] = useState<MarkMap>();
   const [marksError, setMarksError] = useState("");
-  const [customFacilities, setCustomFacilities] = useState<Facility[]>([]);
+  const [customFacilities, setCustomFacilities] = useState<Facility[]>();
+  const [customFacilitiesError, setCustomFacilitiesError] = useState("");
 
   useEffect(() => {
     if (!visitStore) {
@@ -101,12 +103,18 @@ export default function App({
   useEffect(() => {
     if (!customFacilityStore) {
       setCustomFacilities([]);
+      setCustomFacilitiesError("");
       return;
     }
-    return customFacilityStore.subscribe(setCustomFacilities, () => undefined);
+    setCustomFacilities(undefined);
+    setCustomFacilitiesError("");
+    return customFacilityStore.subscribe(
+      setCustomFacilities,
+      () => setCustomFacilitiesError("手動追加施設を読み込めませんでした。通信環境を確認してください"),
+    );
   }, [customFacilityStore]);
 
-  const allFacilities = useMemo(() => [...facilities, ...customFacilities], [customFacilities]);
+  const allFacilities = useMemo(() => [...facilities, ...(customFacilities ?? [])], [customFacilities]);
   const prefectures = useMemo(
     () => [...new Set(allFacilities.map((facility) => facility.pref))],
     [allFacilities],
@@ -133,6 +141,16 @@ export default function App({
   const hasListFilter = activeFilterCount > 0;
   const statusFiltersLoading = Boolean(visitStore && visits === undefined)
     || Boolean(markStore && marks === undefined);
+  const exportNotReady = Boolean(
+    (visitStore && visits === undefined)
+    || (markStore && marks === undefined)
+    || (customFacilityStore && customFacilities === undefined)
+    || visitError
+    || marksError
+    || customFacilitiesError
+    || typeof URL === "undefined"
+    || typeof URL.createObjectURL !== "function",
+  );
 
   const resetFilters = () => {
     setQuery("");
@@ -151,6 +169,23 @@ export default function App({
   const openFacility = (facility: Facility) => {
     setFacilityEditorOpen(false);
     setSelectedFacility(facility);
+  };
+
+  const downloadExport = () => {
+    if (exportNotReady || typeof URL === "undefined" || typeof URL.createObjectURL !== "function") return;
+    const data = buildExport(visits ?? [], marks ?? {}, customFacilities ?? []);
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json;charset=utf-8" });
+    const objectUrl = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = objectUrl;
+    link.download = buildExportFilename();
+    link.style.display = "none";
+    document.body.append(link);
+    link.click();
+    link.remove();
+    if (typeof URL.revokeObjectURL === "function") {
+      setTimeout(() => URL.revokeObjectURL(objectUrl), 0);
+    }
   };
 
   if (facilityEditorOpen && customFacilityStore) {
@@ -353,6 +388,10 @@ export default function App({
             )}
           </>
         )}
+        <button className="add-facility-link export-button" type="button" onClick={downloadExport} disabled={exportNotReady}>
+          データをJSONで保存
+        </button>
+        <p className="location-note export-note">写真データは含まれません。訪問日・メモ・評価・行きたい/お気に入り・手動追加した施設情報が対象です。</p>
       </section>
       <footer><p>掲載情報の確認日：2026年7月13日</p></footer>
     </main>
