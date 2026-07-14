@@ -84,6 +84,11 @@ describe("responsive styles", () => {
     );
   });
 
+  it("styles the top quick actions", () => {
+    expect(styles).toContain(".quick-actions{display:flex;gap:8px;margin:16px 16px 0}");
+    expect(styles).toContain(".quick-action:disabled{cursor:not-allowed;opacity:.45}");
+  });
+
   it("gives the controls section the same border treatment as facility cards", () => {
     expect(styles).toMatch(
       /\.controls\{[^}]*border:1px solid #d7ddd5[^}]*box-shadow:0 3px 0 #dce5dc/,

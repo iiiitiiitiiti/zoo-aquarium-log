@@ -341,6 +341,13 @@ export default function App({
           <button className="filter-reset" type="button" onClick={resetFilters} disabled={activeFilterCount === 0}>条件をリセット</button>
         </div>
       </section>
+      <div className="quick-actions" role="group" aria-label="クイックアクション">
+        {customFacilityStore && (
+          <button className="quick-action" type="button" onClick={openAddFacility}>施設を追加</button>
+        )}
+        <button className="quick-action" type="button" onClick={downloadExport} disabled={exportNotReady}>JSONを保存</button>
+      </div>
+      <p className="location-note export-note">写真データは含まれません。訪問日・メモ・評価・行きたい/お気に入り・手動追加した施設情報が対象です。</p>
       <section className="results">
         <div className="results-heading">
           <h2>{hasListFilter ? `${shown.length}施設が該当` : `${allFacilities.length}施設を掲載`}</h2>
@@ -351,9 +358,6 @@ export default function App({
             <span>◌</span>
             <h3>施設が見つかりませんでした</h3>
             <p>検索条件を変えてみてください。</p>
-            {customFacilityStore && (
-              <button className="empty-action" type="button" onClick={openAddFacility}>この施設を手動で追加</button>
-            )}
           </div>
         ) : (
           <>
@@ -383,15 +387,8 @@ export default function App({
                 </li>
               ))}
             </ul>
-            {customFacilityStore && (
-              <button className="add-facility-link" type="button" onClick={openAddFacility}>掲載されていない施設を追加</button>
-            )}
           </>
         )}
-        <button className="add-facility-link export-button" type="button" onClick={downloadExport} disabled={exportNotReady}>
-          データをJSONで保存
-        </button>
-        <p className="location-note export-note">写真データは含まれません。訪問日・メモ・評価・行きたい/お気に入り・手動追加した施設情報が対象です。</p>
       </section>
       <footer><p>掲載情報の確認日：2026年7月13日</p></footer>
     </main>
