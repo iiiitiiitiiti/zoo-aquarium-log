@@ -2,9 +2,9 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** 施設カードの右端に矢印を表示し、ホバー時の変化で詳細ページへのリンクであることを明示する。
+**Goal:** 施設カードの右端に矢印を表示し、ホバー時に背景色を変えて詳細ページへのリンクであることを明示する。
 
-**Architecture:** 既存の `a.facility-card` に矢印用の `span.card-arrow` を追加し、CSS の `:hover` と `@media (prefers-reduced-motion: no-preference)` でカードと矢印の変化を定義する。詳細遷移の state 処理やルーターは変更しない。
+**Architecture:** 既存の `a.facility-card` にある矢印表示を維持し、CSS の `:hover` でカード背景色だけを変化させる。詳細遷移の state 処理やルーターは変更しない。
 
 **Tech Stack:** React 19、TypeScript、Vitest、Testing Library、CSS
 
@@ -12,64 +12,53 @@
 
 - ルーターや新しい依存関係を追加しない。
 - カード全体のリンク操作と既存のキーボードフォーカス表示を維持する。
-- `prefers-reduced-motion: reduce` 環境ではホバーの移動アニメーションを発生させない。
+- `prefers-reduced-motion: reduce` 環境ではホバーの背景色トランジションを発生させない。
 
 ---
 
-### Task 1: 矢印表示とホバー状態を追加
+### Task 1: ホバー背景色を変更
 
 **Files:**
-- Modify: `src/App.tsx`
-- Modify: `src/App.test.tsx`
 - Modify: `src/styles.css`
+- Test: `src/styles.test.ts`
 
 **Interfaces:**
-- Consumes: 既存の `a.facility-card` と `facility.id`
-- Produces: カード右端の `span.card-arrow`、ホバー時に浮き上がるカードと右へ移動する矢印
+- Consumes: 既存の `.facility-card` と自然系配色
+- Produces: ホバー時に背景色だけが `#eaf5ef` へ変わるカードスタイル
 
-- [ ] **Step 1: 矢印表示の失敗テストを書く**
+- [ ] **Step 1: 背景色ホバーの失敗テストを書く**
 
-`src/App.test.tsx` のカードリンクテストに、カード内の矢印要素が表示されることを追加する。矢印は装飾要素として `aria-hidden` にするため、アクセシブル名ではなく要素の内容を確認する。
+`src/styles.test.ts` に、カードの背景色トランジションとホバー色を検証するテストを追加する。
 
 ```tsx
-const card = screen.getByRole("link", { name: /札幌市円山動物園/ });
-expect(card.querySelector(".card-arrow")).toHaveTextContent("→");
+it("changes facility card background on hover", () => {
+  expect(styles).toMatch(/\.facility-card\{[^}]*transition:background-color \.2s ease/);
+  expect(styles).toContain(".facility-card:hover{background:#eaf5ef}");
+});
 ```
 
 - [ ] **Step 2: 失敗テストを実行する**
 
-Run: `npm test -- --run src/App.test.tsx`
+Run: `npm test -- --run src/styles.test.ts`
 
-Expected: `.card-arrow` 要素が存在しないため、追加したアサーションが FAIL する。
+Expected: 現在のホバー定義に背景色指定がないため FAIL する。
 
-- [ ] **Step 3: 矢印要素を追加する**
+- [ ] **Step 3: 背景色ホバーを実装する**
 
-`src/App.tsx` の `a.facility-card` 内、`card-body` の後ろに次を追加する。
-
-```tsx
-<span className="card-arrow" aria-hidden="true">→</span>
-```
-
-- [ ] **Step 4: ホバー用 CSS を追加する**
-
-`src/styles.css` の `.facility-card` に `align-items:center`、`transition`、`will-change` を追加し、次のルールを追加する。
+`src/styles.css` のカードに背景色だけのトランジションとホバー色を追加し、位置・影・枠色・矢印の変化を削除する。
 
 ```css
-.facility-card:hover{border-color:#a8d8d7;box-shadow:0 7px 0 #c7dbd0;transform:translateY(-2px)}
-.card-arrow{flex:0 0 auto;color:#2a7180;font-size:22px;line-height:1;transition:color .2s ease,transform .2s ease}
-.facility-card:hover .card-arrow{color:#173f35;transform:translateX(4px)}
-@media(prefers-reduced-motion:reduce){.facility-card,.card-arrow{transition:none}.facility-card:hover{transform:none}.facility-card:hover .card-arrow{transform:none}}
+.facility-card{transition:background-color .2s ease}
+.facility-card:hover{background:#eaf5ef}
 ```
 
-既存の `prefers-reduced-motion: no-preference` ブロックは変更せず、カードの初回表示アニメーションを維持する。
+- [ ] **Step 4: テストを実行して検証する**
 
-- [ ] **Step 5: 対象テストを実行して検証する**
+Run: `npm test -- --run src/styles.test.ts`
 
-Run: `npm test -- --run src/App.test.tsx`
+Expected: styles テストが全件 PASS。
 
-Expected: App テストが全件 PASS。
-
-- [ ] **Step 6: 全体検証を実行する**
+- [ ] **Step 5: 全体検証を実行する**
 
 Run: `npm test -- --run`
 
@@ -87,9 +76,9 @@ Run: `git diff --check`
 
 Expected: 出力なし。
 
-- [ ] **Step 7: 変更をコミットする**
+- [ ] **Step 6: 変更をコミットする**
 
 ```bash
-git add src/App.tsx src/App.test.tsx src/styles.css docs/superpowers/specs/2026-07-14-facility-card-hover-design.md docs/superpowers/plans/2026-07-14-facility-card-hover.md
-git commit -m "feat: 施設カードのリンク表示を強化"
+git add src/styles.css src/styles.test.ts docs/superpowers/specs/2026-07-14-facility-card-hover-design.md docs/superpowers/plans/2026-07-14-facility-card-hover.md
+git commit -m "style: カードホバーを背景色に変更"
 ```

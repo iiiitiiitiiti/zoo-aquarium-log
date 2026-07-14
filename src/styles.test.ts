@@ -35,4 +35,10 @@ describe("responsive styles", () => {
       "@media(max-width:720px){.site-stage:before,.site-stage:after{display:none}}",
     );
   });
+  it("changes facility card background on hover", () => {
+    expect(styles).toMatch(/\.facility-card\{[^}]*transition:background-color \.2s ease/);
+    expect(styles).toContain(".facility-card:hover{background:#eaf5ef}");
+    expect(styles).toContain("@media(prefers-reduced-motion:reduce){.facility-card{transition:none}}");
+  });
+
 });
