@@ -8,6 +8,17 @@ import facilitiesJson from "./data/facilities.json";
 import type { MarkStore } from "./marks";
 import type { Visit, VisitStore } from "./visits";
 
+vi.mock("./MapPanel", () => ({
+  default: ({ shown, onBack }: { shown: { id: string; name: string }[]; onBack: () => void }) => (
+    <main>
+      <h1>施設マップ</h1>
+      <p>{shown.length}施設を表示</p>
+      {shown.map((facility) => <span key={facility.id}>{facility.name}</span>)}
+      <button type="button" onClick={onBack}>← 施設一覧</button>
+    </main>
+  ),
+}));
+
 const facilityCountText = `${facilitiesJson.length}施設を掲載`;
 
 const visitStore: VisitStore = {
@@ -299,4 +310,16 @@ describe("App",()=>{
   expect(actions.compareDocumentPosition(resultsHeading) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
   expect(screen.queryByRole("button",{name:"掲載されていない施設を追加"})).not.toBeInTheDocument();
  });
+  it("opens the filtered facilities on the map and returns to the list",async()=>{
+   const user=userEvent.setup();
+   render(<App />);
+   await user.click(screen.getByRole("button",{name:/施設を探す/}));
+   await user.type(screen.getByRole("searchbox"),"上野");
+   await user.click(screen.getByRole("button",{name:"地図で見る"}));
+   expect(screen.getByRole("heading",{name:"施設マップ"})).toBeInTheDocument();
+   expect(screen.getByText("1施設を表示")).toBeInTheDocument();
+   expect(screen.getByText("恩賜上野動物園")).toBeInTheDocument();
+   await user.click(screen.getByRole("button",{name:"← 施設一覧"}));
+   expect(screen.getByText("1施設が該当")).toBeInTheDocument();
+  });
 });
