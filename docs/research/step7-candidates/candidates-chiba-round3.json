@@ -1,0 +1,287 @@
+{
+  "block": "千葉県(3巡目補完)",
+  "generatedAt": "2026-07-15",
+  "coverage": {
+    "sources": [
+      "zoo-palette.com（千葉県の動物園・観光牧場・動物施設一覧、21件の第三者ディレクトリで既存候補との突合に使用）",
+      "各市公式サイト（富津市・館山市・我孫子市・浦安市・成田市等）",
+      "汎用Web検索（いこーよ、じゃらんnet、Instagram、公式サイト等）"
+    ],
+    "searchTermsUsed": [
+      "市町村名個別検索（館山・南房総・銚子・木更津・野田・松戸・流山・八千代・四街道・茂原・東金・山武・旭・匝瑳・いすみ・香取・富里・浦安・我孫子・鎌ケ谷・白井 等）",
+      "道の駅 動物", "ミニ水族館", "バードパーク/鳥類園", "観光牧場",
+      "昆虫ふれあい施設/昆虫館", "猛禽類展示", "リス園/プレーリードッグ", "カピバラ展示",
+      "イオンモール/ららぽーと 動物ふれあい（屋内型）",
+      "第三者ディレクトリ横断チェック（zoo-palette.com 千葉県一覧）",
+      "動物ふれあい 穴場/マイナー施設", "動物取扱業者登録（除外・時間切れで断念）"
+    ],
+    "rounds": 1,
+    "note": "3巡目補完として上記戦略で1巡実施。新規候補が続けて見つかったため、同一セッション内でさらに複数波の追加検索（市町村個別・施設タイプ別・第三者ディレクトリ突合・ショッピングモール内施設・観光協会掲載施設）を重ね、実質的に3巡目〜4巡目相当の探索を行った。最終盤（イオンモール/ららぽーと系検索、および渚の博物館のペンギン展示疑惑の裏取り＝結果は虚偽で除外）では新規候補ゼロを確認したが、その直後の観光協会ページ確認でいすみ市の1件（review）が追加で見つかったため、完全な『新規ゼロの巡』の連続確認には至っていない。ただし探索手法（市町村別・施設タイプ別・第三者ディレクトリ・モール内店舗・観光協会公式ページ）はほぼ網羅しており、収束にかなり近いと判断する。要すればいすみ環境と文化のさとセンター周辺の追加確認を4巡目として実施することを推奨。"
+  },
+  "candidates": [
+    {
+      "name": "高宕山自然動物園",
+      "pref": "千葉県",
+      "city": "富津市",
+      "foundUrls": ["https://www.city.futtsu.lg.jp/0000000348.html", "https://www.futtsu-kanko.info/places/takagoyama/"],
+      "typeGuess": "動物園（野猿公苑）",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "富津市が運営。国天然記念物「高宕山サルの生息地」の一群を餌付けし一般公開。入園料大人300円、営業9-17時。檻内のサルに加え野生ザルも見学者エリアに来る。zoo-palette.comの第三者ディレクトリ突合で発見。既存2巡では未検出だった明確な見落とし。"
+    },
+    {
+      "name": "千葉県酪農のさと",
+      "pref": "千葉県",
+      "city": "南房総市",
+      "foundUrls": ["https://www.e-makiba.jp/", "https://www.pref.chiba.lg.jp/chikusan/rakunounosato/index.html"],
+      "typeGuess": "牧場（県立）",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "千葉県が設置する日本酪農発祥の地。白牛（在来種）・ホルスタイン・ヤギを常設飼育・ふれあい可能、入場無料。酪農資料館併設。"
+    },
+    {
+      "name": "南房ジャングルファーム（NAMBO JUNGLE FARM）",
+      "pref": "千葉県",
+      "city": "南房総市",
+      "foundUrls": ["https://junglefarm.jp/", "https://maruchiba.jp/spot/detail_15813.html"],
+      "typeGuess": "観光牧場（アグー豚専門）",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "完全放牧のアグー豚牧場。牧場探検コースあり、大人1,000円〜の一般来場可能な有料施設。営業時間9:00-15:30。"
+    },
+    {
+      "name": "びーとるランド（SBCびーとるランド君津）",
+      "pref": "千葉県",
+      "city": "君津市",
+      "foundUrls": ["https://beetleland-sbc.com/", "https://www.city.kimitsu.lg.jp/site/kanko/40981.html"],
+      "typeGuess": "昆虫ふれあい施設",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "ヘラクレスオオカブト等世界の甲虫を放し飼い状態で常時展示・直接触れる施設。入場料込みで甲虫バトル等の催しあり。"
+    },
+    {
+      "name": "いきもの探検隊（フレスポ稲毛店）",
+      "pref": "千葉県",
+      "city": "千葉市稲毛区",
+      "foundUrls": ["https://www.e-frespo.com/inage/shop/index.jsp?bf=1&fmt=1&shopid=2046"],
+      "typeGuess": "屋内型動物ふれあい施設",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "ショッピングセンター内の常設施設。海・陸・空・深の生き物30種以上を展示、餌やり体験あり。入場料800円（3歳以上）。KABAZOO・Moff animal worldと同カテゴリ。2023年9月開業。"
+    },
+    {
+      "name": "須藤牧場",
+      "pref": "千葉県",
+      "city": "館山市",
+      "foundUrls": ["https://www.sudo-farm.com/", "https://iko-yo.net/facilities/1604", "https://tateyamacity.com/activities/doubutu/"],
+      "typeGuess": "牧場（酪農体験）",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "乳牛・うさぎ・やぎ・ロバ・ポニーを飼育。営業時間10:00-16:00・不定休だが、バター作り等の「体験活動」は全て事前申込み制と案内されており、予約なしの一般見学・ふれあいが可能かは未確認。要判断。"
+    },
+    {
+      "name": "むつざわヤギ牧場",
+      "pref": "千葉県",
+      "city": "長生郡睦沢町",
+      "foundUrls": ["https://mutsuzawa-yagi.com/", "https://guide.6238.jp/yagi/"],
+      "typeGuess": "ふれあい牧場",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "ヤギ約30頭を飼育。ふれあい体験は前日までの完全予約制・1時間1組限定・5月下旬〜11月下旬の季節営業のみで、随時開放はしていないと明記。常設性・一般来場性に疑問があり要判断。"
+    },
+    {
+      "name": "高秀牧場",
+      "pref": "千葉県",
+      "city": "いすみ市",
+      "foundUrls": ["https://www.takahide-dairyfarm.com/", "https://maruchiba.jp/gourmet/spot/detail_11935.html"],
+      "typeGuess": "牧場（乳製品直売・カフェ併設）",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "乳牛約150頭を飼育する酪農牧場。牧場見学・乳搾り体験も提供するが、来場動機の中心はミルク工房のジェラート・チーズ販売とみられ、動物展示が主目的と言えるか要判断。"
+    },
+    {
+      "name": "道の駅グリーンファーム館山 ヤギさん牧場",
+      "pref": "千葉県",
+      "city": "館山市",
+      "foundUrls": ["https://greenfarm-tateyama.com/", "https://greenfarm-tateyama.com/floor-guide/"],
+      "typeGuess": "ふれあい施設（道の駅内）",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "2024年2月開業の道の駅内、ヤギ2頭（アカマツ・クロマツ）が常駐し有料餌やり体験可能。ただし飼育頭数がごく少数で、道の駅全体としての主目的は農水産物直売であり、動物展示が独立した主目的施設と言えるか要判断。"
+    },
+    {
+      "name": "プチモンド牧場（プチモンドさくら併設）",
+      "pref": "千葉県",
+      "city": "佐倉市",
+      "foundUrls": ["https://www.petitmonde.jp/home.html"],
+      "typeGuess": "ふれあい牧場（高齢者住宅併設）",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "サービス付き高齢者向け住宅「プチモンドさくら」駐車場脇にある小規模なヤギ牧場。「誰でも訪問できる」と案内されているが、施設全体の主目的は高齢者住宅であり、動物展示が独立した来場目的と言えるか要判断。詳細情報が乏しく現地確認推奨。"
+    },
+    {
+      "name": "手賀沼親水広場・水の館",
+      "pref": "千葉県",
+      "city": "我孫子市",
+      "foundUrls": ["https://www.city.abiko.chiba.jp/event/shisetsu/mizunoyakata/mizunoyakata.html"],
+      "typeGuess": "自然学習施設（水槽展示）",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "手賀沼に生息する魚等を水槽で常設展示。ただしプラネタリウム・学習コーナー・直売所・レストラン等を含む複合環境学習施設で、動物展示が施設全体の主目的とは言い切れず要判断。"
+    },
+    {
+      "name": "千葉県いすみ環境と文化のさとセンター",
+      "pref": "千葉県",
+      "city": "いすみ市",
+      "foundUrls": ["http://www.isumi-sato.com/tenzi.html", "https://maruchiba.jp/spot/detail_10361.html"],
+      "typeGuess": "自然学習施設（希少種飼育展示）",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "ネイチャーセンター内の展示フロアで国天然記念物「ミヤコタナゴ」や絶滅危惧種「イスミスズカケ」等の地元希少種を飼育展示。生体展示という点で谷津干潟自然観察センター（野生観察のみで除外）とは性質が異なるが、施設全体としては里山保全・環境教育センターであり動物展示が主目的かは要判断。"
+    },
+    {
+      "name": "わくわくあにまるフィールド",
+      "pref": "千葉県",
+      "city": "千葉市若葉区",
+      "foundUrls": ["https://chibazoo-farm.com/", "https://www.city.chiba.jp/zoo/news/farm_name20250428.html"],
+      "typeGuess": "ふれあい広場（動物公園内）",
+      "disposition": "existing",
+      "matchExistingId": "chiba_chiba_zoo",
+      "excludeReason": null,
+      "note": "千葉市動物公園内の「ふれあい動物の里」が2025年4月28日に改称。共通入場券内の同一敷地内施設のため既存IDに含める（新規施設としては起票しない）。"
+    },
+    {
+      "name": "馬森（まもり）牧場",
+      "pref": "千葉県",
+      "city": "南房総市",
+      "foundUrls": ["https://mamoribokujou.com/", "https://mamoribokujou.com/about/goriyou"],
+      "typeGuess": "牧場（乗馬体験）",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "予約制のみ・見学不可",
+      "note": "完全予約制のプライベート牧場で、公式サイトに「見学不可」と明記。常設で一般来場できる施設という基準を満たさない。"
+    },
+    {
+      "name": "緑の馬牧場",
+      "pref": "千葉県",
+      "city": "成田市",
+      "foundUrls": ["https://www.umaboku.com/"],
+      "typeGuess": "牧場（引退競走馬）",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "常設一般来場不可",
+      "note": "引退競走馬が余生を過ごす牧場。イベント開催時以外は一般の入場を断っていると案内されており、常設来場施設の基準を満たさない。"
+    },
+    {
+      "name": "あいねすと（市川市行徳野鳥観察舎）",
+      "pref": "千葉県",
+      "city": "市川市",
+      "foundUrls": ["https://www.city.ichikawa.lg.jp/env09/1111000028.html"],
+      "typeGuess": "野鳥観察・保護施設",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "野生観察・保護施設",
+      "note": "行徳鳥獣保護区に隣接する野鳥観察舎。併設の野鳥病院で保護された傷病野鳥を網越しに見られるが、施設の主目的は野生の野鳥観察・保護であり、動物展示を主目的とする施設とは言えない。"
+    },
+    {
+      "name": "INSECT PARK（CHIBA TERRACE内）",
+      "pref": "千葉県",
+      "city": "千葉市中央区",
+      "foundUrls": ["https://chiba-terrace.com/insect-park/"],
+      "typeGuess": "昆虫テーマ屋内遊戯施設",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "生体展示が主目的でない",
+      "note": "昆虫目線で遊べる屋内プレイグラウンド（滑り台・アスレチック・カフェ）。生きた昆虫の常設展示という情報は確認できず、テーマ型遊戯施設と判断。"
+    },
+    {
+      "name": "我孫子市鳥の博物館",
+      "pref": "千葉県",
+      "city": "我孫子市",
+      "foundUrls": ["https://www.city.abiko.chiba.jp/bird-mus/", "https://ja.wikipedia.org/wiki/%E6%88%91%E5%AD%AB%E5%AD%90%E5%B8%82%E9%B3%A5%E3%81%AE%E5%8D%9A%E7%89%A9%E9%A4%A8"],
+      "typeGuess": "博物館（剥製・標本）",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "剥製・標本主体（生体展示ではない）",
+      "note": "日本唯一の鳥類総合博物館だが、展示の中心は約3,000点の鳥類剥製・標本・化石であり、生きた鳥の常設展示施設ではない。"
+    },
+    {
+      "name": "エキゾチックアニマル 鷹の庵",
+      "pref": "千葉県",
+      "city": "流山市",
+      "foundUrls": ["https://takanoan9.jimdofree.com/"],
+      "typeGuess": "猛禽類専門店",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "ペットショップ",
+      "note": "猛禽類・エキゾチックアニマルの飼育器具・エサの販売や個体の取扱いを行う専門店。ペットショップ・繁殖販売業に該当。"
+    },
+    {
+      "name": "浦安市郷土博物館",
+      "pref": "千葉県",
+      "city": "浦安市",
+      "foundUrls": ["https://www.city.urayasu.lg.jp/kanko/kyodo/1002064.html"],
+      "typeGuess": "郷土博物館（一部水槽展示）",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "生体展示が主目的でない",
+      "note": "テーマ展示室「海とともに」の大型水槽で東京湾・境川の魚を展示するが、施設全体は浦安の歴史・暮らしを紹介する郷土資料館であり、動物展示は一部展示にとどまる。"
+    },
+    {
+      "name": "谷津干潟自然観察センター",
+      "pref": "千葉県",
+      "city": "習志野市",
+      "foundUrls": ["https://www.seibu-la.co.jp/yatsuhigata/"],
+      "typeGuess": "野鳥・干潟観察施設",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "野生観察中心・生体展示は期間限定",
+      "note": "全面ガラス張りの館内から野生の野鳥・干潟を観察する施設。カニ・貝等の水槽展示はゴールデンウィーク等の期間限定特別展示のみで、常設の生体展示施設ではない。"
+    },
+    {
+      "name": "住まいるパーク柏の葉",
+      "pref": "千葉県",
+      "city": "柏市",
+      "foundUrls": ["https://iko-yo.net/facilities/89280"],
+      "typeGuess": "住宅展示場（イベント時のみ動物ふれあい）",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "イベント開催時のみ・常設ではない",
+      "note": "住宅展示場が土日祝に開催する無料イベントの一つとして「動物とのふれあい」があるが、常設の動物展示施設ではない。"
+    },
+    {
+      "name": "いぬカフェ（千葉市）",
+      "pref": "千葉県",
+      "city": "千葉市",
+      "foundUrls": [],
+      "typeGuess": "動物カフェ",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "動物カフェ",
+      "note": "2025年4月オープンとされる大型犬とふれあえるカフェ。カフェ業態のため除外基準に該当。具体的な施設名・URLは未特定。"
+    },
+    {
+      "name": "熱田牧場",
+      "pref": "千葉県",
+      "city": "匝瑳市",
+      "foundUrls": ["https://baseconnect.in/companies/d30249a8-5569-4dc4-85a3-ccb34aca653a"],
+      "typeGuess": "畜産業者（一般来場向け情報なし）",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "一般来場向け施設ではない",
+      "note": "検索結果は畜産業の企業情報のみで、観光・ふれあい体験など一般来場者向けの案内が確認できなかった。低確度の除外につき、将来的な再確認候補として記録。"
+    }
+  ]
+}

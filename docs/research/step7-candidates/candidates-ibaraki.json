@@ -1,0 +1,261 @@
+{
+  "block": "茨城県",
+  "generatedAt": "2026-07-15",
+  "coverage": {
+    "茨城県": {
+      "sources": [
+        "Wikipedia 日本の動物園一覧 https://ja.wikipedia.org/wiki/日本の動物園一覧",
+        "茨城県の動物園･観光牧場･動物施設一覧 https://www.zoo-palette.com/ibaraki/",
+        "観光いばらき公式ホームページ https://www.ibarakiguide.jp/",
+        "いこーよ 茨城県 動物とふれあう https://iko-yo.net/facilities?prefecture_ids%5B%5D=8",
+        "汎用Web検索（種別ごとに検索語を変えて実施: 動物園/水族館/サファリパーク/昆虫館/爬虫類館/鳥類園/ふれあい牧場）"
+      ],
+      "rounds": 2,
+      "note": "1巡目: Wikipedia一覧＋『動物園』『水族館』『動物ふれあい』の一般語検索。2巡目: zoo-palette.com一覧との突合、種別特化語（昆虫館/爬虫類/サファリパーク/バードパーク）、個別施設の現況（営業中/閉園）確認検索。ジャパンスネークセンター・草津熱帯圏・美里オーストリッチファームはWikipedia関東セクションに掲載されていたが所在地確認の結果それぞれ群馬県太田市・群馬県草津町・埼玉県美里町であり茨城県ではないため候補から除外（未掲載）。"
+    }
+  },
+  "candidates": [
+    {
+      "name": "アクアワールド茨城県大洗水族館",
+      "pref": "茨城県",
+      "city": "大洗町",
+      "foundUrls": ["https://en.aquaworld-oarai.com/"],
+      "typeGuess": "aquarium",
+      "disposition": "existing",
+      "matchExistingId": "ibaraki_oarai_aquarium",
+      "excludeReason": "",
+      "note": ""
+    },
+    {
+      "name": "日立市かみね動物園",
+      "pref": "茨城県",
+      "city": "日立市",
+      "foundUrls": ["https://www.kankou-hitachi.jp/spot.php?mode=detail&genre=4&code=179"],
+      "typeGuess": "zoo",
+      "disposition": "existing",
+      "matchExistingId": "ibaraki_kamine_zoo",
+      "excludeReason": "",
+      "note": ""
+    },
+    {
+      "name": "こもれび森のイバライド",
+      "pref": "茨城県",
+      "city": "稲敷市",
+      "foundUrls": ["https://www.ibaraido.co.jp/touch/", "https://www.zoo-palette.com/ibaraki/"],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "体験型テーマパーク内の牧場エリア・森のどうぶつハウス（ヤギ、アルパカ、フクロウ、モルモット、ウサギ、爬虫類等）。動物ふれあいが主要な来場目的の一つ。"
+    },
+    {
+      "name": "東筑波ユートピア",
+      "pref": "茨城県",
+      "city": "石岡市",
+      "foundUrls": ["https://www.sen-zoo.net/", "https://www.ibarakiguide.jp/spot.php?mode=detail&code=1292"],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "クマ・ヒツジ・ヤギ・イノシシ・サルのショー等を展示する動物園。営業中（木曜定休）。"
+    },
+    {
+      "name": "水海道あすなろの里 ふれあい動物園",
+      "pref": "茨城県",
+      "city": "常総市",
+      "foundUrls": ["http://asunaronosato.net/%E3%81%B5%E3%82%8C%E3%81%82%E3%81%84%E5%8B%95%E7%89%A9%E5%9C%92/", "https://www.zoo-palette.com/ibaraki/"],
+      "typeGuess": "both",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "常総市生涯学習課所管の野外研修センター内。ミニ動物園（ミニチュアホース、リスザル等17種）とミニ水族館を併設。マーラ・プレーリードッグ展示は休止中の情報あり（要現地確認）。"
+    },
+    {
+      "name": "牛久大仏 ふれあいガーデンテラス（旧ふれあい動物公園）",
+      "pref": "茨城県",
+      "city": "牛久市",
+      "foundUrls": ["https://daibutu.net/fureai.html", "https://pandanocoto.com/article/zoo/zoo-ushikudaibutsu"],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "日曜・祝日のみ営業（12月・2月は休止）。うさぎ等の小動物とふれあえる小動物公園。"
+    },
+    {
+      "name": "霞ヶ浦どうぶつとみんなのいえ",
+      "pref": "茨城県",
+      "city": "行方市",
+      "foundUrls": ["https://doubutsutominna.jp/", "https://ja.wikipedia.org/wiki/霞ヶ浦どうぶつとみんなのいえ"],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "旧「水の科学館」を改修し2024年7月31日開園。カピバラ・アルパカ・ペンギン・ナマケモノ・ミーアキャット・リクガメ等約20種展示。水曜定休。"
+    },
+    {
+      "name": "ダチョウ王国 石岡ファーム",
+      "pref": "茨城県",
+      "city": "石岡市",
+      "foundUrls": ["https://dacho.co.jp/ishioka-farm", "https://www.ishioka-kankou.com/ostrich-kingdom-ishioka/"],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "ダチョウ約200羽に加え、南のまきばエリアでアルパカ・カピバラ等約80種とふれあえる。第2水曜定休。"
+    },
+    {
+      "name": "奥日立きららの里 ふれあい牧場",
+      "pref": "茨城県",
+      "city": "日立市",
+      "foundUrls": ["https://kiraranosato.com/free/fureaifarm"],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "大型レジャー施設「奥日立きららの里」内のふれあい牧場エリア。ポニー・ヒツジへの餌やり体験。"
+    },
+    {
+      "name": "ネーブルパーク ポニー牧場",
+      "pref": "茨城県",
+      "city": "古河市",
+      "foundUrls": ["https://navelpark.com/n-pony/", "https://www.koga-kousya.or.jp/n-pony/"],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "ポニー専門のふれあい牧場。引き馬・乗馬体験あり。"
+    },
+    {
+      "name": "ふれあい動物園 ANIMA",
+      "pref": "茨城県",
+      "city": "稲敷郡阿見町",
+      "foundUrls": ["https://www.amikan.jp/section.php?code=100", "https://jaf.or.jp/common/area/2024/kanto/ibaraki/local-news/1018"],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "古民家をリノベーションした動物園。ハムスター・ウサギ・カメ・ヤギ等80種。獣医師常駐。土日月祝営業。"
+    },
+    {
+      "name": "かすみがうら市水族館",
+      "pref": "茨城県",
+      "city": "かすみがうら市",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/かすみがうら市水族館", "https://www.ibarakiguide.jp/spot.php?mode=detail&code=644"],
+      "typeGuess": "aquarium",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "市立水族館。霞ヶ浦水系の淡水魚・両生類・爬虫類・甲殻類など約170種展示。1990年開館、2018年リニューアル。月曜定休。"
+    },
+    {
+      "name": "豊里ゆかりの森 昆虫館",
+      "pref": "茨城県",
+      "city": "つくば市",
+      "foundUrls": ["https://www.museum.or.jp/museum/1420", "http://www.tsukubaykr.jp/"],
+      "typeGuess": "other",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "自然体験施設「豊里ゆかりの森」内の昆虫館。ヘラクレスオオカブト等生体展示・ふれあいあり。月曜定休。"
+    },
+    {
+      "name": "山方淡水魚館（山方自然生態観察施設）",
+      "pref": "茨城県",
+      "city": "常陸大宮市",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/山方淡水魚館", "https://www.tokyo-np.co.jp/article/241241"],
+      "typeGuess": "aquarium",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "閉園済み",
+      "note": "1986年開館の「日本一小さな水族館」。2023年3月閉館が複数報道で確認。"
+    },
+    {
+      "name": "ふくろうの家",
+      "pref": "茨城県",
+      "city": "つくば市",
+      "foundUrls": ["https://houseofowl.stars.ne.jp/"],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "動物カフェ",
+      "note": "フクロウカフェ・販売業態。土日祝12-16時のみ、8名までの少人数制。基準の除外類型（動物カフェ）に該当。"
+    },
+    {
+      "name": "Moff animal cafe イーアスつくば店",
+      "pref": "茨城県",
+      "city": "つくば市",
+      "foundUrls": ["https://moff-moff.jp/archives/shop/ani-cafe_tsukuba"],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "動物カフェ",
+      "note": "商業施設内の動物カフェ。基準の除外類型に該当。"
+    },
+    {
+      "name": "つくばわんわんランド",
+      "pref": "茨城県",
+      "city": "つくば市",
+      "foundUrls": ["https://wanwan-land.co.jp/", "https://www.ibarakiguide.jp/spot.php?mode=detail&code=769"],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "犬猫のテーマパーク（90犬種約1000頭＋猫約70匹）。生体展示館とふれあいパーク、レンタル散歩、ステージショーあり。展示動物が家庭動物（イヌ・ネコ）中心で野生種の動物園とは性格が異なるため、包含基準（動物園・水族館等）に含めるか要判断。"
+    },
+    {
+      "name": "水戸市森林公園 ふれあい牧場",
+      "pref": "茨城県",
+      "city": "水戸市",
+      "foundUrls": ["https://www.city.mito.lg.jp/site/shinrinkoen/6249.html"],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "市立の大規模公園（恐竜広場・森林等が主要施設）内の一角にあるヤギ・ニワトリ・ウサギのふれあい牧場。動物展示が公園来場の主目的とは言い切れず要判断。"
+    },
+    {
+      "name": "大子ふれあい牧場",
+      "pref": "茨城県",
+      "city": "久慈郡大子町",
+      "foundUrls": ["https://www.town.daigo.ibaraki.jp/page/page000022.html"],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "総面積70haの町営牧場。乳用育成牛・繁殖和牛の預託（畜産）事業が主目的で、放牧景観を一般に開放。ふれあい・餌やり等の来園者向け展示動線は確認できず、動物展示主目的の施設と言えるか要判断。"
+    },
+    {
+      "name": "モンスターズモンスター（旧サムライジャパンレプタイルズ）",
+      "pref": "茨城県",
+      "city": "土浦市",
+      "foundUrls": ["https://monsters0808.base.shop/", "https://note.com/zoo_aq_sf_oth/n/nc7159cbca7e8"],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "爬虫類・猛禽類・鳥類・小動物を扱うショップとふれあい動物園（要予約）を兼ねる。販売業（ペットショップ）とふれあい展示施設の複合形態のため要判断。"
+    },
+    {
+      "name": "鹿島神宮鹿園",
+      "pref": "茨城県",
+      "city": "鹿嶋市",
+      "foundUrls": ["https://kashimajingu.jp/guidance/境内案内/", "https://kashimashika.jp/shikaen/"],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "鹿島神宮境内の神鹿園。神鹿（シカ）約20頭。参拝の一部としての無料見学施設で、餌やりは原則禁止という情報もあり。主目的が宗教施設であり動物展示施設として扱うか要判断。"
+    },
+    {
+      "name": "茨城県鳥獣センター",
+      "pref": "茨城県",
+      "city": "那珂市",
+      "foundUrls": ["https://www.pref.ibaraki.jp/seikatsukankyo/shizen/chojyuhogo/chojucenter.html"],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "傷病野生鳥獣の保護・野生復帰を目的とする県の施設。サル・クジャク・フクロウ等の収容個体をおりで見学可能。基準の除外類型「研究施設」に近い性格を持つため要判断。"
+    }
+  ]
+}

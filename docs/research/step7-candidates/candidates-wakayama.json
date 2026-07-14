@@ -1,0 +1,192 @@
+{
+  "block": "和歌山県",
+  "generatedAt": "2026-07-15T00:00:00+09:00",
+  "coverage": {
+    "rounds": 4,
+    "sources": [
+      "Wikipedia(個別施設ページ・カテゴリ)",
+      "県・市町観光公式サイト(wakayama-kanko.or.jp, taiji-kanko.jp, kushimoto.co.jp, town.kushimoto.wakayama.jp 等)",
+      "汎用Web検索(施設公式サイト・地域メディア・比較サイト・じゃらん/いこーよ/ホームメイト等)",
+      "南紀（白浜・串本・太地・すさみ）個別クエリ"
+    ],
+    "searchTermsUsed": [
+      "動物園", "水族館", "サファリパーク", "昆虫館", "爬虫類館", "鳥類園", "ふれあい牧場", "動物ふれあい施設",
+      "イルカふれあい・ドルフィンスイム", "閉園/廃業 確認クエリ"
+    ],
+    "note": "4巡目で新規候補ゼロを確認して打ち切り。南紀（白浜・串本・太地・すさみ）は個別クエリで深掘り。県北部（橋本市・紀の川市・岩出市等）・田辺市・新宮市では常設の動物園・水族館・ふれあい施設は確認できなかった。"
+  },
+  "candidates": [
+    {
+      "name": "アドベンチャーワールド",
+      "pref": "和歌山県",
+      "city": "白浜町",
+      "foundUrls": [
+        "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%89%E3%83%99%E3%83%B3%E3%83%81%E3%83%A3%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89",
+        "https://www.aws-s.com/"
+      ],
+      "typeGuess": "動物園・水族館・サファリパーク複合テーマパーク",
+      "disposition": "existing",
+      "matchExistingId": "wakayama_adventure_world",
+      "excludeReason": null,
+      "note": "existing-by-pref.json の登録施設。"
+    },
+    {
+      "name": "和歌山城公園動物園",
+      "pref": "和歌山県",
+      "city": "和歌山市",
+      "foundUrls": [
+        "https://ja.wikipedia.org/wiki/%E5%92%8C%E6%AD%8C%E5%B1%B1%E5%9F%8E%E5%85%AC%E5%9C%92%E5%8B%95%E7%89%A9%E5%9C%92",
+        "https://wakayamajo.jp/animal/index.html"
+      ],
+      "typeGuess": "動物園(城跡公園内・無料)",
+      "disposition": "existing",
+      "matchExistingId": "wakayama_wakayama_castle_zoo",
+      "excludeReason": null,
+      "note": "existing-by-pref.json の登録施設。"
+    },
+    {
+      "name": "太地町立くじらの博物館",
+      "pref": "和歌山県",
+      "city": "太地町",
+      "foundUrls": [
+        "https://www.kujirakan.jp/",
+        "https://ja.wikipedia.org/wiki/%E3%81%8F%E3%81%98%E3%82%89%E3%81%AE%E5%8D%9A%E7%89%A9%E9%A4%A8",
+        "https://www.wakayama-kanko.or.jp/spots/detail_1004.html"
+      ],
+      "typeGuess": "水族館(クジラ・イルカ専門博物館)",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "世界最大級のクジラ博物館。館内水族館でマダライルカ等の小型鯨類を展示し、オルカ・ドルフィンショー、ドルフィンタッチ体験あり。生体展示が主目的で常設。"
+    },
+    {
+      "name": "串本海中公園水族館",
+      "pref": "和歌山県",
+      "city": "串本町",
+      "foundUrls": [
+        "https://www.kushimoto.co.jp/",
+        "https://www.wakayama-kanko.or.jp/spots/detail_1013.html",
+        "https://www.town.kushimoto.wakayama.jp/kanko/kushimoto/kaichu-kouen.html"
+      ],
+      "typeGuess": "水族館(海中展望塔・海中観光船併設)",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "1970年指定の日本初の海中公園。水族館で約500種5000匹展示、ウミガメタッチング等の常設ふれあい体験あり。"
+    },
+    {
+      "name": "京都大学白浜水族館（京都大学フィールド科学教育研究センター瀬戸臨海実験所水族館）",
+      "pref": "和歌山県",
+      "city": "白浜町",
+      "foundUrls": [
+        "https://www.seto.kyoto-u.ac.jp/shirahama_aqua/",
+        "https://ja.wikipedia.org/wiki/%E4%BA%AC%E9%83%BD%E5%A4%A7%E5%AD%A6%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E7%A7%91%E5%AD%A6%E6%95%99%E8%82%B2%E7%A0%94%E7%A9%B6%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E7%80%AC%E6%88%B8%E8%87%A8%E6%B5%B7%E5%AE%9F%E9%A8%93%E6%89%80%E6%B0%B4%E6%97%8F%E9%A4%A8",
+        "https://www.wakayama-kanko.or.jp/spots/detail_681.html"
+      ],
+      "typeGuess": "水族館(大学附属・博物館法登録)",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "1930年開館、京都大学瀬戸臨海実験所附属。博物館法上の博物館相当施設で一般来場・有料。研究施設だが常設で一般公開する生体展示水族館のため除外基準（研究施設のみ）に該当しないと判断。約500種展示。"
+    },
+    {
+      "name": "すさみ町立エビとカニの水族館",
+      "pref": "和歌山県",
+      "city": "すさみ町",
+      "foundUrls": [
+        "https://ebikani-aquarium.com/",
+        "https://ja.wikipedia.org/wiki/%E3%81%99%E3%81%95%E3%81%BF%E7%94%BA%E7%AB%8B%E3%82%A8%E3%83%93%E3%81%A8%E3%82%AB%E3%83%8B%E3%81%AE%E6%B0%B4%E6%97%8F%E9%A4%A8"
+      ],
+      "typeGuess": "水族館(甲殻類専門)",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "道の駅すさみ内。エビ・カニ専門で世界唯一を謳う。約150種1000匹、タッチプールあり。"
+    },
+    {
+      "name": "和歌山県立自然博物館",
+      "pref": "和歌山県",
+      "city": "海南市",
+      "foundUrls": [
+        "https://www.shizenhaku.wakayama-c.ed.jp/",
+        "https://www.shizenhaku.wakayama-c.ed.jp/exhibition.html",
+        "https://www.wakayama-kanko.or.jp/spots/detail_672.html"
+      ],
+      "typeGuess": "自然史博物館(第一展示室が水族館型・第二展示室は標本中心)",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "第一展示室は生きた水生生物約450種3000匹の水族館型展示（大水槽「黒潮の海」等）。ただし第二展示室は哺乳類・昆虫・化石等の標本中心で、施設全体としては総合自然史博物館。生体展示が「主目的」と言えるか、後工程で公式資料により要確認。"
+    },
+    {
+      "name": "ドルフィン・ベェイス",
+      "pref": "和歌山県",
+      "city": "太地町",
+      "foundUrls": [
+        "https://dolphinbase.co.jp/",
+        "https://taiji-kanko.jp/experience/dolphinebase.html"
+      ],
+      "typeGuess": "ふれあい牧場(イルカふれあい・スイム施設)",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "1994年開業、太地町の常設施設。ドルフィンスイム・ドルフィンエンカウンター等イルカとのふれあいが来場の主目的。完全予約制だが常設・生体飼育。2026年時点でも稼働中（サイトに2026年6-7月のメンテナンス予約情報あり）。"
+    },
+    {
+      "name": "ドルフィンリゾート",
+      "pref": "和歌山県",
+      "city": "太地町",
+      "foundUrls": [
+        "https://dolphinresort.jp/",
+        "https://taiji-kanko.jp/experience/dolphinresort.html"
+      ],
+      "typeGuess": "ふれあい牧場(イルカ・アザラシふれあい施設)",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "東牟婁郡太地町森浦703-15。イルカふれあい体験プログラム等を提供する常設施設。営業日は金土日曜・不定休。ドルフィン・ベェイスとは別法人・別施設（太地町観光協会サイトで並列掲載）。"
+    },
+    {
+      "name": "ドルフィンパーク（和歌山マリーナシティ ポルトヨーロッパ内）",
+      "pref": "和歌山県",
+      "city": "和歌山市",
+      "foundUrls": [
+        "https://wakayamashimpo.co.jp/2013/03/20130307_23170.html",
+        "https://www.asoview.com/spot/spot0000034965/",
+        "https://www.marinacity.com/porto/guidecat/attraction/"
+      ],
+      "typeGuess": "ふれあい牧場(イルカタッチ・ボーティング施設)",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "2013年3月開業のイルカふれあい施設（運河利用）。ただしポルトヨーロッパ公式サイトの現行アトラクション一覧（2026年時点）に記載がなく、閉鎖の可能性がある。公式サイトで最新の営業状況を要確認。"
+    },
+    {
+      "name": "ワクワクいきものワールド in 和歌山マリーナシティ",
+      "pref": "和歌山県",
+      "city": "和歌山市",
+      "foundUrls": [
+        "https://www.marinacity.com/porto/event/event-2974/",
+        "http://wwiw.jp/"
+      ],
+      "typeGuess": "昆虫・小動物ふれあいイベント(巡回開催)",
+      "disposition": "excluded",
+      "excludeReason": "移動型・期間限定展示",
+      "matchExistingId": null,
+      "note": "運営会社「株式会社ブルーワールド」が全国の商業施設・公園（扇町公園、万博記念公園、せんちゅうパル等）を巡回開催するイベント。和歌山マリーナシティも巡回開催地の一つで常設施設ではない。"
+    },
+    {
+      "name": "ふれあい牧場テール",
+      "pref": "和歌山県",
+      "city": "有田川町",
+      "foundUrls": [
+        "http://www.arida-rs.com/tail/profile.html"
+      ],
+      "typeGuess": "ふれあい牧場(小動物)",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "検索結果のスニペットで「和歌山県有田郡有田川町徳田1693-1・第一種動物取扱登録証を持つ動物施設」と紹介されているが、公式サイトがSSL証明書エラーで直接確認できず、他媒体での言及も見つけられなかった。現存・常設かどうか後工程で要確認。"
+    }
+  ]
+}

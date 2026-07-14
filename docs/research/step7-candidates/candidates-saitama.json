@@ -1,0 +1,231 @@
+{
+  "block": "埼玉県",
+  "generatedAt": "2026-07-15",
+  "coverage": {
+    "埼玉県": {
+      "sources": [
+        "Wikipedia 日本の動物園一覧 https://ja.wikipedia.org/wiki/日本の動物園一覧（Category:埼玉県の動物園ページは404で直接参照不可、一覧記事から抽出）",
+        "ホームメイト 埼玉県の動物園一覧 https://www.homemate-research-zoo.com/11/list/",
+        "ホームメイト 埼玉県の水族館一覧 https://www.homemate-research-aquarium.com/11/list/",
+        "じゃらん 動物園・水族館特集（埼玉県） https://sp.jorudan.co.jp/zoo_aqua/saitama.html",
+        "Kids-Zoo 埼玉の動物園・水族館一覧 https://kids-zoo.info/saitama/",
+        "県・市町村公式サイト（埼玉県、さいたま市、川口市、越谷市、鴻巣市、加須市、秩父市 等）",
+        "いこーよ 埼玉県 動物とふれあう https://iko-yo.net/facilities?prefecture_ids%5B%5D=11&tags%5B%5D=%E5%8B%95%E7%89%A9%E3%81%A8%E3%81%B5%E3%82%8C%E3%81%82%E3%81%86",
+        "汎用Web検索（種別ごとに検索語を変えて実施: 動物園/水族館/サファリパーク/昆虫館/爬虫類館/鳥類園/バードサンクチュアリ/ふれあい牧場）"
+      ],
+      "rounds": 2,
+      "note": "1巡目: Wikipedia一覧＋ホームメイト・じゃらん等の集約サイトで既存6施設を確認しつつ、種別別一般語検索（サファリパーク/昆虫館/爬虫類館/鳥類園/ふれあい牧場）で新規候補を収集。2巡目: 集約サイトに未掲載だった個別施設（宝登山小動物公園、アクアパーク川越、キャンベルタウン野鳥の森 等）の現況確認検索、および閉園情報・別業態疑いのある施設（深谷爬虫類館＝時間制ドリンク付き料金で動物カフェ寄りの疑い、榎本牧場・加藤牧場＝観光牧場/乳製品販売が主目的の疑い、コウノトリ野生復帰センター＝野生復帰目的の保護施設寄り）を個別検証。川口市立グリーンセンターのバードセンターは2022年から改修のため休館中と判明。さいたま市動物愛護ふれあいセンターは犬猫の保護・譲渡が主目的のため除外。あらかわ遊園（東京都荒川区）はWikipedia一覧の近隣掲載だが埼玉県ではないため候補から除外（掲載せず）。2巡目後半は同一施設の再検出が続き新規候補が出なくなったため終了。"
+    }
+  },
+  "candidates": [
+    {
+      "name": "大宮公園小動物園",
+      "pref": "埼玉県",
+      "city": "さいたま市",
+      "foundUrls": ["https://www.homemate-research-zoo.com/11/list/", "https://sp.jorudan.co.jp/zoo_aqua/saitama.html"],
+      "typeGuess": "zoo",
+      "disposition": "existing",
+      "matchExistingId": "saitama_omiya_zoo",
+      "excludeReason": "",
+      "note": ""
+    },
+    {
+      "name": "大崎公園子供動物園",
+      "pref": "埼玉県",
+      "city": "さいたま市",
+      "foundUrls": ["https://www.city.saitama.lg.jp/004/001/003/001/p002130.html", "https://sp.jorudan.co.jp/zoo_aqua/saitama.html"],
+      "typeGuess": "zoo",
+      "disposition": "existing",
+      "matchExistingId": "saitama_osaki_zoo",
+      "excludeReason": "",
+      "note": ""
+    },
+    {
+      "name": "狭山市立智光山公園こども動物園",
+      "pref": "埼玉県",
+      "city": "狭山市",
+      "foundUrls": ["https://www.homemate-research-zoo.com/11/list/", "https://kids-zoo.info/saitama/"],
+      "typeGuess": "zoo",
+      "disposition": "existing",
+      "matchExistingId": "saitama_chikozan_zoo",
+      "excludeReason": "",
+      "note": ""
+    },
+    {
+      "name": "さいたま水族館",
+      "pref": "埼玉県",
+      "city": "羽生市",
+      "foundUrls": ["https://www.pref.saitama.lg.jp/shisetsu/koen/029.html", "https://www.homemate-research-aquarium.com/11/list/"],
+      "typeGuess": "aquarium",
+      "disposition": "existing",
+      "matchExistingId": "saitama_saitama_aquarium",
+      "excludeReason": "",
+      "note": ""
+    },
+    {
+      "name": "埼玉県こども動物自然公園",
+      "pref": "埼玉県",
+      "city": "東松山市",
+      "foundUrls": ["https://www.parks.or.jp/sczoo/"],
+      "typeGuess": "zoo",
+      "disposition": "existing",
+      "matchExistingId": "saitama_kodomo_zoo",
+      "excludeReason": "",
+      "note": ""
+    },
+    {
+      "name": "東武動物公園",
+      "pref": "埼玉県",
+      "city": "宮代町",
+      "foundUrls": ["https://www.tobuzoo.com/", "https://www.tobuzoo.com/zoo/fureai/"],
+      "typeGuess": "zoo",
+      "disposition": "existing",
+      "matchExistingId": "saitama_tobu_zoo",
+      "excludeReason": "",
+      "note": ""
+    },
+    {
+      "name": "宝登山小動物公園",
+      "pref": "埼玉県",
+      "city": "長瀞町",
+      "foundUrls": ["https://hodosan-ropeway.co.jp/zoo/", "https://www.nagatoro.gr.jp/outletticket/%E5%AE%9D%E7%99%BB%E5%B1%B1%E5%B0%8F%E5%8B%95%E7%89%A9%E5%85%AC%E5%9C%92/", "https://www.homemate-research-zoo.com/dtl/00000000000000132256/"],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "宝登山ロープウェイ山頂駅併設の小動物公園。1960年開園。ニホンザル・ニホンジカ・ヤギ等を展示、営業中。"
+    },
+    {
+      "name": "アクアパーク川越",
+      "pref": "埼玉県",
+      "city": "川越市",
+      "foundUrls": ["https://gaia-ent.co.jp/", "https://kawagoe-info.net/walk-kawagoe/aquapark-kawagoe", "https://spring.walkerplus.com/gw/topics/article/1259526/"],
+      "typeGuess": "aquarium",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "2025年4月25日グランドオープンの都市型アクアリウム施設（埼玉県初、黒潮天然海水使用）。海水魚・爬虫類・両生類など約100種展示、ふれあいコーナーあり。"
+    },
+    {
+      "name": "キャンベルタウン野鳥の森",
+      "pref": "埼玉県",
+      "city": "越谷市",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%99%E3%83%AB%E3%82%BF%E3%82%A6%E3%83%B3%E9%87%8E%E9%B3%A5%E3%81%AE%E6%A3%AE", "https://www.city.koshigaya.saitama.jp/toiawase/shisetsu/sportskouen/koen/sansaku/intro_J_yatyounomori.html"],
+      "typeGuess": "other",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "越谷市立の鳥類園。1995年、姉妹都市キャンベルタウン市（豪）との交流10周年で開設。ワラビー・エミュー・ワライカワセミ等28種386点、バードケージあり。営業中。"
+    },
+    {
+      "name": "彩の国ふれあい牧場（埼玉県秩父高原牧場）",
+      "pref": "埼玉県",
+      "city": "東秩父村",
+      "foundUrls": ["https://www.pref.saitama.lg.jp/kogen-bokujo/shisetsu/fureaisisetu.html", "https://www.pref.saitama.lg.jp/kogen-bokujo/"],
+      "typeGuess": "other",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "県営秩父高原牧場の一部を県民に開放したふれあい牧場。ヤギ・ヒツジ・ウサギを放し飼いで常時展示、入場無料。"
+    },
+    {
+      "name": "むさしの村 ふれあい牧場",
+      "pref": "埼玉県",
+      "city": "加須市",
+      "foundUrls": ["https://www.musashinomura.co.jp/touch/", "http://www.musashinomura.co.jp/areaguide/fureai.html"],
+      "typeGuess": "other",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "遊園地「むさしの村」内の常設ふれあい牧場エリア（ポニー・ウサギ・ヤギ・ブタ・クジャク等）。遊園地入園料に含まれる形態と見られ、独立入場の可否は要現地確認。"
+    },
+    {
+      "name": "加須市大越昆虫館",
+      "pref": "埼玉県",
+      "city": "加須市",
+      "foundUrls": ["https://midorinoportal.pref.saitama.lg.jp/act/%E3%82%B3%E3%83%90%E3%83%88%E3%83%B3%E3%81%95%E3%82%93%E3%81%BD5/", "https://kumagaya.keizai.biz/headline/540/"],
+      "typeGuess": "other",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "埼玉昆虫談話会運営の私設昆虫館。標本約10万点のうち1200点常設展示、生体展示・昆虫採集体験もあり。土日祝のみ開館・入館無料。"
+    },
+    {
+      "name": "羊山公園ふれあい牧場",
+      "pref": "埼玉県",
+      "city": "秩父市",
+      "foundUrls": ["https://www.city.chichibu.lg.jp/1853.html", "https://ja.wikipedia.org/wiki/%E7%BE%8A%E5%B1%B1%E5%85%AC%E5%9C%92"],
+      "typeGuess": "other",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "秩父市営の羊山公園・芝桜の丘にある常設ふれあい牧場。日本コリデール種のヒツジを飼育。"
+    },
+    {
+      "name": "深谷爬虫類館",
+      "pref": "埼玉県",
+      "city": "深谷市",
+      "foundUrls": ["https://gustavewani.wixsite.com/fukayahachu", "https://vegepark-fukaya.jp/spot/fukayahachurui"],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "爬虫類系YouTuber運営の爬虫類展示施設（トカゲ・ヘビ・カメ・ワニ等100種以上）。料金体系が「2,000円/時間、ドリンク1杯・餌代込み」という情報があり、動物カフェ的な業態（除外類型）に該当するか要現地確認。"
+    },
+    {
+      "name": "榎本牧場",
+      "pref": "埼玉県",
+      "city": "上尾市",
+      "foundUrls": ["http://www.enoboku.com/", "https://ushi-camera.com/farmguide/saitama/enoboku/"],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "農事組合法人の酪農牧場。ホルスタイン60〜70頭の牛舎見学・搾乳ロボット見学が中心で、ニワトリ・ミニブタ・ウサギ等とのふれあいコーナーも併設。入場無料。主目的が酪農体験/直売（ジェラート等）か動物展示かは要判断。"
+    },
+    {
+      "name": "鴻巣市コウノトリ野生復帰センター 天空の里",
+      "pref": "埼玉県",
+      "city": "鴻巣市",
+      "foundUrls": ["https://www.city.kounosu.saitama.jp/site/konotori/", "https://www.city.kounosu.saitama.jp/site/konotori/1294.html"],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "コウノトリの飼育・野生復帰（放鳥）を目的とする市の施設。一般公開・有料入館（大人100円）で個体を間近に観察可能だが、性格としては基準で除外対象の「研究施設」に近い面もあり要判断。"
+    },
+    {
+      "name": "加藤牧場",
+      "pref": "埼玉県",
+      "city": "日高市",
+      "foundUrls": ["https://www.baffi.ne.jp/", "https://chocotabi-saitama.jp/business/location/787/"],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "乳牛約200頭を飼育する酪農牧場。ジェラート等乳製品販売・牛や山羊の搾乳体験がメインで、動物展示が主目的とまでは言い切れず要判断。"
+    },
+    {
+      "name": "川口市立グリーンセンター バードセンター",
+      "pref": "埼玉県",
+      "city": "川口市",
+      "foundUrls": ["https://www.go2park.net/photo/greencenter_birdcenter.html", "https://greencenter.1110city.com/"],
+      "typeGuess": "other",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "休園中。市立植物公園「グリーンセンター」内の鳥類展示施設（クジャク・キジ・カモ・ブンチョウ等）。2022年から改修のため閉鎖中、隣接大温室の改修完了後に再整備の上再開予定との情報あり。"
+    },
+    {
+      "name": "さいたま市動物愛護ふれあいセンター",
+      "pref": "埼玉県",
+      "city": "さいたま市",
+      "foundUrls": ["https://www.city.saitama.lg.jp/008/004/003/index.html"],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "動物愛護・保護施設のため対象外",
+      "note": "迷い犬・保護猫の収容/譲渡と愛護啓発が目的の市施設。野生動物・水生生物の常設展示を主目的とする動物園・水族館類型には該当しない。"
+    }
+  ]
+}

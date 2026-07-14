@@ -1,0 +1,542 @@
+{
+  "block": "東北",
+  "generatedAt": "2026-07-15",
+  "coverage": {
+    "青森県": {
+      "sources": [
+        "https://ja.wikipedia.org/wiki/日本の動物園一覧",
+        "https://aomori-tourism.com/theme/animal/",
+        "WebSearch: 青森県 動物園 一覧, 青森県 ふれあい牧場, 青森県 昆虫館 爬虫類館 鳥類園"
+      ],
+      "rounds": 2,
+      "note": "1巡目: Wikipedia動物園一覧+観光公式サイトで牧場・公園系を収集。2巡目: ふれあい牧場/昆虫館/爬虫類館/鳥類園の言い換え語で追加検索したが新規は丹頂鶴自然公園のみ追加、昆虫館・爬虫類館は該当施設なしを確認（県内爬虫類館ヒットは他県のもの）。水族館は既存の浅虫水族館のみで他に確認できず。"
+    },
+    "岩手県": {
+      "sources": [
+        "https://ja.wikipedia.org/wiki/日本の動物園一覧",
+        "WebSearch: 岩手県 動物園 サファリパーク, 久慈地下水族科学館, Ark館ヶ森, 岩手県 ふれあい牧場 昆虫館 爬虫類館, 岩手県立水産科学館"
+      ],
+      "rounds": 2,
+      "note": "1巡目: 動物園・サファリパーク一覧＋水族館検索でもぐらんぴあを新規発見。2巡目: ふれあい牧場・水産科学館の言い換えで室根高原/くずまき高原/水産科学館を追加。昆虫館・爬虫類館は該当施設を確認できず。"
+    },
+    "宮城県": {
+      "sources": [
+        "https://ja.wikipedia.org/wiki/日本の動物園一覧",
+        "https://zfc.jp/en/zoolist/?pre=Miyagi",
+        "WebSearch: 宮城蔵王キツネ村, Ark館ヶ森, 氷の水族館 シャークミュージアム, Aquaterrace 錦が丘, 金華山, 蔵王野鳥の森"
+      ],
+      "rounds": 2,
+      "note": "1巡目: Wikipedia動物園一覧+zfc.jp動物園リストでキツネ村・アクアテラス錦ケ丘等を発見。2巡目: 昆虫館・爬虫類園・バードパークの言い換えで気仙沼の氷の水族館/シャークミュージアム、金華山、蔵王野鳥の森を確認したがいずれも生体常設展示施設としての基準を満たさず除外。Ark館ヶ森は当初宮城県として言及されたが実際は岩手県一関市のため岩手県側に計上。"
+    },
+    "秋田県": {
+      "sources": [
+        "https://ja.wikipedia.org/wiki/日本の動物園一覧",
+        "WebSearch: 秋田県 動物園 一覧 サファリパーク ふれあい牧場, 阿仁マタギの里 熊牧場, 秋田八幡平クマ牧場, 秋田県 淡水魚 水族館"
+      ],
+      "rounds": 2,
+      "note": "1巡目: 動物園一覧検索で大森山動物園以外にクマ牧場系を発見。2巡目: クマ牧場の言い換え検索で阿仁熊牧場(くまくま園)と、閉鎖済みの秋田八幡平クマ牧場を確認。「秋田県児童会館付属動物園」「秋田市児童動物園」という施設名も検索結果の要約に出たが、一次情報で実在・所在地を確認できなかったため候補に不掲載（捏造禁止のため）。淡水魚専門施設・昆虫館・爬虫類館は確認できず。"
+    },
+    "山形県": {
+      "sources": [
+        "https://ja.wikipedia.org/wiki/日本の動物園一覧",
+        "WebSearch: 山形県 動物園 一覧 サファリパーク ふれあい牧場, オーストリッチ展示圃, 河北町児童動物園, ながめやま牧場小動物公園"
+      ],
+      "rounds": 2,
+      "note": "1巡目: 動物園一覧+観光サイトで河北町児童動物園・前森高原・秋山牧場等を発見。2巡目: ふれあい牧場/ダチョウ展示の言い換えでオーストリッチ展示圃・ながめやま牧場小動物公園を追加。水族館は既存の加茂水族館のみ（2026年4月に「東北エプソンアクアリウムかもすい」へ改称した情報あり、既存レコードは旧名称のまま）。"
+    },
+    "福島県": {
+      "sources": [
+        "https://ja.wikipedia.org/wiki/日本の動物園一覧",
+        "WebSearch: 福島県 動物園 サファリパーク ふれあい牧場, 東北サファリパーク, 福島県 昆虫館, ムシムシランド, ムシテックワールド, 郡山石筵ふれあい牧場, 岩瀬牧場, 磐梯高原南ヶ丘牧場"
+      ],
+      "rounds": 2,
+      "note": "1巡目: 動物園一覧+観光サイトで東北サファリパーク・南ヶ丘牧場・石筵ふれあい牧場・岩瀬牧場を発見。2巡目: 昆虫館の言い換えでムシムシランド（生体カブトムシ展示あり・新規）とムシテックワールド（科学館内に生体展示あり・review）を追加。福島移動昆虫館は移動型のため除外対象として確認のみ。"
+    }
+  },
+  "candidates": [
+    {
+      "name": "青森県営浅虫水族館",
+      "pref": "青森県",
+      "city": "青森市",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/日本の水族館"],
+      "typeGuess": "aquarium",
+      "disposition": "existing",
+      "matchExistingId": "aomori_asamushi_aquarium",
+      "excludeReason": "",
+      "note": ""
+    },
+    {
+      "name": "弥生いこいの広場",
+      "pref": "青森県",
+      "city": "弘前市",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/日本の動物園一覧"],
+      "typeGuess": "zoo",
+      "disposition": "existing",
+      "matchExistingId": "aomori_yayoi_ikoi_hiroba",
+      "excludeReason": "",
+      "note": ""
+    },
+    {
+      "name": "芦野児童動物園",
+      "pref": "青森県",
+      "city": "五所川原市",
+      "foundUrls": ["https://co-trip.jp/spot/325725", "https://www.museum.or.jp/museum/542"],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "芦野公園内の児童動物園。ヒグマ・ニホンザル・鹿等を展示。"
+    },
+    {
+      "name": "合浦公園（動物舎）",
+      "pref": "青森県",
+      "city": "青森市",
+      "foundUrls": ["https://www.city.aomori.aomori.jp/shisetsu/1005691/1007882.html", "https://aomori.uminohi.jp/report/gappo-park-3/"],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "公園内に動物舎7棟。クジャク・サル・ニワトリ等を展示する独立常設エリア。"
+    },
+    {
+      "name": "丹頂鶴自然公園",
+      "pref": "青森県",
+      "city": "北津軽郡鶴田町",
+      "foundUrls": ["https://www.town.tsuruta.lg.jp/kankou/kankou-kankou/tantyoudurupark.html", "https://ja.wikipedia.org/wiki/丹頂鶴自然公園_(鶴田町)"],
+      "typeGuess": "other",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "タンチョウの飼育・展示を行う鳥類園。"
+    },
+    {
+      "name": "八戸公園（こどもの国・動物放牧ゾーン）",
+      "pref": "青森県",
+      "city": "八戸市",
+      "foundUrls": ["https://www.city.hachinohe.aomori.jp/soshikikarasagasu/koenryokuchika/koen/18209.html", "https://zfc.jp/en/zoolist/387"],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "公園内の独立展示ゾーン。北限のサル等の小動物ふれあいエリア。zfc.jp（動物園訪問記録サイト）にも動物園として掲載。"
+    },
+    {
+      "name": "むつ市脇野沢野猿公苑",
+      "pref": "青森県",
+      "city": "むつ市",
+      "foundUrls": ["https://www.city.mutsu.lg.jp/government/shisetsu/kankou/wakinosawayaenkouen.html"],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "北限のニホンザル（国天然記念物）を有料公開する常設施設。管理された観察苑で野生動物公園に類する扱い。"
+    },
+    {
+      "name": "十和田市馬事公苑 駒っこランド",
+      "pref": "青森県",
+      "city": "十和田市",
+      "foundUrls": ["https://komakkoland.jp/"],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "馬の展示・ふれあいが中心の馬事公苑。動物展示が主目的か、乗馬体験施設としての性格が強いか要判断。"
+    },
+    {
+      "name": "カワヨグリーン牧場",
+      "pref": "青森県",
+      "city": "上北郡おいらせ町",
+      "foundUrls": ["https://kawayo.com/", "https://www.town.oirase.aomori.jp/soshiki/2310/kawayo.html"],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "乳牛・馬・羊の放牧牧場。パークゴルフ等レジャー施設併設で、動物展示が主目的か要確認。"
+    },
+    {
+      "name": "間木ノ平グリーンファームふれあい牧場",
+      "pref": "青森県",
+      "city": "三戸郡新郷村",
+      "foundUrls": ["https://www.japan47go.travel/ja/detail/46d00671-4af1-497d-9f5e-f67ff9ba4389"],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "牛・ヤギ・羊とのふれあい牧場。"
+    },
+    {
+      "name": "岩手サファリパーク",
+      "pref": "岩手県",
+      "city": "一関市",
+      "foundUrls": ["https://www.iwate-safari.jp/"],
+      "typeGuess": "zoo",
+      "disposition": "existing",
+      "matchExistingId": "iwate_safari_park",
+      "excludeReason": "",
+      "note": ""
+    },
+    {
+      "name": "盛岡市動物公園ZOOMO",
+      "pref": "岩手県",
+      "city": "盛岡市",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/日本の動物園一覧"],
+      "typeGuess": "zoo",
+      "disposition": "existing",
+      "matchExistingId": "iwate_morioka_zoomo",
+      "excludeReason": "",
+      "note": ""
+    },
+    {
+      "name": "久慈地下水族科学館もぐらんぴあ",
+      "pref": "岩手県",
+      "city": "久慈市",
+      "foundUrls": ["https://www.moguranpia.com/", "https://ja.wikipedia.org/wiki/もぐらんぴあ"],
+      "typeGuess": "aquarium",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "東日本大震災で全壊後、2016年に再開した地下水族館。既存収録リストに未掲載。"
+    },
+    {
+      "name": "Ark館ヶ森（館ヶ森アーク牧場）",
+      "pref": "岩手県",
+      "city": "一関市藤沢町",
+      "foundUrls": ["https://www.arkfarm.co.jp/en/farm/animals/", "https://www.tohokukanko.jp/attractions/detail_1004281.html"],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "農業体験牧場で動物とのふれあいコーナーあり。飲食・農業体験が主目的の複合施設で、動物展示が主目的と言えるか要確認。"
+    },
+    {
+      "name": "室根高原ふれあい牧場",
+      "pref": "岩手県",
+      "city": "一関市",
+      "foundUrls": ["https://www.nihon-kankou.or.jp/iwate/detail/03209cb3522080905"],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "乗馬・引き馬体験中心のふれあい牧場。"
+    },
+    {
+      "name": "くずまき高原牧場",
+      "pref": "岩手県",
+      "city": "岩手郡葛巻町",
+      "foundUrls": ["https://kuzumaki.jp/"],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "酪農体験牧場でふれあい動物コーナーあり。畜産公社運営の公共牧場で、動物展示が主目的の施設か要確認。"
+    },
+    {
+      "name": "岩手県立水産科学館",
+      "pref": "岩手県",
+      "city": "宮古市",
+      "foundUrls": ["https://www.city.miyako.iwate.jp/gyosei/soshiki/suisan/2/1/1/index.html"],
+      "typeGuess": "aquarium",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "水産専門科学館で生体水槽15基を常設展示（小規模水族館としても案内される）。主目的が漁業学習展示か水族館的展示かで判断要。"
+    },
+    {
+      "name": "仙台うみの杜水族館",
+      "pref": "宮城県",
+      "city": "仙台市",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/日本の水族館"],
+      "typeGuess": "aquarium",
+      "disposition": "existing",
+      "matchExistingId": "miyagi_uminomori_aquarium",
+      "excludeReason": "",
+      "note": ""
+    },
+    {
+      "name": "仙台市八木山動物公園",
+      "pref": "宮城県",
+      "city": "仙台市",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/日本の動物園一覧"],
+      "typeGuess": "zoo",
+      "disposition": "existing",
+      "matchExistingId": "miyagi_yagiyama_zoo",
+      "excludeReason": "",
+      "note": ""
+    },
+    {
+      "name": "宮城蔵王キツネ村",
+      "pref": "宮城県",
+      "city": "白石市",
+      "foundUrls": ["https://www.zao-machi.com/sightseeing_spot/651.html", "https://ja.wikipedia.org/wiki/宮城蔵王キツネ村"],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "キツネを中心とした民間動物園。既存収録リストに未掲載。"
+    },
+    {
+      "name": "アクアテラス錦ケ丘",
+      "pref": "宮城県",
+      "city": "仙台市青葉区",
+      "foundUrls": ["https://aquaterrace.co.jp/"],
+      "typeGuess": "aquarium",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "熱帯魚・フクロウ・爬虫類等を展示する民間の小型水族館（2015年開業）。"
+    },
+    {
+      "name": "氷の水族館",
+      "pref": "宮城県",
+      "city": "気仙沼市",
+      "foundUrls": ["https://www.uminoichi.com/iceaquarium/", "https://ja.wikipedia.org/wiki/氷の水族館"],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "生きた魚を展示しない（氷詰め魚の展示施設のため常設生体展示施設の基準を満たさない）",
+      "note": ""
+    },
+    {
+      "name": "気仙沼リアスシャークミュージアム",
+      "pref": "宮城県",
+      "city": "気仙沼市",
+      "foundUrls": ["https://www.uminoichi.com/museum/", "https://ja.wikipedia.org/wiki/シャークミュージアム"],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "サメの博物館（標本・模型中心）で生体展示は小水槽の小型サメのみ。水族館ではなく博物館との案内あり",
+      "note": ""
+    },
+    {
+      "name": "金華山（野生シカ・サル生息地）",
+      "pref": "宮城県",
+      "city": "石巻市",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/金華山_(宮城県)"],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "常設の動物展示施設ではなく、島全体が信仰地かつ野生動物の自然生息地（管理された展示施設ではない）",
+      "note": ""
+    },
+    {
+      "name": "宮城県蔵王野鳥の森自然観察センター「ことりはうす」",
+      "pref": "宮城県",
+      "city": "刈田郡蔵王町",
+      "foundUrls": ["https://www.pref.miyagi.jp/soshiki/sizenhogo/kotori.html"],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "捕獲・飼育した鳥類の常設展示はなく、野鳥の生態を紹介する自然観察・パネル展示施設",
+      "note": ""
+    },
+    {
+      "name": "秋田市大森山動物園～あきぎんオモリンの森～",
+      "pref": "秋田県",
+      "city": "秋田市",
+      "foundUrls": ["https://www.city.akita.lg.jp/zoo/index.html"],
+      "typeGuess": "zoo",
+      "disposition": "existing",
+      "matchExistingId": "akita_omoriyama_zoo",
+      "excludeReason": "",
+      "note": ""
+    },
+    {
+      "name": "男鹿水族館GAO",
+      "pref": "秋田県",
+      "city": "男鹿市",
+      "foundUrls": ["https://www.gao-aqua.jp/"],
+      "typeGuess": "aquarium",
+      "disposition": "existing",
+      "matchExistingId": "akita_oga_aquarium_gao",
+      "excludeReason": "",
+      "note": ""
+    },
+    {
+      "name": "阿仁熊牧場「くまくま園」",
+      "pref": "秋田県",
+      "city": "北秋田市",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/阿仁熊牧場", "https://www.city.kitaakita.akita.jp/archive/contents-6060"],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "ヒグマ・ツキノワグマを展示するクマ牧場。2014年改称・リニューアル、2025年施設更新。"
+    },
+    {
+      "name": "秋田八幡平クマ牧場",
+      "pref": "秋田県",
+      "city": "鹿角市",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/秋田八幡平クマ牧場"],
+      "typeGuess": "zoo",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "閉園確認済み（2012年のヒグマ脱走死亡事故を受け休園、飼育クマは阿仁熊牧場へ移送され施設は閉鎖）",
+      "note": "包含基準に基づけばclosedとして記録保持対象だが、本ラウンドでは列挙のみのため候補台帳にはexcludedで記載。"
+    },
+    {
+      "name": "鶴岡市立加茂水族館",
+      "pref": "山形県",
+      "city": "鶴岡市",
+      "foundUrls": ["https://kamo-kurage.jp/"],
+      "typeGuess": "aquarium",
+      "disposition": "existing",
+      "matchExistingId": "yamagata_kamo_aquarium",
+      "excludeReason": "",
+      "note": "2026年4月に「東北エプソンアクアリウムかもすい」へ改称した情報あり（後工程で名称更新の要確認）。"
+    },
+    {
+      "name": "河北町児童動物園",
+      "pref": "山形県",
+      "city": "西村山郡河北町",
+      "foundUrls": ["https://www.town.kahoku.yamagata.jp/soshiki/shoko/kankousinkou/Kahokuchildrenzoo/index.html"],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "山形県内唯一の動物園を謳う。2025年4月リニューアル。既存収録リストに未掲載。"
+    },
+    {
+      "name": "オーストリッチ展示圃",
+      "pref": "山形県",
+      "city": "西村山郡朝日町",
+      "foundUrls": ["https://www.japan47go.travel/ja/detail/32f3ac2d-3259-495e-a2a0-ec512f50db5d"],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "ダチョウの飼育を見学できる展示圃。正式な動物園としての体裁か要確認。"
+    },
+    {
+      "name": "前森高原（わくわくファーム前森高原）",
+      "pref": "山形県",
+      "city": "最上郡最上町",
+      "foundUrls": ["https://maemori.jp/", "https://yamagatakanko.com/attractions/detail_146.html"],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "乗馬・ふれあい体験中心の観光牧場。キャンプ場等も併設の複合レジャー施設。"
+    },
+    {
+      "name": "ながめやま牧場小動物公園",
+      "pref": "山形県",
+      "city": "東置賜郡飯豊町",
+      "foundUrls": ["https://souchi.lin.gr.jp/farm/pdf/nagameyama_f.pdf"],
+      "typeGuess": "zoo",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "酪農牧場付設の小動物公園（ポニー等）。施設規模・常設性の詳細要確認。"
+    },
+    {
+      "name": "秋山牧場",
+      "pref": "山形県",
+      "city": "最上郡真室川町",
+      "foundUrls": ["https://www.nap-camp.com/mag/80275"],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "公共育成牧場（肉牛約200頭）。一般見学は可能だが動物展示・ふれあいが主目的の施設か要確認。"
+    },
+    {
+      "name": "アクアマリンいなわしろカワセミ水族館",
+      "pref": "福島県",
+      "city": "耶麻郡猪苗代町",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/日本の水族館"],
+      "typeGuess": "aquarium",
+      "disposition": "existing",
+      "matchExistingId": "fukushima_kawasemi_aquarium",
+      "excludeReason": "",
+      "note": ""
+    },
+    {
+      "name": "アクアマリンふくしま",
+      "pref": "福島県",
+      "city": "いわき市",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/日本の水族館"],
+      "typeGuess": "aquarium",
+      "disposition": "existing",
+      "matchExistingId": "fukushima_aquamarine_fukushima",
+      "excludeReason": "",
+      "note": ""
+    },
+    {
+      "name": "東北サファリパーク",
+      "pref": "福島県",
+      "city": "二本松市",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/東北サファリパーク", "http://tohoku-safaripark.co.jp/"],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "1978年開園、約110種900頭羽を飼育する大規模サファリパーク。既存収録リストに未掲載（東北ブロック最大級の見落とし候補）。"
+    },
+    {
+      "name": "ムシムシランド",
+      "pref": "福島県",
+      "city": "田村市",
+      "foundUrls": ["https://www.mushimushiland.com/", "https://ja.wikipedia.org/wiki/ムシムシランド"],
+      "typeGuess": "other",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "生体カブトムシ・クワガタを常設展示する昆虫館（カブトムシドームは夏季限定開放）。1991年開業。"
+    },
+    {
+      "name": "ムシテックワールド（ふくしま森の科学体験センター）",
+      "pref": "福島県",
+      "city": "須賀川市",
+      "foundUrls": ["https://www.mushitec-fukushima.gr.jp/"],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "科学体験センターで生体カブトムシ・クワガタや県内の生き物を常設展示するが、主目的は科学教育。動物展示が主目的と言えるか要確認。"
+    },
+    {
+      "name": "福島移動昆虫館",
+      "pref": "福島県",
+      "city": "（移動型・拠点なし）",
+      "foundUrls": ["https://www.fukushima-ido-konchukan.com/"],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "移動昆虫館（常設施設ではなくイベント出張型）",
+      "note": ""
+    },
+    {
+      "name": "磐梯高原南ヶ丘牧場",
+      "pref": "福島県",
+      "city": "耶麻郡猪苗代町",
+      "foundUrls": ["https://www.bandaisan.or.jp/sight/minamigaokapasture/"],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "羊・馬・ウサギ・ヤギ等とふれあえる観光牧場。乳製品加工・パターゴルフ等も併設。"
+    },
+    {
+      "name": "郡山石筵ふれあい牧場",
+      "pref": "福島県",
+      "city": "郡山市",
+      "foundUrls": ["https://www.fureai-bokujo.jp/", "https://ja.wikipedia.org/wiki/郡山石筵ふれあい牧場"],
+      "typeGuess": "zoo",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "敷地内に「家畜動物園」があり馬・ポニー・ロバ・めん羊等を展示。BBQ・サイクリング等も併設の複合観光牧場。"
+    },
+    {
+      "name": "岩瀬牧場",
+      "pref": "福島県",
+      "city": "岩瀬郡鏡石町",
+      "foundUrls": ["https://iwasefarm.jp/", "https://ja.wikipedia.org/wiki/岩瀬牧場"],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "日本初の西欧式牧場。馬・ウサギ・ヤギ等とふれあえる動物コーナーあり。"
+    }
+  ]
+}

@@ -1,0 +1,407 @@
+{
+  "block": "四国",
+  "generatedAt": "2026-07-15",
+  "coverage": {
+    "徳島県": {
+      "sources": [
+        "Wikipedia(日本の動物園一覧)",
+        "県・市町観光公式サイト(美波町/牟岐町/海陽町)",
+        "汎用Web検索(動物園/水族館/昆虫館/ふれあい牧場)"
+      ],
+      "rounds": 2,
+      "note": "1巡目でとくしま動物園・日和佐うみがめ博物館カレッタを検出。2巡目(淡水魚・軟体動物・クマノミ等の別ワード)でモラスコむぎ・島のちいさな水族館を追加検出。昆虫館・爬虫類館・ふれあい牧場は該当する常設独立施設を確認できず（とくしま動物園内の小動物ふれあいのみ）。3巡目相当の探索でも新規候補なし。"
+    },
+    "香川県": {
+      "sources": [
+        "Wikipedia(日本の動物園一覧/しろとり動物園/ニューレオマワールド/小豆島大観音/道後動物園記事)",
+        "県・市町観光公式サイト(東かがわ市/土庄町/観音寺市/高松市グリーンツーリズム)",
+        "汎用Web検索(動物園一覧/ふれあい牧場/昆虫館・爬虫類館・鳥類園)"
+      ],
+      "rounds": 2,
+      "note": "1巡目でしろとり動物園・銚子渓お猿の国・閉園施設(栗林公園動物園/レオマアニマルパーク/亀山公園動物園)を検出。2巡目(ふれあい牧場・乗馬クラブ系ワード)で小規模施設群(ポニー放牧地/ヤギ牧場/牧場体験/乗馬クラブ)を追加検出したが大半が動物展示非主目的で review/excluded 判定。昆虫館・爬虫類館・鳥類園に該当する独立施設は未検出。"
+    },
+    "愛媛県": {
+      "sources": [
+        "Wikipedia(日本の動物園一覧/愛媛県立道後動物園)",
+        "県・市町観光公式サイト(いよ観ネット/今治地方観光協会/伊方町/西予市)",
+        "汎用Web検索(動物園一覧/水族館一覧/ふれあい牧場)"
+      ],
+      "rounds": 2,
+      "note": "1巡目で野間馬ハイランド・道後動物園(閉園)を検出。2巡目(水族館一覧ワード)で長高水族館・道の駅系ミニ水族館(伊方きらら館/みかめ海の駅潮彩館)・ほわいとファームを追加検出。既存2施設(とべ動物園/おさかな館)を除き新規は主に review 判定（一般公開日限定・道の駅併設・牧場体験主目的などの曖昧要素あり）。"
+    },
+    "高知県": {
+      "sources": [
+        "Wikipedia(日本の動物園一覧)",
+        "市町観光公式サイト(土佐清水市/室戸市/四万十市/大月町)",
+        "汎用Web検索(動物園/ふれあい牧場一覧、昆虫館・爬虫類館・鳥類園)"
+      ],
+      "rounds": 2,
+      "note": "1巡目で大堂お猿公園・足摺海中館(海底館)を検出。2巡目(昆虫館ワード等)で四万十川学遊館あきついお、および足摺海洋館SATOUMI・室戸ドルフィンセンターを追加検出。3施設は既存(わんぱーくこうち/桂浜水族館/のいち動物公園)で確認済み。"
+    }
+  },
+  "candidates": [
+    {
+      "name": "とくしま動物園 STELLA PRESCHOOL ANIMAL KINGDOM",
+      "pref": "徳島県",
+      "city": "徳島市",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/とくしま動物園", "https://tokushimazoo.jp/"],
+      "typeGuess": "zoo",
+      "disposition": "existing",
+      "matchExistingId": "tokushima_tokushima_zoo",
+      "excludeReason": "",
+      "note": "既存マスタと一致。"
+    },
+    {
+      "name": "日和佐うみがめ博物館カレッタ",
+      "pref": "徳島県",
+      "city": "美波町",
+      "foundUrls": ["https://www.town.minami.lg.jp/docs/415.html", "https://caretta.town.minami.lg.jp/"],
+      "typeGuess": "aquarium",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "ウミガメ専門博物館。屋外プールで生体飼育・給餌あり。2023年6月に一旦閉館し2025年7月19日リニューアル再開館。"
+    },
+    {
+      "name": "モラスコむぎ（貝の資料館）",
+      "pref": "徳島県",
+      "city": "牟岐町",
+      "foundUrls": ["https://www.mollusco-mugi.jp/", "https://ja.wikipedia.org/wiki/モラスコむぎ"],
+      "typeGuess": "aquarium",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "貝類資料館に2004年開設の「漁師さんの水族館」を併設。30基以上の水槽で地元産の魚介約80種を展示。"
+    },
+    {
+      "name": "島のちいさな水族館（海洋自然博物館マリンジャム内）",
+      "pref": "徳島県",
+      "city": "海陽町",
+      "foundUrls": ["https://marine.kaiyo-kankou.jp/index.php/aquarium2", "https://www.awanavi.jp/archives/spot/1954"],
+      "typeGuess": "aquarium",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "旧クマノミ館を2017年11月リニューアル。竹ヶ島周辺のサンゴ・クマノミ等とタッチプールを常設展示。"
+    },
+    {
+      "name": "四国水族館",
+      "pref": "香川県",
+      "city": "宇多津町",
+      "foundUrls": ["https://www.shikoku-aquarium.jp/"],
+      "typeGuess": "aquarium",
+      "disposition": "existing",
+      "matchExistingId": "kagawa_shikoku_aquarium",
+      "excludeReason": "",
+      "note": "既存マスタと一致。"
+    },
+    {
+      "name": "しろとり動物園",
+      "pref": "香川県",
+      "city": "東かがわ市",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/しろとり動物園", "https://higashikagawa.net/sightseeing/shirotori-zoo"],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "1985年開園の私営ふれあい動物園。約70種150頭を展示、ホワイトタイガーが看板動物。営業中。"
+    },
+    {
+      "name": "銚子渓自然動物園 お猿の国",
+      "pref": "香川県",
+      "city": "小豆郡土庄町",
+      "foundUrls": ["http://www.osaru-no-kuni.sakura.ne.jp/", "https://www.town.tonosho.kagawa.jp/kanko/sightseeing/580.html", "https://news.ksb.co.jp/article/16560189"],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "小豆島の野生ニホンザル餌付け施設。2025年8月から人手不足で休園中、再開時期未定（次工程でsuspended候補として要確認）。"
+    },
+    {
+      "name": "レオマアニマルパーク（旧ニューレオマワールド動物園）",
+      "pref": "香川県",
+      "city": "丸亀市",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/ニューレオマワールド", "https://3910tv.com/reomaanimal/"],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "テーマパーク「ニューレオマワールド」に併設されていた動物園エリア。2010年6月25日閉鎖。次工程でclosed候補として要確認。"
+    },
+    {
+      "name": "栗林公園動物園",
+      "pref": "香川県",
+      "city": "高松市",
+      "foundUrls": ["https://news.ksb.co.jp/article/15166610", "https://crd.ndl.go.jp/reference/entry/index.php?id=1000159841&page=ref_view"],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "1930年開園、栗林公園内の動物園。2002年休園、2004年3月施設撤去完了。次工程でclosed候補として要確認。"
+    },
+    {
+      "name": "亀山公園動物園（亀山公園こどもの国）",
+      "pref": "香川県",
+      "city": "丸亀市",
+      "foundUrls": ["https://www.marugame2.jp/matome/7664"],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "丸亀城内の亀山公園遊園地（こどもの国）に併設されていた小動物園。1964年開園、2007年11月25日閉園。次工程でclosed候補として要確認。名称・存在の一次資料未確認のため詳細は要検証。"
+    },
+    {
+      "name": "小豆島大観音 ポニー放牧地",
+      "pref": "香川県",
+      "city": "小豆郡土庄町",
+      "foundUrls": ["https://kodmap.com/spots/35", "https://shodoshima.or.jp/sightseeing/detail.php?id=181"],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "寺院（小豆島大観音）に付随するポニー・ヤギの放牧エリア。独立した動物展示施設と言えるか、来場主目的が観音像参拝かどうか要確認。"
+    },
+    {
+      "name": "香川ヤギ牧場（三宅牧場）",
+      "pref": "香川県",
+      "city": "さぬき市",
+      "foundUrls": ["https://makimiyake.jimdofree.com/香川ヤギ牧場/"],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "造園業者が2023年開設した小規模ヤギ放し飼い場（雄雌6頭、約1000㎡）。一般来場を主目的とする常設展示施設か要確認。"
+    },
+    {
+      "name": "しおのえふじかわ牧場",
+      "pref": "香川県",
+      "city": "高松市",
+      "foundUrls": ["https://www.my-kagawa.jp/point/274/", "https://iko-yo.net/facilities/19925"],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "乳製品手作り体験がメインの観光牧場。牛とのふれあいもあるが、来場主目的が動物展示か体験加工かは要確認。"
+    },
+    {
+      "name": "森のいちご 動物ふれあい広場",
+      "pref": "香川県",
+      "city": "木田郡三木町",
+      "foundUrls": ["https://morinoichigo.com/", "https://iko-yo.net/facilities/133407"],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "いちご狩り観光農園が主目的で、動物ふれあい広場（ウサギ・ヤギ等）は付随施設のため除外。",
+      "note": ""
+    },
+    {
+      "name": "香南アグリーム",
+      "pref": "香川県",
+      "city": "高松市",
+      "foundUrls": ["https://www.agream.net/"],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "収穫体験・料理体験を主目的とする農業交流体験施設。ヤギとのふれあいは付随的要素のため除外。",
+      "note": ""
+    },
+    {
+      "name": "有明浜ホースパーク",
+      "pref": "香川県",
+      "city": "観音寺市",
+      "foundUrls": ["https://kagawa-noriri.net/202305/6010/", "https://www.coolkagawa.jp/news/entry-2637.html"],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "海岸乗馬体験を主目的とする乗馬クラブであり、動物展示施設ではないため除外。",
+      "note": ""
+    },
+    {
+      "name": "乗馬クラブ サングリーン",
+      "pref": "香川県",
+      "city": "さぬき市",
+      "foundUrls": ["https://el.e-shops.jp/local/nsh/6245143235.html"],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "乗馬レッスン主体のクラブ施設であり、動物展示施設ではないため除外。",
+      "note": ""
+    },
+    {
+      "name": "愛媛県立とべ動物園",
+      "pref": "愛媛県",
+      "city": "砥部町",
+      "foundUrls": ["https://www.tobezoo.com/"],
+      "typeGuess": "zoo",
+      "disposition": "existing",
+      "matchExistingId": "ehime_tobe_zoo",
+      "excludeReason": "",
+      "note": "既存マスタと一致。"
+    },
+    {
+      "name": "虹の森公園おさかな館",
+      "pref": "愛媛県",
+      "city": "松野町",
+      "foundUrls": ["https://morinokuni.or.jp/publics/index/27/"],
+      "typeGuess": "aquarium",
+      "disposition": "existing",
+      "matchExistingId": "ehime_osakana_kan",
+      "excludeReason": "",
+      "note": "既存マスタと一致。"
+    },
+    {
+      "name": "野間馬ハイランド（のまうまハイランド）",
+      "pref": "愛媛県",
+      "city": "今治市",
+      "foundUrls": ["http://www.imabari-nomauma.jp/", "https://www.iyokannet.jp/spot/220"],
+      "typeGuess": "other",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "日本最小の在来馬「野間馬」の保存・放牧・ふれあい施設。小動物ふれあい広場も併設。営業中。"
+    },
+    {
+      "name": "長高水族館（愛媛県立長浜高等学校）",
+      "pref": "愛媛県",
+      "city": "大洲市",
+      "foundUrls": ["https://ehm-nagahama-h.esnet.ed.jp/page_20190218034526", "https://sakanato.jp/8917/"],
+      "typeGuess": "aquarium",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "高校の水族館部が運営する水族館。2024年4月移転。一般公開は毎月第3土曜日のみのため「常設で一般来場できる」基準に該当するか要確認。"
+    },
+    {
+      "name": "道の駅 伊方きらら館",
+      "pref": "愛媛県",
+      "city": "西宇和郡伊方町",
+      "foundUrls": ["https://www.kirarakan.com/", "https://www.kirarakan.com/施設紹介"],
+      "typeGuess": "aquarium",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "道の駅内のふれあい水槽・バーチャル水族館「きららアクアリウム」。物産販売施設併設で来場主目的が水族館単体と言えるか要確認。"
+    },
+    {
+      "name": "みかめ海の駅 潮彩館",
+      "pref": "愛媛県",
+      "city": "西予市",
+      "foundUrls": ["https://shiosaikan.jp/", "https://www.city.seiyo.ehime.jp/kakuka/mikame_shisho/sangyo_kensetsu/11916.html"],
+      "typeGuess": "aquarium",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "海の駅内でマンボウ・アオウミガメ・ミニヤギを展示・給餌。物産販売施設併設のため独立施設としての扱いを要確認。"
+    },
+    {
+      "name": "ほわいとファーム（野村農業公園）",
+      "pref": "愛媛県",
+      "city": "西予市",
+      "foundUrls": ["https://whitefarm.info/", "https://www.iyokannet.jp/spot/587"],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "乳製品手作り体験がメインの観光牧場。ヤギ・ウサギ等の小動物ふれあいエリアもあるが主目的が要確認。"
+    },
+    {
+      "name": "愛媛県立道後動物園",
+      "pref": "愛媛県",
+      "city": "松山市",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/愛媛県立道後動物園", "https://www.ehime-np.co.jp/article/news202212110033"],
+      "typeGuess": "zoo",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "1987年10月閉園、1988年4月に愛媛県立とべ動物園（既存マスタ ehime_tobe_zoo）として移転・承継。跡地は道後公園として整備済みで動物園機能なし。既存施設の前身として別レコードにすべきか、次工程で要判断。"
+    },
+    {
+      "name": "わんぱーくこうちアニマルランド",
+      "pref": "高知県",
+      "city": "高知市",
+      "foundUrls": ["https://kokoharekochi.com/spot/facilities/n5835/"],
+      "typeGuess": "zoo",
+      "disposition": "existing",
+      "matchExistingId": "kochi_wanpark_animal_land",
+      "excludeReason": "",
+      "note": "既存マスタと一致。"
+    },
+    {
+      "name": "桂浜水族館",
+      "pref": "高知県",
+      "city": "高知市",
+      "foundUrls": ["https://katurahama-aq.com/"],
+      "typeGuess": "aquarium",
+      "disposition": "existing",
+      "matchExistingId": "kochi_katurahama_aquarium",
+      "excludeReason": "",
+      "note": "既存マスタと一致。"
+    },
+    {
+      "name": "高知県立のいち動物公園",
+      "pref": "高知県",
+      "city": "香南市",
+      "foundUrls": ["https://noichizoo.or.jp/"],
+      "typeGuess": "zoo",
+      "disposition": "existing",
+      "matchExistingId": "kochi_noichi_zoo",
+      "excludeReason": "",
+      "note": "既存マスタと一致。"
+    },
+    {
+      "name": "高知県立足摺海洋館 SATOUMI",
+      "pref": "高知県",
+      "city": "土佐清水市",
+      "foundUrls": ["https://www.city.tosashimizu.kochi.jp/kanko/g01_kaiyokan.html", "https://ja.wikipedia.org/wiki/高知県立足摺海洋館"],
+      "typeGuess": "aquarium",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "1975年開館、2020年7月18日リニューアルオープンの県立水族館。約350種15,000点を展示。営業中。"
+    },
+    {
+      "name": "室戸ドルフィンセンター",
+      "pref": "高知県",
+      "city": "室戸市",
+      "foundUrls": ["https://www.muroto-dc.net/", "https://www.city.muroto.kochi.jp/pages/page0294.php"],
+      "typeGuess": "aquarium",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "室戸岬の海面イケスでイルカとのふれあい・触れ合いプログラムを提供する施設。営業中。"
+    },
+    {
+      "name": "四万十川学遊館あきついお（トンボ自然公園）",
+      "pref": "高知県",
+      "city": "四万十市",
+      "foundUrls": ["https://gakuyukan.com/", "https://www.shimanto-kankou.com/kanko/natural-park/akituio.html"],
+      "typeGuess": "both",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "トンボ館（標本約1,000種）と魚館（四万十川の淡水・汽水魚約300種、アカメ等）を併設する複合展示施設。営業中。"
+    },
+    {
+      "name": "足摺海底館（海中展望塔）",
+      "pref": "高知県",
+      "city": "土佐清水市",
+      "foundUrls": ["https://www.city.tosashimizu.kochi.jp/kanko/g01_kaiteikan.html", "https://kaiteikan.jp/"],
+      "typeGuess": "aquarium",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "1972年開業の海中展望塔。天然海域を海中窓から観察・給餌する形式で、水槽展示ではないため「水族館」の定義に該当するか要確認。"
+    },
+    {
+      "name": "大堂お猿公園",
+      "pref": "高知県",
+      "city": "大月町",
+      "foundUrls": ["https://kochi-tabi.jp/search_spot_sightseeing.html?id=85", "https://www.kochidon.net/shop/shop.shtml?s=715"],
+      "typeGuess": "zoo",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": "",
+      "note": "大堂海岸展望台ふもとで野生ニホンザル約200頭を餌付け。柵で囲われた常設展示施設ではなく野生猿の生息地のため、動物園の定義に該当するか要確認。"
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "block": "奈良県",
+  "generatedAt": "2026-07-15",
+  "coverage": {
+    "sources": [
+      "Wikipedia（うだ・アニマルパーク個別ページ、Category:奈良県、日本の動物園一覧、近鉄あやめ池遊園地、奈良公園/奈良の鹿）",
+      "自治体・観光公式サイト（奈良県公式、奈良市観光協会、山添村観光協会、橿原市公式、あをによし なら旅ネット、三郷町公式）",
+      "汎用Web検索（Google経由: 動物園/水族館/サファリパーク/昆虫館/爬虫類館/鳥類園/ふれあい牧場・動物ふれあい施設の種別ごと検索、集約サイトzoo-palette.com、動物カフェ一覧、市町村別（天理・桜井・香芝・平群・斑鳩・十津川・天川・御杖）補完検索、閉園・廃園の確認検索）"
+    ],
+    "rounds": 5,
+    "note": "5巡目（市町村別補完検索・閉園確認）で新規候補ゼロを確認して打ち切り。奈良公園の鹿は放し飼いの野生動物への餌やりのため対象外だが、常設保護施設「鹿苑」はreviewへ計上。サファリパーク・爬虫類単独館・鳥類園の独立施設は確認できず（爬虫類展示は奈良いきものミュージアムに包含）。"
+  },
+  "candidates": [
+    {
+      "name": "うだ・アニマルパーク",
+      "pref": "奈良県",
+      "city": "宇陀市",
+      "foundUrls": [
+        "https://ja.wikipedia.org/wiki/うだ・アニマルパーク",
+        "https://www.pref.nara.jp/1839.htm"
+      ],
+      "typeGuess": "fureai_farm",
+      "disposition": "existing",
+      "matchExistingId": "nara_uda_animal_park",
+      "excludeReason": null,
+      "note": "既存マスタと一致。県営の動物ふれあい公園（ヤギ・ヒツジ・ポニー・ウシ・ウサギ・ミニ豚等）、入園無料。"
+    },
+    {
+      "name": "奈良いきものミュージアム（NARA IKIMONO MUSEUM）",
+      "pref": "奈良県",
+      "city": "奈良市",
+      "foundUrls": [
+        "https://naraikimonomuseum.com/",
+        "https://iko-yo.net/facilities/177165"
+      ],
+      "typeGuess": "aquarium",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "ミ・ナーラ4階の常設施設。爬虫類・魚類・両生類など100種以上を展示、有料入館（2023年4月開業）。"
+    },
+    {
+      "name": "奈良金魚ミュージアム（NARA KINGYO MUSEUM）",
+      "pref": "奈良県",
+      "city": "奈良市",
+      "foundUrls": [
+        "https://kingyomuseum.com/",
+        "https://guide-mina-ra.com/"
+      ],
+      "typeGuess": "aquarium",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "ミ・ナーラ4階の常設金魚ミュージアム。いきものミュージアムと同建物同フロアだが、公式サイトで入場チケットが別売り（セット券は別途あり）のため別施設として計上。"
+    },
+    {
+      "name": "橿原市昆虫館",
+      "pref": "奈良県",
+      "city": "橿原市",
+      "foundUrls": [
+        "https://www.city.kashihara.nara.jp/kanko_bunka_sports/konchukan/index.html",
+        "https://www.jalan.net/kankou/spt_29205cc3310040546/"
+      ],
+      "typeGuess": "other",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "奈良県唯一の自然史系昆虫館。カブトムシ・クワガタの生体展示、約600匹10種のチョウが舞う温室（蝶の温室）を常設。市立、有料。"
+    },
+    {
+      "name": "郡山金魚資料館（やまと錦魚園）",
+      "pref": "奈良県",
+      "city": "大和郡山市",
+      "foundUrls": [
+        "https://www.narakko.jp/kingyoshiryokan/",
+        "https://kingyoen.com/"
+      ],
+      "typeGuess": "aquarium",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "金魚養殖業者「やまと錦魚園」が私費で1982年開館。高級金魚・希少品種など約40種を常設展示、入場無料。"
+    },
+    {
+      "name": "わんぱくどうぶつえん",
+      "pref": "奈良県",
+      "city": "山辺郡山添村",
+      "foundUrls": [
+        "https://www.wampakudobutsuen.com/park/",
+        "https://yamazoekanko.jp/spot/wanpaku-zoo/"
+      ],
+      "typeGuess": "zoo",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "個人経営の小規模動物園（ベーカリーカフェ併設）。ヤギ・アヒル・ウサギ等を常設展示、入園無料。様々な事情で行き場を失った動物の保護も兼ねる。"
+    },
+    {
+      "name": "フォレストパーク神野山 めえめえ牧場",
+      "pref": "奈良県",
+      "city": "山辺郡山添村",
+      "foundUrls": [
+        "https://yamazoekanko.jp/spot/meemee-makiba/",
+        "http://yamatoji.nara-kankou.or.jp/02nature/10amusement/03east_area/mememakiba/"
+      ],
+      "typeGuess": "fureai_farm",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "村営フォレストパーク神野山内の羊牧場。約50頭のヒツジを常設飼育、入場無料、餌やり可能。"
+    },
+    {
+      "name": "植村牧場",
+      "pref": "奈良県",
+      "city": "奈良市",
+      "foundUrls": [
+        "https://www.uemura-bokujyo.co.jp/",
+        "https://hug-nara.jp/report/18082.html"
+      ],
+      "typeGuess": "fureai_farm",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "明治16年創業の牧場。乳牛約30頭・ヒツジ・ヤギを牛舎前で近距離から常設展示、「動物と触れ合う」観光牧場として紹介される。直売・レストラン併設。"
+    },
+    {
+      "name": "リキオファーム",
+      "pref": "奈良県",
+      "city": "磯城郡三宅町",
+      "foundUrls": [
+        "https://www.rikiofarm.com/",
+        "http://hug-nara.jp/report/22840.html"
+      ],
+      "typeGuess": "fureai_farm",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "トカラヤギを常設飼育する小規模農園。子ヤギとのふれあい・餌やりガチャガチャが主目的の来場スポットとして紹介される。"
+    },
+    {
+      "name": "ラッテたかまつ",
+      "pref": "奈良県",
+      "city": "葛城市",
+      "foundUrls": [
+        "https://latte-takamatsu.com/",
+        "http://yamatoji.nara-kankou.or.jp/02nature/10amusement/02west_area/rattetakamatsu/"
+      ],
+      "typeGuess": "fureai_farm",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "酪農教育ファーム認証農家。「触れる、感じる、楽しむ」を掲げ乳牛を常設展示、乳搾り・バター作り体験が来場の主目的の一つ。アイスクリーム販売も併設。"
+    },
+    {
+      "name": "エール動物園",
+      "pref": "奈良県",
+      "city": "吉野郡下市町",
+      "foundUrls": [
+        "https://ale-workshop.jp/en/ale-zoo/",
+        "https://nara-shakyo.jp/pages/423/detail=1/b_id=2677/r_id=55/"
+      ],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "保護動物約20種60頭を収容する古民家＋農地のシェルター型施設。土日祝10-16時営業、入場1000円（ワンドリンク付）。運営元は「エールアニマルカフェ（動物カフェ）」表記も併用しており、動物園と動物カフェのどちらの業態に近いか要確認。"
+    },
+    {
+      "name": "鹿苑（ろくえん）",
+      "pref": "奈良県",
+      "city": "奈良市",
+      "foundUrls": [
+        "https://narashikanko.or.jp/spot/detail_10088.html",
+        "https://naradeer.com/event/rokuen.html"
+      ],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "特記事項対応。奈良公園の鹿（放し飼い）自体は対象外だが、鹿苑は一般財団法人奈良の鹿愛護会が運営する常設の鹿保護収容施設で、見学通路・展示パネルがあり一般公開されている（2026年2月に見学通路・展示リニューアル）。常設展示施設として扱えるか要判断。"
+    },
+    {
+      "name": "農業公園 信貴山のどか村",
+      "pref": "奈良県",
+      "city": "生駒郡三郷町",
+      "foundUrls": [
+        "https://www.sigisan-nodokamura.com/",
+        "https://www.town.sango.nara.jp/site/kanko/1289.html"
+      ],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "有料の農業公園。ヤギ・ヒツジの牧場や平飼い鶏の餌やり・卵拾いがあるが、収穫体験・BBQ・デイキャンプ・アスレチックなど動物以外の体験も多く、動物展示が来場の主目的と言えるか要確認。"
+    },
+    {
+      "name": "そまのかわファーム",
+      "pref": "奈良県",
+      "city": "奈良市",
+      "foundUrls": [
+        "https://www.somanokawa.jp/",
+        "https://www.city.nara.lg.jp/sightseeing/naraharu/181765.html"
+      ],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "養鶏を主業とする農場直売所。馬・ヒツジも飼育され「ちょっとした動物園みたいな雰囲気」と紹介されるが、主目的は卵の直売・農場体験であり動物展示が主目的とは言い切れず要確認。"
+    },
+    {
+      "name": "山のオヤジの羊園",
+      "pref": "奈良県",
+      "city": "御所市",
+      "foundUrls": [
+        "https://www.zoo-palette.com/nara/"
+      ],
+      "typeGuess": "fureai_farm",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "集約サイトzoo-palette.comにのみ名称・所在市が記載され、公式サイトや独立した一次情報源を確認できなかった。実在・現況とも未確認のため要確認。"
+    },
+    {
+      "name": "さかもと養鶏",
+      "pref": "奈良県",
+      "city": "五條市",
+      "foundUrls": [
+        "https://sakamoto-yokei.com/",
+        "https://www.narakko.jp/sakamotoyoukei-hitotsubashi/"
+      ],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "動物展示が主目的でない生産・直売の養鶏場",
+      "note": "自社ブランド卵「白鳳卵」の生産・直売と卵スイーツの無人カフェ出店が主業。来場者向けの動物ふれあいプログラムは確認できず。"
+    },
+    {
+      "name": "みつえ高原牧場",
+      "pref": "奈良県",
+      "city": "宇陀郡御杖村",
+      "foundUrls": [
+        "https://www.chikusan.or.jp/mitsue",
+        "https://www.pref.nara.jp/6496.htm"
+      ],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "研究・生産施設（畜産受託育成牧場）",
+      "note": "奈良県が設立し奈良県畜産農業協同組合連合会が運営する乳用牛・肉用牛の受託育成牧場（大和牛の生産拠点）。一般来場者向けの展示・ふれあいプログラムは確認できず。"
+    },
+    {
+      "name": "近鉄あやめ池遊園地 動物園",
+      "pref": "奈良県",
+      "city": "奈良市",
+      "foundUrls": [
+        "https://ja.wikipedia.org/wiki/近鉄あやめ池遊園地"
+      ],
+      "typeGuess": "zoo",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "閉園済み",
+      "note": "1926年開園の近鉄あやめ池遊園地内にあった「県下唯一」と紹介された動物園。遊園地は2004年（平成16年）に全体閉園、跡地は住宅地化。"
+    },
+    {
+      "name": "小動物カフェ はなはな",
+      "pref": "奈良県",
+      "city": "奈良市",
+      "foundUrls": [
+        "https://www.hanahana-nara.com/"
+      ],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "動物カフェ",
+      "note": "フクロウ・インコ・ウサギ等約60匹が在籍する小動物カフェ。飲食提供が前提の業態。"
+    },
+    {
+      "name": "ふくろうカフェならまち",
+      "pref": "奈良県",
+      "city": "奈良市",
+      "foundUrls": [
+        "https://www.jalan.net/activity/290000/g2_79/"
+      ],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "動物カフェ",
+      "note": "ならまちエリアのフクロウカフェ。フライト体験・餌やり体験を提供する飲食併設のカフェ業態。"
+    }
+  ]
+}

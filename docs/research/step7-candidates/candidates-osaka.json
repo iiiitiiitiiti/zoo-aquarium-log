@@ -1,0 +1,369 @@
+{
+  "block": "大阪府",
+  "generatedAt": "2026-07-15",
+  "coverage": {
+    "sources": [
+      "Wikipedia（日本の動物園一覧、施設個別項目。Category:大阪府の動物園/水族館は404で参照不可のため個別記事で代替確認）",
+      "府・市町村公式サイト（岸和田市、高槻市、豊中市、泉南市、大阪狭山市、大阪市、近畿地方整備局 等）",
+      "汎用Web検索・観光/アグリゲーターサイト（zoo-palette.com、homemate-research-aquarium、aquarium.search-maps、いこーよ、osaka-info.jp 等）"
+    ],
+    "searchTermsUsed": [
+      "動物園", "水族館", "サファリパーク", "昆虫館", "爬虫類館", "鳥類園", "ふれあい牧場・動物ふれあい施設",
+      "新規オープン 2024/2025", "リニューアル/閉園情報", "地域限定（泉南・阪南・貝塚・富田林・河内長野等）"
+    ],
+    "rounds": 5,
+    "newCandidatesInFinalRound": 0,
+    "note": "5巡目で新規候補ゼロを確認。サファリパークは大阪府内に常設施設なしと判定。"
+  },
+  "candidates": [
+    {
+      "name": "池田市立五月山動物園",
+      "pref": "大阪府",
+      "city": "池田市",
+      "foundUrls": ["https://www.satsukiyamazoo.com/"],
+      "typeGuess": "動物園",
+      "disposition": "existing",
+      "matchExistingId": "osaka_satsukiyama_zoo",
+      "excludeReason": null,
+      "note": "「Satsukiyama DAYZOO」へのリニューアル工事のため2026年5月22日以降当面休園中（休園中の情報は要最新確認）"
+    },
+    {
+      "name": "海遊館",
+      "pref": "大阪府",
+      "city": "大阪市",
+      "foundUrls": ["https://www.kaiyukan.com/"],
+      "typeGuess": "水族館",
+      "disposition": "existing",
+      "matchExistingId": "osaka_kaiyukan",
+      "excludeReason": null,
+      "note": ""
+    },
+    {
+      "name": "天王寺動物園",
+      "pref": "大阪府",
+      "city": "大阪市",
+      "foundUrls": ["https://www.tennojizoo.jp/"],
+      "typeGuess": "動物園",
+      "disposition": "existing",
+      "matchExistingId": "osaka_tennoji_zoo",
+      "excludeReason": null,
+      "note": "園内の「爬虫類生態館アイファー」「鳥の楽園」は同園の共通入場券内エリアのため別施設としてカウントしない"
+    },
+    {
+      "name": "生きているミュージアム ニフレル",
+      "pref": "大阪府",
+      "city": "吹田市",
+      "foundUrls": ["https://www.nifrel.jp/"],
+      "typeGuess": "水族館・動物園複合",
+      "disposition": "existing",
+      "matchExistingId": "osaka_nifrel",
+      "excludeReason": null,
+      "note": ""
+    },
+    {
+      "name": "天保山アニパ",
+      "pref": "大阪府",
+      "city": "大阪市港区",
+      "foundUrls": [
+        "https://www.kaiyukan.com/thv/marketplace/shop/057/",
+        "https://osakalucci.jp/tempozan-anipa",
+        "https://iko-yo.net/facilities/294"
+      ],
+      "typeGuess": "ふれあい動物園（屋内）",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "天保山マーケットプレース3F。海遊館とは別料金・別運営（海遊館半券で1割引の関係のみ）。大人1,100円・小人660円"
+    },
+    {
+      "name": "ワールド牧場",
+      "pref": "大阪府",
+      "city": "南河内郡河南町",
+      "foundUrls": [
+        "http://www.worldranch.co.jp/",
+        "https://www.zoo-palette.com/osaka/"
+      ],
+      "typeGuess": "ふれあい牧場",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "1989年開業の大型観光牧場。ヒツジ・ヤギ・ポニー・カピバラ等、放牧ふれあいエリアあり"
+    },
+    {
+      "name": "アヴニールファーム",
+      "pref": "大阪府",
+      "city": "和泉市",
+      "foundUrls": [
+        "https://avenirfarm.com/",
+        "https://iko-yo.net/facilities/157090",
+        "https://readyfor.jp/projects/avenirfarm-2"
+      ],
+      "typeGuess": "ふれあい牧場（馬）",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "NPO法人運営の馬の保護牧場。サラブレッド・ポニー計5頭、見学・ふれあい・ひき馬体験可"
+    },
+    {
+      "name": "大阪狭山市立市民ふれあいの里 リス園",
+      "pref": "大阪府",
+      "city": "大阪狭山市",
+      "foundUrls": [
+        "https://www.city.osakasayama.osaka.jp/sosiki/machizukurisuishinbu/kouenryokuchi/fureainosatohanatomidori/risuen.html",
+        "https://osaka-info.jp/spot/shimin-fureai-sato-squirrel-park/"
+      ],
+      "typeGuess": "ふれあい施設（リス園）",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "西日本唯一とされるリス園。タイワンリス・モルモット約40匹、入園料200円。同一敷地内「ミニ昆虫館」は標本のみ・生体展示なしのため対象外"
+    },
+    {
+      "name": "箕面公園昆虫館",
+      "pref": "大阪府",
+      "city": "箕面市",
+      "foundUrls": [
+        "https://www.mino-konchu.jp/",
+        "https://ja.wikipedia.org/wiki/箕面公園昆虫館"
+      ],
+      "typeGuess": "昆虫館",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "1953年開設、大阪府唯一の昆虫館。放蝶園・生態展示コーナーあり"
+    },
+    {
+      "name": "世界の昆虫爬虫類館（堺・緑のミュージアム ハーベストの丘内）",
+      "pref": "大阪府",
+      "city": "堺市",
+      "foundUrls": [
+        "https://farm.or.jp/event/12723",
+        "https://www.asoview.com/asorepo/2319813/"
+      ],
+      "typeGuess": "昆虫館・爬虫類館",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "ハーベストの丘園内の別料金エリア（入場料700円、ふれあいセット別途300円）。ヘラクレスオオカブト、ボールパイソン等展示"
+    },
+    {
+      "name": "堺・緑のミュージアム ハーベストの丘",
+      "pref": "大阪府",
+      "city": "堺市",
+      "foundUrls": [
+        "https://farm.or.jp/",
+        "https://www.zoo-palette.com/osaka/",
+        "https://kids.rurubu.jp/article/119036/"
+      ],
+      "typeGuess": "体験型農業公園（ふれあい牧場）",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "園内一般エリアでカピバラ・ヒツジ・ヤギ等とふれあい可能。上記「世界の昆虫爬虫類館」は別料金の独立エリアとして別掲"
+    },
+    {
+      "name": "高槻市立自然博物館（あくあぴあ芥川）",
+      "pref": "大阪府",
+      "city": "高槻市",
+      "foundUrls": [
+        "https://www.city.takatsuki.osaka.jp/soshiki/54/4903.html",
+        "https://osaka-info.jp/spot/takatsuki_aquapia/"
+      ],
+      "typeGuess": "自然博物館（河川水族館併設）",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "2階に芥川の上流〜下流を再現した大型水槽（アユ・コイ・カエル・ヘビ等の生体展示）。玉野海洋博物館等、既存マスタの類似「自然博物館」系施設と同水準の生体展示規模と判断し new とした"
+    },
+    {
+      "name": "きんたい廃校博物館",
+      "pref": "大阪府",
+      "city": "八尾市",
+      "foundUrls": [
+        "https://kinpaku.jp/",
+        "https://hunassius.com/13037/"
+      ],
+      "typeGuess": "淡水魚展示館",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "廃校理科室を再利用した淡水魚（ニッポンバラタナゴ中心、約30種）の常設展示。開館は毎月第3日曜日のみ"
+    },
+    {
+      "name": "ひらかたパーク プラネットアクア・ポート",
+      "pref": "大阪府",
+      "city": "枚方市",
+      "foundUrls": [
+        "https://www.hirakatapark.co.jp/attractions/aquarium/",
+        "https://prtimes.jp/main/html/rd/p/000000137.000070875.html"
+      ],
+      "typeGuess": "水族館（没入型アクアリウム）",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "2025年10月25日開業。約200種5,000匹の水生生物、全10ゾーン。園内で別途700円必要（ひらかたパーク入園料に加えて）"
+    },
+    {
+      "name": "ひらかたパーク 動物ふれあいエリア（どうぶつハグハグタウン等）",
+      "pref": "大阪府",
+      "city": "枚方市",
+      "foundUrls": [
+        "https://www.hirakatapark.co.jp/animal/wakuwaku/",
+        "https://www.hirakatapark.co.jp/animal/wonder/",
+        "https://www.keihan.co.jp/group/topics/hirakata-kuzuha/hirakatakoen/report/26.html"
+      ],
+      "typeGuess": "遊園地内動物園",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "ワンダーガーデン・ピッコロガーデン・どうぶつハグハグタウンの3エリア、約40種。他県の東武動物公園と同様、遊園地内常設動物園として計上。プラネットアクア・ポートとは別料金体系のため別施設扱い"
+    },
+    {
+      "name": "みさき公園（ネイチャーゾーン／旧動物園エリア）",
+      "pref": "大阪府",
+      "city": "泉南郡岬町",
+      "foundUrls": [
+        "https://ja.wikipedia.org/wiki/みさき公園",
+        "https://www.lmaga.jp/news/2020/02/91529/"
+      ],
+      "typeGuess": "動物園",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "閉園済み",
+      "note": "2020年3月に動物園部分を含め閉園。飼育動物はアドベンチャーワールド（和歌山）へ譲渡。跡地はレジャー公園として別事業で再生中"
+    },
+    {
+      "name": "大阪南港野鳥園",
+      "pref": "大阪府",
+      "city": "大阪市住之江区",
+      "foundUrls": [
+        "https://www.city.osaka.lg.jp/kensetsu/page/0000460774.html",
+        "http://www.osaka-nankou-bird-sanctuary.com/"
+      ],
+      "typeGuess": "野鳥観察施設",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "野生観察のみ",
+      "note": "人工干潟での野生野鳥の観察施設。飼育・展示型の鳥類園ではない"
+    },
+    {
+      "name": "ザ・ファームユニバーサル大阪",
+      "pref": "大阪府",
+      "city": "茨木市",
+      "foundUrls": [
+        "https://the-farm.jp/osaka/access/",
+        "https://machitto.jp/hokusetsu/197469/"
+      ],
+      "typeGuess": "農園・ガーデン（動物ふれあいは付随）",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "その他（植物・農園体験が主目的で動物ふれあいは一部要素）",
+      "note": "イチゴ狩り・ガーデニングショップ・カフェが主体。フクロウ・ヤギ・ウサギ等はごく一部の付随展示"
+    },
+    {
+      "name": "わいわい村ふれあい動物園（紀泉わいわい村）",
+      "pref": "大阪府",
+      "city": "泉南市",
+      "foundUrls": [
+        "https://www.city.sennan.lg.jp/kakuka/seichousenryaku/promotion/ibenntozyouhou/ibentojyouhou2025/11541.html"
+      ],
+      "typeGuess": "ふれあい動物園（イベント）",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "期間限定展示",
+      "note": "紀泉わいわい村での単発イベント開催（2025年11月16日等）。常設施設ではない"
+    },
+    {
+      "name": "泉南ふれあい動物園 in SENNAN LONG PARK",
+      "pref": "大阪府",
+      "city": "泉南市",
+      "foundUrls": [
+        "https://tabiiro.jp/higaeri/event/s/3969/",
+        "https://prtimes.jp/main/html/rd/p/000000282.000032099.html"
+      ],
+      "typeGuess": "ふれあい動物園（イベント）",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "期間限定展示",
+      "note": "SENNAN LONG PARKでの単発イベント開催（2024年6月22日等）。常設施設ではない"
+    },
+    {
+      "name": "花と緑と自然の情報センター",
+      "pref": "大阪府",
+      "city": "大阪市東住吉区",
+      "foundUrls": ["https://botanical-garden.nagai-park.jp/fgn-info-center/"],
+      "typeGuess": "自然情報センター",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "その他（生体展示を主目的としない自然・園芸情報センター）",
+      "note": "長居植物園付属の情報発信施設。パネル・標本中心で常設の生体展示は確認できず"
+    },
+    {
+      "name": "とよなか四季彩園",
+      "pref": "大阪府",
+      "city": "豊中市",
+      "foundUrls": ["https://aquarium.search-maps.com/areas/大阪府/"],
+      "typeGuess": "不明（庭園と推定）",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "その他（施設実態を確認できず、生体展示の確証なし）",
+      "note": "アグリゲーターサイトに水族館として掲載されていたが、生体展示の裏付け情報を確認できなかった。庭園系施設の可能性が高い"
+    },
+    {
+      "name": "大阪府立環境農林水産総合研究所 生物多様性センター",
+      "pref": "大阪府",
+      "city": "寝屋川市",
+      "foundUrls": [
+        "https://www.knsk-osaka.jp/biodiv/",
+        "https://iko-yo.net/facilities/19453"
+      ],
+      "typeGuess": "研究施設（一部一般公開）",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "府立研究機関だが本館内に天然記念物イタセンパラ等の淡水魚を無料で常設展示し自由見学可。基準上『研究施設』除外に該当するか、公開展示の実態から含めるべきか要判定"
+    },
+    {
+      "name": "うなぎミュージアム & Cafe 雑魚寝館",
+      "pref": "大阪府",
+      "city": "堺市堺区",
+      "foundUrls": [
+        "https://zacconekan.amebaownd.com/",
+        "https://www.hotpepper.jp/mesitsu/entry/hashi87/17-00144"
+      ],
+      "typeGuess": "淡水魚展示（カフェ併設）",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "約50水槽で世界のウナギ・日本産淡水魚を展示する一方、カフェ併設で名称にも『Cafe』を含む。開館日・営業実態の情報が資料により食い違う（毎月第3土曜のみとの記載あり）ため、飲食主目的の除外対象か常設展示型かは公式サイトでの確認が必要"
+    },
+    {
+      "name": "きしわだ自然資料館",
+      "pref": "大阪府",
+      "city": "岸和田市",
+      "foundUrls": [
+        "https://www.city.kishiwada.lg.jp/site/shizenshi/",
+        "https://ja.wikipedia.org/wiki/きしわだ自然資料館"
+      ],
+      "typeGuess": "自然史博物館（一部生体展示）",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "主体は剥製・標本展示（3階等）だが、1階に大阪湾・河川の生き物を飼育する無料の水槽コーナーあり。生体展示が『主目的』と言えるか要現地・公式サイト確認"
+    },
+    {
+      "name": "淀川資料館",
+      "pref": "大阪府",
+      "city": "枚方市",
+      "foundUrls": [
+        "https://www.kkr.mlit.go.jp/yodogawa/shisetu/yodo-museum/",
+        "https://www.osaka-soundtrip.com/spot/other1398/"
+      ],
+      "typeGuess": "河川博物館（一部生体展示）",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "日本初の河川博物館（治水・利水がテーマ）。『淀川の環境』コーナーにナマズ・ニホンウナギ・フナ等の飼育水槽あり。生体展示は付随的との見方もあり要判定"
+    }
+  ]
+}

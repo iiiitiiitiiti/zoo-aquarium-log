@@ -1,0 +1,362 @@
+{
+ "block": "群馬県",
+ "generatedAt": "2026-07-15T00:00:00+09:00",
+ "coverage": {
+  "sources": [
+   "Wikipedia: 日本の動物園一覧（群馬県セクション）",
+   "Wikipedia: 個別施設ページ（草津熱帯圏、ジャパンスネークセンター、カッパピア、赤城高原牧場クローネンベルク 等）",
+   "市町村公式サイト（桐生市・沼田市・藤岡市・館林市・大泉町・下仁田町・高崎市）",
+   "県・広域観光公式サイト（心にググっと観光ぐんま gunma-kanko.jp、前橋まるごとガイド maebashi-cvb.com、群馬県公式 pref.gunma.jp）",
+   "汎用Web検索（じゃらん・NAVITIME・jorudan・いこーよ 等の集約サイトを含む）"
+  ],
+  "rounds": [
+   "1巡目: 種別ごとの基本検索（動物園/水族館/ふれあい牧場/昆虫館・爬虫類館・鳥類園）",
+   "2巡目: jorudan集約ページのWebFetch + Wikipedia『日本の動物園一覧』のWebFetchで施設名を洗い出し、個別に市町村・現況を再検索",
+   "3巡目: Wikipedia上『閉鎖された施設』表記のうち現況が疑わしいもの（伊香保おもちゃと人形自動車博物館リス園、宝川温泉汪泉閣熊園）を個別に再検証し、稼働中である可能性を確認"
+  ],
+  "notes": "Wikipedia『日本の動物園一覧』の群馬県欄はAI要約経由で取得したため一部施設名が文字化け（例: 中央公園がビオスリーHi錠中央公園と誤表記）していた。個別検索で実体を確認し補正した。八幡山公園（動物舎）は同名施設が栃木県宇都宮市に実在し、群馬県内での実在は確認できなかったため対象外扱いとした。"
+ },
+ "candidates": [
+  {
+   "name": "桐生が岡動物園",
+   "pref": "群馬県",
+   "city": "桐生市",
+   "foundUrls": ["https://www.city.kiryu.lg.jp/zoo/"],
+   "typeGuess": "動物園",
+   "disposition": "existing",
+   "matchExistingId": "gunma_kiryugaoka_zoo",
+   "excludeReason": null,
+   "note": "既存マスタ記載施設。"
+  },
+  {
+   "name": "群馬サファリパーク",
+   "pref": "群馬県",
+   "city": "富岡市",
+   "foundUrls": ["https://www.safari.co.jp/"],
+   "typeGuess": "サファリパーク",
+   "disposition": "existing",
+   "matchExistingId": "gunma_safari_park",
+   "excludeReason": null,
+   "note": "既存マスタ記載施設。2025年夏に体験型ふれあい施設「ふしぎの動物の森」を新設（既存施設内の拡張）。"
+  },
+  {
+   "name": "桐生が岡公園水族館",
+   "pref": "群馬県",
+   "city": "桐生市",
+   "foundUrls": ["https://www.city.kiryu.lg.jp/zoo/", "https://fomfomblog.com/gunma-suizokukan"],
+   "typeGuess": "水族館",
+   "disposition": "existing",
+   "matchExistingId": "gunma_kiryugaoka_zoo",
+   "excludeReason": null,
+   "note": "桐生が岡動物園と同一敷地・共通の無料入場で運営される小規模水族館。基準の『共通入場券なら原則1施設』に該当するため既存IDに統合候補として計上。別施設として切り出す場合は要判断。"
+  },
+  {
+   "name": "道の駅みなかみ水紀行館 水産学習館",
+   "pref": "群馬県",
+   "city": "利根郡みなかみ町",
+   "foundUrls": ["https://gunma-kanko.jp/features/312", "https://www.jalan.net/kankou/spt_10446aa1030001245/activity/l0000233B0/"],
+   "typeGuess": "水族館",
+   "disposition": "new",
+   "matchExistingId": null,
+   "excludeReason": null,
+   "note": "群馬県で数少ない淡水魚中心の水族館。道の駅併設・有料エリア。"
+  },
+  {
+   "name": "草津熱帯圏",
+   "pref": "群馬県",
+   "city": "吾妻郡草津町",
+   "foundUrls": ["https://ja.wikipedia.org/wiki/%E8%8D%89%E6%B4%A5%E7%86%B1%E5%B8%AF%E5%9C%8F"],
+   "typeGuess": "動物園",
+   "disposition": "new",
+   "matchExistingId": null,
+   "excludeReason": null,
+   "note": "標高1165mの日本最高所の動物園。爬虫類飼育数が関東屈指。1970年開業、稼働中。"
+  },
+  {
+   "name": "ジャパンスネークセンター",
+   "pref": "群馬県",
+   "city": "太田市",
+   "foundUrls": ["https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%83%91%E3%83%B3%E3%82%B9%E3%83%8D%E3%83%BC%E3%82%AF%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC", "https://www.snake-center.com/"],
+   "typeGuess": "爬虫類館",
+   "disposition": "review",
+   "matchExistingId": null,
+   "excludeReason": null,
+   "note": "毒蛇研究・血清製造を主目的とする研究機関（日本蛇族学術研究所）が運営するが、有料で一般公開・展示も行う複合施設。基準の『研究施設は除外』と『爬虫類館は含める』の境界線上のため要判断。"
+  },
+  {
+   "name": "伊香保グリーン牧場",
+   "pref": "群馬県",
+   "city": "渋川市",
+   "foundUrls": ["https://www.greenbokujo.jp/about/experience/", "https://gunma-kanko.jp/spots/3"],
+   "typeGuess": "ふれあい牧場・動物ふれあい施設",
+   "disposition": "new",
+   "matchExistingId": null,
+   "excludeReason": null,
+   "note": "動物とのふれあい体験プログラムが主目的の牧場テーマパーク。"
+  },
+  {
+   "name": "アニタッチPARK イオンモール太田",
+   "pref": "群馬県",
+   "city": "太田市",
+   "foundUrls": ["https://www.ota.anitouch.com/", "https://shaboten.co.jp/park-sp/5869/"],
+   "typeGuess": "ふれあい牧場・動物ふれあい施設",
+   "disposition": "new",
+   "matchExistingId": null,
+   "excludeReason": null,
+   "note": "2024年4月開業。伊豆シャボテン動物公園グループ運営の屋内型ふれあい動物園。約45種450匹。イオンモール内テナントだが独立した有料展示エリア。"
+  },
+  {
+   "name": "世界の名犬牧場",
+   "pref": "群馬県",
+   "city": "前橋市",
+   "foundUrls": ["https://www.maebashi-cvb.com/spot/1106"],
+   "typeGuess": "ふれあい牧場・動物ふれあい施設",
+   "disposition": "review",
+   "matchExistingId": null,
+   "excludeReason": null,
+   "note": "犬（約70種300頭）専門のふれあいテーマパーク。展示対象が家庭犬中心で通常の動物園基準と性格が異なるため含めるか要判断。"
+  },
+  {
+   "name": "道の駅ぐりーんふらわー牧場・大胡",
+   "pref": "群馬県",
+   "city": "前橋市",
+   "foundUrls": ["https://www.maebashi-cvb.com/spot/3001", "https://gnm-ukiuki.net/entry/2024/04/09/150000"],
+   "typeGuess": "ふれあい牧場・動物ふれあい施設",
+   "disposition": "review",
+   "matchExistingId": null,
+   "excludeReason": null,
+   "note": "道の駅に併設された小規模な牧場コーナー（羊・ポニー・ウサギ・鳥）。無料。来場主目的が道の駅・芝生広場である可能性が高く、動物展示が主目的と言えるか要判断。"
+  },
+  {
+   "name": "神津牧場",
+   "pref": "群馬県",
+   "city": "甘楽郡下仁田町",
+   "foundUrls": ["https://www.town.shimonita.lg.jp/kanko/m03/m01/03.html", "https://kanko.shimonita.jp/cuisine/jp/19"],
+   "typeGuess": "ふれあい牧場・動物ふれあい施設",
+   "disposition": "review",
+   "matchExistingId": null,
+   "excludeReason": null,
+   "note": "1887年創業の日本最古の洋式牧場。搾乳・バター作り・アルパカ散歩等の観光体験は充実するが、本来は酪農生産牧場であり来場主目的が『動物展示』と言えるか要判断。"
+  },
+  {
+   "name": "草津温泉おさるの湯もみ処 おさ湯",
+   "pref": "群馬県",
+   "city": "吾妻郡草津町",
+   "foundUrls": ["https://osayu.jp/", "https://gunma-kanko.jp/features/110"],
+   "typeGuess": "ふれあい牧場・動物ふれあい施設",
+   "disposition": "review",
+   "matchExistingId": null,
+   "excludeReason": null,
+   "note": "1階は猿の湯もみショー（演芸主体）、2階でカピバラ・ウサギ等とふれあえる小動物コーナー『かぴ湯』。ショー興行の側面が強く、基準上の除外対象（移動動物園的な演芸施設）に近いか要判断。"
+  },
+  {
+   "name": "赤城高原牧場クローネンベルク（赤城クローネンベルク）",
+   "pref": "群馬県",
+   "city": "前橋市",
+   "foundUrls": ["https://ja.wikipedia.org/wiki/%E8%B5%A4%E5%9F%8E%E9%AB%98%E5%8E%9F%E7%89%A7%E5%A0%B4%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%99%E3%83%AB%E3%82%AF"],
+   "typeGuess": "ふれあい牧場・動物ふれあい施設",
+   "disposition": "excluded",
+   "matchExistingId": null,
+   "excludeReason": "閉園済み",
+   "note": "2017年11月30日閉園（ドイツ村・羊やヤギとのふれあい広場があった）。"
+  },
+  {
+   "name": "ふくろうカフェ楽園",
+   "pref": "群馬県",
+   "city": "高崎市",
+   "foundUrls": ["https://we-love.gunma.jp/kanko/hukuro"],
+   "typeGuess": "動物カフェ",
+   "disposition": "excluded",
+   "matchExistingId": null,
+   "excludeReason": "動物カフェ",
+   "note": "群馬県唯一のフクロウカフェ。ドリンク付き入場制の動物カフェ形態。"
+  },
+  {
+   "name": "マシュマロパンダ",
+   "pref": "群馬県",
+   "city": "前橋市",
+   "foundUrls": ["https://love.gunma.jp/", "https://love.gunma.jp/animals/"],
+   "typeGuess": "動物カフェ",
+   "disposition": "excluded",
+   "matchExistingId": null,
+   "excludeReason": "動物カフェ",
+   "note": "犬・猫・フクロウ・ハリネズミ・爬虫類等を扱う総合アニマルカフェ。"
+  },
+  {
+   "name": "道の駅 川場田園プラザ",
+   "pref": "群馬県",
+   "city": "利根郡川場村",
+   "foundUrls": ["https://denenplaza.co.jp/", "https://www.honda.co.jp/dog/travel/data/denenplazakawaba/"],
+   "typeGuess": "ふれあい牧場・動物ふれあい施設",
+   "disposition": "review",
+   "matchExistingId": null,
+   "excludeReason": null,
+   "note": "検索では『ペットフレンドリーな道の駅』であることは確認できたが、常設の動物展示エリアの存在は確認できなかった。証拠不十分のためreview。"
+  },
+  {
+   "name": "華蔵寺公園バードドーム",
+   "pref": "群馬県",
+   "city": "伊勢崎市",
+   "foundUrls": ["https://pandanocoto.com/article/zoo/zoo-kezouji-bird", "https://www.city.isesaki.lg.jp/kanko_bunka_sports/shizen_koen_seibutsu/17678.html"],
+   "typeGuess": "鳥類園",
+   "disposition": "new",
+   "matchExistingId": null,
+   "excludeReason": null,
+   "note": "総合公園内の鳥舎。ボタンインコ100羽以上を中心に展示。無料。"
+  },
+  {
+   "name": "沼田公園動物舎",
+   "pref": "群馬県",
+   "city": "沼田市",
+   "foundUrls": ["https://www.city.numata.gunma.jp/shisetsu/kouen/1001672.html"],
+   "typeGuess": "動物園",
+   "disposition": "new",
+   "matchExistingId": null,
+   "excludeReason": null,
+   "note": "沼田城址公園内の小規模動物舎。ツキノワグマ・ウサギ・孔雀・インコ等を飼育。無料・24時間開園の公園内施設。"
+  },
+  {
+   "name": "庚申山ミニ動物園",
+   "pref": "群馬県",
+   "city": "藤岡市",
+   "foundUrls": ["https://www.city.fujioka.gunma.jp/soshiki/toshikensetsubu/toshishisetsu/4/2/1566.html", "https://www.jalan.net/kankou/spt_10209ae3312084574/"],
+   "typeGuess": "動物園",
+   "disposition": "new",
+   "matchExistingId": null,
+   "excludeReason": null,
+   "note": "庚申山総合公園内のミニ動物園。ウサギ・モルモット・ヤギ・ミニブタ等。無料。"
+  },
+  {
+   "name": "城之内公園小動物園",
+   "pref": "群馬県",
+   "city": "邑楽郡大泉町",
+   "foundUrls": ["https://www.town.oizumi.gunma.jp/s040/map/040/20200630231658.html", "https://www.dan-b.com/park_jounouchi/"],
+   "typeGuess": "動物園",
+   "disposition": "new",
+   "matchExistingId": null,
+   "excludeReason": null,
+   "note": "小泉城跡公園内の小動物園。ウサギ・インコ・ニワトリ等を飼育。"
+  },
+  {
+   "name": "中央公園小動物園",
+   "pref": "群馬県",
+   "city": "館林市",
+   "foundUrls": ["https://www.city.tatebayashi.gunma.jp/s068/map/040/20201030143439.html", "https://pandanocoto.com/article/zoo/zoo-tatebayashi"],
+   "typeGuess": "動物園",
+   "disposition": "new",
+   "matchExistingId": null,
+   "excludeReason": null,
+   "note": "館林市中央公園内の小動物園。ポニー・ミニチュアホース含む約10種70頭。"
+  },
+  {
+   "name": "高崎公園動物舎",
+   "pref": "群馬県",
+   "city": "高崎市",
+   "foundUrls": ["https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%8B%95%E7%89%A9%E5%9C%92%E4%B8%80%E8%A6%A7"],
+   "typeGuess": "動物園",
+   "disposition": "review",
+   "matchExistingId": null,
+   "excludeReason": null,
+   "note": "Wikipedia『日本の動物園一覧』の群馬県欄に記載があるが、個別検索では実在・所在地・現況を確認できなかった。現地・一次情報での確認が必要。"
+  },
+  {
+   "name": "進雄神社 孔雀舎（神苑）",
+   "pref": "群馬県",
+   "city": "高崎市",
+   "foundUrls": ["https://susanoo.ne.jp/", "https://news.yahoo.co.jp/expert/articles/2da20000b67e761e409fc8aaa1c0a72c7a71f86f"],
+   "typeGuess": "鳥類園",
+   "disposition": "review",
+   "matchExistingId": null,
+   "excludeReason": null,
+   "note": "神社の神苑内に白孔雀を2舎で飼育。来場主目的は参拝であり、独立した動物展示施設と呼べるか要判断。"
+  },
+  {
+   "name": "嬬恋牧場",
+   "pref": "群馬県",
+   "city": "吾妻郡嬬恋村",
+   "foundUrls": ["https://iko-yo.net/facilities/22383", "https://www.jalan.net/kankou/spt_10425cb3522052009/"],
+   "typeGuess": "ふれあい牧場・動物ふれあい施設",
+   "disposition": "new",
+   "matchExistingId": null,
+   "excludeReason": null,
+   "note": "休業中。標高約1400mの観光牧場、ポニー・ウサギとのふれあい。いこーよ上『【休業中】嬬恋牧場』と表記。基準に従い休園中はnewとして記録し、noteに休業中と明記。"
+  },
+  {
+   "name": "八幡山公園動物舎",
+   "pref": "群馬県",
+   "city": "（栃木県宇都宮市の可能性）",
+   "foundUrls": ["https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%8B%95%E7%89%A9%E5%9C%92%E4%B8%80%E8%A6%A7", "https://zfc.jp/en/zoolist/292"],
+   "typeGuess": "動物園",
+   "disposition": "excluded",
+   "matchExistingId": null,
+   "excludeReason": "対象外（都道府県誤り）",
+   "note": "Wikipedia一覧では群馬県欄に記載されていたが、個別検索で該当する『八幡山公園動物舎』は栃木県宇都宮市の施設であることが判明。群馬県内に同名施設が実在するか確認できなかった。"
+  },
+  {
+   "name": "カッパピア（お猿の国）",
+   "pref": "群馬県",
+   "city": "高崎市",
+   "foundUrls": ["https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%83%E3%83%91%E3%83%94%E3%82%A2"],
+   "typeGuess": "動物園",
+   "disposition": "excluded",
+   "matchExistingId": null,
+   "excludeReason": "閉園済み",
+   "note": "高崎観音山丘陵の遊園地カッパピア内にあった動物園（1965年撤退）・お猿の国（1976年設置）。遊園地本体は2003年11月30日閉園、跡地は観音山公園。"
+  },
+  {
+   "name": "大光院 呑龍公園動物園",
+   "pref": "群馬県",
+   "city": "太田市",
+   "foundUrls": ["https://gs816.jp/blog/2023/01/16/oota-donryukoen-w236/", "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%8B%95%E7%89%A9%E5%9C%92%E4%B8%80%E8%A6%A7"],
+   "typeGuess": "動物園",
+   "disposition": "excluded",
+   "matchExistingId": null,
+   "excludeReason": "閉園済み",
+   "note": "大光院隣接の呑龍公園はかつて動物園だったが、現在は遊具中心の公園として整備されており動物展示は現存しない。"
+  },
+  {
+   "name": "尾島公園動物舎",
+   "pref": "群馬県",
+   "city": "太田市",
+   "foundUrls": ["https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%8B%95%E7%89%A9%E5%9C%92%E4%B8%80%E8%A6%A7"],
+   "typeGuess": "動物園",
+   "disposition": "review",
+   "matchExistingId": null,
+   "excludeReason": null,
+   "note": "Wikipedia一覧で閉鎖施設として記載されているが、個別の一次情報での閉鎖確認は取れなかった。要現地・公式確認。"
+  },
+  {
+   "name": "伊香保おもちゃと人形自動車博物館 リス園",
+   "pref": "群馬県",
+   "city": "渋川市",
+   "foundUrls": ["http://www.ikaho-omocha.jp/index.html", "https://hatarakukuruma-suki.com/ikaho-museum/"],
+   "typeGuess": "動物園",
+   "disposition": "new",
+   "matchExistingId": null,
+   "excludeReason": null,
+   "note": "Wikipedia『日本の動物園一覧』では閉鎖施設として記載されていたが、直近の検索結果では約100匹のリスが飼育され稼働中の記述が見られ、矛盾がある。閉鎖情報の裏付けが取れなかったためnewとし、現況確認が必要と明記。"
+  },
+  {
+   "name": "宝川温泉汪泉閣 熊園",
+   "pref": "群馬県",
+   "city": "利根郡みなかみ町",
+   "foundUrls": ["https://www.takaragawa.com/", "https://www.enjoy-minakami.jp/spot/7456/"],
+   "typeGuess": "動物園",
+   "disposition": "new",
+   "matchExistingId": null,
+   "excludeReason": null,
+   "note": "Wikipedia『日本の動物園一覧』では閉鎖施設として記載されていたが、直近の検索結果では『隣接する庭園でツキノワグマ4頭を飼育』と現在形で記述されており矛盾がある。旅館併設の熊檻という性質上、常設の一般公開展示に該当するか含め現況確認が必要。"
+  },
+  {
+   "name": "ぐんま昆虫の森",
+   "pref": "群馬県",
+   "city": "桐生市",
+   "foundUrls": ["https://www.pref.gunma.jp/site/giw/", "https://ja.wikipedia.org/wiki/%E3%81%90%E3%82%93%E3%81%BE%E6%98%86%E8%99%AB%E3%81%AE%E6%A3%AE"],
+   "typeGuess": "昆虫館",
+   "disposition": "new",
+   "matchExistingId": null,
+   "excludeReason": null,
+   "note": "県立の昆虫観察施設。安藤忠雄設計の昆虫観察館（生態温室）で1400種以上の昆虫を通年展示。日本最大級の昆虫園。"
+  }
+ ]
+}

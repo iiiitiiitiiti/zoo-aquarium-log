@@ -1,0 +1,389 @@
+{
+  "block": "神奈川県",
+  "generatedAt": "2026-07-15T00:00:00+09:00",
+  "coverage": {
+    "sources": [
+      "Wikipedia（日本の動物園一覧 等）",
+      "県・市町村観光公式サイト（観光かながわNOW、各市公式サイト、市総合公園ページ等）",
+      "汎用Web検索（種別ごとのキーワード検索、水族館まとめサイト、いこーよ等の子連れ施設まとめ）"
+    ],
+    "typeQueries": ["動物園", "水族館", "サファリパーク", "昆虫館", "爬虫類館", "鳥類園", "ふれあい牧場・動物ふれあい施設"],
+    "rounds": 2,
+    "notes": "1巡目: 県内一覧・水族館まとめサイト・ふれあい施設まとめで概観。2巡目: 市区町村別（鎌倉・逗子・三浦・厚木・海老名・座間・綾瀬・秦野・伊勢原・茅ヶ崎等）に検索戦略を変更し、平塚市・相模原市・逗子市・茅ヶ崎市の中小施設と、閉園済み施設（油壺マリンパーク・小田原動物園・バードピア・UNDER WATER SPACE）を発見。3巡目相当としてバタフライガーデン・野鳥エンクロージャーを個別検索したが新規候補なく打ち切り。"
+  },
+  "candidates": [
+    {
+      "name": "よみうりランドアシカ館",
+      "pref": "神奈川県",
+      "city": "川崎市",
+      "foundUrls": ["ledger:existing-by-pref.json"],
+      "typeGuess": "動物園（施設内展示）",
+      "disposition": "existing",
+      "matchExistingId": "kanagawa_yomiuriland_ashikakan",
+      "excludeReason": null,
+      "note": "既存マスタ登録済み"
+    },
+    {
+      "name": "カワスイ 川崎水族館",
+      "pref": "神奈川県",
+      "city": "川崎市",
+      "foundUrls": ["ledger:existing-by-pref.json"],
+      "typeGuess": "水族館",
+      "disposition": "existing",
+      "matchExistingId": "kanagawa_kawasui_aquarium",
+      "excludeReason": null,
+      "note": "既存マスタ登録済み"
+    },
+    {
+      "name": "夢見ヶ崎動物公園",
+      "pref": "神奈川県",
+      "city": "川崎市",
+      "foundUrls": ["ledger:existing-by-pref.json"],
+      "typeGuess": "動物園",
+      "disposition": "existing",
+      "matchExistingId": "kanagawa_yumemigasaki_zoo",
+      "excludeReason": null,
+      "note": "既存マスタ登録済み"
+    },
+    {
+      "name": "よこはま動物園ズーラシア",
+      "pref": "神奈川県",
+      "city": "横浜市",
+      "foundUrls": ["ledger:existing-by-pref.json"],
+      "typeGuess": "動物園",
+      "disposition": "existing",
+      "matchExistingId": "kanagawa_zoorasia",
+      "excludeReason": null,
+      "note": "既存マスタ登録済み"
+    },
+    {
+      "name": "横浜・八景島シーパラダイス",
+      "pref": "神奈川県",
+      "city": "横浜市",
+      "foundUrls": ["ledger:existing-by-pref.json"],
+      "typeGuess": "水族館",
+      "disposition": "existing",
+      "matchExistingId": "kanagawa_hakkeijima_seaparadise",
+      "excludeReason": null,
+      "note": "既存マスタ登録済み"
+    },
+    {
+      "name": "横浜市立野毛山動物園",
+      "pref": "神奈川県",
+      "city": "横浜市",
+      "foundUrls": ["ledger:existing-by-pref.json"],
+      "typeGuess": "動物園",
+      "disposition": "existing",
+      "matchExistingId": "kanagawa_nogeyama_zoo",
+      "excludeReason": null,
+      "note": "既存マスタ登録済み"
+    },
+    {
+      "name": "横浜市立金沢動物園",
+      "pref": "神奈川県",
+      "city": "横浜市",
+      "foundUrls": ["ledger:existing-by-pref.json"],
+      "typeGuess": "動物園",
+      "disposition": "existing",
+      "matchExistingId": "kanagawa_kanazawa_zoo",
+      "excludeReason": null,
+      "note": "既存マスタ登録済み"
+    },
+    {
+      "name": "新江ノ島水族館",
+      "pref": "神奈川県",
+      "city": "藤沢市",
+      "foundUrls": [
+        "https://aquarium.search-maps.com/areas/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/",
+        "https://www.jalan.net/kankou/140000/g2_45/"
+      ],
+      "typeGuess": "水族館",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "既存マスタに未登録。国内有数の大型水族館"
+    },
+    {
+      "name": "相模川ふれあい科学館 アクアリウムさがみはら",
+      "pref": "神奈川県",
+      "city": "相模原市中央区",
+      "foundUrls": [
+        "https://sagamigawa-fureai.com/",
+        "https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/bunka_shakai/library_etc/1002759.html"
+      ],
+      "typeGuess": "水族館（淡水・相模川テーマ）",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "相模原市立の淡水水族館。既存マスタに未登録"
+    },
+    {
+      "name": "箱根園水族館",
+      "pref": "神奈川県",
+      "city": "足柄下郡箱根町",
+      "foundUrls": [
+        "https://aquarium.search-maps.com/areas/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/",
+        "https://www.jalan.net/kankou/140000/g2_45/"
+      ],
+      "typeGuess": "水族館",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "芦ノ湖畔の水族館。既存マスタに未登録"
+    },
+    {
+      "name": "横浜開運水族館 フォーチュンアクアリウム",
+      "pref": "神奈川県",
+      "city": "横浜市中区",
+      "foundUrls": [
+        "https://fortune-aquarium.com/",
+        "https://www.kanagawa-kankou.or.jp/spot/7382"
+      ],
+      "typeGuess": "水族館（商業・占いテーマ）",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "2022年3月開業、横浜中華街チャイナスクエア3F。88の水槽で生体展示する常設商業水族館"
+    },
+    {
+      "name": "横浜市立間門小学校附属海水水族館（まかどシーマリンパーク）",
+      "pref": "神奈川県",
+      "city": "横浜市中区",
+      "foundUrls": [
+        "https://www.edu.city.yokohama.lg.jp/school/es/makado/index.cfm/1,0,59,html",
+        "https://www.museum.or.jp/museum/2886"
+      ],
+      "typeGuess": "水族館（学校附属）",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "小学校附属だが月1回程度・無料で一般公開。サメ・ウツボ等の海水魚を常設飼育"
+    },
+    {
+      "name": "箱根園どうぶつランド だっこして！ZOO！",
+      "pref": "神奈川県",
+      "city": "足柄下郡箱根町",
+      "foundUrls": ["https://hakone-hugzoo.com/", "https://www.hakonenavi.jp/spot/1390"],
+      "typeGuess": "ふれあい動物施設",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "箱根園内の有料ふれあい動物施設。ウサギ・フクロウ・爬虫類等常設展示"
+    },
+    {
+      "name": "服部牧場",
+      "pref": "神奈川県",
+      "city": "愛甲郡愛川町",
+      "foundUrls": ["https://kanagawa-hattoribokujou.com/", "https://www.pref.kanagawa.jp/docs/u5r/cnt/f550/tabi-130.html"],
+      "typeGuess": "ふれあい牧場",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "乳牛・馬・羊・ヤギ・うさぎ・ミニブタ等10種以上を常設飼育する観光牧場"
+    },
+    {
+      "name": "雪印こどもの国牧場",
+      "pref": "神奈川県",
+      "city": "横浜市青葉区",
+      "foundUrls": ["https://www.kodomonokuni-bokujyo.co.jp/", "https://www.kodomonokuni.org/bokujyo/"],
+      "typeGuess": "ふれあい牧場",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "「こどもの国」内の常設牧場エリア。乳牛・羊等約40頭"
+    },
+    {
+      "name": "平塚市総合公園 ふれあい動物園",
+      "pref": "神奈川県",
+      "city": "平塚市",
+      "foundUrls": ["https://www.city.hiratsuka.kanagawa.jp/koen/page-c_00819.html"],
+      "typeGuess": "ふれあい動物園",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "市立総合公園内、無料、35種約760頭の小動物を常設飼育"
+    },
+    {
+      "name": "相模原麻溝公園 ふれあい動物広場（プリモふれあい動物広場）",
+      "pref": "神奈川県",
+      "city": "相模原市南区",
+      "foundUrls": ["https://asamizo-animal-square.com/", "https://www.e-sagamihara.com/playing/playing-223/"],
+      "typeGuess": "ふれあい動物園",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "市立麻溝公園内の無料ミニ動物園。展示コーナー・ふれあいコーナー・ポニー乗馬場"
+    },
+    {
+      "name": "披露山公園動物園",
+      "pref": "神奈川県",
+      "city": "逗子市",
+      "foundUrls": [
+        "https://www.city.zushi.kanagawa.jp/kurashi/sumai/1002174/1002178/1002179/1002181.html",
+        "https://www.homemate-research-zoo.com/dtl/75000000000000146470/"
+      ],
+      "typeGuess": "動物園（ミニ）",
+      "disposition": "new",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "逗子市立披露山公園内の無料ミニ動物園。ニホンザル・クジャク・アヒル等を常設飼育"
+    },
+    {
+      "name": "茅ヶ崎ふれあい動物園",
+      "pref": "神奈川県",
+      "city": "茅ヶ崎市",
+      "foundUrls": ["https://www.instagram.com/chigasaki_fureai_zoo/", "https://iko-yo.net/facilities/184833"],
+      "typeGuess": "ふれあい動物園（民間・小規模）",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "民間の小規模施設。トカゲ・カメレオン・カエル・チンチラ・フクロウ等を展示するが、カニ釣り・金魚すくい等アミューズメント要素もあり動物カフェ的業態の可能性。公式サイトでの詳細確認が必要"
+    },
+    {
+      "name": "観音崎自然博物館",
+      "pref": "神奈川県",
+      "city": "横須賀市",
+      "foundUrls": ["https://kannonzaki-nature-museum.jimdofree.com/", "https://ja.wikipedia.org/wiki/観音崎自然博物館"],
+      "typeGuess": "自然博物館（水槽・タッチプール併設）",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "東京湾・三浦半島の自然がテーマの博物館。6mの淡水魚水槽（ミヤコタナゴ等）とタッチプールを常設展示するが、主目的が博物館か水族館かは要確認"
+    },
+    {
+      "name": "大和市自然観察センター・しらかしのいえ",
+      "pref": "神奈川県",
+      "city": "大和市",
+      "foundUrls": ["https://www.yamato-zaidan.or.jp/shirakashi", "https://www.pref.kanagawa.jp/docs/u5r/cnt/f550/tabi-098.html"],
+      "typeGuess": "自然観察センター（水槽併設）",
+      "disposition": "review",
+      "matchExistingId": null,
+      "excludeReason": null,
+      "note": "泉の森内の自然観察センター。在来種の魚・カエル・ヘビ等を水槽で常設展示するが、主目的が生物展示か自然学習かは要確認"
+    },
+    {
+      "name": "京急油壺マリンパーク",
+      "pref": "神奈川県",
+      "city": "三浦市",
+      "foundUrls": [
+        "https://ja.wikipedia.org/wiki/京急油壺マリンパーク",
+        "https://www.keikyu.co.jp/report/2021/post_272.html"
+      ],
+      "typeGuess": "水族館",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "閉園済み",
+      "note": "2021年9月30日閉館。跡地は2025年に解体予定"
+    },
+    {
+      "name": "小田原動物園",
+      "pref": "神奈川県",
+      "city": "小田原市",
+      "foundUrls": ["https://prtimes.jp/main/html/rd/p/000000100.000107858.html", "https://www.tokyo-np.co.jp/article/295900"],
+      "typeGuess": "動物園",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "閉園済み",
+      "note": "小田原城址公園内の「お城の動物園」。2023年12月に約73年の歴史に幕、閉園"
+    },
+    {
+      "name": "世界鳥類園バードピア",
+      "pref": "神奈川県",
+      "city": "横浜市中区",
+      "foundUrls": ["https://ja.wikipedia.org/wiki/横浜マリンタワー", "https://hamarepo.com/story.php?story_id=2366"],
+      "typeGuess": "鳥類園",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "閉園済み",
+      "note": "横浜マリンタワー内、放し飼い鳥類展示施設。2005年11月閉園、鳥は神戸花鳥園等へ移動"
+    },
+    {
+      "name": "アクアリウム宇宙旅行 UNDER WATER SPACE",
+      "pref": "神奈川県",
+      "city": "横浜市西区",
+      "foundUrls": ["https://prtimes.jp/main/html/rd/p/000000090.000070875.html", "https://under-water-space.com/"],
+      "typeGuess": "エンタメ水族館",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "閉園済み",
+      "note": "みなとみらいワールドポーターズ内、期間限定エンタメ施設。2020年12月開業、2024年1月15日閉館"
+    },
+    {
+      "name": "多摩区役所ミニ水族館",
+      "pref": "神奈川県",
+      "city": "川崎市多摩区",
+      "foundUrls": ["https://www.city.kawasaki.jp/tama/page/0000119318.html"],
+      "typeGuess": "展示水槽（区役所ロビー）",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "その他（区役所庁舎1階アトリウムの小規模水槽展示で、常設の来場目的施設に該当しない）",
+      "note": "多摩川の淡水魚を展示する小水槽2基のみ。独立した常設来場施設とは言えない"
+    },
+    {
+      "name": "横浜爬虫類カフェ レプタイルズリゾート",
+      "pref": "神奈川県",
+      "city": "横浜市",
+      "foundUrls": ["https://reptiles-resort.com/"],
+      "typeGuess": "爬虫類カフェ",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "動物カフェ",
+      "note": "爬虫類カフェ業態のため包含基準の除外対象"
+    },
+    {
+      "name": "鶴見川流域センター",
+      "pref": "神奈川県",
+      "city": "横浜市港北区",
+      "foundUrls": ["https://aquarium.search-maps.com/areas/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/"],
+      "typeGuess": "環境学習施設",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "その他（動物展示を主目的としない河川環境学習施設）",
+      "note": "生きた動物展示が主目的でない"
+    },
+    {
+      "name": "北里大学アクアリウムラボ",
+      "pref": "神奈川県",
+      "city": "相模原市南区",
+      "foundUrls": ["https://aquarium.search-maps.com/areas/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/"],
+      "typeGuess": "大学研究施設",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "研究施設",
+      "note": "大学附属の研究施設"
+    },
+    {
+      "name": "東京大学附属臨海実験所",
+      "pref": "神奈川県",
+      "city": "三浦市",
+      "foundUrls": ["https://aquarium.search-maps.com/areas/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/"],
+      "typeGuess": "大学研究施設",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "研究施設",
+      "note": "大学附属の臨海実験所"
+    },
+    {
+      "name": "港北水再生センター",
+      "pref": "神奈川県",
+      "city": "横浜市港北区",
+      "foundUrls": ["https://aquarium.search-maps.com/areas/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/"],
+      "typeGuess": "下水処理施設",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "その他（動物展示施設ではない下水処理場）",
+      "note": "水族館まとめサイトに誤って含まれていた下水処理施設"
+    },
+    {
+      "name": "大師河原水防センター",
+      "pref": "神奈川県",
+      "city": "川崎市川崎区",
+      "foundUrls": ["https://aquarium.search-maps.com/areas/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/"],
+      "typeGuess": "防災施設",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "その他（動物展示施設ではない水防センター）",
+      "note": "水族館まとめサイトに誤って含まれていた防災施設"
+    }
+  ]
+}
