@@ -26,6 +26,12 @@ describe("App",()=>{
   expect(screen.getByText("海遊館")).toBeInTheDocument();
  });
  it("shows guidance when there are no results",async()=>{ const user=userEvent.setup(); render(<App />); await user.type(screen.getByRole("searchbox"),"存在しない"); expect(screen.getByText(/見つかりませんでした/)).toBeInTheDocument(); });
+ it("filters facilities by prefecture",async()=>{
+  const user=userEvent.setup(); render(<App />);
+  await user.selectOptions(screen.getByRole("combobox",{name:"都道府県"}),"北海道");
+  expect(screen.getByText("札幌市円山動物園")).toBeInTheDocument();
+  expect(screen.queryByText("恩賜上野動物園")).not.toBeInTheDocument();
+ });
  it("施設カードから詳細ページへ移動し、公式サイトは詳細ページに表示する",async()=>{
   const user=userEvent.setup(); render(<App visitStore={visitStore} />);
   const card=screen.getByRole("link",{name:/札幌市円山動物園/});
