@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it, vi } from "vitest";
 import App from "./App";
@@ -12,7 +12,7 @@ const visitStore: VisitStore = {
  create:async()=>undefined,
  update:async()=>undefined,
  remove:async()=>undefined,
- subscribe:(_facilityId,onVisits)=>{ onVisits([]); return ()=>undefined; },
+ subscribeAll:(onVisits)=>{ onVisits([]); return ()=>undefined; },
 };
 
 describe("App",()=>{
@@ -93,5 +93,37 @@ describe("App",()=>{
 
   await user.click(screen.getByRole("link",{name:/札幌市円山動物園/}));
   expect(screen.queryByRole("button",{name:"ログアウト"})).not.toBeInTheDocument();
+ });
+ it("filters facilities by visit status from the shared stores",async()=>{
+  const user=userEvent.setup();
+  const target=facilitiesJson[0];
+  const markStore={
+   setFlag:vi.fn(async()=>undefined),
+   subscribe:(onMarks: (marks: Record<string,{wishlist:boolean;favorite:boolean}>)=>void)=>{ onMarks({[target.id]:{wishlist:true,favorite:false}}); return ()=>undefined; },
+  };
+  render(<App visitStore={visitStore} markStore={markStore} />);
+  await user.click(screen.getByText("施設を探す"));
+  await user.click(screen.getByRole("button",{name:"行きたい"}));
+  expect(screen.getByText(target.name)).toBeInTheDocument();
+  expect(screen.getByText("1施設が該当")).toBeInTheDocument();
+ });
+ it("disables visit filters until visit and mark snapshots arrive",async()=>{
+  const user=userEvent.setup();
+  let emitVisits: ((visits: never[])=>void)|undefined;
+  let emitMarks: ((marks: Record<string,{wishlist:boolean;favorite:boolean}>)=>void)|undefined;
+  const loadingVisitStore: VisitStore={
+   ...visitStore,
+   subscribeAll:(onVisits)=>{ emitVisits=onVisits as (visits: never[])=>void; return ()=>undefined; },
+  };
+  const loadingMarkStore={
+   setFlag:vi.fn(async()=>undefined),
+   subscribe:(onMarks: (marks: Record<string,{wishlist:boolean;favorite:boolean}>)=>void)=>{ emitMarks=onMarks; return ()=>undefined; },
+  };
+  render(<App visitStore={loadingVisitStore} markStore={loadingMarkStore} />);
+  await user.click(screen.getByText("施設を探す"));
+  expect(screen.getByRole("button",{name:"訪問済み"})).toBeDisabled();
+  emitVisits?.([]);
+  emitMarks?.({});
+  await waitFor(()=>expect(screen.getByRole("button",{name:"訪問済み"})).toBeEnabled());
  });
 });

@@ -4,12 +4,10 @@ import {
   deleteDoc,
   doc,
   onSnapshot,
-  query,
   runTransaction,
   serverTimestamp,
   setDoc,
   updateDoc,
-  where,
   type Firestore,
   type Timestamp,
 } from "firebase/firestore";
@@ -34,8 +32,7 @@ export interface VisitStore {
   create(draft: VisitDraft): Promise<void>;
   update(id: string, draft: Omit<VisitDraft, "id">): Promise<void>;
   remove(id: string): Promise<void>;
-  subscribe(
-    facilityId: string,
+  subscribeAll(
     onVisits: (visits: Visit[]) => void,
     onError: (error: Error) => void,
   ): () => void;
@@ -98,17 +95,12 @@ export class FirestoreVisitStore implements VisitStore {
     await deleteDoc(doc(this.visitsCollection(), id));
   }
 
-  subscribe(
-    facilityId: string,
+  subscribeAll(
     onVisits: (visits: Visit[]) => void,
     onError: (error: Error) => void,
   ) {
-    const visitsQuery = query(
-      this.visitsCollection(),
-      where("facilityId", "==", facilityId),
-    );
     return onSnapshot(
-      visitsQuery,
+      this.visitsCollection(),
       (snapshot) => {
         const visits = snapshot.docs
           .map((snapshotDoc) => ({ id: snapshotDoc.id, ...snapshotDoc.data() }) as Visit)
