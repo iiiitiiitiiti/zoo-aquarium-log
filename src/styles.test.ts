@@ -55,4 +55,11 @@ describe("responsive styles", () => {
     );
   });
 
+  it("left-aligns the visit date text on iOS", () => {
+    expect(styles).toContain(".visit-form input[type=date]{text-align:left}");
+    expect(styles).toContain(
+      ".visit-form input[type=date]::-webkit-date-and-time-value{text-align:left}",
+    );
+  });
+
 });
