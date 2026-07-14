@@ -14,6 +14,17 @@ const filters: { value: FacilityType | "all"; label: string }[] = [
   { value: "aquarium", label: "水族館" },
   { value: "both", label: "複合・その他" },
 ];
+const statusFilters: { value: Facility["status"] | "all"; label: string }[] = [
+  { value: "all", label: "すべて" },
+  { value: "open", label: "営業中" },
+  { value: "suspended", label: "休園中" },
+  { value: "closed", label: "閉園済み" },
+];
+const statusLabels: Record<Facility["status"], string> = {
+  open: "営業中",
+  suspended: "休園中",
+  closed: "閉園済み",
+};
 const typeLabels: Record<FacilityType, string> = {
   zoo: "動物園",
   aquarium: "水族館",
@@ -37,11 +48,13 @@ export default function App({
   const [query, setQuery] = useState("");
   const [type, setType] = useState<FacilityType | "all">("all");
   const [prefecture, setPrefecture] = useState("all");
+  const [status, setStatus] = useState<Facility["status"] | "all">("all");
   const [selectedFacility, setSelectedFacility] = useState<Facility>();
   const shown = useMemo(
-    () => filterFacilities(facilities, query, type, prefecture),
-    [query, type, prefecture],
+    () => filterFacilities(facilities, query, type, prefecture, status),
+    [query, type, prefecture, status],
   );
+  const activeFilterCount = [query.trim(), type !== "all", prefecture !== "all", status !== "all"].filter(Boolean).length;
 
   if (selectedFacility && visitStore) {
     return (
@@ -75,54 +88,80 @@ export default function App({
         <p className="lead">次は、どの生きものに会いに行こう？</p>
         <span className="route" aria-hidden="true" />
       </header>
-      <section className="controls" aria-label="施設を探す">
-        <label htmlFor="search">施設を探す</label>
-        <div className="search-wrap">
-          <span aria-hidden="true">⌕</span>
-          <input
-            id="search"
-            type="search"
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-            placeholder="施設名・都道府県で検索"
-          />
-        </div>
-        <div className="filters">
-          {filters.map((item) => (
-            <button
-              key={item.value}
-              className={type === item.value ? "active" : ""}
-              aria-pressed={type === item.value}
-              onClick={() => setType(item.value)}
+      <details className="controls">
+        <summary className="controls-summary">
+          <span className="controls-title">施設を探す</span>
+          <span className="controls-meta">{activeFilterCount > 0 ? `${activeFilterCount}件の条件` : "検索・絞り込み"}</span>
+        </summary>
+        <div className="controls-body">
+          <label htmlFor="search">キーワード検索</label>
+          <div className="search-wrap">
+            <span aria-hidden="true">⌕</span>
+            <input
+              id="search"
+              type="search"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder="施設名・都道府県で検索"
+            />
+          </div>
+          <div className="filter-group">
+            <span className="filter-group-label">種別</span>
+            <div className="filters" role="group" aria-label="種別">
+              {filters.map((item) => (
+                <button
+                  key={item.value}
+                  type="button"
+                  className={type === item.value ? "active" : ""}
+                  aria-pressed={type === item.value}
+                  onClick={() => setType(item.value)}
+                >
+                  {item.label}
+                </button>
+              ))}
+            </div>
+          </div>
+          <div className="prefecture-filter">
+            <label htmlFor="prefecture">都道府県</label>
+            <select
+              id="prefecture"
+              value={prefecture}
+              onChange={(event) => setPrefecture(event.target.value)}
             >
-              {item.label}
-            </button>
-          ))}
+              <option value="all">すべて</option>
+              {prefectures.map((item) => (
+                <option key={item} value={item}>{item}</option>
+              ))}
+            </select>
+          </div>
+          <div className="filter-group">
+            <span className="filter-group-label">営業状態</span>
+            <div className="filters" role="group" aria-label="営業状態">
+              {statusFilters.map((item) => (
+                <button
+                  key={item.value}
+                  type="button"
+                  className={status === item.value ? "active" : ""}
+                  aria-pressed={status === item.value}
+                  onClick={() => setStatus(item.value)}
+                >
+                  {item.label}
+                </button>
+              ))}
+            </div>
+          </div>
         </div>
-        <div className="prefecture-filter">
-          <label htmlFor="prefecture">都道府県</label>
-          <select
-            id="prefecture"
-            value={prefecture}
-            onChange={(event) => setPrefecture(event.target.value)}
-          >
-            <option value="all">すべて</option>
-            {prefectures.map((item) => (
-              <option key={item} value={item}>{item}</option>
-            ))}
-          </select>
-        </div>
-      </section>
+      </details>
       <section className="results">
         <div className="results-heading">
-          <h2>{query || type !== "all" || prefecture !== "all" ? `${shown.length}施設が該当` : `${facilities.length}施設を掲載`}</h2>
+          <h2>{query || type !== "all" || prefecture !== "all" || status !== "all" ? `${shown.length}施設が該当` : `${facilities.length}施設を掲載`}</h2>
           <p>パイロット版</p>
         </div>
         {shown.length === 0 ? (
           <div className="empty">
             <span>◌</span>
             <h3>施設が見つかりませんでした</h3>
-            <p>検索語や種別を変えてみてください。</p>
+            <p>検索条件を変えてみてください。</p>
           </div>
         ) : (
           <ul className="facility-list">
@@ -140,7 +179,7 @@ export default function App({
                   <div className="card-body">
                     <div className="badges">
                       <span>{typeLabels[facility.type]}</span>
-                      <span className="open">営業中</span>
+                      <span className={facility.status}>{statusLabels[facility.status]}</span>
                     </div>
                     <h3>{facility.name}</h3>
                     <p>{facility.pref} {facility.city}</p>
