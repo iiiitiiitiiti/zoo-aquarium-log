@@ -18,6 +18,7 @@ const visitStore: VisitStore = {
 describe("App",()=>{
  it("shows, searches and filters facilities",async()=>{
   const user=userEvent.setup(); render(<App />);
+  await user.click(screen.getByText("施設を探す"));
   expect(screen.getByText(facilityCountText)).toBeInTheDocument();
   await user.type(screen.getByRole("searchbox"),"上野");
   expect(screen.getByText("恩賜上野動物園")).toBeInTheDocument();
@@ -25,12 +26,23 @@ describe("App",()=>{
   await user.clear(screen.getByRole("searchbox")); await user.click(screen.getByRole("button",{name:"水族館"}));
   expect(screen.getByText("海遊館")).toBeInTheDocument();
  });
- it("shows guidance when there are no results",async()=>{ const user=userEvent.setup(); render(<App />); await user.type(screen.getByRole("searchbox"),"存在しない"); expect(screen.getByText(/見つかりませんでした/)).toBeInTheDocument(); });
+ it("shows guidance when there are no results",async()=>{ const user=userEvent.setup(); render(<App />); await user.click(screen.getByText("施設を探す")); await user.type(screen.getByRole("searchbox"),"存在しない"); expect(screen.getByText(/見つかりませんでした/)).toBeInTheDocument(); });
  it("filters facilities by prefecture",async()=>{
   const user=userEvent.setup(); render(<App />);
+  await user.click(screen.getByText("施設を探す"));
   await user.selectOptions(screen.getByRole("combobox",{name:"都道府県"}),"北海道");
   expect(screen.getByText("札幌市円山動物園")).toBeInTheDocument();
   expect(screen.queryByText("恩賜上野動物園")).not.toBeInTheDocument();
+ });
+ it("hides search controls until opened and filters by operating status",async()=>{
+  const user=userEvent.setup(); render(<App />);
+  const summary=screen.getByText("施設を探す");
+  expect(summary.closest("details")).not.toBeNull();
+  expect(summary.closest("details")).not.toHaveAttribute("open");
+  await user.click(summary);
+  await user.click(screen.getByRole("button",{name:"休園中"}));
+  expect(screen.getByText("大宮公園小動物園")).toBeInTheDocument();
+  expect(screen.queryByText("札幌市円山動物園")).not.toBeInTheDocument();
  });
  it("施設カードから詳細ページへ移動し、公式サイトは詳細ページに表示する",async()=>{
   const user=userEvent.setup(); render(<App visitStore={visitStore} />);
