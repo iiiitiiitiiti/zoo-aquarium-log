@@ -36,13 +36,16 @@ describe("App",()=>{
  });
  it("hides search controls until opened and filters by operating status",async()=>{
   const user=userEvent.setup(); render(<App />);
-  const summary=screen.getByText("施設を探す");
-  expect(summary.closest("details")).not.toBeNull();
-  expect(summary.closest("details")).not.toHaveAttribute("open");
+  const summary=screen.getByRole("button",{name:/施設を探す/});
+  expect(summary).toHaveAttribute("aria-expanded","false");
+  expect(screen.getByText("都道府県")).toHaveClass("filter-group-label");
   await user.click(summary);
+  expect(summary).toHaveAttribute("aria-expanded","true");
   await user.click(screen.getByRole("button",{name:"休園中"}));
   expect(screen.getByText("大宮公園小動物園")).toBeInTheDocument();
   expect(screen.queryByText("札幌市円山動物園")).not.toBeInTheDocument();
+  await user.click(summary);
+  expect(summary).toHaveAttribute("aria-expanded","false");
  });
  it("施設カードから詳細ページへ移動し、公式サイトは詳細ページに表示する",async()=>{
   const user=userEvent.setup(); render(<App visitStore={visitStore} />);

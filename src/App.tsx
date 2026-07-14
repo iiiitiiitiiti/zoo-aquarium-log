@@ -49,6 +49,7 @@ export default function App({
   const [type, setType] = useState<FacilityType | "all">("all");
   const [prefecture, setPrefecture] = useState("all");
   const [status, setStatus] = useState<Facility["status"] | "all">("all");
+  const [searchOpen, setSearchOpen] = useState(false);
   const [selectedFacility, setSelectedFacility] = useState<Facility>();
   const shown = useMemo(
     () => filterFacilities(facilities, query, type, prefecture, status),
@@ -88,12 +89,18 @@ export default function App({
         <p className="lead">次は、どの生きものに会いに行こう？</p>
         <span className="route" aria-hidden="true" />
       </header>
-      <details className="controls">
-        <summary className="controls-summary">
+      <section className={`controls ${searchOpen ? "is-open" : ""}`} aria-label="施設を探す">
+        <button
+          className="controls-summary"
+          type="button"
+          aria-expanded={searchOpen}
+          aria-controls="facility-search-controls"
+          onClick={() => setSearchOpen((isOpen) => !isOpen)}
+        >
           <span className="controls-title">施設を探す</span>
           <span className="controls-meta">{activeFilterCount > 0 ? `${activeFilterCount}件の条件` : "検索・絞り込み"}</span>
-        </summary>
-        <div className="controls-body">
+        </button>
+        <div id="facility-search-controls" className="controls-body" aria-hidden={!searchOpen}>
           <label htmlFor="search">キーワード検索</label>
           <div className="search-wrap">
             <span aria-hidden="true">⌕</span>
@@ -121,8 +128,8 @@ export default function App({
               ))}
             </div>
           </div>
-          <div className="prefecture-filter">
-            <label htmlFor="prefecture">都道府県</label>
+          <div className="filter-group prefecture-filter">
+            <label className="filter-group-label" htmlFor="prefecture">都道府県</label>
             <select
               id="prefecture"
               value={prefecture}
@@ -151,7 +158,7 @@ export default function App({
             </div>
           </div>
         </div>
-      </details>
+      </section>
       <section className="results">
         <div className="results-heading">
           <h2>{query || type !== "all" || prefecture !== "all" || status !== "all" ? `${shown.length}施設が該当` : `${facilities.length}施設を掲載`}</h2>
