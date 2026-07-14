@@ -1,6 +1,9 @@
-import { type FormEvent, useEffect, useRef, useState } from "react";
+import { type ChangeEvent, type FormEvent, useEffect, useRef, useState } from "react";
 import type { Facility } from "./types";
+import type { VisitPhotoStore } from "./visitPhotos";
 import type { Visit, VisitDraft, VisitStore } from "./visits";
+
+const MAX_SOURCE_IMAGE_BYTES = 20 * 1024 * 1024;
 
 interface VisitFormState {
   id: string;
@@ -9,6 +12,10 @@ interface VisitFormState {
   rating: string;
   memo: string;
   visitor: string;
+  photoPath?: string;
+  originalPhotoPath?: string;
+  photoFile?: File;
+  removePhoto: boolean;
 }
 
 function today() {
@@ -16,24 +23,27 @@ function today() {
   const year = date.getFullYear();
   const month = String(date.getMonth() + 1).padStart(2, "0");
   const day = String(date.getDate()).padStart(2, "0");
-  return `${year}-${month}-${day}`;
+  return year + "-" + month + "-" + day;
 }
 
 function displayDate(value: string) {
   const [year, month, day] = value.split("-").map(Number);
-  return `${year}年${month}月${day}日`;
+  return year + "年" + month + "月" + day + "日";
 }
 
 export default function VisitPanel({
   facility,
   store,
+  photoStore,
   onBack,
 }: {
   facility: Facility;
   store: VisitStore;
+  photoStore?: VisitPhotoStore;
   onBack: () => void;
 }) {
   const [visits, setVisits] = useState<Visit[]>();
+  const [photoUrls, setPhotoUrls] = useState<Record<string, string>>({});
   const [form, setForm] = useState<VisitFormState>();
   const [error, setError] = useState("");
   const [saving, setSaving] = useState(false);
@@ -48,6 +58,24 @@ export default function VisitPanel({
     [facility.id, store],
   );
 
+  useEffect(() => {
+    let cancelled = false;
+    if (!photoStore || !visits) {
+      setPhotoUrls({});
+      return () => { cancelled = true; };
+    }
+    Promise.all(
+      visits
+        .filter((visit) => visit.photoPath)
+        .map(async (visit) => [visit.id, await photoStore.getUrl(visit.photoPath!)] as const),
+    ).then((entries) => {
+      if (!cancelled) setPhotoUrls(Object.fromEntries(entries));
+    }).catch(() => {
+      if (!cancelled) setPhotoUrls({});
+    });
+    return () => { cancelled = true; };
+  }, [photoStore, visits]);
+
   function openNewVisit() {
     setError("");
     setForm({
@@ -57,6 +85,7 @@ export default function VisitPanel({
       rating: "",
       memo: "",
       visitor: "",
+      removePhoto: false,
     });
   }
 
@@ -69,7 +98,23 @@ export default function VisitPanel({
       rating: visit.rating?.toString() ?? "",
       memo: visit.memo ?? "",
       visitor: visit.visitor ?? "",
+      photoPath: visit.photoPath,
+      originalPhotoPath: visit.photoPath,
+      removePhoto: false,
     });
+  }
+
+  function handlePhotoChange(event: ChangeEvent<HTMLInputElement>) {
+    const file = event.target.files?.[0];
+    if (!file) return;
+    if (!file.type.startsWith("image/") || file.size > MAX_SOURCE_IMAGE_BYTES) {
+      event.currentTarget.value = "";
+      setError("画像は20MB以下のファイルを選択してください");
+      return;
+    }
+    if (!form) return;
+    setError("");
+    setForm({ ...form, photoFile: file, removePhoto: false });
   }
 
   async function saveVisit(event: FormEvent<HTMLFormElement>) {
@@ -85,25 +130,39 @@ export default function VisitPanel({
       return;
     }
 
-    const draft: Omit<VisitDraft, "id"> = {
-      facilityId: facility.id,
-      date: form.date,
-      ...(form.rating ? { rating: Number(form.rating) } : {}),
-      ...(form.memo ? { memo: form.memo } : {}),
-      ...(form.visitor ? { visitor: form.visitor } : {}),
-    };
-
     setError("");
     submittingRef.current = true;
     setSaving(true);
+    let uploadedPhotoPath: string | undefined;
+    const previousPhotoPath = form.originalPhotoPath ?? form.photoPath;
     try {
+      if (photoStore && form.photoFile && !form.removePhoto) {
+        uploadedPhotoPath = await photoStore.upload(form.id, form.photoFile);
+      }
+      const photoPath = form.removePhoto ? undefined : uploadedPhotoPath ?? form.photoPath;
+      const draft: Omit<VisitDraft, "id"> = {
+        facilityId: facility.id,
+        date: form.date,
+        ...(form.rating ? { rating: Number(form.rating) } : {}),
+        ...(form.memo ? { memo: form.memo } : {}),
+        ...(form.visitor ? { visitor: form.visitor } : {}),
+        ...(form.editing
+          ? { photoPath }
+          : photoPath ? { photoPath } : {}),
+      };
       if (form.editing) {
         await store.update(form.id, draft);
       } else {
         await store.create({ id: form.id, ...draft });
       }
+      if (photoStore && previousPhotoPath && previousPhotoPath !== photoPath) {
+        await photoStore.remove(previousPhotoPath).catch(() => undefined);
+      }
       setForm(undefined);
     } catch {
+      if (photoStore && uploadedPhotoPath) {
+        await photoStore.remove(uploadedPhotoPath).catch(() => undefined);
+      }
       setError("記録を保存できませんでした。もう一度お試しください");
     } finally {
       submittingRef.current = false;
@@ -112,10 +171,13 @@ export default function VisitPanel({
   }
 
   async function removeVisit(visit: Visit) {
-    if (!window.confirm(`${displayDate(visit.date)}の記録を削除しますか？`)) return;
+    if (!window.confirm(displayDate(visit.date) + "の記録を削除しますか？")) return;
     setError("");
     try {
       await store.remove(visit.id);
+      if (photoStore && visit.photoPath) {
+        await photoStore.remove(visit.photoPath).catch(() => undefined);
+      }
     } catch {
       setError("記録を削除できませんでした。もう一度お試しください");
     }
@@ -192,6 +254,31 @@ export default function VisitPanel({
                 placeholder="例：家族"
               />
             </label>
+            {photoStore && (
+              <div className="visit-photo-field">
+                <label htmlFor="visit-photo">訪問写真</label>
+                <input
+                  id="visit-photo"
+                  type="file"
+                  accept="image/*"
+                  onChange={handlePhotoChange}
+                />
+                {(form.photoPath || form.photoFile) && !form.removePhoto && (
+                  <div className="visit-photo-status">
+                    <span>{form.photoFile ? "選択中：" + form.photoFile.name : "写真を登録済み"}</span>
+                    <button
+                      type="button"
+                      onClick={() => setForm({
+                        ...form,
+                        photoFile: undefined,
+                        photoPath: undefined,
+                        removePhoto: true,
+                      })}
+                    >写真を外す</button>
+                  </div>
+                )}
+              </div>
+            )}
             <div className="form-actions">
               <button type="button" className="secondary" onClick={() => setForm(undefined)}>キャンセル</button>
               <button type="submit" disabled={saving}>
@@ -215,19 +302,27 @@ export default function VisitPanel({
               <li key={visit.id}>
                 <div className="visit-date">
                   <strong>{displayDate(visit.date)}</strong>
-                  {visit.rating && <span aria-label={`評価${visit.rating}`}>{"★".repeat(visit.rating)}</span>}
+                  {visit.rating && <span aria-label={"評価" + visit.rating}>{"★".repeat(visit.rating)}</span>}
                 </div>
                 {visit.memo && <p>{visit.memo}</p>}
                 {visit.visitor && <small>一緒に行った人：{visit.visitor}</small>}
+                {photoUrls[visit.id] && (
+                  <img
+                    className="visit-photo"
+                    src={photoUrls[visit.id]}
+                    alt={displayDate(visit.date) + "の訪問写真"}
+                    loading="lazy"
+                  />
+                )}
                 <div className="visit-actions">
                   <button
                     type="button"
-                    aria-label={`${displayDate(visit.date)}の記録を編集`}
+                    aria-label={displayDate(visit.date) + "の記録を編集"}
                     onClick={() => openEditVisit(visit)}
                   >編集</button>
                   <button
                     type="button"
-                    aria-label={`${displayDate(visit.date)}の記録を削除`}
+                    aria-label={displayDate(visit.date) + "の記録を削除"}
                     onClick={() => removeVisit(visit)}
                   >削除</button>
                 </div>

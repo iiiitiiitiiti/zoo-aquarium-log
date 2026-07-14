@@ -152,4 +152,53 @@ describe("VisitPanel", () => {
 
     expect(store.removeCalls).toEqual(["visit-1"]);
   });
+
+  it("訪問写真を追加して保存し、記録一覧に表示できる", async () => {
+    const user = userEvent.setup();
+    const store = new FakeVisitStore();
+    const photoStore = {
+      upload: vi.fn(async (visitId: string, _file: File) => `households/test/visits/${visitId}/photo.webp`),
+      getUrl: vi.fn(async (path: string) => `https://storage.example/${path}`),
+      remove: vi.fn(async (_path: string) => undefined),
+    };
+    render(<VisitPanel {...({ facility, store, onBack: () => undefined, photoStore } as any)} />);
+    store.emit([]);
+
+    await user.click(await screen.findByRole("button", { name: "訪問記録を追加" }));
+    const file = new File(["photo"], "visit.jpg", { type: "image/jpeg" });
+    await user.upload(screen.getByLabelText("訪問写真"), file);
+    await user.click(screen.getByRole("button", { name: "記録を保存" }));
+
+    expect(photoStore.upload).toHaveBeenCalledWith("new-visit-id", file);
+    expect(store.createCalls[0]).toMatchObject({
+      photoPath: "households/test/visits/new-visit-id/photo.webp",
+    });
+
+    store.emit([{
+      ...existingVisit,
+      photoPath: "households/test/visits/visit-1/photo.webp",
+    }]);
+    expect(await screen.findByRole("img", { name: "2026年7月1日の訪問写真" }))
+      .toHaveAttribute("src", "https://storage.example/households/test/visits/visit-1/photo.webp");
+  });
+
+  it("訪問写真を外して保存できる", async () => {
+    const user = userEvent.setup();
+    const store = new FakeVisitStore();
+    const photoPath = "households/test/visits/visit-1/photo.webp";
+    const photoStore = {
+      upload: vi.fn(),
+      getUrl: vi.fn(async (_path: string) => "https://storage.example/photo.webp"),
+      remove: vi.fn(async (_path: string) => undefined),
+    };
+    render(<VisitPanel {...({ facility, store, onBack: () => undefined, photoStore } as any)} />);
+    store.emit([{ ...existingVisit, photoPath }]);
+
+    await user.click(await screen.findByRole("button", { name: "2026年7月1日の記録を編集" }));
+    await user.click(screen.getByRole("button", { name: "写真を外す" }));
+    await user.click(screen.getByRole("button", { name: "変更を保存" }));
+
+    expect(store.updateCalls[0].draft).toHaveProperty("photoPath", undefined);
+    expect(photoStore.remove).toHaveBeenCalledWith(photoPath);
+  });
 });

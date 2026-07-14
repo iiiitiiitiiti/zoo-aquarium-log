@@ -57,6 +57,20 @@ describe("Firestore household rules", () => {
     await assertSucceeds(setDoc(visitRef, validVisit()));
   });
 
+  test("訪問写真のパスを保存でき、長すぎるパスは拒否する", async () => {
+    const db = testEnv.authenticatedContext(HOUSEHOLD_UID).firestore();
+    const visits = collection(db, "households", HOUSEHOLD_UID, "visits");
+
+    await assertSucceeds(setDoc(doc(visits), {
+      ...validVisit(),
+      photoPath: "households/" + HOUSEHOLD_UID + "/visits/visit-1/photo.webp",
+    }));
+    await assertFails(setDoc(doc(visits), {
+      ...validVisit(),
+      photoPath: "p".repeat(301),
+    }));
+  });
+
   test("未認証ユーザーの読み書きを拒否する", async () => {
     const db = testEnv.unauthenticatedContext().firestore();
     const visitRef = doc(db, "households", HOUSEHOLD_UID, "visits", "visit-1");
