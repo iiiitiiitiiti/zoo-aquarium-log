@@ -2,7 +2,10 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it, vi } from "vitest";
 import App from "./App";
+import facilitiesJson from "./data/facilities.json";
 import type { VisitStore } from "./visits";
+
+const facilityCountText = `${facilitiesJson.length}施設を掲載`;
 
 const visitStore: VisitStore = {
  newId:()=> "visit-id",
@@ -15,7 +18,7 @@ const visitStore: VisitStore = {
 describe("App",()=>{
  it("shows, searches and filters facilities",async()=>{
   const user=userEvent.setup(); render(<App />);
-  expect(screen.getByText("20施設を掲載")).toBeInTheDocument();
+  expect(screen.getByText(facilityCountText)).toBeInTheDocument();
   await user.type(screen.getByRole("searchbox"),"上野");
   expect(screen.getByText("恩賜上野動物園")).toBeInTheDocument();
   expect(screen.queryByText("海遊館")).not.toBeInTheDocument();
@@ -38,7 +41,7 @@ describe("App",()=>{
   await user.click(screen.getByRole("link",{name:/札幌市円山動物園/}));
   expect(screen.getByRole("heading",{name:"札幌市円山動物園"})).toBeInTheDocument();
   await user.click(screen.getByRole("button",{name:/施設一覧/}));
-  expect(screen.getByText("20施設を掲載")).toBeInTheDocument();
+  expect(screen.getByText(facilityCountText)).toBeInTheDocument();
  });
  it("shows logout on the facility list but not the detail view",async()=>{
   const user=userEvent.setup();

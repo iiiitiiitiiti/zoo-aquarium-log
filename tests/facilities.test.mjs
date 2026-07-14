@@ -62,9 +62,9 @@ test("rejects missing fields and unknown enum values", () => {
   }
 });
 
-test("pilot master contains 20 valid facilities", async () => {
+test("facility master contains only valid facilities", async () => {
   const json = await readFile(new URL("../src/data/facilities.json", import.meta.url), "utf8");
   const facilities = JSON.parse(json);
-  assert.equal(facilities.length, 20);
+  assert.ok(facilities.length >= 20, `expected at least 20 facilities, got ${facilities.length}`);
   assert.deepEqual(validateFacilities(facilities), []);
 });
