@@ -38,7 +38,7 @@ describe("responsive styles", () => {
   it("changes facility card background on hover", () => {
     expect(styles).toMatch(/\.facility-card\{[^}]*transition:background-color \.2s ease/);
     expect(styles).toContain(".facility-card:hover{background:#eaf5ef}");
-    expect(styles).toContain("@media(prefers-reduced-motion:reduce){.facility-card{transition:none}}");
+    expect(styles).toContain("@media(prefers-reduced-motion:reduce){.controls-body{transition:none}.facility-card{transition:none}}");
   });
 
   it("keeps visit date and rating controls side by side on narrow screens", () => {
@@ -64,6 +64,12 @@ describe("responsive styles", () => {
 
   it("keeps the facility count heading compact", () => {
     expect(styles).toContain(".results-heading h2{margin:0;font-size:16px}");
+  });
+
+  it("animates the facility search accordion", () => {
+    expect(styles).toContain(".controls-body{max-height:0;opacity:0;");
+    expect(styles).toContain(".controls.is-open .controls-body{max-height:720px;opacity:1;");
+    expect(styles).toContain("@media(prefers-reduced-motion:reduce){.controls-body{transition:none}");
   });
 
 });
