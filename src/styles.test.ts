@@ -84,4 +84,10 @@ describe("responsive styles", () => {
     );
   });
 
+  it("gives the controls section the same border treatment as facility cards", () => {
+    expect(styles).toMatch(
+      /\.controls\{[^}]*border:1px solid #d7ddd5[^}]*box-shadow:0 3px 0 #dce5dc/,
+    );
+  });
+
 });
