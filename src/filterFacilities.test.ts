@@ -8,5 +8,6 @@ const fixtures = [
 describe("filterFacilities",()=>{
  it("searches names, kana and regions",()=>{ expect(filterFacilities(fixtures,"うえの","all")).toHaveLength(1); expect(filterFacilities(fixtures,"東京都","all")).toHaveLength(1); });
  it("filters by type",()=>expect(filterFacilities(fixtures,"","aquarium")).toEqual([fixtures[1]]));
+ it("filters by prefecture",()=>expect(filterFacilities(fixtures,"","all","東京都")).toEqual([fixtures[0]]));
  it("returns an empty list when nothing matches",()=>expect(filterFacilities(fixtures,"存在しない","all")).toEqual([]));
 });

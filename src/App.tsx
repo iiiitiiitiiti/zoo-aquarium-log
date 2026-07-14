@@ -7,6 +7,7 @@ import type { VisitStore } from "./visits";
 import VisitPanel from "./VisitPanel";
 
 const facilities = facilitiesJson as Facility[];
+const prefectures = [...new Set(facilities.map((facility) => facility.pref))];
 const filters: { value: FacilityType | "all"; label: string }[] = [
   { value: "all", label: "すべて" },
   { value: "zoo", label: "動物園" },
@@ -35,10 +36,11 @@ export default function App({
 }) {
   const [query, setQuery] = useState("");
   const [type, setType] = useState<FacilityType | "all">("all");
+  const [prefecture, setPrefecture] = useState("all");
   const [selectedFacility, setSelectedFacility] = useState<Facility>();
   const shown = useMemo(
-    () => filterFacilities(facilities, query, type),
-    [query, type],
+    () => filterFacilities(facilities, query, type, prefecture),
+    [query, type, prefecture],
   );
 
   if (selectedFacility && visitStore) {
@@ -97,10 +99,23 @@ export default function App({
             </button>
           ))}
         </div>
+        <div className="prefecture-filter">
+          <label htmlFor="prefecture">都道府県</label>
+          <select
+            id="prefecture"
+            value={prefecture}
+            onChange={(event) => setPrefecture(event.target.value)}
+          >
+            <option value="all">すべて</option>
+            {prefectures.map((item) => (
+              <option key={item} value={item}>{item}</option>
+            ))}
+          </select>
+        </div>
       </section>
       <section className="results">
         <div className="results-heading">
-          <h2>{query || type !== "all" ? `${shown.length}施設が該当` : `${facilities.length}施設を掲載`}</h2>
+          <h2>{query || type !== "all" || prefecture !== "all" ? `${shown.length}施設が該当` : `${facilities.length}施設を掲載`}</h2>
           <p>パイロット版</p>
         </div>
         {shown.length === 0 ? (
