@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import AddFacilityPanel from "./AddFacilityPanel";
 import { buildExport, buildExportFilename } from "./buildExport";
+import MapPanel from "./MapPanel";
 import facilitiesJson from "./data/facilities.json";
 import { filterFacilities, type VisitStatusFilter } from "./filterFacilities";
 import type { CustomFacilityStore } from "./customFacilities";
@@ -9,6 +10,7 @@ import type { Facility, FacilityType } from "./types";
 import type { VisitPhotoStore } from "./visitPhotos";
 import type { Visit, VisitStore } from "./visits";
 import VisitPanel from "./VisitPanel";
+import "./app-map.css";
 
 const facilities = facilitiesJson as Facility[];
 const filters: { value: FacilityType | "all"; label: string }[] = [
@@ -66,6 +68,7 @@ export default function App({
   const [visitStatus, setVisitStatus] = useState<VisitStatusFilter>("all");
   const [searchOpen, setSearchOpen] = useState(false);
   const [quickActionsOpen, setQuickActionsOpen] = useState(false);
+  const [mapOpen, setMapOpen] = useState(false);
   const [selectedFacility, setSelectedFacility] = useState<Facility>();
   const [facilityEditorOpen, setFacilityEditorOpen] = useState(false);
   const [editingFacility, setEditingFacility] = useState<Facility>();
@@ -142,6 +145,14 @@ export default function App({
   const hasListFilter = activeFilterCount > 0;
   const statusFiltersLoading = Boolean(visitStore && visits === undefined)
     || Boolean(markStore && marks === undefined);
+  const mapNotReady = Boolean(
+    (visitStore && visits === undefined)
+    || (markStore && marks === undefined)
+    || (customFacilityStore && customFacilities === undefined)
+    || visitError
+    || marksError
+    || customFacilitiesError
+  );
   const exportNotReady = Boolean(
     (visitStore && visits === undefined)
     || (markStore && marks === undefined)
@@ -169,6 +180,7 @@ export default function App({
 
   const openFacility = (facility: Facility) => {
     setFacilityEditorOpen(false);
+    setMapOpen(false);
     setSelectedFacility(facility);
   };
 
@@ -188,6 +200,21 @@ export default function App({
       setTimeout(() => URL.revokeObjectURL(objectUrl), 0);
     }
   };
+
+  if (mapOpen) {
+    return (
+      <MapPanel
+        shown={shown}
+        visitedIds={visitedIds}
+        marks={marks ?? {}}
+        onBack={() => setMapOpen(false)}
+        onSelectFacility={(facility) => {
+          setMapOpen(false);
+          openFacility(facility);
+        }}
+      />
+    );
+  }
 
   if (facilityEditorOpen && customFacilityStore) {
     return (
@@ -365,7 +392,10 @@ export default function App({
       <section className="results">
         <div className="results-heading">
           <h2>{hasListFilter ? `${shown.length}施設が該当` : `${allFacilities.length}施設を掲載`}</h2>
-          <p>パイロット版</p>
+          <div className="results-heading-side">
+            <p>パイロット版</p>
+            <button className="map-toggle" type="button" onClick={() => setMapOpen(true)} disabled={mapNotReady}>地図で見る</button>
+          </div>
         </div>
         {shown.length === 0 ? (
           <div className="empty">
