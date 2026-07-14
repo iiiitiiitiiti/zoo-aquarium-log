@@ -84,8 +84,9 @@ describe("responsive styles", () => {
     );
   });
 
-  it("styles the top quick actions", () => {
-    expect(styles).toContain(".quick-actions{display:flex;gap:8px;margin:16px 16px 0}");
+  it("styles the collapsed quick actions", () => {
+    expect(styles).toContain(".quick-actions{margin:16px 16px 0;border:1px solid #d7ddd5");
+    expect(styles).toContain(".quick-actions-summary{display:flex;align-items:center;justify-content:space-between");
     expect(styles).toContain(".quick-action:disabled{cursor:not-allowed;opacity:.45}");
   });
 
