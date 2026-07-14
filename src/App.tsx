@@ -126,6 +126,7 @@ export default function App({
                     <h3>{facility.name}</h3>
                     <p>{facility.pref} {facility.city}</p>
                   </div>
+                  <span className="card-arrow" aria-hidden="true">→</span>
                 </a>
               </li>
             ))}
