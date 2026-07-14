@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import facilitiesJson from "./data/facilities.json";
 import { filterFacilities } from "./filterFacilities";
 import type { Facility, FacilityType } from "./types";
+import type { VisitPhotoStore } from "./visitPhotos";
 import type { VisitStore } from "./visits";
 import VisitPanel from "./VisitPanel";
 
@@ -21,11 +22,13 @@ const typeLabels: Record<FacilityType, string> = {
 
 export default function App({
   visitStore,
+  photoStore,
   onSignOut,
   signingOut = false,
   signOutError = "",
 }: {
   visitStore?: VisitStore;
+  photoStore?: VisitPhotoStore;
   onSignOut?: () => Promise<void>;
   signingOut?: boolean;
   signOutError?: string;
@@ -43,6 +46,7 @@ export default function App({
       <VisitPanel
         facility={selectedFacility}
         store={visitStore}
+        photoStore={photoStore}
         onBack={() => setSelectedFacility(undefined)}
       />
     );

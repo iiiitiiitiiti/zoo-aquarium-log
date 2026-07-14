@@ -13,7 +13,7 @@ service cloud.firestore {
           "facilityId", "date", "createdAt", "updatedAt"
         ])
         && data.keys().hasOnly([
-          "facilityId", "date", "rating", "memo", "visitor",
+          "facilityId", "date", "rating", "memo", "visitor", "photoPath",
           "createdAt", "updatedAt"
         ])
         && data.facilityId is string
@@ -27,6 +27,8 @@ service cloud.firestore {
           || (data.memo is string && data.memo.size() <= 2000))
         && (!("visitor" in data)
           || (data.visitor is string && data.visitor.size() <= 100))
+        && (!("photoPath" in data)
+          || (data.photoPath is string && data.photoPath.size() <= 300))
         && data.createdAt is timestamp
         && data.updatedAt is timestamp;
     }

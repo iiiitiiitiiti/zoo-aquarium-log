@@ -21,6 +21,7 @@ export interface VisitDraft {
   rating?: number;
   memo?: string;
   visitor?: string;
+  photoPath?: string;
 }
 
 export interface Visit extends VisitDraft {
@@ -53,6 +54,9 @@ function visitFields(draft: Omit<VisitDraft, "id">, deleteMissing = false) {
     ...(draft.visitor === undefined
       ? deleteMissing ? { visitor: deleteField() } : {}
       : { visitor: draft.visitor }),
+    ...(draft.photoPath === undefined
+      ? deleteMissing ? { photoPath: deleteField() } : {}
+      : { photoPath: draft.photoPath }),
   };
 }
 

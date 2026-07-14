@@ -1,0 +1,19 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    function isHousehold(hid) {
+      return request.auth != null
+        && request.auth.uid == hid
+        && hid == "cbs9TeeZukMBRkHg5iIw9aMXw1W2";
+    }
+
+    match /households/{householdId}/visits/{visitId}/photo.webp {
+      allow read: if isHousehold(householdId);
+      allow create, update: if isHousehold(householdId)
+        && request.resource.size <= 5 * 1024 * 1024
+        && request.resource.contentType == "image/webp";
+      allow delete: if isHousehold(householdId);
+    }
+  }
+}
