@@ -26,6 +26,7 @@ describe("App",()=>{
  it("施設カードから詳細ページへ移動し、公式サイトは詳細ページに表示する",async()=>{
   const user=userEvent.setup(); render(<App visitStore={visitStore} />);
   const card=screen.getByRole("link",{name:/札幌市円山動物園/});
+  expect(card.querySelector(".card-arrow")).toHaveTextContent("→");
   expect(card).toHaveAttribute("href","#facility/hokkaido_maruyama_zoo");
   expect(screen.queryByRole("link",{name:/公式サイト/})).not.toBeInTheDocument();
   await user.click(card);
