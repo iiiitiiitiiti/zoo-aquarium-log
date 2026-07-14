@@ -9,8 +9,8 @@ const photos = [
   },
   {
     path: "src/assets/aquarium-habitat.webp",
-    credit: "Matthieu Rochette",
-    source: "https://unsplash.com/photos/7zWL4_KHG1s",
+    credit: "AI-generated for this project with OpenAI image generation",
+    source: "",
   },
 ];
 
