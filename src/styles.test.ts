@@ -49,4 +49,10 @@ describe("responsive styles", () => {
     expect(styles).toContain(".form-row label{min-width:0}");
   });
 
+  it("keeps iOS native date and select controls inside their columns", () => {
+    expect(styles).toContain(
+      "@supports (-webkit-touch-callout:none){.visit-form input[type=date],.visit-form select{-webkit-appearance:none;appearance:none;max-width:100%}",
+    );
+  });
+
 });
