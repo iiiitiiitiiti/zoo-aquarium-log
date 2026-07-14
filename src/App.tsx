@@ -56,6 +56,12 @@ export default function App({
     [query, type, prefecture, status],
   );
   const activeFilterCount = [query.trim(), type !== "all", prefecture !== "all", status !== "all"].filter(Boolean).length;
+  const resetFilters = () => {
+    setQuery("");
+    setType("all");
+    setPrefecture("all");
+    setStatus("all");
+  };
 
   if (selectedFacility && visitStore) {
     return (
@@ -157,6 +163,7 @@ export default function App({
               ))}
             </div>
           </div>
+          <button className="filter-reset" type="button" onClick={resetFilters} disabled={activeFilterCount === 0}>条件をリセット</button>
         </div>
       </section>
       <section className="results">
