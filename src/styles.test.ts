@@ -78,4 +78,10 @@ describe("responsive styles", () => {
     expect(styles).toContain(".filter-reset:disabled{cursor:not-allowed;opacity:.45}");
   });
 
+  it("makes selected mark toggles visually obvious", () => {
+    expect(styles).toContain(
+      '.mark-toggles button[aria-pressed="true"]{border-color:#2f6b50;background:#fff;color:#2f6b50}',
+    );
+  });
+
 });
