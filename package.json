@@ -8,6 +8,8 @@
     "build": "tsc -b && vite build",
     "test": "vitest",
     "test:data": "node --test tests/facilities.test.mjs",
+    "check:duplicates": "node scripts/find-duplicate-candidates.mjs",
+    "check:links": "node scripts/check-source-urls.mjs",
     "test:rules": "firebase emulators:exec --only firestore --project demo-zoo-aquarium-log \"vitest --run --config vitest.rules.config.ts\"",
     "lint": "tsc -b --noEmit"
   },
