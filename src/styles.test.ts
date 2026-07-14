@@ -37,7 +37,8 @@ describe("responsive styles", () => {
   });
   it("changes facility card background on hover", () => {
     expect(styles).toMatch(/\.facility-card\{[^}]*transition:background-color \.2s ease/);
-    expect(styles).toContain(".facility-card:hover{background:#eaf5ef}");
+    expect(styles).toContain("@media(hover:hover) and (pointer:fine){.facility-card:hover{background:#eaf5ef}}");
+    expect(styles).not.toMatch(/(^|\})\.facility-card:hover\{background:#eaf5ef\}/);
     expect(styles).toContain("@media(prefers-reduced-motion:reduce){.controls-body{transition:none}.facility-card{transition:none}}");
   });
 
