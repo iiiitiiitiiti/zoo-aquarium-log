@@ -70,7 +70,7 @@ describe("responsive styles", () => {
   it("animates the facility search accordion", () => {
     expect(styles).toContain(".controls-body{max-height:0;opacity:0;");
     expect(styles).toContain(".controls.is-open .controls-body{max-height:720px;opacity:1;");
-    expect(styles).toContain("@media(prefers-reduced-motion:reduce){.controls-body{transition:none}");
+    expect(styles).toContain("@media(prefers-reduced-motion:reduce){.controls-body,.quick-actions-body{transition:none}");
   });
 
   it("styles the filter reset button", () => {
@@ -85,15 +85,17 @@ describe("responsive styles", () => {
   });
 
   it("styles the collapsed quick actions", () => {
-    expect(styles).toContain(".quick-actions{margin:16px 16px 0;border:1px solid #d7ddd5");
+    expect(styles).toContain(".quick-actions{margin:16px 16px 0;border:1px solid #d7ddd5;border-radius:16px");
     expect(styles).toContain(".quick-actions-summary{display:flex;align-items:center;justify-content:space-between");
+    expect(styles).toContain(".quick-actions-body{max-height:0;opacity:0;");
+    expect(styles).toContain(".quick-actions.is-open .quick-actions-body{max-height:220px;opacity:1;");
     expect(styles).toContain(".quick-action:disabled{cursor:not-allowed;opacity:.45}");
   });
 
-  it("gives the controls section the same border treatment as facility cards", () => {
-    expect(styles).toMatch(
-      /\.controls\{[^}]*border:1px solid #d7ddd5[^}]*box-shadow:0 3px 0 #dce5dc/,
-    );
+  it("gives controls, quick actions, and facility cards the same radius", () => {
+    expect(styles).toContain(".controls,.facility-card,.quick-actions{border-radius:16px}");
+    expect(styles).toMatch(/\.facility-card\{[^}]*border-radius:16px/);
+    expect(styles).toMatch(/\.quick-actions\{[^}]*border-radius:16px/);
   });
 
 });

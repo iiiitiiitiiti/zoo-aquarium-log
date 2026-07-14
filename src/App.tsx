@@ -65,6 +65,7 @@ export default function App({
   const [status, setStatus] = useState<Facility["status"] | "all">("all");
   const [visitStatus, setVisitStatus] = useState<VisitStatusFilter>("all");
   const [searchOpen, setSearchOpen] = useState(false);
+  const [quickActionsOpen, setQuickActionsOpen] = useState(false);
   const [selectedFacility, setSelectedFacility] = useState<Facility>();
   const [facilityEditorOpen, setFacilityEditorOpen] = useState(false);
   const [editingFacility, setEditingFacility] = useState<Facility>();
@@ -341,9 +342,17 @@ export default function App({
           <button className="filter-reset" type="button" onClick={resetFilters} disabled={activeFilterCount === 0}>条件をリセット</button>
         </div>
       </section>
-      <details className="quick-actions">
-        <summary className="quick-actions-summary">その他の操作</summary>
-        <div className="quick-actions-body">
+      <section className={`quick-actions ${quickActionsOpen ? "is-open" : ""}`} aria-label="その他の操作">
+        <button
+          className="quick-actions-summary"
+          type="button"
+          aria-expanded={quickActionsOpen}
+          aria-controls="quick-actions-body"
+          onClick={() => setQuickActionsOpen((isOpen) => !isOpen)}
+        >
+          <span>その他の操作</span>
+        </button>
+        <div id="quick-actions-body" className="quick-actions-body" aria-hidden={!quickActionsOpen}>
           <div className="quick-actions-buttons" role="group" aria-label="クイックアクション">
             {customFacilityStore && (
               <button className="quick-action" type="button" onClick={openAddFacility}>施設を追加</button>
@@ -352,7 +361,7 @@ export default function App({
           </div>
           <p className="location-note export-note">写真データは含まれません。訪問日・メモ・評価・行きたい/お気に入り・手動追加した施設情報が対象です。</p>
         </div>
-      </details>
+      </section>
       <section className="results">
         <div className="results-heading">
           <h2>{hasListFilter ? `${shown.length}施設が該当` : `${allFacilities.length}施設を掲載`}</h2>
