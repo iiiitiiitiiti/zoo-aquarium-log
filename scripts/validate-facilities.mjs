@@ -1,3 +1,5 @@
+import { japanBounds, isInsideAnyBox } from "./pref-bounds.mjs";
+
 const idPattern = /^[a-z0-9]+(?:_[a-z0-9]+)*$/;
 const datePattern = /^\d{4}-\d{2}-\d{2}$/;
 const allowedTypes = new Set(["zoo", "aquarium", "both", "other"]);
@@ -35,6 +37,9 @@ export function validateFacilities(facilities) {
 
     if (typeof facility?.lat !== "number" || facility.lat < -90 || facility.lat > 90) errors.push(`${label}: 緯度は-90から90の数値にしてください`);
     if (typeof facility?.lng !== "number" || facility.lng < -180 || facility.lng > 180) errors.push(`${label}: 経度は-180から180の数値にしてください`);
+    if (typeof facility?.lat === "number" && typeof facility?.lng === "number" && !isInsideAnyBox(facility.lat, facility.lng, japanBounds)) {
+      errors.push(`${label}: 座標が日本の範囲外です`);
+    }
     if (!isHttpUrl(facility?.url)) errors.push(`${label}: 公式URLが不正です`);
     if (!Array.isArray(facility?.sourceUrls) || facility.sourceUrls.length === 0 || facility.sourceUrls.some((url) => !isHttpUrl(url))) errors.push(`${label}: 一次情報URLを1件以上指定してください`);
     if (!datePattern.test(facility?.lastVerifiedAt ?? "")) errors.push(`${label}: 確認日はYYYY-MM-DD形式にしてください`);
