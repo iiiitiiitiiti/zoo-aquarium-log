@@ -41,4 +41,12 @@ describe("responsive styles", () => {
     expect(styles).toContain("@media(prefers-reduced-motion:reduce){.facility-card{transition:none}}");
   });
 
+  it("keeps visit date and rating controls side by side on narrow screens", () => {
+    expect(styles).toContain(
+      ".form-row{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:10px}",
+    );
+    expect(styles).toMatch(/\.visit-form input,\.visit-form select,\.visit-form textarea\{[^}]*min-width:0/);
+    expect(styles).toContain(".form-row label{min-width:0}");
+  });
+
 });
