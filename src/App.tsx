@@ -1,13 +1,15 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import AddFacilityPanel from "./AddFacilityPanel";
 import facilitiesJson from "./data/facilities.json";
-import { filterFacilities } from "./filterFacilities";
+import { filterFacilities, type VisitStatusFilter } from "./filterFacilities";
+import type { CustomFacilityStore } from "./customFacilities";
+import type { MarkMap, MarkStore } from "./marks";
 import type { Facility, FacilityType } from "./types";
 import type { VisitPhotoStore } from "./visitPhotos";
-import type { VisitStore } from "./visits";
+import type { Visit, VisitStore } from "./visits";
 import VisitPanel from "./VisitPanel";
 
 const facilities = facilitiesJson as Facility[];
-const prefectures = [...new Set(facilities.map((facility) => facility.pref))];
 const filters: { value: FacilityType | "all"; label: string }[] = [
   { value: "all", label: "すべて" },
   { value: "zoo", label: "動物園" },
@@ -19,6 +21,13 @@ const statusFilters: { value: Facility["status"] | "all"; label: string }[] = [
   { value: "open", label: "営業中" },
   { value: "suspended", label: "休園中" },
   { value: "closed", label: "閉園済み" },
+];
+const visitStatusFilters: { value: VisitStatusFilter; label: string }[] = [
+  { value: "all", label: "すべて" },
+  { value: "visited", label: "訪問済み" },
+  { value: "unvisited", label: "未訪問" },
+  { value: "wishlist", label: "行きたい" },
+  { value: "favorite", label: "お気に入り" },
 ];
 const statusLabels: Record<Facility["status"], string> = {
   open: "営業中",
@@ -35,12 +44,16 @@ const typeLabels: Record<FacilityType, string> = {
 export default function App({
   visitStore,
   photoStore,
+  markStore,
+  customFacilityStore,
   onSignOut,
   signingOut = false,
   signOutError = "",
 }: {
   visitStore?: VisitStore;
   photoStore?: VisitPhotoStore;
+  markStore?: MarkStore;
+  customFacilityStore?: CustomFacilityStore;
   onSignOut?: () => Promise<void>;
   signingOut?: boolean;
   signOutError?: string;
@@ -49,26 +62,136 @@ export default function App({
   const [type, setType] = useState<FacilityType | "all">("all");
   const [prefecture, setPrefecture] = useState("all");
   const [status, setStatus] = useState<Facility["status"] | "all">("all");
+  const [visitStatus, setVisitStatus] = useState<VisitStatusFilter>("all");
   const [searchOpen, setSearchOpen] = useState(false);
   const [selectedFacility, setSelectedFacility] = useState<Facility>();
-  const shown = useMemo(
-    () => filterFacilities(facilities, query, type, prefecture, status),
-    [query, type, prefecture, status],
+  const [facilityEditorOpen, setFacilityEditorOpen] = useState(false);
+  const [editingFacility, setEditingFacility] = useState<Facility>();
+  const [visits, setVisits] = useState<Visit[]>();
+  const [visitError, setVisitError] = useState("");
+  const [marks, setMarks] = useState<MarkMap>();
+  const [marksError, setMarksError] = useState("");
+  const [customFacilities, setCustomFacilities] = useState<Facility[]>([]);
+
+  useEffect(() => {
+    if (!visitStore) {
+      setVisits([]);
+      setVisitError("");
+      return;
+    }
+    setVisitError("");
+    setVisits(undefined);
+    return visitStore.subscribeAll(
+      setVisits,
+      () => setVisitError("記録を読み込めませんでした。通信環境を確認してください"),
+    );
+  }, [visitStore]);
+
+  useEffect(() => {
+    if (!markStore) {
+      setMarks({});
+      setMarksError("");
+      return;
+    }
+    setMarksError("");
+    setMarks(undefined);
+    return markStore.subscribe(setMarks, () => setMarksError("お気に入り設定を読み込めませんでした。通信環境を確認してください"));
+  }, [markStore]);
+
+  useEffect(() => {
+    if (!customFacilityStore) {
+      setCustomFacilities([]);
+      return;
+    }
+    return customFacilityStore.subscribe(setCustomFacilities, () => undefined);
+  }, [customFacilityStore]);
+
+  const allFacilities = useMemo(() => [...facilities, ...customFacilities], [customFacilities]);
+  const prefectures = useMemo(
+    () => [...new Set(allFacilities.map((facility) => facility.pref))],
+    [allFacilities],
   );
-  const activeFilterCount = [query.trim(), type !== "all", prefecture !== "all", status !== "all"].filter(Boolean).length;
+  const visitedIds = useMemo(
+    () => new Set((visits ?? []).map((visit) => visit.facilityId)),
+    [visits],
+  );
+  const shown = useMemo(
+    () => filterFacilities(allFacilities, query, type, prefecture, status, {
+      filter: visitStatus,
+      visitedIds,
+      marks: marks ?? {},
+    }),
+    [allFacilities, query, type, prefecture, status, visitStatus, visitedIds, marks],
+  );
+  const activeFilterCount = [
+    query.trim(),
+    type !== "all",
+    prefecture !== "all",
+    status !== "all",
+    visitStatus !== "all",
+  ].filter(Boolean).length;
+  const hasListFilter = activeFilterCount > 0;
+  const statusFiltersLoading = Boolean(visitStore && visits === undefined)
+    || Boolean(markStore && marks === undefined);
+
   const resetFilters = () => {
     setQuery("");
     setType("all");
     setPrefecture("all");
     setStatus("all");
+    setVisitStatus("all");
   };
 
+  const openAddFacility = () => {
+    setSelectedFacility(undefined);
+    setEditingFacility(undefined);
+    setFacilityEditorOpen(true);
+  };
+
+  const openFacility = (facility: Facility) => {
+    setFacilityEditorOpen(false);
+    setSelectedFacility(facility);
+  };
+
+  if (facilityEditorOpen && customFacilityStore) {
+    return (
+      <AddFacilityPanel
+        store={customFacilityStore}
+        initialFacility={editingFacility}
+        onBack={() => {
+          setFacilityEditorOpen(false);
+          setEditingFacility(undefined);
+        }}
+        onCreated={(facility) => {
+          setFacilityEditorOpen(false);
+          setEditingFacility(undefined);
+          setSelectedFacility(facility);
+        }}
+      />
+    );
+  }
+
   if (selectedFacility && visitStore) {
+    const selectedVisits = visits?.filter((visit) => visit.facilityId === selectedFacility.id) ?? [];
     return (
       <VisitPanel
         facility={selectedFacility}
         store={visitStore}
+        visits={selectedVisits}
+        visitsLoading={visits === undefined}
+        visitError={visitError}
         photoStore={photoStore}
+        mark={marks?.[selectedFacility.id]}
+        markStore={markStore}
+        markLoadError={marksError}
+        customFacilityStore={customFacilityStore}
+        onEditFacility={selectedFacility.id.startsWith("custom_") && customFacilityStore
+          ? () => {
+            setEditingFacility(selectedFacility);
+            setSelectedFacility(undefined);
+            setFacilityEditorOpen(true);
+          }
+          : undefined}
         onBack={() => setSelectedFacility(undefined)}
       />
     );
@@ -163,12 +286,29 @@ export default function App({
               ))}
             </div>
           </div>
+          <div className="filter-group">
+            <span className="filter-group-label">訪問状況</span>
+            <div className="filters" role="group" aria-label="訪問状況">
+              {visitStatusFilters.map((item) => (
+                <button
+                  key={item.value}
+                  type="button"
+                  className={visitStatus === item.value ? "active" : ""}
+                  aria-pressed={visitStatus === item.value}
+                  disabled={item.value !== "all" && statusFiltersLoading}
+                  onClick={() => setVisitStatus(item.value)}
+                >
+                  {item.label}
+                </button>
+              ))}
+            </div>
+          </div>
           <button className="filter-reset" type="button" onClick={resetFilters} disabled={activeFilterCount === 0}>条件をリセット</button>
         </div>
       </section>
       <section className="results">
         <div className="results-heading">
-          <h2>{query || type !== "all" || prefecture !== "all" || status !== "all" ? `${shown.length}施設が該当` : `${facilities.length}施設を掲載`}</h2>
+          <h2>{hasListFilter ? `${shown.length}施設が該当` : `${allFacilities.length}施設を掲載`}</h2>
           <p>パイロット版</p>
         </div>
         {shown.length === 0 ? (
@@ -176,33 +316,42 @@ export default function App({
             <span>◌</span>
             <h3>施設が見つかりませんでした</h3>
             <p>検索条件を変えてみてください。</p>
+            {customFacilityStore && (
+              <button className="empty-action" type="button" onClick={openAddFacility}>この施設を手動で追加</button>
+            )}
           </div>
         ) : (
-          <ul className="facility-list">
-            {shown.map((facility, index) => (
-              <li key={facility.id}>
-                <a
-                  className="facility-card"
-                  href={"#facility/" + facility.id}
-                  onClick={(event) => {
-                    event.preventDefault();
-                    setSelectedFacility(facility);
-                  }}
-                >
-                  <div className="card-index">{String(index + 1).padStart(2, "0")}</div>
-                  <div className="card-body">
-                    <div className="badges">
-                      <span>{typeLabels[facility.type]}</span>
-                      <span className={facility.status}>{statusLabels[facility.status]}</span>
+          <>
+            <ul className="facility-list">
+              {shown.map((facility, index) => (
+                <li key={facility.id}>
+                  <a
+                    className="facility-card"
+                    href={`#facility/${facility.id}`}
+                    onClick={(event) => {
+                      event.preventDefault();
+                      openFacility(facility);
+                    }}
+                  >
+                    <div className="card-index">{String(index + 1).padStart(2, "0")}</div>
+                    <div className="card-body">
+                      <div className="badges">
+                        <span>{typeLabels[facility.type]}</span>
+                        {facility.id.startsWith("custom_") && <span className="custom">手動追加</span>}
+                        <span className={facility.status}>{statusLabels[facility.status]}</span>
+                      </div>
+                      <h3>{facility.name}</h3>
+                      <p>{facility.pref} {facility.city}</p>
                     </div>
-                    <h3>{facility.name}</h3>
-                    <p>{facility.pref} {facility.city}</p>
-                  </div>
-                  <span className="card-arrow" aria-hidden="true">→</span>
-                </a>
-              </li>
-            ))}
-          </ul>
+                    <span className="card-arrow" aria-hidden="true">→</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+            {customFacilityStore && (
+              <button className="add-facility-link" type="button" onClick={openAddFacility}>掲載されていない施設を追加</button>
+            )}
+          </>
         )}
       </section>
       <footer><p>掲載情報の確認日：2026年7月13日</p></footer>

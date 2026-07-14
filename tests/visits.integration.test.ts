@@ -1,5 +1,5 @@
 import { readFileSync } from "node:fs";
-import { afterAll, beforeAll, describe, expect, test } from "vitest";
+import { afterAll, beforeAll, describe, expect, test, vi } from "vitest";
 import {
   initializeTestEnvironment,
   type RulesTestEnvironment,
@@ -75,5 +75,24 @@ describe("FirestoreVisitStore", () => {
 
     await store.remove("visit-client-id");
     expect((await getDoc(visitRef)).exists()).toBe(false);
+  });
+
+  test("全施設の訪問記録を一度に購読できる", async () => {
+    const db = testEnv.authenticatedContext(HOUSEHOLD_UID).firestore();
+    const store = new FirestoreVisitStore(db, HOUSEHOLD_UID);
+    const received: string[][] = [];
+    const unsubscribe = store.subscribeAll((visits) => {
+      received.push(visits.map((visit) => visit.facilityId));
+    }, () => undefined);
+
+    await store.create({
+      id: "visit-subscribe-all",
+      facilityId: "osaka-kaiyukan",
+      date: "2026-07-14",
+    });
+
+    await vi.waitFor(() => expect(received.at(-1)).toEqual(["osaka-kaiyukan"]));
+    unsubscribe();
+    await store.remove("visit-subscribe-all");
   });
 });

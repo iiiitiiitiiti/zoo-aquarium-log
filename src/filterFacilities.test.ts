@@ -12,4 +12,13 @@ describe("filterFacilities",()=>{
  it("filters by prefecture",()=>expect(filterFacilities(fixtures,"","all","東京都")).toEqual([fixtures[0]]));
  it("returns an empty list when nothing matches",()=>expect(filterFacilities(fixtures,"存在しない","all")).toEqual([]));
  it("filters by operating status",()=>expect(filterFacilities([...fixtures, suspendedFacility],"","all","all","suspended")).toEqual([suspendedFacility]));
+ it("filters by visit status and combines it with existing filters",()=>{
+  const marks={"tokyo_ueno_zoo":{wishlist:true,favorite:false}};
+  const visitedIds=new Set(["tokyo_ueno_zoo"]);
+  expect(filterFacilities(fixtures,"","all","all","all",{filter:"visited",visitedIds,marks})).toEqual([fixtures[0]]);
+  expect(filterFacilities(fixtures,"","all","all","all",{filter:"unvisited",visitedIds,marks})).toEqual([fixtures[1]]);
+  expect(filterFacilities(fixtures,"","zoo","東京都","all",{filter:"wishlist",visitedIds,marks})).toEqual([fixtures[0]]);
+  expect(filterFacilities(fixtures,"","all","大阪府","all",{filter:"favorite",visitedIds,marks})).toEqual([]);
+ });
+ it("keeps the old call signature",()=>expect(filterFacilities(fixtures,"","all")).toEqual(fixtures));
 });

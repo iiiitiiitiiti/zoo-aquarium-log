@@ -1,4 +1,6 @@
 import { type ChangeEvent, type FormEvent, useEffect, useRef, useState } from "react";
+import type { CustomFacilityStore } from "./customFacilities";
+import type { Mark, MarkFlag, MarkStore } from "./marks";
 import type { Facility } from "./types";
 import type { VisitPhotoStore } from "./visitPhotos";
 import type { Visit, VisitDraft, VisitStore } from "./visits";
@@ -35,18 +37,36 @@ function displayDate(value: string) {
 export default function VisitPanel({
   facility,
   store,
+  visits,
+  visitsLoading = false,
+  visitError = "",
   photoStore,
+  mark,
+  markStore,
+  markLoadError = "",
+  customFacilityStore,
+  onEditFacility,
   onBack,
 }: {
   facility: Facility;
   store: VisitStore;
+  visits: Visit[];
+  visitsLoading?: boolean;
+  visitError?: string;
   photoStore?: VisitPhotoStore;
+  mark?: Mark;
+  markStore?: MarkStore;
+  markLoadError?: string;
+  customFacilityStore?: CustomFacilityStore;
+  onEditFacility?: () => void;
   onBack: () => void;
 }) {
-  const [visits, setVisits] = useState<Visit[]>();
   const [photoUrls, setPhotoUrls] = useState<Record<string, string>>({});
   const [form, setForm] = useState<VisitFormState>();
   const [error, setError] = useState("");
+  const [markError, setMarkError] = useState("");
+  const [facilityError, setFacilityError] = useState("");
+  const [savingMark, setSavingMark] = useState<MarkFlag>();
   const [saving, setSaving] = useState(false);
   const submittingRef = useRef(false);
   const photoPreviewUrlRef = useRef<string | undefined>(undefined);
@@ -64,15 +84,6 @@ export default function VisitPanel({
     if (typeof URL.revokeObjectURL === "function") URL.revokeObjectURL(previewUrl);
     photoPreviewUrlRef.current = undefined;
   }, []);
-
-  useEffect(
-    () => store.subscribe(
-      facility.id,
-      setVisits,
-      () => setError("記録を読み込めませんでした。通信環境を確認してください"),
-    ),
-    [facility.id, store],
-  );
 
   useEffect(() => {
     let cancelled = false;
@@ -206,6 +217,31 @@ export default function VisitPanel({
     }
   }
 
+  async function toggleMark(flag: MarkFlag) {
+    if (!markStore || savingMark) return;
+    setMarkError("");
+    setSavingMark(flag);
+    try {
+      await markStore.setFlag(facility.id, flag, !(mark?.[flag] ?? false));
+    } catch {
+      setMarkError("お気に入り設定を保存できませんでした。もう一度お試しください");
+    } finally {
+      setSavingMark(undefined);
+    }
+  }
+
+  async function removeFacility() {
+    if (!customFacilityStore || !facility.id.startsWith("custom_")) return;
+    if (!window.confirm("この手動追加施設を削除しますか？訪問記録とお気に入り設定は残ります。")) return;
+    setFacilityError("");
+    try {
+      await customFacilityStore.remove(facility.id);
+      onBack();
+    } catch {
+      setFacilityError("施設を削除できませんでした。もう一度お試しください");
+    }
+  }
+
   const duplicateDate = form && visits?.some(
     (visit) => visit.id !== form.id && visit.date === form.date,
   );
@@ -217,6 +253,28 @@ export default function VisitPanel({
         <p className="eyebrow">VISIT FIELD NOTE</p>
         <h1>{facility.name}</h1>
         <p>{facility.pref} {facility.city}</p>
+        {markStore && (
+          <div className="mark-toggles" role="group" aria-label="施設のマーク">
+            <button
+              type="button"
+              aria-pressed={mark?.wishlist === true}
+              disabled={savingMark !== undefined}
+              onClick={() => toggleMark("wishlist")}
+            >♡ 行きたい</button>
+            <button
+              type="button"
+              aria-pressed={mark?.favorite === true}
+              disabled={savingMark !== undefined}
+              onClick={() => toggleMark("favorite")}
+            >★ お気に入り</button>
+          </div>
+        )}
+        {customFacilityStore && facility.id.startsWith("custom_") && (
+          <div className="facility-actions">
+            {onEditFacility && <button type="button" onClick={onEditFacility}>編集</button>}
+            <button type="button" onClick={removeFacility}>この施設を削除</button>
+          </div>
+        )}
         <a href={facility.url} target="_blank" rel="noreferrer">公式サイトを見る ↗</a>
       </header>
 
@@ -229,7 +287,11 @@ export default function VisitPanel({
           {!form && <button type="button" onClick={openNewVisit}>訪問記録を追加</button>}
         </div>
 
+        {visitError && !error && <p className="visit-error" role="alert">{visitError}</p>}
         {error && <p className="visit-error" role="alert">{error}</p>}
+        {markLoadError && !markError && <p className="mark-load-error" role="alert">{markLoadError}</p>}
+        {markError && <p className="mark-load-error" role="alert">{markError}</p>}
+        {facilityError && <p className="visit-error" role="alert">{facilityError}</p>}
 
         {form && (
           <form className="visit-form" onSubmit={saveVisit} noValidate>
@@ -329,7 +391,7 @@ export default function VisitPanel({
           </form>
         )}
 
-        {visits === undefined ? (
+        {visitsLoading ? (
           <p className="visit-status">記録を読み込んでいます</p>
         ) : visits.length === 0 ? (
           <div className="visit-empty">

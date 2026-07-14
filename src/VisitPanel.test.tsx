@@ -3,6 +3,7 @@ import userEvent from "@testing-library/user-event";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import type { Facility } from "./types";
 import type { Visit, VisitDraft, VisitStore } from "./visits";
+import type { CustomFacilityStore } from "./customFacilities";
 import VisitPanel from "./VisitPanel";
 
 afterEach(() => vi.unstubAllGlobals());
@@ -26,7 +27,6 @@ class FakeVisitStore implements VisitStore {
   createCalls: VisitDraft[] = [];
   updateCalls: { id: string; draft: Omit<VisitDraft, "id"> }[] = [];
   removeCalls: string[] = [];
-  private onVisits: ((visits: Visit[]) => void) | undefined;
   createPromise: Promise<void> | undefined;
 
   newId() {
@@ -42,14 +42,8 @@ class FakeVisitStore implements VisitStore {
   async remove(id: string) {
     this.removeCalls.push(id);
   }
-  subscribe(_facilityId: string, onVisits: (visits: Visit[]) => void) {
-    this.onVisits = onVisits;
-    return () => {
-      this.onVisits = undefined;
-    };
-  }
-  emit(visits: Visit[]) {
-    this.onVisits?.(visits);
+  subscribeAll() {
+    return () => undefined;
   }
 }
 
@@ -64,12 +58,13 @@ const existingVisit = {
   updatedAt: {} as Visit["updatedAt"],
 };
 
+const customFacility = { ...facility, id: "custom_facility" };
+
 describe("VisitPanel", () => {
   it("訪問日・評価・メモを新規保存できる", async () => {
     const user = userEvent.setup();
     const store = new FakeVisitStore();
-    render(<VisitPanel facility={facility} store={store} onBack={() => undefined} />);
-    store.emit([]);
+    render(<VisitPanel facility={facility} store={store} visits={[]} onBack={() => undefined} />);
 
     await user.click(await screen.findByRole("button", { name: "訪問記録を追加" }));
     const date = screen.getByLabelText("訪問日");
@@ -93,8 +88,7 @@ describe("VisitPanel", () => {
   it("訪問日が空なら保存しない", async () => {
     const user = userEvent.setup();
     const store = new FakeVisitStore();
-    render(<VisitPanel facility={facility} store={store} onBack={() => undefined} />);
-    store.emit([]);
+    render(<VisitPanel facility={facility} store={store} visits={[]} onBack={() => undefined} />);
 
     await user.click(await screen.findByRole("button", { name: "訪問記録を追加" }));
     await user.clear(screen.getByLabelText("訪問日"));
@@ -111,8 +105,7 @@ describe("VisitPanel", () => {
     store.createPromise = new Promise<void>((resolve) => {
       finishCreate = resolve;
     });
-    render(<VisitPanel facility={facility} store={store} onBack={() => undefined} />);
-    store.emit([]);
+    render(<VisitPanel facility={facility} store={store} visits={[]} onBack={() => undefined} />);
 
     await user.click(await screen.findByRole("button", { name: "訪問記録を追加" }));
     const form = screen.getByRole("button", { name: "記録を保存" }).closest("form");
@@ -128,8 +121,7 @@ describe("VisitPanel", () => {
   it("既存の訪問記録を編集できる", async () => {
     const user = userEvent.setup();
     const store = new FakeVisitStore();
-    render(<VisitPanel facility={facility} store={store} onBack={() => undefined} />);
-    store.emit([existingVisit]);
+    render(<VisitPanel facility={facility} store={store} visits={[existingVisit]} onBack={() => undefined} />);
 
     await user.click(await screen.findByRole("button", { name: "2026年7月1日の記録を編集" }));
     const memo = screen.getByLabelText("メモ・感想");
@@ -147,8 +139,7 @@ describe("VisitPanel", () => {
     const user = userEvent.setup();
     const store = new FakeVisitStore();
     vi.spyOn(window, "confirm").mockReturnValue(true);
-    render(<VisitPanel facility={facility} store={store} onBack={() => undefined} />);
-    store.emit([existingVisit]);
+    render(<VisitPanel facility={facility} store={store} visits={[existingVisit]} onBack={() => undefined} />);
 
     await user.click(await screen.findByRole("button", { name: "2026年7月1日の記録を削除" }));
 
@@ -164,8 +155,7 @@ describe("VisitPanel", () => {
       getUrl: vi.fn(async (path: string) => `https://storage.example/${path}`),
       remove: vi.fn(async (_path: string) => undefined),
     };
-    render(<VisitPanel {...({ facility, store, onBack: () => undefined, photoStore } as any)} />);
-    store.emit([]);
+    const { rerender } = render(<VisitPanel {...({ facility, store, visits: [], onBack: () => undefined, photoStore } as any)} />);
 
     await user.click(await screen.findByRole("button", { name: "訪問記録を追加" }));
     const file = new File(["photo"], "visit.jpg", { type: "image/jpeg" });
@@ -178,10 +168,10 @@ describe("VisitPanel", () => {
       photoPath: "households/test/visits/new-visit-id/photo.webp",
     });
 
-    store.emit([{
+    rerender(<VisitPanel {...({ facility, store, visits: [{
       ...existingVisit,
       photoPath: "households/test/visits/visit-1/photo.webp",
-    }]);
+    }], onBack: () => undefined, photoStore } as any)} />);
     expect(await screen.findByRole("img", { name: "2026年7月1日の訪問写真" }))
       .toHaveAttribute("src", "https://storage.example/households/test/visits/visit-1/photo.webp");
   });
@@ -198,8 +188,7 @@ describe("VisitPanel", () => {
       })),
       remove: vi.fn(async () => undefined),
     };
-    render(<VisitPanel {...({ facility, store, onBack: () => undefined, photoStore } as any)} />);
-    store.emit([{
+    render(<VisitPanel {...({ facility, store, visits: [{
       ...existingVisit,
       photoPath: "households/test/visits/visit-1/photo.webp",
     }, {
@@ -207,7 +196,7 @@ describe("VisitPanel", () => {
       id: "visit-2",
       date: "2026-07-02",
       photoPath: "households/test/visits/visit-2/photo.webp",
-    }]);
+    }], onBack: () => undefined, photoStore } as any)} />);
 
     await waitFor(() => expect(photoStore.getUrl).toHaveBeenCalledTimes(2));
     resolveFirst("https://storage.example/first.webp");
@@ -227,8 +216,7 @@ describe("VisitPanel", () => {
       getUrl: vi.fn(async (_path: string) => "https://storage.example/photo.webp"),
       remove: vi.fn(async (_path: string) => undefined),
     };
-    render(<VisitPanel {...({ facility, store, onBack: () => undefined, photoStore } as any)} />);
-    store.emit([{ ...existingVisit, photoPath }]);
+    render(<VisitPanel {...({ facility, store, visits: [{ ...existingVisit, photoPath }], onBack: () => undefined, photoStore } as any)} />);
 
     await user.click(await screen.findByRole("button", { name: "2026年7月1日の記録を編集" }));
     await user.click(screen.getByRole("button", { name: "写真を外す" }));
@@ -236,5 +224,39 @@ describe("VisitPanel", () => {
 
     expect(store.updateCalls[0].draft).toHaveProperty("photoPath", undefined);
     expect(photoStore.remove).toHaveBeenCalledWith(photoPath);
+  });
+
+  it("行きたいとお気に入りを正しい引数で切り替えられる", async () => {
+    const user = userEvent.setup();
+    const store = new FakeVisitStore();
+    const markStore = { setFlag: vi.fn(async () => undefined), subscribe: () => () => undefined };
+    render(<VisitPanel facility={facility} store={store} visits={[]} markStore={markStore} onBack={() => undefined} />);
+
+    await user.click(screen.getByRole("button", { name: "♡ 行きたい" }));
+    await user.click(screen.getByRole("button", { name: "★ お気に入り" }));
+
+    expect(markStore.setFlag).toHaveBeenNthCalledWith(1, facility.id, "wishlist", true);
+    expect(markStore.setFlag).toHaveBeenNthCalledWith(2, facility.id, "favorite", true);
+  });
+
+  it("custom施設だけ編集・削除導線を表示する", async () => {
+    const user = userEvent.setup();
+    const store = new FakeVisitStore();
+    const customStore: CustomFacilityStore = {
+      create: vi.fn(),
+      update: vi.fn(),
+      remove: vi.fn(async () => undefined),
+      subscribe: () => () => undefined,
+    };
+    const onEditFacility = vi.fn();
+    const onBack = vi.fn();
+    vi.spyOn(window, "confirm").mockReturnValue(true);
+    render(<VisitPanel facility={customFacility} store={store} visits={[]} customFacilityStore={customStore} onEditFacility={onEditFacility} onBack={onBack} />);
+
+    await user.click(screen.getByRole("button", { name: "編集" }));
+    expect(onEditFacility).toHaveBeenCalledOnce();
+    await user.click(screen.getByRole("button", { name: "この施設を削除" }));
+    expect(customStore.remove).toHaveBeenCalledWith(customFacility.id);
+    expect(onBack).toHaveBeenCalledOnce();
   });
 });
