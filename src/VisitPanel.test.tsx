@@ -1,9 +1,11 @@
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import type { Facility } from "./types";
 import type { Visit, VisitDraft, VisitStore } from "./visits";
 import VisitPanel from "./VisitPanel";
+
+afterEach(() => vi.unstubAllGlobals());
 
 const facility: Facility = {
   id: "tokyo-ueno-zoo",
@@ -156,6 +158,7 @@ describe("VisitPanel", () => {
   it("訪問写真を追加して保存し、記録一覧に表示できる", async () => {
     const user = userEvent.setup();
     const store = new FakeVisitStore();
+    vi.stubGlobal("URL", { ...globalThis.URL, createObjectURL: vi.fn(() => "blob:visit-preview"), revokeObjectURL: vi.fn() });
     const photoStore = {
       upload: vi.fn(async (visitId: string, _file: File) => `households/test/visits/${visitId}/photo.webp`),
       getUrl: vi.fn(async (path: string) => `https://storage.example/${path}`),
@@ -167,6 +170,7 @@ describe("VisitPanel", () => {
     await user.click(await screen.findByRole("button", { name: "訪問記録を追加" }));
     const file = new File(["photo"], "visit.jpg", { type: "image/jpeg" });
     await user.upload(screen.getByLabelText("訪問写真"), file);
+    expect(await screen.findByRole("img", { name: "選択した訪問写真" })).toHaveAttribute("src", "blob:visit-preview");
     await user.click(screen.getByRole("button", { name: "記録を保存" }));
 
     expect(photoStore.upload).toHaveBeenCalledWith("new-visit-id", file);
@@ -180,6 +184,38 @@ describe("VisitPanel", () => {
     }]);
     expect(await screen.findByRole("img", { name: "2026年7月1日の訪問写真" }))
       .toHaveAttribute("src", "https://storage.example/households/test/visits/visit-1/photo.webp");
+  });
+
+  it("訪問写真をURLごとに表示する", async () => {
+    const store = new FakeVisitStore();
+    let resolveFirst!: (url: string) => void;
+    let resolveSecond!: (url: string) => void;
+    const photoStore = {
+      upload: vi.fn(async () => ""),
+      getUrl: vi.fn((path: string) => new Promise<string>((resolve) => {
+        if (path.endsWith("visit-1/photo.webp")) resolveFirst = resolve;
+        else resolveSecond = resolve;
+      })),
+      remove: vi.fn(async () => undefined),
+    };
+    render(<VisitPanel {...({ facility, store, onBack: () => undefined, photoStore } as any)} />);
+    store.emit([{
+      ...existingVisit,
+      photoPath: "households/test/visits/visit-1/photo.webp",
+    }, {
+      ...existingVisit,
+      id: "visit-2",
+      date: "2026-07-02",
+      photoPath: "households/test/visits/visit-2/photo.webp",
+    }]);
+
+    await waitFor(() => expect(photoStore.getUrl).toHaveBeenCalledTimes(2));
+    resolveFirst("https://storage.example/first.webp");
+    expect(await screen.findByRole("img", { name: "2026年7月1日の訪問写真" }))
+      .toHaveAttribute("src", "https://storage.example/first.webp");
+    resolveSecond("https://storage.example/second.webp");
+    expect(await screen.findByRole("img", { name: "2026年7月2日の訪問写真" }))
+      .toHaveAttribute("src", "https://storage.example/second.webp");
   });
 
   it("訪問写真を外して保存できる", async () => {

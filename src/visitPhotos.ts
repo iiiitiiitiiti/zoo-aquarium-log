@@ -6,7 +6,7 @@ import {
   type FirebaseStorage,
 } from "firebase/storage";
 
-const MAX_DIMENSION = 1600;
+const MAX_DIMENSION = 1200;
 const WEBP_QUALITY = 0.8;
 
 export interface VisitPhotoStore {
