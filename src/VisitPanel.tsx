@@ -15,6 +15,7 @@ interface VisitFormState {
   photoPath?: string;
   originalPhotoPath?: string;
   photoFile?: File;
+  photoPreviewUrl?: string;
   removePhoto: boolean;
 }
 
@@ -48,6 +49,21 @@ export default function VisitPanel({
   const [error, setError] = useState("");
   const [saving, setSaving] = useState(false);
   const submittingRef = useRef(false);
+  const photoPreviewUrlRef = useRef<string | undefined>(undefined);
+
+  function revokePhotoPreview() {
+    const previewUrl = photoPreviewUrlRef.current;
+    if (!previewUrl) return;
+    if (typeof URL.revokeObjectURL === "function") URL.revokeObjectURL(previewUrl);
+    photoPreviewUrlRef.current = undefined;
+  }
+
+  useEffect(() => () => {
+    const previewUrl = photoPreviewUrlRef.current;
+    if (!previewUrl) return;
+    if (typeof URL.revokeObjectURL === "function") URL.revokeObjectURL(previewUrl);
+    photoPreviewUrlRef.current = undefined;
+  }, []);
 
   useEffect(
     () => store.subscribe(
@@ -64,19 +80,19 @@ export default function VisitPanel({
       setPhotoUrls({});
       return () => { cancelled = true; };
     }
-    Promise.all(
-      visits
-        .filter((visit) => visit.photoPath)
-        .map(async (visit) => [visit.id, await photoStore.getUrl(visit.photoPath!)] as const),
-    ).then((entries) => {
-      if (!cancelled) setPhotoUrls(Object.fromEntries(entries));
-    }).catch(() => {
-      if (!cancelled) setPhotoUrls({});
+    setPhotoUrls({});
+    visits.filter((visit) => visit.photoPath).forEach((visit) => {
+      photoStore.getUrl(visit.photoPath!).then((url) => {
+        if (!cancelled) {
+          setPhotoUrls((current) => ({ ...current, [visit.id]: url }));
+        }
+      }).catch(() => undefined);
     });
     return () => { cancelled = true; };
   }, [photoStore, visits]);
 
   function openNewVisit() {
+    revokePhotoPreview();
     setError("");
     setForm({
       id: store.newId(),
@@ -90,6 +106,7 @@ export default function VisitPanel({
   }
 
   function openEditVisit(visit: Visit) {
+    revokePhotoPreview();
     setError("");
     setForm({
       id: visit.id,
@@ -113,8 +130,13 @@ export default function VisitPanel({
       return;
     }
     if (!form) return;
+    revokePhotoPreview();
+    const previewUrl = typeof URL.createObjectURL === "function"
+      ? URL.createObjectURL(file)
+      : undefined;
+    photoPreviewUrlRef.current = previewUrl;
     setError("");
-    setForm({ ...form, photoFile: file, removePhoto: false });
+    setForm({ ...form, photoFile: file, photoPreviewUrl: previewUrl, removePhoto: false });
   }
 
   async function saveVisit(event: FormEvent<HTMLFormElement>) {
@@ -158,6 +180,7 @@ export default function VisitPanel({
       if (photoStore && previousPhotoPath && previousPhotoPath !== photoPath) {
         await photoStore.remove(previousPhotoPath).catch(() => undefined);
       }
+      revokePhotoPreview();
       setForm(undefined);
     } catch {
       if (photoStore && uploadedPhotoPath) {
@@ -263,24 +286,42 @@ export default function VisitPanel({
                   accept="image/*"
                   onChange={handlePhotoChange}
                 />
+                {form.photoPreviewUrl && !form.removePhoto && (
+                  <img
+                    className="visit-photo visit-photo-preview"
+                    src={form.photoPreviewUrl}
+                    alt="選択した訪問写真"
+                  />
+                )}
                 {(form.photoPath || form.photoFile) && !form.removePhoto && (
                   <div className="visit-photo-status">
                     <span>{form.photoFile ? "選択中：" + form.photoFile.name : "写真を登録済み"}</span>
                     <button
                       type="button"
-                      onClick={() => setForm({
-                        ...form,
-                        photoFile: undefined,
-                        photoPath: undefined,
-                        removePhoto: true,
-                      })}
+                      onClick={() => {
+                        revokePhotoPreview();
+                        setForm({
+                          ...form,
+                          photoFile: undefined,
+                          photoPath: undefined,
+                          photoPreviewUrl: undefined,
+                          removePhoto: true,
+                        });
+                      }}
                     >写真を外す</button>
                   </div>
                 )}
               </div>
             )}
             <div className="form-actions">
-              <button type="button" className="secondary" onClick={() => setForm(undefined)}>キャンセル</button>
+              <button
+                type="button"
+                className="secondary"
+                onClick={() => {
+                  revokePhotoPreview();
+                  setForm(undefined);
+                }}
+              >キャンセル</button>
               <button type="submit" disabled={saving}>
                 {saving ? "保存しています…" : form.editing ? "変更を保存" : "記録を保存"}
               </button>
@@ -312,6 +353,7 @@ export default function VisitPanel({
                     src={photoUrls[visit.id]}
                     alt={displayDate(visit.date) + "の訪問写真"}
                     loading="lazy"
+                    decoding="async"
                   />
                 )}
                 <div className="visit-actions">
