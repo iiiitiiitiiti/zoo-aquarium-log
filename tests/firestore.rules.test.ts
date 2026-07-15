@@ -9,6 +9,7 @@ import {
 import {
   collection,
   collectionGroup,
+  deleteDoc,
   doc,
   getDoc,
   getDocs,
@@ -158,6 +159,39 @@ describe("Firestore household rules", () => {
     await assertFails(setDoc(
       doc(db, "households", HOUSEHOLD_UID, "customFacilities", "custom_bad_source"),
       { ...customFacility, id: "custom_bad_source", sourceUrls: [123] },
+    ));
+  });
+
+  test("施設メモはserverTimestampと2000文字境界を検証し、削除を許可する", async () => {
+    const db = testEnv.authenticatedContext(HOUSEHOLD_UID).firestore();
+    const notes = collection(db, "households", HOUSEHOLD_UID, "facilityNotes");
+    const noteRef = doc(notes, "tokyo-ueno-zoo");
+
+    await assertSucceeds(setDoc(noteRef, { text: "家族メモ", updatedAt: serverTimestamp() }));
+    await assertSucceeds(deleteDoc(noteRef));
+    await assertFails(setDoc(doc(notes, "empty"), { text: "", updatedAt: serverTimestamp() }));
+    await assertSucceeds(setDoc(doc(notes, "space"), { text: " ", updatedAt: serverTimestamp() }));
+    await assertSucceeds(setDoc(doc(notes, "ascii-2000"), { text: "a".repeat(2000), updatedAt: serverTimestamp() }));
+    await assertFails(setDoc(doc(notes, "ascii-2001"), { text: "a".repeat(2001), updatedAt: serverTimestamp() }));
+    await assertSucceeds(setDoc(doc(notes, "emoji-1000"), { text: "🐼".repeat(1000), updatedAt: serverTimestamp() }));
+    await assertFails(setDoc(doc(notes, "emoji-1001"), { text: "🐼".repeat(1001), updatedAt: serverTimestamp() }));
+  });
+
+  test("施設メモの不正フィールド・時刻改ざん・別UIDを拒否する", async () => {
+    const db = testEnv.authenticatedContext(HOUSEHOLD_UID).firestore();
+    const noteRef = doc(db, "households", HOUSEHOLD_UID, "facilityNotes", "tokyo-ueno-zoo");
+
+    await assertFails(setDoc(noteRef, {
+      text: "家族メモ",
+      updatedAt: serverTimestamp(),
+      owner: "attacker",
+    }));
+    await assertFails(setDoc(noteRef, { text: "家族メモ", updatedAt: new Date() }));
+
+    const otherDb = testEnv.authenticatedContext(OTHER_UID).firestore();
+    await assertFails(setDoc(
+      doc(otherDb, "households", HOUSEHOLD_UID, "facilityNotes", "tokyo-ueno-zoo"),
+      { text: "家族メモ", updatedAt: serverTimestamp() },
     ));
   });
 
