@@ -468,7 +468,7 @@ footer {
   }
 }
 @media (prefers-reduced-motion: no-preference) {
-  .facility-card {
+  .facility-list--animated .facility-card {
     animation: rise 0.35s ease both;
   }
   @keyframes rise {

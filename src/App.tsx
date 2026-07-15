@@ -111,6 +111,7 @@ export default function App({
   const [customFacilities, setCustomFacilities] = useState<Facility[]>();
   const [customFacilitiesError, setCustomFacilitiesError] = useState("");
   const listScrollYRef = useRef(0);
+  const [animateListCards, setAnimateListCards] = useState(initialRoute.view === "list");
 
   useEffect(() => {
     swUpdate.setEditing(facilityEditorOpen || visitEditing);
@@ -287,6 +288,9 @@ export default function App({
   useEffect(() => {
     if (typeof window === "undefined" || typeof window.scrollTo !== "function") return;
     window.scrollTo({ top: currentView === "list" ? listScrollYRef.current : 0, left: 0, behavior: "instant" });
+  }, [currentView]);
+  useEffect(() => {
+    if (currentView !== "list") setAnimateListCards(false);
   }, [currentView]);
 
   const resetFilters = () => {
@@ -566,7 +570,7 @@ export default function App({
           </div>
         ) : (
           <>
-            <ul className="facility-list">
+            <ul className={`facility-list${animateListCards ? " facility-list--animated" : ""}`}>
               {shown.map((facility, index) => (
                 <li key={facility.id}>
                   <a
