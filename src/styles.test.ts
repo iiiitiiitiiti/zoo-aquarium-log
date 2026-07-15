@@ -100,4 +100,10 @@ describe("responsive styles", () => {
     expect(styles).toMatch(/\.quick-actions\{[^}]*border-radius:16px/);
   });
 
+  it("hovers the collapsed accordions like facility cards on pointer devices", () => {
+    expect(styles).toContain(".controls-summary,.quick-actions-summary{transition:background-color .2s ease}");
+    expect(styles).toContain("@media(hover:hover) and (pointer:fine){.controls:not(.is-open) .controls-summary:hover,.quick-actions:not(.is-open) .quick-actions-summary:hover{background:#eaf5ef}}");
+    expect(styles).toContain("@media(prefers-reduced-motion:reduce){.controls-summary,.quick-actions-summary{transition:none}}");
+  });
+
 });
