@@ -37,9 +37,11 @@ describe("StatsPanel", () => {
     expect(screen.getByText("横にスクロールできます")).toBeInTheDocument();
   });
 
-  it("provides full-width anchor links with downward arrows", () => {
+  it("provides three-column anchor links with supplied arrow assets", () => {
     render(<StatsPanel stats={stats} onBack={() => undefined} />);
 
+    const nav = screen.getByRole("navigation", { name: "統計の項目" });
+    expect(nav).toHaveClass("stats-anchor-nav--three-columns");
     for (const [name, href] of [
       ["種別別", "#stats-type"],
       ["都道府県別", "#stats-pref"],
@@ -49,7 +51,9 @@ describe("StatsPanel", () => {
       expect(link).toHaveAttribute("href", href);
       expect(link).toHaveClass("stats-anchor-link");
     }
-    expect(screen.getAllByText("∨", { selector: ".stats-anchor-arrow" })).toHaveLength(3);
+    const arrows = [...nav.querySelectorAll(".stats-anchor-arrow")];
+    expect(arrows).toHaveLength(3);
+    expect(arrows.every((arrow) => arrow.textContent === "")).toBe(true);
   });
   it("shows an empty state when there are no visits", () => {
     render(<StatsPanel stats={{ ...stats, monthly: [] }} onBack={() => undefined} />);

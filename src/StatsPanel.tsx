@@ -45,18 +45,18 @@ export default function StatsPanel({ stats, onBack }: { stats: StatsModel; onBac
         <p className="stats-note">※閉園済みの館は母数から除外しています。</p>
       </header>
 
-      <nav className="stats-anchor-nav" aria-label="統計の項目">
+      <nav className="stats-anchor-nav stats-anchor-nav--three-columns" aria-label="統計の項目">
         <a className="stats-anchor-link" href="#stats-type">
           <span>種別別</span>
-          <span className="stats-anchor-arrow" aria-hidden="true">∨</span>
+          <span className="stats-anchor-arrow" aria-hidden="true" />
         </a>
         <a className="stats-anchor-link" href="#stats-pref">
           <span>都道府県別</span>
-          <span className="stats-anchor-arrow" aria-hidden="true">∨</span>
+          <span className="stats-anchor-arrow" aria-hidden="true" />
         </a>
         <a className="stats-anchor-link" href="#stats-monthly">
           <span>訪問数の推移</span>
-          <span className="stats-anchor-arrow" aria-hidden="true">∨</span>
+          <span className="stats-anchor-arrow" aria-hidden="true" />
         </a>
       </nav>
 
