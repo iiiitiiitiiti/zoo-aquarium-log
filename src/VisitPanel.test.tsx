@@ -71,6 +71,19 @@ describe("VisitPanel", () => {
     expect(onShowOnMap).toHaveBeenCalledOnce();
   });
 
+  it("施設の補足（note）があれば表示する", () => {
+    const noted = { ...facility, note: "冬季（12〜3月）は定例休園。2026-07-15時点。" };
+    render(<VisitPanel facility={noted} store={new FakeVisitStore()} visits={[]} onBack={() => undefined} />);
+
+    expect(screen.getByText("冬季（12〜3月）は定例休園。2026-07-15時点。")).toBeInTheDocument();
+  });
+
+  it("施設の補足（note）がなければ表示しない", () => {
+    const { container } = render(<VisitPanel facility={facility} store={new FakeVisitStore()} visits={[]} onBack={() => undefined} />);
+
+    expect(container.querySelector(".facility-note")).toBeNull();
+  });
+
   it("訪問日・評価・メモを新規保存できる", async () => {
     const user = userEvent.setup();
     const store = new FakeVisitStore();

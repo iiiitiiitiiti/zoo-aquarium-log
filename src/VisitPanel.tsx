@@ -257,6 +257,7 @@ export default function VisitPanel({
         <p className="eyebrow">VISIT FIELD NOTE</p>
         <h1>{facility.name}</h1>
         <p>{facility.pref} {facility.city}</p>
+        {facility.note && <p className="facility-note">{facility.note}</p>}
         {markStore && (
           <div className="mark-toggles" role="group" aria-label="施設のマーク">
             <button
