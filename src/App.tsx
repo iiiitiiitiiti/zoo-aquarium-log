@@ -8,6 +8,7 @@ import StatsPanel from "./StatsPanel";
 import { buildStats } from "./stats";
 import type { CustomFacilityStore } from "./customFacilities";
 import type { MarkMap, MarkStore } from "./marks";
+import { buildRouteHash, parseRouteHash, routesEqual, type Route } from "./route";
 import type { Facility, FacilityType } from "./types";
 import type { VisitPhotoStore } from "./visitPhotos";
 import type { Visit, VisitStore } from "./visits";
@@ -64,6 +65,9 @@ export default function App({
   signingOut?: boolean;
   signOutError?: string;
 }) {
+  // リロード時に URL ハッシュから表示中の画面を復元する（カスタム施設は
+  // 読み込み完了までpendingRouteとして保留し、後続のeffectで解決する）
+  const [initialRoute] = useState<Route>(() => parseRouteHash(typeof window === "undefined" ? "" : window.location.hash));
   const [query, setQuery] = useState("");
   const [type, setType] = useState<FacilityType | "all">("all");
   const [prefecture, setPrefecture] = useState("all");
@@ -71,14 +75,28 @@ export default function App({
   const [visitStatus, setVisitStatus] = useState<VisitStatusFilter>("all");
   const [searchOpen, setSearchOpen] = useState(false);
   const [quickActionsOpen, setQuickActionsOpen] = useState(false);
-  const [mapOpen, setMapOpen] = useState(false);
-  const [statsOpen, setStatsOpen] = useState(false);
-  const [mapDisplayMode, setMapDisplayMode] = useState<MapDisplayMode>("all");
+  const [mapOpen, setMapOpen] = useState(initialRoute.view === "map");
+  const [statsOpen, setStatsOpen] = useState(initialRoute.view === "stats");
+  const [mapDisplayMode, setMapDisplayMode] = useState<MapDisplayMode>(
+    initialRoute.view === "map" && initialRoute.focusFacilityId ? "facility" : "all",
+  );
   const [detailOrigin, setDetailOrigin] = useState<"list" | "map">("list");
-  const [mapFocusFacilityId, setMapFocusFacilityId] = useState<string>();
-  const [selectedFacility, setSelectedFacility] = useState<Facility>();
-  const [facilityEditorOpen, setFacilityEditorOpen] = useState(false);
+  const [mapFocusFacilityId, setMapFocusFacilityId] = useState<string | undefined>(
+    initialRoute.view === "map" ? initialRoute.focusFacilityId : undefined,
+  );
+  const [selectedFacility, setSelectedFacility] = useState<Facility | undefined>(() =>
+    initialRoute.view === "facility"
+      ? facilities.find((facility) => facility.id === initialRoute.facilityId)
+      : undefined);
+  const [facilityEditorOpen, setFacilityEditorOpen] = useState(initialRoute.view === "addFacility");
   const [editingFacility, setEditingFacility] = useState<Facility>();
+  const [pendingRoute, setPendingRoute] = useState<Route | undefined>(() => {
+    if (initialRoute.view === "facility" && !facilities.some((facility) => facility.id === initialRoute.facilityId)) {
+      return initialRoute;
+    }
+    if (initialRoute.view === "editFacility") return initialRoute;
+    return undefined;
+  });
   const [visits, setVisits] = useState<Visit[]>();
   const [visitError, setVisitError] = useState("");
   const [marks, setMarks] = useState<MarkMap>();
@@ -126,6 +144,23 @@ export default function App({
   }, [customFacilityStore]);
 
   const allFacilities = useMemo(() => [...facilities, ...(customFacilities ?? [])], [customFacilities]);
+
+  useEffect(() => {
+    if (!pendingRoute) return;
+    // カスタム施設の読み込みが終わる（またはエラーで確定する）まで保留する
+    if (customFacilityStore && customFacilities === undefined && !customFacilitiesError) return;
+    const facilityId = pendingRoute.view === "facility" || pendingRoute.view === "editFacility"
+      ? pendingRoute.facilityId
+      : undefined;
+    const facility = facilityId ? allFacilities.find((item) => item.id === facilityId) : undefined;
+    if (facility && pendingRoute.view === "facility") {
+      setSelectedFacility(facility);
+    } else if (facility && pendingRoute.view === "editFacility" && facility.id.startsWith("custom_")) {
+      setEditingFacility(facility);
+      setFacilityEditorOpen(true);
+    }
+    setPendingRoute(undefined);
+  }, [pendingRoute, allFacilities, customFacilities, customFacilitiesError, customFacilityStore]);
   const prefectures = useMemo(
     () => [...new Set(allFacilities.map((facility) => facility.pref))],
     [allFacilities],
@@ -183,6 +218,27 @@ export default function App({
     || visitError
     || customFacilitiesError,
   );
+
+  // 表示中の画面を URL ハッシュへ反映する（レンダー分岐と同じ優先順で判定）。
+  // replaceState を使い履歴エントリは増やさない。統計画面内アンカー
+  // （#stats-type 等）は同一ルートなので書き換えない
+  const currentRoute: Route = mapOpen
+    ? { view: "map", focusFacilityId: mapDisplayMode === "facility" ? mapFocusFacilityId : undefined }
+    : statsOpen
+      ? { view: "stats" }
+      : facilityEditorOpen && customFacilityStore
+        ? editingFacility
+          ? { view: "editFacility", facilityId: editingFacility.id }
+          : { view: "addFacility" }
+        : selectedFacility && visitStore
+          ? { view: "facility", facilityId: selectedFacility.id }
+          : { view: "list" };
+  const desiredHash = buildRouteHash(pendingRoute ?? currentRoute);
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    if (routesEqual(parseRouteHash(window.location.hash), parseRouteHash(desiredHash))) return;
+    window.history.replaceState(window.history.state, "", `${window.location.pathname}${window.location.search}${desiredHash}`);
+  }, [desiredHash]);
 
   const resetFilters = () => {
     setQuery("");
