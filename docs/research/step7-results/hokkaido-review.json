@@ -1,0 +1,23 @@
+{
+ "phase": "R",
+ "block": "北海道",
+ "reviewedAt": "2026-07-15",
+ "method": "100%再確認2件（closed判定・一次情報未達）＋層化サンプリング4件（班1/2/4/5×zoo/aquarium/other×道南/道北/道東）",
+ "result": "6/6 match・major不一致0件（基準10%未満）→ 全件再確認は不要、全25件をマージ承認",
+ "teams": [
+  {
+   "team": "R1",
+   "summary": "100%再確認2件・全件match。ノースサファリ: 2026-07-15時点も公式サイトが『閉園しました』表示で closed 確定。エミューらんど: 公式サイトは依然メンテ中、東京農大エミュー研究会付属牧場（二次情報）と判明、sourceUrls に nodai.ac.jp を追加推奨。",
+   "majorDiscrepancies": 0
+  },
+  {
+   "team": "R2",
+   "summary": "層化サンプル4件（函館公園動物施設・幌延町トナカイ観光牧場・標津サーモン科学館・丸瀬布昆虫生態館）・全件match。幌延の url (tonakai-farm.com) はSSL証明書エラー継続のため幌延町公式ページへの差し替えを推奨。",
+   "majorDiscrepancies": 0
+  }
+ ],
+ "appliedFixes": [
+  "hokkaido_horonobe_reindeer_farm: url を http://www.tonakai-farm.com/ から幌延町公式ページへ差し替え（SSL証明書エラー継続のため）",
+  "hokkaido_okhotsk_emu_land: sourceUrls を [東京農大公式, zfc.jp] へ更新（準一次情報の追加）"
+ ]
+}
