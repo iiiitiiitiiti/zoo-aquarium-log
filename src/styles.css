@@ -1141,3 +1141,44 @@ footer {
     transition: none;
   }
 }
+
+/* ===== 施設メモ（家族共有の施設ごとの覚え書き） ===== */
+.facility-user-note-section {
+  padding: 0 16px 44px;
+}
+.facility-user-note-section .visit-heading {
+  margin-top: 0;
+}
+.facility-user-note-status {
+  margin: 14px 4px;
+  color: #66756d;
+  font-size: 12px;
+}
+.facility-user-note-card {
+  padding: 18px;
+  border: 1px solid #d7ddd5;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 3px 0 #dce5dc;
+}
+.facility-user-note-text {
+  margin: 0;
+  color: #315046;
+  font-size: 13px;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.facility-user-note-card small {
+  display: block;
+  margin-top: 12px;
+  color: #66756d;
+  font-size: 11px;
+}
+.facility-user-note-section .visit-form {
+  margin-bottom: 0;
+}
+.facility-user-note-section .visit-heading > button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}

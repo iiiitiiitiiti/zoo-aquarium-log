@@ -1,5 +1,6 @@
 import { type ChangeEvent, type FormEvent, useEffect, useRef, useState } from "react";
 import type { CustomFacilityStore } from "./customFacilities";
+import { MAX_FACILITY_NOTE_LENGTH, type FacilityNote, type FacilityNoteStore } from "./facilityNotes";
 import type { Mark, MarkFlag, MarkStore } from "./marks";
 import type { Facility } from "./types";
 import type { VisitPhotoStore } from "./visitPhotos";
@@ -34,6 +35,12 @@ function displayDate(value: string) {
   return year + "年" + month + "月" + day + "日";
 }
 
+function displayNoteUpdatedAt(note: FacilityNote) {
+  if (!note.updatedAt) return "";
+  const date = note.updatedAt.toDate();
+  return `更新日：${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日`;
+}
+
 export default function VisitPanel({
   facility,
   store,
@@ -44,6 +51,10 @@ export default function VisitPanel({
   mark,
   markStore,
   markLoadError = "",
+  note,
+  noteStore,
+  notesLoading = false,
+  noteLoadError = "",
   customFacilityStore,
   onEditFacility,
   onEditingChange,
@@ -60,6 +71,10 @@ export default function VisitPanel({
   mark?: Mark;
   markStore?: MarkStore;
   markLoadError?: string;
+  note?: FacilityNote;
+  noteStore?: FacilityNoteStore;
+  notesLoading?: boolean;
+  noteLoadError?: string;
   customFacilityStore?: CustomFacilityStore;
   onEditFacility?: () => void;
   onEditingChange?: (editing: boolean) => void;
@@ -69,11 +84,14 @@ export default function VisitPanel({
 }) {
   const [photoUrls, setPhotoUrls] = useState<Record<string, string>>({});
   const [form, setForm] = useState<VisitFormState>();
+  const [noteForm, setNoteForm] = useState<string>();
   const [error, setError] = useState("");
   const [markError, setMarkError] = useState("");
   const [facilityError, setFacilityError] = useState("");
+  const [noteError, setNoteError] = useState("");
   const [savingMark, setSavingMark] = useState<MarkFlag>();
   const [saving, setSaving] = useState(false);
+  const [noteSaving, setNoteSaving] = useState(false);
   const submittingRef = useRef(false);
   const photoPreviewUrlRef = useRef<string | undefined>(undefined);
 
@@ -84,10 +102,12 @@ export default function VisitPanel({
     photoPreviewUrlRef.current = undefined;
   }
 
+  const editing = form !== undefined || noteForm !== undefined;
+
   useEffect(() => {
-    onEditingChange?.(form !== undefined);
+    onEditingChange?.(editing);
     return () => onEditingChange?.(false);
-  }, [form, onEditingChange]);
+  }, [editing, onEditingChange]);
 
   useEffect(() => () => {
     const previewUrl = photoPreviewUrlRef.current;
@@ -238,6 +258,32 @@ export default function VisitPanel({
       setMarkError("お気に入り設定を保存できませんでした。もう一度お試しください");
     } finally {
       setSavingMark(undefined);
+    }
+  }
+
+  function openNoteEditor() {
+    setNoteError("");
+    setNoteForm(note?.text ?? "");
+  }
+
+  async function saveNote(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (!noteStore || noteForm === undefined || noteSaving) return;
+    const text = noteForm.trim();
+    if (text.length > MAX_FACILITY_NOTE_LENGTH) {
+      setNoteError("施設メモは2000文字以内で入力してください");
+      return;
+    }
+
+    setNoteError("");
+    setNoteSaving(true);
+    try {
+      await noteStore.save(facility.id, text);
+      setNoteForm(undefined);
+    } catch {
+      setNoteError("施設メモを保存できませんでした。もう一度お試しください");
+    } finally {
+      setNoteSaving(false);
     }
   }
 
@@ -448,6 +494,53 @@ export default function VisitPanel({
           </ul>
         )}
       </section>
+
+      {noteStore && (
+        <section className="facility-user-note-section" aria-labelledby="facility-user-note-heading">
+          <div className="visit-heading">
+            <div>
+              <p>FACILITY NOTE</p>
+              <h2 id="facility-user-note-heading">施設メモ</h2>
+            </div>
+            {!noteForm && !notesLoading && !noteLoadError && (
+              <button type="button" onClick={openNoteEditor}>{note ? "編集" : "メモを追加"}</button>
+            )}
+            {!noteForm && noteLoadError && (
+              <button type="button" disabled>{note ? "編集" : "メモを追加"}</button>
+            )}
+          </div>
+
+          {notesLoading && <p className="facility-user-note-status">メモを読み込んでいます</p>}
+          {noteLoadError && <p className="visit-error" role="alert">メモを読み込めませんでした</p>}
+          {noteError && <p className="visit-error" role="alert">{noteError}</p>}
+
+          {noteForm !== undefined ? (
+            <form className="visit-form" onSubmit={saveNote} noValidate>
+              <label>
+                施設メモ
+                <textarea
+                  value={noteForm}
+                  maxLength={MAX_FACILITY_NOTE_LENGTH}
+                  onChange={(event) => setNoteForm(event.target.value)}
+                  placeholder="駐車場・持ち物・次回行きたい場所など"
+                />
+              </label>
+              <div className="form-actions">
+                <button type="button" className="secondary" onClick={() => {
+                  setNoteError("");
+                  setNoteForm(undefined);
+                }}>キャンセル</button>
+                <button type="submit" disabled={noteSaving}>{noteSaving ? "保存しています…" : "保存"}</button>
+              </div>
+            </form>
+          ) : note && (
+            <div className="facility-user-note-card">
+              <p className="facility-user-note-text">{note.text}</p>
+              {displayNoteUpdatedAt(note) && <small>{displayNoteUpdatedAt(note)}</small>}
+            </div>
+          )}
+        </section>
+      )}
     </main>
   );
 }

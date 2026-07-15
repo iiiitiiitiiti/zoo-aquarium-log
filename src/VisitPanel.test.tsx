@@ -4,6 +4,7 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import type { Facility } from "./types";
 import type { Visit, VisitDraft, VisitStore } from "./visits";
 import type { CustomFacilityStore } from "./customFacilities";
+import type { FacilityNoteStore } from "./facilityNotes";
 import VisitPanel from "./VisitPanel";
 
 afterEach(() => vi.unstubAllGlobals());
@@ -60,6 +61,16 @@ const existingVisit = {
 
 const customFacility = { ...facility, id: "custom_facility" };
 
+class FakeFacilityNoteStore implements FacilityNoteStore {
+  saveCalls: { facilityId: string; text: string }[] = [];
+  async save(facilityId: string, text: string) {
+    this.saveCalls.push({ facilityId, text });
+  }
+  subscribe() {
+    return () => undefined;
+  }
+}
+
 describe("VisitPanel", () => {
   it("施設詳細から地図表示を依頼できる", async () => {
     const user = userEvent.setup();
@@ -82,6 +93,56 @@ describe("VisitPanel", () => {
     const { container } = render(<VisitPanel facility={facility} store={new FakeVisitStore()} visits={[]} onBack={() => undefined} />);
 
     expect(container.querySelector(".facility-note")).toBeNull();
+  });
+
+  it("施設メモを表示・編集・保存でき、編集中状態を集約して通知する", async () => {
+    const user = userEvent.setup();
+    const store = new FakeFacilityNoteStore();
+    const onEditingChange = vi.fn();
+    render(<VisitPanel
+      facility={facility}
+      store={new FakeVisitStore()}
+      visits={[]}
+      note={{ text: "駐車場は東園側。", updatedAt: null }}
+      noteStore={store}
+      onEditingChange={onEditingChange}
+      onBack={() => undefined}
+    />);
+
+    expect(screen.getByText("駐車場は東園側。")).toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: "編集" }));
+    expect(onEditingChange).toHaveBeenLastCalledWith(true);
+    await user.clear(screen.getByRole("textbox", { name: "施設メモ" }));
+    await user.type(screen.getByRole("textbox", { name: "施設メモ" }), "次回はイルカショーへ\n持ち物：帽子");
+    await user.click(screen.getByRole("button", { name: "保存" }));
+
+    expect(store.saveCalls).toEqual([{ facilityId: facility.id, text: "次回はイルカショーへ\n持ち物：帽子" }]);
+    expect(onEditingChange).toHaveBeenLastCalledWith(false);
+  });
+
+  it("施設メモの読み込み中とエラー時は編集できない", () => {
+    const store = new FakeFacilityNoteStore();
+    const { rerender } = render(<VisitPanel
+      facility={facility}
+      store={new FakeVisitStore()}
+      visits={[]}
+      noteStore={store}
+      notesLoading
+      onBack={() => undefined}
+    />);
+    expect(screen.getByText("メモを読み込んでいます")).toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: "メモを追加" })).not.toBeInTheDocument();
+
+    rerender(<VisitPanel
+      facility={facility}
+      store={new FakeVisitStore()}
+      visits={[]}
+      noteStore={store}
+      noteLoadError="施設メモを読み込めませんでした。通信環境を確認してください"
+      onBack={() => undefined}
+    />);
+    expect(screen.getByRole("alert", { name: "" })).toHaveTextContent("メモを読み込めませんでした");
+    expect(screen.getByRole("button", { name: "メモを追加" })).toBeDisabled();
   });
 
   it("訪問日・評価・メモを新規保存できる", async () => {

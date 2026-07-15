@@ -4,6 +4,7 @@ import userEvent from "@testing-library/user-event";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import App from "./App";
 import type { CustomFacilityStore } from "./customFacilities";
+import type { FacilityNoteStore } from "./facilityNotes";
 import facilitiesJson from "./data/facilities.json";
 import type { MarkStore } from "./marks";
 import type { Visit, VisitStore } from "./visits";
@@ -201,7 +202,11 @@ describe("App",()=>{
    remove:async()=>undefined,
    subscribe:(onFacilities)=>{ onFacilities([exportFacility]); return ()=>undefined; },
   };
-  render(<App visitStore={exportVisitStore} markStore={markStore} customFacilityStore={customFacilityStore} />);
+  const facilityNoteStore: FacilityNoteStore={
+   save:async()=>undefined,
+   subscribe:(onNotes)=>{ onNotes({[exportFacility.id]:{text:"次回はイルカショー",updatedAt:Timestamp.fromDate(new Date("2026-07-14T01:02:03.000Z"))}}); return ()=>undefined; },
+  };
+  render(<App visitStore={exportVisitStore} markStore={markStore} customFacilityStore={customFacilityStore} facilityNoteStore={facilityNoteStore} />);
 
   await openQuickActions(user);
   const button=await screen.findByRole("button",{name:"JSONを保存"});
@@ -214,6 +219,7 @@ describe("App",()=>{
   expect(data.visits[0]).toMatchObject({facilityId:"deleted_custom_facility",memo:"日本語のメモ 🐘"});
   expect(data.marks).toEqual([{facilityId:"deleted_custom_facility",wishlist:true,favorite:false}]);
   expect(data.customFacilities[0]).toMatchObject({name:"家族の水族館"});
+  expect(data.facilityNotes).toEqual([{facilityId:"custom_export",text:"次回はイルカショー",updatedAt:"2026-07-14T01:02:03.000Z"}]);
   await waitFor(()=>expect(revokeObjectURL).toHaveBeenCalledWith("blob:export"));
  });
  it("keeps export disabled until visits, marks, and custom facilities are ready",async()=>{
