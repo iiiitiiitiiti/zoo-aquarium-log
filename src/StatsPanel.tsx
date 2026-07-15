@@ -46,9 +46,18 @@ export default function StatsPanel({ stats, onBack }: { stats: StatsModel; onBac
       </header>
 
       <nav className="stats-anchor-nav" aria-label="統計の項目">
-        <a href="#stats-type">種別別</a>
-        <a href="#stats-pref">都道府県別</a>
-        <a href="#stats-monthly">訪問数の推移</a>
+        <a className="stats-anchor-link" href="#stats-type">
+          <span>種別別</span>
+          <span className="stats-anchor-arrow" aria-hidden="true">∨</span>
+        </a>
+        <a className="stats-anchor-link" href="#stats-pref">
+          <span>都道府県別</span>
+          <span className="stats-anchor-arrow" aria-hidden="true">∨</span>
+        </a>
+        <a className="stats-anchor-link" href="#stats-monthly">
+          <span>訪問数の推移</span>
+          <span className="stats-anchor-arrow" aria-hidden="true">∨</span>
+        </a>
       </nav>
 
       <section className="stats-section stats-summary" aria-labelledby="stats-summary-heading">
