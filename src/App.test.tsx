@@ -141,6 +141,14 @@ describe("App",()=>{
   await user.click(screen.getByRole("button",{name:/施設一覧/}));
   expect(screen.getByText(facilityCountText)).toBeInTheDocument();
  });
+ it("animates cards on the initial list but not after returning from a detail",async()=>{
+  const user=userEvent.setup(); render(<App visitStore={visitStore} />);
+  expect(screen.getByRole("list")).toHaveClass("facility-list", "facility-list--animated");
+  await user.click(screen.getByRole("link",{name:/札幌市円山動物園/}));
+  await user.click(screen.getByRole("button",{name:/施設一覧/}));
+  expect(screen.getByRole("list")).toHaveClass("facility-list");
+  expect(screen.getByRole("list")).not.toHaveClass("facility-list--animated");
+ });
  it("shows logout on the facility list but not the detail view",async()=>{
   const user=userEvent.setup();
   const onSignOut=vi.fn(async()=>undefined);
@@ -400,6 +408,13 @@ describe("App",()=>{
    window.location.hash="#facility/hokkaido_maruyama_zoo";
    render(<App visitStore={visitStore} />);
    expect(screen.getByRole("heading",{name:"札幌市円山動物園"})).toBeInTheDocument();
+  });
+  it("does not animate cards after returning from a detail restored from the URL hash",async()=>{
+   const user=userEvent.setup();
+   window.location.hash="#facility/hokkaido_maruyama_zoo";
+   render(<App visitStore={visitStore} />);
+   await user.click(screen.getByRole("button",{name:/施設一覧/}));
+   expect(screen.getByRole("list")).not.toHaveClass("facility-list--animated");
   });
   it("restores a custom facility detail once custom facilities are loaded",async()=>{
    let emitCustomFacilities: ((facilities: typeof exportFacility[])=>void)|undefined;
