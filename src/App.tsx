@@ -4,6 +4,8 @@ import { buildExport, buildExportFilename } from "./buildExport";
 import MapPanel from "./MapPanel";
 import facilitiesJson from "./data/facilities.json";
 import { filterFacilities, type VisitStatusFilter } from "./filterFacilities";
+import StatsPanel from "./StatsPanel";
+import { buildStats } from "./stats";
 import type { CustomFacilityStore } from "./customFacilities";
 import type { MarkMap, MarkStore } from "./marks";
 import type { Facility, FacilityType } from "./types";
@@ -70,6 +72,7 @@ export default function App({
   const [searchOpen, setSearchOpen] = useState(false);
   const [quickActionsOpen, setQuickActionsOpen] = useState(false);
   const [mapOpen, setMapOpen] = useState(false);
+  const [statsOpen, setStatsOpen] = useState(false);
   const [mapDisplayMode, setMapDisplayMode] = useState<MapDisplayMode>("all");
   const [detailOrigin, setDetailOrigin] = useState<"list" | "map">("list");
   const [mapFocusFacilityId, setMapFocusFacilityId] = useState<string>();
@@ -144,6 +147,7 @@ export default function App({
     const focusedFacility = shown.find((facility) => facility.id === mapFocusFacilityId);
     return focusedFacility ? [focusedFacility] : shown;
   }, [mapDisplayMode, mapFocusFacilityId, shown]);
+  const stats = useMemo(() => buildStats(allFacilities, visits ?? []), [allFacilities, visits]);
   const activeFilterCount = [
     query.trim(),
     type !== "all",
@@ -171,6 +175,13 @@ export default function App({
     || customFacilitiesError
     || typeof URL === "undefined"
     || typeof URL.createObjectURL !== "function",
+  );
+
+  const statsNotReady = Boolean(
+    (visitStore && visits === undefined)
+    || (customFacilityStore && customFacilities === undefined)
+    || visitError
+    || customFacilitiesError,
   );
 
   const resetFilters = () => {
@@ -228,6 +239,10 @@ export default function App({
         onSelectFacility={(facility) => openFacility(facility, "map")}
       />
     );
+  }
+
+  if (statsOpen) {
+    return <StatsPanel stats={stats} onBack={() => setStatsOpen(false)} />;
   }
 
   if (facilityEditorOpen && customFacilityStore) {
@@ -418,11 +433,14 @@ export default function App({
           <h2>{hasListFilter ? `${shown.length}施設が該当` : `${allFacilities.length}施設を掲載`}</h2>
           <div className="results-heading-side">
             <p>パイロット版</p>
-            <button className="map-toggle" type="button" onClick={() => {
-              setMapDisplayMode("all");
-              setMapFocusFacilityId(undefined);
-              setMapOpen(true);
-            }} disabled={mapNotReady}>地図で見る</button>
+            <div className="results-heading-actions">
+              <button className="stats-toggle" type="button" onClick={() => setStatsOpen(true)} disabled={statsNotReady}>統計</button>
+              <button className="map-toggle" type="button" onClick={() => {
+                setMapDisplayMode("all");
+                setMapFocusFacilityId(undefined);
+                setMapOpen(true);
+              }} disabled={mapNotReady}>地図で見る</button>
+            </div>
           </div>
         </div>
         {shown.length === 0 ? (

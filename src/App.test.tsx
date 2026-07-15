@@ -345,4 +345,27 @@ describe("App",()=>{
    expect(screen.getByText("1施設を表示")).toBeInTheDocument();
    expect(screen.getByText("札幌市円山動物園")).toBeInTheDocument();
   });
+  it("opens the statistics view and returns to the facility list",async()=>{
+   const user=userEvent.setup();
+   render(<App visitStore={visitStore} />);
+   await user.click(screen.getByRole("button",{name:"統計"}));
+   expect(screen.getByRole("heading",{name:"記録の統計"})).toBeInTheDocument();
+   await user.click(screen.getByRole("button",{name:"← 施設一覧"}));
+   expect(screen.getByText(facilityCountText)).toBeInTheDocument();
+  });
+  it("keeps the statistics button disabled until visits are received",async()=>{
+   const user=userEvent.setup();
+   let emitVisits: ((visits: Visit[])=>void)|undefined;
+   const loadingVisitStore: VisitStore={
+    ...visitStore,
+    subscribeAll:(onVisits)=>{ emitVisits=onVisits; return ()=>undefined; },
+   };
+   render(<App visitStore={loadingVisitStore} />);
+   const button=screen.getByRole("button",{name:"統計"});
+   expect(button).toBeDisabled();
+   emitVisits?.([]);
+   await waitFor(()=>expect(button).toBeEnabled());
+   await user.click(button);
+   expect(screen.getByRole("heading",{name:"記録の統計"})).toBeInTheDocument();
+  });
 });
