@@ -1,10 +1,11 @@
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import AddFacilityPanel from "./AddFacilityPanel";
 import { buildExport, buildExportFilename } from "./buildExport";
 import MapPanel from "./MapPanel";
 import facilitiesJson from "./data/facilities.json";
 import { filterFacilities, type VisitStatusFilter } from "./filterFacilities";
 import StatsPanel from "./StatsPanel";
+import { swUpdate } from "./swUpdate";
 import { buildStats } from "./stats";
 import type { CustomFacilityStore } from "./customFacilities";
 import type { MarkMap, MarkStore } from "./marks";
@@ -90,6 +91,7 @@ export default function App({
       : undefined);
   const [facilityEditorOpen, setFacilityEditorOpen] = useState(initialRoute.view === "addFacility");
   const [editingFacility, setEditingFacility] = useState<Facility>();
+  const [visitEditing, setVisitEditing] = useState(false);
   const [pendingRoute, setPendingRoute] = useState<Route | undefined>(() => {
     if (initialRoute.view === "facility" && !facilities.some((facility) => facility.id === initialRoute.facilityId)) {
       return initialRoute;
@@ -103,6 +105,10 @@ export default function App({
   const [marksError, setMarksError] = useState("");
   const [customFacilities, setCustomFacilities] = useState<Facility[]>();
   const [customFacilitiesError, setCustomFacilitiesError] = useState("");
+
+  useEffect(() => {
+    swUpdate.setEditing(facilityEditorOpen || visitEditing);
+  }, [facilityEditorOpen, visitEditing]);
 
   useEffect(() => {
     if (!visitStore) {
@@ -240,6 +246,10 @@ export default function App({
     window.history.replaceState(window.history.state, "", `${window.location.pathname}${window.location.search}${desiredHash}`);
   }, [desiredHash]);
 
+  const handleVisitEditingChange = useCallback((editing: boolean) => {
+    setVisitEditing(editing);
+  }, []);
+
   const resetFilters = () => {
     setQuery("");
     setType("all");
@@ -249,12 +259,14 @@ export default function App({
   };
 
   const openAddFacility = () => {
+    setVisitEditing(false);
     setSelectedFacility(undefined);
     setEditingFacility(undefined);
     setFacilityEditorOpen(true);
   };
 
   const openFacility = (facility: Facility, origin: "list" | "map" = "list") => {
+    setVisitEditing(false);
     setFacilityEditorOpen(false);
     setMapOpen(false);
     setMapDisplayMode("all");
@@ -334,7 +346,9 @@ export default function App({
         markLoadError={marksError}
         customFacilityStore={customFacilityStore}
         backLabel={detailOrigin === "map" ? "← 地図に戻る" : "← 施設一覧"}
+        onEditingChange={handleVisitEditingChange}
         onShowOnMap={() => {
+          setVisitEditing(false);
           setSelectedFacility(undefined);
           setMapDisplayMode("facility");
           setMapFocusFacilityId(selectedFacility.id);
@@ -348,6 +362,7 @@ export default function App({
           }
           : undefined}
         onBack={() => {
+          setVisitEditing(false);
           setSelectedFacility(undefined);
           if (detailOrigin === "map") setMapOpen(true);
         }}
@@ -482,6 +497,7 @@ export default function App({
             <button className="quick-action" type="button" onClick={downloadExport} disabled={exportNotReady}>JSONを保存</button>
           </div>
           <p className="location-note export-note">写真データは含まれません。訪問日・メモ・評価・行きたい/お気に入り・手動追加した施設情報が対象です。</p>
+          <p className="app-version">バージョン {__APP_VERSION__}</p>
         </div>
       </section>
       <section className="results">
