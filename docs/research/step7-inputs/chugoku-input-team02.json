@@ -1,0 +1,57 @@
+[
+ {
+  "name": "宍道湖自然館ゴビウス",
+  "pref": "島根県",
+  "city": "出雲市",
+  "foundUrls": [
+   "https://www.gobius.jp/",
+   "https://ja.wikipedia.org/wiki/宍道湖自然館ゴビウス"
+  ],
+  "typeGuess": "aquarium",
+  "note": "島根県立の淡水・汽水生物専門の体験学習型水族館"
+ },
+ {
+  "name": "松江フォーゲルパーク",
+  "pref": "島根県",
+  "city": "松江市",
+  "foundUrls": [
+   "https://www.ichibata.co.jp/vogelpark/",
+   "https://www.kankou-shimane.com/destination/20265"
+  ],
+  "typeGuess": "other",
+  "note": "花と鳥のテーマパーク。水鳥温室・熱帯鳥温室・ふれあい温室で約90種の鳥を常設展示、鳥類園に該当"
+ },
+ {
+  "name": "さんさん牧場",
+  "pref": "島根県",
+  "city": "益田市",
+  "foundUrls": [
+   "https://sansanfarm.jp/",
+   "https://masudashi.com/kankouspot/kankouspot-3702/"
+  ],
+  "typeGuess": "other",
+  "note": "引退競走馬・ヤギ・ヒツジ・ウサギ等を無料で見学・エサやりできる牧場。就労支援事業所も兼ねるが一般来園者向けに常時開放"
+ },
+ {
+  "name": "瑞穂ハンザケ自然館",
+  "pref": "島根県",
+  "city": "邑南町",
+  "foundUrls": [
+   "http://www.ohtv.ne.jp/mizuho-hanzake/",
+   "https://www.kankou-shimane.com/destination/21159"
+  ],
+  "typeGuess": "aquarium",
+  "note": "特別天然記念物オオサンショウウオ（ハンザケ）を大型水槽で常設生体展示"
+ },
+ {
+  "name": "おかやまファーマーズ・マーケット ノースヴィレッジ（ふれあい動物園）",
+  "pref": "岡山県",
+  "city": "勝央町",
+  "foundUrls": [
+   "http://www.alis-nv.com/zoo.html",
+   "https://www.okayama-kanko.jp/spot/11780"
+  ],
+  "typeGuess": "other",
+  "note": "ヤギ・ウサギ・ポニー・ミニチュアホース等を展示するふれあい動物園を併設した農業公園"
+ }
+]

@@ -1,0 +1,52 @@
+[
+ {
+  "name": "ダチョウらんど沖縄",
+  "pref": "沖縄県",
+  "city": "国頭郡今帰仁村",
+  "foundUrls": [
+   "https://zfc.jp/en/zoolist/183"
+  ],
+  "typeGuess": "zoo",
+  "note": "ダチョウの餌やり・ロデオ体験施設"
+ },
+ {
+  "name": "ヤンバルクイナ生態展示学習施設クイナの森",
+  "pref": "沖縄県",
+  "city": "国頭郡国頭村",
+  "foundUrls": [
+   "https://kuinapark.com/kuina"
+  ],
+  "typeGuess": "zoo",
+  "note": "安田くいなふれあい公園内。ヤンバルクイナを間近で観察できる世界唯一の生態展示施設"
+ },
+ {
+  "name": "しろう農園ふれあい農園",
+  "pref": "沖縄県",
+  "city": "宮古島市",
+  "foundUrls": [
+   "https://www.shirou-nouen.com/farm"
+  ],
+  "typeGuess": "other",
+  "note": "ヤギ・犬とのふれあい体験農園(ヤギの散歩・ミルクあげ等)。離島(宮古島)"
+ },
+ {
+  "name": "久米島ウミガメ館",
+  "pref": "沖縄県",
+  "city": "島尻郡久米島町",
+  "foundUrls": [
+   "https://kumejimataro.okinawa/"
+  ],
+  "typeGuess": "aquarium",
+  "note": "奥武島。ウミガメ保護施設、離島(久米島)"
+ },
+ {
+  "name": "東南植物楽園(美らヤシパークオキナワ)",
+  "pref": "沖縄県",
+  "city": "沖縄市",
+  "foundUrls": [
+   "https://www.southeast-botanical.jp/explore/animal.php"
+  ],
+  "typeGuess": "zoo",
+  "note": "植物園だが約50種の動物ふれあいプラザ(カピバラ・リスザル等)と鳥類ショーがあり独立展示エリアとして該当"
+ }
+]

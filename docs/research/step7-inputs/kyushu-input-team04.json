@@ -1,0 +1,52 @@
+[
+ {
+  "name": "唐比ふれあい牧場",
+  "pref": "長崎県",
+  "city": "諫早市",
+  "foundUrls": [
+   "https://www.city.isahaya.nagasaki.jp/soshiki/43/1671.html"
+  ],
+  "typeGuess": "other",
+  "note": "唐比湿地公園内、無料の放牧ふれあい牧場。牛・馬・羊・山羊・うさぎ等"
+ },
+ {
+  "name": "長崎公園どうぶつひろば",
+  "pref": "長崎県",
+  "city": "長崎市",
+  "foundUrls": [
+   "https://www.nagasaki-kouen.com/zoo/"
+  ],
+  "typeGuess": "zoo",
+  "note": "明治期からの歴史ある小規模ミニ動物園。ニホンザル・鳥類等"
+ },
+ {
+  "name": "のもざきの小さな水族館サンゴ礁の家",
+  "pref": "長崎県",
+  "city": "長崎市(野母崎)",
+  "foundUrls": [
+   "https://www.nomozaki-suizokukan.com/"
+  ],
+  "typeGuess": "aquarium",
+  "note": "2024年8月開館の個人運営の小規模水族館。野母崎の魚・サンゴ約25水槽"
+ },
+ {
+  "name": "海中水族館シードーナツ(天草パールガーデン)",
+  "pref": "熊本県",
+  "city": "上天草市",
+  "foundUrls": [
+   "https://amakusapearl.com/sea/"
+  ],
+  "typeGuess": "aquarium",
+  "note": "西日本唯一の海に浮かぶドーナツ型水族館。約200種2000点"
+ },
+ {
+  "name": "グリーンランドワンちゃんとゆかいな動物広場",
+  "pref": "熊本県",
+  "city": "荒尾市",
+  "foundUrls": [
+   "https://www.greenland.co.jp/park/attraction/animalplaza/"
+  ],
+  "typeGuess": "zoo",
+  "note": "遊園地グリーンランド内の常設動物ふれあいエリア。犬・ヤギ・羊・ミニブタ等"
+ }
+]

@@ -1,0 +1,56 @@
+[
+ {
+  "name": "ひびき動物ワールド",
+  "pref": "福岡県",
+  "city": "北九州市若松区",
+  "foundUrls": [
+   "https://kitakyushucity.guide/spots/detail/47a3905b-400a-494a-bbd2-e60cbf3d20b4",
+   "https://hibikinadagp.org/facility/%E3%82%AB%E3%83%B3%E3%82%AC%E3%83%AB%E3%83%BC%E5%BA%83%E5%A0%B4/"
+  ],
+  "typeGuess": "zoo",
+  "note": "響灘緑地(グリーンパーク)内、国内有数の有袋類飼育施設。カンガルー約350頭"
+ },
+ {
+  "name": "だざいふ遊園地なかよしどうぶつらんど",
+  "pref": "福岡県",
+  "city": "太宰府市",
+  "foundUrls": [
+   "https://www.dazaifuyuuenchi.com/nature/",
+   "https://www.crossroadfukuoka.jp/spot/10025"
+  ],
+  "typeGuess": "zoo",
+  "note": "だざいふ遊園地内の独立した常設ふれあい動物エリア"
+ },
+ {
+  "name": "やながわ有明海水族館",
+  "pref": "福岡県",
+  "city": "柳川市",
+  "foundUrls": [
+   "https://kamesukeiyuu.wixsite.com/yanasui",
+   "https://fukuoka-times.jp/yanagawa-ariakekai-aquarium/"
+  ],
+  "typeGuess": "aquarium",
+  "note": "個人運営の手作り水族館。有明海生物・淡水魚展示、入館200円"
+ },
+ {
+  "name": "のこのしまアイランドパークミニ動物園",
+  "pref": "福岡県",
+  "city": "福岡市西区(能古島)",
+  "foundUrls": [
+   "https://nokonoshima.com/activities/mini_zoo"
+  ],
+  "typeGuess": "zoo",
+  "note": "能古島の自然公園内、ヤギ・ウサギ・ポニー等のミニ動物園"
+ },
+ {
+  "name": "トリアスふれあい動物園",
+  "pref": "福岡県",
+  "city": "糟屋郡久山町",
+  "foundUrls": [
+   "https://www.biopark.co.jp/toriuszoo/",
+   "https://hisayama.net/spot/%E3%81%B5%E3%82%8C%E3%81%82%E3%81%84%E5%8F%82%E5%8A%A0%E5%9E%8B%E3%81%AE%E3%83%9F%E3%83%8B%E5%8B%95%E7%89%A9%E5%9C%92%E3%80%8C%E3%83%88%E3%83%AA%E3%82%A2%E3%82%B9%E3%81%B5%E3%82%8C%E3%81%82%E3%81%84"
+  ],
+  "typeGuess": "zoo",
+  "note": "長崎バイオパーク運営のサテライトZOO。商業施設トリアス内、ふれあい参加型ミニ動物園"
+ }
+]

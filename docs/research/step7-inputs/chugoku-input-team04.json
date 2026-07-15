@@ -1,0 +1,56 @@
+[
+ {
+  "name": "尾道ロバ牧場",
+  "pref": "広島県",
+  "city": "尾道市",
+  "foundUrls": [
+   "https://donkeyparadise.jp/"
+  ],
+  "typeGuess": "other",
+  "note": "ロバ・ヤギとのふれあい・エサやり・ガイドツアーが来園の主目的（入場料1,500円）"
+ },
+ {
+  "name": "シン・マリホ水族館",
+  "pref": "広島県",
+  "city": "広島市",
+  "foundUrls": [
+   "https://shin.mariho-aquarium.com/",
+   "https://prtimes.jp/main/html/rd/p/000000007.000101602.html"
+  ],
+  "typeGuess": "aquarium",
+  "note": "旧マリホ水族館（マリーナホップ、2024年12月閉館）の後継としてアルパーク東棟に移転・再オープン。開業時期の情報源に相違あり（既にオープン済みとする記事とdive-hiroshimaの「2025年12月2日開業」表記が併存、後工程で要確認）"
+ },
+ {
+  "name": "広島もとまち水族館",
+  "pref": "広島県",
+  "city": "広島市",
+  "foundUrls": [
+   "https://aquarium-hiroshima.com/",
+   "https://prtimes.jp/main/html/rd/p/000000305.000084116.html"
+  ],
+  "typeGuess": "aquarium",
+  "note": "2025年10月31日、商業施設パセーラ7階に新規開業"
+ },
+ {
+  "name": "広島市森林公園こんちゅう館",
+  "pref": "広島県",
+  "city": "広島市",
+  "foundUrls": [
+   "http://www.hiro-kon.jp/",
+   "https://www.city.hiroshima.lg.jp/shisei/torikumi/1021812/1027480/1017686.html"
+  ],
+  "typeGuess": "other",
+  "note": "中四国唯一の昆虫館。常時50種1,000頭以上の生きた昆虫を展示、温室「パピヨンドーム」で蝶を通年飼育"
+ },
+ {
+  "name": "なぎさ水族館",
+  "pref": "山口県",
+  "city": "周防大島町",
+  "foundUrls": [
+   "https://www.town.suo-oshima.lg.jp/soshiki/7/1760.html",
+   "https://ja.wikipedia.org/wiki/なぎさ水族館"
+  ],
+  "typeGuess": "aquarium",
+  "note": "1990年開館、なぎさパーク内の小規模水族館。地元産の魚介類・サメ等を展示"
+ }
+]

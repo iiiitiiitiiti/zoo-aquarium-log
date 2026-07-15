@@ -1,0 +1,53 @@
+[
+ {
+  "name": "番匠おさかな館(道の駅やよい)",
+  "pref": "大分県",
+  "city": "佐伯市",
+  "foundUrls": [
+   "https://www.visit-saiki.jp/spots/detail/64777216-480a-4055-93c1-b66615cb08eb"
+  ],
+  "typeGuess": "aquarium",
+  "note": "道の駅やよい内の淡水魚水族館。番匠川の生物と世界の熱帯淡水魚"
+ },
+ {
+  "name": "別府ラクテンチ",
+  "pref": "大分県",
+  "city": "別府市",
+  "foundUrls": [
+   "https://rakutenchi.jp/animal/"
+  ],
+  "typeGuess": "zoo",
+  "note": "動物園と遊園地の複合施設。動物エリアは入場無料でチンパンジー・ペンギン等展示"
+ },
+ {
+  "name": "山地獄",
+  "pref": "大分県",
+  "city": "別府市",
+  "foundUrls": [
+   "https://mediall.jp/landmark/50630",
+   "https://beppu-midoubaru.jp/yama-hell/"
+  ],
+  "typeGuess": "zoo",
+  "note": "別府地獄めぐりの一つ。温泉熱を利用したミニ動物園(カピバラ・フラミンゴ・ヤギ等)"
+ },
+ {
+  "name": "高崎山自然動物園",
+  "pref": "大分県",
+  "city": "大分市",
+  "foundUrls": [
+   "https://www.visit-oita.jp/spots/detail/4631"
+  ],
+  "typeGuess": "zoo",
+  "note": "野生ニホンザル約1000頭を間近で観察できる自然動物園"
+ },
+ {
+  "name": "うみたま体験パークつくみイルカ島",
+  "pref": "大分県",
+  "city": "津久見市",
+  "foundUrls": [
+   "https://www.tsukumi-irukajima.jp/"
+  ],
+  "typeGuess": "other",
+  "note": "うみたまごと津久見市の連携施設。イルカとのふれあい体験型パーク"
+ }
+]

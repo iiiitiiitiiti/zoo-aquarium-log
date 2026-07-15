@@ -1,0 +1,117 @@
+[
+ {
+  "name": "水辺の里公園 自然水族館",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "not_found",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "いなべ市公式ページ(city.inabe.mie.jp)をcurlで再取得し、本文中に「大安町の大安大橋南詰に『自然水族館』があります」の記述はあるが番地を含む正式住所は存在しないことを確認(N01と同結果)。座標は同ページのJS変数定義 `var points = \"35.09437921148049,136.541686168464\";` を直接目視確認し、記録値(35.094379,136.541686)と完全一致。閉鎖情報の記載もなし。"
+ },
+ {
+  "name": "赤目滝水族館",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "not_found",
+   "coords": "unchecked"
+  },
+  "corrections": {},
+  "evidence": "akame-aquarium.com はWixベースのSPAのためcurlでは本文が取得できず、Playwrightでレンダリング後にdocument.body.innerTextを取得して確認。トップ・アクセスページとも交通アクセス(道順)の記載のみで番地住所は存在せず、N01の結論(address空欄)を独立に再現。座標については、埋め込み地図がWixのサンドボックスiframe(studioiframesandbox.com)内にありクロスオリジンで内容を検証できなかったため「確認できない」とする。2026/4/15付の2周年記念お知らせが現在も表示されており、閉鎖情報なし。"
+ },
+ {
+  "name": "タケガワふれあい動物園",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "unchecked"
+  },
+  "corrections": {},
+  "evidence": "松阪市観光協会の加盟店ページをcurlで再取得し、住所「515-0801 三重県松阪市新松ヶ島町190-7」、営業時間10:00-17:00、閉鎖情報なしを確認(記録と一致)。CAMPFIREプロジェクトページ(camp-fire.jp/projects/832341)本文で2026年4月付の活動報告を確認し、「2025年10月に移転オープンの遅延についてご報告いたしましたが、この度、さらに開園時期が遅れる見通しとなりました…変更後のオープン予定時期：2026年8月～9月頃」の記述を直接確認、N02の記録と完全一致(実際には2025年10月時点で既に一度延期されていたことも判明、二重延期)。stores.jp公式ページはBot対策のCaptchaで内容確認不可だった。"
+ },
+ {
+  "name": "ひらかたパーク プラネットアクア・ポート",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "hirakatapark.co.jp の /attractions/aquarium/ と /company/animal_policy/ をcurlで再取得し、料金700円・全10エリア約200種5,000匹、動物取扱業「事業者名 株式会社UWS ENTERTAINMENT／事業所名称 プラネットアクアポート／登録番号第5077-5号／登録年月日2025年10月22日」を逐語確認、記録と完全一致。開業日「2025年10月25日」はWeb検索で京阪グループ公式プレスリリースPDF(keihan.co.jp/corporate/info/release/assets/250902_hirakata-park.pdf)によって独立に裏付けられた。座標は枚方公園町1-1の共有住所で妥当(Wikipedia記載座標とは約300m差があるが、広大な園内の別基準点によるものとみられ矛盾ではない)。"
+ },
+ {
+  "name": "たつのみんなの昆虫館",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "unchecked"
+  },
+  "corrections": {
+   "note": "神戸新聞NEXT(kobe-np.co.jp、2026年4月付おでかけプラス記事)により、当施設は2026年4月3日に『たつの市揖西町中垣内東山』から現在の『たつの市龍野町下霞城(龍野公園内)』へ移転・リニューアルオープンしたことを一次報道で確認した。N08が「Web検索で見つかった別住所(揖西町中垣内東山1793-136)は新拠点開設案内の可能性がある」としていたのは方向が逆で、実際には揖西町中垣内東山が2021年開設時の旧住所、龍野町下霞城69-1(tatsuno-tourism.jp記載)が2026年4月以降の現行住所であることが判明。運営はたつの市から龍野公園内の施設を借りる株式会社MIKU(太子町)、カフェ運営はNPO法人いねいぶるに委託。旧ドメインtatukon2021.com(www有無とも)はDNS未解決(NXDOMAIN)であることを再確認した。住所は現行の記録値(龍野町下霞城69-1)のままで正しい。"
+  },
+  "evidence": "tatsuno-tourism.jp を再取得し住所・営業時間(平日10:00-14:30／土日祝9:00-17:00)・運営(株式会社MIKU)を逐語確認、記録と一致。Web検索で神戸新聞NEXTの記事(2026年4月)を発見し「揖西町中垣内東山→龍野町下霞城(龍野公園内)へ移転、2026年4月3日リニューアルオープン」を確認、これにより住所の新旧関係が確定した。tatukon2021.comはdig/curlともNXDOMAINで到達不可を再確認。"
+ },
+ {
+  "name": "淡路島牧場",
+  "reviewVerdict": "needs_user_decision",
+  "checkedItems": {
+   "verdict": "mismatch",
+   "status": "match",
+   "address": "backfilled",
+   "coords": "unchecked"
+  },
+  "corrections": {
+   "address_if_included": "兵庫県南あわじ市八木養宜上1番地(access.htmlに〒656-0443記載を確認)"
+  },
+  "holdRecommendation": "include寄りを推奨(ただし依然として境界事例)。理由: (1) access.html/index.htmlのサイト全体構成(index/access/map/shitsumon/shokuji/taiken の6ページのみ)を確認した結果、独立した無料『動物展示』ページは存在しない一方、(2) shitsumon.html(FAQ)に『牧場内は、リードを付けていただくことを条件に、犬を連れて入園・見学する事が可能です』とあり、体験メニューとは別に無料の一般『入園・見学』枠が存在することが新たに判明、(3) taiken.htmlの5メニューのうち乳しぼり・乳飲まし・ポニーのメリーゴーランドの3つは牛やポニーとの直接ふれあいであり、包含基準の『ふれあい施設は動物展示が主要な来場目的なら含める』に該当しうる。バター手作り・どろんこ野菜収穫の2つのみ非動物体験。",
+  "evidence": "awajishima.or.jp のtaiken.html/access.html/shitsumon.html/index.htmlをcurl取得しShift_JIS→UTF-8変換の上、全文を精査(N09と同じ一次情報)。乳しぼり(1,000円)・バター手作り(950円)・乳飲まし(800円)・どろんこ野菜収穫(1,500円)・ポニーのメリーゴーランド(900円)の5コースは全て有料体験であることをN09と同様に確認したが、FAQページで無料の『入園・見学』の存在を新たに発見した点が判断材料として重要。閉園情報はなし、通常営業中。"
+ },
+ {
+  "name": "リキオファーム",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "not_found",
+   "coords": "unchecked"
+  },
+  "corrections": {},
+  "evidence": "rikiofarm.com(Wix製)をPlaywrightでレンダリングしdocument.body.innerTextを取得、『見学はご自由にできますのが、当敷地内におけるトラブル等については自己責任でお願い致します』を逐語確認(N12の包含根拠と一致)。同ページには黒田駅からの道順のみで番地住所の記載はなく、address空欄の判断を独立に再現。二次情報のHUG NARAブログ(hug-nara.jp)本文を確認したところ住所表記は『三宅町斑伴堂668-1』となっており(「斑」の字が地図iframeのsrc属性にも同一に現れるためブログ側の入力自体の誤記/表記ゆれの可能性が高い)、一次情報での裏取りができない不確実な住所であることを追認、address空欄の判断は妥当。"
+ },
+ {
+  "name": "ドルフィン・ベェイス",
+  "reviewVerdict": "needs_user_decision",
+  "checkedItems": {
+   "verdict": "mismatch",
+   "status": "match",
+   "address": "match",
+   "coords": "unchecked"
+  },
+  "corrections": {},
+  "holdRecommendation": "exclude寄りを推奨。理由: 予約状況ページ(/situation/)をcurlで再取得したところ『※7月15日 18:50更新』の注記付きで7-9月分の実データ(○/×/数字)が表示されており、当施設が現在も予約制の体験プログラムとして通常運営されていることを直接確認できた一方、一般来場者が単独購入できる観覧専用チケットは存在せず(FAQで『見学』はプログラム参加者の同伴者向けと明記)、事前予約・小人数制(1回最大12名)の体験ツアー事業としての性格が強い。動物取扱業登録上は『展示』種別だが、実態は常設の展示観覧施設というより体験アクティビティ事業者に近く、他の水族館・動物園と同列に含めるかは方針判断が必要。",
+  "evidence": "dolphinbase.co.jp の /program/ /q-and-a/ /company/ /situation/ をcurlで再取得。会社概要ページで動物取扱業登録(種別『展示』、登録番号04第-8011、住所 和歌山県東牟婁郡太地町大字森浦686-17)を確認、記録と一致。全ページ共通で『ベェイスはただいま休園中なのです』という文言が壊れたショートコード残骸として同一に出現するが、予約状況ページの実データが2026年7月15日(前日)時点で更新されており、これは現況を示すものではないというN13の判断を裏付ける独立証拠となった。"
+ },
+ {
+  "name": "ミニ動物園（ワンダーガーデン・ピッコロガーデン・どうぶつはぐはぐタウン）",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "holdRecommendation": "closed記録としての収録継続を推奨。京阪グループ公式PDF(2024年12月13日付)とWikipediaの一次記述が完全に一致しており、2025年1月13日閉園・後継施設なしという判断に疑義なし。",
+  "evidence": "keihan.co.jp の公式プレスリリースPDF(241213_hirakata-park-2.pdf)をpdfplumberでテキスト抽出し、『屋内型動物園わくわく動物村』『ワンダーガーデン』が2025年1月13日をもって営業終了する旨、飼育動物は神戸どうぶつ王国等へ移送協議中である旨を逐語確認。ja.wikipedia.orgのひらかたパーク記事本文でも『ワンダーガーデン-アライグマ、レッサーパンダ、コツメカワウソのエリア』『ピッコロガーデン-リスザル、プレーリードッグ、モルモットのエリア』『どうぶつはぐはぐタウン-リクガメ、カピバラ…』『約40種、ふれあい動物園を目的とする。2025年1月13日に営業終了。現在は動物ではなく魚を扱った水族館のようなアクアリウムプラネットを展開中』の記述を確認し、3エリア総称としてのミニ動物園という record の名称と後継施設(プラネットアクア・ポート、本ファイル別項目)との関係も一致した。"
+ }
+]

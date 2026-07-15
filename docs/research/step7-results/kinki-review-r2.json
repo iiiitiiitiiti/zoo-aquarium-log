@@ -1,0 +1,146 @@
+[
+ {
+  "name": "めっちゃおもろい動物園",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "公式ページ jacksons.jp を再取得し、住所「滋賀県甲賀市水口町北泉1丁目7」、料金1,300円の記載を確認。Instagram(@omoroi_0611)は2,147フォロワー・96投稿で運用継続中。第三者サイト animals-peace.net の記事本文も確認したが、前身の堀井動物園との運営者関係を批判する内容のみで、現行施設自体の閉鎖は主張しておらず、他に閉鎖情報は見当たらない。国土地理院AddressSearch APIで同住所を再検索し座標136.144791,34.983124が完全一致した。"
+ },
+ {
+  "name": "安曇川山羊農園 ワカゴロウと愉快な動物たち",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "Google マップで施設名検索し公式ビジネスプロフィール（提供元:オーナー）を確認。住所「〒520-1203 滋賀県高島市安曇川町南古賀」（番地なし）、カテゴリ「動物園」、評価4.5(72件)、オーナー投稿2026/02/05、写真は17日前が最新、直近レビューも4か月前で記載一致。座標35.3432258,135.9919228のピンも同一施設に紐づくことを確認。Instagram(@adogawayagi、105投稿・305フォロワー)は活動中だが、Googleが自動生成した簡易サイトzoo-79.business.siteは404で死んでおり、GBP以外の一次情報が乏しいというチームの評価は妥当。"
+ },
+ {
+  "name": "丹後王国「食のみやこ」小さな動物園",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "tangooukoku.com/mini-zoo/ を再取得し、〒627-0133 京都府京丹後市弥栄町鳥取123、ヤギ・リクガメの常設ふれあいと毎月第1日曜のうさぎふれあいの記述を確認、施設は現存。旧ポニー乗馬・ふれあい牧場ページ(map-ja/fureai-bokujo/、map-ja/pony-ride/、map-ja/zoo-2/)を個別に再アクセスし、いずれも404であることを自ら確認、チームの記述と一致。GSI再検索で座標も完全一致。"
+ },
+ {
+  "name": "きんたい廃校博物館",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "kinpaku.jp を再取得し、〒581-0856 大阪府八尾市水越２丁目１１７、「毎月第3日曜日（変更される場合があります）10:00~15:00」の開館案内を確認。最新の告知記事は2026年1月4日付「2026年1月の開館情報について」で、月次の開館情報発信が2026年に入っても継続していることを直接確認できた（2月以降の個別告知の有無までは未確認）。GSI再検索で座標も完全一致。"
+ },
+ {
+  "name": "天保山アニパ",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "kaiyukan.com のショップリストページで「【事業所の所在地】大阪市港区海岸通1－1－10 天保山マーケットプレース3F」「【動物取扱業の種別】展示」「【登録番号】06019...」の記載を確認し、海遊館とは別の動物取扱業登録を持つ独立事業所であることを裏付けた。休園日「毎週木曜日」（夏季一部営業日あり）の記載も確認。運営会社a-es.jp/parkguide/はアニパ単独ドメインではなく常設施設案内ページである点もチームの記述通り。GSI再検索で座標も完全一致。"
+ },
+ {
+  "name": "淡路島モンキーセンター",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "monkey-center.jp本体で「兵庫県洲本市畑田組289」「毎週水曜日・木曜日が定休日」を確認。追加検証として国土地理院AddressSearch APIで「兵庫県淡路市畑田組289」を検索したところ淡路市レベルの代表点しか返らず番地は解決せず、一方「兵庫県洲本市畑田組289」は番地まで完全一致（座標134.876511,34.251236、入力値と一致）。NAVITIME・goo地図・マピオン・MapFan・いつもNAVI等の独立地図サービスも畑田組を洲本市の地名として掲載しており、チームの「候補台帳側の淡路市表記が誤りで洲本市が正」という結論を強く裏付ける独立証拠が得られた。"
+ },
+ {
+  "name": "ラッテたかまつ",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "運営者ドメイン http://www.latte-takamatsu.com/ および https://latte-takamatsu.com/（wwwなし）の両方を curl と Playwright 実ブラウザの双方で確認したが、いずれも「Index of /」というディレクトリ一覧のみを返し、実質的なホームページ機能を喪失していることを独立に再現確認した（検索エンジンのスニペットには過去のキャッシュとみられる本文が残っているが、実際にアクセスすると同じ結果）。一次情報としては、なら旅ネット(yamatoji.nara-kankou.or.jp)で住所「葛城市山口278-3」、定休日「火曜日(4-11月)/火・水曜日(12-3月)」、運営者表記「農業組合法人」を確認できた。もう一方のsourceUrlである https://www.dairy.co.jp/edf/list/kinki/takamatu.html は現在302リダイレクトで https://www.dairy.co.jp/edf/list/index.html （トップページ）へ転送されており、当該ページ自体はもはや閲覧不可（「農事組合法人」表記の直接的な根拠として機能しなくなっている）。閉業を示す情報は見当たらず、運営実態自体は複数の第三者観光サイト（旅色・いこーよ・JAFナビ・ふるさとチョイス）に現役掲載されていることから継続と判断。GSI再検索で座標も完全一致。"
+ },
+ {
+  "name": "箕面公園昆虫館",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "mino-konchu.jp本体で「〒562-0002 大阪府箕面市箕面公園1-18」の記載を確認（住所ソースURLの記載通り）。開館案内ページ(c8060.html)で「毎週火曜日（祝日の場合は翌平日）／年末年始(12月29日～1月3日）」の休館日を確認。GSI再検索では番地レベルの座標が解決せず「箕面公園１番」の代表点となる点もチームの記述と一致（座標値も完全一致）。"
+ },
+ {
+  "name": "アヴニールファーム",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "avenirfarm.com本体で「所在地：〒594-1136 大阪府和泉市仏並町2041番地」「定休日：毎週月曜日」「保管：大阪府登録第4098-2／展示：大阪府登録第4098-5」の記載を確認。見学・相談受付の案内も確認。GSI再検索では町丁目レベル（仏並町）までしか座標が解決せず番地精度でない点もチームの記述と一致（座標値も完全一致）。"
+ },
+ {
+  "name": "観光養老牧場 メタセコイアと馬の森",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "mhf.tcc-japan.com/information/ で「〒520-1834 滋賀県高島市マキノ町寺久保833-1」「運営：株式会社TCC Japan」を確認。トップページのお知らせ欄で2026.07.01付「サマータイム営業スタート」に加え、より新しい2026.07.03付「りんごちゃんオーナー募集」の告知も確認でき、直近まで運営が継続していることを裏付けた。定休日「水曜」の明記はJS描画部分にあるためstatic HTML取得では再確認できなかった（未確認）。GSI再検索では町丁目レベル（寺久保）の座標がチーム記載のクロスチェック値と完全一致。"
+ },
+ {
+  "name": "郡山金魚資料館",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "kingyoen.com本体（Shift_JISエンコード、要デコード）で「〒639-1021 奈良県大和郡山市新木町107」を確認。第三者観光サイトyk-kankou.jp(大和郡山市観光協会公式)でも同住所を確認。GSI再検索で座標も完全一致。閉館情報は見当たらず。"
+ },
+ {
+  "name": "嵐山モンキーパークいわたやま",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "http://www.monkeypark.jp/about.html で住所「〒616-0004 京都市西京区嵐山中尾下町61」、約120頭のニホンザル飼育の記述を確認。HTTPS接続(curl -v https://www.monkeypark.jp/)を試したところ「SSL certificate problem: self signed certificate」で接続失敗し、チームが報告したブラウザのERR_CERT_AUTHORITY_INVALIDと整合する証明書問題を独立に再現確認した。GSI再検索で座標も完全一致。閉園情報は見当たらず。"
+ }
+]

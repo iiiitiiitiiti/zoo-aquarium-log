@@ -1,0 +1,108 @@
+{
+ "team": "N09",
+ "block": "近畿",
+ "results": [
+  {
+   "verdict": "hold",
+   "name": "淡路島牧場",
+   "pref": "兵庫県",
+   "city": "南あわじ市",
+   "adoptionBasis": "公式サイト（awajishima.or.jp）の体験メニューは乳しぼり体験・バター手作り体験・乳飲まし体験・野菜収穫（どろんこ体験）・ポニーのメリーゴーランドが中心で、牛の飼育・搾乳を軸にした観光牧場（農業体験施設）としての性格が強い。ポニーや子牛とのふれあいはあるが、動物の展示観察そのものより酪農体験・食体験が来場の主目的として前面に打ち出されており、『動物展示が主要な来場目的』の牧場・ふれあい施設に該当するか判断が分かれるため保留。",
+   "sourceUrls": [
+    "http://www.awajishima.or.jp/access.html",
+    "http://www.awajishima.or.jp/taiken.html"
+   ],
+   "note": "公式サイトはフレームセット構成の古いサイト（Shift_JISエンコード、curlで生HTML取得し確認）。運営は淡路島牧場株式会社（淡路島牛乳株式会社の関連）。休園・閉園情報は確認されず、通常営業中とみられる。"
+  },
+  {
+   "verdict": "include",
+   "name": "のじま動物園",
+   "kana": "のじまどうぶつえん",
+   "pref": "兵庫県",
+   "city": "淡路市",
+   "type": "zoo",
+   "lat": 34.559994,
+   "lng": 134.948654,
+   "url": "https://nojima-scuola.com/zoo/",
+   "sourceUrls": [
+    "https://nojima-scuola.com/zoo/"
+   ],
+   "status": "open",
+   "lastVerifiedAt": "2026-07-15",
+   "proposedId": "hyogo_nojima_doubutsuen",
+   "coordSource": "国土地理院AddressSearch（兵庫県淡路市野島蟇浦843番地で一致）",
+   "address": "兵庫県淡路市野島蟇浦843",
+   "addressSourceUrl": "https://nojima-scuola.com/zoo/",
+   "adoptionBasis": "廃校リノベ複合施設『のじまスコーラ』内の常設動物園。アルパカ・ヤギ・ミニブタ等生きた動物の展示・ふれあいを主目的とする常設一般来場施設のため動物園に該当。",
+   "note": "公式サイトに2026年7月12日開催の『どうぶつえんまつり』告知あり、直近まで通常営業を確認。定休日は水曜日。営業時間：平日11:00〜16:00、土日祝10:00〜16:00。"
+  },
+  {
+   "verdict": "include",
+   "name": "淡路島モンキーセンター",
+   "kana": "あわじしまもんきーせんたー",
+   "pref": "兵庫県",
+   "city": "洲本市",
+   "type": "zoo",
+   "lat": 34.251236,
+   "lng": 134.876511,
+   "url": "https://monkey-center.jp/",
+   "sourceUrls": [
+    "https://monkey-center.jp/",
+    "https://monkey-center.jp/information.php"
+   ],
+   "status": "open",
+   "lastVerifiedAt": "2026-07-15",
+   "proposedId": "hyogo_awajishima_monkey_center",
+   "coordSource": "国土地理院AddressSearch（兵庫県洲本市畑田組289番地で一致）。NAVITIME等の複数地図サービス（緯度経度34.245/134.883付近）ともおおむね整合",
+   "address": "兵庫県洲本市畑田組289",
+   "addressSourceUrl": "https://monkey-center.jp/information.php",
+   "adoptionBasis": "野生ニホンザルの常設餌付け観察施設。生きた動物の展示・観察を主目的とする常設一般来場施設のため動物園に該当。",
+   "note": "候補台帳のnoteでは『住所は淡路市畑田組289（rurubu等が洲本市と誤記載）』とあったが、公式サイト本文・国土地理院AddressSearch（淡路市畑田組では番地レベルで住所解決せず、洲本市畑田組289は番地まで解決）・NAVITIME等の独立地図サービスがいずれも洲本市を示しており、実際は洲本市が正、候補台帳側の記載が逆であった可能性が高い。定休日は水曜・木曜（祝日は開園）。秋（9月中旬〜11月中旬）は山奥へのサル移動で見学困難になることがあるが休園ではない。閉園報道は確認されず、現在も営業中。"
+  },
+  {
+   "verdict": "include",
+   "name": "神崎農村公園ヨーデルの森",
+   "kana": "かんざきのうそんこうえんよーでるのもり",
+   "pref": "兵庫県",
+   "city": "神崎郡神河町",
+   "type": "zoo",
+   "lat": 35.127987,
+   "lng": 134.800705,
+   "url": "https://yodel-forest.jp/",
+   "sourceUrls": [
+    "https://yodel-forest.jp/access/",
+    "https://yodel-forest.jp/guide/"
+   ],
+   "status": "open",
+   "lastVerifiedAt": "2026-07-15",
+   "proposedId": "hyogo_yodel_no_mori",
+   "coordSource": "国土地理院AddressSearch（兵庫県神河町猪篠は町名レベルで一致、番地までは非対応）",
+   "address": "兵庫県神崎郡神河町猪篠1868",
+   "addressSourceUrl": "https://yodel-forest.jp/access/",
+   "adoptionBasis": "公式サイトの動物取扱業登録情報（種別：保管・展示）にも記載される常設施設。約60種200頭羽のアルパカ・カピバラ・ペンギン・アザラシ等を展示・ふれあいの主目的とするため牧場・ふれあい施設の包含基準に該当。",
+   "note": "定休日は毎週水曜（長期休暇中は営業）。12月〜2月末は平日クローズ。閉園・休園報道は確認されず通常営業中。"
+  },
+  {
+   "verdict": "include",
+   "name": "みなとやま水族館",
+   "kana": "みなとやますいぞくかん",
+   "pref": "兵庫県",
+   "city": "神戸市兵庫区",
+   "type": "aquarium",
+   "lat": 34.689629,
+   "lng": 135.164993,
+   "url": "https://minatoyama.jp/",
+   "sourceUrls": [
+    "https://minatoyama.jp/facility"
+   ],
+   "status": "open",
+   "lastVerifiedAt": "2026-07-15",
+   "proposedId": "hyogo_minatoyama_suizokukan",
+   "coordSource": "国土地理院AddressSearch（兵庫県神戸市兵庫区雪御所町2番で一致）",
+   "address": "兵庫県神戸市兵庫区雪御所町2-24-101 NATURE STUDIO EAST1F",
+   "addressSourceUrl": "https://minatoyama.jp/facility",
+   "adoptionBasis": "旧湊山小学校跡の複合施設NATURE STUDIO内、2022年7月開業の常設水族館。生きた水生生物の展示を主目的とする常設一般来場施設のため水族館に該当。",
+   "note": "公式サイトに2026年7月時点で『本日営業日（7月・8月の休館日はありません）』の告知あり、通常営業を確認。休館日は不定休（メンテナンスによる休館日等あり）。"
+  }
+ ]
+}

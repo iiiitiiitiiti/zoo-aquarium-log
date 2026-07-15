@@ -1,0 +1,117 @@
+{"team": "N07", "block": "近畿", "results": [
+  {
+    "verdict": "include",
+    "name": "天保山アニパ",
+    "kana": "てんぽうざんあにぱ",
+    "pref": "大阪府",
+    "city": "大阪市港区",
+    "type": "zoo",
+    "lat": 34.655342,
+    "lng": 135.43074,
+    "url": "https://a-es.jp/parkguide/",
+    "sourceUrls": [
+      "https://a-es.jp/parkguide/",
+      "https://www.kaiyukan.com/thv/marketplace/shop/057/"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "osaka_tenpozan_anipa",
+    "coordSource": "国土地理院APIで「大阪府大阪市港区海岸通一丁目1番10号」を検索し取得（番地一致）。",
+    "address": "大阪府大阪市港区海岸通1-1-10",
+    "addressSourceUrl": "https://www.kaiyukan.com/thv/marketplace/shop/057/",
+    "adoptionBasis": "常設で一般来場でき、ウサギ・イヌ・ネコ・カピバラ・カンガルー等の生きた動物との触れ合いを主目的とする屋内型ふれあい動物園のため包含基準に合致。海遊館とは別会社（株式会社アニマルエスコートサービス運営）・別料金・別入口で、海遊館半券提示で1割引となる提携関係のみのため独立施設として扱う。",
+    "note": "運営会社（株式会社アニマルエスコートサービス、a-es.jp）はナビ表示の「公式サイト」に相当するページを持つが、アニパ単独の独立公式サイトはなく、運営会社サイト内の常設施設案内ページとkaiyukan.com（天保山マーケットプレースのショップリスト、運営者側ページ）を一次情報として使用。2024年3月20日にリニューアルオープン済み、2026年7月時点で通常営業（休園日は毎週木曜）。"
+  },
+  {
+    "verdict": "include",
+    "name": "大阪狭山市立市民ふれあいの里 リス園",
+    "kana": "おおさかさやましりつしみんふれあいのさとりすえん",
+    "pref": "大阪府",
+    "city": "大阪狭山市",
+    "type": "zoo",
+    "lat": 34.518726,
+    "lng": 135.561005,
+    "url": "https://www.city.osakasayama.osaka.jp/sosiki/machizukurisuishinbu/kouenryokuchi/fureainosatohanatomidori/risuen.html",
+    "sourceUrls": [
+      "https://www.city.osakasayama.osaka.jp/sosiki/machizukurisuishinbu/kouenryokuchi/fureainosatohanatomidori/risuen.html",
+      "https://osaka-info.jp/spot/shimin-fureai-sato-squirrel-park/"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "osaka_osakasayama_fureainosato_risuen",
+    "coordSource": "国土地理院APIで「大阪府大阪狭山市東野東一丁目32-2」を検索し取得（番地一致）。市公式ページ掲載のGoogleMapリンク座標（34.5193544, 135.561778）とも近接（差約80m、同一施設内の範囲として妥当）。",
+    "address": "大阪府大阪狭山市東野東1-32-2",
+    "addressSourceUrl": "https://osaka-info.jp/spot/shimin-fureai-sato-squirrel-park/",
+    "adoptionBasis": "西日本唯一とされるタイワンリス・モルモット約40匹の常設展示・餌やり体験を主目的とする、市立公園「花と緑の広場」内の独立したふれあい施設のため包含基準に合致。同一敷地内の「ミニ昆虫館」は標本のみで生体展示がないため対象外（候補台帳の指摘どおり）。",
+    "note": "市公式サイト（risuen.html）は施設名・案内は掲載するが番地までの住所記載がなく、住所は大阪観光局公式サイト（osaka-info.jp）を出典とした。入園無料・エサ代200円。"
+  },
+  {
+    "verdict": "include",
+    "name": "ひらかたパーク プラネットアクア・ポート",
+    "kana": "ひらかたぱーくぷらねっとあくあぽーと",
+    "pref": "大阪府",
+    "city": "枚方市",
+    "type": "aquarium",
+    "lat": 34.808491,
+    "lng": 135.639572,
+    "url": "https://www.hirakatapark.co.jp/attractions/aquarium/",
+    "sourceUrls": [
+      "https://www.hirakatapark.co.jp/attractions/aquarium/",
+      "https://www.hirakatapark.co.jp/company/animal_policy/"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "osaka_hirakatapark_planet_aqua_port",
+    "coordSource": "国土地理院APIで「大阪府枚方市枚方公園町1番1号」を検索し取得（番地一致）。",
+    "address": "大阪府枚方市枚方公園町1-1",
+    "addressSourceUrl": "https://www.hirakatapark.co.jp/company/animal_policy/",
+    "adoptionBasis": "2025年10月25日開業、約200種5,000匹の生きた水生生物展示を主目的とする常設アクアリウム施設。第一種動物取扱業（展示）登録済み（登録番号第5077-5号、登録年月日2025年10月22日）で公式サイトに一次情報あり。ひらかたパーク入園料に加え別途入場券（700円）が必要な別料金体系のため、パークとは別施設として扱う。",
+    "note": "動物取扱業に関する表示ページでは事業者名「株式会社UWS ENTERTAINMENT」・事業所名称「プラネットアクアポート」・所在地「大阪府枚方市枚方公園町1-1 ひらかたパーク内」と記載。候補台帳の運営に関する記載と齟齬なし。"
+  },
+  {
+    "verdict": "include",
+    "name": "ミニ動物園（ワンダーガーデン・ピッコロガーデン・どうぶつはぐはぐタウン）",
+    "kana": "みにどうぶつえん",
+    "pref": "大阪府",
+    "city": "枚方市",
+    "type": "zoo",
+    "lat": 34.808491,
+    "lng": 135.639572,
+    "url": "https://www.hirakatapark.co.jp/",
+    "sourceUrls": [
+      "https://www.keihan.co.jp/corporate/info/release/assets/241213_hirakata-park-2.pdf",
+      "https://ja.wikipedia.org/wiki/%E3%81%B2%E3%82%89%E3%81%8B%E3%81%9F%E3%83%91%E3%83%BC%E3%82%AF"
+    ],
+    "status": "closed",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "osaka_hirakatapark_minidoubutsuen",
+    "coordSource": "国土地理院APIで「大阪府枚方市枚方公園町1番1号」（ひらかたパーク住所）を検索し取得（番地一致）。",
+    "address": "大阪府枚方市枚方公園町1-1",
+    "addressSourceUrl": "https://www.keihan.co.jp/corporate/info/release/assets/241213_hirakata-park-2.pdf",
+    "adoptionBasis": "候補台帳の『ひらかたパーク動物ふれあいエリア（どうぶつハグハグタウン等）』は、ひらかたパーク内の常設『ミニ動物園』（ワンダーガーデン・ピッコロガーデン・どうぶつはぐはぐタウンの3エリア、約40種）を指す。営業当時は動物展示を主目的とする独立常設エリアとして包含基準に合致していたため include とし、2025年1月13日の閉園を京阪グループ公式リリースで確認したため包含基準『閉園確認済みはclosedとして記録を保持する』に従い status: closed で記録する。",
+    "note": "候補台帳のfoundUrls（/animal/wonder/、/animal/wakuwaku/）は2026年7月時点で内容が失われひらかたパークトップページへリダイレクトされる。京阪グループ公式リリース（2024年12月13日付）により『屋内型動物園わくわく動物村』（2007年開設『どうぶつハグハグたうん』の2023年リニューアル名）と『ワンダーガーデン』（1994年開設）が2025年1月13日をもって営業終了し、飼育動物は神戸どうぶつ王国など複数施設へ移送協議と確認。Wikipedia記載でも『ミニ動物園』（ワンダーガーデン・ピッコロガーデン・どうぶつはぐはぐタウンの総称）として2025年1月13日営業終了と一致。現行の公式サイト動物取扱業表示ページ・アトラクション一覧ページにも後継の動物ふれあい施設の記載はなく、後継施設なしで完全閉鎖と判断。プラネットアクア・ポート（本チームの別項目）とは料金体系・開業経緯とも無関係の別施設。"
+  },
+  {
+    "verdict": "include",
+    "name": "箕面公園昆虫館",
+    "kana": "みのおこうえんこんちゅうかん",
+    "pref": "大阪府",
+    "city": "箕面市",
+    "type": "other",
+    "lat": 34.843502,
+    "lng": 135.470062,
+    "url": "https://www.mino-konchu.jp/",
+    "sourceUrls": [
+      "https://www.mino-konchu.jp/",
+      "https://www.mino-konchu.jp/c8060.html"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "osaka_minookouen_konchukan",
+    "coordSource": "国土地理院APIで「大阪府箕面市箕面公園1-18」を検索したが番地は一致せず、「大阪府箕面市箕面公園」の代表点（1番）を採用。",
+    "address": "大阪府箕面市箕面公園1-18",
+    "addressSourceUrl": "https://www.mino-konchu.jp/",
+    "adoptionBasis": "1953年開設、大阪府唯一の昆虫館。標本展示に加え放蝶園・その他生体展示コーナーを持つ常設施設で、昆虫館は包含基準に明記された対象種別のため含める。",
+    "note": "毎週火曜（祝日の場合は開館し翌平日休館）・年末年始が休館日で、それ以外は通常営業。2026年7月時点で閉館・長期休館の情報なし。"
+  }
+]}

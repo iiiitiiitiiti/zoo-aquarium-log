@@ -1,0 +1,52 @@
+[
+ {
+  "name": "ドルフィンファンタジー石垣島",
+  "pref": "沖縄県",
+  "city": "石垣市",
+  "foundUrls": [
+   "https://df-ishigaki.com/"
+  ],
+  "typeGuess": "aquarium",
+  "note": "離島(石垣島)、離島ターミナル近くのイルカふれあい施設"
+ },
+ {
+  "name": "石垣やいま村リスザルの森",
+  "pref": "沖縄県",
+  "city": "石垣市",
+  "foundUrls": [
+   "https://www.yaimamura.com/"
+  ],
+  "typeGuess": "zoo",
+  "note": "八重山文化テーマパーク内の常設リスザル展示・ふれあいエリア(60頭以上)。離島(石垣島)"
+ },
+ {
+  "name": "平野アニマルテラス",
+  "pref": "沖縄県",
+  "city": "石垣市",
+  "foundUrls": [
+   "https://www.hiranoanimalterrace.com/"
+  ],
+  "typeGuess": "zoo",
+  "note": "柵のないオープンスペースでカピバラ等とふれあう施設。離島(石垣島)"
+ },
+ {
+  "name": "DMMかりゆし水族館",
+  "pref": "沖縄県",
+  "city": "豊見城市",
+  "foundUrls": [
+   "https://kariyushi-aquarium.com/"
+  ],
+  "typeGuess": "aquarium",
+  "note": "イーアス沖縄豊崎内の新しいコンセプト型水族館"
+ },
+ {
+  "name": "沖縄金魚ミュージアム",
+  "pref": "沖縄県",
+  "city": "豊見城市",
+  "foundUrls": [
+   "https://okinawakingyomuseum.com/"
+  ],
+  "typeGuess": "aquarium",
+  "note": "2025年4月開館。沖縄アウトレットモールあしびなー内、金魚2000匹55種の体験型アクアリウム施設"
+ }
+]

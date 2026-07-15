@@ -1,0 +1,194 @@
+[
+ {
+  "verdict": "include",
+  "name": "水辺の里公園 自然水族館",
+  "kana": "みずべのさとこうえん しぜんすいぞくかん",
+  "pref": "三重県",
+  "city": "いなべ市大安町",
+  "type": "aquarium",
+  "lat": 35.094379,
+  "lng": 136.541686,
+  "url": "https://www.city.inabe.mie.jp/kyoiku/shizen/1013261/index.html",
+  "sourceUrls": [
+   "https://www.city.inabe.mie.jp/kyoiku/shizen/1013261/index.html"
+  ],
+  "status": "open",
+  "lastVerifiedAt": "2026-07-15",
+  "proposedId": "mie_shizensuizokukan",
+  "coordSource": "いなべ市公式ページに埋め込まれたGoogleマップ座標（ページ内JavaScript `page_map(\"35.09437921148049,136.541686168464\")` に直接記載）。国土地理院逆ジオコーダー（LonLatToAddress）で「大安町大井田」と整合確認済み",
+  "address": "",
+  "addressSourceUrl": "",
+  "adoptionBasis": "いなべ市教育委員会が運営する常設の一般来場施設で、宇賀川・員弁川の淡水魚（アブラハヤ・カワムツ等）を横から観察できる水槽展示が主目的。常設で入館規制なし（無料開放型の屋外観察施設）。",
+  "note": "公式ページに「いなべ市大安町の大安大橋南詰」という記述はあるが、番地を含む正式な住所表記は見当たらなかったため address は空欄とした。開館時間・料金の明記なし（入場無料・常時観覧可能な屋外型施設と見られる）。閉館・休止情報は見当たらず",
+  "_team": "N01"
+ },
+ {
+  "verdict": "include",
+  "name": "赤目滝水族館",
+  "kana": "あかめたきすいぞくかん",
+  "pref": "三重県",
+  "city": "名張市",
+  "type": "aquarium",
+  "lat": 34.563473,
+  "lng": 136.083125,
+  "url": "https://akame-aquarium.com/",
+  "sourceUrls": [
+   "https://akame-aquarium.com/",
+   "https://akame-aquarium.com/concept"
+  ],
+  "status": "open",
+  "lastVerifiedAt": "2026-07-15",
+  "proposedId": "mie_akametakisuizokukan",
+  "coordSource": "公式サイトに埋め込まれたGoogleマップ（施設名「赤目滝水族館」を検索対象とするiframe embed、pb=...2d136.08312547645352!3d34.563473090562255）",
+  "address": "",
+  "addressSourceUrl": "",
+  "adoptionBasis": "室生赤目青山国定公園・赤目四十八滝の入口にある常設の水族館建物で、オオサンショウウオ（特別天然記念物）等の渓谷産生物の展示が主目的。2024年4月に前身「日本サンショウウオセンター」からリニューアルし独立運営（大人1000円の入館料）。",
+  "note": "公式サイト（akame-aquarium.com）のホーム・施設案内・FAQ・アクセス各ページのいずれにも番地を含む正式住所の記載が見当たらず、address欄は空欄とした。二次情報（観光三重 kankomie.or.jp）では「名張市赤目町長坂861-1」と案内されているが一次情報で確認できないため採用しなかった。入館料は赤目渓谷への「渓谷保全料（入山料込み）」と一体になっており、赤目四十八滝（自然渓谷）と共通の入場料設定だが、水族館は独立した建物・独立運営（館長常駐）のため別施設として収録。閉館・休止情報なし、2026年4月に開業2周年記念のお知らせあり",
+  "_team": "N01"
+ },
+ {
+  "verdict": "include",
+  "name": "タケガワふれあい動物園",
+  "kana": "たけがわふれあいどうぶつえん",
+  "pref": "三重県",
+  "city": "松阪市",
+  "type": "zoo",
+  "lat": 34.59951,
+  "lng": 136.526199,
+  "url": "https://takegawafureaizoo.stores.jp/",
+  "sourceUrls": [
+   "https://www.matsusaka-kanko.com/org/org/%E4%B8%80%E7%A4%BE%E3%82%BF%E3%82%B1%E3%82%AC%E3%83%AF%E3%81%B5%E3%82%8C%E3%81%82%E3%81%84%E5%8B%95%E7%89%A9%E5%9C%92/",
+   "https://camp-fire.jp/projects/832341/view"
+  ],
+  "status": "open",
+  "lastVerifiedAt": "2026-07-15",
+  "proposedId": "mie_takegawafureaidoubutsuen",
+  "coordSource": "国土地理院AddressSearchAPIで「三重県松阪市新松ヶ島町190-7」を検索（番地レベルで「新松ヶ島町１９０番地」として解決）",
+  "address": "三重県松阪市新松ヶ島町190-7",
+  "addressSourceUrl": "https://www.matsusaka-kanko.com/org/org/%E4%B8%80%E7%A4%BE%E3%82%BF%E3%82%B1%E3%82%AC%E3%83%AF%E3%81%B5%E3%82%8C%E3%81%82%E3%81%84%E5%8B%95%E7%89%A9%E5%9C%92/",
+  "adoptionBasis": "保護動物専門の常設ふれあい動物園で、ロバ・ミニチュアホース・ヤギ・羊・うさぎ等の動物展示・ふれあいが来場目的の中心。「牧場・ふれあい施設は、動物展示が主要な来場目的なら含める」に該当。",
+  "note": "現住所（松阪市新松ヶ島町190-7）から松阪市伊勢寺町2613-13への移転を計画中。当初2026年春予定だったが、移転先用地の農地転用許可手続きの遅延により開園目安は2026年8～9月頃に延期（CAMPFIREプロジェクト2026年4月15日付活動報告より）。現時点（2026年7月）では移転が完了していないため、松阪市観光協会加盟店情報（現住所・営業時間10:00-17:00・定休日「平日、年末年始、臨時休園あり」）に基づき現住所で営業継続中と判断。移転完了後は住所・座標・URLの更新が必要。",
+  "_team": "N02"
+ },
+ {
+  "verdict": "include",
+  "name": "ひらかたパーク プラネットアクア・ポート",
+  "kana": "ひらかたぱーくぷらねっとあくあぽーと",
+  "pref": "大阪府",
+  "city": "枚方市",
+  "type": "aquarium",
+  "lat": 34.808491,
+  "lng": 135.639572,
+  "url": "https://www.hirakatapark.co.jp/attractions/aquarium/",
+  "sourceUrls": [
+   "https://www.hirakatapark.co.jp/attractions/aquarium/",
+   "https://www.hirakatapark.co.jp/company/animal_policy/"
+  ],
+  "status": "open",
+  "lastVerifiedAt": "2026-07-15",
+  "proposedId": "osaka_hirakatapark_planet_aqua_port",
+  "coordSource": "国土地理院APIで「大阪府枚方市枚方公園町1番1号」を検索し取得（番地一致）。",
+  "address": "大阪府枚方市枚方公園町1-1",
+  "addressSourceUrl": "https://www.hirakatapark.co.jp/company/animal_policy/",
+  "adoptionBasis": "2025年10月25日開業、約200種5,000匹の生きた水生生物展示を主目的とする常設アクアリウム施設。第一種動物取扱業（展示）登録済み（登録番号第5077-5号、登録年月日2025年10月22日）で公式サイトに一次情報あり。ひらかたパーク入園料に加え別途入場券（700円）が必要な別料金体系のため、パークとは別施設として扱う。",
+  "note": "動物取扱業に関する表示ページでは事業者名「株式会社UWS ENTERTAINMENT」・事業所名称「プラネットアクアポート」・所在地「大阪府枚方市枚方公園町1-1 ひらかたパーク内」と記載。候補台帳の運営に関する記載と齟齬なし。",
+  "_team": "N07"
+ },
+ {
+  "verdict": "include",
+  "name": "たつのみんなの昆虫館",
+  "kana": "たつのみんなのこんちゅうかん",
+  "pref": "兵庫県",
+  "city": "たつの市",
+  "type": "other",
+  "lat": 34.86581,
+  "lng": 134.540924,
+  "url": "https://tatsuno-tourism.jp/workshop/tatsunominnanokonchukan/",
+  "sourceUrls": [
+   "https://tatsuno-tourism.jp/workshop/tatsunominnanokonchukan/"
+  ],
+  "status": "open",
+  "lastVerifiedAt": "2026-07-15",
+  "proposedId": "hyogo_tatsuno_minna_no_konchukan",
+  "coordSource": "国土地理院AddressSearch API（住所: 兵庫県たつの市龍野町下霞城69-1）",
+  "address": "兵庫県たつの市龍野町下霞城69-1",
+  "addressSourceUrl": "https://tatsuno-tourism.jp/workshop/tatsunominnanokonchukan/",
+  "adoptionBasis": "常設で一般来場でき、生きたカブトムシ等昆虫の展示・ふれあいを主目的とする昆虫館に該当。カブトムシふれあいドームで生体に直接ふれあえる。標本のみの展示ではないことを一次情報（運営自治体の観光サイト）で確認した。",
+  "note": "運営は株式会社MIKU。開館は土日祝のみ（平日休館の場合あり、臨時休館の可能性も明記）。公式サイトとされる tatukon2021.com は現時点でDNS解決不可（2回試行し到達不能）。またWeb検索では同社関連で「兵庫県たつの市揖西町中垣内東山1793-136」という別住所の情報（クラウドファンディングによる新拠点開設案内の可能性）も見られたが一次情報で確認できず、住所はtatsuno-tourism.jp（たつの市の公式観光サイト）記載の龍野町下霞城69-1を採用した。候補台帳のfoundUrlsと同一情報源。",
+  "_team": "N08"
+ },
+ {
+  "verdict": "hold",
+  "name": "淡路島牧場",
+  "pref": "兵庫県",
+  "city": "南あわじ市",
+  "adoptionBasis": "公式サイト（awajishima.or.jp）の体験メニューは乳しぼり体験・バター手作り体験・乳飲まし体験・野菜収穫（どろんこ体験）・ポニーのメリーゴーランドが中心で、牛の飼育・搾乳を軸にした観光牧場（農業体験施設）としての性格が強い。ポニーや子牛とのふれあいはあるが、動物の展示観察そのものより酪農体験・食体験が来場の主目的として前面に打ち出されており、『動物展示が主要な来場目的』の牧場・ふれあい施設に該当するか判断が分かれるため保留。",
+  "sourceUrls": [
+   "http://www.awajishima.or.jp/access.html",
+   "http://www.awajishima.or.jp/taiken.html"
+  ],
+  "note": "公式サイトはフレームセット構成の古いサイト（Shift_JISエンコード、curlで生HTML取得し確認）。運営は淡路島牧場株式会社（淡路島牛乳株式会社の関連）。休園・閉園情報は確認されず、通常営業中とみられる。",
+  "_team": "N09"
+ },
+ {
+  "verdict": "include",
+  "name": "リキオファーム",
+  "kana": "りきおふぁーむ",
+  "pref": "奈良県",
+  "city": "磯城郡三宅町",
+  "type": "other",
+  "lat": 34.571651,
+  "lng": 135.773041,
+  "url": "https://www.rikiofarm.com/",
+  "sourceUrls": [
+   "https://www.rikiofarm.com/"
+  ],
+  "status": "open",
+  "lastVerifiedAt": "2026-07-15",
+  "proposedId": "nara_rikiofarm",
+  "coordSource": "公式サイトに住所記載なし（最寄駅『黒田駅』からの徒歩道順のみ掲載）。二次情報（ブログ『HUG NARA』http://hug-nara.jp/report/22840.html）記載の住所『奈良県磯城郡三宅町伴堂668-1』を国土地理院APIでジオコーディングした参考値であり未確定。",
+  "address": "",
+  "addressSourceUrl": "",
+  "adoptionBasis": "トカラヤギの常設飼育・餌やり体験を主目的とする常設の来場スポットで、公式サイトに『見学はご自由にできます』と明記され事前予約なしで一般来場可能なため、牧場・ふれあい施設として包含基準に該当する。",
+  "note": "公式サイト（Wix製）は住所を非公開。営業時間09:00〜17:00・不定休、来場は自由だが『ご用の際』は電話予約を案内。住所は二次情報間で不一致があり（HUG NARAブログ:伴堂668-1／別のWeb検索要約:伴堂881、後者は出典不明で信頼性低いため不採用）、一次情報で住所を確認できなかったためaddressは空欄とした。閉鎖・休業の情報は見つからず、現況は営業中とみられる。",
+  "_team": "N12"
+ },
+ {
+  "verdict": "hold",
+  "name": "ドルフィン・ベェイス",
+  "pref": "和歌山県",
+  "city": "太地町",
+  "adoptionBasis": "公式サイト（dolphinbase.co.jp）を精査した結果、常設プログラムは『ドルフィン・エンカウンター（ふれあいコース）』『ドルフィン・スイム（泳ぐコース）』の2種のみで、開催時間は1日3枠（10:00/13:00/14:30）、1回あたりの総参加人数は最大12名という完全事前予約制の体験アクティビティが核。予約フォームには『見学』の人数入力欄もあるが、FAQでは『見学』は妊婦などプログラム参加不可の同伴者向けの位置づけとして説明されており、一般来場者が単独で購入できる独立した観覧チケットとしては確認できなかった。一方、和歌山県の動物取扱業登録情報（第一種動物取扱業）では種別が『展示』として登録されており、法令上は展示業として扱われている。『動物展示』が来場の主目的か『ふれあい体験』が主目的かで包含基準の適用が分かれるため、施設に不利な確定をせず保留とする。",
+  "sourceUrls": [
+   "https://dolphinbase.co.jp/program/",
+   "https://dolphinbase.co.jp/q-and-a/",
+   "https://dolphinbase.co.jp/company/"
+  ],
+  "note": "会社概要ページ記載の動物取扱業登録：第一種動物取扱業の種別「展示」、登録番号04第-8011、事業所住所は和歌山県東牟婁郡太地町大字森浦686-17。2026年6月20日～7月7日は施設メンテナンスのため新規予約停止（既存予約者への対応は継続）、7月8日から新規予約受付を再開しており、7月分の予約状況表（curl取得の生HTMLで確認）には空き枠・満員枠が混在する形で更新されていた。ページ内に『ベェイスはただいま休園中なのです』という文言が複数ページに同一文言で残存しているが、コメントアウト（--&gt;）に囲まれた壊れたショートコード（[/st-minihukidashi]）の残骸とみられ、実際の予約状況表・メンテナンス告知（休止期間は7/7で終了）と矛盾するため、現況を示すものではないと判断した。候補台帳のfoundUrlsは公式サイトと太地町観光協会サイトで一致。",
+  "_team": "N13"
+ },
+ {
+  "verdict": "include",
+  "name": "ミニ動物園（ワンダーガーデン・ピッコロガーデン・どうぶつはぐはぐタウン）",
+  "kana": "みにどうぶつえん",
+  "pref": "大阪府",
+  "city": "枚方市",
+  "type": "zoo",
+  "lat": 34.808491,
+  "lng": 135.639572,
+  "url": "https://www.hirakatapark.co.jp/",
+  "sourceUrls": [
+   "https://www.keihan.co.jp/corporate/info/release/assets/241213_hirakata-park-2.pdf",
+   "https://ja.wikipedia.org/wiki/%E3%81%B2%E3%82%89%E3%81%8B%E3%81%9F%E3%83%91%E3%83%BC%E3%82%AF"
+  ],
+  "status": "closed",
+  "lastVerifiedAt": "2026-07-15",
+  "proposedId": "osaka_hirakatapark_minidoubutsuen",
+  "coordSource": "国土地理院APIで「大阪府枚方市枚方公園町1番1号」（ひらかたパーク住所）を検索し取得（番地一致）。",
+  "address": "大阪府枚方市枚方公園町1-1",
+  "addressSourceUrl": "https://www.keihan.co.jp/corporate/info/release/assets/241213_hirakata-park-2.pdf",
+  "adoptionBasis": "候補台帳の『ひらかたパーク動物ふれあいエリア（どうぶつハグハグタウン等）』は、ひらかたパーク内の常設『ミニ動物園』（ワンダーガーデン・ピッコロガーデン・どうぶつはぐはぐタウンの3エリア、約40種）を指す。営業当時は動物展示を主目的とする独立常設エリアとして包含基準に合致していたため include とし、2025年1月13日の閉園を京阪グループ公式リリースで確認したため包含基準『閉園確認済みはclosedとして記録を保持する』に従い status: closed で記録する。",
+  "note": "候補台帳のfoundUrls（/animal/wonder/、/animal/wakuwaku/）は2026年7月時点で内容が失われひらかたパークトップページへリダイレクトされる。京阪グループ公式リリース（2024年12月13日付）により『屋内型動物園わくわく動物村』（2007年開設『どうぶつハグハグたうん』の2023年リニューアル名）と『ワンダーガーデン』（1994年開設）が2025年1月13日をもって営業終了し、飼育動物は神戸どうぶつ王国など複数施設へ移送協議と確認。Wikipedia記載でも『ミニ動物園』（ワンダーガーデン・ピッコロガーデン・どうぶつはぐはぐタウンの総称）として2025年1月13日営業終了と一致。現行の公式サイト動物取扱業表示ページ・アトラクション一覧ページにも後継の動物ふれあい施設の記載はなく、後継施設なしで完全閉鎖と判断。プラネットアクア・ポート（本チームの別項目）とは料金体系・開業経緯とも無関係の別施設。",
+  "_team": "N07"
+ }
+]

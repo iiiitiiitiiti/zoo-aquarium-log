@@ -1,0 +1,55 @@
+[
+ {
+  "name": "渋川動物公園",
+  "pref": "岡山県",
+  "city": "玉野市",
+  "foundUrls": [
+   "https://www.shibukawazoo.com/",
+   "https://www.okayama-kanko.jp/spot/10624"
+  ],
+  "typeGuess": "zoo",
+  "note": "瀬戸内海国立公園内、約80種600頭羽の動物を展示する動物公園"
+ },
+ {
+  "name": "笠岡市立カブトガニ博物館",
+  "pref": "岡山県",
+  "city": "笠岡市",
+  "foundUrls": [
+   "https://www.city.kasaoka.okayama.jp/site/kabutogani/",
+   "https://ja.wikipedia.org/wiki/笠岡市立カブトガニ博物館"
+  ],
+  "typeGuess": "aquarium",
+  "note": "生きたカブトガニを水槽で常設展示する世界唯一のカブトガニ専門博物館"
+ },
+ {
+  "name": "おかやまフォレストパーク ドイツの森（動物ふれあい広場）",
+  "pref": "岡山県",
+  "city": "赤磐市",
+  "foundUrls": [
+   "https://www.farmpark.co.jp/doitsunomori/activity/touch-animal/"
+  ],
+  "typeGuess": "other",
+  "note": "農業公園内の常設ふれあい広場（ヤギ・ヒツジ・ウサギ・ポニー等）。園内入園料に含まれる"
+ },
+ {
+  "name": "わくわくふれあい昆虫・爬虫類館（ドイツの森内）",
+  "pref": "岡山県",
+  "city": "赤磐市",
+  "foundUrls": [
+   "https://www.farmpark.co.jp/doitsunomori/昆虫・爬虫類館open！/"
+  ],
+  "typeGuess": "other",
+  "note": "ドイツの森内だが入園料700円が別料金の独立施設。世界の昆虫・爬虫類を展示"
+ },
+ {
+  "name": "福山大学マリンバイオセンター水族館",
+  "pref": "広島県",
+  "city": "尾道市",
+  "foundUrls": [
+   "https://www.fukuyama-u.ac.jp/research/marine-bio-center/",
+   "https://kanko-innoshima.jp/sightseeing_leisure/suizokukan"
+  ],
+  "typeGuess": "aquarium",
+  "note": "大学附属だが平日一般公開されている無料水族館。既存マスタの東海大学海洋科学博物館（静岡県）と同種の大学附属水族館"
+ }
+]

@@ -1,0 +1,46 @@
+[
+ {
+  "name": "島のちいさな水族館（海洋自然博物館マリンジャム内）",
+  "pref": "徳島県",
+  "city": "海陽町",
+  "foundUrls": [
+   "https://marine.kaiyo-kankou.jp/index.php/aquarium2",
+   "https://www.awanavi.jp/archives/spot/1954"
+  ],
+  "typeGuess": "aquarium",
+  "note": "旧クマノミ館を2017年11月リニューアル。竹ヶ島周辺のサンゴ・クマノミ等とタッチプールを常設展示。"
+ },
+ {
+  "name": "モラスコむぎ（貝の資料館）",
+  "pref": "徳島県",
+  "city": "牟岐町",
+  "foundUrls": [
+   "https://www.mollusco-mugi.jp/",
+   "https://ja.wikipedia.org/wiki/モラスコむぎ"
+  ],
+  "typeGuess": "aquarium",
+  "note": "貝類資料館に2004年開設の「漁師さんの水族館」を併設。30基以上の水槽で地元産の魚介約80種を展示。"
+ },
+ {
+  "name": "日和佐うみがめ博物館カレッタ",
+  "pref": "徳島県",
+  "city": "美波町",
+  "foundUrls": [
+   "https://www.town.minami.lg.jp/docs/415.html",
+   "https://caretta.town.minami.lg.jp/"
+  ],
+  "typeGuess": "aquarium",
+  "note": "ウミガメ専門博物館。屋外プールで生体飼育・給餌あり。2023年6月に一旦閉館し2025年7月19日リニューアル再開館。"
+ },
+ {
+  "name": "レオマアニマルパーク（旧ニューレオマワールド動物園）",
+  "pref": "香川県",
+  "city": "丸亀市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/ニューレオマワールド",
+   "https://3910tv.com/reomaanimal/"
+  ],
+  "typeGuess": "zoo",
+  "note": "テーマパーク「ニューレオマワールド」に併設されていた動物園エリア。2010年6月25日閉鎖。次工程でclosed候補として要確認。"
+ }
+]
