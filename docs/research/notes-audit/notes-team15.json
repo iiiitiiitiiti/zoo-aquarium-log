@@ -1,0 +1,92 @@
+{
+  "team": "notes-team15",
+  "investigatedAt": "2026-07-15",
+  "results": [
+    {
+      "facilityId": "nagasaki_penguin_aquarium",
+      "name": "長崎ペンギン水族館",
+      "finding": "none",
+      "evidenceUrls": ["https://penguin-aqua.jp/faq/"],
+      "statusCheck": "consistent",
+      "memo": "公式FAQに「年中無休で開館」と明記。定期休館・長期休園情報は確認できず。2026年7月時点。"
+    },
+    {
+      "facilityId": "kumamoto_kumamoto_zoo",
+      "name": "熊本市動植物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.ezooko.jp/common/UploadFileDsp.aspx?c_id=40&id=727&sub_id=10&flid=40988",
+        "https://kumanichi.com/articles/1984746"
+      ],
+      "statusCheck": "consistent",
+      "memo": "サバンナエリア整備工事により、アフリカゾウ・マサイキリン等の一部エリアが2025年11月頃から2026年度末（2027年3月）まで観覧休止中。ただし2026年4月29日から一部再開され、動物園自体は通常営業を継続（休園ではない）。「園内一部施設のみの休止・全体は通常営業」の除外基準に該当するためnote対象外と判断。過去の地震復旧に伴う全体休園は既に解消済み。2026年7月時点。"
+    },
+    {
+      "facilityId": "oita_african_safari",
+      "name": "九州自然動物公園アフリカンサファリ",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://africansafari.co.jp/information/",
+        "https://africansafari.co.jp/news/%E5%B9%B4%E6%9C%AB%E5%B9%B4%E5%A7%8B%E3%81%AE%E5%96%B6%E6%A5%AD%E6%99%82%E9%96%93%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "年中無休（年末年始も営業）。11〜2月は営業時間が10:00〜15:30に短縮されるが、これは日々の営業時間変動であり休園日の増加ではないため対象外。工事・閉園予定の告知も確認できず。2026年7月時点。"
+    },
+    {
+      "facilityId": "oita_umitamago",
+      "name": "大分マリーンパレス水族館「うみたまご」",
+      "finding": "none",
+      "evidenceUrls": ["https://www.visit-oita.jp/news/detail/1195"],
+      "statusCheck": "consistent",
+      "memo": "施設保守点検のため毎年冬季（2026年は1月20日〜22日の3日間）に休館。連続3日以下の単発メンテナンス休館に該当するため記録対象外。2026年7月時点。"
+    },
+    {
+      "facilityId": "miyazaki_phoenix_zoo",
+      "name": "宮崎市フェニックス自然動物園",
+      "finding": "none",
+      "evidenceUrls": ["https://www.miyazaki-city-zoo.jp/user-guide/"],
+      "statusCheck": "consistent",
+      "memo": "定休日は毎週水曜（通常の定休日のため対象外）。12月31日休園。冬季の開園日大幅減や長期休園・工事予定の情報は確認できず。2026年7月時点。"
+    },
+    {
+      "facilityId": "kagoshima_ioworld_aquarium",
+      "name": "いおワールドかごしま水族館",
+      "finding": "none",
+      "evidenceUrls": ["https://ioworld.jp/information"],
+      "statusCheck": "consistent",
+      "memo": "毎年12月第1月曜日から4日間、施設点検のため定期休館。年1回・連続4日間であり、「連続5日間以上」または「4日程度が年複数回」のいずれの記録対象基準も満たさないため対象外と判断（境界事例）。2026年7月時点。"
+    },
+    {
+      "facilityId": "kagoshima_hirakawa_zoo",
+      "name": "鹿児島市平川動物公園",
+      "finding": "none",
+      "evidenceUrls": ["https://hirakawazoo.jp/news/", "https://hirakawazoo.jp/info/hours/"],
+      "statusCheck": "consistent",
+      "memo": "休園日は12月29日〜1月1日のみ。2026年7月時点でフライングケージ通行止め等の園内一部工事はあるが、動物展示全体は通常営業。大規模改修は2009〜2015年度に完了済みで、現在進行中の長期休園情報は確認できず。2026年7月時点。"
+    },
+    {
+      "facilityId": "okinawa_kodomo_no_kuni",
+      "name": "沖縄こどもの国",
+      "finding": "none",
+      "evidenceUrls": ["https://www.okzm.jp/fee/"],
+      "statusCheck": "consistent",
+      "memo": "定休日は毎週火曜（祝日の場合は翌日）と12月30日〜1月1日。台風接近時の臨時休園もあるが、いずれも記録対象外の条件に該当。長期休園・改装予定の情報は確認できず。2026年7月時点。"
+    },
+    {
+      "facilityId": "okinawa_neopark",
+      "name": "ネオパークオキナワ",
+      "finding": "none",
+      "evidenceUrls": ["https://www.neopark.co.jp/"],
+      "statusCheck": "consistent",
+      "memo": "公式サイトに「年中無休」と明記。定期休園・季節営業・長期休園の情報は確認できず。2026年7月時点。"
+    },
+    {
+      "facilityId": "okinawa_churaumi_aquarium",
+      "name": "沖縄美ら海水族館",
+      "finding": "none",
+      "evidenceUrls": ["https://churaumi.okinawa/guide/hour/"],
+      "statusCheck": "consistent",
+      "memo": "公式サイトに「2027年3月31日まで休館の予定はございません（台風等による臨時休館を除く）」と明記。新水族館構想・大規模改修の報道は確認できず、2026年3月に深海の部屋を改装した程度（館全体は通常営業）。2026年7月時点。"
+    }
+  ]
+}
