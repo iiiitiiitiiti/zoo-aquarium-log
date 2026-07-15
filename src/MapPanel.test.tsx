@@ -87,6 +87,13 @@ describe("MapPanel", () => {
     expect(leafletMocks.map.setView).toHaveBeenCalledWith([36.5, 137.5], 5);
   });
 
+  it("focuses the requested facility and opens its popup", () => {
+    render(<MapPanel shown={facilities} visitedIds={new Set()} marks={{}} focusedFacilityId="tokyo-zoo" onBack={vi.fn()} onSelectFacility={vi.fn()} />);
+
+    expect(leafletMocks.map.setView).toHaveBeenCalledWith([35.716, 139.771], 12);
+    expect(leafletMocks.marker.openPopup).toHaveBeenCalled();
+  });
+
   it("calls onBack from the header button", () => {
     const onBack = vi.fn();
     render(<MapPanel shown={facilities} visitedIds={new Set()} marks={{}} onBack={onBack} onSelectFacility={vi.fn()} />);

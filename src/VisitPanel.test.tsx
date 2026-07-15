@@ -61,6 +61,16 @@ const existingVisit = {
 const customFacility = { ...facility, id: "custom_facility" };
 
 describe("VisitPanel", () => {
+  it("施設詳細から地図表示を依頼できる", async () => {
+    const user = userEvent.setup();
+    const onShowOnMap = vi.fn();
+    render(<VisitPanel facility={facility} store={new FakeVisitStore()} visits={[]} onBack={() => undefined} onShowOnMap={onShowOnMap} />);
+
+    await user.click(screen.getByRole("button", { name: "地図で場所を見る" }));
+
+    expect(onShowOnMap).toHaveBeenCalledOnce();
+  });
+
   it("訪問日・評価・メモを新規保存できる", async () => {
     const user = userEvent.setup();
     const store = new FakeVisitStore();

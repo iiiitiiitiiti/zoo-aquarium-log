@@ -9,11 +9,13 @@ import type { MarkStore } from "./marks";
 import type { Visit, VisitStore } from "./visits";
 
 vi.mock("./MapPanel", () => ({
-  default: ({ shown, onBack }: { shown: { id: string; name: string }[]; onBack: () => void }) => (
+  default: ({ shown, focusedFacilityId, onBack, onSelectFacility }: { shown: { id: string; name: string }[]; focusedFacilityId?: string; onBack: () => void; onSelectFacility: (facility: { id: string; name: string }) => void }) => (
     <main>
       <h1>施設マップ</h1>
       <p>{shown.length}施設を表示</p>
       {shown.map((facility) => <span key={facility.id}>{facility.name}</span>)}
+      <p data-testid="map-focus">{focusedFacilityId}</p>
+      {shown[0] && <button type="button" onClick={() => onSelectFacility(shown[0])}>詳細を見る</button>}
       <button type="button" onClick={onBack}>← 施設一覧</button>
     </main>
   ),
@@ -321,5 +323,22 @@ describe("App",()=>{
    expect(screen.getByText("恩賜上野動物園")).toBeInTheDocument();
    await user.click(screen.getByRole("button",{name:"← 施設一覧"}));
    expect(screen.getByText("1施設が該当")).toBeInTheDocument();
+  });
+  it("returns to the map in one tap after opening a detail from a map popup",async()=>{
+   const user=userEvent.setup();
+   render(<App visitStore={visitStore} />);
+   await user.click(screen.getByRole("button",{name:"地図で見る"}));
+   await user.click(screen.getByRole("button",{name:"詳細を見る"}));
+   expect(screen.getByRole("button",{name:"← 地図に戻る"})).toBeInTheDocument();
+   await user.click(screen.getByRole("button",{name:"← 地図に戻る"}));
+   expect(screen.getByRole("heading",{name:"施設マップ"})).toBeInTheDocument();
+  });
+  it("opens the focused facility on the map from its detail page",async()=>{
+   const user=userEvent.setup();
+   render(<App visitStore={visitStore} />);
+   await user.click(screen.getByRole("link",{name:/札幌市円山動物園/}));
+   await user.click(screen.getByRole("button",{name:"地図で場所を見る"}));
+   expect(screen.getByRole("heading",{name:"施設マップ"})).toBeInTheDocument();
+   expect(screen.getByTestId("map-focus")).toHaveTextContent("hokkaido_maruyama_zoo");
   });
 });
