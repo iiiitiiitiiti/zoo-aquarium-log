@@ -1,0 +1,119 @@
+{
+  "team": "notes-team03",
+  "investigatedAt": "2026-07-15",
+  "results": [
+    {
+      "facilityId": "ibaraki_oarai_aquarium",
+      "name": "アクアワールド茨城県大洗水族館",
+      "finding": "note",
+      "proposedNote": "例年6月・12月に館内メンテナンスのため数日間休館する（2026年は6月23日～24日の2日間、公式発表済み）。12月は例年5日程度休館する慣例があり、2025年は12月1日～5日が休館だった。年末年始は無休で営業。2026年7月時点。",
+      "evidenceUrls": [
+        "https://www.aquaworld-oarai.com/2026/05/22/news-49/",
+        "https://guide.turezurenaru-zakki.com/aquaworld-oarai-nenmatsunenshi/",
+        "https://www.aquaworld-oarai.com/cms/wp-content/uploads/2022/10/86360ee72a3eab83c847a3e997e3e763.pdf"
+      ],
+      "statusCheck": "consistent",
+      "memo": "2026年12月の具体的な休館日は検索結果で情報源により日付が一致せず(2日～12日、7日～11日等の異なる記載)確認できなかったため、noteには含めていない。6月分の日程のみ公式ニュース記事で確認済み。"
+    },
+    {
+      "facilityId": "ibaraki_kamine_zoo",
+      "name": "日立市かみね動物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.city.hitachi.lg.jp/faq/kanko_bunka_koryu/1006761/1006762.html",
+        "https://www.city.hitachi.lg.jp/zoo/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "休園日は毎週月曜（祝日の場合は翌日）のみで、春休み・GW・夏休みは休園なしと案内されている。猛獣舎「がおーこく」やはちゅウるい館は既に開業済みで、現在進行中の長期休園・改装告知は見当たらなかった。"
+    },
+    {
+      "facilityId": "tochigi_utsunomiya_zoo",
+      "name": "宇都宮動物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://utsunomiya-zoo.com/",
+        "https://x.com/utsunomiya_zoo/status/2046063806800089474"
+      ],
+      "statusCheck": "consistent",
+      "memo": "公式X（旧Twitter）で「なかよしらんど」エリアの飼育環境整備・リニューアルについての言及があったが、休園を伴う具体的な期間の告知は確認できなかった。遊園地のり放題チケットの一時販売停止（2026年7-8月）との情報も検索で見かけたが一次情報で裏取りできず、記録は見送った。"
+    },
+    {
+      "facilityId": "tochigi_nakagawa_aquarium",
+      "name": "栃木県なかがわ水遊園",
+      "finding": "note",
+      "proposedNote": "毎週月曜（祝日の場合は翌日）・毎月第4木曜の定休とは別に、例年1月第4週の月曜～金曜（5日間）に設備点検のため休園する（次回は2027年1月25日～29日）。ゴールデンウィーク・夏季・年末年始は無休で営業。2026年7月時点。",
+      "evidenceUrls": [
+        "https://tnap.jp/park/userguide.php"
+      ],
+      "statusCheck": "consistent",
+      "memo": "公式利用案内ページに具体的日程の記載があるが、過去年度の同時期休園を報じる個別記事は見つけられず、単年度分の記載での確認となった。"
+    },
+    {
+      "facilityId": "tochigi_nasu_animal_kingdom",
+      "name": "那須どうぶつ王国",
+      "finding": "note",
+      "proposedNote": "冬季（例年12月中旬～3月上旬、2025-26シーズンは2025年12月19日～2026年3月9日）は「王国タウン」エリアのみの営業となり、「王国ファーム」エリアは休業する。あわせて休園日も増え、冬季期間中は火・水・木曜が休園となる（通常期は水曜のみ定休）。2026年7月時点。",
+      "evidenceUrls": [
+        "https://nasu-oukoku.com/topics/information/20251202_13042/",
+        "https://nasu-oukoku.com/?page_id=334"
+      ],
+      "statusCheck": "consistent",
+      "memo": "公式サイト(nasu-oukoku.com)は今回WebFetchで直接取得できず(404が返る)、検索エンジンの索引結果を通じて公式ページのタイトル・内容を確認する形になった。可能であれば別途公式サイトでの目視確認を推奨する。"
+    },
+    {
+      "facilityId": "tochigi_nasu_safari_park",
+      "name": "那須サファリパーク",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.nasusafari.com/guide/",
+        "https://www.nasusafari.com/faq/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "年中無休と案内されており、冬季（12～2月）も営業時間短縮（9:30～16:30）のみで休園には至らない。長期休園・改装告知は見当たらなかった。"
+    },
+    {
+      "facilityId": "gunma_kiryugaoka_zoo",
+      "name": "桐生が岡動物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.city.kiryu.lg.jp/zoo/",
+        "https://www.city.kiryu.lg.jp/shisetsu/kouen/1005243.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "動物園自体は無休。隣接する「アースケア桐生が岡遊園地」は火曜定休だが、これは動物園と別施設・別休園日のため記録対象外と判断した。桐生市公式サイトの休園日一覧ページで日付が羅列されていたが、遊園地側の毎週火曜定休と符合しており動物園固有の長期休園情報ではないと判断した。"
+    },
+    {
+      "facilityId": "gunma_safari_park",
+      "name": "群馬サファリパーク",
+      "finding": "note",
+      "proposedNote": "サファリゾーンのマイカー・バスツアー等の主要営業は通常通りだが、園内の遊園地エリア（観覧車等の乗り物）は老朽化・安全面の懸念により休止中で、再開時期は未定（2023年7月頃から休止が継続）。2026年7月時点。",
+      "evidenceUrls": [
+        "https://safari.co.jp/news/4475/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "休止しているのは遊園地エリア（乗り物）のみで、サファリパーク本体（動物エリア・バスツアー等）の営業には影響していない。施設全体の休園ではないため、記録の要否は編集判断に委ねる。"
+    },
+    {
+      "facilityId": "saitama_omiya_zoo",
+      "name": "大宮公園小動物園",
+      "finding": "note",
+      "proposedNote": "2026年6月19日発生の原因不明の断水により、公園内のトイレ・水道および園内の一部水道が使用不能となり臨時休園中。公式サイトでは「開園の目途が立っていない」とされ、2026年7月15日時点でも再開告知は確認できず、休園が1か月近く継続している。2026年7月時点。",
+      "evidenceUrls": [
+        "https://www.parks.or.jp/omiyazoo/guide/008/008996.html",
+        "https://www.parks.or.jp/omiyazoo/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "現status「suspended」は実態と一致している。再開を示す新しいお知らせ記事は検索でも見つからず、断水の原因（配管破損等）についての詳細は公式発表に記載がなかった。"
+    },
+    {
+      "facilityId": "saitama_osaki_zoo",
+      "name": "大崎公園子供動物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.city.saitama.lg.jp/004/001/003/001/p002130.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "月曜定休（祝日の場合翌日）以外の長期休園・改装・閉園予定の告知は見当たらなかった。"
+    }
+  ]
+}
