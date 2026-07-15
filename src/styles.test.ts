@@ -1,7 +1,15 @@
 import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 
-const styles = readFileSync("src/styles.css", "utf8");
+// styles.css は可読性のため整形済み。既存の期待文字列（圧縮形式）と
+// 比較できるよう、コメント除去と空白圧縮で最小化してから検証する
+const styles = readFileSync("src/styles.css", "utf8")
+  .replace(/\/\*[\s\S]*?\*\//g, "")
+  .replace(/\s+/g, " ")
+  .replace(/\s*([{};,])\s*/g, "$1")
+  .replace(/: /g, ":")
+  .replace(/;}/g, "}")
+  .replace(/@media \(/g, "@media(");
 
 describe("responsive styles", () => {
   it("uses the approved local habitat photos", () => {
@@ -36,7 +44,7 @@ describe("responsive styles", () => {
     );
   });
   it("changes facility card background on hover", () => {
-    expect(styles).toMatch(/\.facility-card\{[^}]*transition:background-color \.2s ease/);
+    expect(styles).toMatch(/\.facility-card\{[^}]*transition:background-color 0\.2s ease/);
     expect(styles).toContain("@media(hover:hover) and (pointer:fine){.facility-card:hover{background:#eaf5ef}}");
     expect(styles).not.toMatch(/(^|\})\.facility-card:hover\{background:#eaf5ef\}/);
     expect(styles).toContain("@media(prefers-reduced-motion:reduce){.controls-body{transition:none}.facility-card{transition:none}}");
@@ -44,7 +52,7 @@ describe("responsive styles", () => {
 
   it("keeps visit date and rating controls side by side on narrow screens", () => {
     expect(styles).toContain(
-      ".form-row{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:10px}",
+      ".form-row{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,0.8fr);gap:10px}",
     );
     expect(styles).toMatch(/\.visit-form input,\.visit-form select,\.visit-form textarea\{[^}]*min-width:0/);
     expect(styles).toContain(".form-row label{min-width:0}");
@@ -52,14 +60,14 @@ describe("responsive styles", () => {
 
   it("keeps iOS native date and select controls inside their columns", () => {
     expect(styles).toContain(
-      "@supports (-webkit-touch-callout:none){.visit-form input[type=date],.visit-form select{-webkit-appearance:none;appearance:none;max-width:100%}",
+      '@supports (-webkit-touch-callout:none){.visit-form input[type="date"],.visit-form select{-webkit-appearance:none;appearance:none;max-width:100%}',
     );
   });
 
   it("left-aligns the visit date text on iOS", () => {
-    expect(styles).toContain(".visit-form input[type=date]{text-align:left}");
+    expect(styles).toContain('.visit-form input[type="date"]{text-align:left}');
     expect(styles).toContain(
-      ".visit-form input[type=date]::-webkit-date-and-time-value{text-align:left}",
+      '.visit-form input[type="date"]::-webkit-date-and-time-value{text-align:left}',
     );
   });
 
@@ -75,7 +83,7 @@ describe("responsive styles", () => {
 
   it("styles the filter reset button", () => {
     expect(styles).toContain(".filter-reset{width:100%;margin-top:16px;");
-    expect(styles).toContain(".filter-reset:disabled{cursor:not-allowed;opacity:.45}");
+    expect(styles).toContain(".filter-reset:disabled{cursor:not-allowed;opacity:0.45}");
   });
 
   it("makes selected mark toggles visually obvious", () => {
@@ -91,7 +99,7 @@ describe("responsive styles", () => {
     expect(styles).toContain('.controls.is-open .controls-summary:after,.quick-actions.is-open .quick-actions-summary:after{content:"−"}');
     expect(styles).toContain(".quick-actions-body{max-height:0;opacity:0;");
     expect(styles).toContain(".quick-actions.is-open .quick-actions-body{max-height:220px;opacity:1;");
-    expect(styles).toContain(".quick-action:disabled{cursor:not-allowed;opacity:.45}");
+    expect(styles).toContain(".quick-action:disabled{cursor:not-allowed;opacity:0.45}");
   });
 
   it("gives controls, quick actions, and facility cards the same radius", () => {
@@ -101,7 +109,7 @@ describe("responsive styles", () => {
   });
 
   it("hovers the collapsed accordions like facility cards on pointer devices", () => {
-    expect(styles).toContain(".controls-summary,.quick-actions-summary{transition:background-color .2s ease}");
+    expect(styles).toContain(".controls-summary,.quick-actions-summary{transition:background-color 0.2s ease}");
     expect(styles).toContain("@media(hover:hover) and (pointer:fine){.controls:not(.is-open) .controls-summary:hover,.quick-actions:not(.is-open) .quick-actions-summary:hover{background:#eaf5ef}}");
     expect(styles).toContain("@media(prefers-reduced-motion:reduce){.controls-summary,.quick-actions-summary{transition:none}}");
   });
