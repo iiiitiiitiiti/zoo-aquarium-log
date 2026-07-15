@@ -1,0 +1,56 @@
+[
+ {
+  "name": "ふれあい動物園ピクニカ共和国",
+  "pref": "福岡県",
+  "city": "飯塚市",
+  "foundUrls": [
+   "https://piknica.com/",
+   "https://www.jalan.net/kankou/spt_40205cc3540153642/"
+  ],
+  "typeGuess": "zoo",
+  "note": "八木山高原の固定施設。移動動物園業務も兼業だが常設園あり"
+ },
+ {
+  "name": "りんちゃん牧場ふれあいパーク",
+  "pref": "佐賀県",
+  "city": "伊万里市",
+  "foundUrls": [
+   "https://rinboku.jp/",
+   "https://imari-kankou.com/enjoy/%E3%82%8A%E3%82%93%E3%81%A1%E3%82%83%E3%82%93%E7%89%A7%E5%A0%B4-%E3%81%B5%E3%82%8C%E3%81%82%E3%81%84%E3%83%91%E3%83%BC%E3%82%AF/"
+  ],
+  "typeGuess": "zoo",
+  "note": "2021年開園、家族経営の『日本一小さい動物園』を自称。約40種60頭"
+ },
+ {
+  "name": "三瀬ルベール牧場どんぐり村",
+  "pref": "佐賀県",
+  "city": "佐賀市",
+  "foundUrls": [
+   "https://www.dongurimura.com/",
+   "https://www.sagabai.com/main/?cont=kanko&fid=75"
+  ],
+  "typeGuess": "other",
+  "note": "フランス風観光牧場。山羊とふれあえる動物館、小動物館、ふれあい広場あり。乗馬体験は2025年11月で終了予定"
+ },
+ {
+  "name": "神野公園こども遊園地小動物園",
+  "pref": "佐賀県",
+  "city": "佐賀市",
+  "foundUrls": [
+   "https://kouno.haut.jp/",
+   "https://www.city.saga.lg.jp/main/900.html"
+  ],
+  "typeGuess": "zoo",
+  "note": "こども遊園地内の小動物園。鳥類・ウサギ等飼育。園リニューアルで一部動物は専門施設へ移動済み"
+ },
+ {
+  "name": "どさんこミラファーム",
+  "pref": "佐賀県",
+  "city": "唐津市",
+  "foundUrls": [
+   "https://dosanko-mirafarm.net/"
+  ],
+  "typeGuess": "other",
+  "note": "馬に乗れる動物ふれあい牧場、古民家民宿併設"
+ }
+]

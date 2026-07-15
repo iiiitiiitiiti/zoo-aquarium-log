@@ -1,0 +1,57 @@
+[
+ {
+  "name": "大山まきばみるくの里",
+  "pref": "鳥取県",
+  "city": "伯耆町",
+  "foundUrls": [
+   "https://www.houki-town.jp/new2/5/8/10/",
+   "https://www.yonago-navi.jp/yonago/outskirts/daisen/sightseeing/mirukunosato/"
+  ],
+  "typeGuess": "other",
+  "note": "ヤギ・ヒツジ・ウサギとのふれあい広場あり"
+ },
+ {
+  "name": "打吹公園小動物園",
+  "pref": "鳥取県",
+  "city": "倉吉市",
+  "foundUrls": [
+   "https://www.city.kurayoshi.lg.jp/3030.htm",
+   "https://tottorizumu.com/utsubuki-park2023/"
+  ],
+  "typeGuess": "zoo",
+  "note": "ニホンザル・インドクジャク・トカラヤギ等を展示する公園内小動物園"
+ },
+ {
+  "name": "大山トム・ソーヤ牧場",
+  "pref": "鳥取県",
+  "city": "米子市",
+  "foundUrls": [
+   "http://tom.sanin.jp/ja/facility/s956/",
+   "https://na-na.media/daisen_tomsawyer/"
+  ],
+  "typeGuess": "other",
+  "note": "アルパカ・カピバラのふれあい広場が主目的の観光牧場"
+ },
+ {
+  "name": "湊山公園（猿が島）",
+  "pref": "鳥取県",
+  "city": "米子市",
+  "foundUrls": [
+   "https://www.city.yonago.lg.jp/44606.htm",
+   "https://www.city.yonago.lg.jp/1240.htm"
+  ],
+  "typeGuess": "zoo",
+  "note": "ニホンザルを飼育展示する公園内施設。2026年に飼育数不整合・脱走等の管理問題が報道されているが施設自体は現存"
+ },
+ {
+  "name": "真教寺公園",
+  "pref": "鳥取県",
+  "city": "鳥取市",
+  "foundUrls": [
+   "https://www.torican.jp/spot/detail_1166.html",
+   "https://tottorizumu.com/animal-spot/"
+  ],
+  "typeGuess": "zoo",
+  "note": "ニホンザル・ミーアキャット・フクロウなど20種100匹以上を無料展示する市中心部の公園動物園。既存マスタの大宮公園小動物園等と同種"
+ }
+]

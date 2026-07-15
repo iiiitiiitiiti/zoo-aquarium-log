@@ -1,0 +1,46 @@
+[
+ {
+  "name": "野間馬ハイランド（のまうまハイランド）",
+  "pref": "愛媛県",
+  "city": "今治市",
+  "foundUrls": [
+   "http://www.imabari-nomauma.jp/",
+   "https://www.iyokannet.jp/spot/220"
+  ],
+  "typeGuess": "other",
+  "note": "日本最小の在来馬「野間馬」の保存・放牧・ふれあい施設。小動物ふれあい広場も併設。営業中。"
+ },
+ {
+  "name": "四万十川学遊館あきついお（トンボ自然公園）",
+  "pref": "高知県",
+  "city": "四万十市",
+  "foundUrls": [
+   "https://gakuyukan.com/",
+   "https://www.shimanto-kankou.com/kanko/natural-park/akituio.html"
+  ],
+  "typeGuess": "both",
+  "note": "トンボ館（標本約1,000種）と魚館（四万十川の淡水・汽水魚約300種、アカメ等）を併設する複合展示施設。営業中。"
+ },
+ {
+  "name": "高知県立足摺海洋館 SATOUMI",
+  "pref": "高知県",
+  "city": "土佐清水市",
+  "foundUrls": [
+   "https://www.city.tosashimizu.kochi.jp/kanko/g01_kaiyokan.html",
+   "https://ja.wikipedia.org/wiki/高知県立足摺海洋館"
+  ],
+  "typeGuess": "aquarium",
+  "note": "1975年開館、2020年7月18日リニューアルオープンの県立水族館。約350種15,000点を展示。営業中。"
+ },
+ {
+  "name": "室戸ドルフィンセンター",
+  "pref": "高知県",
+  "city": "室戸市",
+  "foundUrls": [
+   "https://www.muroto-dc.net/",
+   "https://www.city.muroto.kochi.jp/pages/page0294.php"
+  ],
+  "typeGuess": "aquarium",
+  "note": "室戸岬の海面イケスでイルカとのふれあい・触れ合いプログラムを提供する施設。営業中。"
+ }
+]

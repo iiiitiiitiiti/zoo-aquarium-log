@@ -1,0 +1,46 @@
+[
+ {
+  "name": "亀山公園動物園（亀山公園こどもの国）",
+  "pref": "香川県",
+  "city": "丸亀市",
+  "foundUrls": [
+   "https://www.marugame2.jp/matome/7664"
+  ],
+  "typeGuess": "zoo",
+  "note": "丸亀城内の亀山公園遊園地（こどもの国）に併設されていた小動物園。1964年開園、2007年11月25日閉園。次工程でclosed候補として要確認。名称・存在の一次資料未確認のため詳細は要検証。"
+ },
+ {
+  "name": "銚子渓自然動物園 お猿の国",
+  "pref": "香川県",
+  "city": "小豆郡土庄町",
+  "foundUrls": [
+   "http://www.osaru-no-kuni.sakura.ne.jp/",
+   "https://www.town.tonosho.kagawa.jp/kanko/sightseeing/580.html",
+   "https://news.ksb.co.jp/article/16560189"
+  ],
+  "typeGuess": "zoo",
+  "note": "小豆島の野生ニホンザル餌付け施設。2025年8月から人手不足で休園中、再開時期未定（次工程でsuspended候補として要確認）。"
+ },
+ {
+  "name": "しろとり動物園",
+  "pref": "香川県",
+  "city": "東かがわ市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/しろとり動物園",
+   "https://higashikagawa.net/sightseeing/shirotori-zoo"
+  ],
+  "typeGuess": "zoo",
+  "note": "1985年開園の私営ふれあい動物園。約70種150頭を展示、ホワイトタイガーが看板動物。営業中。"
+ },
+ {
+  "name": "栗林公園動物園",
+  "pref": "香川県",
+  "city": "高松市",
+  "foundUrls": [
+   "https://news.ksb.co.jp/article/15166610",
+   "https://crd.ndl.go.jp/reference/entry/index.php?id=1000159841&page=ref_view"
+  ],
+  "typeGuess": "zoo",
+  "note": "1930年開園、栗林公園内の動物園。2002年休園、2004年3月施設撤去完了。次工程でclosed候補として要確認。"
+ }
+]

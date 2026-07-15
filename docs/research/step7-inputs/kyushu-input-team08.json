@@ -1,0 +1,52 @@
+[
+ {
+  "name": "高千穂峡淡水魚水族館",
+  "pref": "宮崎県",
+  "city": "西臼杵郡高千穂町",
+  "foundUrls": [
+   "https://takachiho-kanko.info/sightseeing/11/"
+  ],
+  "typeGuess": "aquarium",
+  "note": "五ヶ瀬川水系の淡水魚中心、約80種展示"
+ },
+ {
+  "name": "奄美海洋展示館",
+  "pref": "鹿児島県",
+  "city": "奄美市(奄美大島)",
+  "foundUrls": [
+   "https://www.city.amami.lg.jp/kanko/shisetsu/kyoiku/003.html"
+  ],
+  "typeGuess": "aquarium",
+  "note": "大浜海浜公園内の水族館。離島(奄美大島)"
+ },
+ {
+  "name": "長崎鼻パーキングガーデン",
+  "pref": "鹿児島県",
+  "city": "指宿市",
+  "foundUrls": [
+   "http://nagasakibana.com/"
+  ],
+  "typeGuess": "zoo",
+  "note": "薩摩半島最南端。亜熱帯植物園+放し飼いの原猿・鳥類等の動植物園、開園50年"
+ },
+ {
+  "name": "鹿屋市小動物園(鹿屋中央公園)",
+  "pref": "鹿児島県",
+  "city": "鹿屋市",
+  "foundUrls": [
+   "https://www.city.kanoya.lg.jp/mobile/kouhou/shisetsu/kanko/012.html"
+  ],
+  "typeGuess": "zoo",
+  "note": "大隅半島唯一の動物園。1977年開設、ウサギ・モルモット・ヤギ・クジャク等"
+ },
+ {
+  "name": "おきなわワールドハブ博物公園",
+  "pref": "沖縄県",
+  "city": "南城市",
+  "foundUrls": [
+   "https://www.gyokusendo.co.jp/okinawaworld/"
+  ],
+  "typeGuess": "other",
+  "note": "観光複合施設おきなわワールド内の独立したハブ展示・ショーエリア(爬虫類館相当)"
+ }
+]

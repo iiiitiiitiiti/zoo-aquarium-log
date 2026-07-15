@@ -1,0 +1,52 @@
+[
+ {
+  "name": "くじゅう自然動物園",
+  "pref": "大分県",
+  "city": "玖珠郡九重町",
+  "foundUrls": [
+   "https://www.oita-zoo.com/"
+  ],
+  "typeGuess": "zoo",
+  "note": "放し飼いの鹿・ヤギ・ラマ・ポニー等と散歩できる小規模私営動物園"
+ },
+ {
+  "name": "志布志湾大黒イルカランド",
+  "pref": "宮崎県",
+  "city": "串間市",
+  "foundUrls": [
+   "http://irukaland.com/"
+  ],
+  "typeGuess": "other",
+  "note": "イルカふれあい体験型テーマパーク。所在地は宮崎県串間市(志布志湾に面する)"
+ },
+ {
+  "name": "串間いちご畑ゆめ牧場",
+  "pref": "宮崎県",
+  "city": "串間市",
+  "foundUrls": [
+   "https://pandanocoto.com/article/zoo/zoo-kushima"
+  ],
+  "typeGuess": "other",
+  "note": "イチゴ狩り等と併設のヤギ・ヒツジふれあい牧場"
+ },
+ {
+  "name": "出の山淡水魚水族館",
+  "pref": "宮崎県",
+  "city": "小林市",
+  "foundUrls": [
+   "https://www.city.kobayashi.lg.jp/soshikikarasagasu/keizaibushokokankoka/kankojoho/6/1235.html"
+  ],
+  "typeGuess": "aquarium",
+  "note": "出の山公園内。チョウザメ・オオサンショウウオ等100種1500匹"
+ },
+ {
+  "name": "すみえファミリー水族館",
+  "pref": "宮崎県",
+  "city": "延岡市",
+  "foundUrls": [
+   "https://sp.jorudan.co.jp/zoo_aqua/miyazaki.html"
+  ],
+  "typeGuess": "aquarium",
+  "note": "須美江家族旅行村内の小規模水族館"
+ }
+]

@@ -1,0 +1,52 @@
+[
+ {
+  "name": "四季の里旭志(SHIKINOSATO ZOO)",
+  "pref": "熊本県",
+  "city": "菊池市",
+  "foundUrls": [
+   "https://www.shikinosato.info/zoo"
+  ],
+  "typeGuess": "zoo",
+  "note": "アクティブツーリズム複合施設内のふれあい動物広場"
+ },
+ {
+  "name": "阿蘇カドリー・ドミニオン",
+  "pref": "熊本県",
+  "city": "阿蘇市",
+  "foundUrls": [
+   "https://www.cuddly.co.jp/"
+  ],
+  "typeGuess": "zoo",
+  "note": "クマをメインに扱う体験型動物園。60種350頭"
+ },
+ {
+  "name": "阿蘇ファームランドふれあい動物王国",
+  "pref": "熊本県",
+  "city": "阿蘇郡南阿蘇村",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%8B%95%E7%89%A9%E5%9C%92%E4%B8%80%E8%A6%A7"
+  ],
+  "typeGuess": "zoo",
+  "note": "阿蘇ファームランド内の常設ふれあい動物エリア"
+ },
+ {
+  "name": "阿蘇ミルク牧場(らくのうマザーズ)",
+  "pref": "熊本県",
+  "city": "阿蘇郡西原村",
+  "foundUrls": [
+   "https://aso-milk.jp/"
+  ],
+  "typeGuess": "other",
+  "note": "酪農体験型牧場。動物ふれあい広場(牛・馬・ヤギ・羊)あり"
+ },
+ {
+  "name": "南阿蘇ふれあい動物園フェアリーテール",
+  "pref": "熊本県",
+  "city": "阿蘇郡高森町",
+  "foundUrls": [
+   "https://fairytale-zoo.com/"
+  ],
+  "typeGuess": "zoo",
+  "note": "旧牛舎跡地を利用したふれあい動物園。約25種200頭"
+ }
+]
