@@ -1,0 +1,116 @@
+{
+  "team": "notes-team11",
+  "investigatedAt": "2026-07-15",
+  "results": [
+    {
+      "facilityId": "osaka_tennoji_zoo",
+      "name": "天王寺動物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.tennojizoo.jp/info/outline/",
+        "https://tennoji-ku.goguynet.jp/2026/03/10/zoo-3/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "定休日は月曜（祝日等の場合は翌平日、春休み・GW・お盆・年始は開園）で毎週の定例休園に該当し記録対象外。新獣舎の引き渡し・安全確認のため2026年3月11日に単発の臨時休園があったが連続1日のみで記録対象外。長期休園・閉園予定の告知は確認できず。2026年7月時点。"
+    },
+    {
+      "facilityId": "osaka_nifrel",
+      "name": "生きているミュージアム ニフレル",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.nifrel.jp/guide/open.html",
+        "https://www.nifrel.jp/detail/matome/2025/02/post-1018.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "年中無休。年1回、設備定期点検のための臨時休館があるが例年1〜2日間（直近例は2025年1月28-29日）で連続3日以下のため記録対象外。長期休館・閉館予定の告知は確認できず。2026年7月時点。"
+    },
+    {
+      "facilityId": "hyogo_oji_zoo",
+      "name": "神戸市立王子動物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.kobe-ojizoo.jp/renewal.html",
+        "https://www.city.kobe.lg.jp/a76835/ojikoensaiseibi.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "公式発表を確認：王子公園再整備の一環で2024年秋頃からリニューアル工事に着手し2030年度頃まで継続予定だが、公式サイトに『休園期間はなく、開園しながら工事を行う。工事で一部の獣舎・施設が利用できなくなる場合がある』と明記されている。全体休園を伴わない一部施設のみの休止のため記録対象外。2026年7月時点で全体休園の予定なし。"
+    },
+    {
+      "facilityId": "hyogo_kobe_animal_kingdom",
+      "name": "神戸どうぶつ王国",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.kobe-oukoku.com/information/calendar"
+      ],
+      "statusCheck": "consistent",
+      "memo": "定休日は毎週木曜（祝日・春休み・GW・夏休み・年末年始は除く）で毎週の定例休園に該当し記録対象外。長期休園・閉園予定の告知は確認できず。2026年7月時点。"
+    },
+    {
+      "facilityId": "hyogo_kobe_suma_seaworld",
+      "name": "神戸須磨シーワールド",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.kobesuma-seaworld.jp/guide/time/",
+        "https://www.kobesuma-seaworld.jp/news/8362/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "水族館休館日は月1日程度の散発的な単発メンテナンス休館（例: 2026年4月14日、5月14日、6月10日、12月16-17日は2日連続）で、いずれも連続3日以下のため記録対象外。長期休館・閉館予定の告知は確認できず。2026年7月時点。"
+    },
+    {
+      "facilityId": "hyogo_atoa",
+      "name": "átoa",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://atoa-kobe.jp/information/",
+        "https://atoa-kobe.jp/news/archive/2025/807.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "年中無休が基本。設備点検のため2026年6月30日〜7月2日の3日間休館予定だが連続3日以下のため記録対象外。同時期に2階ELEMENTSゾーンが6月29日〜7月10日まで改装休止予定だが、館全体ではなく一部エリアのみの休止（水族館本体は通常営業）のため記録対象外。長期休館・閉館予定の告知は確認できず。2026年7月時点。"
+    },
+    {
+      "facilityId": "hyogo_kinosaki_marine_world",
+      "name": "城崎マリンワールド",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://marineworld.hiyoriyama.co.jp/",
+        "https://marineworld.hiyoriyama.co.jp/城崎マリンワールドがリニューアルopen.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "年中無休。2025年2月26日〜7月中旬に一部施設のリニューアル工事（イルカ・アシカショー等一部展示の休止を含む）を実施し、2025年7月18日にリニューアルオープン済み。既に解消済みの過去の休園のため記録対象外。2026年7月時点で新たな長期休館・閉館予定の告知は確認できず。"
+    },
+    {
+      "facilityId": "hyogo_himeji_zoo",
+      "name": "姫路市立動物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.city.himeji.lg.jp/dobutuen/",
+        "https://www.kobe-np.co.jp/news/society/202503/0018711993.shtml",
+        "https://www.kiyoraka-himeji.jp/wp/wp-content/uploads/2020/12/すこやか姫路-かわら版-第3号-動物園移転決定-202012月発行-.pdf"
+      ],
+      "statusCheck": "consistent",
+      "memo": "姫路市は2024年6月、姫路城特別史跡内という立地上の制約（内堀復元計画・拡張不可・JAZA基準不適合）を理由に城外への移転を決定したと報じられているが、2026年7月時点で移転先（手柄山中央公園などが候補）・移転（閉園）時期は公式サイト上で確定告知されていない。2025年3月の神戸新聞報道でも、移転先の敷地が手狭で大型動物の飼育が困難なため計画が難航していると伝えられている。移転時期未確定のため proposedNote は作成せず、現状を本メモに記録する。現在の施設は通常営業を継続中（定休日は年末年始のみ）。"
+    },
+    {
+      "facilityId": "hyogo_himeji_central_park",
+      "name": "姫路セントラルパーク",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.central-park.co.jp/faq/",
+        "https://budou-chan.jp/matome-eigyou2025-2026/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "定休日は不定休（公式サイトで営業カレンダー要確認）で、冬季は水曜不定休が多いとの情報があるが、これは季節による定休日の曜日数変動の範囲内であり毎週の定例休園に該当し記録対象外。土日祝のみ開園のような大幅な開園日減少は確認できず。長期休園・閉園予定の告知も確認できず。2026年7月時点。"
+    },
+    {
+      "facilityId": "hyogo_himeji_aquarium",
+      "name": "姫路市立水族館",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.city.himeji.lg.jp/shisei/0000031868.html",
+        "https://www.city.himeji.lg.jp/aqua/0000006875.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "定休日は火曜（祝日の場合は翌日）・12月29日〜1月1日で毎週の定例休園に該当し記録対象外。2025年10月2日から消防設備の故障により本館が閉鎖されていたが、復旧工事完了により通常営業を再開済み（新館は閉鎖中も無料開放を継続）。既に解消済みの過去の休園のため記録対象外。2026年7月時点で新たな長期休館・閉館予定の告知は確認できず。"
+    }
+  ]
+}

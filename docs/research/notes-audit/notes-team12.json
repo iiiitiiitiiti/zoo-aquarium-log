@@ -1,0 +1,118 @@
+{
+  "team": "notes-team12",
+  "investigatedAt": "2026-07-15",
+  "results": [
+    {
+      "facilityId": "hyogo_england_hill",
+      "name": "淡路ファームパーク イングランドの丘",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.england-hill.com/faq/",
+        "https://www.england-hill.com/price/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "通常休園日は毎週火曜（GW・年末年始等の繁忙期は営業）で記録対象外。公式FAQ・料金ページに「冬季メンテナンス休園」への言及はあるが、具体的な期間・日数（連続5日以上等の記録基準を満たすか）を示す一次情報が確認できなかったため noteは見送り。閉園・改装等の告知は確認されず。"
+    },
+    {
+      "facilityId": "nara_uda_animal_park",
+      "name": "うだ・アニマルパーク",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.pref.nara.lg.jp/n009/1839.html",
+        "https://www.pref.nara.lg.jp/n009/7873.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "休園日は毎週月曜（祝日の場合は翌平日）と年末年始（12/28〜1/4）のみで、いずれも記録対象外の定休日パターン。長期休園・改装・閉園等の告知は確認されなかった。"
+    },
+    {
+      "facilityId": "wakayama_adventure_world",
+      "name": "アドベンチャーワールド",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.aws-s.com/en/guide/opening_hours/",
+        "https://wakayama.keizai.biz/column/27/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "2025年6月28日にジャイアントパンダ4頭が中国へ返還されたが、施設は通常営業を継続しており、休業・変則営業への移行は確認されなかった。公式サイトの営業時間案内も通常運営を示す内容だった。"
+    },
+    {
+      "facilityId": "wakayama_wakayama_castle_zoo",
+      "name": "和歌山城公園動物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://wakayamajo.jp/animal/index.html",
+        "https://www.wakayama-kanko.or.jp/lsc/upfile/biz/document/0000/0026/26_1_file.pdf"
+      ],
+      "statusCheck": "consistent",
+      "memo": "休園日は火曜（6〜9月・12〜2月、祝日の場合は直後の平日）で、季節により定休日となる月の範囲が変わるのみの通常パターンのため記録対象外。長期休園・閉園等の告知は確認されなかった。"
+    },
+    {
+      "facilityId": "tottori_karo_kanikkokan",
+      "name": "とっとり賀露かにっこ館",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://kanikko.jp/",
+        "https://www.pref.tottori.lg.jp/286830.htm"
+      ],
+      "statusCheck": "consistent",
+      "memo": "休館日は毎週火曜（祝日の場合は翌平日）だが、春休み・夏休み・年末年始期間（3/24〜4/8、7/20〜8/31、12/24〜1/8）は休まず開館という繁忙期の開館拡大パターンで、休園日が増える変則営業ではないため記録対象外。"
+    },
+    {
+      "facilityId": "shimane_aquas",
+      "name": "島根県立しまね海洋館アクアス",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://aquas.or.jp/guide/",
+        "https://aquas.or.jp/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "定休日は毎週火曜（祝日の場合は翌日）のみで記録対象外。点検・改装等による長期休館や閉館予定の一次情報は確認できなかった。"
+    },
+    {
+      "facilityId": "okayama_ikeda_zoo",
+      "name": "池田動物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://ikedazoo.jp/",
+        "https://www.city.okayama.jp/kosodate/0000045651.html",
+        "https://www.city.okayama.jp/kankou/0000012802.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "2017年頃に経営難・公営化要望が報じられた経緯があるが、閉園・移管等が確定した情報は見当たらない。2025年12月にも岡山市主催イベントが同園で開催されており、2026年7月時点で通常営業を継続していることを確認した。閉園方針の確定情報は公式・報道いずれにも見当たらなかった。"
+    },
+    {
+      "facilityId": "okayama_tamano_marine_museum",
+      "name": "玉野市立玉野海洋博物館",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.city.tamano.lg.jp/site/kaihaku/",
+        "https://tamanokankou.com/news/info/5962/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "2025年9月に本館入口脇のパネル落下により9/7〜9/13の臨時休館があったが解消済み（過去の休園のため記録対象外）。老朽化を背景とした建替え・改修の確定計画（時期・期間）を示す一次情報は2026年7月時点で確認できなかった。今後の再整備計画の有無は要継続確認。"
+    },
+    {
+      "facilityId": "hiroshima_miyajima_aquarium",
+      "name": "宮島水族館",
+      "finding": "note",
+      "proposedNote": "宮島水族館は設備更新及び施設修繕工事のため、2026年12月1日から2027年3月31日まで全館休館予定。平成23年度のグランドオープンから14年が経過し、建物・設備の経年劣化対応が理由。年間パスポート利用者には有効期限延長等の措置あり。2026年7月時点の情報。",
+      "evidenceUrls": [
+        "https://miyajima-aqua.jp/info/oshirase/81219331.html",
+        "https://miyajima-aqua.jp/guide/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "2026年7月時点では通常営業中のためstatusは現状open で一致。ただし2026年12月1日〜2027年3月31日は工事・改装による長期休園が確定しており、noteとして記録した。"
+    },
+    {
+      "facilityId": "hiroshima_asa_zoo",
+      "name": "広島市安佐動物公園",
+      "finding": "none",
+      "evidenceUrls": [
+        "http://www.asazoo.jp/info/",
+        "https://www.city.hiroshima.lg.jp/faq/fukushi/1001579/1028093/1002200.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "休園日は毎週木曜（木曜が祝日または8/6の場合は開園）と年末年始（12/29〜1/1）のみの通常パターンで記録対象外。行楽シーズンは木曜も臨時開園することがあり、変則的な休園拡大は確認されなかった。"
+    }
+  ]
+}
