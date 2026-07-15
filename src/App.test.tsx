@@ -1,4 +1,4 @@
-import { render, screen, waitFor } from "@testing-library/react";
+import { act, render, screen, waitFor } from "@testing-library/react";
 import { Timestamp } from "firebase/firestore";
 import userEvent from "@testing-library/user-event";
 import { afterEach, describe, expect, it, vi } from "vitest";
@@ -401,7 +401,10 @@ describe("App",()=>{
    window.location.hash=`#facility/${exportFacility.id}`;
    render(<App visitStore={visitStore} customFacilityStore={loadingCustomFacilityStore} />);
    expect(screen.getByText(facilityCountText)).toBeInTheDocument();
-   emitCustomFacilities?.([exportFacility]);
+   await waitFor(() => expect(emitCustomFacilities).toBeDefined());
+   await act(async () => {
+    emitCustomFacilities?.([exportFacility]);
+   });
    expect(await screen.findByRole("heading",{name:exportFacility.name})).toBeInTheDocument();
   });
   it("falls back to the list and clears the hash for an unknown facility id",async()=>{
