@@ -1,0 +1,115 @@
+{
+  "team": "notes-team14",
+  "investigatedAt": "2026-07-15",
+  "results": [
+    {
+      "facilityId": "kochi_katurahama_aquarium",
+      "name": "桂浜水族館",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://katurahama-aq.jp/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "公式サイトによれば定休日は1月1日のみで、年中ほぼ無休で営業。長期休館・改装・閉園予定の告知は見当たらなかった。"
+    },
+    {
+      "facilityId": "kochi_noichi_zoo",
+      "name": "高知県立のいち動物公園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://noichizoo.or.jp/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "通常休園日は毎週月曜（祝日の場合翌日）と年末年始。検索結果で「2026年7月27日休園」がヒットしたが、公式サイトで確認したところ同日は通常の月曜定休日であり、記録対象外（毎週の定休日）と判断した。長期休園・改装告知はなし。"
+    },
+    {
+      "facilityId": "fukuoka_omuta_zoo",
+      "name": "大牟田市動物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://omutacityzoo.org/guide/open",
+        "https://omutacityzoo.org/news"
+      ],
+      "statusCheck": "consistent",
+      "memo": "通常休園日は毎月第2・4月曜（祝日の場合翌日）と年末年始（12/29～1/1）。Web検索で「4月20日、5月11日～15日に臨時休園」という情報が出たが、公式の開園案内ページ・お知らせ一覧のいずれにも該当の告知は見当たらず、一次情報で裏付けが取れなかったため採用しなかった。"
+    },
+    {
+      "facilityId": "fukuoka_itozu_no_mori",
+      "name": "到津の森公園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.itozu-zoo.jp/guide/calender.php",
+        "https://www.itozu-zoo.jp/info/",
+        "https://kitakyushukokura-moji.goguynet.jp/2026/01/13/itozu-zoo2026-01/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "通常休園日は毎週火曜（祝日の場合翌日）。2026年1月13日（火・通常休園日）～15日（木）に臨時休園があったが、連続3日（うち1日は元々の定休日）であり監査手順の記録対象外（連続3日以下の単発メンテナンス休館）に該当すると判断した。毎年恒例かどうかを示す一次情報も確認できなかった。"
+    },
+    {
+      "facilityId": "fukuoka_kurume_bird_center",
+      "name": "久留米市鳥類センター",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://kurumekoen.org/birdc/birdc_eigyo/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "通常休園日は月曜（祝日の場合翌日、夏期プール営業期間中は休園日なし）と12/29～1/1。長期休園・改装工事・閉園予定の告知は見当たらなかった。"
+    },
+    {
+      "facilityId": "fukuoka_fukuoka_zoo",
+      "name": "福岡市動植物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.city.fukuoka.lg.jp/jutaku-toshi/shokubutsuen/shisei/fukuokashishokubutsuen_renewal.html",
+        "https://botanical-garden.city.fukuoka.lg.jp/",
+        "https://zoo.city.fukuoka.lg.jp/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "植物園エリアはエントランスガーデン等のリニューアル工事を実施していたが、2026年3月にエントランスガーデンが開園済みで、全園休園を伴うものではない。動物園エリアのゾウ舎増改築工事も2023～2024年に完了済み。現時点で長期休園の告知は見当たらなかった。"
+    },
+    {
+      "facilityId": "fukuoka_uminaka_animal_forest",
+      "name": "海の中道海浜公園動物の森",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://uminaka-park.jp/guide/open-hour/",
+        "https://uminaka-park.jp/animal/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "動物の森は国営海の中道海浜公園の一部で、公園全体の休園日規定（12/31・1/1、1月第3月曜～直後の金曜、および6～7月・9月・11～12月・1～3月の一部期間の毎週火曜等）が適用される。これは季節により定休日の曜日・頻度が変動する「季節による定休日の曜日数変動」に該当し、監査手順の記録対象外と判断した。動物の森固有の長期休業や改装予定の告知は見当たらなかった。"
+    },
+    {
+      "facilityId": "fukuoka_marine_world_uminonakamichi",
+      "name": "マリンワールド海の中道",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://marine-world.jp/",
+        "https://marine-world.jp/news/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "2026年6月23日～7月26日にかけて営業時間の変更（6月10:00～18:00、7月9:30～17:30）が確認されたが、これは開館時間の季節変動であり休館を伴うものではない。公式お知らせ一覧を確認したが、休館・リニューアル工事による閉館の告知は見当たらなかった。"
+    },
+    {
+      "facilityId": "nagasaki_biopark",
+      "name": "長崎バイオパーク",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.biopark.co.jp/info/admission/",
+        "https://www.biopark.co.jp/info/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "公式サイトで年中無休と案内されている。長期休園・改装・閉園予定の告知は見当たらなかった。"
+    },
+    {
+      "facilityId": "nagasaki_morikirara",
+      "name": "九十九島動植物園森きらら",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.morikirara.jp/?post_type=information",
+        "https://www.morikirara.jp/en/information/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "公式サイトで年中無休と案内されている。長期休園・改装・閉園予定の告知は見当たらなかった。"
+    }
+  ]
+}
