@@ -477,6 +477,19 @@ export default function App({
               placeholder="施設名・都道府県で検索"
             />
           </div>
+          <div className="filter-group prefecture-filter">
+            <label className="filter-group-label" htmlFor="prefecture">都道府県</label>
+            <select
+              id="prefecture"
+              value={prefecture}
+              onChange={(event) => setPrefecture(event.target.value)}
+            >
+              <option value="all">すべて</option>
+              {prefectures.map((item) => (
+                <option key={item} value={item}>{item}</option>
+              ))}
+            </select>
+          </div>
           <div className="filter-group">
             <span className="filter-group-label">種別</span>
             <div className="filters" role="group" aria-label="種別">
@@ -492,19 +505,6 @@ export default function App({
                 </button>
               ))}
             </div>
-          </div>
-          <div className="filter-group prefecture-filter">
-            <label className="filter-group-label" htmlFor="prefecture">都道府県</label>
-            <select
-              id="prefecture"
-              value={prefecture}
-              onChange={(event) => setPrefecture(event.target.value)}
-            >
-              <option value="all">すべて</option>
-              {prefectures.map((item) => (
-                <option key={item} value={item}>{item}</option>
-              ))}
-            </select>
           </div>
           <div className="filter-group">
             <span className="filter-group-label">営業状態</span>
