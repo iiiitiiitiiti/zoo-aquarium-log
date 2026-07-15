@@ -647,10 +647,18 @@ footer {
   color: #dce9e4;
   font-size: 13px;
 }
-.facility-map-link {
-  display: block;
-  width: max-content;
+.detail-hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
   margin-top: 18px;
+}
+.facility-map-link {
+  display: inline-flex;
+  align-items: center;
+  width: max-content;
+  margin-top: 0;
   padding: 10px 12px;
   border: 1px solid #a8d8d766;
   border-radius: 10px;
@@ -664,9 +672,9 @@ footer {
 .facility-map-link:focus-visible {
   outline-color: #f7f4e8;
 }
-.detail-hero a {
+.detail-hero .facility-site-link {
   display: inline-block;
-  margin-top: 18px;
+  margin-top: 0;
   color: #a8d8d7;
   font-size: 12px;
   font-weight: 800;
@@ -943,7 +951,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
-  margin-top: 18px;
+  margin-top: 12px;
 }
 .mark-toggles button,
 .facility-actions button {
@@ -983,9 +991,6 @@ footer {
   color: #8f2d2d;
   font-size: 11px;
   font-weight: 700;
-}
-.detail-hero .facility-actions + a {
-  margin-top: 18px;
 }
 .badges .custom {
   background: #f4e0bd;
