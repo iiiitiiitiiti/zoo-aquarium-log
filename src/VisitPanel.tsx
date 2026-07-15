@@ -533,12 +533,14 @@ export default function VisitPanel({
                 <button type="submit" disabled={noteSaving}>{noteSaving ? "保存しています…" : "保存"}</button>
               </div>
             </form>
-          ) : note && (
+          ) : note ? (
             <div className="facility-user-note-card">
               <p className="facility-user-note-text">{note.text}</p>
               {displayNoteUpdatedAt(note) && <small>{displayNoteUpdatedAt(note)}</small>}
             </div>
-          )}
+          ) : !notesLoading && !noteLoadError ? (
+            <p className="facility-user-note-status">施設メモはありません</p>
+          ) : null}
         </section>
       )}
     </main>
