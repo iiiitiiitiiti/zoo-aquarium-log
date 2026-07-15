@@ -332,6 +332,8 @@ describe("App",()=>{
    expect(screen.getByRole("button",{name:"← 地図に戻る"})).toBeInTheDocument();
    await user.click(screen.getByRole("button",{name:"← 地図に戻る"}));
    expect(screen.getByRole("heading",{name:"施設マップ"})).toBeInTheDocument();
+   expect(screen.getByTestId("map-focus")).toHaveTextContent(facilitiesJson[0].id);
+   expect(screen.getByText(`${facilitiesJson.length}施設を表示`)).toBeInTheDocument();
   });
   it("opens the focused facility on the map from its detail page",async()=>{
    const user=userEvent.setup();
@@ -340,5 +342,7 @@ describe("App",()=>{
    await user.click(screen.getByRole("button",{name:"地図で場所を見る"}));
    expect(screen.getByRole("heading",{name:"施設マップ"})).toBeInTheDocument();
    expect(screen.getByTestId("map-focus")).toHaveTextContent("hokkaido_maruyama_zoo");
+   expect(screen.getByText("1施設を表示")).toBeInTheDocument();
+   expect(screen.getByText("札幌市円山動物園")).toBeInTheDocument();
   });
 });
