@@ -1,0 +1,116 @@
+{
+  "team": "notes-team02",
+  "investigatedAt": "2026-07-15",
+  "results": [
+    {
+      "facilityId": "aomori_yayoi_ikoi_hiroba",
+      "name": "弥生いこいの広場",
+      "finding": "note",
+      "proposedNote": "弥生いこいの広場は例年11月中旬〜4月中旬が冬季休業だが、2025年夏からクマ出没対策のため全面休止しており、2026年7月時点も再開していない。弘前市は電気柵設置など安全対策を実施中で、再開時期は2026年8月頃の見込みだが正式発表待ち。",
+      "evidenceUrls": [
+        "https://www.city.hirosaki.aomori.jp/oshirase/kurashi/2025-0827-1750-48.html",
+        "https://www.toonippo.co.jp/articles/-/2234037",
+        "https://www.city.hirosaki.aomori.jp/gaiyou/shisetsu/2014-1206-1516-48.html"
+      ],
+      "statusCheck": "mismatch: 2025年夏からクマ出没を理由に営業を休止しており、2026年7月時点でも再開していない（再開見込みは2026年8月頃で正式発表待ち）。facilities.jsonのstatusはopenのままで実態と不一致。",
+      "memo": "公式サイト(hirosakipark.or.jp)はSSL証明書エラーで直接WebFetchできなかったため、弘前市公式ページと地元紙(東奥日報)記事で代替確認した。"
+    },
+    {
+      "facilityId": "iwate_safari_park",
+      "name": "岩手サファリパーク",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.iwate-safari.jp/parkguide",
+        "https://www.iwate-safari.jp/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "冬季(12月以降)は平日のマイカー入場ができずサファリバス限定・マイカーは土日祝のみとなる運用変更があるが、開園日数自体は通常期と同じ(毎週水曜・第2/4木曜が休園)ため、記録対象の変則休園には該当しないと判断した。長期休園・改装・閉園の告知は確認できず。"
+    },
+    {
+      "facilityId": "iwate_morioka_zoomo",
+      "name": "盛岡市動物公園ZOOMO",
+      "finding": "note",
+      "proposedNote": "ZOOMOは冬季(11月1日〜3月31日)、動物福祉への配慮からスタッフの対応時間を確保するため休園日を水・木曜の週2日に拡大している(通常期の4月1日〜10月31日は水曜のみ休園)。冬季の開園時間も10:00〜16:00に短縮される。",
+      "evidenceUrls": [
+        "https://zoomo.co.jp/guide/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "2026年7月時点の公式サイト利用案内に基づく。"
+    },
+    {
+      "facilityId": "miyagi_uminomori_aquarium",
+      "name": "仙台うみの杜水族館",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.uminomori.jp/en/umino/info/index.html",
+        "https://www.uminomori.jp/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "年中無休を確認。長期休館・改装・閉園に関する告知は見当たらない(2026年7月時点)。"
+    },
+    {
+      "facilityId": "miyagi_yagiyama_zoo",
+      "name": "仙台市八木山動物公園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.city.sendai.jp/zoo/information/5-redevelopment.html",
+        "https://www.city.sendai.jp/zoo/information/redevelopment/2_schedule.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "施設長寿命化再整備計画により、エリアI(総合獣舎・ライオン舎等)の新築工事が令和7年5月から進行中(供用開始は総合獣舎が令和10年度、ライオン舎が令和11年度上期の予定)。ただし工事期間中も動物園全体は通常開園を継続しており、全体休園には該当しないため記録対象外と判断した。"
+    },
+    {
+      "facilityId": "akita_omoriyama_zoo",
+      "name": "秋田市大森山動物園〜あきたオモリンの森〜",
+      "finding": "note",
+      "proposedNote": "大森山動物園は例年、通常開園が3月第3金曜〜11月30日(9:00〜16:30)、冬季は1〜2月の土日祝のみ10:00〜15:00で限定開園する変則営業。12月〜1月上旬・1〜2月の平日・3月上旬(3月1日〜第3金曜前日)は休園となる。",
+      "evidenceUrls": [
+        "https://www.city.akita.lg.jp/zoo/guide/1003691.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "2026年7月時点の公式サイト利用案内に基づく(2026年度通常開園は2026年3月20日〜11月30日、冬季開園は2027年1月9日〜2月28日の土日祝)。"
+    },
+    {
+      "facilityId": "akita_oga_aquarium_gao",
+      "name": "男鹿水族館GAO",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.gao-aqua.jp/about/info"
+      ],
+      "statusCheck": "consistent",
+      "memo": "冬季は休館曜日が月により変動する(1月は第3・4木曜、2月は毎週木曜、7〜9月は無休など)との情報があるが、公式サイト一次情報での明確な休館日一覧は確認できず、第三者サイトの情報にとどまった。仮に事実でも週1日程度の定休日パターンの範囲内で記録対象外(毎週の定休日)と判断した。長期休館・リニューアル・閉園の告知は確認できず(2026年7月時点)。"
+    },
+    {
+      "facilityId": "yamagata_kamo_aquarium",
+      "name": "鶴岡市立加茂水族館",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://kamo-kurage.jp/jyuyo/post-kurage17588/",
+        "https://kamo-kurage.jp/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "クラゲ展示拡張のリニューアル工事のため2025年11月1日〜2026年3月31日に全館休館していたが、予定通り2026年4月1日にリニューアルオープン済み(愛称「東北エプソンアクアリウムかもすい」)。2026年7月時点で通常営業を確認しており、休館は既に解消済みのため記録対象外(過去の休園)と判断した。"
+    },
+    {
+      "facilityId": "fukushima_kawasemi_aquarium",
+      "name": "アクアマリンいなわしろカワセミ水族館",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.aquamarine.or.jp/kawasemi/guide/info/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "年中無休。営業時間が季節で変動する(冬期11/1〜2/28は9:30〜16:00、通常期3/1〜10/31は9:30〜17:00)のみで、休館日の設定はないため記録対象外(日々の営業時間の季節変動)と判断した。"
+    },
+    {
+      "facilityId": "fukushima_aquamarine_fukushima",
+      "name": "アクアマリンふくしま",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.aquamarine.or.jp/guide/info/",
+        "https://www.aquamarine.or.jp/news/2025-2026newyear/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "年中無休。2026年1月13日〜23日に体験施設「アクアマリンえっぐ」の改装工事で一部エリア・体験プログラム(釣り体験等)を休止していたが、2026年3月14日にリニューアルオープン済み。短期間・一部エリアのみの工事のため記録対象外と判断した。長期休館・閉園の告知は確認できず。"
+    }
+  ]
+}
