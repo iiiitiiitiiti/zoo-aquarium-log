@@ -368,4 +368,50 @@ describe("App",()=>{
    await user.click(button);
    expect(screen.getByRole("heading",{name:"記録の統計"})).toBeInTheDocument();
   });
+  it("restores the statistics view from the URL hash on reload",()=>{
+   window.location.hash="#stats";
+   render(<App visitStore={visitStore} />);
+   expect(screen.getByRole("heading",{name:"記録の統計"})).toBeInTheDocument();
+  });
+  it("restores the map view with focus from the URL hash on reload",()=>{
+   window.location.hash="#map/hokkaido_maruyama_zoo";
+   render(<App visitStore={visitStore} />);
+   expect(screen.getByRole("heading",{name:"施設マップ"})).toBeInTheDocument();
+   expect(screen.getByTestId("map-focus")).toHaveTextContent("hokkaido_maruyama_zoo");
+  });
+  it("restores a facility detail from the URL hash on reload",()=>{
+   window.location.hash="#facility/hokkaido_maruyama_zoo";
+   render(<App visitStore={visitStore} />);
+   expect(screen.getByRole("heading",{name:"札幌市円山動物園"})).toBeInTheDocument();
+  });
+  it("restores a custom facility detail once custom facilities are loaded",async()=>{
+   let emitCustomFacilities: ((facilities: typeof exportFacility[])=>void)|undefined;
+   const loadingCustomFacilityStore: CustomFacilityStore={
+    create:async()=>exportFacility,
+    update:async()=>exportFacility,
+    remove:async()=>undefined,
+    subscribe:(onFacilities)=>{ emitCustomFacilities=onFacilities; return ()=>undefined; },
+   };
+   window.location.hash=`#facility/${exportFacility.id}`;
+   render(<App visitStore={visitStore} customFacilityStore={loadingCustomFacilityStore} />);
+   expect(screen.getByText(facilityCountText)).toBeInTheDocument();
+   emitCustomFacilities?.([exportFacility]);
+   expect(await screen.findByRole("heading",{name:exportFacility.name})).toBeInTheDocument();
+  });
+  it("falls back to the list and clears the hash for an unknown facility id",async()=>{
+   window.location.hash="#facility/no_such_facility";
+   render(<App visitStore={visitStore} />);
+   expect(screen.getByText(facilityCountText)).toBeInTheDocument();
+   await waitFor(()=>expect(window.location.hash).toBe(""));
+  });
+  it("writes the current view to the URL hash while navigating",async()=>{
+   const user=userEvent.setup();
+   render(<App visitStore={visitStore} />);
+   await user.click(screen.getByRole("link",{name:/札幌市円山動物園/}));
+   expect(window.location.hash).toBe("#facility/hokkaido_maruyama_zoo");
+   await user.click(screen.getByRole("button",{name:"← 施設一覧"}));
+   expect(window.location.hash).toBe("");
+   await user.click(screen.getByRole("button",{name:"統計"}));
+   expect(window.location.hash).toBe("#stats");
+  });
 });
