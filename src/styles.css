@@ -482,13 +482,13 @@ footer {
   place-items: center;
   width: 44px;
   height: 44px;
-  padding: 0;
+  padding: 0 0 5px 0;
   border: 1px solid #f7f4e8;
   border-radius: 50%;
   background: #2a7180;
   box-shadow: 0 4px 12px #102e2840;
   color: #fff;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1;
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.2s ease;
