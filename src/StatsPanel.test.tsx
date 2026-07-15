@@ -26,8 +26,8 @@ describe("StatsPanel", () => {
     render(<StatsPanel stats={stats} onBack={() => undefined} />);
 
     expect(screen.getByRole("heading", { name: "記録の統計" })).toBeInTheDocument();
-    expect(screen.getByText("すべての施設・記録が対象です")).toBeInTheDocument();
-    expect(screen.getByText("42%")).toBeInTheDocument();
+    expect(screen.getByText("すべての施設・記録が対象です。")).toBeInTheDocument();
+    expect(screen.getByText("42", { exact: true })).toBeInTheDocument();
     expect(screen.getByText("3 / 7 館")).toBeInTheDocument();
     expect(screen.getByText("動物園")).toBeInTheDocument();
     expect(screen.getByText("2 / 4 館")).toBeInTheDocument();
@@ -40,7 +40,7 @@ describe("StatsPanel", () => {
   it("shows an empty state when there are no visits", () => {
     render(<StatsPanel stats={{ ...stats, monthly: [] }} onBack={() => undefined} />);
 
-    expect(screen.getByText("訪問記録がまだありません")).toBeInTheDocument();
+    expect(screen.getByText("訪問記録がまだありません。")).toBeInTheDocument();
     expect(screen.queryByText("横にスクロールできます")).not.toBeInTheDocument();
   });
 
