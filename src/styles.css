@@ -674,7 +674,6 @@ footer {
 }
 /* ===== 訪問記録（見出し・フォーム・一覧） ===== */
 .visit-section {
-  min-height: 55dvh;
   padding: 28px 16px 44px;
 }
 .visit-heading {
