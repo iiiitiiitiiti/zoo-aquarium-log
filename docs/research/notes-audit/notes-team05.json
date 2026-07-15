@@ -1,0 +1,115 @@
+{
+  "team": "notes-team05",
+  "investigatedAt": "2026-07-15",
+  "results": [
+    {
+      "facilityId": "tokyo_edogawa_shizen_zoo",
+      "name": "江戸川区自然動物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.edogawa-kankyozaidan.jp/zoo/",
+        "https://www.city.edogawa.tokyo.jp/e066/kuseijoho/gaiyo/shisetsuguide/bunya/koendobutsuen/shizen.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "休園は毎週月曜（祝休日の場合は翌日）と年末年始（12/29〜1/1）のみ。夏季（7/15〜9/15）のふれあいコーナー休止は施設全体の休園ではなく記録対象外。長期休園・改修・閉園の告知は確認できなかった。"
+    },
+    {
+      "facilityId": "tokyo_oshima_park_zoo",
+      "name": "大島公園動物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.kankyo1.metro.tokyo.lg.jp/naturepark/know/shisetsu/fureai/ooshima.html",
+        "https://www.soumu.metro.tokyo.lg.jp/11osima/osima/park/zoo"
+      ],
+      "statusCheck": "consistent",
+      "memo": "東京都環境局の公園紹介ページで年中無休（動物園9:00〜17:00）を確認。大島支庁の公式ページ自体には営業案内の記載が薄い。長期休園・改修の告知は確認できなかった。"
+    },
+    {
+      "facilityId": "tokyo_shinagawa_aquarium",
+      "name": "しながわ水族館",
+      "finding": "note",
+      "proposedNote": "品川区による全面リニューアル（建て替え）が計画されている。区は2026年4月に「しながわ水族館リニューアル事業計画」を策定し、2033年度のリニューアルオープンを目指す。将来的に工事に伴う長期休館が見込まれるが、休館スケジュールは未定で、館は「当面の間、閉館はせず現在の営業を継続」と告知している。2026年7月時点。",
+      "evidenceUrls": [
+        "https://www.city.shinagawa.tokyo.jp/PC/kuseizyoho/kuseizyoho-siryo/kuseizyoho-siryo-zaisei/kuseizyoho-siryo-zaisei-plan/hpg000000320.html",
+        "https://www.aquarium.gr.jp/news/events/29136"
+      ],
+      "statusCheck": "consistent",
+      "memo": "当初2027年度開業予定だったが工事費高騰による事業手法の再検討（令和7年度）を経て2033年度開業目標に変更。着工・休館の開始時期は区・館とも未公表のためnoteには書かず「未定」とした。休館時期の確定後にstatusとnoteの更新が必要。"
+    },
+    {
+      "facilityId": "tokyo_sumida_aquarium",
+      "name": "すみだ水族館",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.sumida-aquarium.com/about/access/",
+        "https://www.sumida-aquarium.com/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "定休日なし（年中無休）。メンテナンスやイベントで入場不可の日が生じる可能性の注記はあるが、5日以上連続の定例休館や長期休館・改装の告知は確認できなかった。"
+    },
+    {
+      "facilityId": "tokyo_ueno_zoo",
+      "name": "恩賜上野動物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.tokyo-zoo.net/zoo/ueno/",
+        "https://www.tokyo-zoo.net/file/calendar_2026_ueno.pdf"
+      ],
+      "statusCheck": "consistent",
+      "memo": "定例休園は毎週月曜のみ。2026年7月7日〜9月30日の五重塔付近立入制限とニホンカモシカ展示中止は園内一部の制限であり、園全体の休園ではないため記録対象外。長期休園・閉園の告知は確認できなかった。"
+    },
+    {
+      "facilityId": "tokyo_sunshine_aquarium",
+      "name": "サンシャイン水族館",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://sunshinecity.jp/aquarium/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "公式告知の休館日は2026年11月12日・2027年1月14日など単日のみで、連続5日未満のメンテナンス休館に該当し記録対象外。長期休館・改修の告知は確認できなかった。"
+    },
+    {
+      "facilityId": "tokyo_hamura_zoo",
+      "name": "羽村市動物公園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://hamurazoo.jp/info/",
+        "https://hamurazoo.jp/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "休園は毎週月曜と1月1日のみ（令和8年度は「はむずーマンデー」で毎月第3月曜を特別開園し、休園日はむしろ減る運用）。開園時間の季節変動（3〜10月16:30まで・11〜2月16:00まで）は記録対象外。長期休園・閉園の告知は確認できなかった。"
+    },
+    {
+      "facilityId": "tokyo_tama_zoo",
+      "name": "多摩動物公園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.tokyo-zoo.net/zoo/tama/",
+        "https://www.tokyo-zoo.net/file/calendar_2026_tama.pdf"
+      ],
+      "statusCheck": "consistent",
+      "memo": "定例休園は毎週水曜（祝日の場合は翌日）のみ。2026年度開園日カレンダーで5日以上の連続休園ブロックがないことを確認。2026年度は行楽期の臨時開園・時間延長など開園日拡大方向の告知のみで、長期休園・閉園の告知は確認できなかった。"
+    },
+    {
+      "facilityId": "tokyo_machida_risuen",
+      "name": "町田リス園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.machida-risuen.com/introduction.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "毎週火曜の定休のほか、6月・9月・12月の第1火曜〜金曜に園内整備のための定例休園がある（年3回・各連続4日間）。監査基準の「連続5日間以上」に1日届かないため記録対象外と判断したが、閾値ちょうど手前の定例休園のため要注意として記録する。長期休園・閉園の告知は確認できなかった。"
+    },
+    {
+      "facilityId": "tokyo_maxell_aqua_park",
+      "name": "マクセル アクアパーク品川",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.aqua-park.jp/aqua/info/index.html",
+        "https://www.aqua-park.jp/aqua/news/index.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "年中無休（定休日なし）。営業時間ページは期間別の時間変動のみで休館日の設定はなく、お知らせページにも長期休館・閉館の告知なし。公式サイトはWebFetchでは403のため、ブラウザUA指定のcurl取得による本文確認と第三者情報（GO TOKYO等）で裏付けた。"
+    }
+  ]
+}
