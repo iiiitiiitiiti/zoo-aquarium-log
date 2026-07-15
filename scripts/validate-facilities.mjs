@@ -43,6 +43,9 @@ export function validateFacilities(facilities) {
     if (!isHttpUrl(facility?.url)) errors.push(`${label}: 公式URLが不正です`);
     if (!Array.isArray(facility?.sourceUrls) || facility.sourceUrls.length === 0 || facility.sourceUrls.some((url) => !isHttpUrl(url))) errors.push(`${label}: 一次情報URLを1件以上指定してください`);
     if (!datePattern.test(facility?.lastVerifiedAt ?? "")) errors.push(`${label}: 確認日はYYYY-MM-DD形式にしてください`);
+    if (facility?.note !== undefined && (typeof facility.note !== "string" || facility.note.trim() === "" || facility.note.length > 500)) {
+      errors.push(`${label}: 補足（note）は1〜500文字の文字列にしてください（不要なら項目ごと省略）`);
+    }
   });
 
   return errors;

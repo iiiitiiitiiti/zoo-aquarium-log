@@ -57,6 +57,14 @@ test("rejects invalid coordinates, URLs, and verification dates", () => {
   assert.ok(errors.some((error) => error.includes("確認日")));
 });
 
+test("accepts an optional note and rejects malformed notes", () => {
+  assert.deepEqual(validateFacilities([{ ...validFacility, note: "冬季（12〜3月）は定例休園。2026-07-15時点。" }]), []);
+  for (const note of [123, "", "   ", "あ".repeat(501)]) {
+    const errors = validateFacilities([{ ...validFacility, note }]);
+    assert.ok(errors.some((error) => error.includes("補足")), `note=${JSON.stringify(note).slice(0, 20)} should be rejected`);
+  }
+});
+
 test("rejects missing fields and unknown enum values", () => {
   const errors = validateFacilities([{ ...validFacility, name: "", kana: "", pref: "", city: "", type: "park", status: "unknown" }]);
   for (const field of ["名称", "読み仮名", "都道府県", "市区町村", "種別", "営業状態"]) {
