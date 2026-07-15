@@ -19,8 +19,8 @@ export interface PinLegendItem {
 }
 
 const VISITED_COLOR = "#2f6b50";
-const UNVISITED_COLOR = "#f7f4e8";
-const UNVISITED_BORDER_COLOR = "#9fb0a7";
+const UNVISITED_COLOR = "#b84a39";
+const UNVISITED_BORDER_COLOR = "#7b2d26";
 
 export function pinAppearance(
   facility: Facility,
