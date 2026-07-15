@@ -1104,6 +1104,12 @@ footer {
 .quick-actions-body .export-note {
   margin: 8px 4px 0;
 }
+.app-version {
+  margin: 10px 4px 0;
+  color: #9aa79f;
+  font-size: 10px;
+  text-align: right;
+}
 /* ===== 共通調整（角丸・ホバー・reduced-motion） ===== */
 .controls,
 .facility-card,

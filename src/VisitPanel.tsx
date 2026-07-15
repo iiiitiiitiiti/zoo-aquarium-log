@@ -46,6 +46,7 @@ export default function VisitPanel({
   markLoadError = "",
   customFacilityStore,
   onEditFacility,
+  onEditingChange,
   backLabel = "← 施設一覧",
   onShowOnMap = () => undefined,
   onBack,
@@ -61,6 +62,7 @@ export default function VisitPanel({
   markLoadError?: string;
   customFacilityStore?: CustomFacilityStore;
   onEditFacility?: () => void;
+  onEditingChange?: (editing: boolean) => void;
   backLabel?: string;
   onShowOnMap?: () => void;
   onBack: () => void;
@@ -81,6 +83,11 @@ export default function VisitPanel({
     if (typeof URL.revokeObjectURL === "function") URL.revokeObjectURL(previewUrl);
     photoPreviewUrlRef.current = undefined;
   }
+
+  useEffect(() => {
+    onEditingChange?.(form !== undefined);
+    return () => onEditingChange?.(false);
+  }, [form, onEditingChange]);
 
   useEffect(() => () => {
     const previewUrl = photoPreviewUrlRef.current;
