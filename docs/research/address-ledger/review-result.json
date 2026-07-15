@@ -1,0 +1,107 @@
+[
+  {
+    "id": "hokkaido_otaru_aquarium",
+    "verdict": "match",
+    "note": "curlで生HTML取得、「祝津3丁目303番地」が完全一致で存在。"
+  },
+  {
+    "id": "hokkaido_kushiro_zoo",
+    "verdict": "match",
+    "note": "curlで生HTML取得、「阿寒町下仁々志別11番」が完全一致で存在。"
+  },
+  {
+    "id": "hokkaido_kitakitsune_farm",
+    "verdict": "match",
+    "note": "curlで生HTML取得、「北海道北見市留辺蘂町花丘52-1」が完全一致で存在。"
+  },
+  {
+    "id": "aomori_yayoi_ikoi_hiroba",
+    "verdict": "match",
+    "note": "curlで生HTML取得、所在地欄に「弘前市大字百沢字東岩木山2480」が完全一致で存在（原典に青森県の記載なし、noteの補完説明と整合）。"
+  },
+  {
+    "id": "hokkaido_horonobe_reindeer_farm",
+    "verdict": "match",
+    "note": "curlで生HTML取得、「北進398番地1」が完全一致で存在。"
+  },
+  {
+    "id": "hokkaido_furusato_no_mori_animal_museum",
+    "verdict": "match",
+    "note": "curlで生HTML取得、「別海町別海140番地の1」が完全一致で存在。"
+  },
+  {
+    "id": "iwate_morioka_zoomo",
+    "verdict": "match",
+    "note": "curlで生HTML取得、「下八木田60-18」が複数箇所で完全一致で存在。"
+  },
+  {
+    "id": "miyagi_uminomori_aquarium",
+    "verdict": "match",
+    "note": "curlで生HTML取得（伊達な学び旅ページ）、「宮城野区中野4丁目6番地」が完全一致で存在。公式サイト403の代替情報源である旨のnoteと整合。"
+  },
+  {
+    "id": "yamagata_kamo_aquarium",
+    "verdict": "match",
+    "note": "curlで生HTML取得、「大久保657-1」が完全一致で存在。"
+  },
+  {
+    "id": "tochigi_nakagawa_aquarium",
+    "verdict": "match",
+    "note": "curlで生HTML取得、「佐良土2686」が完全一致で存在。"
+  },
+  {
+    "id": "yamagata_kahoku_childrens_zoo",
+    "verdict": "match",
+    "note": "curlで生HTML取得、「谷地戊81番地」が完全一致で存在。"
+  },
+  {
+    "id": "fukushima_aquamarine_fukushima",
+    "verdict": "match",
+    "note": "curlで生HTML取得、「福島県いわき市小名浜字辰巳町50」が完全一致で存在。"
+  },
+  {
+    "id": "saitama_tobu_zoo",
+    "verdict": "match",
+    "note": "curlで生HTML取得、「埼玉県南埼玉郡宮代町須賀110」が完全一致で存在。"
+  },
+  {
+    "id": "tokyo_adachi_seibutsuen",
+    "verdict": "match",
+    "note": "curlで生HTML取得、「保木間2-17-1」が存在（台帳の「保木間二丁目17番1号」と丁目/番/号表記差のみで同一）。"
+  },
+  {
+    "id": "chiba_kamogawa_sea_world",
+    "verdict": "match",
+    "note": "curlで生HTML取得、「千葉県鴨川市東町 1464-18」が存在（空白差のみで同一）。"
+  },
+  {
+    "id": "tokyo_sumida_aquarium",
+    "verdict": "match",
+    "note": "curlで生HTML取得、「東京都墨田区押上一丁目1番2号 東京スカイツリータウン・ソラマチ5F・6F」が建物名まで含めて完全一致で存在。"
+  },
+  {
+    "id": "tokyo_ueno_zoo",
+    "verdict": "match",
+    "note": "curlで生HTML取得、「台東区上野公園9-83」が完全一致で存在（原典に東京都の記載なし、noteの補完説明と整合）。"
+  },
+  {
+    "id": "tokyo_inokashira_zoo",
+    "verdict": "match",
+    "note": "curlで生HTML取得、「東京都武蔵野市御殿山1-17-6」が完全一致で存在。"
+  },
+  {
+    "id": "aichi_sealife_nagoya",
+    "verdict": "match",
+    "note": "curlで生HTML取得、「名古屋市港区金城ふ頭2-7-1」が完全一致で存在（原典に愛知県の記載なし、noteの補完説明と整合）。"
+  },
+  {
+    "id": "aichi_higashiyama_zoo",
+    "verdict": "match",
+    "note": "curlで生HTML取得、「名古屋市千種区東山元町3-70」が完全一致で存在（原典に愛知県の記載なし、noteの補完説明と整合）。"
+  },
+  {
+    "id": "shizuoka_izu_animal_kingdom",
+    "verdict": "match",
+    "note": "curlで生HTML取得、フッターの「静岡県賀茂郡東伊豆町稲取3344」が完全一致で存在。"
+  }
+]

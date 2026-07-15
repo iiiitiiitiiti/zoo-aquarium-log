@@ -309,7 +309,7 @@ export default function VisitPanel({
         <button className="back-button" type="button" onClick={onBack}>{backLabel}</button>
         <p className="eyebrow">VISIT FIELD NOTE</p>
         <h1>{facility.name}</h1>
-        <p>{facility.pref} {facility.city}</p>
+        <p>{facility.address ?? `${facility.pref} ${facility.city}`}</p>
         {facility.note && <p className="facility-note">{facility.note}</p>}
         <div className="detail-hero-links" aria-label="施設情報">
           <button className="facility-map-link" type="button" onClick={onShowOnMap}>地図で場所を見る</button>

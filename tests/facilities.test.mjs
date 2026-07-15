@@ -65,6 +65,14 @@ test("accepts an optional note and rejects malformed notes", () => {
   }
 });
 
+test("accepts an optional address and rejects malformed addresses", () => {
+  assert.deepEqual(validateFacilities([{ ...validFacility, address: "東京都台東区上野公園9-83" }]), []);
+  for (const address of [123, "", "   ", "あ".repeat(201), "台東区上野公園9-83"]) {
+    const errors = validateFacilities([{ ...validFacility, address }]);
+    assert.ok(errors.some((error) => error.includes("住所")), `address=${JSON.stringify(address).slice(0, 20)} should be rejected`);
+  }
+});
+
 test("rejects missing fields and unknown enum values", () => {
   const errors = validateFacilities([{ ...validFacility, name: "", kana: "", pref: "", city: "", type: "park", status: "unknown" }]);
   for (const field of ["名称", "読み仮名", "都道府県", "市区町村", "種別", "営業状態"]) {

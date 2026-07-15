@@ -1,0 +1,106 @@
+[
+  {
+    "id": "hokkaido_kushiro_tancho_park",
+    "name": "釧路市丹頂鶴自然公園",
+    "address": "北海道釧路市鶴丘112番地",
+    "addressSourceUrl": "https://www.city.kushiro.lg.jp/shisei/shisetsu/1007655/1007656/1007660.html",
+    "confidence": "high",
+    "note": "施設公式サイト（kushiro-park.com）も同一住所（〒084-0926 北海道釧路市鶴丘112）を記載、両者一致。"
+  },
+  {
+    "id": "hokkaido_kushiro_aquarium_pukupuku",
+    "name": "くしろ水族館ぷくぷく",
+    "address": "北海道釧路郡釧路町光和4-11",
+    "addressSourceUrl": "https://www.sennosuke.net/pukupuku/",
+    "confidence": "high",
+    "note": "サイトはJSレンダリングのためWebFetchツールでは住所が正しく取得できず（呼び出しごとに異なる釧路市内住所を返す不具合を確認）、Playwrightでページを直接レンダリングして本店（水族館ぷくぷく併設）フッター記載の住所を確認した。都道府県名（北海道）はページに明記なし、入力cityから補完。"
+  },
+  {
+    "id": "hokkaido_kuriyama_park_nakayoshi_zoo",
+    "name": "栗山公園なかよし動物園",
+    "address": "北海道夕張郡栗山町桜丘2丁目38-16",
+    "addressSourceUrl": "https://t-daria.com/parktop/nakayoshi_zoo/",
+    "confidence": "high",
+    "note": "栗山町公式サイト（town.kuriyama.hokkaido.jp）でも「北海道夕張郡栗山町桜丘2丁目」まで一致確認（番地表記なし）。"
+  },
+  {
+    "id": "hokkaido_sahoro_bear_mountain",
+    "name": "サホロリゾート ベア・マウンテン",
+    "address": "北海道上川郡新得町字新内西6線158",
+    "addressSourceUrl": "https://bear-mt.jp/access",
+    "confidence": "high",
+    "note": "ページ内「第一種動物取扱業標識」に事業所所在地として記載（都道府県名は補完）。同ページのフッターには連絡先住所として「北海道上川郡新得町狩勝高原」という表記もあり（郵便物・地図表示向けの通称地名表記とみられる）。"
+  },
+  {
+    "id": "hokkaido_nishiokoppe_deer_farm",
+    "name": "鹿牧場",
+    "address": "北海道紋別郡西興部村字中藻",
+    "addressSourceUrl": "https://www.vill.nishiokoppe.lg.jp/feeuub000001ul9d.html",
+    "confidence": "medium",
+    "note": "村公式サイトの施設紹介ページに「所在地住所　紋別郡西興部村字中藻」と記載（都道府県名は補完、番地の記載なし）。"
+  },
+  {
+    "id": "hokkaido_shibetsu_salmon_museum",
+    "name": "標津サーモン科学館",
+    "address": "北海道標津郡標津町北1条西6丁目1番1-1号",
+    "addressSourceUrl": "https://s-salmon.com/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "hokkaido_showa_shinzan_bear_ranch",
+    "name": "昭和新山熊牧場",
+    "address": "北海道有珠郡壮瞥町字昭和新山183番地",
+    "addressSourceUrl": "https://kumakuma.co.jp/access/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "hokkaido_muroran_aquarium",
+    "name": "市立室蘭水族館",
+    "address": "北海道室蘭市祝津町3丁目3番12号",
+    "addressSourceUrl": "https://www.city.muroran.lg.jp/content/?content=1545",
+    "confidence": "high",
+    "note": "施設公式サイト（iburi.net/murosui）には住所記載なし。室蘭市公式サイトに記載の住所（都道府県名は補完）を採用。"
+  },
+  {
+    "id": "hokkaido_papillon_chateau",
+    "name": "世界の昆虫館パピヨンシャトー",
+    "address": "北海道上川郡当麻町市街6区",
+    "addressSourceUrl": "https://www.town.tohma.hokkaido.jp/all-about/03/03/1737",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "hokkaido_tenguyama_shimarisu_park",
+    "name": "天狗山シマリス公園",
+    "address": "北海道小樽市最上2丁目16-15",
+    "addressSourceUrl": "https://tenguyama.ckk.chuo-bus.co.jp/",
+    "confidence": "medium",
+    "note": "シマリス公園単独の住所表記はなく、同一施設内の小樽天狗山ロープウエイ・スキー場の住所（フッター記載）を採用。シマリス公園はこの敷地内にある。"
+  },
+  {
+    "id": "hokkaido_noboribetsu_bear_park",
+    "name": "のぼりべつクマ牧場",
+    "address": "北海道登別市登別温泉町224番地",
+    "addressSourceUrl": "https://bearpark.jp/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "hokkaido_north_safari_sapporo",
+    "name": "ノースサファリサッポロ",
+    "address": "北海道札幌市南区豊滝469-1",
+    "addressSourceUrl": "https://www.north-safari.com/news/3634/",
+    "confidence": "high",
+    "note": "閉園時の所在地。施設公式サイトの閉園に関するお知らせページ（アクセス欄・フッター）に記載（都道府県名は補完）。"
+  },
+  {
+    "id": "hokkaido_hakodate_park_zoo",
+    "name": "函館公園動物施設",
+    "address": "北海道函館市青柳町17番地",
+    "addressSourceUrl": "https://www.hakodate-jts-kosya.jp/park/hakodate/",
+    "confidence": "medium",
+    "note": "動物施設単独の住所記載はなく、動物施設が所在する函館公園全体の所在地（公式サイト「所在地等」欄）を採用。都道府県名は補完。"
+  }
+]

@@ -82,6 +82,16 @@ describe("VisitPanel", () => {
     expect(onShowOnMap).toHaveBeenCalledOnce();
   });
 
+  it("住所があればフル住所を、なければ都道府県と市区町村を表示する", () => {
+    const addressed = { ...facility, address: "東京都台東区上野公園9-83" };
+    render(<VisitPanel facility={addressed} store={new FakeVisitStore()} visits={[]} onBack={() => undefined} />);
+    expect(screen.getByText("東京都台東区上野公園9-83")).toBeInTheDocument();
+    expect(screen.queryByText("東京都 台東区")).toBeNull();
+
+    render(<VisitPanel facility={facility} store={new FakeVisitStore()} visits={[]} onBack={() => undefined} />);
+    expect(screen.getByText("東京都 台東区")).toBeInTheDocument();
+  });
+
   it("施設の補足（note）があれば表示する", () => {
     const noted = { ...facility, note: "冬季（12〜3月）は定例休園。2026-07-15時点。" };
     render(<VisitPanel facility={noted} store={new FakeVisitStore()} visits={[]} onBack={() => undefined} />);

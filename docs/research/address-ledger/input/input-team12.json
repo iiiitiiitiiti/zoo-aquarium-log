@@ -1,0 +1,154 @@
+[
+  {
+    "id": "hyogo_kinosaki_marine_world",
+    "name": "城崎マリンワールド",
+    "pref": "兵庫県",
+    "city": "豊岡市",
+    "status": "open",
+    "url": "https://marineworld.hiyoriyama.co.jp/",
+    "sourceUrls": [
+      "https://marineworld.hiyoriyama.co.jp/"
+    ]
+  },
+  {
+    "id": "hyogo_himeji_zoo",
+    "name": "姫路市立動物園",
+    "pref": "兵庫県",
+    "city": "姫路市",
+    "status": "open",
+    "url": "https://www.city.himeji.lg.jp/dobutuen/",
+    "sourceUrls": [
+      "https://www.city.himeji.lg.jp/dobutuen/",
+      "https://www.city.himeji.lg.jp/dobutuen/category/11-1-0-0-0-0-0-0-0-0.html"
+    ]
+  },
+  {
+    "id": "hyogo_himeji_central_park",
+    "name": "姫路セントラルパーク",
+    "pref": "兵庫県",
+    "city": "姫路市",
+    "status": "open",
+    "url": "https://www.central-park.co.jp/",
+    "sourceUrls": [
+      "https://www.central-park.co.jp/",
+      "https://www.central-park.co.jp/access/"
+    ]
+  },
+  {
+    "id": "hyogo_himeji_aquarium",
+    "name": "姫路市立水族館",
+    "pref": "兵庫県",
+    "city": "姫路市",
+    "status": "open",
+    "url": "https://www.city.himeji.lg.jp/aqua/",
+    "sourceUrls": [
+      "https://www.city.himeji.lg.jp/aqua/"
+    ]
+  },
+  {
+    "id": "hyogo_england_hill",
+    "name": "淡路ファームパーク イングランドの丘",
+    "pref": "兵庫県",
+    "city": "南あわじ市",
+    "status": "open",
+    "url": "https://www.england-hill.com/",
+    "sourceUrls": [
+      "https://www.england-hill.com/"
+    ]
+  },
+  {
+    "id": "nara_uda_animal_park",
+    "name": "うだ・アニマルパーク",
+    "pref": "奈良県",
+    "city": "宇陀市",
+    "status": "open",
+    "url": "https://www.pref.nara.lg.jp/n009/1839.html",
+    "sourceUrls": [
+      "https://www.pref.nara.lg.jp/n009/1839.html",
+      "https://www.pref.nara.lg.jp/n009/7873.html"
+    ]
+  },
+  {
+    "id": "wakayama_adventure_world",
+    "name": "アドベンチャーワールド",
+    "pref": "和歌山県",
+    "city": "白浜町",
+    "status": "open",
+    "url": "https://www.aws-s.com/",
+    "sourceUrls": [
+      "https://www.aws-s.com/"
+    ]
+  },
+  {
+    "id": "wakayama_wakayama_castle_zoo",
+    "name": "和歌山城公園動物園",
+    "pref": "和歌山県",
+    "city": "和歌山市",
+    "status": "open",
+    "url": "https://wakayamajo.jp/animal/index.html",
+    "sourceUrls": [
+      "https://wakayamajo.jp/animal/index.html",
+      "https://www.wakayama-kanko.or.jp/spots/detail_3309.html"
+    ]
+  },
+  {
+    "id": "tottori_karo_kanikkokan",
+    "name": "とっとり賀露かにっこ館",
+    "pref": "鳥取県",
+    "city": "鳥取市",
+    "status": "open",
+    "url": "https://kanikko.jp/",
+    "sourceUrls": [
+      "https://kanikko.jp/",
+      "https://www.pref.tottori.lg.jp/286830.htm"
+    ]
+  },
+  {
+    "id": "shimane_aquas",
+    "name": "島根県立しまね海洋館アクアス",
+    "pref": "島根県",
+    "city": "浜田市",
+    "status": "open",
+    "url": "https://aquas.or.jp/",
+    "sourceUrls": [
+      "https://aquas.or.jp/",
+      "https://aquas.or.jp/guide/opening-closed/"
+    ]
+  },
+  {
+    "id": "okayama_ikeda_zoo",
+    "name": "池田動物園",
+    "pref": "岡山県",
+    "city": "岡山市",
+    "status": "open",
+    "url": "https://ikedazoo.jp/",
+    "sourceUrls": [
+      "https://ikedazoo.jp/",
+      "https://ikedazoo.jp/about/fee/"
+    ]
+  },
+  {
+    "id": "okayama_tamano_marine_museum",
+    "name": "玉野市立玉野海洋博物館",
+    "pref": "岡山県",
+    "city": "玉野市",
+    "status": "open",
+    "url": "https://www.city.tamano.lg.jp/site/kaihaku/",
+    "sourceUrls": [
+      "https://www.city.tamano.lg.jp/site/kaihaku/",
+      "https://www.city.tamano.lg.jp/site/kaihaku/48106.html"
+    ]
+  },
+  {
+    "id": "hiroshima_miyajima_aquarium",
+    "name": "宮島水族館",
+    "pref": "広島県",
+    "city": "廿日市市",
+    "status": "open",
+    "url": "https://miyajima-aqua.jp/",
+    "sourceUrls": [
+      "https://miyajima-aqua.jp/",
+      "https://www.city.hatsukaichi.hiroshima.jp/soshiki/27/15002.html"
+    ]
+  }
+]

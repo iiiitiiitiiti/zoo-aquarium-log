@@ -1,0 +1,160 @@
+[
+  {
+    "id": "aomori_hachinohe_park_animal_grazing_zone",
+    "name": "八戸公園こどもの国動物放牧ゾーン",
+    "pref": "青森県",
+    "city": "八戸市",
+    "status": "open",
+    "url": "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/koenryokuchika/koen/18209.html",
+    "sourceUrls": [
+      "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/koenryokuchika/koen/18209.html",
+      "https://hachinohe.keizai.biz/headline/2297/",
+      "https://visithachinohe.com/spot/hachinohe_koen/"
+    ]
+  },
+  {
+    "id": "aomori_wakinosawa_yaen_park",
+    "name": "むつ市脇野沢野猿公苑",
+    "pref": "青森県",
+    "city": "むつ市",
+    "status": "open",
+    "url": "https://www.city.mutsu.lg.jp/government/shisetsu/kankou/wakinosawayaenkouen.html",
+    "sourceUrls": [
+      "https://www.city.mutsu.lg.jp/government/shisetsu/kankou/wakinosawayaenkouen.html",
+      "https://aomori-tourism.com/spot/detail_2818.html"
+    ]
+  },
+  {
+    "id": "iwate_safari_park",
+    "name": "岩手サファリパーク",
+    "pref": "岩手県",
+    "city": "一関市",
+    "status": "open",
+    "url": "https://www.iwate-safari.jp/",
+    "sourceUrls": [
+      "https://www.iwate-safari.jp/",
+      "https://www.iwate-safari.jp/news/"
+    ]
+  },
+  {
+    "id": "iwate_morioka_zoomo",
+    "name": "盛岡市動物公園ZOOMO",
+    "pref": "岩手県",
+    "city": "盛岡市",
+    "status": "open",
+    "url": "https://zoomo.co.jp/",
+    "sourceUrls": [
+      "https://zoomo.co.jp/access/",
+      "https://zoomo.co.jp/about/"
+    ]
+  },
+  {
+    "id": "iwate_kuji_moguranpia_aquarium",
+    "name": "久慈地下水族科学館もぐらんぴあ",
+    "pref": "岩手県",
+    "city": "久慈市",
+    "status": "open",
+    "url": "https://www.moguranpia.com/",
+    "sourceUrls": [
+      "https://www.moguranpia.com/",
+      "https://www.city.kuji.lg.jp/soshiki/shokokanko/1/1/5/2816.html",
+      "https://ja.wikipedia.org/wiki/%E3%82%82%E3%81%90%E3%82%89%E3%82%93%E3%81%B4%E3%81%82"
+    ]
+  },
+  {
+    "id": "miyagi_uminomori_aquarium",
+    "name": "仙台うみの杜水族館",
+    "pref": "宮城県",
+    "city": "仙台市",
+    "status": "open",
+    "url": "https://www.uminomori.jp/",
+    "sourceUrls": [
+      "https://www.uminomori.jp/umino/",
+      "https://www.miyagi-kankou.or.jp/theme/detail.php?id=16448"
+    ]
+  },
+  {
+    "id": "miyagi_yagiyama_zoo",
+    "name": "仙台市八木山動物公園",
+    "pref": "宮城県",
+    "city": "仙台市",
+    "status": "open",
+    "url": "https://www.city.sendai.jp/zoo/",
+    "sourceUrls": [
+      "https://www.city.sendai.jp/zoo/"
+    ]
+  },
+  {
+    "id": "miyagi_aquaterrace_nishikigaoka",
+    "name": "アクアテラス錦ケ丘",
+    "pref": "宮城県",
+    "city": "仙台市青葉区",
+    "status": "open",
+    "url": "https://aquaterrace.co.jp/",
+    "sourceUrls": [
+      "https://aquaterrace.co.jp/",
+      "https://ja.wikipedia.org/wiki/アクアテラス錦ヶ丘",
+      "https://hillside-mall.com/shopguide/aqua-terrace.html"
+    ]
+  },
+  {
+    "id": "miyagi_zao_fox_village",
+    "name": "宮城蔵王キツネ村",
+    "pref": "宮城県",
+    "city": "白石市",
+    "status": "open",
+    "url": "http://zao-fox-village.com/",
+    "sourceUrls": [
+      "http://zao-fox-village.com/",
+      "https://ja.wikipedia.org/wiki/宮城蔵王キツネ村",
+      "https://shiroishi-navi.jp/detail/detail_2145/"
+    ]
+  },
+  {
+    "id": "akita_omoriyama_zoo",
+    "name": "秋田市大森山動物園～あきぎんオモリンの森～",
+    "pref": "秋田県",
+    "city": "秋田市",
+    "status": "open",
+    "url": "https://www.city.akita.lg.jp/zoo/",
+    "sourceUrls": [
+      "https://www.city.akita.lg.jp/zoo/"
+    ]
+  },
+  {
+    "id": "akita_oga_aquarium_gao",
+    "name": "男鹿水族館GAO",
+    "pref": "秋田県",
+    "city": "男鹿市",
+    "status": "open",
+    "url": "https://www.gao-aqua.jp/",
+    "sourceUrls": [
+      "https://www.gao-aqua.jp/about/access",
+      "https://www.gao-aqua.jp/about/info"
+    ]
+  },
+  {
+    "id": "akita_ani_kumakuma_en",
+    "name": "阿仁熊牧場 くまくま園",
+    "pref": "秋田県",
+    "city": "北秋田市",
+    "status": "open",
+    "url": "https://www.city.kitaakita.akita.jp/archive/contents-6060",
+    "sourceUrls": [
+      "https://www.city.kitaakita.akita.jp/archive/p20260422142441",
+      "https://www.city.kitaakita.akita.jp/archive/contents-6060",
+      "https://ja.wikipedia.org/wiki/阿仁熊牧場"
+    ]
+  },
+  {
+    "id": "yamagata_kamo_aquarium",
+    "name": "鶴岡市立加茂水族館",
+    "pref": "山形県",
+    "city": "鶴岡市",
+    "status": "open",
+    "url": "https://kamo-kurage.jp/",
+    "sourceUrls": [
+      "https://kamo-kurage.jp/"
+    ]
+  }
+]

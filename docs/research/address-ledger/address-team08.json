@@ -1,0 +1,106 @@
+[
+  {
+    "id": "kanagawa_zoorasia",
+    "name": "よこはま動物園ズーラシア",
+    "address": "神奈川県横浜市旭区上白根町1175-1",
+    "addressSourceUrl": "https://www.hama-midorinokyokai.or.jp/zoo/zoorasia/",
+    "confidence": "high",
+    "note": "出典ページの表記は「横浜市旭区上白根町1175-1」で都道府県名が省略されていたため、先頭に神奈川県を補った。"
+  },
+  {
+    "id": "kanagawa_hakkeijima_seaparadise",
+    "name": "横浜・八景島シーパラダイス",
+    "address": "神奈川県横浜市金沢区八景島",
+    "addressSourceUrl": "https://www.seaparadise.co.jp/access/",
+    "confidence": "high",
+    "note": "トップページはBot対策で403のためaccess/ページを確認。出典表記は「横浜市金沢区八景島」で都道府県名が省略されていたため、先頭に神奈川県を補った。"
+  },
+  {
+    "id": "kanagawa_nogeyama_zoo",
+    "name": "横浜市立野毛山動物園",
+    "address": "神奈川県横浜市西区老松町63-10",
+    "addressSourceUrl": "https://www.hama-midorinokyokai.or.jp/zoo/nogeyama/about/outline.php",
+    "confidence": "high",
+    "note": "出典ページの表記は「横浜市西区老松町63-10」で都道府県名が省略されていたため、先頭に神奈川県を補った。"
+  },
+  {
+    "id": "kanagawa_kanazawa_zoo",
+    "name": "横浜市立金沢動物園",
+    "address": "神奈川県横浜市金沢区釜利谷東5-15-1",
+    "addressSourceUrl": "https://www.hama-midorinokyokai.or.jp/zoo/kanazawa/",
+    "confidence": "high",
+    "note": "出典ページの表記は「横浜市金沢区釜利谷東5-15-1」で都道府県名が省略されていたため、先頭に神奈川県を補った。"
+  },
+  {
+    "id": "niigata_umigatari",
+    "name": "上越市立水族博物館 うみがたり",
+    "address": "新潟県上越市五智2丁目15-15",
+    "addressSourceUrl": "https://www.city.joetsu.niigata.jp/soshiki/kyouikusoumu/sinnsui-aramasi.html",
+    "confidence": "high",
+    "note": "公式サイト(umigatari.jp/joetsu/)はBot対策で403のため取得不可。運営自治体である上越市の公式ページで住所を確認。"
+  },
+  {
+    "id": "niigata_teradomari_aquarium",
+    "name": "長岡市寺泊水族博物館",
+    "address": "新潟県長岡市寺泊花立9353-158",
+    "addressSourceUrl": "https://aquarium-teradomari.jp/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "niigata_marinepia_nihonkai",
+    "name": "新潟市水族館 マリンピア日本海",
+    "address": "新潟県新潟市中央区西船見町5932-445",
+    "addressSourceUrl": "https://www.marinepia.or.jp/",
+    "confidence": "high",
+    "note": "出典ページの表記は「新潟市中央区西船見町5932-445」で都道府県名が省略されていたため、先頭に新潟県を補った。"
+  },
+  {
+    "id": "toyama_uozu_aquarium",
+    "name": "魚津水族館",
+    "address": "富山県魚津市三ケ 1390",
+    "addressSourceUrl": "https://www.uozu-aquarium.jp/about/",
+    "confidence": "high",
+    "note": "出典ページの表記（「三ケ」と「1390」の間の空白を含む）をそのまま使用。"
+  },
+  {
+    "id": "toyama_takaoka_kojo_zoo",
+    "name": "高岡古城公園動物園",
+    "address": "富山県高岡市古城1-6",
+    "addressSourceUrl": "https://www.takaokakojyozoo.jp/",
+    "confidence": "high",
+    "note": "出典ページでは住所に続けて「（高岡古城公園内）」という補足記載あり。"
+  },
+  {
+    "id": "toyama_family_park",
+    "name": "富山市ファミリーパーク",
+    "address": "富山県富山市古沢254番地",
+    "addressSourceUrl": "https://www.toyama-familypark.jp/info/about",
+    "confidence": "high",
+    "note": "出典ページの表記は「富山市古沢254番地」で都道府県名が省略されていたため、先頭に富山県を補った。"
+  },
+  {
+    "id": "ishikawa_notojima_aquarium",
+    "name": "のとじま水族館",
+    "address": "石川県七尾市能登島曲町15部40",
+    "addressSourceUrl": "https://www.notoaqua.jp/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "ishikawa_ishikawa_zoo",
+    "name": "いしかわ動物園",
+    "address": "石川県能美市徳山町600番地",
+    "addressSourceUrl": "https://www.city.nomi.lg.jp/docs/1438.html",
+    "confidence": "high",
+    "note": "公式サイト(ishikawazoo.jp)には住所記載が見当たらなかったため、運営自治体である能美市の公式ページで住所を確認。"
+  },
+  {
+    "id": "fukui_echizen_matsushima_aquarium",
+    "name": "越前松島水族館",
+    "address": "福井県坂井市三国町崎74-2-3",
+    "addressSourceUrl": "https://www.echizen-aquarium.com/information/access.html",
+    "confidence": "high",
+    "note": ""
+  }
+]

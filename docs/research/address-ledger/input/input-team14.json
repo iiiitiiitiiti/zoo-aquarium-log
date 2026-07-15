@@ -1,0 +1,155 @@
+[
+  {
+    "id": "fukuoka_omuta_zoo",
+    "name": "大牟田市動物園",
+    "pref": "福岡県",
+    "city": "大牟田市",
+    "status": "open",
+    "url": "https://omutacityzoo.org/",
+    "sourceUrls": [
+      "https://omutacityzoo.org/",
+      "https://www.city.omuta.lg.jp/kiji00318052/index.html"
+    ]
+  },
+  {
+    "id": "fukuoka_itozu_no_mori",
+    "name": "到津の森公園",
+    "pref": "福岡県",
+    "city": "北九州市",
+    "status": "open",
+    "url": "https://www.itozu-zoo.jp/",
+    "sourceUrls": [
+      "https://www.itozu-zoo.jp/",
+      "https://www.itozu-zoo.jp/guide/"
+    ]
+  },
+  {
+    "id": "fukuoka_kurume_bird_center",
+    "name": "久留米市鳥類センター",
+    "pref": "福岡県",
+    "city": "久留米市",
+    "status": "open",
+    "url": "https://kurumekoen.org/birdc/",
+    "sourceUrls": [
+      "https://kurumekoen.org/birdc/"
+    ]
+  },
+  {
+    "id": "fukuoka_fukuoka_zoo",
+    "name": "福岡市動植物園",
+    "pref": "福岡県",
+    "city": "福岡市",
+    "status": "open",
+    "url": "https://zoo.city.fukuoka.lg.jp/",
+    "sourceUrls": [
+      "https://zoo.city.fukuoka.lg.jp/"
+    ]
+  },
+  {
+    "id": "fukuoka_uminaka_animal_forest",
+    "name": "海の中道海浜公園動物の森",
+    "pref": "福岡県",
+    "city": "福岡市",
+    "status": "open",
+    "url": "https://uminaka-park.jp/animal/",
+    "sourceUrls": [
+      "https://uminaka-park.jp/animal/",
+      "https://www.jaza.jp/about-jaza/structure/list-zoo"
+    ]
+  },
+  {
+    "id": "fukuoka_marine_world_uminonakamichi",
+    "name": "マリンワールド海の中道",
+    "pref": "福岡県",
+    "city": "福岡市",
+    "status": "open",
+    "url": "https://marine-world.jp/",
+    "sourceUrls": [
+      "https://marine-world.jp/"
+    ]
+  },
+  {
+    "id": "nagasaki_biopark",
+    "name": "長崎バイオパーク",
+    "pref": "長崎県",
+    "city": "西海市",
+    "status": "open",
+    "url": "https://www.biopark.co.jp/",
+    "sourceUrls": [
+      "https://www.biopark.co.jp/info/",
+      "https://www.biopark.co.jp/info/access/"
+    ]
+  },
+  {
+    "id": "nagasaki_morikirara",
+    "name": "九十九島動植物園森きらら",
+    "pref": "長崎県",
+    "city": "佐世保市",
+    "status": "open",
+    "url": "https://www.morikirara.jp/",
+    "sourceUrls": [
+      "https://www.morikirara.jp/",
+      "https://www.morikirara.jp/news/"
+    ]
+  },
+  {
+    "id": "nagasaki_penguin_aquarium",
+    "name": "長崎ペンギン水族館",
+    "pref": "長崎県",
+    "city": "長崎市",
+    "status": "open",
+    "url": "https://penguin-aqua.jp/",
+    "sourceUrls": [
+      "https://penguin-aqua.jp/",
+      "https://penguin-aqua.jp/news/"
+    ]
+  },
+  {
+    "id": "kumamoto_kumamoto_zoo",
+    "name": "熊本市動植物園",
+    "pref": "熊本県",
+    "city": "熊本市",
+    "status": "open",
+    "url": "https://www.ezooko.jp/",
+    "sourceUrls": [
+      "https://www.ezooko.jp/",
+      "https://www.city.kumamoto.jp/list00621.html"
+    ]
+  },
+  {
+    "id": "oita_african_safari",
+    "name": "九州自然動物公園アフリカンサファリ",
+    "pref": "大分県",
+    "city": "宇佐市",
+    "status": "open",
+    "url": "https://africansafari.co.jp/",
+    "sourceUrls": [
+      "https://africansafari.co.jp/",
+      "https://africansafari.co.jp/news/"
+    ]
+  },
+  {
+    "id": "oita_umitamago",
+    "name": "大分マリーンパレス水族館「うみたまご」",
+    "pref": "大分県",
+    "city": "大分市",
+    "status": "open",
+    "url": "https://www.umitamago.jp/",
+    "sourceUrls": [
+      "https://www.umitamago.jp/",
+      "https://www.umitamago.jp/access/"
+    ]
+  },
+  {
+    "id": "miyazaki_phoenix_zoo",
+    "name": "宮崎市フェニックス自然動物園",
+    "pref": "宮崎県",
+    "city": "宮崎市",
+    "status": "open",
+    "url": "https://www.miyazaki-city-zoo.jp/",
+    "sourceUrls": [
+      "https://www.miyazaki-city-zoo.jp/access/",
+      "https://www.miyazaki-city-zoo.jp/user-guide/"
+    ]
+  }
+]

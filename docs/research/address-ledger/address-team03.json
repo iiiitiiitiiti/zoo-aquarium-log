@@ -1,0 +1,106 @@
+[
+  {
+    "id": "hokkaido_viva_alpaca_farm",
+    "name": "ビバアルパカ牧場",
+    "address": "北海道上川郡剣淵町東町3733番地",
+    "addressSourceUrl": "https://www.viva-alpaca.jp/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "hokkaido_bifuka_sturgeon_hall",
+    "name": "美深チョウザメ館",
+    "address": "北海道中川郡美深町字紋穂内 森林公園びふかアイランド内",
+    "addressSourceUrl": "https://www.bifuka-kankou.com/attractions/tyozamekan/",
+    "confidence": "medium",
+    "note": "町の公式ページ（town.bifuka.hokkaido.jp、bifukaonsen.com）にはチョウザメ館単独の番地記載がなかったため、美深町観光協会の公式ページを出典とした。番地までは確認できず「森林公園びふかアイランド内」の表記まで。"
+  },
+  {
+    "id": "hokkaido_furusato_no_mori_animal_museum",
+    "name": "ふるさとの森動物館",
+    "address": "北海道野付郡別海町別海140番地の1",
+    "addressSourceUrl": "https://betsukai.jp/shisetsu/kanko/animal_/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "hokkaido_horonobe_reindeer_farm",
+    "name": "幌延町トナカイ観光牧場",
+    "address": "北海道天塩郡幌延町字北進398番地1",
+    "addressSourceUrl": "https://www.town.horonobe.lg.jp/www4/section/sangyo/le009f00000017ha.html",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "hokkaido_maruseppu_insect_museum",
+    "name": "丸瀬布昆虫生態館",
+    "address": "北海道紋別郡遠軽町丸瀬布上武利",
+    "addressSourceUrl": "https://engaru.jp/tourism/page.php?id=414",
+    "confidence": "high",
+    "note": "出典ページに番地の記載なし。表記のまま採用。"
+  },
+  {
+    "id": "hokkaido_yamano_aquarium",
+    "name": "山の水族館",
+    "address": "北海道北見市留辺蘂町松山1番地4",
+    "addressSourceUrl": "https://www.city.kitami.lg.jp/administration/town/detail.php?content=7753",
+    "confidence": "high",
+    "note": "出典ページの表記は「〒091-0153 北見市留辺蘂町松山1番地4」（北海道の記載なし）。北見市公式サイトであり所在都道府県は自明なため冒頭に「北海道」を補って記載。"
+  },
+  {
+    "id": "hokkaido_wakkanai_animal_fureai_land",
+    "name": "稚内市動物ふれあいランド",
+    "address": "北海道稚内市声問村字恵北",
+    "addressSourceUrl": "https://www.north-hokkaido.com/spot/detail_1090.html",
+    "confidence": "medium",
+    "note": "運営元の稚内振興公社サイト（w-shinko.co.jp/animalland/）にも「〒098-6645 稚内市声問村字恵北」の記載があるが北海道の記載なし。都道府県まで含む完全な表記が確認できた公式DMO（きた・北海道）ページを出典とした。両者の記載内容は一致。"
+  },
+  {
+    "id": "hokkaido_noshappu_aquarium",
+    "name": "稚内市立ノシャップ寒流水族館",
+    "address": "北海道稚内市ノシャップ2丁目2番17号",
+    "addressSourceUrl": "https://www.city.wakkanai.hokkaido.jp/suizokukan/gaiyo/youkoso.html",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "aomori_asamushi_aquarium",
+    "name": "青森県営浅虫水族館",
+    "address": "青森県青森市浅虫字馬場山1-25",
+    "addressSourceUrl": "https://asamushi-aqua.com/userguide/access",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "aomori_yayoi_ikoi_hiroba",
+    "name": "弥生いこいの広場",
+    "address": "青森県弘前市大字百沢字東岩木山2480",
+    "addressSourceUrl": "https://www.city.hirosaki.aomori.jp/gaiyou/shisetsu/2014-1206-1516-48.html",
+    "confidence": "high",
+    "note": "閉園時の所在地（status: suspended、閉鎖・休止中）。出典ページの表記は「弘前市大字百沢字東岩木山2480」（青森県の記載なし）。弘前市公式サイトであり所在都道府県は自明なため冒頭に「青森県」を補って記載。運営者サイト（hirosakipark.or.jp）はSSL証明書エラーで取得不可だった。"
+  },
+  {
+    "id": "aomori_ashino_children_zoo",
+    "name": "芦野児童動物園",
+    "address": "青森県五所川原市金木町芦野84番地170",
+    "addressSourceUrl": "https://www1.g-reiki.net/city.goshogawara/reiki_honbun/r113RG00000445.html",
+    "confidence": "medium",
+    "note": "五所川原市公式の例規集に掲載された「五所川原市芦野公園設置条例」第2条の位置表記（芦野児童動物園は芦野公園内の施設）。動物園単独の番地表記は市公式ページ（city.goshogawara.lg.jp）に見当たらず、公園全体の設置条例上の位置を採用。出典ページの表記に都道府県の記載がないため冒頭に「青森県」を補って記載。"
+  },
+  {
+    "id": "aomori_gappo_park_animal_house",
+    "name": "合浦公園動物舎",
+    "address": "青森県青森市合浦2-17-50",
+    "addressSourceUrl": "https://www.city.aomori.aomori.jp/shisetsu/1005691/1007882.html",
+    "confidence": "medium",
+    "note": "青森市公式ページに記載の「合浦公園管理事務所」の住所（動物舎は同公園内の施設で単独の番地記載はなし）。出典ページの表記に都道府県の記載がないため冒頭に「青森県」を補って記載。"
+  },
+  {
+    "id": "aomori_tancho_crane_nature_park",
+    "name": "丹頂鶴自然公園",
+    "address": "青森県北津軽郡鶴田町廻堰大沢81-150",
+    "addressSourceUrl": "https://www.medetai-tsuruta.jp/spot/sightseeing/naturepark.html",
+    "confidence": "high",
+    "note": "鶴田町公式サイト（town.tsuruta.lg.jp）には公園自体の番地記載がなかったため、鶴田町商工観光課が運営する公式観光サイト「メデタイ・ツルタ」を出典とした。"
+  }
+]

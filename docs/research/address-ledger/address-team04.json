@@ -1,0 +1,106 @@
+[
+  {
+    "id": "aomori_hachinohe_park_animal_grazing_zone",
+    "name": "八戸公園こどもの国動物放牧ゾーン",
+    "address": "青森県八戸市大字十日市字天摩33-2",
+    "addressSourceUrl": "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/koenryokuchika/koen/18209.html",
+    "confidence": "high",
+    "note": "住所は八戸公園全体の所在地。動物放牧ゾーンは公園内の一区画で個別住所の記載なし。visithachinehe.comでも同住所を確認。"
+  },
+  {
+    "id": "aomori_wakinosawa_yaen_park",
+    "name": "むつ市脇野沢野猿公苑",
+    "address": "青森県むつ市脇野沢七引地内",
+    "addressSourceUrl": "https://www.city.mutsu.lg.jp/government/shisetsu/kankou/wakinosawayaenkouen.html",
+    "confidence": "high",
+    "note": "むつ市公式ページは「むつ市脇野沢七引地内」の表記で都道府県名は省略。青森県を補って記載。"
+  },
+  {
+    "id": "iwate_safari_park",
+    "name": "岩手サファリパーク",
+    "address": "岩手県一関市藤沢町黄海字山谷121-2",
+    "addressSourceUrl": "https://www.iwate-safari.jp/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "iwate_morioka_zoomo",
+    "name": "盛岡市動物公園ZOOMO",
+    "address": "岩手県盛岡市新庄字下八木田60-18",
+    "addressSourceUrl": "https://zoomo.co.jp/access/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "iwate_kuji_moguranpia_aquarium",
+    "name": "久慈地下水族科学館もぐらんぴあ",
+    "address": "岩手県久慈市侍浜町麦生1-43-7",
+    "addressSourceUrl": "https://www.moguranpia.com/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "miyagi_uminomori_aquarium",
+    "name": "仙台うみの杜水族館",
+    "address": "宮城県仙台市宮城野区中野4丁目6番地",
+    "addressSourceUrl": "https://datekan.jp/manabitabi/spots/%E4%BB%99%E5%8F%B0%E3%81%86%E3%81%BF%E3%81%AE%E6%9D%9C%E6%B0%B4%E6%97%8F%E9%A4%A8/",
+    "confidence": "medium",
+    "note": "公式サイト(uminomori.jp)は複数ページで403エラーとなり直接確認不可。仙台市文化観光局が運営する「伊達な学び旅」ページで確認。"
+  },
+  {
+    "id": "miyagi_yagiyama_zoo",
+    "name": "仙台市八木山動物公園",
+    "address": "宮城県仙台市太白区八木山本町1-43",
+    "addressSourceUrl": "https://www.city.sendai.jp/zoo/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "miyagi_aquaterrace_nishikigaoka",
+    "name": "アクアテラス錦ケ丘",
+    "address": "宮城県仙台市青葉区錦ケ丘1-3-1 錦ケ丘ヒルサイドモール2F",
+    "addressSourceUrl": "https://aquaterrace.co.jp/accessmap/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "miyagi_zao_fox_village",
+    "name": "宮城蔵王キツネ村",
+    "address": "宮城県白石市福岡八宮字川原子11-3",
+    "addressSourceUrl": "https://shiroishi-navi.jp/detail/detail_2145/",
+    "confidence": "medium",
+    "note": "施設公式サイト(zao-fox-village.com)はSSL証明書エラー（証明書のホスト名不一致）で取得不可。白石市公式観光サイト「しろいし観光ナビ」で確認。"
+  },
+  {
+    "id": "akita_omoriyama_zoo",
+    "name": "秋田市大森山動物園～あきぎんオモリンの森～",
+    "address": "秋田県秋田市浜田字潟端154番地",
+    "addressSourceUrl": "https://www.city.akita.lg.jp/zoo/",
+    "confidence": "high",
+    "note": "秋田市公式ページの表記は「秋田市浜田字潟端154番地」で都道府県名は省略。秋田県を補って記載。"
+  },
+  {
+    "id": "akita_oga_aquarium_gao",
+    "name": "男鹿水族館GAO",
+    "address": "秋田県男鹿市戸賀塩浜",
+    "addressSourceUrl": "https://www.gao-aqua.jp/about/access",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "akita_ani_kumakuma_en",
+    "name": "阿仁熊牧場 くまくま園",
+    "address": "秋田県北秋田市阿仁打当陳場1-39",
+    "addressSourceUrl": "https://k-akita.com/spot/2981/",
+    "confidence": "medium",
+    "note": "施設公式サイト(hahaha.akita.jp)は接続エラー（ECONNREFUSED）で取得不可。北秋田市公式ページには具体的住所記載なし。一般社団法人北秋田まちづくり観光協会の公式サイトで確認。"
+  },
+  {
+    "id": "yamagata_kamo_aquarium",
+    "name": "鶴岡市立加茂水族館",
+    "address": "山形県鶴岡市今泉字大久保657-1",
+    "addressSourceUrl": "https://kamo-kurage.jp/",
+    "confidence": "high",
+    "note": ""
+  }
+]

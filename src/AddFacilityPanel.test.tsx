@@ -104,6 +104,32 @@ describe("AddFacilityPanel", () => {
     expect(failedStore.createCalls).toHaveLength(1);
   });
 
+  it("住所を入力すると保存し、空欄なら address を含めない", async () => {
+    const user = userEvent.setup();
+    const store = new FakeCustomFacilityStore();
+    render(<AddFacilityPanel store={store} onBack={() => undefined} onCreated={() => undefined} />);
+
+    await user.type(screen.getByLabelText("施設名"), "住所なし施設");
+    await user.click(screen.getByRole("button", { name: "施設を保存" }));
+    expect(store.createCalls[0]).not.toHaveProperty("address");
+
+    await user.type(screen.getByLabelText("住所"), " 東京都台東区上野公園9-83 ");
+    await user.click(screen.getByRole("button", { name: "施設を保存" }));
+    expect(store.createCalls[1]).toMatchObject({ address: "東京都台東区上野公園9-83" });
+  });
+
+  it("編集モードでは住所の初期値を表示し、消すと address を外して保存する", async () => {
+    const user = userEvent.setup();
+    const store = new FakeCustomFacilityStore();
+    render(<AddFacilityPanel store={store} initialFacility={{ ...existingFacility, address: "大阪府大阪市北区1-1" }} onBack={() => undefined} onCreated={() => undefined} />);
+
+    expect(screen.getByLabelText("住所")).toHaveValue("大阪府大阪市北区1-1");
+    await user.clear(screen.getByLabelText("住所"));
+    await user.click(screen.getByRole("button", { name: "変更を保存" }));
+
+    expect(store.updateCalls[0].draft).not.toHaveProperty("address");
+  });
+
   it("編集モードでは初期値を表示し、同じIDに保存する", async () => {
     const user = userEvent.setup();
     const store = new FakeCustomFacilityStore();

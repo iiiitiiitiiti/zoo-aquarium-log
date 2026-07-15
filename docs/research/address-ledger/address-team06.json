@@ -1,0 +1,106 @@
+[
+  {
+    "id": "saitama_omiya_zoo",
+    "name": "大宮公園小動物園",
+    "address": "埼玉県さいたま市大宮区高鼻町4",
+    "addressSourceUrl": "https://www.parks.or.jp/omiyazoo/guide/008/008996.html",
+    "confidence": "high",
+    "note": "出典ページの表記は「さいたま市大宮区高鼻町4」（都道府県名なし）。pref情報に基づき「埼玉県」を先頭に付与。"
+  },
+  {
+    "id": "saitama_osaki_zoo",
+    "name": "大崎公園子供動物園",
+    "address": "埼玉県さいたま市緑区大字大崎3170-1",
+    "addressSourceUrl": "https://www.city.saitama.lg.jp/004/001/003/001/p002130.html",
+    "confidence": "high",
+    "note": "出典ページの表記は「さいたま市緑区大字大崎3170-1」（都道府県名なし）。pref情報に基づき「埼玉県」を先頭に付与。"
+  },
+  {
+    "id": "saitama_chikozan_zoo",
+    "name": "狭山市立智光山公園こども動物園",
+    "address": "埼玉県狭山市柏原864-1",
+    "addressSourceUrl": "https://www.parks.or.jp/chikozan/zoo/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "saitama_saitama_aquarium",
+    "name": "さいたま水族館",
+    "address": "埼玉県羽生市三田ヶ谷751-1",
+    "addressSourceUrl": "https://www.parks.or.jp/suizokukan/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "saitama_kodomo_zoo",
+    "name": "埼玉県こども動物自然公園",
+    "address": "埼玉県東松山市岩殿554",
+    "addressSourceUrl": "https://www.parks.or.jp/sczoo/guide/000/000195.html",
+    "confidence": "high",
+    "note": "出典ページの表記は「〒355-0065 東松山市岩殿554」（都道府県名なし）。pref情報に基づき「埼玉県」を先頭に付与。"
+  },
+  {
+    "id": "saitama_tobu_zoo",
+    "name": "東武動物公園",
+    "address": "埼玉県南埼玉郡宮代町須賀110",
+    "addressSourceUrl": "https://www.tobuzoo.com/about/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "chiba_ichikawa_zoo",
+    "name": "市川市動植物園",
+    "address": "千葉県市川市大町284番地1",
+    "addressSourceUrl": "https://www.city.ichikawa.lg.jp/site/zoo/",
+    "confidence": "high",
+    "note": "出典ページの表記は「〒272-0801 市川市大町284番地1」（都道府県名なし）。pref情報に基づき「千葉県」を先頭に付与。同ページには併設の植物園の住所「市川市大町213番地11」も別記載されているが、動植物園全体の代表住所として動物園側の番地を採用。"
+  },
+  {
+    "id": "chiba_ichihara_zou_no_kuni",
+    "name": "市原ぞうの国",
+    "address": "千葉県市原市山小川937",
+    "addressSourceUrl": "https://zounokuni.com/info/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "chiba_kamogawa_sea_world",
+    "name": "鴨川シーワールド",
+    "address": "千葉県鴨川市東町1464-18",
+    "addressSourceUrl": "https://www.kamogawa-seaworld.jp/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "chiba_chiba_zoo",
+    "name": "千葉市動物公園",
+    "address": "千葉県千葉市若葉区源町280番地",
+    "addressSourceUrl": "https://www.city.chiba.jp/zoo/guide/index.html",
+    "confidence": "high",
+    "note": "出典ページの表記は「〒264-0037 千葉市若葉区源町280番地」（都道府県名なし）。pref情報に基づき「千葉県」を先頭に付与。"
+  },
+  {
+    "id": "tokyo_adachi_seibutsuen",
+    "name": "足立区生物園",
+    "address": "東京都足立区保木間二丁目17番1号",
+    "addressSourceUrl": "https://seibutuen.jp/guidance/information.html",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "tokyo_kasai_aquarium",
+    "name": "葛西臨海水族園",
+    "address": "東京都江戸川区臨海町6-2-3",
+    "addressSourceUrl": "https://www.tokyo-zoo.net/zoo/kasai/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "tokyo_edogawa_shizen_zoo",
+    "name": "江戸川区自然動物園",
+    "address": "東京都江戸川区北葛西3丁目2番1号行船公園内",
+    "addressSourceUrl": "https://www.city.edogawa.tokyo.jp/e066/kuseijoho/gaiyo/shisetsuguide/bunya/koendobutsuen/shizen.html",
+    "confidence": "high",
+    "note": "出典ページの表記は「江戸川区北葛西3丁目2番1号行船公園内」（都道府県名なし）。pref情報に基づき「東京都」を先頭に付与。運営財団のsourceUrl（edogawa-kankyozaidan.jp）は財団事務局住所（松島1-44-12）を記載しており動物園自体の住所ではないため採用せず、区公式ページを出典とした。"
+  }
+]

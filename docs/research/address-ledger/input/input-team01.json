@@ -1,0 +1,152 @@
+[
+  {
+    "id": "hokkaido_asahiyama_zoo",
+    "name": "旭川市旭山動物園",
+    "pref": "北海道",
+    "city": "旭川市",
+    "status": "open",
+    "url": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/",
+    "sourceUrls": [
+      "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/"
+    ]
+  },
+  {
+    "id": "hokkaido_otaru_aquarium",
+    "name": "おたる水族館",
+    "pref": "北海道",
+    "city": "小樽市",
+    "status": "open",
+    "url": "https://otaru-aq.jp/",
+    "sourceUrls": [
+      "https://otaru-aq.jp/"
+    ]
+  },
+  {
+    "id": "hokkaido_obihiro_zoo",
+    "name": "おびひろ動物園",
+    "pref": "北海道",
+    "city": "帯広市",
+    "status": "open",
+    "url": "https://www.city.obihiro.hokkaido.jp/zoo/",
+    "sourceUrls": [
+      "https://www.city.obihiro.hokkaido.jp/zoo/",
+      "https://www.city.obihiro.hokkaido.jp/zoo/annai/1005253.html"
+    ]
+  },
+  {
+    "id": "hokkaido_kushiro_zoo",
+    "name": "釧路市動物園",
+    "pref": "北海道",
+    "city": "釧路市",
+    "status": "open",
+    "url": "https://www.city.kushiro.lg.jp/zoo/",
+    "sourceUrls": [
+      "https://www.city.kushiro.lg.jp/zoo/"
+    ]
+  },
+  {
+    "id": "hokkaido_maruyama_zoo",
+    "name": "札幌市円山動物園",
+    "pref": "北海道",
+    "city": "札幌市",
+    "status": "open",
+    "url": "https://www.city.sapporo.jp/zoo/",
+    "sourceUrls": [
+      "https://www.city.sapporo.jp/zoo/"
+    ]
+  },
+  {
+    "id": "hokkaido_aoao_sapporo",
+    "name": "AOAO SAPPORO",
+    "pref": "北海道",
+    "city": "札幌市",
+    "status": "open",
+    "url": "https://aoao-sapporo.blue/",
+    "sourceUrls": [
+      "https://aoao-sapporo.blue/",
+      "https://aoao-sapporo.blue/about/"
+    ]
+  },
+  {
+    "id": "hokkaido_sunpiaza_aquarium",
+    "name": "新さっぽろサンピアザ水族館",
+    "pref": "北海道",
+    "city": "札幌市",
+    "status": "open",
+    "url": "https://www.sunpiazza-aquarium.com/",
+    "sourceUrls": [
+      "https://www.sunpiazza-aquarium.com/",
+      "https://www.sunpiazza-aquarium.com/access/"
+    ]
+  },
+  {
+    "id": "hokkaido_chitose_aquarium",
+    "name": "サケのふるさと 千歳水族館",
+    "pref": "北海道",
+    "city": "千歳市",
+    "status": "open",
+    "url": "https://chitose-aq.jp/",
+    "sourceUrls": [
+      "https://chitose-aq.jp/"
+    ]
+  },
+  {
+    "id": "hokkaido_noboribetsu_nixe",
+    "name": "登別マリンパークニクス",
+    "pref": "北海道",
+    "city": "登別市",
+    "status": "open",
+    "url": "https://nixe-aqua.com/",
+    "sourceUrls": [
+      "https://nixe-aqua.com/"
+    ]
+  },
+  {
+    "id": "hokkaido_okhotsk_emu_land",
+    "name": "オホーツクエミューらんど",
+    "pref": "北海道",
+    "city": "網走市",
+    "status": "open",
+    "url": "https://www.emu-pasture.jp/",
+    "sourceUrls": [
+      "https://www.nodai.ac.jp/campus/club/okhotsk/emu/",
+      "https://zfc.jp/zoolist/349"
+    ]
+  },
+  {
+    "id": "hokkaido_okhotsk_chipmunk_park",
+    "name": "オホーツクシマリス公園",
+    "pref": "北海道",
+    "city": "網走市",
+    "status": "open",
+    "url": "https://visit-abashiri.jp/en/culture/bd619c302fe51d484ff522c824a63fb6510c0386.html",
+    "sourceUrls": [
+      "https://eastern-hokkaido-style.jp/archives/01677/",
+      "https://visit-abashiri.jp/en/culture/bd619c302fe51d484ff522c824a63fb6510c0386.html"
+    ]
+  },
+  {
+    "id": "hokkaido_okhotsk_tokkari_center",
+    "name": "オホーツクとっかりセンター",
+    "pref": "北海道",
+    "city": "紋別市",
+    "status": "open",
+    "url": "https://o-tower.co.jp/tokkaricenter.html",
+    "sourceUrls": [
+      "https://o-tower.co.jp/tokkaricenter.html",
+      "https://tic.mombetsu.net/tourist-facilities/sealsland/"
+    ]
+  },
+  {
+    "id": "hokkaido_kitakitsune_farm",
+    "name": "北きつね牧場",
+    "pref": "北海道",
+    "city": "北見市",
+    "status": "open",
+    "url": "https://kitakitsune-farm.com/",
+    "sourceUrls": [
+      "https://kitakitsune-farm.com/",
+      "https://kitamikanko.jp/spot/157/"
+    ]
+  }
+]

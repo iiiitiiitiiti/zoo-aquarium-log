@@ -1,0 +1,155 @@
+[
+  {
+    "id": "fukui_nishiyama_zoo",
+    "name": "鯖江市西山動物園",
+    "pref": "福井県",
+    "city": "鯖江市",
+    "status": "open",
+    "url": "https://www.city.sabae.fukui.jp/nishiyama_zoo/",
+    "sourceUrls": [
+      "https://www.city.sabae.fukui.jp/nishiyama_zoo/index.html",
+      "https://www.city.sabae.fukui.jp/about_city/shinoshokai/kokyoshisetsu/nishiyama_zoo.html"
+    ]
+  },
+  {
+    "id": "yamanashi_fuji_yusui_aquarium",
+    "name": "山梨県立富士湧水の里水族館",
+    "pref": "山梨県",
+    "city": "忍野村",
+    "status": "open",
+    "url": "https://www.morinonakano-suizokukan.com/",
+    "sourceUrls": [
+      "https://www.morinonakano-suizokukan.com/access.html",
+      "https://www.morinonakano-suizokukan.com/pg5605926.html"
+    ]
+  },
+  {
+    "id": "yamanashi_kofu_yuki_zoo",
+    "name": "甲府市遊亀公園附属動物園",
+    "pref": "山梨県",
+    "city": "甲府市",
+    "status": "suspended",
+    "url": "https://www.city.kofu.yamanashi.jp/zoo/",
+    "sourceUrls": [
+      "https://www.city.kofu.yamanashi.jp/zoo/",
+      "https://www.city.kofu.yamanashi.jp/koenryokuchi/seibi/progress.html"
+    ]
+  },
+  {
+    "id": "nagano_iida_zoo",
+    "name": "飯田市立動物園",
+    "pref": "長野県",
+    "city": "飯田市",
+    "status": "open",
+    "url": "https://iidazoo.jp/",
+    "sourceUrls": [
+      "https://iidazoo.jp/",
+      "https://www.city.iida.lg.jp/soshiki/171/iida-zoo.html"
+    ]
+  },
+  {
+    "id": "nagano_omachi_sanpaku_zoo",
+    "name": "市立大町山岳博物館付属園",
+    "pref": "長野県",
+    "city": "大町市",
+    "status": "open",
+    "url": "https://www.omachi-sanpaku.com/",
+    "sourceUrls": [
+      "https://www.omachi-sanpaku.com/facility/garden/",
+      "https://www.city.omachi.nagano.jp/shisei/shisetsu/bunkashisetsu/wvhnw2scnpzz98abdf1hd0wc"
+    ]
+  },
+  {
+    "id": "nagano_komoro_zoo",
+    "name": "小諸市動物園",
+    "pref": "長野県",
+    "city": "小諸市",
+    "status": "open",
+    "url": "https://www.city.komoro.lg.jp/komoro_zoo/index.html",
+    "sourceUrls": [
+      "https://www.city.komoro.lg.jp/komoro_zoo/index.html"
+    ]
+  },
+  {
+    "id": "nagano_suzaka_zoo",
+    "name": "須坂市動物園",
+    "pref": "長野県",
+    "city": "須坂市",
+    "status": "open",
+    "url": "https://www.city.suzaka.nagano.jp/suzaka_zoo/index.html",
+    "sourceUrls": [
+      "https://www.city.suzaka.nagano.jp/suzaka_zoo/index.html"
+    ]
+  },
+  {
+    "id": "nagano_chausuyama_zoo",
+    "name": "長野市茶臼山動物園",
+    "pref": "長野県",
+    "city": "長野市",
+    "status": "open",
+    "url": "https://chausuyama.com/",
+    "sourceUrls": [
+      "https://chausuyama.com/",
+      "https://www.n-kaihatu.com/zoo/"
+    ]
+  },
+  {
+    "id": "gifu_aquatotto_aquarium",
+    "name": "世界淡水魚園水族館 アクア・トト ぎふ",
+    "pref": "岐阜県",
+    "city": "各務原市",
+    "status": "open",
+    "url": "https://aquatotto.com/",
+    "sourceUrls": [
+      "https://aquatotto.com/"
+    ]
+  },
+  {
+    "id": "shizuoka_izu_shaboten_zoo",
+    "name": "伊豆シャボテン動物公園",
+    "pref": "静岡県",
+    "city": "伊東市",
+    "status": "open",
+    "url": "https://izushaboten.com/",
+    "sourceUrls": [
+      "https://izushaboten.com/information/",
+      "https://izushaboten.com/"
+    ]
+  },
+  {
+    "id": "shizuoka_nihondaira_zoo",
+    "name": "静岡市立日本平動物園",
+    "pref": "静岡県",
+    "city": "静岡市",
+    "status": "open",
+    "url": "https://www.nhdzoo.jp/",
+    "sourceUrls": [
+      "https://www.nhdzoo.jp/info/index.html",
+      "https://web.onezoo.jp/nihondaira/access/index.html"
+    ]
+  },
+  {
+    "id": "shizuoka_tokai_univ_marine_museum",
+    "name": "東海大学海洋科学博物館",
+    "pref": "静岡県",
+    "city": "静岡市",
+    "status": "closed",
+    "url": "https://www.umi.muse-tokai.jp/",
+    "sourceUrls": [
+      "https://www.umi.muse-tokai.jp/news/single.php?id=6577",
+      "https://www.umi.muse-tokai.jp/"
+    ]
+  },
+  {
+    "id": "shizuoka_fuji_safari_park",
+    "name": "富士サファリパーク",
+    "pref": "静岡県",
+    "city": "裾野市",
+    "status": "open",
+    "url": "https://www.fujisafari.co.jp/",
+    "sourceUrls": [
+      "https://www.fujisafari.co.jp/access/",
+      "https://www.fujisafari.co.jp/schedule/"
+    ]
+  }
+]

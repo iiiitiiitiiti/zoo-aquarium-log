@@ -1,0 +1,106 @@
+[
+  {
+    "id": "yamagata_kahoku_childrens_zoo",
+    "name": "河北町児童動物園",
+    "address": "山形県西村山郡河北町谷地戊81番地",
+    "addressSourceUrl": "https://www.town.kahoku.yamagata.jp/soshiki/shoko/kankousinkou/Kahokuchildrenzoo/index.html",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "fukushima_kawasemi_aquarium",
+    "name": "アクアマリンいなわしろカワセミ水族館",
+    "address": "福島県耶麻郡猪苗代町大字長田字東中丸3447-4",
+    "addressSourceUrl": "https://www.aquamarine.or.jp/kawasemi/access/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "fukushima_aquamarine_fukushima",
+    "name": "アクアマリンふくしま",
+    "address": "福島県いわき市小名浜字辰巳町50",
+    "addressSourceUrl": "https://www.aquamarine.or.jp/guide/access/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "fukushima_tohoku_safari_park",
+    "name": "東北サファリパーク",
+    "address": "",
+    "addressSourceUrl": "",
+    "confidence": "unconfirmed",
+    "note": "公式サイト(http://tohoku-safaripark.co.jp/、company/access等の全ページ)がSSL証明書エラー（証明書のaltnamesがsakura.ne.jp系ドメイン向けで実ホスト名と不一致）のため取得不可。WebSearchでは非公式サイト（じゃらん・るるぶ・4travel・すくすくひろば等）にのみ住所記載が見つかったが、規約により非公式情報は出典として不採用。未確認のまま。"
+  },
+  {
+    "id": "fukushima_mushimushiland",
+    "name": "ムシムシランド",
+    "address": "福島県田村市常葉町山根字殿上160",
+    "addressSourceUrl": "https://www.mushimushiland.com/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "ibaraki_oarai_aquarium",
+    "name": "アクアワールド茨城県大洗水族館",
+    "address": "茨城県東茨城郡大洗町磯浜町8252-3",
+    "addressSourceUrl": "https://www.aquaworld-oarai.com/guide/access",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "ibaraki_kamine_zoo",
+    "name": "日立市かみね動物園",
+    "address": "茨城県日立市宮田町5丁目2-22",
+    "addressSourceUrl": "https://www.city.hitachi.lg.jp/zoo/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "tochigi_utsunomiya_zoo",
+    "name": "宇都宮動物園",
+    "address": "栃木県宇都宮市上金井町552-2",
+    "addressSourceUrl": "https://utsunomiya-zoo.com/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "tochigi_nakagawa_aquarium",
+    "name": "栃木県なかがわ水遊園",
+    "address": "栃木県大田原市佐良土2686",
+    "addressSourceUrl": "https://tnap.jp/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "tochigi_nasu_animal_kingdom",
+    "name": "那須どうぶつ王国",
+    "address": "栃木県那須郡那須町大島1042-1",
+    "addressSourceUrl": "https://nasu-oukoku.com/?page_id=1598",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "tochigi_nasu_safari_park",
+    "name": "那須サファリパーク",
+    "address": "栃木県那須郡那須町高久乙3523番地",
+    "addressSourceUrl": "https://www.nasusafari.com/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "gunma_kiryugaoka_zoo",
+    "name": "桐生が岡動物園",
+    "address": "群馬県桐生市宮本町三丁目8番13号",
+    "addressSourceUrl": "https://www.city.kiryu.lg.jp/zoo/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "gunma_safari_park",
+    "name": "群馬サファリパーク",
+    "address": "群馬県富岡市岡本1番地",
+    "addressSourceUrl": "https://safari.co.jp/access/",
+    "confidence": "high",
+    "note": ""
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "id": "hokkaido_asahiyama_zoo",
+    "name": "旭川市旭山動物園",
+    "address": "北海道旭川市東旭川町倉沼",
+    "addressSourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "hokkaido_otaru_aquarium",
+    "name": "おたる水族館",
+    "address": "北海道小樽市祝津3丁目303番地",
+    "addressSourceUrl": "https://otaru-aq.jp/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "hokkaido_obihiro_zoo",
+    "name": "おびひろ動物園",
+    "address": "北海道帯広市緑ヶ丘2番地",
+    "addressSourceUrl": "https://www.city.obihiro.hokkaido.jp/zoo/annai/1005253.html",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "hokkaido_kushiro_zoo",
+    "name": "釧路市動物園",
+    "address": "北海道釧路市阿寒町下仁々志別11番",
+    "addressSourceUrl": "https://www.city.kushiro.lg.jp/zoo/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "hokkaido_maruyama_zoo",
+    "name": "札幌市円山動物園",
+    "address": "北海道札幌市中央区宮ケ丘3番地1",
+    "addressSourceUrl": "https://www.city.sapporo.jp/zoo/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "hokkaido_aoao_sapporo",
+    "name": "AOAO SAPPORO",
+    "address": "北海道札幌市中央区南2条西3丁目20 moyuk SAPPORO 4階-6階",
+    "addressSourceUrl": "https://aoao-sapporo.blue/about/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "hokkaido_sunpiaza_aquarium",
+    "name": "新さっぽろサンピアザ水族館",
+    "address": "北海道札幌市厚別区厚別中央2-5-7-5",
+    "addressSourceUrl": "https://www.sunpiazza-aquarium.com/access/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "hokkaido_chitose_aquarium",
+    "name": "サケのふるさと 千歳水族館",
+    "address": "北海道千歳市花園2丁目312",
+    "addressSourceUrl": "https://chitose-aq.jp/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "hokkaido_noboribetsu_nixe",
+    "name": "登別マリンパークニクス",
+    "address": "北海道登別市登別東町1丁目22",
+    "addressSourceUrl": "https://nixe-aqua.com/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "hokkaido_okhotsk_emu_land",
+    "name": "オホーツクエミューらんど",
+    "address": "",
+    "addressSourceUrl": "",
+    "confidence": "unconfirmed",
+    "note": "公式サイト(emu-pasture.jp)がシステムメンテナンス中で住所記載なし。運営に関わる東京農業大学網走キャンパスのページにも住所記載なし。非公式のズー一覧サイト(zfc.jp等)には北海道網走市字稲富462-1との記載があるが、非公式情報のため出典として採用せず未確認扱いとした。"
+  },
+  {
+    "id": "hokkaido_okhotsk_chipmunk_park",
+    "name": "オホーツクシマリス公園",
+    "address": "北海道網走市呼人352",
+    "addressSourceUrl": "https://visit-abashiri.jp/en/culture/bd619c302fe51d484ff522c824a63fb6510c0386.html",
+    "confidence": "medium",
+    "note": "施設自体の独立公式サイトが見当たらず、網走市観光協会（準公式）のページで住所を確認した。"
+  },
+  {
+    "id": "hokkaido_okhotsk_tokkari_center",
+    "name": "オホーツクとっかりセンター",
+    "address": "北海道紋別市海洋公園2番地",
+    "addressSourceUrl": "https://o-tower.co.jp/tokkaricenter.html",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "hokkaido_kitakitsune_farm",
+    "name": "北きつね牧場",
+    "address": "北海道北見市留辺蘂町花丘52-1",
+    "addressSourceUrl": "https://kitakitsune-farm.com/",
+    "confidence": "high",
+    "note": ""
+  }
+]

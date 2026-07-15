@@ -1,0 +1,106 @@
+[
+  {
+    "id": "mie_gokatsura_animal_park",
+    "name": "ごかつら池どうぶつパーク",
+    "address": "三重県多気郡多気町五桂992",
+    "addressSourceUrl": "https://gokatsura.jp/general-information/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "mie_toba_aquarium",
+    "name": "鳥羽水族館",
+    "address": "三重県鳥羽市鳥羽3-3-6",
+    "addressSourceUrl": "https://aquarium.co.jp/eigyo/",
+    "confidence": "high",
+    "note": "トップページ・sourceUrlsのページには住所記載がなく、営業案内ページ内の住所欄（#zyusyoアンカー先）で確認した。"
+  },
+  {
+    "id": "shiga_biwako_museum",
+    "name": "滋賀県立琵琶湖博物館",
+    "address": "滋賀県草津市下物町1091",
+    "addressSourceUrl": "https://www.biwahaku.jp/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "kyoto_kyoto_city_zoo",
+    "name": "京都市動物園",
+    "address": "京都府京都市左京区岡崎法勝寺町岡崎公園内",
+    "addressSourceUrl": "https://zoo.city.kyoto.lg.jp/zoo/visitor/access/",
+    "confidence": "high",
+    "note": "入力のurl（www5.city.kyoto.jp/zoo/）は現在404で、公式サイトはzoo.city.kyoto.lg.jpへ移転済み。出典ページは「京都市左京区岡崎法勝寺町岡崎公園内」と都道府県名を省略していたため、先頭に「京都府」を補った。"
+  },
+  {
+    "id": "kyoto_kyoto_aquarium",
+    "name": "京都水族館",
+    "address": "京都府京都市下京区観喜寺町35-1（梅小路公園内）",
+    "addressSourceUrl": "https://www.kyoto-aquarium.com/about/access/index.html",
+    "confidence": "high",
+    "note": "出典ページは「京都市下京区観喜寺町35-1（梅小路公園内）」と都道府県名を省略していたため、先頭に「京都府」を補った。"
+  },
+  {
+    "id": "osaka_satsukiyama_zoo",
+    "name": "池田市立五月山動物園",
+    "address": "大阪府池田市綾羽２丁目５−３３",
+    "addressSourceUrl": "https://satsukiyamazoo.com/visitor-information/",
+    "confidence": "high",
+    "note": "sourceUrls（トップページ・about_zoo/）には住所記載がなく、来園案内ページ（visitor-information/）で確認した。"
+  },
+  {
+    "id": "osaka_kaiyukan",
+    "name": "海遊館",
+    "address": "大阪府大阪市港区海岸通1－1－10",
+    "addressSourceUrl": "https://www.kaiyukan.com/info/access/",
+    "confidence": "high",
+    "note": "トップページには住所記載がなく、アクセス案内ページ（/info/access/）で確認した。"
+  },
+  {
+    "id": "osaka_tennoji_zoo",
+    "name": "天王寺動物園",
+    "address": "大阪府大阪市天王寺区茶臼山町1-108",
+    "addressSourceUrl": "https://www.tennojizoo.jp/info/outline/",
+    "confidence": "high",
+    "note": "出典ページは「大阪市天王寺区茶臼山町1-108」と都道府県名を省略していたため、先頭に「大阪府」を補った。"
+  },
+  {
+    "id": "osaka_nifrel",
+    "name": "生きているミュージアム ニフレル",
+    "address": "大阪府吹田市千里万博公園2-1",
+    "addressSourceUrl": "https://www.nifrel.jp/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "hyogo_oji_zoo",
+    "name": "神戸市立王子動物園",
+    "address": "兵庫県神戸市灘区王子町3-1",
+    "addressSourceUrl": "https://www.kobe-ojizoo.jp/guide/hour_charge/",
+    "confidence": "high",
+    "note": "出典ページは「神戸市灘区王子町3-1」と都道府県名を省略していたため、先頭に「兵庫県」を補った。"
+  },
+  {
+    "id": "hyogo_kobe_animal_kingdom",
+    "name": "神戸どうぶつ王国",
+    "address": "兵庫県神戸市中央区港島南町 7-1-9",
+    "addressSourceUrl": "https://www.kobe-oukoku.com/",
+    "confidence": "high",
+    "note": "出典ページは「神戸市中央区港島南町 7-1-9」と都道府県名を省略していたため、先頭に「兵庫県」を補った。"
+  },
+  {
+    "id": "hyogo_kobe_suma_seaworld",
+    "name": "神戸須磨シーワールド",
+    "address": "兵庫県神戸市須磨区若宮町1丁目3-5",
+    "addressSourceUrl": "https://www.kobesuma-seaworld.jp/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "hyogo_atoa",
+    "name": "átoa",
+    "address": "兵庫県神戸市中央区新港町7番2号",
+    "addressSourceUrl": "https://atoa-kobe.jp/access/",
+    "confidence": "high",
+    "note": "出典ページには「神戸ポートミュージアム2F～4F」の付記もあるが、郵便番号併記の代表住所表記に合わせフロア表記は省いた。"
+  }
+]

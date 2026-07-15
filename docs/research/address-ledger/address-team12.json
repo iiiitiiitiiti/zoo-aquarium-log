@@ -1,0 +1,106 @@
+[
+  {
+    "id": "hyogo_kinosaki_marine_world",
+    "name": "城崎マリンワールド",
+    "address": "兵庫県豊岡市瀬戸1090番地",
+    "addressSourceUrl": "https://marineworld.hiyoriyama.co.jp/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "hyogo_himeji_zoo",
+    "name": "姫路市立動物園",
+    "address": "兵庫県姫路市本町68番地 姫路城東側",
+    "addressSourceUrl": "https://www.city.himeji.lg.jp/dobutuen/",
+    "confidence": "high",
+    "note": "出典ページのフッターに「〒670-0012 姫路市本町68番地 姫路城東側」と記載。都道府県名（兵庫県）を先頭に補った。「姫路城東側」は出典の住所表記に含まれていたためそのまま採用。"
+  },
+  {
+    "id": "hyogo_himeji_central_park",
+    "name": "姫路セントラルパーク",
+    "address": "兵庫県姫路市豊富町神谷1434",
+    "addressSourceUrl": "https://www.central-park.co.jp/access/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "hyogo_himeji_aquarium",
+    "name": "姫路市立水族館",
+    "address": "兵庫県姫路市西延末440",
+    "addressSourceUrl": "https://www.city.himeji.lg.jp/aqua/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "hyogo_england_hill",
+    "name": "淡路ファームパーク イングランドの丘",
+    "address": "兵庫県南あわじ市八木養宜上1401番地",
+    "addressSourceUrl": "https://www.england-hill.com/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "nara_uda_animal_park",
+    "name": "うだ・アニマルパーク",
+    "address": "奈良県宇陀市大宇陀小附75-1",
+    "addressSourceUrl": "https://www.pref.nara.lg.jp/n009/7875.html",
+    "confidence": "high",
+    "note": "入力のsourceUrls（1839.html/7873.html）には住所記載がなかったため、同サイト内の「交通案内」ページ（7875.html）で確認した。"
+  },
+  {
+    "id": "wakayama_adventure_world",
+    "name": "アドベンチャーワールド",
+    "address": "和歌山県西牟婁郡白浜町堅田2399番地",
+    "addressSourceUrl": "https://www.aws-s.com/guide/access/",
+    "confidence": "high",
+    "note": "トップページ（入力url）には住所記載がなかったため、同サイトのアクセス案内ページ（/guide/access/）で確認した。"
+  },
+  {
+    "id": "wakayama_wakayama_castle_zoo",
+    "name": "和歌山城公園動物園",
+    "address": "和歌山県和歌山市一番丁3番地",
+    "addressSourceUrl": "https://wakayamajo.jp/animal/index.html",
+    "confidence": "high",
+    "note": "出典ページのフッター「動物取扱業に関する表記」欄に「所在地：和歌山市一番丁3番地」と記載（都道府県名省略）。先頭に和歌山県を補った。"
+  },
+  {
+    "id": "tottori_karo_kanikkokan",
+    "name": "とっとり賀露かにっこ館",
+    "address": "鳥取県鳥取市賀露町西3丁目27-2",
+    "addressSourceUrl": "https://kanikko.jp/",
+    "confidence": "high",
+    "note": "出典ページの記載は「鳥取市賀露町西3丁目27-2」で都道府県名省略。先頭に鳥取県を補った。"
+  },
+  {
+    "id": "shimane_aquas",
+    "name": "島根県立しまね海洋館アクアス",
+    "address": "島根県浜田市久代町1117番地2",
+    "addressSourceUrl": "https://aquas.or.jp/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "okayama_ikeda_zoo",
+    "name": "池田動物園",
+    "address": "岡山県岡山市北区京山2-5-1",
+    "addressSourceUrl": "https://ikedazoo.jp/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "okayama_tamano_marine_museum",
+    "name": "玉野市立玉野海洋博物館",
+    "address": "岡山県玉野市渋川2丁目6番1号",
+    "addressSourceUrl": "https://www.city.tamano.lg.jp/site/kaihaku/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "hiroshima_miyajima_aquarium",
+    "name": "宮島水族館",
+    "address": "広島県廿日市市宮島町10-3",
+    "addressSourceUrl": "https://miyajima-aqua.jp/",
+    "confidence": "high",
+    "note": ""
+  }
+]
