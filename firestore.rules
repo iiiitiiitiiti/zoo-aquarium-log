@@ -77,7 +77,7 @@ service cloud.firestore {
           "lat", "lng", "url", "sourceUrls", "status", "lastVerifiedAt"
         ])
         && data.keys().hasOnly([
-          "id", "name", "kana", "pref", "city", "type",
+          "id", "name", "kana", "pref", "city", "address", "type",
           "lat", "lng", "url", "sourceUrls", "status", "lastVerifiedAt"
         ])
         && data.id is string
@@ -91,6 +91,10 @@ service cloud.firestore {
         && data.pref.size() <= 20
         && data.city is string
         && data.city.size() <= 100
+        && (!("address" in data)
+          || (data.address is string
+            && data.address.size() >= 1
+            && data.address.size() <= 200))
         && data.type in ["zoo", "aquarium", "both", "other"]
         && data.lat is number
         && data.lat >= -90

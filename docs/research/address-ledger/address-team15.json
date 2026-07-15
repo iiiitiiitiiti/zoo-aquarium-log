@@ -1,0 +1,42 @@
+[
+  {
+    "id": "kagoshima_ioworld_aquarium",
+    "name": "いおワールドかごしま水族館",
+    "address": "鹿児島県鹿児島市本港新町３－１",
+    "addressSourceUrl": "https://ioworld.jp/information",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "kagoshima_hirakawa_zoo",
+    "name": "鹿児島市平川動物公園",
+    "address": "鹿児島県鹿児島市平川町5669-1",
+    "addressSourceUrl": "https://hirakawazoo.jp/info/about/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "okinawa_kodomo_no_kuni",
+    "name": "沖縄こどもの国",
+    "address": "沖縄県沖縄市胡屋5-7-1",
+    "addressSourceUrl": "https://www.okzm.jp/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "okinawa_neopark",
+    "name": "ネオパークオキナワ",
+    "address": "沖縄県名護市字名護4607番地41",
+    "addressSourceUrl": "https://www.neopark.co.jp/park-information/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "okinawa_churaumi_aquarium",
+    "name": "沖縄美ら海水族館",
+    "address": "沖縄県国頭郡本部町石川424番地",
+    "addressSourceUrl": "https://churaumi.okinawa/guide/access/",
+    "confidence": "high",
+    "note": "入力cityは「本部町」だが、出典表記は郡名を含む「国頭郡本部町」。矛盾ではなく正式表記の差のため入力どおりの内容として記録。"
+  }
+]

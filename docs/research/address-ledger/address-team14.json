@@ -1,0 +1,106 @@
+[
+  {
+    "id": "fukuoka_omuta_zoo",
+    "name": "大牟田市動物園",
+    "address": "福岡県大牟田市昭和町163番地",
+    "addressSourceUrl": "https://omutacityzoo.org/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "fukuoka_itozu_no_mori",
+    "name": "到津の森公園",
+    "address": "福岡県北九州市小倉北区上到津4-1-8",
+    "addressSourceUrl": "https://www.itozu-zoo.jp/guide/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "fukuoka_kurume_bird_center",
+    "name": "久留米市鳥類センター",
+    "address": "福岡県久留米市東櫛原町1667",
+    "addressSourceUrl": "https://kurumekoen.org/birdc/",
+    "confidence": "high",
+    "note": "出典ページの表記は「久留米市東櫛原町1667」で都道府県名が省略されていたため、先頭に福岡県を補った。"
+  },
+  {
+    "id": "fukuoka_fukuoka_zoo",
+    "name": "福岡市動植物園",
+    "address": "福岡県福岡市中央区南公園1番1号",
+    "addressSourceUrl": "https://zoo.city.fukuoka.lg.jp/",
+    "confidence": "high",
+    "note": "出典ページの表記は「福岡市中央区南公園1番1号」で都道府県名が省略されていたため、先頭に福岡県を補った。"
+  },
+  {
+    "id": "fukuoka_uminaka_animal_forest",
+    "name": "海の中道海浜公園動物の森",
+    "address": "福岡県福岡市東区大字西戸崎18-25",
+    "addressSourceUrl": "https://uminaka-park.jp/animal/",
+    "confidence": "high",
+    "note": "出典ページの表記は「福岡市東区大字西戸崎18-25」で都道府県名が省略されていたため、先頭に福岡県を補った。"
+  },
+  {
+    "id": "fukuoka_marine_world_uminonakamichi",
+    "name": "マリンワールド海の中道",
+    "address": "福岡県福岡市東区大字西戸崎18-28",
+    "addressSourceUrl": "https://marine-world.jp/",
+    "confidence": "high",
+    "note": "出典ページの表記は「福岡市東区大字西戸崎18-28」で都道府県名が省略されていたため、先頭に福岡県を補った。"
+  },
+  {
+    "id": "nagasaki_biopark",
+    "name": "長崎バイオパーク",
+    "address": "長崎県西海市西彼町上岳郷950-1",
+    "addressSourceUrl": "https://www.biopark.co.jp/info/access/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "nagasaki_morikirara",
+    "name": "九十九島動植物園森きらら",
+    "address": "長崎県佐世保市船越町2172",
+    "addressSourceUrl": "https://www.morikirara.jp/",
+    "confidence": "high",
+    "note": "同じフッター内に姉妹施設「九十九島水族館海きらら」（長崎県佐世保市鹿子前町1008）の住所も併記されていたため、森きらら本体の住所（船越町2172）を採用した。"
+  },
+  {
+    "id": "nagasaki_penguin_aquarium",
+    "name": "長崎ペンギン水族館",
+    "address": "長崎県長崎市宿町3番地16",
+    "addressSourceUrl": "https://penguin-aqua.jp/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "kumamoto_kumamoto_zoo",
+    "name": "熊本市動植物園",
+    "address": "熊本県熊本市東区健軍5-14-2",
+    "addressSourceUrl": "https://www.ezooko.jp/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "oita_african_safari",
+    "name": "九州自然動物公園アフリカンサファリ",
+    "address": "大分県宇佐市安心院町南畑2-1755-1",
+    "addressSourceUrl": "https://africansafari.co.jp/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "oita_umitamago",
+    "name": "大分マリーンパレス水族館「うみたまご」",
+    "address": "大分県大分市大字神崎字ウト3078番地の22",
+    "addressSourceUrl": "https://www.umitamago.jp/access/",
+    "confidence": "high",
+    "note": "出典ページの表記は「大分市大字神崎字ウト3078番地の22」で都道府県名が省略されていたため、先頭に大分県を補った。"
+  },
+  {
+    "id": "miyazaki_phoenix_zoo",
+    "name": "宮崎市フェニックス自然動物園",
+    "address": "宮崎県宮崎市大字塩路字浜山3083-42",
+    "addressSourceUrl": "https://www.miyazaki-city-zoo.jp/access/",
+    "confidence": "high",
+    "note": ""
+  }
+]

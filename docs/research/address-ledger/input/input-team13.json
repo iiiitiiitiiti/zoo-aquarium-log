@@ -1,0 +1,153 @@
+[
+  {
+    "id": "hiroshima_asa_zoo",
+    "name": "広島市安佐動物公園",
+    "pref": "広島県",
+    "city": "広島市",
+    "status": "open",
+    "url": "https://www.asazoo.jp/",
+    "sourceUrls": [
+      "https://www.asazoo.jp/"
+    ]
+  },
+  {
+    "id": "hiroshima_fukuyama_zoo",
+    "name": "タカオ福山動物園",
+    "pref": "広島県",
+    "city": "福山市",
+    "status": "open",
+    "url": "https://www.fukuyamazoo.jp/",
+    "sourceUrls": [
+      "https://www.fukuyamazoo.jp/"
+    ]
+  },
+  {
+    "id": "yamaguchi_tokiwa_zoo",
+    "name": "ときわ動物園",
+    "pref": "山口県",
+    "city": "宇部市",
+    "status": "open",
+    "url": "https://www.tokiwapark.jp/zoo/",
+    "sourceUrls": [
+      "https://www.tokiwapark.jp/zoo/about/",
+      "https://www.tokiwapark.jp/zoo/"
+    ]
+  },
+  {
+    "id": "yamaguchi_kaikyokan",
+    "name": "下関市立しものせき水族館「海響館」",
+    "pref": "山口県",
+    "city": "下関市",
+    "status": "open",
+    "url": "https://www.kaikyokan.com/",
+    "sourceUrls": [
+      "https://www.kaikyokan.com/company.php",
+      "https://www.kaikyokan.com/"
+    ]
+  },
+  {
+    "id": "yamaguchi_tokuyama_zoo",
+    "name": "周南市徳山動物園",
+    "pref": "山口県",
+    "city": "周南市",
+    "status": "open",
+    "url": "https://tokuyama-zoo.jp/",
+    "sourceUrls": [
+      "https://tokuyama-zoo.jp/",
+      "https://www.city.shunan.lg.jp/soshiki/35/2075.html"
+    ]
+  },
+  {
+    "id": "yamaguchi_akiyoshidai_safari",
+    "name": "秋吉台自然動物公園サファリランド",
+    "pref": "山口県",
+    "city": "美祢市",
+    "status": "open",
+    "url": "https://www.safariland.jp/",
+    "sourceUrls": [
+      "https://www.safariland.jp/"
+    ]
+  },
+  {
+    "id": "tokushima_tokushima_zoo",
+    "name": "とくしま動物園 STELLA PRESCHOOL ANIMAL KINGDOM",
+    "pref": "徳島県",
+    "city": "徳島市",
+    "status": "open",
+    "url": "https://tokushimazoo.jp/",
+    "sourceUrls": [
+      "https://tokushimazoo.jp/",
+      "https://tokushimazoo.jp/guide/"
+    ]
+  },
+  {
+    "id": "kagawa_shikoku_aquarium",
+    "name": "四国水族館",
+    "pref": "香川県",
+    "city": "宇多津町",
+    "status": "open",
+    "url": "https://shikoku-aquarium.jp/",
+    "sourceUrls": [
+      "https://shikoku-aquarium.jp/",
+      "https://shikoku-aquarium.jp/access/"
+    ]
+  },
+  {
+    "id": "ehime_tobe_zoo",
+    "name": "愛媛県立とべ動物園",
+    "pref": "愛媛県",
+    "city": "砥部町",
+    "status": "open",
+    "url": "https://www.tobezoo.com/",
+    "sourceUrls": [
+      "https://www.tobezoo.com/"
+    ]
+  },
+  {
+    "id": "ehime_osakana_kan",
+    "name": "虹の森公園おさかな館",
+    "pref": "愛媛県",
+    "city": "松野町",
+    "status": "open",
+    "url": "https://morinokuni.or.jp/",
+    "sourceUrls": [
+      "https://morinokuni.or.jp/",
+      "http://morinokuni.or.jp/pages/27/"
+    ]
+  },
+  {
+    "id": "kochi_wanpark_animal_land",
+    "name": "わんぱーくこうちアニマルランド",
+    "pref": "高知県",
+    "city": "高知市",
+    "status": "open",
+    "url": "https://www.city.kochi.kochi.jp/deeps/17/1712/animal/",
+    "sourceUrls": [
+      "https://www.city.kochi.kochi.jp/map/48584.html",
+      "https://www.city.kochi.kochi.jp/deeps/17/1712/animal/"
+    ]
+  },
+  {
+    "id": "kochi_katurahama_aquarium",
+    "name": "桂浜水族館",
+    "pref": "高知県",
+    "city": "高知市",
+    "status": "open",
+    "url": "https://katurahama-aq.jp/",
+    "sourceUrls": [
+      "https://katurahama-aq.jp/"
+    ]
+  },
+  {
+    "id": "kochi_noichi_zoo",
+    "name": "高知県立のいち動物公園",
+    "pref": "高知県",
+    "city": "香南市",
+    "status": "open",
+    "url": "https://noichizoo.or.jp/",
+    "sourceUrls": [
+      "https://noichizoo.or.jp/",
+      "https://noichizoo.or.jp/access/"
+    ]
+  }
+]

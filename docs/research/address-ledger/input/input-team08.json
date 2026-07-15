@@ -1,0 +1,153 @@
+[
+  {
+    "id": "kanagawa_zoorasia",
+    "name": "よこはま動物園ズーラシア",
+    "pref": "神奈川県",
+    "city": "横浜市",
+    "status": "open",
+    "url": "https://www.hama-midorinokyokai.or.jp/zoo/zoorasia/",
+    "sourceUrls": [
+      "https://www.hama-midorinokyokai.or.jp/zoo/zoorasia/"
+    ]
+  },
+  {
+    "id": "kanagawa_hakkeijima_seaparadise",
+    "name": "横浜・八景島シーパラダイス",
+    "pref": "神奈川県",
+    "city": "横浜市",
+    "status": "open",
+    "url": "https://www.seaparadise.co.jp/",
+    "sourceUrls": [
+      "https://www.seaparadise.co.jp/",
+      "https://www.welcome.city.yokohama.jp/spot/details.php?bbid=115"
+    ]
+  },
+  {
+    "id": "kanagawa_nogeyama_zoo",
+    "name": "横浜市立野毛山動物園",
+    "pref": "神奈川県",
+    "city": "横浜市",
+    "status": "open",
+    "url": "https://www.hama-midorinokyokai.or.jp/zoo/nogeyama/",
+    "sourceUrls": [
+      "https://www.hama-midorinokyokai.or.jp/zoo/nogeyama/about/outline.php",
+      "https://www.hama-midorinokyokai.or.jp/zoo/nogeyama/details/post-11877.php"
+    ]
+  },
+  {
+    "id": "kanagawa_kanazawa_zoo",
+    "name": "横浜市立金沢動物園",
+    "pref": "神奈川県",
+    "city": "横浜市",
+    "status": "open",
+    "url": "https://www.hama-midorinokyokai.or.jp/zoo/kanazawa/",
+    "sourceUrls": [
+      "https://www.hama-midorinokyokai.or.jp/zoo/kanazawa/"
+    ]
+  },
+  {
+    "id": "niigata_umigatari",
+    "name": "上越市立水族博物館 うみがたり",
+    "pref": "新潟県",
+    "city": "上越市",
+    "status": "open",
+    "url": "https://www.umigatari.jp/joetsu/",
+    "sourceUrls": [
+      "https://www.umigatari.jp/joetsu/",
+      "https://www.city.joetsu.niigata.jp/soshiki/kyouikusoumu/sinnsui-aramasi.html"
+    ]
+  },
+  {
+    "id": "niigata_teradomari_aquarium",
+    "name": "長岡市寺泊水族博物館",
+    "pref": "新潟県",
+    "city": "長岡市",
+    "status": "open",
+    "url": "https://aquarium-teradomari.jp/",
+    "sourceUrls": [
+      "https://aquarium-teradomari.jp/"
+    ]
+  },
+  {
+    "id": "niigata_marinepia_nihonkai",
+    "name": "新潟市水族館 マリンピア日本海",
+    "pref": "新潟県",
+    "city": "新潟市",
+    "status": "open",
+    "url": "https://www.marinepia.or.jp/",
+    "sourceUrls": [
+      "https://www.marinepia.or.jp/"
+    ]
+  },
+  {
+    "id": "toyama_uozu_aquarium",
+    "name": "魚津水族館",
+    "pref": "富山県",
+    "city": "魚津市",
+    "status": "open",
+    "url": "https://www.uozu-aquarium.jp/",
+    "sourceUrls": [
+      "https://www.uozu-aquarium.jp/",
+      "https://www.uozu-aquarium.jp/about/"
+    ]
+  },
+  {
+    "id": "toyama_takaoka_kojo_zoo",
+    "name": "高岡古城公園動物園",
+    "pref": "富山県",
+    "city": "高岡市",
+    "status": "open",
+    "url": "https://www.takaokakojyozoo.jp/",
+    "sourceUrls": [
+      "https://www.takaokakojyozoo.jp/"
+    ]
+  },
+  {
+    "id": "toyama_family_park",
+    "name": "富山市ファミリーパーク",
+    "pref": "富山県",
+    "city": "富山市",
+    "status": "open",
+    "url": "https://www.toyama-familypark.jp/",
+    "sourceUrls": [
+      "https://www.toyama-familypark.jp/",
+      "https://www.toyama-familypark.jp/info/about"
+    ]
+  },
+  {
+    "id": "ishikawa_notojima_aquarium",
+    "name": "のとじま水族館",
+    "pref": "石川県",
+    "city": "七尾市",
+    "status": "open",
+    "url": "https://www.notoaqua.jp/",
+    "sourceUrls": [
+      "https://www.notoaqua.jp/",
+      "https://www.notoaqua.jp/news/important"
+    ]
+  },
+  {
+    "id": "ishikawa_ishikawa_zoo",
+    "name": "いしかわ動物園",
+    "pref": "石川県",
+    "city": "能美市",
+    "status": "open",
+    "url": "https://www.ishikawazoo.jp/",
+    "sourceUrls": [
+      "https://www.ishikawazoo.jp/",
+      "https://www.city.nomi.lg.jp/docs/1438.html"
+    ]
+  },
+  {
+    "id": "fukui_echizen_matsushima_aquarium",
+    "name": "越前松島水族館",
+    "pref": "福井県",
+    "city": "坂井市",
+    "status": "open",
+    "url": "https://www.echizen-aquarium.com/",
+    "sourceUrls": [
+      "https://www.echizen-aquarium.com/",
+      "https://www.echizen-aquarium.com/information/access.html"
+    ]
+  }
+]

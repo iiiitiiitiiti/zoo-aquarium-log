@@ -1,0 +1,191 @@
+[
+  {
+    "id": "hokkaido_otaru_aquarium",
+    "name": "おたる水族館",
+    "address": "北海道小樽市祝津3丁目303番地",
+    "addressSourceUrl": "https://otaru-aq.jp/",
+    "confidence": "high",
+    "note": "",
+    "team": "01"
+  },
+  {
+    "id": "hokkaido_kushiro_zoo",
+    "name": "釧路市動物園",
+    "address": "北海道釧路市阿寒町下仁々志別11番",
+    "addressSourceUrl": "https://www.city.kushiro.lg.jp/zoo/",
+    "confidence": "high",
+    "note": "",
+    "team": "01"
+  },
+  {
+    "id": "hokkaido_kitakitsune_farm",
+    "name": "北きつね牧場",
+    "address": "北海道北見市留辺蘂町花丘52-1",
+    "addressSourceUrl": "https://kitakitsune-farm.com/",
+    "confidence": "high",
+    "note": "",
+    "team": "01"
+  },
+  {
+    "id": "aomori_yayoi_ikoi_hiroba",
+    "name": "弥生いこいの広場",
+    "address": "青森県弘前市大字百沢字東岩木山2480",
+    "addressSourceUrl": "https://www.city.hirosaki.aomori.jp/gaiyou/shisetsu/2014-1206-1516-48.html",
+    "confidence": "high",
+    "note": "閉園時の所在地（status: suspended、閉鎖・休止中）。出典ページの表記は「弘前市大字百沢字東岩木山2480」（青森県の記載なし）。弘前市公式サイトであり所在都道府県は自明なため冒頭に「青森県」を補って記載。運営者サイト（hirosakipark.or.jp）はSSL証明書エラーで取得不可だった。",
+    "team": "03"
+  },
+  {
+    "id": "hokkaido_horonobe_reindeer_farm",
+    "name": "幌延町トナカイ観光牧場",
+    "address": "北海道天塩郡幌延町字北進398番地1",
+    "addressSourceUrl": "https://www.town.horonobe.lg.jp/www4/section/sangyo/le009f00000017ha.html",
+    "confidence": "high",
+    "note": "",
+    "team": "03"
+  },
+  {
+    "id": "hokkaido_furusato_no_mori_animal_museum",
+    "name": "ふるさとの森動物館",
+    "address": "北海道野付郡別海町別海140番地の1",
+    "addressSourceUrl": "https://betsukai.jp/shisetsu/kanko/animal_/",
+    "confidence": "high",
+    "note": "",
+    "team": "03"
+  },
+  {
+    "id": "iwate_morioka_zoomo",
+    "name": "盛岡市動物公園ZOOMO",
+    "address": "岩手県盛岡市新庄字下八木田60-18",
+    "addressSourceUrl": "https://zoomo.co.jp/access/",
+    "confidence": "high",
+    "note": "",
+    "team": "04"
+  },
+  {
+    "id": "miyagi_uminomori_aquarium",
+    "name": "仙台うみの杜水族館",
+    "address": "宮城県仙台市宮城野区中野4丁目6番地",
+    "addressSourceUrl": "https://datekan.jp/manabitabi/spots/%E4%BB%99%E5%8F%B0%E3%81%86%E3%81%BF%E3%81%AE%E6%9D%9C%E6%B0%B4%E6%97%8F%E9%A4%A8/",
+    "confidence": "medium",
+    "note": "公式サイト(uminomori.jp)は複数ページで403エラーとなり直接確認不可。仙台市文化観光局が運営する「伊達な学び旅」ページで確認。",
+    "team": "04"
+  },
+  {
+    "id": "yamagata_kamo_aquarium",
+    "name": "鶴岡市立加茂水族館",
+    "address": "山形県鶴岡市今泉字大久保657-1",
+    "addressSourceUrl": "https://kamo-kurage.jp/",
+    "confidence": "high",
+    "note": "",
+    "team": "04"
+  },
+  {
+    "id": "tochigi_nakagawa_aquarium",
+    "name": "栃木県なかがわ水遊園",
+    "address": "栃木県大田原市佐良土2686",
+    "addressSourceUrl": "https://tnap.jp/",
+    "confidence": "high",
+    "note": "",
+    "team": "05"
+  },
+  {
+    "id": "yamagata_kahoku_childrens_zoo",
+    "name": "河北町児童動物園",
+    "address": "山形県西村山郡河北町谷地戊81番地",
+    "addressSourceUrl": "https://www.town.kahoku.yamagata.jp/soshiki/shoko/kankousinkou/Kahokuchildrenzoo/index.html",
+    "confidence": "high",
+    "note": "",
+    "team": "05"
+  },
+  {
+    "id": "fukushima_aquamarine_fukushima",
+    "name": "アクアマリンふくしま",
+    "address": "福島県いわき市小名浜字辰巳町50",
+    "addressSourceUrl": "https://www.aquamarine.or.jp/guide/access/",
+    "confidence": "high",
+    "note": "",
+    "team": "05"
+  },
+  {
+    "id": "saitama_tobu_zoo",
+    "name": "東武動物公園",
+    "address": "埼玉県南埼玉郡宮代町須賀110",
+    "addressSourceUrl": "https://www.tobuzoo.com/about/",
+    "confidence": "high",
+    "note": "",
+    "team": "06"
+  },
+  {
+    "id": "tokyo_adachi_seibutsuen",
+    "name": "足立区生物園",
+    "address": "東京都足立区保木間二丁目17番1号",
+    "addressSourceUrl": "https://seibutuen.jp/guidance/information.html",
+    "confidence": "high",
+    "note": "",
+    "team": "06"
+  },
+  {
+    "id": "chiba_kamogawa_sea_world",
+    "name": "鴨川シーワールド",
+    "address": "千葉県鴨川市東町1464-18",
+    "addressSourceUrl": "https://www.kamogawa-seaworld.jp/",
+    "confidence": "high",
+    "note": "",
+    "team": "06"
+  },
+  {
+    "id": "tokyo_sumida_aquarium",
+    "name": "すみだ水族館",
+    "address": "東京都墨田区押上一丁目1番2号 東京スカイツリータウン・ソラマチ5F・6F",
+    "addressSourceUrl": "https://www.sumida-aquarium.com/about/access/",
+    "confidence": "high",
+    "note": "",
+    "team": "07"
+  },
+  {
+    "id": "tokyo_ueno_zoo",
+    "name": "恩賜上野動物園",
+    "address": "東京都台東区上野公園9-83",
+    "addressSourceUrl": "https://www.tokyo-zoo.net/zoo/ueno/",
+    "confidence": "high",
+    "note": "出典表記は「台東区上野公園9-83」（都道府県名省略）。先頭に東京都を補って記録。",
+    "team": "07"
+  },
+  {
+    "id": "tokyo_inokashira_zoo",
+    "name": "井の頭自然文化園",
+    "address": "東京都武蔵野市御殿山1-17-6",
+    "addressSourceUrl": "https://www.tokyo-zoo.net/zoo/ino/",
+    "confidence": "high",
+    "note": "",
+    "team": "07"
+  },
+  {
+    "id": "aichi_sealife_nagoya",
+    "name": "名古屋シーライフ水族館",
+    "address": "愛知県名古屋市港区金城ふ頭2-7-1",
+    "addressSourceUrl": "https://www.legoland.jp/resort-guide/sealife-nagoya/",
+    "confidence": "high",
+    "note": "出典表記は「名古屋市港区金城ふ頭2-7-1」で都道府県名が省略されていたため、先頭に「愛知県」を補った。",
+    "team": "10"
+  },
+  {
+    "id": "aichi_higashiyama_zoo",
+    "name": "東山動植物園",
+    "address": "愛知県名古屋市千種区東山元町3-70",
+    "addressSourceUrl": "https://www.higashiyama.city.nagoya.jp/01_annai/",
+    "confidence": "high",
+    "note": "出典表記は「名古屋市千種区東山元町3-70」で都道府県名が省略されていたため、先頭に「愛知県」を補った。",
+    "team": "10"
+  },
+  {
+    "id": "shizuoka_izu_animal_kingdom",
+    "name": "伊豆アニマルキングダム",
+    "address": "静岡県賀茂郡東伊豆町稲取3344",
+    "addressSourceUrl": "https://izu-animal-kingdom.com/access/",
+    "confidence": "high",
+    "note": "",
+    "team": "10"
+  }
+]

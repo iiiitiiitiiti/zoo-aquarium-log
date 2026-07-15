@@ -8,6 +8,7 @@ interface FacilityFormState {
   kana: string;
   pref: string;
   city: string;
+  address: string;
   type: FacilityType;
   status: Facility["status"];
   url: string;
@@ -40,6 +41,7 @@ function initialState(initialFacility?: Facility): FacilityFormState {
       kana: initialFacility.kana,
       pref: initialFacility.pref,
       city: initialFacility.city,
+      address: initialFacility.address ?? "",
       type: initialFacility.type,
       status: initialFacility.status,
       url: initialFacility.url,
@@ -55,6 +57,7 @@ function initialState(initialFacility?: Facility): FacilityFormState {
     kana: "",
     pref,
     city: "",
+    address: "",
     type: "zoo",
     status: "open",
     url: "",
@@ -113,7 +116,7 @@ export default function AddFacilityPanel({
       setError("施設名は200文字以内で入力してください");
       return;
     }
-    if (form.kana.trim().length > 200 || form.city.trim().length > 100 || form.url.trim().length > 1000) {
+    if (form.kana.trim().length > 200 || form.city.trim().length > 100 || form.address.trim().length > 200 || form.url.trim().length > 1000) {
       setError("入力内容が長すぎます。文字数を確認してください");
       return;
     }
@@ -122,11 +125,13 @@ export default function AddFacilityPanel({
       return;
     }
 
+    const address = form.address.trim();
     const draft: CustomFacilityDraft = {
       name,
       kana: form.kana.trim(),
       pref: form.pref,
       city: form.city.trim(),
+      ...(address ? { address } : {}),
       type: form.type,
       lat: form.lat,
       lng: form.lng,
@@ -207,6 +212,16 @@ export default function AddFacilityPanel({
               />
             </label>
           </div>
+          <label>
+            住所
+            <input
+              type="text"
+              value={form.address}
+              maxLength={200}
+              onChange={(event) => setForm({ ...form, address: event.target.value })}
+              placeholder="任意。例: 東京都台東区上野公園9-83"
+            />
+          </label>
           <div className="form-row">
             <label>
               種別

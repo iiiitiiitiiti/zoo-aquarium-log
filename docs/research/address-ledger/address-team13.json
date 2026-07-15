@@ -1,0 +1,106 @@
+[
+  {
+    "id": "hiroshima_asa_zoo",
+    "name": "広島市安佐動物公園",
+    "address": "広島県広島市安佐北区安佐町大字動物園",
+    "addressSourceUrl": "https://www.city.hiroshima.lg.jp/faq/fukushi/1001579/1028093/1002200.html",
+    "confidence": "high",
+    "note": "公式サイト(asazoo.jp)がネットワーク不通(接続確立不可)のため、広島市公式サイトのFAQページで所在地を確認。出典が「広島市安佐北区…」から始まり都道府県名を省略しているため、先頭に「広島県」を補った。"
+  },
+  {
+    "id": "hiroshima_fukuyama_zoo",
+    "name": "タカオ福山動物園",
+    "address": "広島県福山市芦田町大字福田7276番地1",
+    "addressSourceUrl": "https://www.fukuyamazoo.jp/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "yamaguchi_tokiwa_zoo",
+    "name": "ときわ動物園",
+    "address": "山口県宇部市大字沖宇部254番地",
+    "addressSourceUrl": "https://www.tokiwapark.jp/zoo/about/",
+    "confidence": "high",
+    "note": "同ページフッターには運営団体（公益財団法人宇部市常盤動物園協会）の事務所住所「山口県宇部市則貞三丁目4-1」も併記されているが、ページ内で「所在地」として明記されたときわ公園内の住所を採用した。"
+  },
+  {
+    "id": "yamaguchi_kaikyokan",
+    "name": "下関市立しものせき水族館「海響館」",
+    "address": "山口県下関市あるかぽーと6-1",
+    "addressSourceUrl": "https://www.kaikyokan.com/company.php",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "yamaguchi_tokuyama_zoo",
+    "name": "周南市徳山動物園",
+    "address": "山口県周南市大字徳山5846",
+    "addressSourceUrl": "https://tokuyama-zoo.jp/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "yamaguchi_akiyoshidai_safari",
+    "name": "秋吉台自然動物公園サファリランド",
+    "address": "山口県美祢市美東町赤1212",
+    "addressSourceUrl": "https://www.safariland.jp/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "tokushima_tokushima_zoo",
+    "name": "とくしま動物園 STELLA PRESCHOOL ANIMAL KINGDOM",
+    "address": "徳島県徳島市渋野町入道22番地の1",
+    "addressSourceUrl": "https://tokushimazoo.jp/guide/",
+    "confidence": "high",
+    "note": "出典が「徳島市…」から始まり都道府県名を省略しているため、先頭に「徳島県」を補った。WebFetchの初回取得では「徳島市論田橋町佐古22番地1」という誤った住所が返ったため、Playwrightで実ページ（JSレンダリング後）をレンダリングして正しい住所を確認・訂正した。"
+  },
+  {
+    "id": "kagawa_shikoku_aquarium",
+    "name": "四国水族館",
+    "address": "香川県綾歌郡宇多津町浜一番丁4",
+    "addressSourceUrl": "https://shikoku-aquarium.jp/access/",
+    "confidence": "high",
+    "note": "ページ内に「（宇多津臨海公園内）」の付記あり。構造化データ(schema.org)のaddressRegion/streetAddressとも一致。"
+  },
+  {
+    "id": "ehime_tobe_zoo",
+    "name": "愛媛県立とべ動物園",
+    "address": "愛媛県伊予郡砥部町上原町240",
+    "addressSourceUrl": "https://www.tobezoo.com/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "ehime_osakana_kan",
+    "name": "虹の森公園おさかな館",
+    "address": "愛媛県北宇和郡松野町大字延野々1510-1",
+    "addressSourceUrl": "http://morinokuni.or.jp/pages/27/",
+    "confidence": "medium",
+    "note": "サイト内におさかな館単独の住所表記はなく、施設が所在する「道の駅虹の森公園まつの」全体の代表住所を採用した。"
+  },
+  {
+    "id": "kochi_wanpark_animal_land",
+    "name": "わんぱーくこうちアニマルランド",
+    "address": "高知県高知市桟橋通6丁目9番1号",
+    "addressSourceUrl": "https://www.city.kochi.kochi.jp/deeps/17/1712/animal/hyoushi.htm",
+    "confidence": "high",
+    "note": "url/sourceUrlsのページには住所記載がなかったため、高知市公式サイト内の動物取扱業登録情報ページ（「事業所の所在地」表記、末尾に県名省略）で確認し、先頭に「高知県」を補った。"
+  },
+  {
+    "id": "kochi_katurahama_aquarium",
+    "name": "桂浜水族館",
+    "address": "高知県高知市浦戸778",
+    "addressSourceUrl": "https://katurahama-aq.jp/",
+    "confidence": "high",
+    "note": "「桂浜公園内」の付記あり。"
+  },
+  {
+    "id": "kochi_noichi_zoo",
+    "name": "高知県立のいち動物公園",
+    "address": "高知県香南市野市町大谷738",
+    "addressSourceUrl": "https://noichizoo.or.jp/access/",
+    "confidence": "high",
+    "note": ""
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "id": "shizuoka_hamamatsu_zoo",
+    "name": "浜松市動物園",
+    "address": "静岡県浜松市中央区舘山寺町199",
+    "addressSourceUrl": "https://www.city.hamamatsu.shizuoka.jp/hamazoo/",
+    "confidence": "high",
+    "note": "出典表記は「浜松市中央区舘山寺町199」で都道府県名が省略されていたため、先頭に「静岡県」を補った。"
+  },
+  {
+    "id": "shizuoka_izu_animal_kingdom",
+    "name": "伊豆アニマルキングダム",
+    "address": "静岡県賀茂郡東伊豆町稲取3344",
+    "addressSourceUrl": "https://izu-animal-kingdom.com/access/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "shizuoka_atagawa_banana_wani",
+    "name": "熱川バナナワニ園",
+    "address": "静岡県賀茂郡東伊豆町奈良本1253-10",
+    "addressSourceUrl": "https://bananawani.jp/information/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "shizuoka_rakujuen",
+    "name": "三島市立公園楽寿園",
+    "address": "静岡県三島市一番町19-3",
+    "addressSourceUrl": "https://www.city.mishima.shizuoka.jp/rakujyu/shousai012761.html",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "aichi_japan_monkey_centre",
+    "name": "日本モンキーセンター",
+    "address": "愛知県犬山市犬山官林26番地",
+    "addressSourceUrl": "https://www.j-monkey.jp/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "aichi_higashi_park_zoo",
+    "name": "東公園動物園",
+    "address": "愛知県岡崎市欠町字大山田1番地",
+    "addressSourceUrl": "https://www.city.okazaki.lg.jp/zoo/index.html",
+    "confidence": "high",
+    "note": "出典表記は「岡崎市欠町字大山田1番地」で都道府県名が省略されていたため、先頭に「愛知県」を補った。"
+  },
+  {
+    "id": "aichi_kuragaike_zoo",
+    "name": "鞍ケ池公園動物園",
+    "address": "愛知県豊田市矢並町法沢713-2",
+    "addressSourceUrl": "https://kuragaikepark.com/guide",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "aichi_toyohashi_nonhoi_park",
+    "name": "豊橋総合動植物公園",
+    "address": "愛知県豊橋市大岩町字大穴1-238",
+    "addressSourceUrl": "https://www.nonhoi.jp/",
+    "confidence": "high",
+    "note": "出典表記は「豊橋市大岩町字大穴1-238」で都道府県名が省略されていたため、先頭に「愛知県」を補った。"
+  },
+  {
+    "id": "aichi_nagoya_port_aquarium",
+    "name": "名古屋港水族館",
+    "address": "愛知県名古屋市港区港町1番3号",
+    "addressSourceUrl": "https://nagoyaaqua.jp/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "aichi_higashiyama_zoo",
+    "name": "東山動植物園",
+    "address": "愛知県名古屋市千種区東山元町3-70",
+    "addressSourceUrl": "https://www.higashiyama.city.nagoya.jp/01_annai/",
+    "confidence": "high",
+    "note": "出典表記は「名古屋市千種区東山元町3-70」で都道府県名が省略されていたため、先頭に「愛知県」を補った。"
+  },
+  {
+    "id": "aichi_sealife_nagoya",
+    "name": "名古屋シーライフ水族館",
+    "address": "愛知県名古屋市港区金城ふ頭2-7-1",
+    "addressSourceUrl": "https://www.legoland.jp/resort-guide/sealife-nagoya/",
+    "confidence": "high",
+    "note": "出典表記は「名古屋市港区金城ふ頭2-7-1」で都道府県名が省略されていたため、先頭に「愛知県」を補った。"
+  },
+  {
+    "id": "aichi_hekinan_aquarium",
+    "name": "碧南海浜水族館",
+    "address": "愛知県碧南市浜町2番地3",
+    "addressSourceUrl": "https://www.city.hekinan.lg.jp/aquarium/general_information/6762.html",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "mie_ise_sea_paradise",
+    "name": "ゼロ距離水族館 伊勢シーパラダイス",
+    "address": "三重県伊勢市二見町江580",
+    "addressSourceUrl": "https://ise-seaparadise.com/company/",
+    "confidence": "high",
+    "note": ""
+  }
+]

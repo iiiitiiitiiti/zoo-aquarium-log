@@ -46,6 +46,13 @@ export function validateFacilities(facilities) {
     if (facility?.note !== undefined && (typeof facility.note !== "string" || facility.note.trim() === "" || facility.note.length > 500)) {
       errors.push(`${label}: 補足（note）は1〜500文字の文字列にしてください（不要なら項目ごと省略）`);
     }
+    if (facility?.address !== undefined) {
+      if (typeof facility.address !== "string" || facility.address.trim() === "" || facility.address.length > 200) {
+        errors.push(`${label}: 住所（address）は1〜200文字の文字列にしてください（不要なら項目ごと省略）`);
+      } else if (typeof facility?.pref === "string" && facility.pref !== "" && !facility.address.startsWith(facility.pref)) {
+        errors.push(`${label}: 住所（address）は都道府県（${facility.pref}）から始めてください`);
+      }
+    }
   });
 
   return errors;

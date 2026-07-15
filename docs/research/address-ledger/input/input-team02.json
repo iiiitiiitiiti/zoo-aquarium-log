@@ -1,0 +1,157 @@
+[
+  {
+    "id": "hokkaido_kushiro_tancho_park",
+    "name": "釧路市丹頂鶴自然公園",
+    "pref": "北海道",
+    "city": "釧路市",
+    "status": "open",
+    "url": "https://www.kushiro-park.com/pages/72/",
+    "sourceUrls": [
+      "https://www.kushiro-park.com/pages/72/",
+      "https://www.city.kushiro.lg.jp/shisei/shisetsu/1007655/1007656/1007660.html"
+    ]
+  },
+  {
+    "id": "hokkaido_kushiro_aquarium_pukupuku",
+    "name": "くしろ水族館ぷくぷく",
+    "pref": "北海道",
+    "city": "釧路郡釧路町",
+    "status": "open",
+    "url": "https://www.sennosuke.net/pukupuku/",
+    "sourceUrls": [
+      "https://www.sennosuke.net/pukupuku/"
+    ]
+  },
+  {
+    "id": "hokkaido_kuriyama_park_nakayoshi_zoo",
+    "name": "栗山公園なかよし動物園",
+    "pref": "北海道",
+    "city": "夕張郡栗山町",
+    "status": "open",
+    "url": "https://t-daria.com/parktop/nakayoshi_zoo/",
+    "sourceUrls": [
+      "https://t-daria.com/parktop/nakayoshi_zoo/",
+      "https://www.town.kuriyama.hokkaido.jp/site/shizen/755.html"
+    ]
+  },
+  {
+    "id": "hokkaido_sahoro_bear_mountain",
+    "name": "サホロリゾート ベア・マウンテン",
+    "pref": "北海道",
+    "city": "上川郡新得町",
+    "status": "open",
+    "url": "https://bear-mt.jp/",
+    "sourceUrls": [
+      "https://bear-mt.jp/information",
+      "https://www.visit-hokkaido.jp/spot/detail_10455.html"
+    ]
+  },
+  {
+    "id": "hokkaido_nishiokoppe_deer_farm",
+    "name": "鹿牧場",
+    "pref": "北海道",
+    "city": "紋別郡西興部村",
+    "status": "open",
+    "url": "https://www.vill.nishiokoppe.lg.jp/feeuub000001ul9d.html",
+    "sourceUrls": [
+      "https://www.vill.nishiokoppe.lg.jp/feeuub000001ul9d.html",
+      "https://zoo.hokkaido.jp/nishiokoppe/"
+    ]
+  },
+  {
+    "id": "hokkaido_shibetsu_salmon_museum",
+    "name": "標津サーモン科学館",
+    "pref": "北海道",
+    "city": "標津郡標津町",
+    "status": "open",
+    "url": "https://s-salmon.com/",
+    "sourceUrls": [
+      "https://s-salmon.com/",
+      "https://www.shibetsutown.jp/culture/?content=757"
+    ]
+  },
+  {
+    "id": "hokkaido_showa_shinzan_bear_ranch",
+    "name": "昭和新山熊牧場",
+    "pref": "北海道",
+    "city": "有珠郡壮瞥町",
+    "status": "open",
+    "url": "https://kumakuma.co.jp/",
+    "sourceUrls": [
+      "https://kumakuma.co.jp/",
+      "https://kumakuma.co.jp/access/"
+    ]
+  },
+  {
+    "id": "hokkaido_muroran_aquarium",
+    "name": "市立室蘭水族館",
+    "pref": "北海道",
+    "city": "室蘭市",
+    "status": "open",
+    "url": "https://iburi.net/murosui/",
+    "sourceUrls": [
+      "https://iburi.net/murosui/index.html",
+      "https://www.city.muroran.lg.jp/content/?content=1545"
+    ]
+  },
+  {
+    "id": "hokkaido_papillon_chateau",
+    "name": "世界の昆虫館パピヨンシャトー",
+    "pref": "北海道",
+    "city": "上川郡当麻町",
+    "status": "open",
+    "url": "http://www.papiyonsyatoo.com/",
+    "sourceUrls": [
+      "https://www.town.tohma.hokkaido.jp/all-about/03/03/1737",
+      "http://www.papiyonsyatoo.com/"
+    ]
+  },
+  {
+    "id": "hokkaido_tenguyama_shimarisu_park",
+    "name": "天狗山シマリス公園",
+    "pref": "北海道",
+    "city": "小樽市",
+    "status": "open",
+    "url": "https://tenguyama.ckk.chuo-bus.co.jp/",
+    "sourceUrls": [
+      "https://tenguyama.ckk.chuo-bus.co.jp/",
+      "https://otaru.gr.jp/tourist/tenguyamarisukouen2025-5-24"
+    ]
+  },
+  {
+    "id": "hokkaido_noboribetsu_bear_park",
+    "name": "のぼりべつクマ牧場",
+    "pref": "北海道",
+    "city": "登別市",
+    "status": "open",
+    "url": "https://bearpark.jp/",
+    "sourceUrls": [
+      "https://bearpark.jp/"
+    ]
+  },
+  {
+    "id": "hokkaido_north_safari_sapporo",
+    "name": "ノースサファリサッポロ",
+    "pref": "北海道",
+    "city": "札幌市南区",
+    "status": "closed",
+    "url": "https://www.north-safari.com/",
+    "sourceUrls": [
+      "https://www.north-safari.com/news/3634/",
+      "https://www.hokkaido-np.co.jp/article/1217621/",
+      "https://ja.wikipedia.org/wiki/%E3%83%8E%E3%83%BC%E3%82%B9%E3%82%B5%E3%83%95%E3%82%A1%E3%83%AA%E3%82%B5%E3%83%83%E3%83%9D%E3%83%AD"
+    ]
+  },
+  {
+    "id": "hokkaido_hakodate_park_zoo",
+    "name": "函館公園動物施設",
+    "pref": "北海道",
+    "city": "函館市",
+    "status": "open",
+    "url": "https://www.hakodate-jts-kosya.jp/park/hakodate/animal/",
+    "sourceUrls": [
+      "https://www.hakodate-jts-kosya.jp/park/hakodate/animal/",
+      "https://www.hakodate-jts-kosya.jp/park/hakodate/"
+    ]
+  }
+]

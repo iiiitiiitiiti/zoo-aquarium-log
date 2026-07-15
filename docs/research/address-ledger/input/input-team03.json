@@ -1,0 +1,159 @@
+[
+  {
+    "id": "hokkaido_viva_alpaca_farm",
+    "name": "ビバアルパカ牧場",
+    "pref": "北海道",
+    "city": "上川郡剣淵町",
+    "status": "open",
+    "url": "https://www.viva-alpaca.jp/",
+    "sourceUrls": [
+      "https://www.viva-alpaca.jp/",
+      "http://www.kembuchi-kankou.com/temp/viva.html"
+    ]
+  },
+  {
+    "id": "hokkaido_bifuka_sturgeon_hall",
+    "name": "美深チョウザメ館",
+    "pref": "北海道",
+    "city": "中川郡美深町",
+    "status": "open",
+    "url": "https://www.town.bifuka.hokkaido.jp/cms/section/qlmcaj000000559v.html",
+    "sourceUrls": [
+      "https://www.town.bifuka.hokkaido.jp/cms/section/qlmcaj000000559v.html",
+      "https://www.bifukaonsen.com/sturgeon/"
+    ]
+  },
+  {
+    "id": "hokkaido_furusato_no_mori_animal_museum",
+    "name": "ふるさとの森動物館",
+    "pref": "北海道",
+    "city": "野付郡別海町",
+    "status": "open",
+    "url": "https://betsukai.jp/shisetsu/kanko/animal_/",
+    "sourceUrls": [
+      "https://betsukai.jp/shisetsu/kanko/animal_/",
+      "https://www.jalan.net/kankou/spt_01691ca3280039807/"
+    ]
+  },
+  {
+    "id": "hokkaido_horonobe_reindeer_farm",
+    "name": "幌延町トナカイ観光牧場",
+    "pref": "北海道",
+    "city": "天塩郡幌延町",
+    "status": "open",
+    "url": "https://www.town.horonobe.lg.jp/www4/section/sangyo/le009f00000017ha.html",
+    "sourceUrls": [
+      "https://www.town.horonobe.lg.jp/www4/section/sangyo/le009f00000017ha.html",
+      "https://www.visit-hokkaido.jp/spot/detail_10397.html"
+    ]
+  },
+  {
+    "id": "hokkaido_maruseppu_insect_museum",
+    "name": "丸瀬布昆虫生態館",
+    "pref": "北海道",
+    "city": "紋別郡遠軽町",
+    "status": "open",
+    "url": "https://engaru.jp/tourism/page.php?id=414",
+    "sourceUrls": [
+      "https://engaru.jp/tourism/page.php?id=414",
+      "https://www.engaru-kankou.jp/view/konchu.html"
+    ]
+  },
+  {
+    "id": "hokkaido_yamano_aquarium",
+    "name": "山の水族館",
+    "pref": "北海道",
+    "city": "北見市",
+    "status": "open",
+    "url": "https://onneyu-aq.com/",
+    "sourceUrls": [
+      "https://onneyu-aq.com/about/",
+      "https://www.city.kitami.lg.jp/administration/town/detail.php?content=7753"
+    ]
+  },
+  {
+    "id": "hokkaido_wakkanai_animal_fureai_land",
+    "name": "稚内市動物ふれあいランド",
+    "pref": "北海道",
+    "city": "稚内市",
+    "status": "open",
+    "url": "https://w-shinko.co.jp/animalland/",
+    "sourceUrls": [
+      "https://w-shinko.co.jp/animalland/",
+      "https://www.city.wakkanai.hokkaido.jp/kanko/midokoro/spot/doubutsufureai.html"
+    ]
+  },
+  {
+    "id": "hokkaido_noshappu_aquarium",
+    "name": "稚内市立ノシャップ寒流水族館",
+    "pref": "北海道",
+    "city": "稚内市",
+    "status": "open",
+    "url": "https://www.city.wakkanai.hokkaido.jp/suizokukan/",
+    "sourceUrls": [
+      "https://www.city.wakkanai.hokkaido.jp/suizokukan/gaiyo/youkoso.html",
+      "https://www.city.wakkanai.hokkaido.jp/suizokukan/riyou/riyoannai.html"
+    ]
+  },
+  {
+    "id": "aomori_asamushi_aquarium",
+    "name": "青森県営浅虫水族館",
+    "pref": "青森県",
+    "city": "青森市",
+    "status": "open",
+    "url": "https://asamushi-aqua.com/",
+    "sourceUrls": [
+      "https://asamushi-aqua.com/",
+      "https://asamushi-aqua.com/userguide/access"
+    ]
+  },
+  {
+    "id": "aomori_yayoi_ikoi_hiroba",
+    "name": "弥生いこいの広場",
+    "pref": "青森県",
+    "city": "弘前市",
+    "status": "suspended",
+    "url": "http://www.hirosakipark.or.jp/yayoi/",
+    "sourceUrls": [
+      "http://www.hirosakipark.or.jp/yayoi/",
+      "https://www.city.hirosaki.aomori.jp/gaiyou/shisetsu/2014-1206-1516-48.html"
+    ]
+  },
+  {
+    "id": "aomori_ashino_children_zoo",
+    "name": "芦野児童動物園",
+    "pref": "青森県",
+    "city": "五所川原市",
+    "status": "open",
+    "url": "https://www.city.goshogawara.lg.jp/tourism/view/ashinokouen.html",
+    "sourceUrls": [
+      "https://www.city.goshogawara.lg.jp/tourism/view/ashinokouen.html",
+      "https://mutsushimpo.com/news/fyszk6tk/",
+      "https://www.toonippo.co.jp/articles/-/2172953"
+    ]
+  },
+  {
+    "id": "aomori_gappo_park_animal_house",
+    "name": "合浦公園動物舎",
+    "pref": "青森県",
+    "city": "青森市",
+    "status": "open",
+    "url": "https://www.city.aomori.aomori.jp/shisetsu/1005691/1007882.html",
+    "sourceUrls": [
+      "https://www.city.aomori.aomori.jp/shisetsu/1005691/1007882.html",
+      "https://park-mente.jp/park/gappo/"
+    ]
+  },
+  {
+    "id": "aomori_tancho_crane_nature_park",
+    "name": "丹頂鶴自然公園",
+    "pref": "青森県",
+    "city": "北津軽郡鶴田町",
+    "status": "open",
+    "url": "https://www.town.tsuruta.lg.jp/kankou/kankou-kankou/tantyoudurupark.html",
+    "sourceUrls": [
+      "https://www.town.tsuruta.lg.jp/kankou/kankou-kankou/tantyoudurupark.html",
+      "https://ja.wikipedia.org/wiki/%E4%B8%B9%E9%A0%82%E9%B6%B4%E8%87%AA%E7%84%B6%E5%85%AC%E5%9C%92_(%E9%B6%B4%E7%94%B0%E7%94%BA)"
+    ]
+  }
+]

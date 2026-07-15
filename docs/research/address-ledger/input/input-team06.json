@@ -1,0 +1,153 @@
+[
+  {
+    "id": "saitama_omiya_zoo",
+    "name": "大宮公園小動物園",
+    "pref": "埼玉県",
+    "city": "さいたま市",
+    "status": "suspended",
+    "url": "https://www.parks.or.jp/omiyazoo/",
+    "sourceUrls": [
+      "https://www.parks.or.jp/omiyazoo/",
+      "https://www.parks.or.jp/omiyazoo/guide/008/008996.html"
+    ]
+  },
+  {
+    "id": "saitama_osaki_zoo",
+    "name": "大崎公園子供動物園",
+    "pref": "埼玉県",
+    "city": "さいたま市",
+    "status": "open",
+    "url": "https://www.city.saitama.lg.jp/004/001/003/001/p002130.html",
+    "sourceUrls": [
+      "https://www.city.saitama.lg.jp/004/001/003/001/p002130.html",
+      "https://www.saitama-park.co.jp/osaki-park/"
+    ]
+  },
+  {
+    "id": "saitama_chikozan_zoo",
+    "name": "狭山市立智光山公園こども動物園",
+    "pref": "埼玉県",
+    "city": "狭山市",
+    "status": "open",
+    "url": "https://www.parks.or.jp/chikozan/zoo/",
+    "sourceUrls": [
+      "https://www.parks.or.jp/chikozan/zoo/"
+    ]
+  },
+  {
+    "id": "saitama_saitama_aquarium",
+    "name": "さいたま水族館",
+    "pref": "埼玉県",
+    "city": "羽生市",
+    "status": "open",
+    "url": "https://www.parks.or.jp/suizokukan/",
+    "sourceUrls": [
+      "https://www.parks.or.jp/suizokukan/"
+    ]
+  },
+  {
+    "id": "saitama_kodomo_zoo",
+    "name": "埼玉県こども動物自然公園",
+    "pref": "埼玉県",
+    "city": "東松山市",
+    "status": "open",
+    "url": "https://www.parks.or.jp/sczoo/",
+    "sourceUrls": [
+      "https://www.parks.or.jp/sczoo/guide/000/000195.html",
+      "https://www.parks.or.jp/sczoo/guide/000/000194.html"
+    ]
+  },
+  {
+    "id": "saitama_tobu_zoo",
+    "name": "東武動物公園",
+    "pref": "埼玉県",
+    "city": "宮代町",
+    "status": "open",
+    "url": "https://www.tobuzoo.com/",
+    "sourceUrls": [
+      "https://www.tobuzoo.com/",
+      "https://www.tobuzoo.com/about/"
+    ]
+  },
+  {
+    "id": "chiba_ichikawa_zoo",
+    "name": "市川市動植物園",
+    "pref": "千葉県",
+    "city": "市川市",
+    "status": "open",
+    "url": "https://www.city.ichikawa.lg.jp/site/zoo/",
+    "sourceUrls": [
+      "https://www.city.ichikawa.lg.jp/site/zoo/"
+    ]
+  },
+  {
+    "id": "chiba_ichihara_zou_no_kuni",
+    "name": "市原ぞうの国",
+    "pref": "千葉県",
+    "city": "市原市",
+    "status": "open",
+    "url": "https://zounokuni.com/",
+    "sourceUrls": [
+      "https://zounokuni.com/info/",
+      "https://zounokuni.com/guide-sw/"
+    ]
+  },
+  {
+    "id": "chiba_kamogawa_sea_world",
+    "name": "鴨川シーワールド",
+    "pref": "千葉県",
+    "city": "鴨川市",
+    "status": "open",
+    "url": "https://www.kamogawa-seaworld.jp/",
+    "sourceUrls": [
+      "https://www.kamogawa-seaworld.jp/"
+    ]
+  },
+  {
+    "id": "chiba_chiba_zoo",
+    "name": "千葉市動物公園",
+    "pref": "千葉県",
+    "city": "千葉市",
+    "status": "open",
+    "url": "https://www.city.chiba.jp/zoo/",
+    "sourceUrls": [
+      "https://www.city.chiba.jp/zoo/",
+      "https://www.city.chiba.jp/zoo/guide/index.html"
+    ]
+  },
+  {
+    "id": "tokyo_adachi_seibutsuen",
+    "name": "足立区生物園",
+    "pref": "東京都",
+    "city": "足立区",
+    "status": "open",
+    "url": "https://seibutuen.jp/",
+    "sourceUrls": [
+      "https://seibutuen.jp/",
+      "https://seibutuen.jp/guidance/information.html"
+    ]
+  },
+  {
+    "id": "tokyo_kasai_aquarium",
+    "name": "葛西臨海水族園",
+    "pref": "東京都",
+    "city": "江戸川区",
+    "status": "open",
+    "url": "https://www.tokyo-zoo.net/zoo/kasai/",
+    "sourceUrls": [
+      "https://www.tokyo-zoo.net/zoo/kasai/"
+    ]
+  },
+  {
+    "id": "tokyo_edogawa_shizen_zoo",
+    "name": "江戸川区自然動物園",
+    "pref": "東京都",
+    "city": "江戸川区",
+    "status": "open",
+    "url": "https://www.edogawa-kankyozaidan.jp/zoo/",
+    "sourceUrls": [
+      "https://www.edogawa-kankyozaidan.jp/zoo/",
+      "https://www.city.edogawa.tokyo.jp/e066/kuseijoho/gaiyo/shisetsuguide/bunya/koendobutsuen/shizen.html"
+    ]
+  }
+]

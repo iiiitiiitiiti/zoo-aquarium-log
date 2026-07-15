@@ -1,0 +1,155 @@
+[
+  {
+    "id": "yamagata_kahoku_childrens_zoo",
+    "name": "河北町児童動物園",
+    "pref": "山形県",
+    "city": "西村山郡河北町",
+    "status": "open",
+    "url": "https://www.town.kahoku.yamagata.jp/soshiki/shoko/kankousinkou/Kahokuchildrenzoo/index.html",
+    "sourceUrls": [
+      "https://www.town.kahoku.yamagata.jp/soshiki/shoko/kankousinkou/Kahokuchildrenzoo/index.html",
+      "https://www.town.kahoku.yamagata.jp/soshiki/shoko/kankousinkou/Kahokuchildrenzoo/6357.html",
+      "https://ja.wikipedia.org/wiki/河北町児童動物園"
+    ]
+  },
+  {
+    "id": "fukushima_kawasemi_aquarium",
+    "name": "アクアマリンいなわしろカワセミ水族館",
+    "pref": "福島県",
+    "city": "猪苗代町",
+    "status": "open",
+    "url": "https://www.aquamarine.or.jp/kawasemi/",
+    "sourceUrls": [
+      "https://www.aquamarine.or.jp/kawasemi/",
+      "https://www.aquamarine.or.jp/kawasemi/access/"
+    ]
+  },
+  {
+    "id": "fukushima_aquamarine_fukushima",
+    "name": "アクアマリンふくしま",
+    "pref": "福島県",
+    "city": "いわき市",
+    "status": "open",
+    "url": "https://www.aquamarine.or.jp/",
+    "sourceUrls": [
+      "https://www.aquamarine.or.jp/"
+    ]
+  },
+  {
+    "id": "fukushima_tohoku_safari_park",
+    "name": "東北サファリパーク",
+    "pref": "福島県",
+    "city": "二本松市",
+    "status": "open",
+    "url": "http://tohoku-safaripark.co.jp/",
+    "sourceUrls": [
+      "http://tohoku-safaripark.co.jp/",
+      "https://ja.wikipedia.org/wiki/東北サファリパーク",
+      "https://www.jalan.net/kankou/spt_07210cc3540060351/"
+    ]
+  },
+  {
+    "id": "fukushima_mushimushiland",
+    "name": "ムシムシランド",
+    "pref": "福島県",
+    "city": "田村市",
+    "status": "open",
+    "url": "https://www.mushimushiland.com/",
+    "sourceUrls": [
+      "https://www.mushimushiland.com/",
+      "https://tamura-ijyu.jp/tamudex/3446/"
+    ]
+  },
+  {
+    "id": "ibaraki_oarai_aquarium",
+    "name": "アクアワールド茨城県大洗水族館",
+    "pref": "茨城県",
+    "city": "大洗町",
+    "status": "open",
+    "url": "https://www.aquaworld-oarai.com/",
+    "sourceUrls": [
+      "https://www.aquaworld-oarai.com/",
+      "https://www.aquaworld-oarai.com/guide/access"
+    ]
+  },
+  {
+    "id": "ibaraki_kamine_zoo",
+    "name": "日立市かみね動物園",
+    "pref": "茨城県",
+    "city": "日立市",
+    "status": "open",
+    "url": "https://www.city.hitachi.lg.jp/zoo/",
+    "sourceUrls": [
+      "https://www.city.hitachi.lg.jp/zoo/"
+    ]
+  },
+  {
+    "id": "tochigi_utsunomiya_zoo",
+    "name": "宇都宮動物園",
+    "pref": "栃木県",
+    "city": "宇都宮市",
+    "status": "open",
+    "url": "https://utsunomiya-zoo.com/",
+    "sourceUrls": [
+      "https://utsunomiya-zoo.com/"
+    ]
+  },
+  {
+    "id": "tochigi_nakagawa_aquarium",
+    "name": "栃木県なかがわ水遊園",
+    "pref": "栃木県",
+    "city": "大田原市",
+    "status": "open",
+    "url": "https://tnap.jp/",
+    "sourceUrls": [
+      "https://tnap.jp/"
+    ]
+  },
+  {
+    "id": "tochigi_nasu_animal_kingdom",
+    "name": "那須どうぶつ王国",
+    "pref": "栃木県",
+    "city": "那須町",
+    "status": "open",
+    "url": "https://nasu-oukoku.com/",
+    "sourceUrls": [
+      "https://nasu-oukoku.com/?page_id=1598",
+      "https://nasu-oukoku.com/"
+    ]
+  },
+  {
+    "id": "tochigi_nasu_safari_park",
+    "name": "那須サファリパーク",
+    "pref": "栃木県",
+    "city": "那須町",
+    "status": "open",
+    "url": "https://www.nasusafari.com/",
+    "sourceUrls": [
+      "https://www.nasusafari.com/",
+      "https://www.nasusafari.com/faq/"
+    ]
+  },
+  {
+    "id": "gunma_kiryugaoka_zoo",
+    "name": "桐生が岡動物園",
+    "pref": "群馬県",
+    "city": "桐生市",
+    "status": "open",
+    "url": "https://www.city.kiryu.lg.jp/zoo/",
+    "sourceUrls": [
+      "https://www.city.kiryu.lg.jp/zoo/"
+    ]
+  },
+  {
+    "id": "gunma_safari_park",
+    "name": "群馬サファリパーク",
+    "pref": "群馬県",
+    "city": "富岡市",
+    "status": "open",
+    "url": "https://safari.co.jp/",
+    "sourceUrls": [
+      "https://safari.co.jp/access/",
+      "https://safari.co.jp/calendar/"
+    ]
+  }
+]

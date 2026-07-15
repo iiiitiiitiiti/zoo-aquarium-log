@@ -1,0 +1,151 @@
+[
+  {
+    "id": "mie_gokatsura_animal_park",
+    "name": "ごかつら池どうぶつパーク",
+    "pref": "三重県",
+    "city": "多気町",
+    "status": "open",
+    "url": "https://gokatsura.jp/",
+    "sourceUrls": [
+      "https://gokatsura.jp/general-information/",
+      "https://gokatsura.jp/access/"
+    ]
+  },
+  {
+    "id": "mie_toba_aquarium",
+    "name": "鳥羽水族館",
+    "pref": "三重県",
+    "city": "鳥羽市",
+    "status": "open",
+    "url": "https://aquarium.co.jp/",
+    "sourceUrls": [
+      "https://aquarium.co.jp/"
+    ]
+  },
+  {
+    "id": "shiga_biwako_museum",
+    "name": "滋賀県立琵琶湖博物館",
+    "pref": "滋賀県",
+    "city": "草津市",
+    "status": "open",
+    "url": "https://www.biwahaku.jp/",
+    "sourceUrls": [
+      "https://www.biwahaku.jp/",
+      "https://www.biwahaku.jp/exhibition/aqua.html"
+    ]
+  },
+  {
+    "id": "kyoto_kyoto_city_zoo",
+    "name": "京都市動物園",
+    "pref": "京都府",
+    "city": "京都市",
+    "status": "open",
+    "url": "https://www5.city.kyoto.jp/zoo/",
+    "sourceUrls": [
+      "https://www5.city.kyoto.jp/zoo/"
+    ]
+  },
+  {
+    "id": "kyoto_kyoto_aquarium",
+    "name": "京都水族館",
+    "pref": "京都府",
+    "city": "京都市",
+    "status": "open",
+    "url": "https://www.kyoto-aquarium.com/",
+    "sourceUrls": [
+      "https://www.kyoto-aquarium.com/",
+      "https://www.kyoto-aquarium.com/about/access/index.html"
+    ]
+  },
+  {
+    "id": "osaka_satsukiyama_zoo",
+    "name": "池田市立五月山動物園",
+    "pref": "大阪府",
+    "city": "池田市",
+    "status": "suspended",
+    "url": "https://satsukiyamazoo.com/",
+    "sourceUrls": [
+      "https://satsukiyamazoo.com/",
+      "https://satsukiyamazoo.com/about_zoo/"
+    ]
+  },
+  {
+    "id": "osaka_kaiyukan",
+    "name": "海遊館",
+    "pref": "大阪府",
+    "city": "大阪市",
+    "status": "open",
+    "url": "https://www.kaiyukan.com/",
+    "sourceUrls": [
+      "https://www.kaiyukan.com/"
+    ]
+  },
+  {
+    "id": "osaka_tennoji_zoo",
+    "name": "天王寺動物園",
+    "pref": "大阪府",
+    "city": "大阪市",
+    "status": "open",
+    "url": "https://www.tennojizoo.jp/",
+    "sourceUrls": [
+      "https://www.tennojizoo.jp/info/outline/"
+    ]
+  },
+  {
+    "id": "osaka_nifrel",
+    "name": "生きているミュージアム ニフレル",
+    "pref": "大阪府",
+    "city": "吹田市",
+    "status": "open",
+    "url": "https://www.nifrel.jp/",
+    "sourceUrls": [
+      "https://www.nifrel.jp/"
+    ]
+  },
+  {
+    "id": "hyogo_oji_zoo",
+    "name": "神戸市立王子動物園",
+    "pref": "兵庫県",
+    "city": "神戸市",
+    "status": "open",
+    "url": "https://www.kobe-ojizoo.jp/",
+    "sourceUrls": [
+      "https://www.kobe-ojizoo.jp/guide/hour_charge/",
+      "https://www.kobe-ojizoo.jp/renewal.html"
+    ]
+  },
+  {
+    "id": "hyogo_kobe_animal_kingdom",
+    "name": "神戸どうぶつ王国",
+    "pref": "兵庫県",
+    "city": "神戸市",
+    "status": "open",
+    "url": "https://www.kobe-oukoku.com/",
+    "sourceUrls": [
+      "https://www.kobe-oukoku.com/"
+    ]
+  },
+  {
+    "id": "hyogo_kobe_suma_seaworld",
+    "name": "神戸須磨シーワールド",
+    "pref": "兵庫県",
+    "city": "神戸市",
+    "status": "open",
+    "url": "https://www.kobesuma-seaworld.jp/",
+    "sourceUrls": [
+      "https://www.kobesuma-seaworld.jp/"
+    ]
+  },
+  {
+    "id": "hyogo_atoa",
+    "name": "átoa",
+    "pref": "兵庫県",
+    "city": "神戸市",
+    "status": "open",
+    "url": "https://atoa-kobe.jp/",
+    "sourceUrls": [
+      "https://atoa-kobe.jp/",
+      "https://atoa-kobe.jp/access/"
+    ]
+  }
+]

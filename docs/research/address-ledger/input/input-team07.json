@@ -1,0 +1,155 @@
+[
+  {
+    "id": "tokyo_oshima_park_zoo",
+    "name": "大島公園動物園",
+    "pref": "東京都",
+    "city": "大島町",
+    "status": "open",
+    "url": "https://www.soumu.metro.tokyo.lg.jp/11osima/osima/park/zoo",
+    "sourceUrls": [
+      "https://www.soumu.metro.tokyo.lg.jp/11osima/osima/park/zoo",
+      "https://www.soumu.metro.tokyo.lg.jp/11osima/osima/park/zoo/zoo"
+    ]
+  },
+  {
+    "id": "tokyo_shinagawa_aquarium",
+    "name": "しながわ水族館",
+    "pref": "東京都",
+    "city": "品川区",
+    "status": "open",
+    "url": "https://www.aquarium.gr.jp/",
+    "sourceUrls": [
+      "https://www.aquarium.gr.jp/",
+      "https://www.city.shinagawa.tokyo.jp/PC/kuseizyoho/kuseizyoho-siryo/kuseizyoho-siryo-zaisei/kuseizyoho-siryo-zaisei-plan/hpg000000320.html"
+    ]
+  },
+  {
+    "id": "tokyo_sumida_aquarium",
+    "name": "すみだ水族館",
+    "pref": "東京都",
+    "city": "墨田区",
+    "status": "open",
+    "url": "https://www.sumida-aquarium.com/",
+    "sourceUrls": [
+      "https://www.sumida-aquarium.com/",
+      "https://www.sumida-aquarium.com/about/access/"
+    ]
+  },
+  {
+    "id": "tokyo_ueno_zoo",
+    "name": "恩賜上野動物園",
+    "pref": "東京都",
+    "city": "台東区",
+    "status": "open",
+    "url": "https://www.tokyo-zoo.net/zoo/ueno/",
+    "sourceUrls": [
+      "https://www.tokyo-zoo.net/zoo/ueno/"
+    ]
+  },
+  {
+    "id": "tokyo_sunshine_aquarium",
+    "name": "サンシャイン水族館",
+    "pref": "東京都",
+    "city": "豊島区",
+    "status": "open",
+    "url": "https://sunshinecity.jp/aquarium/",
+    "sourceUrls": [
+      "https://sunshinecity.jp/aquarium/",
+      "https://sunshinecity.jp/aquarium/access/"
+    ]
+  },
+  {
+    "id": "tokyo_hamura_zoo",
+    "name": "羽村市動物公園",
+    "pref": "東京都",
+    "city": "羽村市",
+    "status": "open",
+    "url": "https://hamurazoo.jp/",
+    "sourceUrls": [
+      "https://hamurazoo.jp/",
+      "https://hamurazoo.jp/access/"
+    ]
+  },
+  {
+    "id": "tokyo_tama_zoo",
+    "name": "多摩動物公園",
+    "pref": "東京都",
+    "city": "日野市",
+    "status": "open",
+    "url": "https://www.tokyo-zoo.net/zoo/tama/",
+    "sourceUrls": [
+      "https://www.tokyo-zoo.net/zoo/tama/"
+    ]
+  },
+  {
+    "id": "tokyo_machida_risuen",
+    "name": "町田リス園",
+    "pref": "東京都",
+    "city": "町田市",
+    "status": "open",
+    "url": "https://www.machida-risuen.com/",
+    "sourceUrls": [
+      "https://www.machida-risuen.com/",
+      "https://www.machida-risuen.com/introduction.html"
+    ]
+  },
+  {
+    "id": "tokyo_maxell_aqua_park",
+    "name": "マクセル アクアパーク品川",
+    "pref": "東京都",
+    "city": "港区",
+    "status": "open",
+    "url": "https://www.aqua-park.jp/",
+    "sourceUrls": [
+      "https://www.aqua-park.jp/",
+      "https://www.gotokyo.org/jp/spot/294/index.html"
+    ]
+  },
+  {
+    "id": "tokyo_inokashira_zoo",
+    "name": "井の頭自然文化園",
+    "pref": "東京都",
+    "city": "武蔵野市",
+    "status": "open",
+    "url": "https://www.tokyo-zoo.net/zoo/ino/",
+    "sourceUrls": [
+      "https://www.tokyo-zoo.net/zoo/ino/"
+    ]
+  },
+  {
+    "id": "kanagawa_yomiuriland_ashikakan",
+    "name": "よみうりランドアシカ館",
+    "pref": "神奈川県",
+    "city": "川崎市",
+    "status": "open",
+    "url": "https://www.yomiuriland.com/",
+    "sourceUrls": [
+      "https://www.jaza.jp/about-jaza/structure/list-aquarium",
+      "https://www.yomiuriland.com/"
+    ]
+  },
+  {
+    "id": "kanagawa_kawasui_aquarium",
+    "name": "カワスイ 川崎水族館",
+    "pref": "神奈川県",
+    "city": "川崎市",
+    "status": "open",
+    "url": "https://kawa-sui.com/",
+    "sourceUrls": [
+      "https://kawa-sui.com/",
+      "https://www.lefront.jp/store/kawasui-kawasaki-aquarium/"
+    ]
+  },
+  {
+    "id": "kanagawa_yumemigasaki_zoo",
+    "name": "夢見ヶ崎動物公園",
+    "pref": "神奈川県",
+    "city": "川崎市",
+    "status": "open",
+    "url": "https://www.city.kawasaki.jp/shisei/category/288-7-22-0-0-0-0-0-0-0.html",
+    "sourceUrls": [
+      "https://www.city.kawasaki.jp/shisei/category/288-7-22-0-0-0-0-0-0-0.html",
+      "https://www.city.kawasaki.jp/shisei/category/288-7-22-7-0-0-0-0-0-0.html"
+    ]
+  }
+]

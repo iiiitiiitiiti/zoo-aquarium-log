@@ -1,0 +1,106 @@
+[
+  {
+    "id": "tokyo_oshima_park_zoo",
+    "name": "大島公園動物園",
+    "address": "東京都大島町泉津字福重2号",
+    "addressSourceUrl": "https://www.soumu.metro.tokyo.lg.jp/11osima/osima/park/zoo/zoo",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "tokyo_shinagawa_aquarium",
+    "name": "しながわ水族館",
+    "address": "東京都品川区勝島3-2-1",
+    "addressSourceUrl": "https://www.aquarium.gr.jp/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "tokyo_sumida_aquarium",
+    "name": "すみだ水族館",
+    "address": "東京都墨田区押上一丁目1番2号 東京スカイツリータウン・ソラマチ5F・6F",
+    "addressSourceUrl": "https://www.sumida-aquarium.com/about/access/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "tokyo_ueno_zoo",
+    "name": "恩賜上野動物園",
+    "address": "東京都台東区上野公園9-83",
+    "addressSourceUrl": "https://www.tokyo-zoo.net/zoo/ueno/",
+    "confidence": "high",
+    "note": "出典表記は「台東区上野公園9-83」（都道府県名省略）。先頭に東京都を補って記録。"
+  },
+  {
+    "id": "tokyo_sunshine_aquarium",
+    "name": "サンシャイン水族館",
+    "address": "東京都豊島区東池袋3-1 サンシャインシティ ワールドインポートマートビル 屋上",
+    "addressSourceUrl": "https://sunshinecity.jp/aquarium/access/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "tokyo_hamura_zoo",
+    "name": "羽村市動物公園",
+    "address": "東京都羽村市羽4122",
+    "addressSourceUrl": "https://hamurazoo.jp/access/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "tokyo_tama_zoo",
+    "name": "多摩動物公園",
+    "address": "東京都日野市程久保7-1-1",
+    "addressSourceUrl": "https://www.tokyo-zoo.net/zoo/tama/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "tokyo_machida_risuen",
+    "name": "町田リス園",
+    "address": "東京都町田市薬師台1-733-1",
+    "addressSourceUrl": "https://www.machida-risuen.com/introduction.html",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "tokyo_maxell_aqua_park",
+    "name": "マクセル アクアパーク品川",
+    "address": "東京都港区高輪4-10-30(品川プリンスホテル内)",
+    "addressSourceUrl": "https://www.aqua-park.jp/aqua/access/",
+    "confidence": "high",
+    "note": "入力cityは「港区」で出典と一致（施設は品川駅高輪口側だが所在地の行政区は港区）。"
+  },
+  {
+    "id": "tokyo_inokashira_zoo",
+    "name": "井の頭自然文化園",
+    "address": "東京都武蔵野市御殿山1-17-6",
+    "addressSourceUrl": "https://www.tokyo-zoo.net/zoo/ino/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "kanagawa_yomiuriland_ashikakan",
+    "name": "よみうりランドアシカ館",
+    "address": "神奈川県川崎市多摩区菅仙谷4-1-1",
+    "addressSourceUrl": "https://www.jaza.jp/about-jaza/structure/list-aquarium",
+    "confidence": "medium",
+    "note": "施設運営元のよみうりランド公式サイト(yomiuriland.com)フッターでは、遊園地全体の代表所在地として「東京都稲城市矢野口4015-1」と記載されている（よみうりランドは稲城市と川崎市多摩区にまたがって立地）。アシカ館単体の住所は日本動物園水族館協会(JAZA)の施設一覧に記載の神奈川県側住所を採用し、こちらは入力pref/cityと一致する。"
+  },
+  {
+    "id": "kanagawa_kawasui_aquarium",
+    "name": "カワスイ 川崎水族館",
+    "address": "神奈川県川崎市川崎区日進町1-11",
+    "addressSourceUrl": "https://www.lefront.jp/store/kawasui-kawasaki-aquarium/",
+    "confidence": "medium",
+    "note": "カワスイ公式サイト(kawa-sui.com)本体には「JR川崎駅東口からすぐ」の記載のみで番地の記載がなかったため、入居先ビル運営元(川崎ルフロン公式サイト)の記載住所を採用。カワスイ アクア&アニマルスクール公式ページ(school.kawa-sui.com/about/access/)も同住所（川崎ルフロン9F・10F）を記載しており整合。"
+  },
+  {
+    "id": "kanagawa_yumemigasaki_zoo",
+    "name": "夢見ヶ崎動物公園",
+    "address": "神奈川県川崎市幸区南加瀬1-2-1",
+    "addressSourceUrl": "https://www.city.kawasaki.jp/shisei/category/288-7-22-4-0-0-0-0-0-0.html",
+    "confidence": "high",
+    "note": "出典表記は「川崎市幸区南加瀬1-2-1」（都道府県名省略）。先頭に神奈川県を補って記録。"
+  }
+]

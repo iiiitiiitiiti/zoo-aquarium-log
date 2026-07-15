@@ -162,6 +162,31 @@ describe("Firestore household rules", () => {
     ));
   });
 
+  test("手動施設の任意の住所は1〜200文字だけ許可する", async () => {
+    const db = testEnv.authenticatedContext(HOUSEHOLD_UID).firestore();
+    const customFacility = {
+      id: "custom_addressed_zoo",
+      name: "住所つき動物園",
+      kana: "じゅうしょつきどうぶつえん",
+      pref: "東京都",
+      city: "台東区",
+      type: "zoo",
+      lat: 35.7,
+      lng: 139.7,
+      url: "https://example.com/",
+      sourceUrls: ["https://example.com/"],
+      status: "open",
+      lastVerifiedAt: "2026-07-15",
+    };
+    const facilityRef = doc(db, "households", HOUSEHOLD_UID, "customFacilities", customFacility.id);
+
+    await assertSucceeds(setDoc(facilityRef, { ...customFacility, address: "東京都台東区上野公園9-83" }));
+    await assertSucceeds(setDoc(facilityRef, customFacility));
+    await assertFails(setDoc(facilityRef, { ...customFacility, address: "" }));
+    await assertFails(setDoc(facilityRef, { ...customFacility, address: "あ".repeat(201) }));
+    await assertFails(setDoc(facilityRef, { ...customFacility, address: 123 }));
+  });
+
   test("施設メモはserverTimestampと2000文字境界を検証し、削除を許可する", async () => {
     const db = testEnv.authenticatedContext(HOUSEHOLD_UID).firestore();
     const notes = collection(db, "households", HOUSEHOLD_UID, "facilityNotes");

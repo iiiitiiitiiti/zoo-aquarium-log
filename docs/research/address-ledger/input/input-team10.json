@@ -1,0 +1,154 @@
+[
+  {
+    "id": "shizuoka_hamamatsu_zoo",
+    "name": "浜松市動物園",
+    "pref": "静岡県",
+    "city": "浜松市",
+    "status": "open",
+    "url": "https://hamazoo.net/",
+    "sourceUrls": [
+      "https://hamazoo.net/information.php",
+      "https://www.city.hamamatsu.shizuoka.jp/hamazoo/"
+    ]
+  },
+  {
+    "id": "shizuoka_izu_animal_kingdom",
+    "name": "伊豆アニマルキングダム",
+    "pref": "静岡県",
+    "city": "東伊豆町",
+    "status": "open",
+    "url": "https://izu-animal-kingdom.com/",
+    "sourceUrls": [
+      "https://izu-animal-kingdom.com/access/",
+      "https://izu-animal-kingdom.com/"
+    ]
+  },
+  {
+    "id": "shizuoka_atagawa_banana_wani",
+    "name": "熱川バナナワニ園",
+    "pref": "静岡県",
+    "city": "東伊豆町",
+    "status": "open",
+    "url": "https://bananawani.jp/",
+    "sourceUrls": [
+      "https://bananawani.jp/information/",
+      "https://bananawani.jp/"
+    ]
+  },
+  {
+    "id": "shizuoka_rakujuen",
+    "name": "三島市立公園楽寿園",
+    "pref": "静岡県",
+    "city": "三島市",
+    "status": "open",
+    "url": "https://www.city.mishima.shizuoka.jp/site/rakujyuen/",
+    "sourceUrls": [
+      "https://www.city.mishima.shizuoka.jp/rakujyu/shousai012761.html",
+      "https://www.city.mishima.shizuoka.jp/site/rakujyuen/5419.html"
+    ]
+  },
+  {
+    "id": "aichi_japan_monkey_centre",
+    "name": "日本モンキーセンター",
+    "pref": "愛知県",
+    "city": "犬山市",
+    "status": "open",
+    "url": "https://www.j-monkey.jp/",
+    "sourceUrls": [
+      "https://www.j-monkey.jp/",
+      "https://www.j-monkey.jp/news/20260313notice.html"
+    ]
+  },
+  {
+    "id": "aichi_higashi_park_zoo",
+    "name": "東公園動物園",
+    "pref": "愛知県",
+    "city": "岡崎市",
+    "status": "open",
+    "url": "https://www.city.okazaki.lg.jp/zoo/index.html",
+    "sourceUrls": [
+      "https://www.city.okazaki.lg.jp/zoo/index.html"
+    ]
+  },
+  {
+    "id": "aichi_kuragaike_zoo",
+    "name": "鞍ケ池公園動物園",
+    "pref": "愛知県",
+    "city": "豊田市",
+    "status": "open",
+    "url": "https://kuragaikepark.com/",
+    "sourceUrls": [
+      "https://kuragaikepark.com/",
+      "https://kuragaikepark.com/guide"
+    ]
+  },
+  {
+    "id": "aichi_toyohashi_nonhoi_park",
+    "name": "豊橋総合動植物公園",
+    "pref": "愛知県",
+    "city": "豊橋市",
+    "status": "open",
+    "url": "https://www.nonhoi.jp/",
+    "sourceUrls": [
+      "https://www.nonhoi.jp/",
+      "https://www.city.toyohashi.lg.jp/15863.htm"
+    ]
+  },
+  {
+    "id": "aichi_nagoya_port_aquarium",
+    "name": "名古屋港水族館",
+    "pref": "愛知県",
+    "city": "名古屋市",
+    "status": "open",
+    "url": "https://nagoyaaqua.jp/",
+    "sourceUrls": [
+      "https://nagoyaaqua.jp/"
+    ]
+  },
+  {
+    "id": "aichi_higashiyama_zoo",
+    "name": "東山動植物園",
+    "pref": "愛知県",
+    "city": "名古屋市",
+    "status": "open",
+    "url": "https://www.higashiyama.city.nagoya.jp/",
+    "sourceUrls": [
+      "https://www.higashiyama.city.nagoya.jp/"
+    ]
+  },
+  {
+    "id": "aichi_sealife_nagoya",
+    "name": "名古屋シーライフ水族館",
+    "pref": "愛知県",
+    "city": "名古屋市",
+    "status": "open",
+    "url": "https://www.legoland.jp/resort-guide/sealife-nagoya/",
+    "sourceUrls": [
+      "https://www.legoland.jp/resort-guide/sealife-nagoya/"
+    ]
+  },
+  {
+    "id": "aichi_hekinan_aquarium",
+    "name": "碧南海浜水族館",
+    "pref": "愛知県",
+    "city": "碧南市",
+    "status": "open",
+    "url": "https://www.city.hekinan.lg.jp/aquarium/index.html",
+    "sourceUrls": [
+      "https://www.city.hekinan.lg.jp/aquarium/index.html",
+      "https://www.city.hekinan.lg.jp/aquarium/general_information/6762.html"
+    ]
+  },
+  {
+    "id": "mie_ise_sea_paradise",
+    "name": "ゼロ距離水族館 伊勢シーパラダイス",
+    "pref": "三重県",
+    "city": "伊勢市",
+    "status": "open",
+    "url": "https://ise-seaparadise.com/",
+    "sourceUrls": [
+      "https://ise-seaparadise.com/",
+      "https://ise-seaparadise.com/company/"
+    ]
+  }
+]

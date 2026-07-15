@@ -1,0 +1,106 @@
+[
+  {
+    "id": "fukui_nishiyama_zoo",
+    "name": "鯖江市西山動物園",
+    "address": "福井県鯖江市桜町3丁目8番9号",
+    "addressSourceUrl": "https://www.city.sabae.fukui.jp/about_city/shinoshokai/kokyoshisetsu/nishiyama_zoo.html",
+    "confidence": "high",
+    "note": "出典ページの表記は都道府県名省略（鯖江市桜町3丁目8番9号）のため、先頭に福井県を補った"
+  },
+  {
+    "id": "yamanashi_fuji_yusui_aquarium",
+    "name": "山梨県立富士湧水の里水族館",
+    "address": "山梨県南都留郡忍野村忍草3098−1",
+    "addressSourceUrl": "https://www.morinonakano-suizokukan.com/access.html",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "yamanashi_kofu_yuki_zoo",
+    "name": "甲府市遊亀公園附属動物園",
+    "address": "山梨県甲府市太田町10番1号",
+    "addressSourceUrl": "https://www.city.kofu.yamanashi.jp/zoo/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "nagano_iida_zoo",
+    "name": "飯田市立動物園",
+    "address": "長野県飯田市扇町33",
+    "addressSourceUrl": "https://iidazoo.jp/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "nagano_omachi_sanpaku_zoo",
+    "name": "市立大町山岳博物館付属園",
+    "address": "長野県大町市大町8056-1",
+    "addressSourceUrl": "https://www.omachi-sanpaku.com/facility/garden/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "nagano_komoro_zoo",
+    "name": "小諸市動物園",
+    "address": "長野県小諸市丁311番地",
+    "addressSourceUrl": "https://www.city.komoro.lg.jp/komoro_zoo/index.html",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "nagano_suzaka_zoo",
+    "name": "須坂市動物園",
+    "address": "長野県須坂市臥竜2丁目4番8号",
+    "addressSourceUrl": "https://www.city.suzaka.nagano.jp/suzaka_zoo/index.html",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "nagano_chausuyama_zoo",
+    "name": "長野市茶臼山動物園",
+    "address": "長野県長野市篠ノ井有旅570-1",
+    "addressSourceUrl": "https://chausuyama.com/",
+    "confidence": "high",
+    "note": "出典ページの表記は都道府県名省略（長野市篠ノ井有旅570-1）のため、先頭に長野県を補った"
+  },
+  {
+    "id": "gifu_aquatotto_aquarium",
+    "name": "世界淡水魚園水族館 アクア・トト ぎふ",
+    "address": "岐阜県各務原市川島笠田町1453",
+    "addressSourceUrl": "https://aquatotto.com/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "shizuoka_izu_shaboten_zoo",
+    "name": "伊豆シャボテン動物公園",
+    "address": "静岡県伊東市富戸1317-13",
+    "addressSourceUrl": "https://izushaboten.com/information/",
+    "confidence": "high",
+    "note": ""
+  },
+  {
+    "id": "shizuoka_nihondaira_zoo",
+    "name": "静岡市立日本平動物園",
+    "address": "静岡県静岡市駿河区池田1767-6",
+    "addressSourceUrl": "https://www.nhdzoo.jp/info/index.html",
+    "confidence": "high",
+    "note": "出典ページの表記は都道府県名省略（静岡市駿河区池田1767-6）のため、先頭に静岡県を補った"
+  },
+  {
+    "id": "shizuoka_tokai_univ_marine_museum",
+    "name": "東海大学海洋科学博物館",
+    "address": "静岡県静岡市清水区三保 2389",
+    "addressSourceUrl": "https://www.umi.muse-tokai.jp/news/single.php?id=6577",
+    "confidence": "high",
+    "note": "閉園時の所在地（2024年10月末に一般公開終了、公式サイト記載の住所を確認）"
+  },
+  {
+    "id": "shizuoka_fuji_safari_park",
+    "name": "富士サファリパーク",
+    "address": "静岡県裾野市須山字藤原2255-27",
+    "addressSourceUrl": "https://www.fujisafari.co.jp/access/",
+    "confidence": "high",
+    "note": ""
+  }
+]
