@@ -1,0 +1,125 @@
+[
+ {
+  "name": "打吹公園の動物園（打吹公園小動物園）",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "倉吉市公式ページ「打吹公園の動物の紹介」(2026-04-17更新、curl直接取得で確認)にニホンザル・チャボ等の常設展示時間(9:30頃-15:30頃)を確認。ページ内に現れる「〒682-8611 鳥取県倉吉市葵町722」はhttps://www.city.kurayoshi.lg.jp/7395.htm等の他ページにも同一表記で出現する市役所問い合わせ先の定型フッターで、grep差分で確認した通り公園自体の所在地ではない。address空欄の判断は妥当。座標はOSM Nominatimの「仲ノ町」代表点(35.4304,133.8221)と約300m以内で整合。"
+ },
+ {
+  "name": "大山トム・ソーヤ牧場",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "unchecked"
+  },
+  "corrections": {},
+  "evidence": "公式サイト施設案内ページ(curl直接取得、HTTPS証明書不整合のため-k運用で確認)で「移動動物園・ふれあい動物園・アルパカ広場」と自称し、住所「鳥取県米子市岡成622-2」(フッターと本文で一致)、休園日「木曜日(通常)」を確認。カピバラ広場・アルパカ広場等の常設ふれあい展示が主目的の有料来園施設であり、typeGuess\"other\"からzooへの変更は妥当。"
+ },
+ {
+  "name": "湊山公園「猿が島」",
+  "reviewVerdict": "needs_user_decision",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "米子市公式ページ(44609.htm、44601.htm)に閉鎖・休止の記載はなく、常設展示は現在も継続中と確認。ただし2026年4月7日、前市議が「公園のサル頭数削減」発言の見返りに現金100万円を受け取った疑いで受託収賄容疑で逮捕(日本海テレビ・BSS山陰放送等の報道)、5月15日付で書類送検された指定管理事業体が管理業務から離脱することが市議会で正式了承と確認。市長も「猿舎のような飼育場所の在り方についてはしっかりと考えていかなければいけない」と発言しており、将来的な展示継続・改編の可能性が報じられている。現時点ではstatus=open・展示継続の事実は一次情報で確認できるが、運営体制が極めて不安定なためinclude判断自体は維持しつつユーザーの状況認識・再確認を推奨。座標はOSM Nominatim「西町」代表点(35.4296,133.3265)と概ね整合(400-500m差、町丁目代表点としては許容範囲)。"
+ },
+ {
+  "name": "わくわくふれあい昆虫・爬虫類館",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "unchecked"
+  },
+  "corrections": {
+   "sourceUrls[0]": "https://www.farmpark.co.jp/doitsunomori/%E6%98%86%E8%99%AB%E3%83%BB%E7%88%AC%E8%99%AB%E9%A1%9E%E9%A4%A8%EF%BD%8F%EF%BD%90%EF%BD%85%EF%BD%8E%EF%BC%81/",
+   "url": "https://www.farmpark.co.jp/doitsunomori/%E6%98%86%E8%99%AB%E3%83%BB%E7%88%AC%E8%99%AB%E9%A1%9E%E9%A4%A8%EF%BD%8F%EF%BD%90%EF%BD%85%EF%BD%8E%EF%BC%81/"
+  },
+  "evidence": "候補台帳記載のURL(末尾が半角\"open%EF%BC%81\")はcurl/WebFetchとも404。実際のURLは末尾が全角「ｏｐｅｎ」(%EF%BD%8F%EF%BD%90%EF%BD%85%EF%BD%8E%EF%BC%81)で200を確認、2026年7月15日更新のお知らせも掲載され営業中。入場料700円+ふれあい体験300円がドイツの森入園料とは別建てで明記され、動物取扱業登録(展示、登録番号24050087、株式会社ワールドプロデュース、所在地 岡山県赤磐市仁堀中2006、有効期限令和12年3月17日)も本文で確認、独立施設としての扱い・zoo以外のother分類・所在地はいずれも妥当。URLのみ修正が必要。"
+ },
+ {
+  "name": "福山大学マリンバイオセンター水族館",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "unchecked"
+  },
+  "corrections": {},
+  "evidence": "公式サイトで「平成元年7月から無料で公開」「〒722-2101 広島県尾道市因島大浜町452-10」を確認、住所は入力データと一致。休館日(土日祝・お盆・年末年始)も確認。ページに現時点での休館告知は見当たらず通常営業(平日10:00-16:00)と判断。"
+ },
+ {
+  "name": "なぎさ水族館",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "周防大島町公式ページで住所「山口県大島郡周防大島町大字伊保田2211-3」、なぎさ水族館単独入館料(大人210円、陸奥記念館との共通券590円とは別建て)を確認、独立施設扱いは妥当。座標は独立した検索結果(33.951332,132.437846)が入力値(33.95125,132.437917)と約10m差で一致、周防大島東端・伊保田港付近という離島座標の妥当性を確認できた。"
+ },
+ {
+  "name": "島のちいさな水族館",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "unchecked"
+  },
+  "corrections": {},
+  "evidence": "マリンジャム公式サイト(curl直接取得)のフロア案内ページで「島のちいさな水族館」単独入館料(大人300円/小学生200円)、ブルーマリン号とのセット料金(2,000円/1,000円)を確認、単独入館料が存在するため別施設として扱う判断は妥当。同ページに施設所在地「〒775-0513 徳島県海部郡海陽町宍喰浦字竹ケ島28-45」の記載があり入力データの住所と一致。"
+ },
+ {
+  "name": "日和佐うみがめ博物館カレッタ",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "unchecked"
+  },
+  "corrections": {},
+  "evidence": "公式サイトaccessページ(curl直接取得)で住所「〒779-2304 徳島県海部郡美波町日和佐浦369」を確認。旧休館告知(「館内リニューアルのため2023年6月1日〜2025年夏頃(予定)の間一時閉館」)はHTMLソース上でコメントアウトされ非表示、現行表示は「火〜日9-17時、月休」のみで通常営業(2025年7月19日リニューアル後)を確認。町公式ページ(town.minami.lg.jp/docs/415.html)は住所を「美波町大浜海岸」(番地なし)と記載しており表記の相違を一次情報で確認、番地入り公式サイト表記を採用した入力側の判断は妥当。"
+ },
+ {
+  "name": "銚子渓自然動物園 お猿の国",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "unchecked"
+  },
+  "corrections": {},
+  "evidence": "公式サイト(HTTPS証明書がsakura.ne.jpのワイルドカードと一致せずエラーとなるためhttp版で直接取得)本文に「臨時休園のお知らせ」および「2025年8月16日 臨時休園について更新しました」の記載が残り、以降の更新なしを確認。WebSearchでも2026年7月時点で日本リゾートによる改修工事が中東情勢由来の資材調達遅延で再開時期未定と報じられており、status=suspendedの継続は妥当。住所「〒761-4151 香川県小豆郡土庄町肥土山字蛙子3387-10」を公式サイト本文で確認、入力と完全一致。"
+ },
+ {
+  "name": "室戸ドルフィンセンター",
+  "reviewVerdict": "needs_user_decision",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "unchecked"
+  },
+  "corrections": {},
+  "evidence": "運営会社サイト本体(https://www.muroto-dc.net/、curl/WebFetchで確認)で「〒781-7101 高知県室戸市室戸岬町字鯨浜6810-162」、入場料(大人550円/小人440円、1日出入り自由)、イルカのトレーニングタイム見学が入場料に含まれる一方、給餌・トレーナー体験等は別料金であることを確認、施設見学のみでの独立入場が可能という包含判断は妥当。一方、室戸市公式サイト(city.muroto.kochi.jp/pages/page0294.php、WebFetchで確認)は住所を「高知県室戸市室戸岬町1810番地2」と記載しており、運営会社側(字鯨浜6810-162)との食い違いを一次情報で確認できた。入力側は運営会社サイト+OSM Nominatimの一致を根拠に後者を採用しているが、市公式サイトという別の一次情報と食い違ったままのため、どちらを正式住所とするかはユーザーの最終判断を推奨する。"
+ }
+]
