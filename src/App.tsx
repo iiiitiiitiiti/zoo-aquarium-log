@@ -521,7 +521,7 @@ export default function App({
                     <div className="card-index">{String(index + 1).padStart(2, "0")}</div>
                     <div className="card-body">
                       <div className="badges">
-                        <span>{typeLabels[facility.type]}</span>
+                        <span className={facility.type}>{typeLabels[facility.type]}</span>
                         {facility.id.startsWith("custom_") && <span className="custom">手動追加</span>}
                         <span className={facility.status}>{statusLabels[facility.status]}</span>
                       </div>
