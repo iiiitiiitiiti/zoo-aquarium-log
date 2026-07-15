@@ -204,6 +204,15 @@ export default function App({
     }),
     [allFacilities, query, type, prefecture, status, visitStatus, visitedIds, marks],
   );
+  const prefectureGroups = useMemo(() => {
+    const groups = new Map<string, { facility: Facility; index: number }[]>();
+    shown.forEach((facility, index) => {
+      const group = groups.get(facility.pref) ?? [];
+      group.push({ facility, index });
+      groups.set(facility.pref, group);
+    });
+    return [...groups.entries()];
+  }, [shown]);
   const mapShown = useMemo(() => {
     if (mapDisplayMode !== "facility" || !mapFocusFacilityId) return shown;
     const focusedFacility = shown.find((facility) => facility.id === mapFocusFacilityId);
@@ -569,34 +578,39 @@ export default function App({
             <p>検索条件を変えてみてください。</p>
           </div>
         ) : (
-          <>
-            <ul className={`facility-list${animateListCards ? " facility-list--animated" : ""}`}>
-              {shown.map((facility, index) => (
-                <li key={facility.id}>
-                  <a
-                    className="facility-card"
-                    href={`#facility/${facility.id}`}
-                    onClick={(event) => {
-                      event.preventDefault();
-                      openFacility(facility);
-                    }}
-                  >
-                    <div className="card-index">{String(index + 1).padStart(2, "0")}</div>
-                    <div className="card-body">
-                      <div className="badges">
-                        <span className={facility.type}>{typeLabels[facility.type]}</span>
-                        {facility.id.startsWith("custom_") && <span className="custom">手動追加</span>}
-                        <span className={facility.status}>{statusLabels[facility.status]}</span>
-                      </div>
-                      <h3>{facility.name}</h3>
-                      <p>{facility.pref} {facility.city}</p>
-                    </div>
-                    <span className="card-arrow" aria-hidden="true">→</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </>
+          <div className="prefecture-groups">
+            {prefectureGroups.map(([prefectureName, group]) => (
+              <section className="prefecture-group" key={prefectureName}>
+                <h3 className="prefecture-heading">{prefectureName}</h3>
+                <ul className={`facility-list${animateListCards ? " facility-list--animated" : ""}`}>
+                  {group.map(({ facility, index }) => (
+                    <li key={facility.id}>
+                      <a
+                        className="facility-card"
+                        href={`#facility/${facility.id}`}
+                        onClick={(event) => {
+                          event.preventDefault();
+                          openFacility(facility);
+                        }}
+                      >
+                        <div className="card-index">{String(index + 1).padStart(2, "0")}</div>
+                        <div className="card-body">
+                          <div className="badges">
+                            <span className={facility.type}>{typeLabels[facility.type]}</span>
+                            {facility.id.startsWith("custom_") && <span className="custom">手動追加</span>}
+                            <span className={facility.status}>{statusLabels[facility.status]}</span>
+                          </div>
+                          <h3>{facility.name}</h3>
+                          <p>{facility.pref} {facility.city}</p>
+                        </div>
+                        <span className="card-arrow" aria-hidden="true">→</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            ))}
+          </div>
         )}
       </section>
       <footer><p>掲載情報の確認日：2026年7月13日</p></footer>

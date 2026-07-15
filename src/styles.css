@@ -341,6 +341,22 @@ body {
   color: #6f7f77;
   font-size: 11px;
 }
+.prefecture-groups {
+  display: grid;
+  gap: 18px;
+}
+.prefecture-group {
+  display: grid;
+  gap: 10px;
+}
+.prefecture-heading {
+  margin: 0 4px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #d7ddd5;
+  color: #315046;
+  font-size: 14px;
+  line-height: 1.4;
+}
 .facility-list {
   display: grid;
   gap: 10px;
