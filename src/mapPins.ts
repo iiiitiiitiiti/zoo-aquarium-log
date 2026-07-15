@@ -18,9 +18,10 @@ export interface PinLegendItem {
   symbol?: "★" | "♡";
 }
 
-const VISITED_COLOR = "#2f6b50";
+const VISITED_COLOR = "#35b978";
 const UNVISITED_COLOR = "#b84a39";
 const UNVISITED_BORDER_COLOR = "#7b2d26";
+const VISITED_BORDER_COLOR = "#0f6b46";
 
 export function pinAppearance(
   facility: Facility,
@@ -36,14 +37,14 @@ export function pinAppearance(
   return {
     facilityId: facility.id,
     bodyColor: isVisited ? VISITED_COLOR : UNVISITED_COLOR,
-    borderColor: isVisited ? VISITED_COLOR : UNVISITED_BORDER_COLOR,
+    borderColor: isVisited ? VISITED_BORDER_COLOR : UNVISITED_BORDER_COLOR,
     badges,
   };
 }
 
 export function getPinLegend(): PinLegendItem[] {
   return [
-    { key: "visited", label: "訪問済み", color: VISITED_COLOR },
+    { key: "visited", label: "訪問済み", color: VISITED_COLOR, borderColor: VISITED_BORDER_COLOR },
     { key: "unvisited", label: "未訪問", color: UNVISITED_COLOR, borderColor: UNVISITED_BORDER_COLOR },
     { key: "favorite", label: "お気に入り", color: "#2a7180", symbol: "★" },
     { key: "wishlist", label: "行きたい", color: "#d28a20", symbol: "♡" },

@@ -43,6 +43,7 @@ const typeLabels: Record<FacilityType, string> = {
   both: "複合施設",
   other: "その他",
 };
+type MapDisplayMode = "all" | "facility";
 
 export default function App({
   visitStore,
@@ -69,6 +70,7 @@ export default function App({
   const [searchOpen, setSearchOpen] = useState(false);
   const [quickActionsOpen, setQuickActionsOpen] = useState(false);
   const [mapOpen, setMapOpen] = useState(false);
+  const [mapDisplayMode, setMapDisplayMode] = useState<MapDisplayMode>("all");
   const [detailOrigin, setDetailOrigin] = useState<"list" | "map">("list");
   const [mapFocusFacilityId, setMapFocusFacilityId] = useState<string>();
   const [selectedFacility, setSelectedFacility] = useState<Facility>();
@@ -137,6 +139,11 @@ export default function App({
     }),
     [allFacilities, query, type, prefecture, status, visitStatus, visitedIds, marks],
   );
+  const mapShown = useMemo(() => {
+    if (mapDisplayMode !== "facility" || !mapFocusFacilityId) return shown;
+    const focusedFacility = shown.find((facility) => facility.id === mapFocusFacilityId);
+    return focusedFacility ? [focusedFacility] : shown;
+  }, [mapDisplayMode, mapFocusFacilityId, shown]);
   const activeFilterCount = [
     query.trim(),
     type !== "all",
@@ -183,7 +190,8 @@ export default function App({
   const openFacility = (facility: Facility, origin: "list" | "map" = "list") => {
     setFacilityEditorOpen(false);
     setMapOpen(false);
-    setMapFocusFacilityId(undefined);
+    setMapDisplayMode("all");
+    setMapFocusFacilityId(origin === "map" ? facility.id : undefined);
     setDetailOrigin(origin);
     setSelectedFacility(facility);
   };
@@ -208,12 +216,13 @@ export default function App({
   if (mapOpen) {
     return (
       <MapPanel
-        shown={shown}
+        shown={mapShown}
         visitedIds={visitedIds}
         marks={marks ?? {}}
         focusedFacilityId={mapFocusFacilityId}
         onBack={() => {
           setMapOpen(false);
+          setMapDisplayMode("all");
           setMapFocusFacilityId(undefined);
         }}
         onSelectFacility={(facility) => openFacility(facility, "map")}
@@ -256,6 +265,7 @@ export default function App({
         backLabel={detailOrigin === "map" ? "← 地図に戻る" : "← 施設一覧"}
         onShowOnMap={() => {
           setSelectedFacility(undefined);
+          setMapDisplayMode("facility");
           setMapFocusFacilityId(selectedFacility.id);
           setMapOpen(true);
         }}
@@ -408,7 +418,11 @@ export default function App({
           <h2>{hasListFilter ? `${shown.length}施設が該当` : `${allFacilities.length}施設を掲載`}</h2>
           <div className="results-heading-side">
             <p>パイロット版</p>
-            <button className="map-toggle" type="button" onClick={() => setMapOpen(true)} disabled={mapNotReady}>地図で見る</button>
+            <button className="map-toggle" type="button" onClick={() => {
+              setMapDisplayMode("all");
+              setMapFocusFacilityId(undefined);
+              setMapOpen(true);
+            }} disabled={mapNotReady}>地図で見る</button>
           </div>
         </div>
         {shown.length === 0 ? (

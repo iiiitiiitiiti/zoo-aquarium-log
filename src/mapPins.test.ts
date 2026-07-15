@@ -20,10 +20,10 @@ const facility: Facility = {
 describe("pinAppearance", () => {
   it.each([
     [false, false, false, "#b84a39", "#7b2d26", []],
-    [true, false, false, "#2f6b50", "#2f6b50", []],
+    [true, false, false, "#35b978", "#0f6b46", []],
     [false, true, false, "#b84a39", "#7b2d26", ["favorite"]],
     [false, false, true, "#b84a39", "#7b2d26", ["wishlist"]],
-    [true, true, true, "#2f6b50", "#2f6b50", ["favorite", "wishlist"]],
+    [true, true, true, "#35b978", "#0f6b46", ["favorite", "wishlist"]],
   ])(
     "keeps visit color independent from marks (visited=%s, favorite=%s, wishlist=%s)",
     (visited, favorite, wishlist, bodyColor, borderColor, badges) => {
@@ -50,7 +50,7 @@ describe("pinAppearance", () => {
 describe("getPinLegend", () => {
   it("returns two body states and two labeled mark badges", () => {
     expect(getPinLegend()).toEqual([
-      { key: "visited", label: "訪問済み", color: "#2f6b50", borderColor: undefined, symbol: undefined },
+      { key: "visited", label: "訪問済み", color: "#35b978", borderColor: "#0f6b46", symbol: undefined },
       { key: "unvisited", label: "未訪問", color: "#b84a39", borderColor: "#7b2d26", symbol: undefined },
       { key: "favorite", label: "お気に入り", color: "#2a7180", borderColor: undefined, symbol: "★" },
       { key: "wishlist", label: "行きたい", color: "#d28a20", borderColor: undefined, symbol: "♡" },
