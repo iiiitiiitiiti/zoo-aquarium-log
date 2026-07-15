@@ -1,0 +1,59 @@
+[
+ {
+  "name": "リキオファーム",
+  "pref": "奈良県",
+  "city": "磯城郡三宅町",
+  "foundUrls": [
+   "https://www.rikiofarm.com/",
+   "http://hug-nara.jp/report/22840.html"
+  ],
+  "typeGuess": "fureai_farm",
+  "note": "トカラヤギを常設飼育する小規模農園。子ヤギとのふれあい・餌やりガチャガチャが主目的の来場スポットとして紹介される。"
+ },
+ {
+  "name": "ラッテたかまつ",
+  "pref": "奈良県",
+  "city": "葛城市",
+  "foundUrls": [
+   "https://latte-takamatsu.com/",
+   "http://yamatoji.nara-kankou.or.jp/02nature/10amusement/02west_area/rattetakamatsu/"
+  ],
+  "typeGuess": "fureai_farm",
+  "note": "酪農教育ファーム認証農家。「触れる、感じる、楽しむ」を掲げ乳牛を常設展示、乳搾り・バター作り体験が来場の主目的の一つ。アイスクリーム販売も併設。"
+ },
+ {
+  "name": "すさみ町立エビとカニの水族館",
+  "pref": "和歌山県",
+  "city": "すさみ町",
+  "foundUrls": [
+   "https://ebikani-aquarium.com/",
+   "https://ja.wikipedia.org/wiki/%E3%81%99%E3%81%95%E3%81%BF%E7%94%BA%E7%AB%8B%E3%82%A8%E3%83%93%E3%81%A8%E3%82%AB%E3%83%8B%E3%81%AE%E6%B0%B4%E6%97%8F%E9%A4%A8"
+  ],
+  "typeGuess": "水族館(甲殻類専門)",
+  "note": "道の駅すさみ内。エビ・カニ専門で世界唯一を謳う。約150種1000匹、タッチプールあり。"
+ },
+ {
+  "name": "串本海中公園水族館",
+  "pref": "和歌山県",
+  "city": "串本町",
+  "foundUrls": [
+   "https://www.kushimoto.co.jp/",
+   "https://www.wakayama-kanko.or.jp/spots/detail_1013.html",
+   "https://www.town.kushimoto.wakayama.jp/kanko/kushimoto/kaichu-kouen.html"
+  ],
+  "typeGuess": "水族館(海中展望塔・海中観光船併設)",
+  "note": "1970年指定の日本初の海中公園。水族館で約500種5000匹展示、ウミガメタッチング等の常設ふれあい体験あり。"
+ },
+ {
+  "name": "太地町立くじらの博物館",
+  "pref": "和歌山県",
+  "city": "太地町",
+  "foundUrls": [
+   "https://www.kujirakan.jp/",
+   "https://ja.wikipedia.org/wiki/%E3%81%8F%E3%81%98%E3%82%89%E3%81%AE%E5%8D%9A%E7%89%A9%E9%A4%A8",
+   "https://www.wakayama-kanko.or.jp/spots/detail_1004.html"
+  ],
+  "typeGuess": "水族館(クジラ・イルカ専門博物館)",
+  "note": "世界最大級のクジラ博物館。館内水族館でマダライルカ等の小型鯨類を展示し、オルカ・ドルフィンショー、ドルフィンタッチ体験あり。生体展示が主目的で常設。"
+ }
+]

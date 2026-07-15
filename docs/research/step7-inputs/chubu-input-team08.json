@@ -1,0 +1,53 @@
+[
+ {
+  "name": "IPCわんわん動物園",
+  "pref": "愛知県",
+  "city": "岡崎市",
+  "foundUrls": [
+   "https://ipc-group.jp/",
+   "https://ja.wikipedia.org/wiki/IPCわんわん動物園"
+  ],
+  "typeGuess": "zoo",
+  "note": "犬中心の動物園（1994年開園）"
+ },
+ {
+  "name": "春日井市都市緑化植物園 グリーンピア春日井（動物ふれあい広場）",
+  "pref": "愛知県",
+  "city": "春日井市",
+  "foundUrls": [
+   "https://www.city.kasugai.lg.jp/shisei/shisetsu/sonota/syokubutsuen/index.html"
+  ],
+  "typeGuess": "other",
+  "note": "植物園内の独立した動物ふれあい広場（ポニー・ヒツジ・ラマ等）"
+ },
+ {
+  "name": "南知多ビーチランド",
+  "pref": "愛知県",
+  "city": "美浜町",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/日本の水族館"
+  ],
+  "typeGuess": "aquarium",
+  "note": ""
+ },
+ {
+  "name": "竹島水族館",
+  "pref": "愛知県",
+  "city": "蒲郡市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/日本の水族館"
+  ],
+  "typeGuess": "aquarium",
+  "note": ""
+ },
+ {
+  "name": "ぎょぎょランド",
+  "pref": "愛知県",
+  "city": "豊川市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/日本の水族館"
+  ],
+  "typeGuess": "aquarium",
+  "note": "淡水魚展示施設。詳細未確認"
+ }
+]

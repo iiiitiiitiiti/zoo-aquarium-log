@@ -1,0 +1,52 @@
+[
+ {
+  "name": "ふれあい牧場 ひつじの里",
+  "pref": "岐阜県",
+  "city": "関市",
+  "foundUrls": [
+   "https://hitujikai.wixsite.com/hituji-quill"
+  ],
+  "typeGuess": "other",
+  "note": "ひつじ工房Quill運営のふれあい牧場"
+ },
+ {
+  "name": "奥飛騨クマ牧場",
+  "pref": "岐阜県",
+  "city": "高山市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/日本の動物園一覧"
+  ],
+  "typeGuess": "zoo",
+  "note": "ツキノワグマ主体の観光牧場"
+ },
+ {
+  "name": "森の水族館（民芸ミュージアム匠の館内）",
+  "pref": "岐阜県",
+  "city": "高山市",
+  "foundUrls": [
+   "https://www.kankou-gifu.jp/spot/detail_6900.html"
+  ],
+  "typeGuess": "aquarium",
+  "note": "世界最小級規模の淡水魚水族館。伝統家屋ミュージアムに併設"
+ },
+ {
+  "name": "飛騨高山まつりの森（世界の昆虫館／リス・うさぎとあそべる森）",
+  "pref": "岐阜県",
+  "city": "高山市",
+  "foundUrls": [
+   "https://www.kankou-gifu.jp/spot/detail_3305.html"
+  ],
+  "typeGuess": "other",
+  "note": "屋台ミュージアムに昆虫館・リス/うさぎふれあいエリアが併設"
+ },
+ {
+  "name": "下田海中水族館",
+  "pref": "静岡県",
+  "city": "下田市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/日本の水族館"
+  ],
+  "typeGuess": "aquarium",
+  "note": ""
+ }
+]

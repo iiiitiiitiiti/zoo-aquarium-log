@@ -1,0 +1,58 @@
+[
+ {
+  "name": "神戸市立六甲山牧場",
+  "pref": "兵庫県",
+  "city": "神戸市灘区",
+  "foundUrls": [
+   "https://rokkosanbokujo.jp/",
+   "https://www.feel-kobe.jp/facilities/0000000070/"
+  ],
+  "typeGuess": "ふれあい牧場",
+  "note": "羊・牛・馬・ヤギ等を飼育。ふれあい体験が主目的の常設牧場。"
+ },
+ {
+  "name": "兵庫県立但馬牧場公園",
+  "pref": "兵庫県",
+  "city": "美方郡新温泉町",
+  "foundUrls": [
+   "https://www.tajimabokujyo.jp/",
+   "https://web.pref.hyogo.lg.jp/kk21/documents/16tajimabokujyoukouenn.pdf"
+  ],
+  "typeGuess": "ふれあい牧場",
+  "note": "但馬牛のPR拠点だが小動物舎（羊・山羊・うさぎ）・大動物舎（牛）を常設し来場者が動物とふれあえる。主目的の比重は後工程で要確認。"
+ },
+ {
+  "name": "兵庫県立コウノトリの郷公園（豊岡市立コウノトリ文化館併設）",
+  "pref": "兵庫県",
+  "city": "豊岡市",
+  "foundUrls": [
+   "https://satokouen.jp/",
+   "https://kounotoribunkakan.com/",
+   "https://ja.wikipedia.org/wiki/%E5%85%B5%E5%BA%AB%E7%9C%8C%E7%AB%8B%E3%82%B3%E3%82%A6%E3%83%8E%E3%83%88%E3%83%AA%E3%81%AE%E9%83%B7%E5%85%AC%E5%9C%92"
+  ],
+  "typeGuess": "鳥類園（コウノトリ飼育展示）",
+  "note": "特別天然記念物コウノトリを常時ケージ内飼育展示。野生復帰事業の拠点でもあり、野生観察要素と常設飼育展示が併存。主目的の判定は後工程で要確認（除外基準「野生観察のみ」に該当しないか要精査）。"
+ },
+ {
+  "name": "郡山金魚資料館（やまと錦魚園）",
+  "pref": "奈良県",
+  "city": "大和郡山市",
+  "foundUrls": [
+   "https://www.narakko.jp/kingyoshiryokan/",
+   "https://kingyoen.com/"
+  ],
+  "typeGuess": "aquarium",
+  "note": "金魚養殖業者「やまと錦魚園」が私費で1982年開館。高級金魚・希少品種など約40種を常設展示、入場無料。"
+ },
+ {
+  "name": "奈良いきものミュージアム（NARA IKIMONO MUSEUM）",
+  "pref": "奈良県",
+  "city": "奈良市",
+  "foundUrls": [
+   "https://naraikimonomuseum.com/",
+   "https://iko-yo.net/facilities/177165"
+  ],
+  "typeGuess": "aquarium",
+  "note": "ミ・ナーラ4階の常設施設。爬虫類・魚類・両生類など100種以上を展示、有料入館（2023年4月開業）。"
+ }
+]

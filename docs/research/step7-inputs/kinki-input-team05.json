@@ -1,0 +1,60 @@
+[
+ {
+  "name": "京都花園教会水族館",
+  "pref": "京都府",
+  "city": "京都市右京区",
+  "foundUrls": [
+   "https://www.kyoto-museums.jp/museum/west/2226/",
+   "https://www.kyotohanasui.com/en",
+   "https://intojapanwaraku.com/rock/culture-rock/51214/"
+  ],
+  "typeGuess": "aquarium",
+  "note": "花園教会が運営する私設水族館。淡水魚中心に180種500点以上、アルダブラゾウガメ等の爬虫類も展示。週末一般公開・入場無料、環境省等の認定実績あり。JAZA非加盟の私設水族館として候補。"
+ },
+ {
+  "name": "嵐山モンキーパークいわたやま",
+  "pref": "京都府",
+  "city": "京都市西京区",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/嵐山モンキーパークいわたやま",
+   "https://ja.kyoto.travel/tourism/single01.php?category_id=2&tourism_id=1156"
+  ],
+  "typeGuess": "zoo",
+  "note": "岩田山中腹の野猿公苑。約120〜130頭のニホンザルを餌付け飼育し常設・有料入園（大人800円）。JAZA非加盟の可能性が高いが常設・生体展示・一般来場の基準は満たす。"
+ },
+ {
+  "name": "八幡市子ども動物園（さくら近隣公園内）",
+  "pref": "京都府",
+  "city": "八幡市",
+  "foundUrls": [
+   "https://www.city.yawata.kyoto.jp/0000002969.html",
+   "https://iko-yo.net/facilities/11030"
+  ],
+  "typeGuess": "zoo",
+  "note": "市立の小規模こども動物園。ヤギ・クジャク・ミニチュアホース等8種展示、市民無料。"
+ },
+ {
+  "name": "福知山市動物園（三段池RAVIHOUSE動物園）",
+  "pref": "京都府",
+  "city": "福知山市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/福知山市動物園",
+   "https://fukuchiyamazoo.jp/",
+   "https://www.sandanike-kouen.or.jp/zoo/",
+   "https://dokkoise.com/spot/fukuchiyama_zoo/"
+  ],
+  "typeGuess": "zoo",
+  "note": "三段池公園内の市立動物園。北近畿唯一の動物園と紹介される。2021年8月〜命名権契約で「三段池RAVIHOUSE動物園」の呼称も併用。"
+ },
+ {
+  "name": "綾部ふれあい牧場",
+  "pref": "京都府",
+  "city": "綾部市",
+  "foundUrls": [
+   "https://www.ayabe-kankou.net/spot/fureaibokujyo/",
+   "https://fureaiboku.exblog.jp/"
+  ],
+  "typeGuess": "fureai_farm",
+  "note": "馬・羊・ヤギ・ウサギ・ネコ等と常設でふれあえる入場無料の牧場。動物とのふれあいが主目的。"
+ }
+]

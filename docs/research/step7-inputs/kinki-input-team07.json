@@ -1,0 +1,59 @@
+[
+ {
+  "name": "天保山アニパ",
+  "pref": "大阪府",
+  "city": "大阪市港区",
+  "foundUrls": [
+   "https://www.kaiyukan.com/thv/marketplace/shop/057/",
+   "https://osakalucci.jp/tempozan-anipa",
+   "https://iko-yo.net/facilities/294"
+  ],
+  "typeGuess": "ふれあい動物園（屋内）",
+  "note": "天保山マーケットプレース3F。海遊館とは別料金・別運営（海遊館半券で1割引の関係のみ）。大人1,100円・小人660円"
+ },
+ {
+  "name": "大阪狭山市立市民ふれあいの里 リス園",
+  "pref": "大阪府",
+  "city": "大阪狭山市",
+  "foundUrls": [
+   "https://www.city.osakasayama.osaka.jp/sosiki/machizukurisuishinbu/kouenryokuchi/fureainosatohanatomidori/risuen.html",
+   "https://osaka-info.jp/spot/shimin-fureai-sato-squirrel-park/"
+  ],
+  "typeGuess": "ふれあい施設（リス園）",
+  "note": "西日本唯一とされるリス園。タイワンリス・モルモット約40匹、入園料200円。同一敷地内「ミニ昆虫館」は標本のみ・生体展示なしのため対象外"
+ },
+ {
+  "name": "ひらかたパーク プラネットアクア・ポート",
+  "pref": "大阪府",
+  "city": "枚方市",
+  "foundUrls": [
+   "https://www.hirakatapark.co.jp/attractions/aquarium/",
+   "https://prtimes.jp/main/html/rd/p/000000137.000070875.html"
+  ],
+  "typeGuess": "水族館（没入型アクアリウム）",
+  "note": "2025年10月25日開業。約200種5,000匹の水生生物、全10ゾーン。園内で別途700円必要（ひらかたパーク入園料に加えて）"
+ },
+ {
+  "name": "ひらかたパーク 動物ふれあいエリア（どうぶつハグハグタウン等）",
+  "pref": "大阪府",
+  "city": "枚方市",
+  "foundUrls": [
+   "https://www.hirakatapark.co.jp/animal/wakuwaku/",
+   "https://www.hirakatapark.co.jp/animal/wonder/",
+   "https://www.keihan.co.jp/group/topics/hirakata-kuzuha/hirakatakoen/report/26.html"
+  ],
+  "typeGuess": "遊園地内動物園",
+  "note": "ワンダーガーデン・ピッコロガーデン・どうぶつハグハグタウンの3エリア、約40種。他県の東武動物公園と同様、遊園地内常設動物園として計上。プラネットアクア・ポートとは別料金体系のため別施設扱い"
+ },
+ {
+  "name": "箕面公園昆虫館",
+  "pref": "大阪府",
+  "city": "箕面市",
+  "foundUrls": [
+   "https://www.mino-konchu.jp/",
+   "https://ja.wikipedia.org/wiki/箕面公園昆虫館"
+  ],
+  "typeGuess": "昆虫館",
+  "note": "1953年開設、大阪府唯一の昆虫館。放蝶園・生態展示コーナーあり"
+ }
+]

@@ -1,0 +1,57 @@
+[
+ {
+  "name": "水辺の里公園 自然水族館",
+  "pref": "三重県",
+  "city": "いなべ市大安町",
+  "foundUrls": [
+   "https://www.city.inabe.mie.jp/kyoiku/shizen/1013261/index.html"
+  ],
+  "typeGuess": "aquarium",
+  "note": "いなべ市教育委員会運営の小規模施設。宇賀川・員弁川の河川環境を再現し、アブラハヤ・カワムツ等の淡水魚を横から観察できる水槽展示。現況の開館時間・料金は市公式ページに明記なく後工程で要確認。"
+ },
+ {
+  "name": "ひつじみかん牧場",
+  "pref": "三重県",
+  "city": "南牟婁郡御浜町",
+  "foundUrls": [
+   "https://hitsujimikan.jimdofree.com/",
+   "https://www.kankomie.or.jp/spot/23389"
+  ],
+  "typeGuess": "other",
+  "note": "2017年開業。みかん畑の一角で羊約20頭の餌やり・ふれあいが主目的の牧場。入場無料、水曜・雨天休。"
+ },
+ {
+  "name": "道の駅 紀宝町ウミガメ公園（ウミガメ水族館）",
+  "pref": "三重県",
+  "city": "南牟婁郡紀宝町",
+  "foundUrls": [
+   "https://umigame.info/",
+   "https://umigame.info/information/"
+  ],
+  "typeGuess": "aquarium",
+  "note": "ウミガメの保護研究拠点。館内の「ウミガメ水族館」でウミガメ・リクガメ・淡水ガメ10種以上、熊野灘の海水魚水槽、タッチングプールを展示。入館無料。"
+ },
+ {
+  "name": "赤目滝水族館",
+  "pref": "三重県",
+  "city": "名張市",
+  "foundUrls": [
+   "https://akame-aquarium.com/",
+   "https://www.kankomie.or.jp/spot/22178",
+   "https://www.homemate-research-aquarium.com/24/list/"
+  ],
+  "typeGuess": "aquarium",
+  "note": "2024年4月、赤目四十八滝の玄関口に「日本サンショウウオセンター」から改称・リニューアルオープン。オオサンショウウオ（特別天然記念物）ほか渓谷産の魚類・両生類・水生昆虫を展示。"
+ },
+ {
+  "name": "大内山動物園",
+  "pref": "三重県",
+  "city": "度会郡大紀町",
+  "foundUrls": [
+   "http://www.oouchiyama-zoo.com/",
+   "https://www.homemate-research-zoo.com/24/list/"
+  ],
+  "typeGuess": "zoo",
+  "note": "個人経営でライオン・トラ等の猛獣を飼育する全国でも珍しい私立動物園。既存収録リストに未掲載。"
+ }
+]

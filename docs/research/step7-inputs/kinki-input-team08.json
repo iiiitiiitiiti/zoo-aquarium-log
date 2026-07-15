@@ -1,0 +1,55 @@
+[
+ {
+  "name": "高槻市立自然博物館（あくあぴあ芥川）",
+  "pref": "大阪府",
+  "city": "高槻市",
+  "foundUrls": [
+   "https://www.city.takatsuki.osaka.jp/soshiki/54/4903.html",
+   "https://osaka-info.jp/spot/takatsuki_aquapia/"
+  ],
+  "typeGuess": "自然博物館（河川水族館併設）",
+  "note": "2階に芥川の上流〜下流を再現した大型水槽（アユ・コイ・カエル・ヘビ等の生体展示）。玉野海洋博物館等、既存マスタの類似「自然博物館」系施設と同水準の生体展示規模と判断し new とした"
+ },
+ {
+  "name": "たつのみんなの昆虫館",
+  "pref": "兵庫県",
+  "city": "たつの市",
+  "foundUrls": [
+   "https://tatsuno-tourism.jp/workshop/tatsunominnanokonchukan/"
+  ],
+  "typeGuess": "昆虫館",
+  "note": "土日祝開館。カブトムシふれあいドームあり。"
+ },
+ {
+  "name": "伊丹市昆虫館",
+  "pref": "兵庫県",
+  "city": "伊丹市",
+  "foundUrls": [
+   "https://www.itakon.com/",
+   "https://www.city.itami.lg.jp/SOSIKI/TOSHIKOTU/MIDORI/news/index.html"
+  ],
+  "typeGuess": "昆虫館",
+  "note": "昆陽池のほとりの通年開館の昆虫館。チョウ温室あり。"
+ },
+ {
+  "name": "佐用町昆虫館",
+  "pref": "兵庫県",
+  "city": "佐用郡佐用町",
+  "foundUrls": [
+   "https://www.konchukan.net/sayo/"
+  ],
+  "typeGuess": "昆虫館",
+  "note": "NPO法人運営。4〜10月の土日祝のみ開館。"
+ },
+ {
+  "name": "アクア東条",
+  "pref": "兵庫県",
+  "city": "加東市",
+  "foundUrls": [
+   "https://www.hyoturi.or.jp/aqua/",
+   "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%AF%E3%82%A2%E6%9D%B1%E6%9D%A1"
+  ],
+  "typeGuess": "水族館（淡水魚）",
+  "note": "1988年開館。東条湖畔、地域産淡水魚中心の展示。入館無料。"
+ }
+]

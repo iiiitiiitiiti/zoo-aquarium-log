@@ -1,0 +1,52 @@
+[
+ {
+  "name": "掛川花鳥園",
+  "pref": "静岡県",
+  "city": "掛川市",
+  "foundUrls": [
+   "https://k-hana-tori.com/"
+  ],
+  "typeGuess": "other",
+  "note": "鳥類園（花と鳥のふれあいテーマパーク）"
+ },
+ {
+  "name": "iZoo（体感型動物園）",
+  "pref": "静岡県",
+  "city": "河津町",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/IZoo"
+  ],
+  "typeGuess": "other",
+  "note": "爬虫類・両生類中心の体感型動物園"
+ },
+ {
+  "name": "KawaZoo（体感型カエル館）",
+  "pref": "静岡県",
+  "city": "河津町",
+  "foundUrls": [
+   "https://kawazoo.jp/"
+  ],
+  "typeGuess": "other",
+  "note": "iZoo姉妹施設。カエル120種2000匹展示、通年無休で営業中"
+ },
+ {
+  "name": "伊豆・三津シーパラダイス",
+  "pref": "静岡県",
+  "city": "沼津市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/日本の水族館"
+  ],
+  "typeGuess": "aquarium",
+  "note": ""
+ },
+ {
+  "name": "あわしまマリンパーク",
+  "pref": "静岡県",
+  "city": "沼津市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/日本の水族館"
+  ],
+  "typeGuess": "aquarium",
+  "note": ""
+ }
+]

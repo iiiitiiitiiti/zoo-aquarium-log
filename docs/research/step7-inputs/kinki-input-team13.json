@@ -1,0 +1,36 @@
+[
+ {
+  "name": "ドルフィン・ベェイス",
+  "pref": "和歌山県",
+  "city": "太地町",
+  "foundUrls": [
+   "https://dolphinbase.co.jp/",
+   "https://taiji-kanko.jp/experience/dolphinebase.html"
+  ],
+  "typeGuess": "ふれあい牧場(イルカふれあい・スイム施設)",
+  "note": "1994年開業、太地町の常設施設。ドルフィンスイム・ドルフィンエンカウンター等イルカとのふれあいが来場の主目的。完全予約制だが常設・生体飼育。2026年時点でも稼働中（サイトに2026年6-7月のメンテナンス予約情報あり）。"
+ },
+ {
+  "name": "ドルフィンリゾート",
+  "pref": "和歌山県",
+  "city": "太地町",
+  "foundUrls": [
+   "https://dolphinresort.jp/",
+   "https://taiji-kanko.jp/experience/dolphinresort.html"
+  ],
+  "typeGuess": "ふれあい牧場(イルカ・アザラシふれあい施設)",
+  "note": "東牟婁郡太地町森浦703-15。イルカふれあい体験プログラム等を提供する常設施設。営業日は金土日曜・不定休。ドルフィン・ベェイスとは別法人・別施設（太地町観光協会サイトで並列掲載）。"
+ },
+ {
+  "name": "京都大学白浜水族館（京都大学フィールド科学教育研究センター瀬戸臨海実験所水族館）",
+  "pref": "和歌山県",
+  "city": "白浜町",
+  "foundUrls": [
+   "https://www.seto.kyoto-u.ac.jp/shirahama_aqua/",
+   "https://ja.wikipedia.org/wiki/%E4%BA%AC%E9%83%BD%E5%A4%A7%E5%AD%A6%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E7%A7%91%E5%AD%A6%E6%95%99%E8%82%B2%E7%A0%94%E7%A9%B6%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E7%80%AC%E6%88%B8%E8%87%A8%E6%B5%B7%E5%AE%9F%E9%A8%93%E6%89%80%E6%B0%B4%E6%97%8F%E9%A4%A8",
+   "https://www.wakayama-kanko.or.jp/spots/detail_681.html"
+  ],
+  "typeGuess": "水族館(大学附属・博物館法登録)",
+  "note": "1930年開館、京都大学瀬戸臨海実験所附属。博物館法上の博物館相当施設で一般来場・有料。研究施設だが常設で一般公開する生体展示水族館のため除外基準（研究施設のみ）に該当しないと判断。約500種展示。"
+ }
+]

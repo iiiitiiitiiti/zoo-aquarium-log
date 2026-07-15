@@ -1,0 +1,54 @@
+[
+ {
+  "name": "めっちゃおもろい動物園",
+  "pref": "滋賀県",
+  "city": "甲賀市水口町北泉1-7",
+  "foundUrls": [
+   "https://koka-portal.jp/%E3%82%81%E3%81%A3%E3%81%A1%E3%82%83%E3%81%8A%E3%82%82%E3%82%8D%E3%81%84%E5%8B%95%E7%89%A9%E5%9C%92/",
+   "https://news.p-mom.net/2021/11/30/"
+  ],
+  "typeGuess": "動物園(屋内・ふれあい型)",
+  "note": "2021年6月開園。滋賀県唯一の室内動物園を謳う。ショッピングモール隣接だが常設独立施設。"
+ },
+ {
+  "name": "成田ふれあい牧場",
+  "pref": "滋賀県",
+  "city": "甲賀市甲南町新治696",
+  "foundUrls": [
+   "https://narita-fureai.net/",
+   "https://iko-yo.net/facilities/14360"
+  ],
+  "typeGuess": "ふれあい牧場(乳牛中心)",
+  "note": "乳牛約300頭のほかヤギ・羊・ポニー・豚等。入場無料。"
+ },
+ {
+  "name": "ビートルランド・米原",
+  "pref": "滋賀県",
+  "city": "米原市",
+  "foundUrls": [
+   "https://www.beetleland-maibara.com/"
+  ],
+  "typeGuess": "昆虫館(甲虫ふれあい・屋内常設)",
+  "note": "カブトムシ・クワガタと常時ふれあえる屋内展示施設。"
+ },
+ {
+  "name": "ローザンベリー多和田 羊のふれあい牧場",
+  "pref": "滋賀県",
+  "city": "米原市多和田610-2",
+  "foundUrls": [
+   "https://www.rb-tawada.com/facility/play/fureai/"
+  ],
+  "typeGuess": "ふれあい牧場(羊・複合レジャー施設内)",
+  "note": "花畑・レジャー複合施設内の常設ふれあい牧場エリア。"
+ },
+ {
+  "name": "滋賀県畜産技術振興センター ふれあい広場",
+  "pref": "滋賀県",
+  "city": "蒲生郡日野町山本695",
+  "foundUrls": [
+   "https://www.pref.shiga.lg.jp/chikugi/fureai/326375.html"
+  ],
+  "typeGuess": "ふれあい牧場(公的施設)",
+  "note": "県の畜産技術振興センターが一部開放。羊・ウサギ・ポニー等。入場無料。"
+ }
+]

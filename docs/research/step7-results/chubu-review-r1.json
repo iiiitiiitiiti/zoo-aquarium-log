@@ -1,0 +1,102 @@
+[
+ {
+  "name": "山古志アルパカ牧場",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "yamakoshi.org公式ページ(http://yamakoshi.org/map/yamakoshi-alpaca-ranch/)の施設情報テーブル「住所」欄で「山古志竹沢乙１６９」を逐語確認し、一次情報記載どおり。国土地理院AddressSearchで「新潟県長岡市山古志竹沢」を検索すると座標(138.882782,37.324604)が返り、記録の座標と完全一致。同ページのtitleタグは「山古志アルパカ牧場」で名称も一致。営業時間欄は「9:00～18:00（冬期閉鎖）」のみで恒久閉鎖の兆候なし。"
+ },
+ {
+  "name": "稲葉山ふれあい動物広場",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "小矢部市公式ページ(更新日2026年5月14日、取得時点でも最新掲載)で「所在地　小矢部市田川字稲葉165番地」「開園期間：4月12日から11月末まで」「定休日：月曜日」「展示時間は、午前10時から11時まで、午後1時から2時まで」を逐語確認し、記録のnote内容と完全に一致。国土地理院AddressSearch APIでの座標(136.879074,36.705456)も記録値と一致（「田川」大字レベルでの解決）。"
+ },
+ {
+  "name": "ぎふ金華山リス村",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "mismatch"
+  },
+  "corrections": {
+   "lat": 35.432072,
+   "lng": 136.779908,
+   "coordSource": "OpenStreetMapに「金華山リス村」として直接タグ付けされたbuilding way(id 534195571)。国土数値情報（公共施設データ、国土交通省）由来で、contact:websiteがkinkazan.co.jp/pages/squirrel_villageと一致、wikidata Q11647835・ja:金華山リス村とも紐付く。4頂点の座標を平均した重心は(35.432072,136.779908)、標高タグ281.6m。"
+  },
+  "evidence": "kinkazan.co.jp公式ページ(access)で住所「岐阜県岐阜市千畳敷下257番地」を確認、squirrel_villageページ本文で「リス村は、金華山山頂駅の前にあって」との記載を確認（施設が山頂駅前にあることの一次情報での裏付け）。一方、記録が代用した座標(35.434072,136.782214)はja.wikipedia「岐阜城」記事のgeohack座標(35.4340722,136.7822139)そのものであり、天守（山頂ピーク）の位置。OSM上に施設名で直接タグ付けされた建物ポリゴンの重心(35.432072,136.779908)は天守から約300m離れており、標高281.6mは山頂駅・リス村がある一段低い平坦部と整合する。より施設本体に近いこのOSM座標への修正を提案する。"
+ },
+ {
+  "name": "名和昆虫博物館",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "nawakon.jp（配信はShift_JISのためcurl取得後iconvでUTF-8変換し逐語確認）menu2/index.htmlで「ギフチョウを、実物標本、生態写真パネルなど多角的に展示しています。また、ギフチョウの生態展示もおこなっています。」の記載を確認し、標本のみではなく生体展示が常設されている事実を一次情報で裏付けた。住所「大宮町2-18」はトップページ・menu2ページ双方に記載一致、国土地理院AddressSearch座標(136.773132,35.434299)も記録値と完全一致。休館・閉館の告知は見当たらず。"
+ },
+ {
+  "name": "森の水族館（民芸ミュージアム匠の館内）",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "hida.net/aquarium.htm（Shift_JISをiconvでUTF-8変換）で「イトウ」「ロシアチョウザメ」「アマゴ」等、飼育中の生体淡水魚リストを確認し、常設の生体展示であることを裏付けた。岐阜県観光公式サイトの詳細ページで住所「岐阜県高山市丹生川町根方532」「休業日：無休（臨時休業あり）」「料金：大人500円・小人400円」を確認し記録のnoteと一致。国土地理院AddressSearch座標(137.391815,36.186039)も記録値と完全一致。完全閉館の告知は見当たらない。"
+ },
+ {
+  "name": "あわしまマリンパーク",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "marinepark.jp公式トップページのお知らせ欄で2026.06.28付「本日、通常通り9：30開園にて営業しております」、2026.07.14「レクチャーイベント」告知、2026.07.18開催予定イベント告知まで最新の更新を確認し、2026年7月時点で通常営業中であることを一次情報で裏付けた（2024年2月の一時閉園・同年4月の経営交代後、現在まで運営継続中と判断）。住所「静岡県沼津市内浦重寺186」（access配下ページ）、国土地理院AddressSearch座標(138.888184,35.033142)も記録値と完全一致。note中の「釣り堀のみ営業休止中」の記載は、確認した2ページ（トップ・enjoy/information）内では見当たらず、確認できない。"
+ },
+ {
+  "name": "朝比奈龍勢・昆虫館（旧ふるさと世界の昆虫館）",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "asahinaryusei.jp/konchukan/（curlの素のUAでは403、ブラウザ相当のUser-Agentを付与して取得）で「昆虫ゾーンには、世界各地の昆虫標本を展示しております。世界各地の生きているカブトムシやクワガタにも触れ合うことができます。」の記載を逐語確認し、標本主体ながら生体展示が併設されている事実を裏付けた。藤枝市公式ページで住所「藤枝市岡部町新舟1214-5」、休館日「月曜日・木曜日（祝日の場合は翌日）」を確認し記録のnoteと一致。国土地理院AddressSearch座標(138.240158,34.956448)も記録値と完全一致。"
+ },
+ {
+  "name": "IPCわんわん動物園",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "wwzoo.jp公式サイトで「入場料金」「展示コーナー」「すごいでSHOW＆Wレース」等のドッグショー、「動物愛護法表記」を確認し、有料入園制の動物園型施設であることを裏付けた。園内の「わんわんカフェ」は飲食コーナーに過ぎず、姉妹ブランドのペットショップ「こいぬこねこ館」（お問い合わせページで別住所・別項目として案内）とは明確に区別されており、動物カフェ・ペットショップの除外基準には非該当と判断。お問い合わせページで住所「愛知県岡崎市大平町川田46-1」（取材用の管理本部住所「石亀96-1」とは異なる一般問合せ先住所）を確認し記録値と一致、国土地理院AddressSearch座標(137.188766,34.93716)も完全一致。トップページのニュース欄に2026.07.14付の更新があり、営業中であることを確認。"
+ }
+]
