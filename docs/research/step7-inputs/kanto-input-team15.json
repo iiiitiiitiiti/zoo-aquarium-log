@@ -1,0 +1,54 @@
+[
+ {
+  "name": "篠崎ポニーランド",
+  "pref": "東京都",
+  "city": "江戸川区",
+  "foundUrls": [
+   "https://www.city.edogawa.tokyo.jp/e066/kuseijoho/gaiyo/shisetsuguide/bunya/koendobutsuen/shinozakiponyland.html"
+  ],
+  "typeGuess": "zoo",
+  "note": "江戸川河川敷。えどがわ環境財団運営、無料ポニー乗馬・馬車。"
+ },
+ {
+  "name": "碑文谷公園こども動物広場",
+  "pref": "東京都",
+  "city": "目黒区",
+  "foundUrls": [
+   "https://www.city.meguro.tokyo.jp/douro/shigoto/kouen/dobutsu_hiroba.html"
+  ],
+  "typeGuess": "zoo",
+  "note": "ウサギ・モルモット等の小動物ふれあいとポニー乗馬。入園無料、営業時間限定（10:00-11:30/13:30-15:00）。"
+ },
+ {
+  "name": "あらかわ遊園（どうぶつ広場）",
+  "pref": "東京都",
+  "city": "荒川区",
+  "foundUrls": [
+   "https://www.city.arakawa.tokyo.jp/a038/yuuen/guide/guide_02.html",
+   "https://arakawa.news/arakawayuuen-2/"
+  ],
+  "typeGuess": "zoo",
+  "note": "区立遊園地。2022年リニューアルでカピバラ・ワラビー・アルパカ・フクロウ等を展示する「どうぶつ広場」とヤギ・モルモット等の「ふれあいコーナー」を常設。遊園地全体ではなく動物展示エリアを候補として計上。"
+ },
+ {
+  "name": "上千葉砂原公園（動物ふれあいコーナー）",
+  "pref": "東京都",
+  "city": "葛飾区",
+  "foundUrls": [
+   "https://www.city.katsushika.lg.jp/institution/1000096/1006894.html",
+   "https://note.com/zoo_aq_sf_oth/n/n435fb4439589"
+  ],
+  "typeGuess": "zoo",
+  "note": "リスザル・ヤギ・ミニブタ・モルモット・ポニー等を展示する公園内ふれあい施設。"
+ },
+ {
+  "name": "平塚市総合公園 ふれあい動物園",
+  "pref": "神奈川県",
+  "city": "平塚市",
+  "foundUrls": [
+   "https://www.city.hiratsuka.kanagawa.jp/koen/page-c_00819.html"
+  ],
+  "typeGuess": "ふれあい動物園",
+  "note": "市立総合公園内、無料、35種約760頭の小動物を常設飼育"
+ }
+]

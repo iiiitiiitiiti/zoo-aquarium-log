@@ -1,0 +1,56 @@
+[
+ {
+  "name": "道の駅みなかみ水紀行館 水産学習館",
+  "pref": "群馬県",
+  "city": "利根郡みなかみ町",
+  "foundUrls": [
+   "https://gunma-kanko.jp/features/312",
+   "https://www.jalan.net/kankou/spt_10446aa1030001245/activity/l0000233B0/"
+  ],
+  "typeGuess": "水族館",
+  "note": "群馬県で数少ない淡水魚中心の水族館。道の駅併設・有料エリア。"
+ },
+ {
+  "name": "宝川温泉汪泉閣 熊園",
+  "pref": "群馬県",
+  "city": "利根郡みなかみ町",
+  "foundUrls": [
+   "https://www.takaragawa.com/",
+   "https://www.enjoy-minakami.jp/spot/7456/"
+  ],
+  "typeGuess": "動物園",
+  "note": "Wikipedia『日本の動物園一覧』では閉鎖施設として記載されていたが、直近の検索結果では『隣接する庭園でツキノワグマ4頭を飼育』と現在形で記述されており矛盾がある。旅館併設の熊檻という性質上、常設の一般公開展示に該当するか含め現況確認が必要。"
+ },
+ {
+  "name": "嬬恋牧場",
+  "pref": "群馬県",
+  "city": "吾妻郡嬬恋村",
+  "foundUrls": [
+   "https://iko-yo.net/facilities/22383",
+   "https://www.jalan.net/kankou/spt_10425cb3522052009/"
+  ],
+  "typeGuess": "ふれあい牧場・動物ふれあい施設",
+  "note": "休業中。標高約1400mの観光牧場、ポニー・ウサギとのふれあい。いこーよ上『【休業中】嬬恋牧場』と表記。基準に従い休園中はnewとして記録し、noteに休業中と明記。"
+ },
+ {
+  "name": "草津熱帯圏",
+  "pref": "群馬県",
+  "city": "吾妻郡草津町",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/%E8%8D%89%E6%B4%A5%E7%86%B1%E5%B8%AF%E5%9C%8F"
+  ],
+  "typeGuess": "動物園",
+  "note": "標高1165mの日本最高所の動物園。爬虫類飼育数が関東屈指。1970年開業、稼働中。"
+ },
+ {
+  "name": "アニタッチPARK イオンモール太田",
+  "pref": "群馬県",
+  "city": "太田市",
+  "foundUrls": [
+   "https://www.ota.anitouch.com/",
+   "https://shaboten.co.jp/park-sp/5869/"
+  ],
+  "typeGuess": "ふれあい牧場・動物ふれあい施設",
+  "note": "2024年4月開業。伊豆シャボテン動物公園グループ運営の屋内型ふれあい動物園。約45種450匹。イオンモール内テナントだが独立した有料展示エリア。"
+ }
+]

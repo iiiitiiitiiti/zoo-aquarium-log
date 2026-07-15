@@ -1,0 +1,57 @@
+[
+ {
+  "name": "城之内公園小動物園",
+  "pref": "群馬県",
+  "city": "邑楽郡大泉町",
+  "foundUrls": [
+   "https://www.town.oizumi.gunma.jp/s040/map/040/20200630231658.html",
+   "https://www.dan-b.com/park_jounouchi/"
+  ],
+  "typeGuess": "動物園",
+  "note": "小泉城跡公園内の小動物園。ウサギ・インコ・ニワトリ等を飼育。"
+ },
+ {
+  "name": "中央公園小動物園",
+  "pref": "群馬県",
+  "city": "館林市",
+  "foundUrls": [
+   "https://www.city.tatebayashi.gunma.jp/s068/map/040/20201030143439.html",
+   "https://pandanocoto.com/article/zoo/zoo-tatebayashi"
+  ],
+  "typeGuess": "動物園",
+  "note": "館林市中央公園内の小動物園。ポニー・ミニチュアホース含む約10種70頭。"
+ },
+ {
+  "name": "むさしの村 ふれあい牧場",
+  "pref": "埼玉県",
+  "city": "加須市",
+  "foundUrls": [
+   "https://www.musashinomura.co.jp/touch/",
+   "http://www.musashinomura.co.jp/areaguide/fureai.html"
+  ],
+  "typeGuess": "other",
+  "note": "遊園地「むさしの村」内の常設ふれあい牧場エリア（ポニー・ウサギ・ヤギ・ブタ・クジャク等）。遊園地入園料に含まれる形態と見られ、独立入場の可否は要現地確認。"
+ },
+ {
+  "name": "加須市大越昆虫館",
+  "pref": "埼玉県",
+  "city": "加須市",
+  "foundUrls": [
+   "https://midorinoportal.pref.saitama.lg.jp/act/%E3%82%B3%E3%83%90%E3%83%88%E3%83%B3%E3%81%95%E3%82%93%E3%81%BD5/",
+   "https://kumagaya.keizai.biz/headline/540/"
+  ],
+  "typeGuess": "other",
+  "note": "埼玉昆虫談話会運営の私設昆虫館。標本約10万点のうち1200点常設展示、生体展示・昆虫採集体験もあり。土日祝のみ開館・入館無料。"
+ },
+ {
+  "name": "川口市立グリーンセンター バードセンター",
+  "pref": "埼玉県",
+  "city": "川口市",
+  "foundUrls": [
+   "https://www.go2park.net/photo/greencenter_birdcenter.html",
+   "https://greencenter.1110city.com/"
+  ],
+  "typeGuess": "other",
+  "note": "休園中。市立植物公園「グリーンセンター」内の鳥類展示施設（クジャク・キジ・カモ・ブンチョウ等）。2022年から改修のため閉鎖中、隣接大温室の改修完了後に再整備の上再開予定との情報あり。"
+ }
+]

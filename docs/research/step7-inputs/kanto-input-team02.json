@@ -1,0 +1,57 @@
+[
+ {
+  "name": "牛久大仏 ふれあいガーデンテラス（旧ふれあい動物公園）",
+  "pref": "茨城県",
+  "city": "牛久市",
+  "foundUrls": [
+   "https://daibutu.net/fureai.html",
+   "https://pandanocoto.com/article/zoo/zoo-ushikudaibutsu"
+  ],
+  "typeGuess": "zoo",
+  "note": "日曜・祝日のみ営業（12月・2月は休止）。うさぎ等の小動物とふれあえる小動物公園。"
+ },
+ {
+  "name": "東筑波ユートピア",
+  "pref": "茨城県",
+  "city": "石岡市",
+  "foundUrls": [
+   "https://www.sen-zoo.net/",
+   "https://www.ibarakiguide.jp/spot.php?mode=detail&code=1292"
+  ],
+  "typeGuess": "zoo",
+  "note": "クマ・ヒツジ・ヤギ・イノシシ・サルのショー等を展示する動物園。営業中（木曜定休）。"
+ },
+ {
+  "name": "ダチョウ王国 石岡ファーム",
+  "pref": "茨城県",
+  "city": "石岡市",
+  "foundUrls": [
+   "https://dacho.co.jp/ishioka-farm",
+   "https://www.ishioka-kankou.com/ostrich-kingdom-ishioka/"
+  ],
+  "typeGuess": "zoo",
+  "note": "ダチョウ約200羽に加え、南のまきばエリアでアルパカ・カピバラ等約80種とふれあえる。第2水曜定休。"
+ },
+ {
+  "name": "こもれび森のイバライド",
+  "pref": "茨城県",
+  "city": "稲敷市",
+  "foundUrls": [
+   "https://www.ibaraido.co.jp/touch/",
+   "https://www.zoo-palette.com/ibaraki/"
+  ],
+  "typeGuess": "zoo",
+  "note": "体験型テーマパーク内の牧場エリア・森のどうぶつハウス（ヤギ、アルパカ、フクロウ、モルモット、ウサギ、爬虫類等）。動物ふれあいが主要な来場目的の一つ。"
+ },
+ {
+  "name": "ふれあい動物園 ANIMA",
+  "pref": "茨城県",
+  "city": "稲敷郡阿見町",
+  "foundUrls": [
+   "https://www.amikan.jp/section.php?code=100",
+   "https://jaf.or.jp/common/area/2024/kanto/ibaraki/local-news/1018"
+  ],
+  "typeGuess": "zoo",
+  "note": "古民家をリノベーションした動物園。ハムスター・ウサギ・カメ・ヤギ等80種。獣医師常駐。土日月祝営業。"
+ }
+]

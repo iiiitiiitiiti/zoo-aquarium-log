@@ -1,0 +1,57 @@
+[
+ {
+  "name": "相模原麻溝公園 ふれあい動物広場（プリモふれあい動物広場）",
+  "pref": "神奈川県",
+  "city": "相模原市南区",
+  "foundUrls": [
+   "https://asamizo-animal-square.com/",
+   "https://www.e-sagamihara.com/playing/playing-223/"
+  ],
+  "typeGuess": "ふれあい動物園",
+  "note": "市立麻溝公園内の無料ミニ動物園。展示コーナー・ふれあいコーナー・ポニー乗馬場"
+ },
+ {
+  "name": "新江ノ島水族館",
+  "pref": "神奈川県",
+  "city": "藤沢市",
+  "foundUrls": [
+   "https://aquarium.search-maps.com/areas/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/",
+   "https://www.jalan.net/kankou/140000/g2_45/"
+  ],
+  "typeGuess": "水族館",
+  "note": "既存マスタに未登録。国内有数の大型水族館"
+ },
+ {
+  "name": "箱根園水族館",
+  "pref": "神奈川県",
+  "city": "足柄下郡箱根町",
+  "foundUrls": [
+   "https://aquarium.search-maps.com/areas/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C/",
+   "https://www.jalan.net/kankou/140000/g2_45/"
+  ],
+  "typeGuess": "水族館",
+  "note": "芦ノ湖畔の水族館。既存マスタに未登録"
+ },
+ {
+  "name": "箱根園どうぶつランド だっこして！ZOO！",
+  "pref": "神奈川県",
+  "city": "足柄下郡箱根町",
+  "foundUrls": [
+   "https://hakone-hugzoo.com/",
+   "https://www.hakonenavi.jp/spot/1390"
+  ],
+  "typeGuess": "ふれあい動物施設",
+  "note": "箱根園内の有料ふれあい動物施設。ウサギ・フクロウ・爬虫類等常設展示"
+ },
+ {
+  "name": "披露山公園動物園",
+  "pref": "神奈川県",
+  "city": "逗子市",
+  "foundUrls": [
+   "https://www.city.zushi.kanagawa.jp/kurashi/sumai/1002174/1002178/1002179/1002181.html",
+   "https://www.homemate-research-zoo.com/dtl/75000000000000146470/"
+  ],
+  "typeGuess": "動物園（ミニ）",
+  "note": "逗子市立披露山公園内の無料ミニ動物園。ニホンザル・クジャク・アヒル等を常設飼育"
+ }
+]

@@ -1,0 +1,56 @@
+[
+ {
+  "name": "霞ヶ浦どうぶつとみんなのいえ",
+  "pref": "茨城県",
+  "city": "行方市",
+  "foundUrls": [
+   "https://doubutsutominna.jp/",
+   "https://ja.wikipedia.org/wiki/霞ヶ浦どうぶつとみんなのいえ"
+  ],
+  "typeGuess": "zoo",
+  "note": "旧「水の科学館」を改修し2024年7月31日開園。カピバラ・アルパカ・ペンギン・ナマケモノ・ミーアキャット・リクガメ等約20種展示。水曜定休。"
+ },
+ {
+  "name": "大田原市ふれあいの丘 自然観察館",
+  "pref": "栃木県",
+  "city": "大田原市",
+  "foundUrls": [
+   "https://www.kansatukan.jp/"
+  ],
+  "typeGuess": "other",
+  "note": "ヘラクレスオオカブト等、世界のカブトムシ・クワガタの生体展示コーナーが通年常設"
+ },
+ {
+  "name": "おさるランド&アニタウン(日光さる軍団劇場)",
+  "pref": "栃木県",
+  "city": "日光市",
+  "foundUrls": [
+   "https://www.osaruland.jp/",
+   "https://www.nikko-kankou.org/spot/956"
+  ],
+  "typeGuess": "zoo",
+  "note": "サル劇場+ペンギン・カピバラ・猫等のふれあいエリア。2013年一時閉鎖も2015年再開し営業中"
+ },
+ {
+  "name": "日光霧降高原 大笹牧場",
+  "pref": "栃木県",
+  "city": "日光市",
+  "foundUrls": [
+   "https://www.nikko-ozasa.jp/",
+   "https://www.nikko-kankou.org/spot/40"
+  ],
+  "typeGuess": "other",
+  "note": "ブラウンスイス牛・ヒツジ・ヤギの放牧見学、エサやり・ポニー乗馬体験のふれあい広場あり"
+ },
+ {
+  "name": "さかなと森の観察園",
+  "pref": "栃木県",
+  "city": "日光市",
+  "foundUrls": [
+   "https://www.fra.go.jp/nikko/",
+   "https://www.tochigiji.or.jp/spot/s5842"
+  ],
+  "typeGuess": "aquarium",
+  "note": "水産研究・教育機構が中禅寺湖畔で運営する公開型観察園。イワナ・レイクトラウト等さけ・ます類とチョウザメを展示、入園料あり(冬期休園)。運営主体は研究機関だが常設・有料公開施設のため候補に含める"
+ }
+]

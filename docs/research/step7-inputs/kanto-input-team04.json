@@ -1,0 +1,54 @@
+[
+ {
+  "name": "井頭公園 花ちょう遊館",
+  "pref": "栃木県",
+  "city": "真岡市",
+  "foundUrls": [
+   "https://kids.rurubu.jp/article/66613/"
+  ],
+  "typeGuess": "other",
+  "note": "井頭公園内の温室型施設。熱帯・亜熱帯性のチョウが飛び交う「チョウゾーン」を常設展示"
+ },
+ {
+  "name": "マロニエ昆虫館",
+  "pref": "栃木県",
+  "city": "矢板市",
+  "foundUrls": [
+   "https://tochi-mori.jp/insect/"
+  ],
+  "typeGuess": "other",
+  "note": "県民の森内の昆虫専門展示施設。甲虫類の立体展示等"
+ },
+ {
+  "name": "那須千本松牧場(どうぶつふれあい広場)",
+  "pref": "栃木県",
+  "city": "那須塩原市",
+  "foundUrls": [
+   "https://www.senbonmatsu.com/animal/"
+  ],
+  "typeGuess": "other",
+  "note": "子牛・ヤギ・ヒツジ・ウサギ・モルモット等7種約100匹とふれあえる常設広場"
+ },
+ {
+  "name": "那須ワールドモンキーパーク",
+  "pref": "栃木県",
+  "city": "那須町",
+  "foundUrls": [
+   "https://www.nasumonkey.com/",
+   "https://www.nasumonkey.com/guide/"
+  ],
+  "typeGuess": "zoo",
+  "note": "サル中心の動物テーマパーク。ゾウふれあい・エサやり体験あり。営業中"
+ },
+ {
+  "name": "那須高原りんどう湖ファミリー牧場",
+  "pref": "栃木県",
+  "city": "那須町",
+  "foundUrls": [
+   "https://www.rindo.co.jp/animal/",
+   "https://www.rindo.co.jp/news/128"
+  ],
+  "typeGuess": "other",
+  "note": "動物ふれあい牧場。2023年に閉園した那須アルパカ牧場のアルパカ177頭の半数を受け入れ飼育中"
+ }
+]

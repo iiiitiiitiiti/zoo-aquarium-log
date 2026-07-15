@@ -1,0 +1,117 @@
+{"team": "K01", "block": "関東", "results": [
+  {
+    "verdict": "include",
+    "name": "かすみがうら市水族館",
+    "kana": "かすみがうらしすいぞくかん",
+    "pref": "茨城県",
+    "city": "かすみがうら市",
+    "type": "aquarium",
+    "lat": 36.078297,
+    "lng": 140.363617,
+    "url": "https://www.dane-kerry.com/aquarium.html",
+    "sourceUrls": [
+      "https://www.city.kasumigaura.lg.jp/page/page014376.html",
+      "https://www.dane-kerry.com/aquarium.html"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "ibaraki_kasumigaurashi_suizokukan",
+    "coordSource": "国土地理院APIで「茨城県かすみがうら市坂」を検索し取得（住所は坂910-1だが番地単位の一致なし、町丁目レベルの代表点）。住所自体はかすみがうら市公式サイトで確認。",
+    "address": "茨城県かすみがうら市坂910-1",
+    "addressSourceUrl": "https://www.city.kasumigaura.lg.jp/page/page014376.html",
+    "adoptionBasis": "常設で一般来場でき、霞ヶ浦水系の淡水魚等生きた水生生物の展示を主目的とする市立水族館のため包含基準に合致。",
+    "note": ""
+  },
+  {
+    "verdict": "include",
+    "name": "豊里ゆかりの森 昆虫館",
+    "kana": "とよさとゆかりのもりこんちゅうかん",
+    "pref": "茨城県",
+    "city": "つくば市",
+    "type": "other",
+    "lat": 36.107517,
+    "lng": 140.065521,
+    "url": "http://www.tsukubaykr.jp/",
+    "sourceUrls": [
+      "http://www.tsukubaykr.jp/faclity.html",
+      "https://www.city.tsukuba.lg.jp/soshikikarasagasu/keizaibutoyozatoyukarinomori/gyomuannai/1/1/1/1001460.html"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "ibaraki_toyosatoyukarinomori_konchukan",
+    "coordSource": "国土地理院APIで「茨城県つくば市遠東676番地」を検索し取得（番地一致）。",
+    "address": "茨城県つくば市遠東676",
+    "addressSourceUrl": "https://www.city.tsukuba.lg.jp/soshikikarasagasu/keizaibutoyozatoyukarinomori/gyomuannai/1/1/1/1001460.html",
+    "adoptionBasis": "包含基準に明記された「昆虫館」であり、標本展示に加え屋外で季節ごとの生体（セミ・トンボ・カブトムシ等）の観察ができる常設施設のため含める。",
+    "note": "第三者サイト（tsukubalive.issei-syoji.co.jp、2023年記事）はヘラクレスオオカブトの生体展示を報じているが、公式サイトでは屋外での在来種の季節観察と標本展示の記載のみで、外来カブトムシの常設生体展示は一次情報で確認できず。"
+  },
+  {
+    "verdict": "include",
+    "name": "ネーブルパーク ポニー牧場",
+    "kana": "ねーぶるぱーくぽにーぼくじょう",
+    "pref": "茨城県",
+    "city": "古河市",
+    "type": "zoo",
+    "lat": 36.166988,
+    "lng": 139.755615,
+    "url": "https://navelpark.com/n-pony/",
+    "sourceUrls": [
+      "https://navelpark.com/n-pony/",
+      "https://navelpark.com/access/"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "ibaraki_navelpark_ponybokujo",
+    "coordSource": "国土地理院APIで「茨城県古河市駒羽根620番地」を検索し取得（番地一致）。",
+    "address": "茨城県古河市駒羽根620",
+    "addressSourceUrl": "https://navelpark.com/access/",
+    "adoptionBasis": "大型レジャー施設「ネーブルパーク」内だが、ポニーとのふれあい・引き馬・乗馬体験・厩務体験を主目的とする独立した常設展示エリアのため含める。",
+    "note": ""
+  },
+  {
+    "verdict": "include",
+    "name": "水海道あすなろの里 ふれあい動物園",
+    "kana": "みつかいどうあすなろのさとふれあいどうぶつえん",
+    "pref": "茨城県",
+    "city": "常総市",
+    "type": "zoo",
+    "lat": 36.003426,
+    "lng": 139.927399,
+    "url": "http://asunaronosato.net/%E3%81%B5%E3%82%8C%E3%81%82%E3%81%84%E5%8B%95%E7%89%A9%E5%9C%92/",
+    "sourceUrls": [
+      "http://asunaronosato.net/%E3%81%B5%E3%82%8C%E3%81%82%E3%81%84%E5%8B%95%E7%89%A9%E5%9C%92/",
+      "http://asunaronosato.net/"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "ibaraki_asunaronosato_fureaidoubutsuen",
+    "coordSource": "国土地理院APIで「茨城県常総市大塚戸町310番地」を検索し取得（番地一致）。",
+    "address": "茨城県常総市大塚戸町310",
+    "addressSourceUrl": "http://asunaronosato.net/%E3%81%B5%E3%82%8C%E3%81%82%E3%81%84%E5%8B%95%E7%89%A9%E5%9C%92/",
+    "adoptionBasis": "常総市生涯学習課所管の野外研修センター内にある常設のふれあい動物園で、アルパカ・モルモット等生きた小動物との触れ合い・餌やり体験を主目的とするため含める。",
+    "note": "候補台帳にある「ミニ水族館」併設の記載は公式サイトで確認できず（金魚釣りコーナーの記載はあるが水族館展示の記載なし）。マーラ・プレーリードッグのコーナーは2026年4月14日更新の公式告知で現在休止中と確認。"
+  },
+  {
+    "verdict": "include",
+    "name": "奥日立きららの里 ふれあい牧場",
+    "kana": "おくひたちきららのさとふれあいぼくじょう",
+    "pref": "茨城県",
+    "city": "日立市",
+    "type": "zoo",
+    "lat": 36.643673,
+    "lng": 140.579071,
+    "url": "https://kiraranosato.com/free/fureaifarm",
+    "sourceUrls": [
+      "https://kiraranosato.com/free/fureaifarm",
+      "https://kiraranosato.com/"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "ibaraki_okuhitachikiraranosato_fureaibokujo",
+    "coordSource": "国土地理院APIで「茨城県日立市入四間町863-1」を検索したが番地は一致せず、「茨城県日立市入四間町」の町丁目レベルの代表点を採用。",
+    "address": "茨城県日立市入四間町863-1",
+    "addressSourceUrl": "https://kiraranosato.com/",
+    "adoptionBasis": "大型レジャー施設「奥日立きららの里」内だが、ポニーへの餌やり体験を主目的とする独立した常設のふれあい牧場エリアのため含める。",
+    "note": "候補台帳にあるヒツジ餌やりの記載は公式サイトのふれあい牧場ページでは確認できず（現状の記載はポニーのみ）。"
+  }
+]}

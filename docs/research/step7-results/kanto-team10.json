@@ -1,0 +1,117 @@
+{"team": "K10", "block": "関東", "results": [
+  {
+    "verdict": "include",
+    "name": "いきもの探検隊 フレスポ稲毛店",
+    "kana": "いきものたんけんたいふれすぽいなげてん",
+    "pref": "千葉県",
+    "city": "千葉市稲毛区",
+    "type": "other",
+    "lat": 35.65575,
+    "lng": 140.127365,
+    "url": "https://www.e-frespo.com/inage/shop/index.jsp?bf=1&fmt=1&shopid=2046",
+    "sourceUrls": [
+      "https://www.e-frespo.com/inage/shop/index.jsp?bf=1&fmt=1&shopid=2046",
+      "https://www.e-frespo.com/inage/shop/access.jsp"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "chiba_ikimono_tanken_tai_frespo_inage",
+    "coordSource": "国土地理院APIで施設所在地『千葉県千葉市稲毛区長沼原町731-17』（フレスポ稲毛の住所）を検索し取得（番地『731』レベルで一致、枝番『-17』は未反映）。",
+    "address": "千葉県千葉市稲毛区長沼原町731-17",
+    "addressSourceUrl": "https://www.e-frespo.com/inage/shop/access.jsp",
+    "adoptionBasis": "常設で一般来場でき、30種以上の海・陸・空・深の生き物の展示・餌やり体験を主目的とする有料施設（大人・子供一律800円）。決済方法は現金のみで飲食物提供の記載はなく、動物カフェではなく動物ふれあい体験施設であるため、牧場・ふれあい施設の包含基準（動物展示が主要な来場目的）に合致。",
+    "note": "運営会社の全国統一公式サイトは確認できず（Web検索でも『公式ウェブサイトは存在せずInstagram中心』との情報のみ）。ショップ情報はモール運営元（大和リース）の施設ページとInstagram(@ikimonotankentai_inage)が情報源。候補台帳が言及するKABAZOO・Moff animal worldとは別会社の運営（チェーン展開する同業態の別ブランド）と見られるが、運営会社名は一次情報で確認できず。2026年7月時点で閉店・休業情報はなく、フレスポ稲毛公式サイトに掲載中のため営業中と判断。"
+  },
+  {
+    "verdict": "include",
+    "name": "千葉県酪農のさと",
+    "kana": "ちばけんらくのうのさと",
+    "pref": "千葉県",
+    "city": "南房総市",
+    "type": "other",
+    "lat": 35.093018,
+    "lng": 139.97551,
+    "url": "https://www.e-makiba.jp/",
+    "sourceUrls": [
+      "https://www.pref.chiba.lg.jp/chikusan/rakunounosato/index.html",
+      "https://www.e-makiba.jp/"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "chiba_rakunou_no_sato",
+    "coordSource": "国土地理院APIで『千葉県南房総市大井686』を検索したが大字『大井』レベルの代表点のみ取得（番地686までの一致は確認できず）。",
+    "address": "千葉県南房総市大井686",
+    "addressSourceUrl": "https://www.pref.chiba.lg.jp/chikusan/rakunounosato/index.html",
+    "adoptionBasis": "千葉県が日本酪農発祥の地に設置した施設で、白牛（セブー種）・ヤギ等の生きた動物の常設飼育・ふれあい展示を主目的とし、入園無料で一般来場できるため、牧場・ふれあい施設の包含基準（動物展示が主要な来場目的）に合致。酪農資料館は併設の学習施設。",
+    "note": "休園日は毎週月曜日（祝日の場合は翌平日）、年末年始（12/29〜1/3）。園内で地元酪農家製アイスクリーム等の販売もあるが、施設の主目的は白牛・ヤギの展示とふれあいであり、動物カフェには該当しない。Web検索で閉園・休園情報は確認されず、2026年も通常営業中。"
+  },
+  {
+    "verdict": "include",
+    "name": "南房ジャングルファーム",
+    "kana": "なんぼうじゃんぐるふぁーむ",
+    "pref": "千葉県",
+    "city": "南房総市",
+    "type": "zoo",
+    "lat": 34.91354,
+    "lng": 139.865601,
+    "url": "https://junglefarm.jp/",
+    "sourceUrls": [
+      "https://junglefarm.jp/access.php",
+      "https://maruchiba.jp/spot/detail_15813.html"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "chiba_nanbo_jungle_farm",
+    "coordSource": "国土地理院APIで『千葉県南房総市白浜町滝口450』を検索したが字『白浜町滝口』レベルの代表点のみ取得（番地450までの一致は確認できず）。",
+    "address": "千葉県南房総市白浜町滝口450",
+    "addressSourceUrl": "https://junglefarm.jp/access.php",
+    "adoptionBasis": "沖縄原産の純粋アグー豚（縄文豚）約300頭を26,000坪の敷地で完全放牧展示する観光牧場。牧場探検コースでの動物観察・餌やり体験（別料金）が来園目的の中心の有料施設（大人1,000円〜）であり、牧場・ふれあい施設の包含基準に合致。",
+    "note": "公式サイト確認では営業時間9:00〜16:00（最終入園15:30）・休園日は月曜日。候補台帳の『営業時間9:00-15:30』はおそらく最終入園時刻の誤記で、実際の閉園時刻は16:00。2026年5月にエミュー導入、バーベキュー場・売店『Junglekitchen』も新設された旨を公式サイトで確認。閉園・休業情報はなく、南房総市観光協会サイトにも現役会員として掲載されており営業中と判断。"
+  },
+  {
+    "verdict": "include",
+    "name": "exstion（エクッション）印西ふれあい牧場",
+    "kana": "えくっしょんいんざいふれあいぼくじょう",
+    "pref": "千葉県",
+    "city": "印西市",
+    "type": "zoo",
+    "lat": 35.812794,
+    "lng": 140.139008,
+    "url": "https://inzaiparque.com/exstion/",
+    "sourceUrls": [
+      "https://inzaiparque.com/exstion/",
+      "https://exstion-fureai-lp.com/"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "chiba_exstion_inzai_fureai_bokujo",
+    "coordSource": "国土地理院APIで『千葉県印西市大森52-9』を検索し取得（番地『52』レベルで一致、枝番『-9』は未反映）。",
+    "address": "千葉県印西市大森52-9",
+    "addressSourceUrl": "https://inzaiparque.com/exstion/",
+    "adoptionBasis": "ヤギ・ポニー・馬・小動物との無料ふれあい・餌やり・乗馬体験（引き馬）を常設で提供する公園スタイルの牧場であり、動物とのふれあいそのものが来園目的のため、牧場・ふれあい施設の包含基準に合致。",
+    "note": "営業時間9:00〜17:00、定休日は木曜・日曜・祝日（月・火・水・金・土曜営業）。入場・ふれあいは無料、乗馬体験レッスンのみ別料金（3,500円〜）。Web検索で閉業・閉園情報は確認されず、2026年時点のInstagram等の活動も継続的に確認できる。"
+  },
+  {
+    "verdict": "include",
+    "name": "Moff animal world BIGHOPガーデンモール印西店",
+    "kana": "もふあにまるわーるどびっぐほっぷがーでんもーるいんざいてん",
+    "pref": "千葉県",
+    "city": "印西市",
+    "type": "zoo",
+    "lat": 35.803074,
+    "lng": 140.164886,
+    "url": "https://moff-moff.jp/animal-cafe/shop/moff-animal-world/",
+    "sourceUrls": [
+      "https://moff-moff.jp/animal-cafe/shop/moff-animal-world/",
+      "https://www.bighop.jp/shop/index.jsp?bf=1&fmt=6&shopid=2130"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "chiba_moff_animal_world_bighop_inzai",
+    "coordSource": "国土地理院APIで『千葉県印西市原1-2』を検索し取得（丁目・番地『原一丁目2番地』レベルで一致）。",
+    "address": "千葉県印西市原1-2 BIGHOPガーデンモール印西2F",
+    "addressSourceUrl": "https://moff-moff.jp/animal-cafe/shop/moff-animal-world/",
+    "adoptionBasis": "猫・小型インコの放し飼いエリア、ヒツジ・アルパカのファームエリア、爬虫類・フクロウ・大型インコ・ペンギン等を常設展示する完全屋内型動物園。入園料（中学生以上1,450円）制で動物とのふれあい・餌やり体験が主目的であり、飲食物提供（ドリンクバー・自販機）は付帯設備に留まるため動物カフェには該当せず、包含基準に合致。",
+    "note": "運営は株式会社MOFF（同社は『Moff animal cafe』ブランドの動物カフェも別途運営）。候補台帳の記載どおり、本施設はカフェ業態の『Moff animal cafe』（幕張新都心店等）とはブランド・業態が異なる（本施設は動物園、Moff animal cafeはカフェ）ため区別。年中無休、2026年3月にリニューアルオープン（猫の部屋拡張・ネコ5頭追加）。閉店・休業情報はなく、公式サイト・BIGHOP公式サイト双方に現役掲載されており営業中と判断。"
+  }
+]}

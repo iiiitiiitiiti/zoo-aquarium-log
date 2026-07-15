@@ -1,0 +1,58 @@
+[
+ {
+  "name": "袖ケ浦ふれあいどうぶつ縁",
+  "pref": "千葉県",
+  "city": "袖ケ浦市",
+  "foundUrls": [
+   "https://www.sodegaura-animal.jp/",
+   "https://maruchiba.jp/spot/detail_10297.html"
+  ],
+  "typeGuess": "ふれあい牧場",
+  "note": "ダチョウ・カピバラ・ヒツジ・ヤギ・ウサギ等、来園目的が動物ふれあいそのものの専業施設。"
+ },
+ {
+  "name": "世界の昆虫爬虫類王国（東京ドイツ村内）",
+  "pref": "千葉県",
+  "city": "袖ケ浦市",
+  "foundUrls": [
+   "https://t-doitsumura.co.jp/experience/insect-reptile-kingdom/"
+  ],
+  "typeGuess": "昆虫館・爬虫類館",
+  "note": "花のテーマパーク「東京ドイツ村」内の独立課金施設（別料金1,000円）。常設展示エリアとして基準に合致。"
+ },
+ {
+  "name": "清水公園ポニー牧場",
+  "pref": "千葉県",
+  "city": "野田市",
+  "foundUrls": [
+   "https://www.shimizu-kouen.com/pony",
+   "https://zfc.jp/en/zoolist/246"
+  ],
+  "typeGuess": "ふれあい牧場",
+  "note": "ポニー・ヤギ・ウサギ・モルモット・フクロウ・リクガメを常設展示。2026年5月リニューアルオープン。"
+ },
+ {
+  "name": "世界一ちっちゃな水族館",
+  "pref": "千葉県",
+  "city": "銚子市",
+  "foundUrls": [
+   "https://maruchiba.jp/spot/detail_11255.html",
+   "https://ja.wikipedia.org/wiki/%E4%B8%96%E7%95%8C%E4%B8%80%E3%81%A1%E3%81%A3%E3%81%A1%E3%82%83%E3%81%AA%E6%B0%B4%E6%97%8F%E9%A4%A8",
+   "https://choshi-aquarium.jimdofree.com/"
+  ],
+  "typeGuess": "水族館",
+  "note": "銚子海洋研究所内、2019年開業の小規模水族館。約30種の海洋生物を常設展示。現在も営業中。"
+ },
+ {
+  "name": "こみなと水族館（千葉大学海洋バイオシステム研究センター）",
+  "pref": "千葉県",
+  "city": "鴨川市",
+  "foundUrls": [
+   "https://www.kamonavi.jp/member/%E5%8D%83%E8%91%89%E5%A4%A7%E5%AD%A6%E6%B5%B7%E6%B4%8B%E3%83%90%E3%82%A4%E3%82%AA%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E7%A0%94%E7%A9%B6%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC/",
+   "https://iko-yo.net/facilities/4791",
+   "http://marine.biosystems.chiba-u.jp/"
+  ],
+  "typeGuess": "aquarium",
+  "note": "千葉大学附属の小規模水族館。入館無料、開館日は火〜木・土日（月・金・年末年始休館）。房総の海の生き物のミニ水族館、標本室、ふれあいコーナー（ヒトデ・ナマコ）を常設展示。既存3巡では未検出だった大学附属施設という角度の見落とし。一部情報源（更新時期不明）に小湊本部の正門〜駐車場間で土砂崩れによる通行制限の記述があり、現在の実際のアクセス可否は要現地確認。"
+ }
+]

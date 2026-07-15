@@ -1,0 +1,111 @@
+{
+ "team": "K05",
+ "block": "関東",
+ "results": [
+  {
+   "verdict": "hold",
+   "name": "那須高原 南ヶ丘牧場",
+   "pref": "栃木県",
+   "city": "那須町",
+   "adoptionBasis": "公式サイトは自らを『酪農を中心とした入場無料の観光牧場』と説明しており、ヤギ・ヒツジ・ウサギ・モルモット等とのふれあいコーナーは、パターゴルフ・アーチェリー・乗馬・乗ロバ・つり堀・アイスクリームづくり体験・乳製品販売など多数の非動物系アトラクションと並ぶ要素の一つに位置づけられている。動物展示（ふれあい）が『主要な来場目的』と言い切れるかどうか基準文だけでは判定できず、施設に不利な確定を避けるため保留とする。",
+   "sourceUrls": [
+    "https://www.minamigaoka.co.jp/smt/about/",
+    "https://www.minamigaoka.co.jp/smt/play/",
+    "https://www.minamigaoka.co.jp/smt/animal/"
+   ],
+   "note": "公式住所は栃木県那須郡那須町大字湯本579番地（〒325-0393）。動物展示の比重（来園目的の中心かどうか）について、レビュー班での再判定を推奨。"
+  },
+  {
+   "verdict": "include",
+   "name": "那須昆虫ワールド",
+   "kana": "なすこんちゅうわーるど",
+   "pref": "栃木県",
+   "city": "那須町",
+   "type": "other",
+   "lat": 37.0392963,
+   "lng": 140.0167152,
+   "url": "https://www.nasukon.com/",
+   "sourceUrls": [
+    "https://www.nasukon.com/",
+    "https://www.tochinavi.net/spot/home/?id=5257"
+   ],
+   "status": "open",
+   "lastVerifiedAt": "2026-07-15",
+   "proposedId": "tochigi_nasu_konchu_world",
+   "coordSource": "公式サイト(nasukon.com)に埋め込まれたGoogleマップのplaceリンク座標(37.0392963, 140.0167152)と、栃木県公式観光サイト『とちぎ旅ネット』(tochinavi.net)掲載のGoogleマップ座標(37.039122, 140.016344)がほぼ一致したためこれを採用。国土地理院APIは住所『栃木県那須郡那須町高久甲5327-1』を大字『高久甲』レベルまでしか解決できず(140.059875, 37.001896)、実位置から約4km離れるため不採用。",
+   "address": "栃木県那須郡那須町高久甲5327-1",
+   "addressSourceUrl": "https://www.tochinavi.net/spot/home/?id=5257",
+   "adoptionBasis": "昆虫とのふれあい体験・標本づくり・展示を主目的とする体験型ミュージアムで、包含基準『昆虫館を含める』に該当する。館内ショップでの生き虫販売・飼育用品販売は付随的機能であり、ペットショップとしての除外対象には当たらないと判断した。",
+   "note": "公式サイトに営業時間10:00〜17:00の表示を確認、休業・閉館の告知は見当たらなかった。"
+  },
+  {
+   "verdict": "include",
+   "name": "りんどう湖のどうぶつふれあいFarm",
+   "kana": "りんどうこのどうぶつふれあいふぁーむ",
+   "pref": "栃木県",
+   "city": "那須町",
+   "type": "other",
+   "lat": 37.078663,
+   "lng": 139.94754,
+   "url": "https://www.nasuhai.co.jp/attraction/detail.php?n=150",
+   "sourceUrls": [
+    "https://www.nasuhai.co.jp/attraction/detail.php?n=150",
+    "https://www.nasuhai.co.jp/access/"
+   ],
+   "status": "open",
+   "lastVerifiedAt": "2026-07-15",
+   "proposedId": "tochigi_rindoko_dobutsu_fureai_farm",
+   "coordSource": "遊園地『那須ハイランドパーク』の公式サイト記載住所『栃木県那須郡那須町高久乙3375』（園全体の代表住所）を国土地理院ジオコーディングAPIで変換し、番地レベルで一致(37.078663, 139.94754)。",
+   "address": "栃木県那須郡那須町高久乙3375",
+   "addressSourceUrl": "https://www.nasuhai.co.jp/access/",
+   "adoptionBasis": "遊園地『那須ハイランドパーク』内の常設アトラクションで、カピバラ・ミーアキャット・ハリスホーク・ワシミミズク・マーラ等の展示とえさやり・ふれあい体験を提供する独立した動物展示エリア。基準『植物園・公園・遊園地内でも、独立した常設展示エリアなら含める』に該当する。",
+   "note": "那須ハイランドパーク自体は入園有料（一般1,600円、こども・シニア800円）だが、当該『りんどう湖のどうぶつふれあいFarm』への入場は入園料以外の追加料金なし（各種体験メニューのみ別途有料）。営業時間11:00〜15:00予定、天候や動物の体調により変動あり、冬季は寒さに強い動物のみ展示。候補台帳の名称『那須ハイランドパーク(ふれあいコーナー)』は通称で、公式のアトラクション名称は『りんどう湖のどうぶつふれあいFarm』（エリア名: 森と水のファンタジー）。"
+  },
+  {
+   "verdict": "include",
+   "name": "鹿沼錦鯉公園",
+   "kana": "かぬまにしきごいこうえん",
+   "pref": "栃木県",
+   "city": "鹿沼市",
+   "type": "aquarium",
+   "lat": 36.589119,
+   "lng": 139.776627,
+   "url": "https://kanuma-kanko.jp/purpose/%E9%B9%BF%E6%B2%BC%E9%8C%A6%E9%AF%89%E5%85%AC%E5%9C%92/",
+   "sourceUrls": [
+    "https://kanuma-kanko.jp/purpose/%E9%B9%BF%E6%B2%BC%E9%8C%A6%E9%AF%89%E5%85%AC%E5%9C%92/",
+    "https://www.tochigiji.or.jp/spot/s9668",
+    "http://www.kato-industry.com/pisciculture/koi/"
+   ],
+   "status": "suspended",
+   "lastVerifiedAt": "2026-07-15",
+   "proposedId": "tochigi_kanuma_nishikigoi_koen",
+   "coordSource": "運営会社（株式会社加藤工業所）公式サイト記載住所『栃木県鹿沼市栃窪1202番地3』を国土地理院ジオコーディングAPIで変換し、字番地レベルで一致(36.589119, 139.776627)。",
+   "address": "栃木県鹿沼市栃窪1202-3",
+   "addressSourceUrl": "http://www.kato-industry.com/pisciculture/koi/",
+   "adoptionBasis": "日本初の錦鯉資料館・公園として70cmクラスの錦鯉を系統別に水槽展示してきた施設で、包含基準『水族館を含める』に該当。現在は資料館内部の見学ができない状態のため status は suspended として記録を保持する。",
+   "note": "栃木県観光物産協会公式サイト(tochigiji.or.jp)に『現在は施設内を観ることはできませんが、園内を自由に散策できる公園となっています』と明記されており、錦鯉展示自体は休止中と判断した。鹿沼市観光協会サイト(kanuma-kanko.jp)の営業時間欄にも『8:00～17:00＜臨時休業中＞』の注記あり（当該ページ最終更新日2024-12-17、閉館年月日は不明）。運営は株式会社加藤工業所（栃木県鹿沼市）。候補台帳の名称『鹿沼錦鯉公園資料館』は運営会社サイトでは『鹿沼錦鯉公園・鹿沼錦鯉資料館』と併記されており、鹿沼市観光協会・栃木県観光物産協会は単に『鹿沼錦鯉公園』と表記しているためこちらを正式名称として採用した。"
+  },
+  {
+   "verdict": "include",
+   "name": "華蔵寺公園バードドーム",
+   "kana": "けぞうじこうえんばーどどーむ",
+   "pref": "群馬県",
+   "city": "伊勢崎市",
+   "type": "other",
+   "lat": 36.343395,
+   "lng": 139.197052,
+   "url": "https://www.city.isesaki.lg.jp/kanko_bunka_sports/shizen_koen_seibutsu/17678.html",
+   "sourceUrls": [
+    "https://www.city.isesaki.lg.jp/kanko_bunka_sports/shizen_koen_seibutsu/17678.html"
+   ],
+   "status": "open",
+   "lastVerifiedAt": "2026-07-15",
+   "proposedId": "gunma_kezoji_koen_bird_dome",
+   "coordSource": "伊勢崎市公式サイト記載の総合公園『華蔵寺公園』代表住所『群馬県伊勢崎市華蔵寺町1番地1』を国土地理院ジオコーディングAPIで変換し、番地レベルで一致(36.343395, 139.197052)。バードドーム単体の個別住所は公式サイトに記載がないため公園代表点を採用。",
+   "address": "群馬県伊勢崎市華蔵寺町1-1",
+   "addressSourceUrl": "https://www.city.isesaki.lg.jp/kanko_bunka_sports/shizen_koen_seibutsu/17678.html",
+   "adoptionBasis": "総合公園『華蔵寺公園』内にある常設の鳥類展示施設（鳥舎）で、ボタンインコ等を中心に展示する独立した展示エリア。基準『鳥類園を含める』『公園内でも独立した常設展示エリアなら含める』の両方に該当する。",
+   "note": "伊勢崎市公式サイトでは公園全体の園内施設の一つとして『バードドーム』が名称のみ列挙されており、単独の詳細ページ・個別住所・料金表記は見当たらなかった（入園自体は公園として無料）。伊勢崎市都市計画部公園緑地課(0270-27-2769)が所管。一次情報として市公式サイト以外の到達先（伊勢崎市観光協会等）は確認できなかったため sourceUrls は1件のみ。"
+  }
+ ]
+}

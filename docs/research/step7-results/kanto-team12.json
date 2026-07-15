@@ -1,0 +1,117 @@
+{"team": "K12", "block": "関東", "results": [
+  {
+    "verdict": "include",
+    "name": "袖ヶ浦ふれあいどうぶつ縁",
+    "kana": "そでがうらふれあいどうぶつえん",
+    "pref": "千葉県",
+    "city": "袖ケ浦市",
+    "type": "zoo",
+    "lat": 35.416054,
+    "lng": 140.057968,
+    "url": "https://www.sodegaura-animal.jp/",
+    "sourceUrls": [
+      "https://www.sodegaura-animal.jp/about.html",
+      "https://www.sodegaura-animal.jp/"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "chiba_sodegaurafureaidoubutsuen",
+    "coordSource": "国土地理院APIで「千葉県袖ケ浦市上泉1506-10」を検索し、番地（1506番地）レベルで一致する代表点を取得。",
+    "address": "千葉県袖ケ浦市上泉1506-10",
+    "addressSourceUrl": "https://www.sodegaura-animal.jp/about.html",
+    "adoptionBasis": "ダチョウ・カピバラ・アルパカ・ヒツジ・ヤギ・ウサギ等、動物とのふれあい体験そのものを来園目的とする常設の専業ふれあい動物園のため、「牧場・ふれあい施設は、動物展示が主要な来場目的なら含める」に合致する。",
+    "note": "公式サイト（about.html footer）での正式表記は「袖ヶ浦ふれあいどうぶつ縁」（ヶは小字）。候補台帳の「袖ケ浦ふれあいどうぶつ縁」（ケは大字）とは施設名の字体が異なる。なお市名の「袖ケ浦市」はケ大字が正式表記でこちらは候補台帳と一致。前身は「ダチョウ王国 袖ケ浦ファーム」で2020年11月30日閉園、同年12月5日に本施設として開業（Wikipediaで確認、動物の一部は継承）。休縁日は毎週木曜（祝日を除く）で、閉園・休園の情報は無し。"
+  },
+  {
+    "verdict": "include",
+    "name": "世界の昆虫爬虫類王国",
+    "kana": "せかいのこんちゅうはちゅうるいおうこく",
+    "pref": "千葉県",
+    "city": "袖ケ浦市",
+    "type": "other",
+    "lat": 35.405704,
+    "lng": 140.054489,
+    "url": "https://t-doitsumura.co.jp/experience/insect-reptile-kingdom/",
+    "sourceUrls": [
+      "https://t-doitsumura.co.jp/experience/insect-reptile-kingdom/",
+      "https://t-doitsumura.co.jp/access/"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "chiba_sekainokonchuhachuruioukoku",
+    "coordSource": "国土地理院APIで「千葉県袖ケ浦市永吉419」（東京ドイツ村の所在地）を検索し番地一致で取得。世界の昆虫爬虫類王国は同園内の独立課金施設のため、園全体の代表点を採用。",
+    "address": "千葉県袖ケ浦市永吉419",
+    "addressSourceUrl": "https://t-doitsumura.co.jp/access/",
+    "adoptionBasis": "花のテーマパーク「東京ドイツ村」内にあるが、入園料とは別料金（3歳以上1,000円）を徴収する独立した常設の昆虫・爬虫類展示エリアで、カブトムシ・カメレオン・ヘビ等の生体展示・ふれあい体験を主目的とするため、「植物園・公園・遊園地内でも、独立した常設展示エリアなら含める」に合致する。",
+    "note": "公式サイトの「休止中」一覧ページ（https://t-doitsumura.co.jp/attraction-tag/pause/）を確認したところ、2026-07-15時点で該当記事なし（現在休止中のアトラクションはない）。なお東京ドイツ村全体が公式トップページの告知により7/14(火)〜16(木)臨時休園、7/17(金)より通常営業（定例の一時休園日で常設施設としての扱いには影響しない）。"
+  },
+  {
+    "verdict": "include",
+    "name": "清水公園ポニー牧場",
+    "kana": "しみずこうえんぽにーぼくじょう",
+    "pref": "千葉県",
+    "city": "野田市",
+    "type": "zoo",
+    "lat": 35.96006,
+    "lng": 139.85083,
+    "url": "https://www.shimizu-kouen.com/pony",
+    "sourceUrls": [
+      "https://www.shimizu-kouen.com/pony",
+      "https://www.shimizu-kouen.com/"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "chiba_shimizukouen_ponybokujo",
+    "coordSource": "国土地理院APIで「千葉県野田市清水906」（清水公園の所在地）を検索し番地一致で取得。",
+    "address": "千葉県野田市清水906",
+    "addressSourceUrl": "https://www.shimizu-kouen.com/pony",
+    "adoptionBasis": "レジャー施設「清水公園」内の常設エリアで、ポニーの乗馬・餌やり、モルモット・ウサギ・ヤギ・カピバラ等とのふれあい体験を主目的とする独立展示施設のため、「牧場・ふれあい施設は、動物展示が主要な来場目的なら含める」および「遊園地内でも独立した常設展示エリアなら含める」に合致する。",
+    "note": "候補台帳の「2026年5月リニューアルオープン」を公式サイトで確認：2024年12月2日から全面リニューアルのため休場し、2026年5月28日にグランドオープン（カピバラ・マーラー・アカカンガルーが新たに加わったことも公式ニュースで確認）。2026-07-15時点は通常営業日で、公式サイト上は「本日の営業は終了しました」（当日の営業時間終了）と表示されており、休園・休止ではない。"
+  },
+  {
+    "verdict": "include",
+    "name": "世界一ちっちゃな水族館",
+    "kana": "せかいいちちっちゃなすいぞくかん",
+    "pref": "千葉県",
+    "city": "銚子市",
+    "type": "aquarium",
+    "lat": 35.7070995,
+    "lng": 140.8404098,
+    "url": "https://choshi-aquarium.jimdofree.com/",
+    "sourceUrls": [
+      "https://choshi-iruka-watching.co.jp/access/",
+      "https://choshi-aquarium.jimdofree.com/"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "chiba_choshi_sekaiichichicchanasuizokukan",
+    "coordSource": "国土地理院APIで「千葉県銚子市潮見町15-9」を検索したが番地一致はなく町丁目レベルの代表点（35.704407, 140.843445）のみ取得。ちば観光ナビ（千葉県公式観光サイト）掲載の座標（35.7070995, 140.8404098）はGSI取得点に近接し番地レベルとみられるためこちらを採用。",
+    "address": "千葉県銚子市潮見町15-9",
+    "addressSourceUrl": "https://choshi-iruka-watching.co.jp/access/",
+    "adoptionBasis": "銚子海洋研究所社屋内にある常設の小規模水族館で、クラゲ等約30種の海洋生物の展示とタッチプール（ヒトデ・ナマコ）体験を主目的とするため、包含基準の「水族館」に合致する。",
+    "note": "令和元年(2019年)5月開業、2026-07-15時点で営業中（閉館情報なし）。営業時間は夏期(5-10月)10:00-17:00・冬期(11-4月)10:00-16:00、定休日は不定休。料金は大人(中学生以上)300円。運営会社は有限会社銚子海洋研究所（イルカ・クジラウォッチング事業と同一事業者）。"
+  },
+  {
+    "verdict": "include",
+    "name": "こみなと水族館",
+    "kana": "こみなとすいぞくかん",
+    "pref": "千葉県",
+    "city": "鴨川市",
+    "type": "aquarium",
+    "lat": 35.121361,
+    "lng": 140.183517,
+    "url": "http://marine.biosystems.chiba-u.jp/",
+    "sourceUrls": [
+      "http://marine.biosystems.chiba-u.jp/",
+      "http://marine.biosystems.chiba-u.jp/access_center.html"
+    ],
+    "status": "suspended",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "chiba_kominatosuizokukan",
+    "coordSource": "国土地理院APIで「千葉県鴨川市内浦1」（千葉大学海洋バイオシステム研究センターの所在地）を検索し番地（1番地）一致で取得。こみなと水族館は同センター敷地内にあるため同一の代表点を採用。",
+    "address": "千葉県鴨川市内浦1",
+    "addressSourceUrl": "http://marine.biosystems.chiba-u.jp/access_center.html",
+    "adoptionBasis": "千葉大学海洋バイオシステム研究センター敷地内にある入館無料の常設ミニ水族館で、房総の海に棲む生きた海洋生物の展示・標本展示・タッチプール（ヒトデ・ナマコ）を一般来場者向けに公開しているため、研究施設であっても一般公開展示部分は「水族館」の包含基準に合致する（研究室・実験室そのものは対象外）。",
+    "note": "千葉大学海洋バイオシステム研究センター公式サイト（marine.biosystems.chiba-u.jp）トップページに2026-07-15時点で「小湊の正門から駐車場までの間の道路で土砂崩れが発生したため応急措置が完了するまで一般の方の通行を禁止としています」という掲示があり（候補台帳の記載と一致・現時点でも継続中と確認）、一般来場者のアクセスが制限されているためstatusをsuspendedとした。復旧見込み時期はサイトに記載なし。開館日・時間（火〜木・土日10:00〜16:00、月・金・年末年始休館）はかもナビ（鴨川市の観光ポータル、二次情報）に基づくもので、大学公式サイト側には一般向け開館日時のページが見当たらず一次情報での再確認ができていない。"
+  }
+]}

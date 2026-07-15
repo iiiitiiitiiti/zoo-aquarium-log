@@ -1,0 +1,204 @@
+[
+  {
+    "name": "日光霧降高原 大笹牧場",
+    "reviewVerdict": "needs_user_decision",
+    "originalVerdict": "hold",
+    "checkedItems": {
+      "verdict": "mismatch",
+      "status": "match",
+      "address": "match",
+      "coords": "unchecked"
+    },
+    "corrections": {},
+    "evidence": "公式サイト(nikko-ozasa.jp)のグローバルメニュー・本文を全ページ確認したが、『放牧見学』『エサやり』『ふれあい広場』に類する記載は一切なく、メニューは『食べる(ジンギスカン・ソフトクリーム)・体験工房・買う(乳製品)・遊ぶ(乗馬・スノーモビル・オートキャンプ)』のみで構成されている。会社案内ページでも自社を『雲海と天空のリゾート牧場』と説明し、放牧牛(362ha・年間約300頭)への言及は沿革説明の中にとどまる。営業時間・住所(〒321-2792 栃木県日光市瀬尾字大笹原3405)は一次調査班の記録と一致。",
+    "holdRecommendation": "exclude推奨。動物展示・ふれあい要素が公式サイト上のメニュー・本文どこにも登場せず、来場目的は乳製品グルメと高原レジャー(乗馬・スノーモビル・キャンプ)に一貫して置かれている。基準文言『動物展示が主要な来場目的』を満たす一次情報の裏付けが取れない。"
+  },
+  {
+    "name": "那須高原 南ヶ丘牧場",
+    "reviewVerdict": "needs_user_decision",
+    "originalVerdict": "hold",
+    "checkedItems": {
+      "verdict": "mismatch",
+      "status": "match",
+      "address": "match",
+      "coords": "unchecked"
+    },
+    "corrections": {},
+    "evidence": "公式サイトトップページで『牛、羊、ヤギ、馬、ロバ、うさぎなど愛嬌のある仲間たちが皆さまを待っています』と明記した直後に『その他、アーチェリーやパターゴルフ、つり堀りなどのレジャー』と続き、動物ふれあいが主、他のレジャーが『その他』の付随扱いという書き方になっている。加えて『めぇ～めぇ～広場』という餌やり・ふれあい専用コーナーの存在、栃木県動物取扱業(展示・貸出・販売)の登録も確認した。住所(栃木県那須郡那須町湯本579番地)は公式フッターと一致。",
+    "holdRecommendation": "include推奨。公式サイトの記述構造上、動物ふれあいが来場目的の中心に位置づけられ、他の要素(アーチェリー等)は『その他』として付随的に紹介されている。動物取扱業登録があることも展示事業としての継続性を裏付ける。"
+  },
+  {
+    "name": "鹿沼錦鯉公園",
+    "reviewVerdict": "agree",
+    "originalVerdict": "include",
+    "checkedItems": {
+      "verdict": "match",
+      "status": "match",
+      "address": "match",
+      "coords": "unchecked"
+    },
+    "corrections": {},
+    "evidence": "鹿沼市観光協会公式サイト(kanuma-kanko.jp)で営業時間欄に『8:00～17:00＜臨時休業中＞』の記載を確認。栃木県観光物産協会(tochigiji.or.jp)は『現在は施設内を観ることはできませんが、園内を自由に散策できる公園となっています』と明記しており、一次調査班の記録と逐語一致。運営会社加藤工業所公式サイトでも施設名を『鹿沼錦鯉公園・鹿沼錦鯉資料館』と併記し、住所(栃木県鹿沼市栃窪1202番地3)も一致。",
+    "holdRecommendation": null
+  },
+  {
+    "name": "嬬恋牧場",
+    "reviewVerdict": "needs_user_decision",
+    "originalVerdict": "include",
+    "checkedItems": {
+      "verdict": "mismatch",
+      "status": "match",
+      "address": "mismatch",
+      "coords": "unchecked"
+    },
+    "corrections": {
+      "address": "群馬県吾妻郡嬬恋村干俣2401（いこーよ記載のアクセス欄住所。字止まりの現行recordより精度が高い可能性があるが未確定）"
+    },
+    "evidence": "嬬恋村役場観光商工課の公式サイト(tsumatabi.com)は本施設のメインを『愛妻の鐘』のセレモニーと説明し、動物とのふれあいは『ポニーやウサギ、童心に返って戯れてください』『動物とのふれあいも、ちょっとだけ楽しめます』と明記されており、動物展示は付随的な扱いにとどまる。いこーよ(iko-yo.net)は現在も【休業中】タグ付きで掲載され、牛馬放牧を紹介しているがB級グルメ・そば・愛妻セレモニーと並列。公式サイトと目される tsumagoi.tv はリダイレクトの中間ページで内容確認不可だった。",
+    "holdRecommendation": "verdict再検討を推奨。動物展示(牛馬放牧)が『来場目的の主要な要素』と言い切れる一次情報が薄く、公式(村役場)ソースは『愛妻の鐘』を主目的、動物ふれあいは『ちょっとだけ』の付随体験と説明している。大笹牧場・南ヶ丘牧場と同一基準で判定するなら、本件もhold相当の弱さがある。"
+  },
+  {
+    "name": "沼田公園動物舎",
+    "reviewVerdict": "agree",
+    "originalVerdict": "include",
+    "checkedItems": {
+      "verdict": "match",
+      "status": "match",
+      "address": "match",
+      "coords": "unchecked"
+    },
+    "corrections": {},
+    "evidence": "沼田市公式ページ(2023年11月10日更新)の『主な施設』欄に『動物舎』が明記されており、閉鎖・休止の告知は見当たらない。所在地(沼田市西倉内町594番地)も一致。動物舎閉鎖に関するニュース検索でも該当情報なし。種構成(ツキノワグマ等)は公式ページに記載がなく一次情報での確認は取れないまま(一次調査班の記録通り)。",
+    "holdRecommendation": null
+  },
+  {
+    "name": "伊香保おもちゃと人形自動車博物館 リス園",
+    "reviewVerdict": "needs_user_decision",
+    "originalVerdict": "hold",
+    "checkedItems": {
+      "verdict": "mismatch",
+      "status": "mismatch",
+      "address": "mismatch",
+      "coords": "unchecked"
+    },
+    "corrections": {
+      "city": "北群馬郡吉岡町（候補台帳の『渋川市』は誤り。公式サイト記載住所は〒370-3606 群馬県北群馬郡吉岡町上野田2145）"
+    },
+    "evidence": "公式サイト(ikaho-omocha.jp)トップページ・インフォメーションページの施設一覧(おもちゃと人形博物館・自動車博物館・イニシャルD藤原豆腐店等14施設)を確認したが『リス園』は一切登場しない。Web検索でも現在稼働中であることを示す一次・第三者情報は見つからなかった。住所は北群馬郡吉岡町であり、候補台帳のcity(渋川市)は誤り。",
+    "holdRecommendation": "exclude寄りだが未確定。公式施設一覧に全く登場せず、稼働中を示す証拠が見つからないため閉鎖の可能性が高い。ただし公式サイトに明示的な閉鎖告知もなく、電話確認等の追加調査で確定させるべき。"
+  },
+  {
+    "name": "城之内公園小動物園",
+    "reviewVerdict": "agree",
+    "originalVerdict": "include",
+    "checkedItems": {
+      "verdict": "match",
+      "status": "match",
+      "address": "match",
+      "coords": "unchecked"
+    },
+    "corrections": {},
+    "evidence": "第三者情報源いこーよ(iko-yo.net)で『公園内には小動物園があり、うさぎ、インコ、鶏などの小動物を見ることができます』と確認(一次調査班のnote記載の種構成と一致)。大泉町公式ページ(2025年4月3日更新)の施設概要には小動物園の記載がないが、閉鎖の告知も一切ない。住所(群馬県邑楽郡大泉町城之内二丁目24番)は公式ページと一致。",
+    "holdRecommendation": null
+  },
+  {
+    "name": "川口市立グリーンセンター バードセンター",
+    "reviewVerdict": "needs_user_decision",
+    "originalVerdict": "include",
+    "checkedItems": {
+      "verdict": "match",
+      "status": "mismatch",
+      "address": "match",
+      "coords": "unchecked"
+    },
+    "corrections": {},
+    "evidence": "2026年7月15日時点で公式施設案内ページ(greencenter.1110city.com/facility.html)を再取得したが『バードセンター　クジャクなどがいます』の記載のままで休止表記は無い。同ページ内の大集会堂・レストラン・冒険の森には『只今休業中です』の明示があるのと対照的で、バードセンターにはそれが無い。川口市公式ページ(2026年5月14日更新)でも活性化基本計画検討委員会の継続のみ確認でき、バードセンター個別の休止告知は見当たらなかった。第三者写真サイトの工事中報告(2023年)との整合は取れていない。",
+    "holdRecommendation": null
+  },
+  {
+    "name": "こみなと水族館",
+    "reviewVerdict": "agree",
+    "originalVerdict": "include",
+    "checkedItems": {
+      "verdict": "match",
+      "status": "match",
+      "address": "match",
+      "coords": "unchecked"
+    },
+    "corrections": {},
+    "evidence": "千葉大学海洋バイオシステム研究センター公式サイト(marine.biosystems.chiba-u.jp)トップページで『小湊の正門から駐車場までの間の道路で土砂崩れが発生したため応急措置が完了するまで一般の方の通行を禁止としています』の掲示を2026-07-15時点で確認、一次調査班の記録と逐語一致。住所(千葉県鴨川市内浦1)も交通案内ページと一致。",
+    "holdRecommendation": null
+  },
+  {
+    "name": "八丈富士牧野・ふれあい牧場",
+    "reviewVerdict": "needs_user_decision",
+    "originalVerdict": "hold",
+    "checkedItems": {
+      "verdict": "mismatch",
+      "status": "match",
+      "address": "match",
+      "coords": "unchecked"
+    },
+    "corrections": {
+      "name": "ふれあい牧場（候補台帳の『八丈富士牧野・ふれあい牧場』は公式ページの正式名称と異なる）"
+    },
+    "evidence": "八丈町公式ページ(2026年7月10日更新、5日前の最新版を確認)は『町政情報＞就農』カテゴリに掲載されており『観光・文化』カテゴリではない。本文は『牛をご覧になりながら八丈島の自然を満喫ください』とし、見どころとして『牛とのふれあい(※牛に直接ふれることはご遠慮ください、放牧のため牛が近くにいない場合もあります)』と『景色(三原山・海・市街地・空港)』を並列で紹介している。",
+    "holdRecommendation": "exclude寄り。公式ページ自体が『就農』カテゴリ(畜産振興施設)に分類しており観光施設として位置づけていない。加えて『直接ふれることはご遠慮ください』と明記され、動物とのふれあい体験ではなく遠目の観察に留まり、景色観賞と同格の扱いになっている。動物展示が『主要な来場目的』とは言い難い。"
+  },
+  {
+    "name": "東京都小笠原水産センター（小さな水族館）",
+    "reviewVerdict": "agree",
+    "originalVerdict": "include",
+    "checkedItems": {
+      "verdict": "match",
+      "status": "match",
+      "address": "match",
+      "coords": "unchecked"
+    },
+    "corrections": {},
+    "evidence": "公式ページ(soumu.metro.tokyo.lg.jp/07ogasawara/fish/aquarium)で『※改修工事のため、現在閉館しています。開館は令和9年4月を予定しています。』を確認、一次調査班の記録と逐語一致。正式名称『飼育観察棟』、住所(小笠原村父島字清瀬)は東京都島しょ農林水産総合センター公式ページと一致。",
+    "holdRecommendation": null
+  },
+  {
+    "name": "昭和公園動物園",
+    "reviewVerdict": "agree",
+    "originalVerdict": "include",
+    "checkedItems": {
+      "verdict": "match",
+      "status": "match",
+      "address": "match",
+      "coords": "unchecked"
+    },
+    "corrections": {},
+    "evidence": "昭島市公式ページ(2026年2月12日更新)で現在の展示動物(ヤクシカ・セキセイインコ・クロツル)を確認、クジャクの展示終了日(令和8年2月8日)も一致。休園・閉園の告知はなし。公園全体の所在地は『昭島市東町五丁目』(丁目までで番地なし)、候補台帳のaddress(東町5-11-43)は公園管理係の連絡先住所であり同一丁目内で代表点として妥当。",
+    "holdRecommendation": null
+  },
+  {
+    "name": "横浜市立間門小学校附属海水水族館（まかどシーマリンパーク）",
+    "reviewVerdict": "agree",
+    "originalVerdict": "include",
+    "checkedItems": {
+      "verdict": "match",
+      "status": "match",
+      "address": "match",
+      "coords": "unchecked"
+    },
+    "corrections": {},
+    "evidence": "学校公式サイトのお知らせ一覧で一般見学の告知日(2025年 3/8, 7/5, 11/29／2026年 3/7, 6/6, 7/11)を全件確認、候補台帳の記載と完全一致。museum.or.jpで開館時間9:00-16:00・休館日(土日祝＋学校休業日、4-11月第4土曜のみ開放)・料金無料・住所(横浜市中区本牧間門29-1)も一致。",
+    "holdRecommendation": null
+  },
+  {
+    "name": "いきもの探検隊 フレスポ稲毛店",
+    "reviewVerdict": "agree",
+    "originalVerdict": "include",
+    "checkedItems": {
+      "verdict": "match",
+      "status": "match",
+      "address": "match",
+      "coords": "unchecked"
+    },
+    "corrections": {},
+    "evidence": "フレスポ稲毛公式ショップページで『いきもの探検隊 [動物ふれあい体験]』として現在も掲載中であることを確認。『約30種類以上の海・陸・空・深の生き物』『おやつ・餌あげなどふれあい体験もできます』の記述、決済方法『現金』のみ、住所(千葉県千葉市稲毛区長沼原町731-17)がいずれも候補台帳の記録と一致。",
+    "holdRecommendation": null
+  }
+]

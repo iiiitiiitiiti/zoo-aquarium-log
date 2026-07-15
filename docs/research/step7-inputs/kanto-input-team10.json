@@ -1,0 +1,56 @@
+[
+ {
+  "name": "いきもの探検隊（フレスポ稲毛店）",
+  "pref": "千葉県",
+  "city": "千葉市稲毛区",
+  "foundUrls": [
+   "https://www.e-frespo.com/inage/shop/index.jsp?bf=1&fmt=1&shopid=2046"
+  ],
+  "typeGuess": "屋内型動物ふれあい施設",
+  "note": "ショッピングセンター内の常設施設。海・陸・空・深の生き物30種以上を展示、餌やり体験あり。入場料800円（3歳以上）。KABAZOO・Moff animal worldと同カテゴリ。2023年9月開業。"
+ },
+ {
+  "name": "千葉県酪農のさと",
+  "pref": "千葉県",
+  "city": "南房総市",
+  "foundUrls": [
+   "https://www.e-makiba.jp/",
+   "https://www.pref.chiba.lg.jp/chikusan/rakunounosato/index.html"
+  ],
+  "typeGuess": "牧場（県立）",
+  "note": "千葉県が設置する日本酪農発祥の地。白牛（在来種）・ホルスタイン・ヤギを常設飼育・ふれあい可能、入場無料。酪農資料館併設。"
+ },
+ {
+  "name": "南房ジャングルファーム（NAMBO JUNGLE FARM）",
+  "pref": "千葉県",
+  "city": "南房総市",
+  "foundUrls": [
+   "https://junglefarm.jp/",
+   "https://maruchiba.jp/spot/detail_15813.html"
+  ],
+  "typeGuess": "観光牧場（アグー豚専門）",
+  "note": "完全放牧のアグー豚牧場。牧場探検コースあり、大人1,000円〜の一般来場可能な有料施設。営業時間9:00-15:30。"
+ },
+ {
+  "name": "exstion（エクッション）印西ふれあい牧場",
+  "pref": "千葉県",
+  "city": "印西市",
+  "foundUrls": [
+   "https://inzaiparque.com/exstion/",
+   "https://exstion-fureai-lp.com/"
+  ],
+  "typeGuess": "ふれあい牧場",
+  "note": "ヤギ・ポニー・馬・小動物とのふれあい・乗馬体験を常設提供。"
+ },
+ {
+  "name": "Moff animal world（BIGHOPガーデンモール印西店）",
+  "pref": "千葉県",
+  "city": "印西市",
+  "foundUrls": [
+   "https://www.bighop.jp/shop/index.jsp?bf=1&fmt=6&shopid=2130",
+   "https://moff-moff.jp/en/animal-cafe/shop/moff-animal-watch/"
+  ],
+  "typeGuess": "屋内型動物園",
+  "note": "80種以上の動物と触れ合える屋内型動物園（県内最大級と紹介）。同運営の「Moff animal cafe」（幕張新都心店等）は動物カフェ業態のため別候補として除外扱い。"
+ }
+]

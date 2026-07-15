@@ -1,0 +1,56 @@
+[
+ {
+  "name": "多摩川ふれあい水族館",
+  "pref": "東京都",
+  "city": "昭島市",
+  "foundUrls": [
+   "https://www.gesui.metro.tokyo.lg.jp/pr/kengaku/guide/s-fureai",
+   "https://iko-yo.net/facilities/3187"
+  ],
+  "typeGuess": "aquarium",
+  "note": "多摩川上流水再生センター内。東京都下水道局運営、無料。イワナ・ヤマメ・アユ等約18種を4水槽で展示。平日のみ開館。"
+ },
+ {
+  "name": "板橋区立こども動物園",
+  "pref": "東京都",
+  "city": "板橋区",
+  "foundUrls": [
+   "https://www.city.itabashi.tokyo.jp/bousai/kouen/kouen/doubutsuen/index.html",
+   "https://itabashi-park-zoo.com/"
+  ],
+  "typeGuess": "zoo",
+  "note": "東板橋公園内。JAZA非加盟。ヤギ・ヒツジ・シカ等10種前後を飼育、ふれあいコーナーあり。入園無料。"
+ },
+ {
+  "name": "板橋区立こども動物園 高島平分園",
+  "pref": "東京都",
+  "city": "板橋区",
+  "foundUrls": [
+   "https://www.city.itabashi.tokyo.jp/bousai/kouen/kouen/doubutsuen/1006625.html",
+   "https://itabashi-park-zoo.com/bunen/"
+  ],
+  "typeGuess": "zoo",
+  "note": "徳丸ヶ原公園内。本園とは別所在地・別入口の施設。ヤギ・ヒツジ・モルモット・ポニー・鳥類。入園無料。"
+ },
+ {
+  "name": "板橋区立熱帯環境植物館",
+  "pref": "東京都",
+  "city": "板橋区",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/板橋区立熱帯環境植物館",
+   "https://www.seibu-la.co.jp/nettaikan/"
+  ],
+  "typeGuess": "both",
+  "note": "植物園（通称ねったいかん）だが海水・汽水・淡水魚を約150種2500匹展示する水族施設が展示の中核の一つ。独立した常設展示エリアとして候補に計上。"
+ },
+ {
+  "name": "なぎさポニーランド",
+  "pref": "東京都",
+  "city": "江戸川区",
+  "foundUrls": [
+   "https://www.city.edogawa.tokyo.jp/e066/kuseijoho/gaiyo/shisetsuguide/bunya/koendobutsuen/nagisaponyland.html"
+  ],
+  "typeGuess": "zoo",
+  "note": "なぎさ公園内。えどがわ環境財団運営、無料ポニー乗馬。江戸川区自然動物園とは別所在地の別施設。"
+ }
+]
