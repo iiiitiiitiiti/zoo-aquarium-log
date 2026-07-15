@@ -1,0 +1,294 @@
+[
+ {
+  "verdict": "hold",
+  "name": "日光霧降高原 大笹牧場",
+  "pref": "栃木県",
+  "city": "日光市",
+  "adoptionBasis": "公式サイト（日光霧降高原大笹牧場株式会社／運営母体の栃木県酪農業協同組合）は、標高1300mの育成牛放牧場（362ha・年間約300頭放牧）にレストハウス事業（ジンギスカン・ブラウンスイス牛乳製品・ソフトクリーム・体験工房・乗馬・スノーモビルランド・オートキャンプ等）が併設された「雲海と天空のリゾート牧場」として自社を説明しており、公式ページ本文では乳製品・グルメ・高原の景観・レジャー体験（乗馬・スノーモビル・キャンプ）が前面に出ている。候補台帳note記載の「放牧見学・エサやり・ポニー乗馬体験のふれあい広場」は一次情報（公式サイト）では確認できず、観光協会サイト等の二次情報のみに基づく可能性がある。放牧牛の見学が来場の主目的か、乳製品・グルメ・高原レジャーが主目的かを一次情報だけで判別できないため、施設に不利な確定を避けhold。",
+  "sourceUrls": [
+   "https://www.nikko-ozasa.jp/",
+   "https://www.nikko-ozasa.jp/guide/about-us/",
+   "https://www.nikko-ozasa.jp/ozasa-kirifuri/"
+  ],
+  "note": "入場料無料・駐車無料。営業時間8:45〜16:45（冬季9:30〜16:15）、定休日1月4日〜2月末の水・木曜日を公式サイトで確認。住所は公式サイト記載で〒321-1264（または問合せ先レストハウス事業部〒321-2792）栃木県日光市瀬尾字大笹原3405。閉園・休園情報なし、通常営業中。",
+  "_team": "K03"
+ },
+ {
+  "verdict": "hold",
+  "name": "那須高原 南ヶ丘牧場",
+  "pref": "栃木県",
+  "city": "那須町",
+  "adoptionBasis": "公式サイトは自らを『酪農を中心とした入場無料の観光牧場』と説明しており、ヤギ・ヒツジ・ウサギ・モルモット等とのふれあいコーナーは、パターゴルフ・アーチェリー・乗馬・乗ロバ・つり堀・アイスクリームづくり体験・乳製品販売など多数の非動物系アトラクションと並ぶ要素の一つに位置づけられている。動物展示（ふれあい）が『主要な来場目的』と言い切れるかどうか基準文だけでは判定できず、施設に不利な確定を避けるため保留とする。",
+  "sourceUrls": [
+   "https://www.minamigaoka.co.jp/smt/about/",
+   "https://www.minamigaoka.co.jp/smt/play/",
+   "https://www.minamigaoka.co.jp/smt/animal/"
+  ],
+  "note": "公式住所は栃木県那須郡那須町大字湯本579番地（〒325-0393）。動物展示の比重（来園目的の中心かどうか）について、レビュー班での再判定を推奨。",
+  "_team": "K05"
+ },
+ {
+  "verdict": "include",
+  "name": "鹿沼錦鯉公園",
+  "kana": "かぬまにしきごいこうえん",
+  "pref": "栃木県",
+  "city": "鹿沼市",
+  "type": "aquarium",
+  "lat": 36.589119,
+  "lng": 139.776627,
+  "url": "https://kanuma-kanko.jp/purpose/%E9%B9%BF%E6%B2%BC%E9%8C%A6%E9%AF%89%E5%85%AC%E5%9C%92/",
+  "sourceUrls": [
+   "https://kanuma-kanko.jp/purpose/%E9%B9%BF%E6%B2%BC%E9%8C%A6%E9%AF%89%E5%85%AC%E5%9C%92/",
+   "https://www.tochigiji.or.jp/spot/s9668",
+   "http://www.kato-industry.com/pisciculture/koi/"
+  ],
+  "status": "suspended",
+  "lastVerifiedAt": "2026-07-15",
+  "proposedId": "tochigi_kanuma_nishikigoi_koen",
+  "coordSource": "運営会社（株式会社加藤工業所）公式サイト記載住所『栃木県鹿沼市栃窪1202番地3』を国土地理院ジオコーディングAPIで変換し、字番地レベルで一致(36.589119, 139.776627)。",
+  "address": "栃木県鹿沼市栃窪1202-3",
+  "addressSourceUrl": "http://www.kato-industry.com/pisciculture/koi/",
+  "adoptionBasis": "日本初の錦鯉資料館・公園として70cmクラスの錦鯉を系統別に水槽展示してきた施設で、包含基準『水族館を含める』に該当。現在は資料館内部の見学ができない状態のため status は suspended として記録を保持する。",
+  "note": "栃木県観光物産協会公式サイト(tochigiji.or.jp)に『現在は施設内を観ることはできませんが、園内を自由に散策できる公園となっています』と明記されており、錦鯉展示自体は休止中と判断した。鹿沼市観光協会サイト(kanuma-kanko.jp)の営業時間欄にも『8:00～17:00＜臨時休業中＞』の注記あり（当該ページ最終更新日2024-12-17、閉館年月日は不明）。運営は株式会社加藤工業所（栃木県鹿沼市）。候補台帳の名称『鹿沼錦鯉公園資料館』は運営会社サイトでは『鹿沼錦鯉公園・鹿沼錦鯉資料館』と併記されており、鹿沼市観光協会・栃木県観光物産協会は単に『鹿沼錦鯉公園』と表記しているためこちらを正式名称として採用した。",
+  "_team": "K05"
+ },
+ {
+  "verdict": "include",
+  "name": "嬬恋牧場",
+  "kana": "つまごいぼくじょう",
+  "pref": "群馬県",
+  "city": "吾妻郡嬬恋村",
+  "type": "other",
+  "lat": 36.58834159,
+  "lng": 138.50828359,
+  "url": "https://www.tsumagoi-kankou.jp/",
+  "sourceUrls": [
+   "https://tsumatabi.com/spot/spot_6/",
+   "https://iko-yo.net/facilities/22383"
+  ],
+  "status": "suspended",
+  "lastVerifiedAt": "2026-07-15",
+  "proposedId": "gunma_tsumagoi_bokujo",
+  "coordSource": "tenki.jp（日本気象協会）お出かけスポット天気ページに記載の緯度経度を採用。住所が大字・字止まりで街区番号を持たないためGSIアドレス検索APIでは座標を取得できなかった。",
+  "address": "群馬県吾妻郡嬬恋村干俣",
+  "addressSourceUrl": "https://tsumatabi.com/spot/spot_6/",
+  "adoptionBasis": "標高約1400mの観光牧場で牛・馬を放牧展示しており、動物展示（放牧されたのびのびとした牛馬）が来場目的の主要な要素であるため牧場として包含基準に該当。現在は休業中のため status=suspended として記録を保持。",
+  "note": "嬬恋村役場観光商工課が運営するtsumatabi.comでは休業の明記なし。ただしiko-yo・jalan・日本気象協会tenki.jp等の複数の第三者情報源で『休業中』『臨時休業中』の表記が一致しており、候補台帳のnote通り休業中と判断。address は番地のない字（あざ）表記までしか公式情報源で確認できなかったため、地番までは記載していない。",
+  "_team": "K06"
+ },
+ {
+  "verdict": "include",
+  "name": "沼田公園動物舎",
+  "kana": "ぬまたこうえんどうぶつしゃ",
+  "pref": "群馬県",
+  "city": "沼田市",
+  "type": "other",
+  "lat": 36.648399,
+  "lng": 139.040802,
+  "url": "https://www.city.numata.gunma.jp/shisetsu/kouen/1001672.html",
+  "sourceUrls": [
+   "https://www.city.numata.gunma.jp/shisetsu/kouen/1001672.html"
+  ],
+  "status": "open",
+  "lastVerifiedAt": "2026-07-15",
+  "proposedId": "gunma_numata_koen_dobutsusha",
+  "coordSource": "国土地理院住所検索API（群馬県沼田市西倉内町594）。公式ページ記載のGoogleマップリンク座標(36.648107,139.04093)ともほぼ一致。",
+  "address": "群馬県沼田市西倉内町594",
+  "addressSourceUrl": "https://www.city.numata.gunma.jp/shisetsu/kouen/1001672.html",
+  "adoptionBasis": "沼田公園（総合公園）内に設置された動物舎で、生きた動物の常設展示を目的とする独立した展示エリア。包含基準『植物園・公園・遊園地内でも、独立した常設展示エリアなら含める』に該当。",
+  "note": "公式ページ（2023年11月更新）は施設名を『動物舎』とのみ記載し個別種の記載なし。ツキノワグマ・ウサギ・孔雀・インコの飼育は来園者ブログ等の二次情報にとどまり一次情報での種構成確認は取れず。沼田市観光協会の公園紹介ページ（numata-kankou.jp）には動物舎の記載自体がなく、観光の主目的としては扱われていない模様。閉鎖・休止の一次情報は見つからず、現時点で公式ページ上は存続表記。要現地確認。",
+  "_team": "K07"
+ },
+ {
+  "verdict": "hold",
+  "name": "伊香保おもちゃと人形自動車博物館 リス園",
+  "pref": "群馬県",
+  "city": "北群馬郡吉岡町",
+  "adoptionBasis": "動物ふれあい系の展示として基準上は含め得るが、公式サイト全ページ共通の施設一覧（おもちゃと人形博物館・自動車博物館・イニシャルD藤原豆腐店・三丁目の夕日・昭和レトロパーク・駄菓子屋横丁・ミニミュージアム・ミニタリーゾーン・シネマワールド・テディベア博物館・昭和スターロマン館・プロレスミュージアム・ルート66ガーデン・ゴーストハウス）に『リス園』が現在含まれておらず、稼働中か既に閉鎖されたか一次情報で確認できないため保留。",
+  "sourceUrls": [
+   "http://www.ikaho-omocha.jp/index.html",
+   "http://www.ikaho-omocha.jp/04info.html"
+  ],
+  "note": "候補台帳ではpref=群馬県/city=渋川市とされていたが、公式サイト記載の所在地は『〒370-3606 群馬県北群馬郡吉岡町上野田2145』であり渋川市ではない（食い違い）。リス園の閉鎖を明言する一次情報も見つからず、Wikipediaの閉鎖記載と一部レビューサイトの営業中示唆が矛盾したままの状態。要電話確認等の追加調査。",
+  "_team": "K07"
+ },
+ {
+  "verdict": "include",
+  "name": "城之内公園小動物園",
+  "kana": "じょうのうちこうえんしょうどうぶつえん",
+  "pref": "群馬県",
+  "city": "邑楽郡大泉町",
+  "type": "zoo",
+  "lat": 36.262178,
+  "lng": 139.414835,
+  "url": "https://www.town.oizumi.gunma.jp/s040/map/040/20200630231658.html",
+  "sourceUrls": [
+   "https://www.town.oizumi.gunma.jp/s040/map/040/20200630231658.html",
+   "https://www.dan-b.com/park_jounouchi/"
+  ],
+  "status": "open",
+  "lastVerifiedAt": "2026-07-15",
+  "proposedId": "gunma_jonouchikoen_shodoubutsuen",
+  "coordSource": "大泉町公式ページに埋め込まれたGoogleMapリンク座標(36.2621779,139.4148348)を採用。国土地理院住所検索『群馬県大泉町城之内二丁目24番』(36.260719,139.41304)、第三者サイトdan-b.comの構造化データ(36.261962,139.414163)ともに100〜200m以内で近接しクロスチェック済み。",
+  "address": "群馬県邑楽郡大泉町城之内2-24",
+  "addressSourceUrl": "https://www.town.oizumi.gunma.jp/s040/map/040/20200630231658.html",
+  "adoptionBasis": "小泉城跡を整備した城之内公園内に常設の小動物園（ウサギ・インコ・ニワトリ等）があり、包含基準の『動物園を含める』および『公園内でも独立した常設展示エリアなら含める』に合致。",
+  "note": "公式ページ現行の『施設概要』欄には小動物園の記載がないが、複数の第三者情報源（だんべー.com、note『ZASOちゃんねる』の2022年11月訪問記録等）で存続を確認。閉園・休園の一次情報は見つからずopen扱い。",
+  "_team": "K08"
+ },
+ {
+  "verdict": "include",
+  "name": "川口市立グリーンセンター バードセンター",
+  "kana": "かわぐちしりつぐりーんせんたーばーどせんたー",
+  "pref": "埼玉県",
+  "city": "川口市",
+  "type": "other",
+  "lat": 35.845146,
+  "lng": 139.726974,
+  "url": "https://greencenter.1110city.com/facility.html",
+  "sourceUrls": [
+   "https://greencenter.1110city.com/facility.html",
+   "https://www.city.kawaguchi.lg.jp/soshiki/01110/060/index.html"
+  ],
+  "status": "suspended",
+  "lastVerifiedAt": "2026-07-15",
+  "proposedId": "saitama_greencenter_bird_center",
+  "coordSource": "川口市公式ページ記載の所在地『埼玉県川口市新井宿700』を国土地理院ジオコーディングAPIで変換（35.845146,139.726974）。バードセンターは園内の一区画で専用の住所・座標は公表されていないため、グリーンセンター全体の代表点を採用。",
+  "address": "埼玉県川口市新井宿700",
+  "addressSourceUrl": "https://www.city.kawaguchi.lg.jp/soshiki/01110/060/index.html",
+  "adoptionBasis": "クジャク等の鳥類を常設展示する川口市立グリーンセンター内の独立した鳥類展示エリアで、包含基準『鳥類園を含める』および『植物園・公園内でも独立した常設展示エリアなら含める』に合致。現在は再整備で休止中とみられるが、基準により休止中も記録を保持する（status: suspended）。",
+  "note": "情報源間で状態が食い違う。第三者写真サイト（go2park.net、2023年5月更新）は『大温室〜バードセンター〜梅林付近は2022年頃から工事のため立入禁止、バードセンターは取り壊され別施設に生まれ変わる予定』と記載。一方、公式サイト（greencenter.1110city.com/facility.html、2026年7月15日時点で到達確認）の施設案内ページは『バードセンター　クジャクなどがいます』と記載したままで、休止の明示なし（同ページ内の大集会堂・レストランには『只今休業中です』の明示があるのに対しバードセンターにはそれがない）。川口市公式ページでは『川口市立グリーンセンター活性化基本計画検討委員会』が継続的に開催され再整備計画が進行中であることを確認。公式サイトの記載が更新漏れの可能性が高いと判断し、候補台帳の情報（休園中・改修中）を優先してsuspendedとした。次回レビューでの現地確認を推奨。",
+  "_team": "K08"
+ },
+ {
+  "verdict": "include",
+  "name": "こみなと水族館",
+  "kana": "こみなとすいぞくかん",
+  "pref": "千葉県",
+  "city": "鴨川市",
+  "type": "aquarium",
+  "lat": 35.121361,
+  "lng": 140.183517,
+  "url": "http://marine.biosystems.chiba-u.jp/",
+  "sourceUrls": [
+   "http://marine.biosystems.chiba-u.jp/",
+   "http://marine.biosystems.chiba-u.jp/access_center.html"
+  ],
+  "status": "suspended",
+  "lastVerifiedAt": "2026-07-15",
+  "proposedId": "chiba_kominatosuizokukan",
+  "coordSource": "国土地理院APIで「千葉県鴨川市内浦1」（千葉大学海洋バイオシステム研究センターの所在地）を検索し番地（1番地）一致で取得。こみなと水族館は同センター敷地内にあるため同一の代表点を採用。",
+  "address": "千葉県鴨川市内浦1",
+  "addressSourceUrl": "http://marine.biosystems.chiba-u.jp/access_center.html",
+  "adoptionBasis": "千葉大学海洋バイオシステム研究センター敷地内にある入館無料の常設ミニ水族館で、房総の海に棲む生きた海洋生物の展示・標本展示・タッチプール（ヒトデ・ナマコ）を一般来場者向けに公開しているため、研究施設であっても一般公開展示部分は「水族館」の包含基準に合致する（研究室・実験室そのものは対象外）。",
+  "note": "千葉大学海洋バイオシステム研究センター公式サイト（marine.biosystems.chiba-u.jp）トップページに2026-07-15時点で「小湊の正門から駐車場までの間の道路で土砂崩れが発生したため応急措置が完了するまで一般の方の通行を禁止としています」という掲示があり（候補台帳の記載と一致・現時点でも継続中と確認）、一般来場者のアクセスが制限されているためstatusをsuspendedとした。復旧見込み時期はサイトに記載なし。開館日・時間（火〜木・土日10:00〜16:00、月・金・年末年始休館）はかもナビ（鴨川市の観光ポータル、二次情報）に基づくもので、大学公式サイト側には一般向け開館日時のページが見当たらず一次情報での再確認ができていない。",
+  "_team": "K12"
+ },
+ {
+  "verdict": "hold",
+  "name": "八丈富士牧野・ふれあい牧場",
+  "pref": "東京都",
+  "city": "八丈町",
+  "adoptionBasis": "八丈町公式ページ（就農カテゴリ内に掲載、正式ページ名は『ふれあい牧場』で候補台帳の『八丈富士牧野・ふれあい牧場』とは名称が一部異なる）によれば、畜産振興のための放牧地であり、見どころとして『牛とのふれあい・観察』と『三原山・海・市街地・空港が一望できる景色』が並列で紹介されている。さらに『牛に直接ふれることはご遠慮ください』と明記され、放牧のため牛が近くにいない場合もあるとの注記もあり、名称に反し常時の動物ふれあい体験を保証する施設ではない。動物展示（観察）が来場の『主要目的』と言い切れるか基準文だけでは判定できず、施設に不利な確定を避けるため保留とする。",
+  "sourceUrls": [
+   "https://www.town.hachijo.tokyo.jp/chousei/shuunou/fureai-bokujo/"
+  ],
+  "note": "公式ページ上の正式名称は『ふれあい牧場』（八丈町産業観光課産業係所管）。候補台帳の名称『八丈富士牧野・ふれあい牧場』とは食い違いあり。休憩舎開放時間9:00〜16:00、年中無休、入場無料。閉園・休園の情報はなし。レビュー班での再判定を推奨。",
+  "_team": "K13"
+ },
+ {
+  "verdict": "include",
+  "name": "東京都小笠原水産センター（小さな水族館）",
+  "kana": "とうきょうとおがさわらすいさんせんたーちいさなすいぞくかん",
+  "pref": "東京都",
+  "city": "小笠原村",
+  "type": "aquarium",
+  "lat": 27.0976,
+  "lng": 142.1984,
+  "url": "https://www.soumu.metro.tokyo.lg.jp/07ogasawara/fish/aquarium",
+  "sourceUrls": [
+   "https://www.soumu.metro.tokyo.lg.jp/07ogasawara/fish/aquarium",
+   "https://www.ifarc.metro.tokyo.lg.jp/about/place/place06.html"
+  ],
+  "status": "suspended",
+  "lastVerifiedAt": "2026-07-15",
+  "proposedId": "tokyo_ogasawara_suisan_center_aquarium",
+  "coordSource": "国土地理院APIは公式住所『小笠原村父島字清瀬』を父島全体レベルの代表点（142.20961, 27.071243）としてしか解決できなかった（離島の字レベル未収録）。そのため民間地図サービス2件（mapple.net: 142.19832633, 27.09778577／asoview.com: 142.198393, 27.0974358）をクロスチェックし、両者が約40m以内で一致することを確認のうえ、その中間値付近の代表点を採用。",
+  "address": "東京都小笠原村父島字清瀬",
+  "addressSourceUrl": "https://www.ifarc.metro.tokyo.lg.jp/about/place/place06.html",
+  "adoptionBasis": "東京都小笠原支庁水産センター内の飼育観察棟（通称『小さな水族館』）で、小笠原周辺海域や父島・母島の河川・貯水池に生息する魚介類（アカハタ、サメ・エイ類、アオリイカ、アオウミガメ等）を常設展示する入館無料の施設。包含基準の『水族館』に合致。",
+  "note": "公式ページ（soumu.metro.tokyo.lg.jp/07ogasawara/fish/aquarium）に『※改修工事のため、現在閉館しています。開館は令和9年4月を予定しています。』と明記されており、2026-07-15時点で改修工事による休館中（status: suspended）。正式名称は『飼育観察棟』（通称『小さな水族館』）。運営は東京都小笠原支庁水産センター。",
+  "_team": "K13"
+ },
+ {
+  "verdict": "include",
+  "name": "昭和公園動物園",
+  "kana": "しょうわこうえんどうぶつえん",
+  "pref": "東京都",
+  "city": "昭島市",
+  "type": "zoo",
+  "lat": 35.702644,
+  "lng": 139.384598,
+  "url": "https://www.city.akishima.lg.jp/s079/010/010/020/20170509100126.html",
+  "sourceUrls": [
+   "https://www.city.akishima.lg.jp/s079/010/010/020/20170509100126.html"
+  ],
+  "status": "open",
+  "lastVerifiedAt": "2026-07-15",
+  "proposedId": "tokyo_showakoen_dobutsuen",
+  "coordSource": "国土地理院APIで昭島市公式サイト記載の連絡先住所『東京都昭島市東町5-11-43』（公園全体の所在地『昭島市東町五丁目』内、都市整備部管理課公園管理係の所在地）を検索し、丁目・番・号レベルで完全一致する代表点を取得。",
+  "address": "東京都昭島市東町5-11-43",
+  "addressSourceUrl": "https://www.city.akishima.lg.jp/s079/010/010/020/20170509100126.html",
+  "adoptionBasis": "昭島市営（都下初の市営動物園、昭和38年開園）で、ヤクシカ・セキセイインコ・クロツル等の生きた動物を常設展示する入園無料の施設。包含基準の『動物園』に合致。",
+  "note": "平成14年3月策定の『昭島市立昭和公園整備構想』で動物園廃止の方向性が示されて以降、段階的に展示動物を終了しており、直近ではクジャクが令和8年（2026年）2月8日に展示終了（過去にはタヌキ2003年、アライグマ2006年、ウサギ2017年、ニホンザル2019年に終了）。2026-07-15確認時点でヤクシカ・セキセイインコ・クロツルは展示継続中で、休園・閉園の告知はなし（status: open）。ただし今後もさらなる縮小・展示終了が続く可能性があり、次回検証時に要再確認。",
+  "_team": "K13"
+ },
+ {
+  "verdict": "include",
+  "name": "横浜市立間門小学校附属海水水族館（まかどシーマリンパーク）",
+  "kana": "よこはましりつまかどしょうがっこうふぞくかいすいすいぞくかん（まかどシーマリンパーク）",
+  "pref": "神奈川県",
+  "city": "横浜市中区",
+  "type": "aquarium",
+  "lat": 35.417816,
+  "lng": 139.655075,
+  "url": "https://www.edu.city.yokohama.lg.jp/school/es/makado/index.cfm/1,0,59,html",
+  "sourceUrls": [
+   "https://www.edu.city.yokohama.lg.jp/school/es/makado/index.cfm/1,0,59,html",
+   "https://www.museum.or.jp/museum/2886"
+  ],
+  "status": "open",
+  "lastVerifiedAt": "2026-07-15",
+  "proposedId": "kanagawa_makado_sea_marine_park",
+  "coordSource": "国土地理院住所検索API（神奈川県横浜市中区本牧間門29-1）",
+  "address": "神奈川県横浜市中区本牧間門29-1",
+  "addressSourceUrl": "https://www.edu.city.yokohama.lg.jp/school/es/makado/",
+  "adoptionBasis": "小学校敷地内の施設だが、平日9:00-16:00は学校職員室に申し出れば誰でも無料で観覧でき、4-11月の第4土曜は一般開放日として広く公開している。サメ・ウツボ等の海水魚を常設飼育し生体展示を主目的とするため『常設で一般来場でき、生きた水生生物の展示を主目的とする施設』に該当し、研究施設・期間限定展示の除外類型には当たらない。",
+  "note": "学校公式サイト附属頁の情報では開館9:00-16:00、休館日は土・日・祝日と学校休業日（4-11月の第4土曜は開放、春夏冬休み中も開館）、料金無料。加えて学校公式サイトが不定期に土曜『一般見学』を告知（2025-2026年実績: 3/8,7/5,11/29,3/7,6/6,7/11）。候補台帳の『月1回程度の一般公開』は開催頻度としてはやや過大（年数回〜隔月程度が実際の告知頻度）だが、無料の一般公開自体は一次情報で確認できた。閉園・休園情報は確認されず。",
+  "_team": "K16"
+ },
+ {
+  "verdict": "include",
+  "name": "いきもの探検隊 フレスポ稲毛店",
+  "kana": "いきものたんけんたいふれすぽいなげてん",
+  "pref": "千葉県",
+  "city": "千葉市稲毛区",
+  "type": "other",
+  "lat": 35.65575,
+  "lng": 140.127365,
+  "url": "https://www.e-frespo.com/inage/shop/index.jsp?bf=1&fmt=1&shopid=2046",
+  "sourceUrls": [
+   "https://www.e-frespo.com/inage/shop/index.jsp?bf=1&fmt=1&shopid=2046",
+   "https://www.e-frespo.com/inage/shop/access.jsp"
+  ],
+  "status": "open",
+  "lastVerifiedAt": "2026-07-15",
+  "proposedId": "chiba_ikimono_tanken_tai_frespo_inage",
+  "coordSource": "国土地理院APIで施設所在地『千葉県千葉市稲毛区長沼原町731-17』（フレスポ稲毛の住所）を検索し取得（番地『731』レベルで一致、枝番『-17』は未反映）。",
+  "address": "千葉県千葉市稲毛区長沼原町731-17",
+  "addressSourceUrl": "https://www.e-frespo.com/inage/shop/access.jsp",
+  "adoptionBasis": "常設で一般来場でき、30種以上の海・陸・空・深の生き物の展示・餌やり体験を主目的とする有料施設（大人・子供一律800円）。決済方法は現金のみで飲食物提供の記載はなく、動物カフェではなく動物ふれあい体験施設であるため、牧場・ふれあい施設の包含基準（動物展示が主要な来場目的）に合致。",
+  "note": "運営会社の全国統一公式サイトは確認できず（Web検索でも『公式ウェブサイトは存在せずInstagram中心』との情報のみ）。ショップ情報はモール運営元（大和リース）の施設ページとInstagram(@ikimonotankentai_inage)が情報源。候補台帳が言及するKABAZOO・Moff animal worldとは別会社の運営（チェーン展開する同業態の別ブランド）と見られるが、運営会社名は一次情報で確認できず。2026年7月時点で閉店・休業情報はなく、フレスポ稲毛公式サイトに掲載中のため営業中と判断。",
+  "_team": "K10"
+ }
+]

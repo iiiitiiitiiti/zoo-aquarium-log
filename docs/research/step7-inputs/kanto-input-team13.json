@@ -1,0 +1,55 @@
+[
+ {
+  "name": "東京農業大学「食と農」の博物館（バイオリウム）",
+  "pref": "東京都",
+  "city": "世田谷区",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/日本の動物園一覧",
+   "https://www.nodai.ac.jp/campus/facilities/syokutonou/jyosetu_tenji/"
+  ],
+  "typeGuess": "both",
+  "note": "JAZA非加盟。動物園・水族館・植物園の垣根を超えた「バイオリウム」でワオキツネザル等のキツネザル3種・アルダブラゾウガメ・魚類等を常設展示。入館無料。"
+ },
+ {
+  "name": "八丈富士牧野・ふれあい牧場",
+  "pref": "東京都",
+  "city": "八丈町",
+  "foundUrls": [
+   "https://www.town.hachijo.tokyo.jp/chousei/shuunou/fureai-bokujo/"
+  ],
+  "typeGuess": "zoo",
+  "note": "八丈富士中腹の牧場。牛とのふれあいが主目的、入場無料・常設。"
+ },
+ {
+  "name": "高尾山さる園・野草園",
+  "pref": "東京都",
+  "city": "八王子市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/日本の動物園一覧",
+   "https://www.takaotozan.co.jp/monkey/"
+  ],
+  "typeGuess": "zoo",
+  "note": "JAZA非加盟。約80頭のニホンザル飼育施設と野草園の複合。高尾登山電鉄運営、常設・有料。"
+ },
+ {
+  "name": "東京都小笠原水産センター（小さな水族館）",
+  "pref": "東京都",
+  "city": "小笠原村",
+  "foundUrls": [
+   "https://www.soumu.metro.tokyo.lg.jp/07ogasawara/fish/aquarium",
+   "https://www.visitogasawara.com/archive/archive-3809/"
+  ],
+  "typeGuess": "aquarium",
+  "note": "父島。小笠原近海・河川の生物を展示する無料水族館。都小笠原支庁水産課運営、常設。"
+ },
+ {
+  "name": "昭和公園動物園",
+  "pref": "東京都",
+  "city": "昭島市",
+  "foundUrls": [
+   "https://www.city.akishima.lg.jp/s079/010/010/020/20170509100126.html"
+  ],
+  "typeGuess": "zoo",
+  "note": "1963年開園、市営。シカ・クジャク・インコ・ニホンザル・ツル等展示。入園無料・年中無休。"
+ }
+]

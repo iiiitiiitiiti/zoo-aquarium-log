@@ -1,0 +1,55 @@
+[
+ {
+  "name": "那須高原 南ヶ丘牧場",
+  "pref": "栃木県",
+  "city": "那須町",
+  "foundUrls": [
+   "https://www.minamigaoka.co.jp/smt/play/marmot.html"
+  ],
+  "typeGuess": "other",
+  "note": "入場無料の観光牧場。ヤギ・ヒツジ・ウサギ・モルモット等とのふれあい広場あり"
+ },
+ {
+  "name": "那須昆虫ワールド",
+  "pref": "栃木県",
+  "city": "那須町",
+  "foundUrls": [
+   "https://www.nasukon.com/",
+   "https://www.tochinavi.net/spot/home/?id=5257"
+  ],
+  "typeGuess": "other",
+  "note": "体験型昆虫ミュージアム。カブトムシ・クワガタとのふれあいコーナーあり"
+ },
+ {
+  "name": "那須ハイランドパーク(ふれあいコーナー)",
+  "pref": "栃木県",
+  "city": "那須町",
+  "foundUrls": [
+   "https://www.nasuhai.co.jp/attraction/detail.php?n=150"
+  ],
+  "typeGuess": "zoo",
+  "note": "遊園地内の常設・入場無料ふれあいエリア。カピバラ・ミーアキャット・ヤギ・ポニー・フクロウ・ワシミミズク等"
+ },
+ {
+  "name": "鹿沼錦鯉公園資料館",
+  "pref": "栃木県",
+  "city": "鹿沼市",
+  "foundUrls": [
+   "https://kanuma-kanko.jp/purpose/%E9%B9%BF%E6%B2%BC%E9%8C%A6%E9%AF%89%E5%85%AC%E5%9C%92/",
+   "https://www.tochigiji.or.jp/spot/s9668"
+  ],
+  "typeGuess": "aquarium",
+  "note": "日本初の錦鯉資料館。70cmクラスの錦鯉を系統別水槽展示。入園無料"
+ },
+ {
+  "name": "華蔵寺公園バードドーム",
+  "pref": "群馬県",
+  "city": "伊勢崎市",
+  "foundUrls": [
+   "https://pandanocoto.com/article/zoo/zoo-kezouji-bird",
+   "https://www.city.isesaki.lg.jp/kanko_bunka_sports/shizen_koen_seibutsu/17678.html"
+  ],
+  "typeGuess": "鳥類園",
+  "note": "総合公園内の鳥舎。ボタンインコ100羽以上を中心に展示。無料。"
+ }
+]

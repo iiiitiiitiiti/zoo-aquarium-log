@@ -1,0 +1,57 @@
+[
+ {
+  "name": "服部牧場",
+  "pref": "神奈川県",
+  "city": "愛甲郡愛川町",
+  "foundUrls": [
+   "https://kanagawa-hattoribokujou.com/",
+   "https://www.pref.kanagawa.jp/docs/u5r/cnt/f550/tabi-130.html"
+  ],
+  "typeGuess": "ふれあい牧場",
+  "note": "乳牛・馬・羊・ヤギ・うさぎ・ミニブタ等10種以上を常設飼育する観光牧場"
+ },
+ {
+  "name": "横浜開運水族館 フォーチュンアクアリウム",
+  "pref": "神奈川県",
+  "city": "横浜市中区",
+  "foundUrls": [
+   "https://fortune-aquarium.com/",
+   "https://www.kanagawa-kankou.or.jp/spot/7382"
+  ],
+  "typeGuess": "水族館（商業・占いテーマ）",
+  "note": "2022年3月開業、横浜中華街チャイナスクエア3F。88の水槽で生体展示する常設商業水族館"
+ },
+ {
+  "name": "横浜市立間門小学校附属海水水族館（まかどシーマリンパーク）",
+  "pref": "神奈川県",
+  "city": "横浜市中区",
+  "foundUrls": [
+   "https://www.edu.city.yokohama.lg.jp/school/es/makado/index.cfm/1,0,59,html",
+   "https://www.museum.or.jp/museum/2886"
+  ],
+  "typeGuess": "水族館（学校附属）",
+  "note": "小学校附属だが月1回程度・無料で一般公開。サメ・ウツボ等の海水魚を常設飼育"
+ },
+ {
+  "name": "雪印こどもの国牧場",
+  "pref": "神奈川県",
+  "city": "横浜市青葉区",
+  "foundUrls": [
+   "https://www.kodomonokuni-bokujyo.co.jp/",
+   "https://www.kodomonokuni.org/bokujyo/"
+  ],
+  "typeGuess": "ふれあい牧場",
+  "note": "「こどもの国」内の常設牧場エリア。乳牛・羊等約40頭"
+ },
+ {
+  "name": "相模川ふれあい科学館 アクアリウムさがみはら",
+  "pref": "神奈川県",
+  "city": "相模原市中央区",
+  "foundUrls": [
+   "https://sagamigawa-fureai.com/",
+   "https://www.city.sagamihara.kanagawa.jp/kurashi/shisetsu/bunka_shakai/library_etc/1002759.html"
+  ],
+  "typeGuess": "水族館（淡水・相模川テーマ）",
+  "note": "相模原市立の淡水水族館。既存マスタに未登録"
+ }
+]

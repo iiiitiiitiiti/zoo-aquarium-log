@@ -1,0 +1,56 @@
+[
+ {
+  "name": "ぐんま昆虫の森",
+  "pref": "群馬県",
+  "city": "桐生市",
+  "foundUrls": [
+   "https://www.pref.gunma.jp/site/giw/",
+   "https://ja.wikipedia.org/wiki/%E3%81%90%E3%82%93%E3%81%BE%E6%98%86%E8%99%AB%E3%81%AE%E6%A3%AE"
+  ],
+  "typeGuess": "昆虫館",
+  "note": "県立の昆虫観察施設。安藤忠雄設計の昆虫観察館（生態温室）で1400種以上の昆虫を通年展示。日本最大級の昆虫園。"
+ },
+ {
+  "name": "沼田公園動物舎",
+  "pref": "群馬県",
+  "city": "沼田市",
+  "foundUrls": [
+   "https://www.city.numata.gunma.jp/shisetsu/kouen/1001672.html"
+  ],
+  "typeGuess": "動物園",
+  "note": "沼田城址公園内の小規模動物舎。ツキノワグマ・ウサギ・孔雀・インコ等を飼育。無料・24時間開園の公園内施設。"
+ },
+ {
+  "name": "伊香保グリーン牧場",
+  "pref": "群馬県",
+  "city": "渋川市",
+  "foundUrls": [
+   "https://www.greenbokujo.jp/about/experience/",
+   "https://gunma-kanko.jp/spots/3"
+  ],
+  "typeGuess": "ふれあい牧場・動物ふれあい施設",
+  "note": "動物とのふれあい体験プログラムが主目的の牧場テーマパーク。"
+ },
+ {
+  "name": "伊香保おもちゃと人形自動車博物館 リス園",
+  "pref": "群馬県",
+  "city": "渋川市",
+  "foundUrls": [
+   "http://www.ikaho-omocha.jp/index.html",
+   "https://hatarakukuruma-suki.com/ikaho-museum/"
+  ],
+  "typeGuess": "動物園",
+  "note": "Wikipedia『日本の動物園一覧』では閉鎖施設として記載されていたが、直近の検索結果では約100匹のリスが飼育され稼働中の記述が見られ、矛盾がある。閉鎖情報の裏付けが取れなかったためnewとし、現況確認が必要と明記。"
+ },
+ {
+  "name": "庚申山ミニ動物園",
+  "pref": "群馬県",
+  "city": "藤岡市",
+  "foundUrls": [
+   "https://www.city.fujioka.gunma.jp/soshiki/toshikensetsubu/toshishisetsu/4/2/1566.html",
+   "https://www.jalan.net/kankou/spt_10209ae3312084574/"
+  ],
+  "typeGuess": "動物園",
+  "note": "庚申山総合公園内のミニ動物園。ウサギ・モルモット・ヤギ・ミニブタ等。無料。"
+ }
+]

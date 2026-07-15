@@ -1,0 +1,59 @@
+[
+ {
+  "name": "アクアパーク川越",
+  "pref": "埼玉県",
+  "city": "川越市",
+  "foundUrls": [
+   "https://gaia-ent.co.jp/",
+   "https://kawagoe-info.net/walk-kawagoe/aquapark-kawagoe",
+   "https://spring.walkerplus.com/gw/topics/article/1259526/"
+  ],
+  "typeGuess": "aquarium",
+  "note": "2025年4月25日グランドオープンの都市型アクアリウム施設（埼玉県初、黒潮天然海水使用）。海水魚・爬虫類・両生類など約100種展示、ふれあいコーナーあり。"
+ },
+ {
+  "name": "彩の国ふれあい牧場（埼玉県秩父高原牧場）",
+  "pref": "埼玉県",
+  "city": "東秩父村",
+  "foundUrls": [
+   "https://www.pref.saitama.lg.jp/kogen-bokujo/shisetsu/fureaisisetu.html",
+   "https://www.pref.saitama.lg.jp/kogen-bokujo/"
+  ],
+  "typeGuess": "other",
+  "note": "県営秩父高原牧場の一部を県民に開放したふれあい牧場。ヤギ・ヒツジ・ウサギを放し飼いで常時展示、入場無料。"
+ },
+ {
+  "name": "羊山公園ふれあい牧場",
+  "pref": "埼玉県",
+  "city": "秩父市",
+  "foundUrls": [
+   "https://www.city.chichibu.lg.jp/1853.html",
+   "https://ja.wikipedia.org/wiki/%E7%BE%8A%E5%B1%B1%E5%85%AC%E5%9C%92"
+  ],
+  "typeGuess": "other",
+  "note": "秩父市営の羊山公園・芝桜の丘にある常設ふれあい牧場。日本コリデール種のヒツジを飼育。"
+ },
+ {
+  "name": "キャンベルタウン野鳥の森",
+  "pref": "埼玉県",
+  "city": "越谷市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%99%E3%83%AB%E3%82%BF%E3%82%A6%E3%83%B3%E9%87%8E%E9%B3%A5%E3%81%AE%E6%A3%AE",
+   "https://www.city.koshigaya.saitama.jp/toiawase/shisetsu/sportskouen/koen/sansaku/intro_J_yatyounomori.html"
+  ],
+  "typeGuess": "other",
+  "note": "越谷市立の鳥類園。1995年、姉妹都市キャンベルタウン市（豪）との交流10周年で開設。ワラビー・エミュー・ワライカワセミ等28種386点、バードケージあり。営業中。"
+ },
+ {
+  "name": "宝登山小動物公園",
+  "pref": "埼玉県",
+  "city": "長瀞町",
+  "foundUrls": [
+   "https://hodosan-ropeway.co.jp/zoo/",
+   "https://www.nagatoro.gr.jp/outletticket/%E5%AE%9D%E7%99%BB%E5%B1%B1%E5%B0%8F%E5%8B%95%E7%89%A9%E5%85%AC%E5%9C%92/",
+   "https://www.homemate-research-zoo.com/dtl/00000000000000132256/"
+  ],
+  "typeGuess": "zoo",
+  "note": "宝登山ロープウェイ山頂駅併設の小動物公園。1960年開園。ニホンザル・ニホンジカ・ヤギ等を展示、営業中。"
+ }
+]

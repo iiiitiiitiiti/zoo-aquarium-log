@@ -1,0 +1,56 @@
+[
+ {
+  "name": "かすみがうら市水族館",
+  "pref": "茨城県",
+  "city": "かすみがうら市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/かすみがうら市水族館",
+   "https://www.ibarakiguide.jp/spot.php?mode=detail&code=644"
+  ],
+  "typeGuess": "aquarium",
+  "note": "市立水族館。霞ヶ浦水系の淡水魚・両生類・爬虫類・甲殻類など約170種展示。1990年開館、2018年リニューアル。月曜定休。"
+ },
+ {
+  "name": "豊里ゆかりの森 昆虫館",
+  "pref": "茨城県",
+  "city": "つくば市",
+  "foundUrls": [
+   "https://www.museum.or.jp/museum/1420",
+   "http://www.tsukubaykr.jp/"
+  ],
+  "typeGuess": "other",
+  "note": "自然体験施設「豊里ゆかりの森」内の昆虫館。ヘラクレスオオカブト等生体展示・ふれあいあり。月曜定休。"
+ },
+ {
+  "name": "ネーブルパーク ポニー牧場",
+  "pref": "茨城県",
+  "city": "古河市",
+  "foundUrls": [
+   "https://navelpark.com/n-pony/",
+   "https://www.koga-kousya.or.jp/n-pony/"
+  ],
+  "typeGuess": "zoo",
+  "note": "ポニー専門のふれあい牧場。引き馬・乗馬体験あり。"
+ },
+ {
+  "name": "水海道あすなろの里 ふれあい動物園",
+  "pref": "茨城県",
+  "city": "常総市",
+  "foundUrls": [
+   "http://asunaronosato.net/%E3%81%B5%E3%82%8C%E3%81%82%E3%81%84%E5%8B%95%E7%89%A9%E5%9C%92/",
+   "https://www.zoo-palette.com/ibaraki/"
+  ],
+  "typeGuess": "both",
+  "note": "常総市生涯学習課所管の野外研修センター内。ミニ動物園（ミニチュアホース、リスザル等17種）とミニ水族館を併設。マーラ・プレーリードッグ展示は休止中の情報あり（要現地確認）。"
+ },
+ {
+  "name": "奥日立きららの里 ふれあい牧場",
+  "pref": "茨城県",
+  "city": "日立市",
+  "foundUrls": [
+   "https://kiraranosato.com/free/fureaifarm"
+  ],
+  "typeGuess": "zoo",
+  "note": "大型レジャー施設「奥日立きららの里」内のふれあい牧場エリア。ポニー・ヒツジへの餌やり体験。"
+ }
+]

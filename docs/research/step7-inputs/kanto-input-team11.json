@@ -1,0 +1,58 @@
+[
+ {
+  "name": "びーとるランド（SBCびーとるランド君津）",
+  "pref": "千葉県",
+  "city": "君津市",
+  "foundUrls": [
+   "https://beetleland-sbc.com/",
+   "https://www.city.kimitsu.lg.jp/site/kanko/40981.html"
+  ],
+  "typeGuess": "昆虫ふれあい施設",
+  "note": "ヘラクレスオオカブト等世界の甲虫を放し飼い状態で常時展示・直接触れる施設。入場料込みで甲虫バトル等の催しあり。"
+ },
+ {
+  "name": "マザー牧場",
+  "pref": "千葉県",
+  "city": "富津市",
+  "foundUrls": [
+   "https://www.motherfarm.co.jp/animal/fureai/",
+   "https://maruchiba.jp/spot/detail_10327.html",
+   "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%82%B6%E3%83%BC%E7%89%A7%E5%A0%B4"
+  ],
+  "typeGuess": "ふれあい牧場",
+  "note": "カピバラ・マーラ・リクガメ・ミニブタ等の常設ふれあいエリアあり。動物展示が主要来場目的の一つ。"
+ },
+ {
+  "name": "高宕山自然動物園",
+  "pref": "千葉県",
+  "city": "富津市",
+  "foundUrls": [
+   "https://www.city.futtsu.lg.jp/0000000348.html",
+   "https://www.futtsu-kanko.info/places/takagoyama/"
+  ],
+  "typeGuess": "動物園（野猿公苑）",
+  "note": "富津市が運営。国天然記念物「高宕山サルの生息地」の一群を餌付けし一般公開。入園料大人300円、営業9-17時。檻内のサルに加え野生ザルも見学者エリアに来る。zoo-palette.comの第三者ディレクトリ突合で発見。既存2巡では未検出だった明確な見落とし。"
+ },
+ {
+  "name": "成田ゆめ牧場",
+  "pref": "千葉県",
+  "city": "成田市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/%E6%88%90%E7%94%B0%E3%82%86%E3%82%81%E7%89%A7%E5%A0%B4",
+   "https://www.nrtk.jp/enjoy/attraction/yumebokujo.html"
+  ],
+  "typeGuess": "ふれあい牧場",
+  "note": "羊・ヤギとのふれあい、乳搾り体験等の常設動物展示エリアあり。"
+ },
+ {
+  "name": "KABAZOO（セブンパークアリオ柏店）",
+  "pref": "千葉県",
+  "city": "柏市",
+  "foundUrls": [
+   "https://kabazoo-kashiwa.amebaownd.com/",
+   "https://sevenpark-kashiwa.ario.jp/shop/2300000037/"
+  ],
+  "typeGuess": "屋内型動物園",
+  "note": "ショッピングモール内の常設屋内型動物園。動物取扱業登録あり（公式サイトに表示）。動物カフェ様式との境界は要確認だが常設展示主体のためnew判定。"
+ }
+]

@@ -1,0 +1,112 @@
+[
+ {
+  "name": "マザー牧場",
+  "reviewVerdict": "agree",
+  "checkedItems": {"verdict": "match", "status": "match", "address": "match", "coords": "match"},
+  "corrections": {},
+  "evidence": "公式アクセスページ(motherfarm.co.jp/access/)をcurlで取得し「千葉県富津市田倉940−３」を逐語確認。GSIアドレス検索APIで大字『田倉』レベルの代表点(139.951263, 35.234219)が入力値と一致（番地レベルはGSI非対応、既知の限界）。閉園・休園告知は本文中に見当たらず、現在も通常営業。"
+ },
+ {
+  "name": "草津熱帯圏",
+  "reviewVerdict": "agree",
+  "checkedItems": {"verdict": "match", "status": "match", "address": "match", "coords": "match"},
+  "corrections": {},
+  "evidence": "nettaiken.comはNuxt製SPAでcurl取得できるのはシェルHTML(9KB)のみだったが、title要素等に『草津熱帯圏』表記を確認。住所は草津温泉観光協会ページ(kusatsu-onsen.ne.jp/kankou/1013.php)で『群馬県吾妻郡草津町大字草津286』を逐語確認し、GSI検索座標(138.604263, 36.622566)が入力値と完全一致。Web検索でも2026年時点の閉園情報は見当たらず営業時間8:30-17:00・無休の情報を確認。"
+ },
+ {
+  "name": "那須昆虫ワールド",
+  "reviewVerdict": "agree",
+  "checkedItems": {"verdict": "match", "status": "match", "address": "match", "coords": "match"},
+  "corrections": {},
+  "evidence": "公式サイト(nasukon.com、curlで1.4MB取得できレンダリング済みHTMLを確認可能)で『栃木県那須郡那須町高久甲5327-1』『営業時間：10:00～17:00』を逐語確認。とちぎ旅ネット(tochinavi.net)でも同住所を確認。GSIは番地レベルで約4km離れた点を返す既知の制約があり、一次調査班が採用した公式Googleマップ埋め込み座標を追認（match）。閉館情報なし。"
+ },
+ {
+  "name": "アニタッチPARK イオンモール太田",
+  "reviewVerdict": "agree",
+  "checkedItems": {"verdict": "match", "status": "match", "address": "match", "coords": "match"},
+  "corrections": {},
+  "evidence": "公式サイト(ota.anitouch.com)をcurlで取得し、title『アニタッチPARK イオンモール太田』、住所『群馬県太田市石原町81 イオンモール太田 WEST MALL』を逐語確認。GSI検索座標(139.400223, 36.294003)が入力値と完全一致。閉園告知なし。"
+ },
+ {
+  "name": "道の駅みなかみ水紀行館 水産学習館",
+  "reviewVerdict": "agree",
+  "checkedItems": {"verdict": "match", "status": "match", "address": "match", "coords": "match"},
+  "corrections": {},
+  "evidence": "公式サイト(mizunofurusato.com)をcurlで取得し『群馬県利根郡みなかみ町湯原1681-1』『水紀行館』『水産学習館』の表記を逐語確認。GSI検索座標(138.969696, 36.765873)が入力値と完全一致。夏季特別イベント告知が最新情報として掲載されており通常営業中。"
+ },
+ {
+  "name": "こもれび森のイバライド",
+  "reviewVerdict": "agree",
+  "checkedItems": {"verdict": "match", "status": "match", "address": "match", "coords": "match"},
+  "corrections": {},
+  "evidence": "公式touch/ページ(ibaraido.co.jp/touch/)をcurlで取得し『茨城県稲敷市上君山2060-1』を逐語確認。GSI検索座標(140.268478, 35.940441)が入力値と完全一致。Web検索でも2026年3月19日リニューアル10周年・2026年夏季イベント開催の情報のみで永久閉園情報は見当たらず、ビッグ広場メンテナンスは動物ふれあいエリアと別区画のため営業継続と判断。"
+ },
+ {
+  "name": "アクアパーク川越",
+  "reviewVerdict": "agree",
+  "checkedItems": {"verdict": "match", "status": "match", "address": "match", "coords": "match"},
+  "corrections": {},
+  "evidence": "運営会社サイト(gaia-ent.co.jp)をcurlで取得し、title『アクアパーク川越』、住所『埼玉県川越市新富町 2-11-8 HAMAYA BLD. 5階』を逐語確認。GSI検索座標(139.482483, 35.91161)が入力値と完全一致。閉館告知なし。"
+ },
+ {
+  "name": "箱根園どうぶつランド だっこして！ZOO！",
+  "reviewVerdict": "agree",
+  "checkedItems": {"verdict": "match", "status": "match", "address": "match", "coords": "match"},
+  "corrections": {},
+  "evidence": "公式サイト(hakone-hugzoo.com)をcurlで取得し『神奈川県足柄下郡箱根町元箱根139』を逐語確認、『だっこして！ZOO！』表記も本文中に多数確認（titleは説明的な長い見出しだが本文中に該当施設名の組み合わせは確認できる）。GSI検索座標(139.009964, 35.211807)が入力値と完全一致。閉園告知なし。"
+ },
+ {
+  "name": "相模川ふれあい科学館 アクアリウムさがみはら",
+  "reviewVerdict": "agree",
+  "checkedItems": {"verdict": "match", "status": "match", "address": "match", "coords": "match"},
+  "corrections": {},
+  "evidence": "公式アクセスページ(sagamigawa-fureai.com/access/)をcurlで取得し、title『相模川ふれあい科学館 アクアリウムさがみはら』、住所『神奈川県相模原市中央区水郷田名1-5-1』を逐語確認。GSI検索座標(139.328873, 35.54739)が入力値と完全一致。閉館告知なし。"
+ },
+ {
+  "name": "碑文谷公園こども動物広場",
+  "reviewVerdict": "agree",
+  "checkedItems": {"verdict": "match", "status": "match", "address": "match", "coords": "match"},
+  "corrections": {},
+  "evidence": "目黒区公式ページをcurlで取得し『所在地：〒152-0003目黒区碑文谷六丁目9番11号』（→2-17-1式に正規化すると6-9-11）、本文中『碑文谷公園こども動物広場』表記、『ポニー舎工事終了しました』を逐語確認（一次調査班のnoteと一致）。GSI検索座標(139.682892, 35.625141)が入力値と完全一致。"
+ },
+ {
+  "name": "井頭公園 花ちょう遊館",
+  "reviewVerdict": "agree",
+  "checkedItems": {"verdict": "match", "status": "match", "address": "backfilled", "coords": "match"},
+  "corrections": {
+   "address": "栃木県真岡市下籠谷99",
+   "addressSourceUrl": "https://www.park-tochigi.com/igashira/about/%E8%8A%B1%E3%81%A1%E3%82%87%E3%81%86%E9%81%8A%E9%A4%A8"
+  },
+  "evidence": "公式ページ(park-tochigi.com/igashira/about/花ちょう遊館)をcurlで取得し『栃木県真岡市下籠谷99』を逐語確認。GSIアドレス検索APIは番地『99』指定だと約1.5km離れた別地点(139.993347, 36.494362)を返すため、大字『下籠谷』のみで検索した代表点(139.979828, 36.482788)を採用（一次調査班のcoordSourceの記述通り）。これは入力座標と完全一致し、閉園・休園情報も見当たらない。"
+ },
+ {
+  "name": "那須千本松牧場 どうぶつふれあい広場",
+  "reviewVerdict": "agree",
+  "checkedItems": {"verdict": "match", "status": "match", "address": "backfilled", "coords": "match"},
+  "corrections": {
+   "address": "栃木県那須塩原市千本松799",
+   "addressSourceUrl": "https://www.senbonmatsu.com/info/"
+  },
+  "evidence": "公式info/ページ(senbonmatsu.com/info/)をcurlで取得し『所在地 那須塩原市千本松799』を逐語確認。GSI検索座標(139.933792, 36.926098)が入力値と完全一致。閉園・休園情報は見当たらず、通常営業中。"
+ },
+ {
+  "name": "那須ワールドモンキーパーク",
+  "reviewVerdict": "agree",
+  "checkedItems": {"verdict": "match", "status": "match", "address": "backfilled", "coords": "match"},
+  "corrections": {
+   "address": "栃木県那須郡那須町高久甲6146",
+   "addressSourceUrl": "https://www.nasumonkey.com/"
+  },
+  "evidence": "公式サイトトップ(nasumonkey.com)をcurlで取得し『栃木県那須郡那須町高久甲6146』を逐語確認。GSI検索座標(140.045975, 37.033428)が入力値と完全一致。『閉園30分前です』は最終入園案内の定型文で休園告知ではない。"
+ },
+ {
+  "name": "那須高原りんどう湖ファミリー牧場",
+  "reviewVerdict": "agree",
+  "checkedItems": {"verdict": "match", "status": "match", "address": "backfilled", "coords": "match"},
+  "corrections": {
+   "address": "栃木県那須郡那須町高久丙414-2",
+   "addressSourceUrl": "https://www.rindo.co.jp/access/"
+  },
+  "evidence": "公式アクセスページ(rindo.co.jp/access/)をcurlで取得し『栃木県那須郡那須町高久丙414-2』を逐語確認。GSIは番地レベルで枝番『-2』を落とした414番地の点(140.04718, 37.043678)を返すが、入力座標と完全一致（一次調査班のcoordSourceの記述通り）。閉園・休園情報は見当たらない。"
+ }
+]

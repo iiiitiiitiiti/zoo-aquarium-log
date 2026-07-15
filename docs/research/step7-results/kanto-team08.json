@@ -1,0 +1,117 @@
+{"team": "K08", "block": "関東", "results": [
+  {
+    "verdict": "include",
+    "name": "城之内公園小動物園",
+    "kana": "じょうのうちこうえんしょうどうぶつえん",
+    "pref": "群馬県",
+    "city": "邑楽郡大泉町",
+    "type": "zoo",
+    "lat": 36.262178,
+    "lng": 139.414835,
+    "url": "https://www.town.oizumi.gunma.jp/s040/map/040/20200630231658.html",
+    "sourceUrls": [
+      "https://www.town.oizumi.gunma.jp/s040/map/040/20200630231658.html",
+      "https://www.dan-b.com/park_jounouchi/"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "gunma_jonouchikoen_shodoubutsuen",
+    "coordSource": "大泉町公式ページに埋め込まれたGoogleMapリンク座標(36.2621779,139.4148348)を採用。国土地理院住所検索『群馬県大泉町城之内二丁目24番』(36.260719,139.41304)、第三者サイトdan-b.comの構造化データ(36.261962,139.414163)ともに100〜200m以内で近接しクロスチェック済み。",
+    "address": "群馬県邑楽郡大泉町城之内2-24",
+    "addressSourceUrl": "https://www.town.oizumi.gunma.jp/s040/map/040/20200630231658.html",
+    "adoptionBasis": "小泉城跡を整備した城之内公園内に常設の小動物園（ウサギ・インコ・ニワトリ等）があり、包含基準の『動物園を含める』および『公園内でも独立した常設展示エリアなら含める』に合致。",
+    "note": "公式ページ現行の『施設概要』欄には小動物園の記載がないが、複数の第三者情報源（だんべー.com、note『ZASOちゃんねる』の2022年11月訪問記録等）で存続を確認。閉園・休園の一次情報は見つからずopen扱い。"
+  },
+  {
+    "verdict": "include",
+    "name": "中央公園小動物園",
+    "kana": "ちゅうおうこうえんしょうどうぶつえん",
+    "pref": "群馬県",
+    "city": "館林市",
+    "type": "zoo",
+    "lat": 36.236832,
+    "lng": 139.535309,
+    "url": "https://www.city.tatebayashi.gunma.jp/s068/map/040/20201030143439.html",
+    "sourceUrls": [
+      "https://www.city.tatebayashi.gunma.jp/s068/map/040/20201030143439.html",
+      "https://pandanocoto.com/article/zoo/zoo-tatebayashi"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "gunma_chuokoen_shodoubutsuen",
+    "coordSource": "国土地理院住所検索『群馬県館林市緑町二丁目17番』(36.236832,139.535309)。公式ページ埋め込みGoogleMapのビュー中心座標(36.23694759877168,139.53479124079783)とも約70m以内で近接。",
+    "address": "群馬県館林市緑町2-17",
+    "addressSourceUrl": "https://www.city.tatebayashi.gunma.jp/s068/map/040/20201030143439.html",
+    "adoptionBasis": "館林市公式ページで『館林市で唯一小動物とふれあえる公園』と明記。ポニー・ミニチュアホース・ヤギ・クジャク・ウサギを常設飼育しており、包含基準『牧場・ふれあい施設は動物展示が主要な来場目的なら含める』および『公園内でも独立した常設展示エリアなら含める』に合致。",
+    "note": "公式ページのタイトルは命名権スポンサー名を冠した『ビオスリーHi錠中央公園』（更新日2025年4月1日）。候補台帳の一般名称『中央公園小動物園』を収録名として採用。閉園・休園情報は見つからず。"
+  },
+  {
+    "verdict": "include",
+    "name": "むさしの村 ふれあい牧場",
+    "kana": "むさしのむらふれあいぼくじょう",
+    "pref": "埼玉県",
+    "city": "加須市",
+    "type": "other",
+    "lat": 36.136971,
+    "lng": 139.550949,
+    "url": "https://www.musashinomura.co.jp/touch/",
+    "sourceUrls": [
+      "https://www.musashinomura.co.jp/touch/",
+      "https://www.musashinomura.co.jp/charge/"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "saitama_musashinomura_fureai_bokujo",
+    "coordSource": "公式サイト記載の住所『埼玉県加須市志多見1700-1』を国土地理院ジオコーディングAPIで変換（36.136971,139.550949）。むさしの村敷地全体の代表点で、ふれあい牧場エリア単独の座標ではない。",
+    "address": "埼玉県加須市志多見1700-1",
+    "addressSourceUrl": "https://www.musashinomura.co.jp/access/",
+    "adoptionBasis": "遊園地『むさしの村』内にある常設のふれあい牧場エリア。ポニー・うさぎ・やぎ・ぶた・くじゃくの展示とえさやり体験を主目的とする独立した常設展示エリアであり、包含基準『植物園・公園・遊園地内でも独立した常設展示エリアなら含める』および『牧場・ふれあい施設は動物展示が主要な来場目的なら含める』に合致。",
+    "note": "公式料金ページ確認：むさしの村の入園料（おとな1,200円等）にふれあい牧場は含まれ、別料金・別入口はない（アトラクション利用のみ別途フリーパス/のりもの券が必要）。閉鎖・休止情報は見つからず、公式サイトは現行運営中の表記（©2024だがpage自体は2026年時点でも到達可）。"
+  },
+  {
+    "verdict": "include",
+    "name": "加須市大越昆虫館",
+    "kana": "かぞしおおごえこんちゅうかん",
+    "pref": "埼玉県",
+    "city": "加須市",
+    "type": "other",
+    "lat": 36.180195,
+    "lng": 139.62854,
+    "url": "https://midorinoportal.pref.saitama.lg.jp/activity/%E5%A4%A7%E8%B6%8A%E6%98%86%E8%99%AB%E9%A4%A8%E9%81%8B%E5%96%B6%E5%A7%94%E5%93%A1%E4%BC%9A/",
+    "sourceUrls": [
+      "https://midorinoportal.pref.saitama.lg.jp/activity/%E5%A4%A7%E8%B6%8A%E6%98%86%E8%99%AB%E9%A4%A8%E9%81%8B%E5%96%B6%E5%A7%94%E5%93%A1%E4%BC%9A/",
+      "https://www.facebook.com/City.Kazo/posts/2241849159397029/"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "saitama_ogoe_konchukan",
+    "coordSource": "加須市公式Facebookアカウント投稿記載の住所『加須市大越2688』を国土地理院ジオコーディングAPIで変換（36.180195,139.62854）。",
+    "address": "埼玉県加須市大越2688",
+    "addressSourceUrl": "https://www.facebook.com/City.Kazo/posts/2241849159397029/",
+    "adoptionBasis": "埼玉昆虫談話会が運営する常設の昆虫館。標本常設展示（収蔵約10万点のうち約1200点展示）に加え、スズムシ・アシナガバチ・ゾウムシ等の生体展示も行っており、包含基準『昆虫館を含める』に合致。土日祝のみ開館・入館無料だが常設施設であり期間限定展示には該当しない。",
+    "note": "施設単独の公式サイトはなく、運営団体『大越昆虫館運営委員会』の埼玉県みどりのポータルサイト掲載ページ、および加須市公式Facebookアカウント投稿（場所：加須市大越2688、開館日：土曜・日曜・祝祭日・11月14日、10時〜16時）を一次情報として確認。みどりのポータルサイトでは2026年4月28日更新の活動実績（令和7年度団体力アップ賞受賞）を確認し、2026年時点でも活動継続中と判断。"
+  },
+  {
+    "verdict": "include",
+    "name": "川口市立グリーンセンター バードセンター",
+    "kana": "かわぐちしりつぐりーんせんたーばーどせんたー",
+    "pref": "埼玉県",
+    "city": "川口市",
+    "type": "other",
+    "lat": 35.845146,
+    "lng": 139.726974,
+    "url": "https://greencenter.1110city.com/facility.html",
+    "sourceUrls": [
+      "https://greencenter.1110city.com/facility.html",
+      "https://www.city.kawaguchi.lg.jp/soshiki/01110/060/index.html"
+    ],
+    "status": "suspended",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "saitama_greencenter_bird_center",
+    "coordSource": "川口市公式ページ記載の所在地『埼玉県川口市新井宿700』を国土地理院ジオコーディングAPIで変換（35.845146,139.726974）。バードセンターは園内の一区画で専用の住所・座標は公表されていないため、グリーンセンター全体の代表点を採用。",
+    "address": "埼玉県川口市新井宿700",
+    "addressSourceUrl": "https://www.city.kawaguchi.lg.jp/soshiki/01110/060/index.html",
+    "adoptionBasis": "クジャク等の鳥類を常設展示する川口市立グリーンセンター内の独立した鳥類展示エリアで、包含基準『鳥類園を含める』および『植物園・公園内でも独立した常設展示エリアなら含める』に合致。現在は再整備で休止中とみられるが、基準により休止中も記録を保持する（status: suspended）。",
+    "note": "情報源間で状態が食い違う。第三者写真サイト（go2park.net、2023年5月更新）は『大温室〜バードセンター〜梅林付近は2022年頃から工事のため立入禁止、バードセンターは取り壊され別施設に生まれ変わる予定』と記載。一方、公式サイト（greencenter.1110city.com/facility.html、2026年7月15日時点で到達確認）の施設案内ページは『バードセンター　クジャクなどがいます』と記載したままで、休止の明示なし（同ページ内の大集会堂・レストランには『只今休業中です』の明示があるのに対しバードセンターにはそれがない）。川口市公式ページでは『川口市立グリーンセンター活性化基本計画検討委員会』が継続的に開催され再整備計画が進行中であることを確認。公式サイトの記載が更新漏れの可能性が高いと判断し、候補台帳の情報（休園中・改修中）を優先してsuspendedとした。次回レビューでの現地確認を推奨。"
+  }
+]}

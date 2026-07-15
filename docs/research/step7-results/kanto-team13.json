@@ -1,0 +1,104 @@
+{"team": "K13", "block": "関東", "results": [
+  {
+    "verdict": "include",
+    "name": "東京農業大学「食と農」の博物館（バイオリウム）",
+    "kana": "とうきょうのうぎょうだいがくしょくとのうのはくぶつかんばいおりうむ",
+    "pref": "東京都",
+    "city": "世田谷区",
+    "type": "both",
+    "lat": 35.638912,
+    "lng": 139.632034,
+    "url": "https://www.nodai.ac.jp/campus/facilities/syokutonou/",
+    "sourceUrls": [
+      "https://www.nodai.ac.jp/campus/facilities/syokutonou/jyosetu_tenji",
+      "https://www.nodai.ac.jp/campus/facilities/syokutonou/info"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "tokyo_nodai_biorium",
+    "coordSource": "国土地理院APIで公式サイト記載住所『東京都世田谷区上用賀2-4-28』を検索し、丁目・番・号レベルで完全一致する代表点を取得。",
+    "address": "東京都世田谷区上用賀2-4-28",
+    "addressSourceUrl": "https://www.nodai.ac.jp/campus/facilities/syokutonou/info",
+    "adoptionBasis": "「食と農」の博物館1階の常設展示区画「バイオリウム」（運営：一般財団法人進化生物学研究所）で、ワオキツネザル等キツネザル3種・ケヅメリクガメ・ナギナタナマズ等の生きた動植物を常設公開しており、博物館内の独立した常設展示エリアとして包含基準の『植物園・公園・遊園地内でも、独立した常設展示エリアなら含める』に合致。",
+    "note": "JAZA非加盟。博物館全体は入館無料。開館時間9:30〜16:30、休館日は月曜・祝日・大学が定める日、見学は予約不要（curlで取得した現行フッター情報。ページ内に旧情報『休館日：土日祝』がHTMLコメントとして残存しているが表示されておらず現行案内ではない）。閉園・休園情報なし。"
+  },
+  {
+    "verdict": "hold",
+    "name": "八丈富士牧野・ふれあい牧場",
+    "pref": "東京都",
+    "city": "八丈町",
+    "adoptionBasis": "八丈町公式ページ（就農カテゴリ内に掲載、正式ページ名は『ふれあい牧場』で候補台帳の『八丈富士牧野・ふれあい牧場』とは名称が一部異なる）によれば、畜産振興のための放牧地であり、見どころとして『牛とのふれあい・観察』と『三原山・海・市街地・空港が一望できる景色』が並列で紹介されている。さらに『牛に直接ふれることはご遠慮ください』と明記され、放牧のため牛が近くにいない場合もあるとの注記もあり、名称に反し常時の動物ふれあい体験を保証する施設ではない。動物展示（観察）が来場の『主要目的』と言い切れるか基準文だけでは判定できず、施設に不利な確定を避けるため保留とする。",
+    "sourceUrls": [
+      "https://www.town.hachijo.tokyo.jp/chousei/shuunou/fureai-bokujo/"
+    ],
+    "note": "公式ページ上の正式名称は『ふれあい牧場』（八丈町産業観光課産業係所管）。候補台帳の名称『八丈富士牧野・ふれあい牧場』とは食い違いあり。休憩舎開放時間9:00〜16:00、年中無休、入場無料。閉園・休園の情報はなし。レビュー班での再判定を推奨。"
+  },
+  {
+    "verdict": "include",
+    "name": "高尾山さる園・野草園",
+    "kana": "たかおさんさるえんやそうえん",
+    "pref": "東京都",
+    "city": "八王子市",
+    "type": "zoo",
+    "lat": 35.629948,
+    "lng": 139.255035,
+    "url": "http://takao-monkey-park.jp/",
+    "sourceUrls": [
+      "http://takao-monkey-park.jp/",
+      "https://www.takaotozan.co.jp/company/"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "tokyo_takao_saruen",
+    "coordSource": "国土地理院APIで運営会社（高尾登山電鉄）公式サイト記載の事業所所在地『東京都八王子市高尾町2179番地』を検索し、番地レベルで完全一致する代表点を取得。",
+    "address": "東京都八王子市高尾町2179",
+    "addressSourceUrl": "https://www.takaotozan.co.jp/company/",
+    "adoptionBasis": "高尾登山電鉄株式会社が経営する常設有料施設で、約80頭のニホンザルを飼育・展示する『さる園』を中核とし、隣接する野草園と一体運営。包含基準の『動物園』に合致。",
+    "note": "JAZA非加盟。候補台帳のfoundUrlsにあった旧公式ページ（takaotozan.co.jp/monkey/）は現在『http://takao-monkey-park.jp/へ引っ越しました』と案内があり移転済み。新サイトで入園料500円（大人）・250円（小児）、本日（2026-07-15確認時点）の開園時間9:30〜16:30を確認。台風接近時の臨時休園日は個別に告知されるが、恒常的な休園・閉園の情報はなし。"
+  },
+  {
+    "verdict": "include",
+    "name": "東京都小笠原水産センター（小さな水族館）",
+    "kana": "とうきょうとおがさわらすいさんせんたーちいさなすいぞくかん",
+    "pref": "東京都",
+    "city": "小笠原村",
+    "type": "aquarium",
+    "lat": 27.0976,
+    "lng": 142.1984,
+    "url": "https://www.soumu.metro.tokyo.lg.jp/07ogasawara/fish/aquarium",
+    "sourceUrls": [
+      "https://www.soumu.metro.tokyo.lg.jp/07ogasawara/fish/aquarium",
+      "https://www.ifarc.metro.tokyo.lg.jp/about/place/place06.html"
+    ],
+    "status": "suspended",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "tokyo_ogasawara_suisan_center_aquarium",
+    "coordSource": "国土地理院APIは公式住所『小笠原村父島字清瀬』を父島全体レベルの代表点（142.20961, 27.071243）としてしか解決できなかった（離島の字レベル未収録）。そのため民間地図サービス2件（mapple.net: 142.19832633, 27.09778577／asoview.com: 142.198393, 27.0974358）をクロスチェックし、両者が約40m以内で一致することを確認のうえ、その中間値付近の代表点を採用。",
+    "address": "東京都小笠原村父島字清瀬",
+    "addressSourceUrl": "https://www.ifarc.metro.tokyo.lg.jp/about/place/place06.html",
+    "adoptionBasis": "東京都小笠原支庁水産センター内の飼育観察棟（通称『小さな水族館』）で、小笠原周辺海域や父島・母島の河川・貯水池に生息する魚介類（アカハタ、サメ・エイ類、アオリイカ、アオウミガメ等）を常設展示する入館無料の施設。包含基準の『水族館』に合致。",
+    "note": "公式ページ（soumu.metro.tokyo.lg.jp/07ogasawara/fish/aquarium）に『※改修工事のため、現在閉館しています。開館は令和9年4月を予定しています。』と明記されており、2026-07-15時点で改修工事による休館中（status: suspended）。正式名称は『飼育観察棟』（通称『小さな水族館』）。運営は東京都小笠原支庁水産センター。"
+  },
+  {
+    "verdict": "include",
+    "name": "昭和公園動物園",
+    "kana": "しょうわこうえんどうぶつえん",
+    "pref": "東京都",
+    "city": "昭島市",
+    "type": "zoo",
+    "lat": 35.702644,
+    "lng": 139.384598,
+    "url": "https://www.city.akishima.lg.jp/s079/010/010/020/20170509100126.html",
+    "sourceUrls": [
+      "https://www.city.akishima.lg.jp/s079/010/010/020/20170509100126.html"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "tokyo_showakoen_dobutsuen",
+    "coordSource": "国土地理院APIで昭島市公式サイト記載の連絡先住所『東京都昭島市東町5-11-43』（公園全体の所在地『昭島市東町五丁目』内、都市整備部管理課公園管理係の所在地）を検索し、丁目・番・号レベルで完全一致する代表点を取得。",
+    "address": "東京都昭島市東町5-11-43",
+    "addressSourceUrl": "https://www.city.akishima.lg.jp/s079/010/010/020/20170509100126.html",
+    "adoptionBasis": "昭島市営（都下初の市営動物園、昭和38年開園）で、ヤクシカ・セキセイインコ・クロツル等の生きた動物を常設展示する入園無料の施設。包含基準の『動物園』に合致。",
+    "note": "平成14年3月策定の『昭島市立昭和公園整備構想』で動物園廃止の方向性が示されて以降、段階的に展示動物を終了しており、直近ではクジャクが令和8年（2026年）2月8日に展示終了（過去にはタヌキ2003年、アライグマ2006年、ウサギ2017年、ニホンザル2019年に終了）。2026-07-15確認時点でヤクシカ・セキセイインコ・クロツルは展示継続中で、休園・閉園の告知はなし（status: open）。ただし今後もさらなる縮小・展示終了が続く可能性があり、次回検証時に要再確認。"
+  }
+]}

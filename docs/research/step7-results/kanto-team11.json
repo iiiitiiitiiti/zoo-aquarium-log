@@ -1,0 +1,116 @@
+{"team": "K11", "block": "関東", "results": [
+  {
+    "verdict": "include",
+    "name": "SBCびーとるランド君津",
+    "kana": "えすびーしーびーとるらんどきみつ",
+    "pref": "千葉県",
+    "city": "君津市",
+    "type": "other",
+    "lat": 35.299995,
+    "lng": 139.948135,
+    "url": "https://beetleland-sbc.com/",
+    "sourceUrls": [
+      "https://beetleland-sbc.com/"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "chiba_beetleland_kimitsu",
+    "coordSource": "国土地理院APIで公式サイト記載住所『千葉県君津市泉上丹後752』を検索したが大字『泉』レベルの代表点のみ取得（字『上丹後』・地番752までの一致は確認できず）。",
+    "address": "千葉県君津市泉上丹後752",
+    "addressSourceUrl": "https://beetleland-sbc.com/",
+    "adoptionBasis": "ヘラクレスオオカブト等の生きた甲虫を放し飼い状態で常設展示し、来場者が直接触れることを主目的とする有料施設であり、包含基準の『昆虫館を含める』に合致。",
+    "note": "候補台帳のfoundUrlsにある君津市公式ページ（https://www.city.kimitsu.lg.jp/site/kanko/40981.html）は2026-07-15時点でcurl直接取得・r.jina.aiプロキシとも404（お探しのページを見つけることができませんでした）で到達不能。市サイト内の関連ページ（遊ぶ・体験 2201.html）からのリンクも確認できず、削除済みの可能性が高い。そのため一次情報は運営会社公式サイトのみで確認。同サイトの記載では営業日は土日祝日のみ・営業時間10:00〜17:00で、閉園・休園の告知はなし。"
+  },
+  {
+    "verdict": "include",
+    "name": "マザー牧場",
+    "kana": "まざーぼくじょう",
+    "pref": "千葉県",
+    "city": "富津市",
+    "type": "other",
+    "lat": 35.234219,
+    "lng": 139.951263,
+    "url": "https://www.motherfarm.co.jp/",
+    "sourceUrls": [
+      "https://www.motherfarm.co.jp/",
+      "https://www.motherfarm.co.jp/access/"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "chiba_mother_farm",
+    "coordSource": "国土地理院APIで公式サイト記載住所『千葉県富津市田倉940-3』を検索したが大字『田倉』レベルの代表点のみ取得（地番940までの一致は確認できず）。",
+    "address": "千葉県富津市田倉940-3",
+    "addressSourceUrl": "https://www.motherfarm.co.jp/access/",
+    "adoptionBasis": "カピバラ・マーラ・リクガメ・ミニブタ等の常設ふれあいエリアがあり、羊の毛刈りショー等動物展示・ふれあいが来場目的の中心を占める観光牧場であるため、包含基準の『牧場・ふれあい施設は、動物展示が主要な来場目的なら含める』に合致。",
+    "note": "冬季（例年12月中旬〜1月）に数日間のメンテナンス休園日があるが、これは定例の一時休業であり閉園・休園（suspended/closed）には該当しない。2026年7月時点で通常営業中。"
+  },
+  {
+    "verdict": "include",
+    "name": "高宕山自然動物園",
+    "kana": "たかごやましぜんどうぶつえん",
+    "pref": "千葉県",
+    "city": "富津市",
+    "type": "zoo",
+    "lat": 35.177528,
+    "lng": 139.970169,
+    "url": "https://www.city.futtsu.lg.jp/0000000348.html",
+    "sourceUrls": [
+      "https://www.city.futtsu.lg.jp/0000000348.html",
+      "https://www.futtsu-kanko.info/places/takagoyama/"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "chiba_takagoyama_shizen_dobutsuen",
+    "coordSource": "国土地理院APIで富津市公式ページ記載住所『千葉県富津市豊岡1779番地1』を検索したが大字『豊岡』レベルの代表点のみ取得（地番1779-1までの一致は確認できず）。",
+    "address": "千葉県富津市豊岡1779-1",
+    "addressSourceUrl": "https://www.city.futtsu.lg.jp/0000000348.html",
+    "adoptionBasis": "国天然記念物『高宕山サルの生息地』の一群を餌付けし常設で一般公開する富津市運営の動物園であり、包含基準の『動物園』に合致。",
+    "note": "候補台帳記載の運営会社名が異なる独自公式サイト（takagoyamazoo.com）はWeb検索結果に表示されたが、curl・r.jina.aiプロキシともドメイン名解決不可（DNS未解決）で実在確認できず、公式サイトとしては採用せず富津市公式ページ・富津市観光協会ページを一次情報とした。2019年の台風15号被害で一時休園していたが2023年に営業再開済み。天候やサルの生息状況により予告なく臨時休園する場合がある旨、富津市観光協会ページに記載あり。"
+  },
+  {
+    "verdict": "include",
+    "name": "成田ゆめ牧場",
+    "kana": "なりたゆめぼくじょう",
+    "pref": "千葉県",
+    "city": "成田市",
+    "type": "other",
+    "lat": 35.868221,
+    "lng": 140.39566,
+    "url": "https://www.yumebokujo.com/",
+    "sourceUrls": [
+      "https://www.yumebokujo.com/access.html",
+      "https://www.yumebokujo.com/"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "chiba_narita_yume_bokujo",
+    "coordSource": "国土地理院APIで公式サイト記載住所『千葉県成田市名木730-3』を検索し、地番『名木730番地』レベルで一致する代表点を取得（枝番-3は未反映）。",
+    "address": "千葉県成田市名木730-3",
+    "addressSourceUrl": "https://www.yumebokujo.com/access.html",
+    "adoptionBasis": "羊・ヤギとのふれあい、乳搾り体験等の常設動物展示エリアを持つ観光牧場であり、包含基準の『牧場・ふれあい施設は、動物展示が主要な来場目的なら含める』に合致。",
+    "note": "2025年8月・2026年1〜3月に個別の臨時休園日が設定されているが定例の一時休業であり、閉園・休園（suspended/closed）状態には該当しない。2026年7月時点で通常営業中。"
+  },
+  {
+    "verdict": "include",
+    "name": "KABAZOO",
+    "kana": "かばずー",
+    "pref": "千葉県",
+    "city": "柏市",
+    "type": "zoo",
+    "lat": 35.833759,
+    "lng": 140.011703,
+    "url": "https://kabazoo-kashiwa.amebaownd.com/",
+    "sourceUrls": [
+      "https://kabazoo-kashiwa.amebaownd.com/pages/5828334/profile",
+      "https://kabazoo-kashiwa.amebaownd.com/"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-15",
+    "proposedId": "chiba_kabazoo_kashiwa",
+    "coordSource": "国土地理院APIで公式サイト記載住所『千葉県柏市大島田1丁目6番地1』を検索したが丁目『大島田一丁目』レベルの代表点のみ取得（番地6-1までの一致は確認できず）。",
+    "address": "千葉県柏市大島田1-6-1 アリオ柏2F",
+    "addressSourceUrl": "https://kabazoo-kashiwa.amebaownd.com/pages/5828334/profile",
+    "adoptionBasis": "公式サイトが自ら『癒しと学びの動物園』と称する商業施設内の常設屋内動物園で、フクロウ・インコ等の鳥類約12種、カピバラ・コツメカワウソ・ミーアキャット等の中大型動物、ウサギ・モルモット等の小型動物を常設展示し餌やり・ふれあい体験を提供する。飲食物提供（フード・ドリンクメニュー）の記載はなく、展示・ふれあいが主目的のため動物カフェの除外基準には該当せず、包含基準の『動物園』（商業施設内の独立した常設展示エリア）に合致。",
+    "note": "動物取扱業登録あり（公式サイトに表示）。2026年7月時点で公式サイトのブログが継続更新されており営業中を確認（カピバラの体調不良により一時的にふれあい・おやつのみ休止中との告知はあるが施設自体は営業中）。"
+  }
+]}
