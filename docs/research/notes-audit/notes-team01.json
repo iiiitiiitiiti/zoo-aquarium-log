@@ -1,0 +1,125 @@
+{
+  "team": "notes-team01",
+  "investigatedAt": "2026-07-15",
+  "results": [
+    {
+      "facilityId": "hokkaido_asahiyama_zoo",
+      "name": "旭川市旭山動物園",
+      "finding": "note",
+      "proposedNote": "冬期開園から夏期開園への切替に伴い、例年4月上旬から下旬にかけて約3週間、整備等のため休園する（2024年は4月8日～26日、2026年は4月8日～28日）。年末年始（12/30～1/1）とは別の定例休園。2026年7月時点。",
+      "evidenceUrls": [
+        "https://www.atca.jp/20240405_01/",
+        "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/news-blog/osirase/d082799.html",
+        "https://www.atca.jp/%E6%97%AD%E5%B1%B1%E5%8B%95%E7%89%A9%E5%9C%92%E3%81%AE%E5%86%AC%E6%9C%9F%E5%96%B6%E6%A5%AD%E3%81%AF%E4%BB%A4%E5%92%8C%EF%BC%97%E5%B9%B4%EF%BC%91%EF%BC%91%E6%9C%88%EF%BC%91%EF%BC%91%E6%97%A5%EF%BC%88/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "毎年恒例の休園であることは複数年（2024・2026）の告知から確認できたが、休園理由（施設整備・季節転換準備）を明言する一次情報は見つけられなかった（観光協会経由の告知が中心）。"
+    },
+    {
+      "facilityId": "hokkaido_otaru_aquarium",
+      "name": "おたる水族館",
+      "finding": "note",
+      "proposedNote": "季節制営業のため、冬期営業（12月中旬～翌2月下旬）の前後に休館期間がある。2025-26シーズンは冬期営業前の2025年11月25日～12月12日、冬期営業後の2026年2月24日～3月13日が休館（3月14日から通常営業再開）。2026年7月時点。",
+      "evidenceUrls": [
+        "https://otaru-aq.jp/guide/openningtime",
+        "https://otaru.gr.jp/tourist/toukieigyou2025-2026",
+        "https://otaru.gr.jp/tourist/kyukannoosirase2026-2-24-3-13",
+        "https://otaru.gr.jp/tourist/otarusuizokukankyukan2025-11-25-12-12"
+      ],
+      "statusCheck": "consistent",
+      "memo": "小樽観光協会サイトの告知が中心で公式サイト（otaru-aq.jp）のニュース個別記事へは未到達だが、営業期間ページの記載と整合している。"
+    },
+    {
+      "facilityId": "hokkaido_obihiro_zoo",
+      "name": "おびひろ動物園",
+      "finding": "note",
+      "proposedNote": "冬期（例年12月上旬～2月末、2026年度は12月5日～2月28日）は土曜・日曜・祝日のみ11:00～14:00の限定営業となり、平日は休園（年末年始12/29～1/3も休園）。夏期開園は4月末～11月上旬（2026年度は4月29日～11月3日）。2026年7月時点。",
+      "evidenceUrls": [
+        "https://www.city.obihiro.hokkaido.jp/zoo/annai/1005253.html",
+        "http://www.obihirozoo.jp/html/annnaipeeji.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "冬期は約3か月間、開園日が週2日（土日）＋祝日のみに絞られる変則営業であり、現status「open」との齟齬とまでは言えないが実態との差が大きいため特に強調して記録した。"
+    },
+    {
+      "facilityId": "hokkaido_kushiro_zoo",
+      "name": "釧路市動物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.city.kushiro.lg.jp/zoo/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "公式サイトのトップ・お知らせを確認したが、長期休園・改装工事・閉園予定の告知は見当たらなかった。冬季（12～2月）の水曜定休は記録対象外（毎週の定休日）と判断。"
+    },
+    {
+      "facilityId": "hokkaido_maruyama_zoo",
+      "name": "札幌市円山動物園",
+      "finding": "note",
+      "proposedNote": "通常の休園日（毎月第2・4水曜）とは別に、例年4月と11月の第2水曜日を含む週の月曜～金曜（各5日間）を「休園週間」として休園する（2025年は4月7日～11日等）。2026年7月時点。",
+      "evidenceUrls": [
+        "https://www.city.sapporo.jp/zoo/gyouji/annual-event.html",
+        "https://x.com/marudou_fan/status/1905132599531696620"
+      ],
+      "statusCheck": "consistent",
+      "memo": "休園日数は5日間（連続する月～金）で、監査手順に示された「連続1週間以上」の目安をわずかに下回る可能性がある。ただし公式が「休園週間」と称し例年4月・11月の2回発生する定例行事であるため、判断材料として記録した。採否は編集判断に委ねる。"
+    },
+    {
+      "facilityId": "hokkaido_aoao_sapporo",
+      "name": "AOAO SAPPORO",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://aoao-sapporo.blue/category/all/information/",
+        "https://aoao-sapporo.blue/guide/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "公式「重要なお知らせ」一覧を確認したが休館・改装関連の告知はなく、定休日なしの年中営業と案内されている。"
+    },
+    {
+      "facilityId": "hokkaido_sunpiaza_aquarium",
+      "name": "新さっぽろサンピアザ水族館",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.sunpiazza-aquarium.com/faq/",
+        "https://www.sunpiazza-aquarium.com/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "公式FAQ等で年中無休と案内されており、長期休館・改装情報は見当たらなかった。"
+    },
+    {
+      "facilityId": "hokkaido_chitose_aquarium",
+      "name": "サケのふるさと 千歳水族館",
+      "finding": "note",
+      "proposedNote": "年末年始（12月29日～1月1日）とは別に、例年1月中旬から下旬にかけて約2～3週間のメンテナンス休館がある（2023年度・2026年ともに1月13日～31日）。2026年7月時点。",
+      "evidenceUrls": [
+        "https://chitose-aq.jp/info/business.html",
+        "https://chitose-aq.jp/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "公式サイト（chitose-aq.jp）のトップ・営業案内ページを直接確認したが具体的な休館日程の記載は見つけられず、日程は検索結果の二次情報（旅行系サイト等）に基づく。日程未確定の可能性があるため、記載前に公式の年間休館案内での再確認を推奨する。"
+    },
+    {
+      "facilityId": "hokkaido_noboribetsu_nixe",
+      "name": "登別マリンパークニクス",
+      "finding": "note",
+      "proposedNote": "年中無休が基本だが、例年4月上旬に約5日間の保守点検による休館がある（2026年は4月13日～17日）。2026年7月時点。",
+      "evidenceUrls": [
+        "https://nixe-aqua.com/guide/",
+        "https://nixe-aqua.com/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "休館日数は5日間で、監査手順の「連続1週間以上」の目安をわずかに下回る可能性がある。例年4月に発生する定例行事である点を踏まえて記録したが、採否は編集判断に委ねる。"
+    },
+    {
+      "facilityId": "aomori_asamushi_aquarium",
+      "name": "浅虫水族館",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.pref.aomori.lg.jp/release/2025/80306.html",
+        "https://asamushi-aqua.com/userguide/opening-hours",
+        "https://asamushi-aqua.com/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "磯の魚水槽をイカ・クラゲ水槽へ改装し2026年4月3日に公開したとの告知はあるが、これは館内の一部展示替えであり全館休館を伴うものではないと判断した。公式トップページ・臨時休館ページ（該当URLは404）を確認した限り、現時点で全館の長期休館告知は見当たらない。"
+    }
+  ]
+}
