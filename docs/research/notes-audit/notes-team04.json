@@ -1,0 +1,114 @@
+{
+  "team": "notes-team04",
+  "investigatedAt": "2026-07-15",
+  "results": [
+    {
+      "facilityId": "saitama_chikozan_zoo",
+      "name": "狭山市立智光山公園こども動物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.parks.or.jp/chikozan/zoo/",
+        "https://www.parks.or.jp/chikozan/guide/001/001207.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "休園は毎週月曜（祝日の場合は翌日）と年末年始のみ。整備等による長期休園の告知は確認できなかった。"
+    },
+    {
+      "facilityId": "saitama_saitama_aquarium",
+      "name": "さいたま水族館",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.parks.or.jp/suizokukan/guide/001/001080.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "令和8年度の休館日は月1〜数回の単発日（年末年始12/28〜1/1のみ連続4日）で、5日間以上の連続休館には該当しない。記録対象外と判断。"
+    },
+    {
+      "facilityId": "saitama_kodomo_zoo",
+      "name": "埼玉県こども動物自然公園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.parks.or.jp/sczoo/guide/000/000194.html",
+        "https://www.parks.or.jp/sczoo/faq/000/000448.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "休園は毎週月曜（祝日の場合は開園）と年末年始が基本。開園日カレンダーPDFの参照は示唆されるが、月曜・年末年始以外の長期整備休園の告知は確認できなかった。"
+    },
+    {
+      "facilityId": "saitama_tobu_zoo",
+      "name": "東武動物公園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.tobuzoo.com/newsrelease/",
+        "https://www.tobuzoo.com/park/maintenance/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "2026年はジャガー・アムールヒョウ展示や東武スーパープールなど個別施設の改修・再開情報はあるが、園全体の長期休園には該当しない。"
+    },
+    {
+      "facilityId": "chiba_ichikawa_zoo",
+      "name": "市川市動植物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.city.ichikawa.lg.jp/site/zoo/7829.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "休園は毎週月曜（祝日の場合は翌日）と年末年始のみ。長期休園・改修工事の告知は確認できなかった。"
+    },
+    {
+      "facilityId": "chiba_ichihara_zou_no_kuni",
+      "name": "市原ぞうの国",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://zounokuni.com/?event=%E9%96%89%E5%9C%92%E6%97%A5-2",
+        "https://zounokuni.com/info/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "閉園日は月によって木曜中心の変則的な曜日設定（春休み・GW・お盆は無休）だが、季節による定休日の曜日数変動に該当し記録対象外と判断。5日以上の連続休園は確認できなかった。"
+    },
+    {
+      "facilityId": "chiba_kamogawa_sea_world",
+      "name": "鴨川シーワールド",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://x.com/kamoseaOfficial/status/2046499183407120863"
+      ],
+      "statusCheck": "consistent",
+      "memo": "2026年の水族館メンテナンス休館は月1〜数日の単発が中心で、最長でも1月20〜22日・12月15〜17日の3日間連続にとどまり、5日間以上の連続休園には該当しない。"
+    },
+    {
+      "facilityId": "chiba_chiba_zoo",
+      "name": "千葉市動物公園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.city.chiba.jp/zoo/enchoshitsu/restart.html",
+        "https://www.city.chiba.jp/zoo/news/2026kirinoyasumi.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "動物科学館の大規模改修（2024年1月〜2025年3月）は既に解消済み。2026年7月時点で確認できるのはキリン展示場整備に伴う半日程度の展示休止のみで、園全体の長期休園には該当しない。"
+    },
+    {
+      "facilityId": "tokyo_adachi_seibutsuen",
+      "name": "足立区生物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://seibutuen.jp/guidance/information.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "休園は毎週月曜（祝日の場合は翌平日）と年末年始（12/29〜1/1）のみ。改修等による長期休館の告知は確認できなかった。"
+    },
+    {
+      "facilityId": "tokyo_kasai_aquarium",
+      "name": "葛西臨海水族園",
+      "finding": "note",
+      "proposedNote": "隣接地に建設中の新水族園は2028年3月に建設工事完了、2028年9月に供用開始予定と東京都が公表している。現行の水族園は新施設への生物移動に伴い閉園予定だが、2026年7月時点で具体的な閉園予定日は未発表（詳細は決まり次第公式サイトで告知するとされている）。",
+      "evidenceUrls": [
+        "https://www.kensetsu.metro.tokyo.lg.jp/park/zoo/kasairinkaisuizokuen",
+        "https://www.kensetsu.metro.tokyo.lg.jp/park/zoo/kasairinkaisuizokuen/kasairinkaisuizokuenqa",
+        "https://kasai.metro.tokyo.lg.jp/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "現行status「open」は妥当（現行園は営業継続中）。閉園日確定次第、statusとnoteの更新が必要。"
+    }
+  ]
+}
