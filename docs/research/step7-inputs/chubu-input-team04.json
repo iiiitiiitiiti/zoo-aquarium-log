@@ -1,0 +1,53 @@
+[
+ {
+  "name": "蓼科アミューズメント水族館",
+  "pref": "長野県",
+  "city": "茅野市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/日本の水族館"
+  ],
+  "typeGuess": "aquarium",
+  "note": "現況未確認（後工程で営業中か確認要）"
+ },
+ {
+  "name": "中津川市ふれあい牧場",
+  "pref": "岐阜県",
+  "city": "中津川市",
+  "foundUrls": [
+   "web検索結果"
+  ],
+  "typeGuess": "other",
+  "note": "45haの牧場でヒツジ・ウマ・ヤギとふれあい可能"
+ },
+ {
+  "name": "金華山リス村",
+  "pref": "岐阜県",
+  "city": "岐阜市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/日本の動物園一覧"
+  ],
+  "typeGuess": "other",
+  "note": "岐阜城のある金華山山頂のリスふれあい施設"
+ },
+ {
+  "name": "名和昆虫博物館",
+  "pref": "岐阜県",
+  "city": "岐阜市",
+  "foundUrls": [
+   "http://www.nawakon.jp/",
+   "https://ja.wikipedia.org/wiki/名和昆虫博物館"
+  ],
+  "typeGuess": "other",
+  "note": "日本最古の昆虫専門博物館。標本主体だが生態園（生体展示）併設。標本中心の可能性もあり後工程で要確認"
+ },
+ {
+  "name": "牧歌の里",
+  "pref": "岐阜県",
+  "city": "郡上市",
+  "foundUrls": [
+   "web検索結果"
+  ],
+  "typeGuess": "other",
+  "note": "ひるがの高原のアルパカ等ふれあい施設"
+ }
+]

@@ -1,0 +1,120 @@
+{
+ "team": "N02",
+ "block": "近畿",
+ "results": [
+  {
+   "verdict": "include",
+   "name": "タケガワふれあい動物園",
+   "kana": "たけがわふれあいどうぶつえん",
+   "pref": "三重県",
+   "city": "松阪市",
+   "type": "zoo",
+   "lat": 34.59951,
+   "lng": 136.526199,
+   "url": "https://takegawafureaizoo.stores.jp/",
+   "sourceUrls": [
+    "https://www.matsusaka-kanko.com/org/org/%E4%B8%80%E7%A4%BE%E3%82%BF%E3%82%B1%E3%82%AC%E3%83%AF%E3%81%B5%E3%82%8C%E3%81%82%E3%81%84%E5%8B%95%E7%89%A9%E5%9C%92/",
+    "https://camp-fire.jp/projects/832341/view"
+   ],
+   "status": "open",
+   "lastVerifiedAt": "2026-07-15",
+   "proposedId": "mie_takegawafureaidoubutsuen",
+   "coordSource": "国土地理院AddressSearchAPIで「三重県松阪市新松ヶ島町190-7」を検索（番地レベルで「新松ヶ島町１９０番地」として解決）",
+   "address": "三重県松阪市新松ヶ島町190-7",
+   "addressSourceUrl": "https://www.matsusaka-kanko.com/org/org/%E4%B8%80%E7%A4%BE%E3%82%BF%E3%82%B1%E3%82%AC%E3%83%AF%E3%81%B5%E3%82%8C%E3%81%82%E3%81%84%E5%8B%95%E7%89%A9%E5%9C%92/",
+   "adoptionBasis": "保護動物専門の常設ふれあい動物園で、ロバ・ミニチュアホース・ヤギ・羊・うさぎ等の動物展示・ふれあいが来場目的の中心。「牧場・ふれあい施設は、動物展示が主要な来場目的なら含める」に該当。",
+   "note": "現住所（松阪市新松ヶ島町190-7）から松阪市伊勢寺町2613-13への移転を計画中。当初2026年春予定だったが、移転先用地の農地転用許可手続きの遅延により開園目安は2026年8～9月頃に延期（CAMPFIREプロジェクト2026年4月15日付活動報告より）。現時点（2026年7月）では移転が完了していないため、松阪市観光協会加盟店情報（現住所・営業時間10:00-17:00・定休日「平日、年末年始、臨時休園あり」）に基づき現住所で営業継続中と判断。移転完了後は住所・座標・URLの更新が必要。"
+  },
+  {
+   "verdict": "include",
+   "name": "イルカ島",
+   "kana": "いるかじま",
+   "pref": "三重県",
+   "city": "鳥羽市",
+   "type": "aquarium",
+   "lat": 34.505839,
+   "lng": 136.837,
+   "url": "https://shima-marineleisure.com/toba/island",
+   "sourceUrls": [
+    "https://shima-marineleisure.com/toba/island",
+    "https://shima-marineleisure.com/company"
+   ],
+   "status": "open",
+   "lastVerifiedAt": "2026-07-15",
+   "proposedId": "mie_irukajima",
+   "coordSource": "国土地理院AddressSearchAPIでは「三重県鳥羽市小浜町」の町丁目レベル（136.831268,34.496712）までしか解決できず。公式サイト「イルカ島のご案内」ページに埋め込まれたGoogleストリートビュー（島内展望台からの360°パノラマ）の座標（2d136.8369996920228/1d34.50583937464319）を、国土地理院の町丁目座標との整合（島は同町地先の沖合に位置し約1km圏内）を確認した上で採用",
+   "address": "三重県鳥羽市小浜町字日向島628",
+   "addressSourceUrl": "https://shima-marineleisure.com/company",
+   "adoptionBasis": "常設で一般来場できる離島レジャー施設で、イルカ・アシカのショーやふれあい、カワウソ展示など生体展示が主目的。運営会社（志摩マリンレジャー）の会社概要ページに動物取扱業（展示）登録（登録番号：志展第19-1号、事業所所在地：三重県鳥羽市小浜町字日向島628）の記載があり、常設の動物展示施設であることを確認。鳥羽水族館とは別法人の別施設。",
+   "note": "候補台帳の指示どおり島単体の入場形態を確認：公式サイトに「入園フリー」と明記があり、島自体の入園料・入館料は無料。ただし離島のため上陸には運航会社（志摩マリンレジャー）の遊覧船「鳥羽湾めぐりとイルカ島」の利用が事実上必須で、乗船運賃は大人（中学生以上）2,400円・小人（4歳～小学生）1,300円（往復、公式サイト運賃表より）。この運賃は島への交通手段（乗船）に対する対価であり、島の入場料そのものではないため、遊覧船との「共通入場券」による同一施設扱いではなく、動物展示を行う独立施設として1件で計上した。島内の展望リフト利用料（片道400円・往復700円）は入園とは別のオプション施設。閉園・休園情報は見当たらず。"
+  },
+  {
+   "verdict": "include",
+   "name": "小さな水族館 びわこベース",
+   "kana": "ちいさなすいぞくかん びわこべーす",
+   "pref": "滋賀県",
+   "city": "大津市",
+   "type": "aquarium",
+   "lat": 35.194871,
+   "lng": 135.917792,
+   "url": "https://www.biwako-base.com/",
+   "sourceUrls": [
+    "https://www.biwako-base.com/"
+   ],
+   "status": "open",
+   "lastVerifiedAt": "2026-07-15",
+   "proposedId": "shiga_biwakobesu",
+   "coordSource": "公式サイトの構造化データ（businessLocationCoordinates: latitude 35.1948707, longitude 135.9177923）を採用。国土地理院AddressSearchAPIでは「滋賀県大津市木戸」の町丁目レベル（135.909317,35.20256、約1km圏内）までの解決に留まり、番地単位の精度は公式サイト側が上回るため公式データを優先",
+   "address": "滋賀県大津市木戸1383-1",
+   "addressSourceUrl": "https://www.biwako-base.com/",
+   "adoptionBasis": "琵琶湖博物館の元飼育員が運営する常設の小規模水族館で、琵琶湖・淀川水系の淡水魚など100種以上の生体展示が来場目的そのもの。研究施設ではなく一般来場者向けの常設展示施設。",
+   "note": "開館日は金土日祝のみ（公式サイトに2026年7月の開館日カレンダーが掲載されており、現在も運営中であることを確認）。休館・閉館情報なし。"
+  },
+  {
+   "verdict": "include",
+   "name": "滋賀県南郷水産センター",
+   "kana": "しがけんなんごうすいさんせんたー",
+   "pref": "滋賀県",
+   "city": "大津市",
+   "type": "aquarium",
+   "lat": 34.939461,
+   "lng": 135.911926,
+   "url": "http://www.suisan-center.com/",
+   "sourceUrls": [
+    "http://www.suisan-center.com/02riyouannai.html",
+    "https://www.pref.shiga.lg.jp/gt-shiga/destination/316889.html"
+   ],
+   "status": "open",
+   "lastVerifiedAt": "2026-07-15",
+   "proposedId": "shiga_nangosuisansenta",
+   "coordSource": "国土地理院AddressSearchAPIで「滋賀県大津市黒津4丁目4番1号」を検索し番地レベル（「黒津四丁目４番１号」）で解決",
+   "address": "滋賀県大津市黒津4-4-1",
+   "addressSourceUrl": "http://www.suisan-center.com/02riyouannai.html",
+   "adoptionBasis": "1966年開設の常設施設で、生きた淡水魚（鯉・鮒・鱒等）の展示・つかみどり・釣り体験が来場目的の中心。公式サイトで通常営業（9:30～16:30）と案内されており現在も営業中。",
+   "note": "候補台帳の住所「大津市黒津4-5-1」は、公式サイト記載の「黒津４丁目４番１号（4-4-1）」と番号が相違（要修正）。2024年3月1日付で料金改定あり（公式サイトに明記）。火曜定休・年始休業等は候補台帳の記載どおり。"
+  },
+  {
+   "verdict": "include",
+   "name": "山田牧場",
+   "kana": "やまだぼくじょう",
+   "pref": "滋賀県",
+   "city": "甲賀市",
+   "type": "zoo",
+   "lat": 34.853344,
+   "lng": 136.051071,
+   "url": "https://www.no-fu-yamadabokujyou.com/",
+   "sourceUrls": [
+    "https://www.no-fu-yamadabokujyou.com/access-html/",
+    "https://www.no-fu-yamadabokujyou.com/info-html/"
+   ],
+   "status": "open",
+   "lastVerifiedAt": "2026-07-15",
+   "proposedId": "shiga_yamadabokujou",
+   "coordSource": "国土地理院AddressSearchAPIで「滋賀県甲賀市信楽町神山2077」を検索し番地レベル（「信楽町神山２０７７番地」）で解決",
+   "address": "滋賀県甲賀市信楽町神山2077",
+   "addressSourceUrl": "https://www.no-fu-yamadabokujyou.com/access-html/",
+   "adoptionBasis": "常設の酪農体験牧場で、公式サイトに牛・ポニー・やぎ・ダチョウ・ブタ等の動物が来場者を出迎えると明記されており、動物とのふれあいが来場目的の中心（入場無料・年中無休）。「牧場・ふれあい施設は、動物展示が主要な来場目的なら含める」に該当。",
+   "note": "搾乳体験・バター作り体験は要予約・有料。乳製品の製造販売・売店・BBQ等も併設するが、動物ふれあいが公式サイトの主要訴求内容。閉園・休園情報は見当たらず。"
+  }
+ ]
+}

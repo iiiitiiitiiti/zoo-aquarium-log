@@ -1,0 +1,53 @@
+[
+ {
+  "name": "稲葉山牧場 ミニ動物園",
+  "pref": "富山県",
+  "city": "小矢部市",
+  "foundUrls": [
+   "https://www.info-toyama.com/attractions/21015"
+  ],
+  "typeGuess": "other",
+  "note": "ヤギ・ウサギ・モルモット・リス等のふれあいミニ動物園"
+ },
+ {
+  "name": "ひみラボ水族館",
+  "pref": "富山県",
+  "city": "氷見市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/日本の水族館"
+  ],
+  "typeGuess": "aquarium",
+  "note": "詳細未確認"
+ },
+ {
+  "name": "石川県森林公園 森林動物園",
+  "pref": "石川県",
+  "city": "小松市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/日本の動物園一覧"
+  ],
+  "typeGuess": "zoo",
+  "note": "詳細未確認"
+ },
+ {
+  "name": "月うさぎの里",
+  "pref": "石川県",
+  "city": "小松市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/日本の動物園一覧"
+  ],
+  "typeGuess": "other",
+  "note": "うさぎのふれあい施設。詳細未確認"
+ },
+ {
+  "name": "石川県ふれあい昆虫館",
+  "pref": "石川県",
+  "city": "白山市",
+  "foundUrls": [
+   "https://www.furekon.jp/",
+   "https://ja.wikipedia.org/wiki/石川県ふれあい昆虫館"
+  ],
+  "typeGuess": "other",
+  "note": "生きた蝶の温室（蝶の庭）あり"
+ }
+]

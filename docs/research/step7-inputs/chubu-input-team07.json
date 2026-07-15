@@ -1,0 +1,53 @@
+[
+ {
+  "name": "沼津港深海水族館",
+  "pref": "静岡県",
+  "city": "沼津市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/日本の水族館"
+  ],
+  "typeGuess": "aquarium",
+  "note": ""
+ },
+ {
+  "name": "浜名湖体験学習施設 ウォット",
+  "pref": "静岡県",
+  "city": "浜松市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/日本の水族館"
+  ],
+  "typeGuess": "aquarium",
+  "note": "浜名湖の生物展示・体験学習施設"
+ },
+ {
+  "name": "磐田市竜洋昆虫自然観察公園 こんちゅう館",
+  "pref": "静岡県",
+  "city": "磐田市",
+  "foundUrls": [
+   "https://kankyolab.pref.shizuoka.jp/facility/detail.html?CN=361884"
+  ],
+  "typeGuess": "other",
+  "note": "生体のカブトムシ・クワガタ等展示"
+ },
+ {
+  "name": "朝比奈龍勢・昆虫館（旧ふるさと世界の昆虫館）",
+  "pref": "静岡県",
+  "city": "藤枝市",
+  "foundUrls": [
+   "https://www.city.fujieda.shizuoka.jp/soshiki/_shisetsu/23084.html",
+   "https://www.asahinaryusei.jp/konchukan/"
+  ],
+  "typeGuess": "other",
+  "note": "2023年に龍勢まつり展示とあわせてリニューアル。昆虫ゾーンあり"
+ },
+ {
+  "name": "スマートアクアリウム静岡",
+  "pref": "静岡県",
+  "city": "静岡市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/日本の水族館"
+  ],
+  "typeGuess": "aquarium",
+  "note": "JR静岡駅ビル内の小規模水族館"
+ }
+]

@@ -1,0 +1,59 @@
+[
+ {
+  "name": "きんたい廃校博物館",
+  "pref": "大阪府",
+  "city": "八尾市",
+  "foundUrls": [
+   "https://kinpaku.jp/",
+   "https://hunassius.com/13037/"
+  ],
+  "typeGuess": "淡水魚展示館",
+  "note": "廃校理科室を再利用した淡水魚（ニッポンバラタナゴ中心、約30種）の常設展示。開館は毎月第3日曜日のみ"
+ },
+ {
+  "name": "ワールド牧場",
+  "pref": "大阪府",
+  "city": "南河内郡河南町",
+  "foundUrls": [
+   "http://www.worldranch.co.jp/",
+   "https://www.zoo-palette.com/osaka/"
+  ],
+  "typeGuess": "ふれあい牧場",
+  "note": "1989年開業の大型観光牧場。ヒツジ・ヤギ・ポニー・カピバラ等、放牧ふれあいエリアあり"
+ },
+ {
+  "name": "アヴニールファーム",
+  "pref": "大阪府",
+  "city": "和泉市",
+  "foundUrls": [
+   "https://avenirfarm.com/",
+   "https://iko-yo.net/facilities/157090",
+   "https://readyfor.jp/projects/avenirfarm-2"
+  ],
+  "typeGuess": "ふれあい牧場（馬）",
+  "note": "NPO法人運営の馬の保護牧場。サラブレッド・ポニー計5頭、見学・ふれあい・ひき馬体験可"
+ },
+ {
+  "name": "世界の昆虫爬虫類館（堺・緑のミュージアム ハーベストの丘内）",
+  "pref": "大阪府",
+  "city": "堺市",
+  "foundUrls": [
+   "https://farm.or.jp/event/12723",
+   "https://www.asoview.com/asorepo/2319813/"
+  ],
+  "typeGuess": "昆虫館・爬虫類館",
+  "note": "ハーベストの丘園内の別料金エリア（入場料700円、ふれあいセット別途300円）。ヘラクレスオオカブト、ボールパイソン等展示"
+ },
+ {
+  "name": "堺・緑のミュージアム ハーベストの丘",
+  "pref": "大阪府",
+  "city": "堺市",
+  "foundUrls": [
+   "https://farm.or.jp/",
+   "https://www.zoo-palette.com/osaka/",
+   "https://kids.rurubu.jp/article/119036/"
+  ],
+  "typeGuess": "体験型農業公園（ふれあい牧場）",
+  "note": "園内一般エリアでカピバラ・ヒツジ・ヤギ等とふれあい可能。上記「世界の昆虫爬虫類館」は別料金の独立エリアとして別掲"
+ }
+]

@@ -1,0 +1,53 @@
+[
+ {
+  "name": "なかよしとんがり牧場",
+  "pref": "福井県",
+  "city": "坂井市（三国町）",
+  "foundUrls": [
+   "https://fupo.jp/article/%E3%81%AA%E3%81%8B%E3%82%88%E3%81%97%E3%81%A8%E3%82%93%E3%81%8C%E3%82%8A%E7%89%A7%E5%A0%B4%E3%81%A7%E5%8B%95%E7%89%A9%E3%81%A8%E8%A7%A6%E3%82%8C%E5%90%88%E3%81%88%E3%82%8B/"
+  ],
+  "typeGuess": "other",
+  "note": "無料のふれあい牧場（ウサギ・ヤギ・カモ・黒アルパカ）"
+ },
+ {
+  "name": "足羽山公園遊園地（ミニ動物園）",
+  "pref": "福井県",
+  "city": "福井市",
+  "foundUrls": [
+   "https://www.city.fukui.lg.jp/kankou/zoo/index.html",
+   "https://fuku-iro.jp/spot/detail_11936.html"
+  ],
+  "typeGuess": "zoo",
+  "note": "無料入園のミニ動物園。屋内施設「ハピジャン」併設"
+ },
+ {
+  "name": "まきば公園（山梨県立八ヶ岳牧場）",
+  "pref": "山梨県",
+  "city": "北杜市",
+  "foundUrls": [
+   "https://www.yatuboku.jp/makiba-annai"
+  ],
+  "typeGuess": "other",
+  "note": "県立牧場の一部を開放したふれあい公園"
+ },
+ {
+  "name": "万力公園 ふれあい動物広場",
+  "pref": "山梨県",
+  "city": "山梨市",
+  "foundUrls": [
+   "http://www.yamanashi-fruitpark.co.jp/manriki-kouen/zoo.html"
+  ],
+  "typeGuess": "other",
+  "note": "カピバラ・アライグマ・マーラ・シカ・フラミンゴ・クジャク等約20種"
+ },
+ {
+  "name": "ぽかぽかランドパラダ 昆虫体験学習館",
+  "pref": "長野県",
+  "city": "佐久市",
+  "foundUrls": [
+   "https://www.saku-parada.jp/green/konchukan/"
+  ],
+  "typeGuess": "other",
+  "note": "生きた昆虫のふれあいコーナーあり"
+ }
+]

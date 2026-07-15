@@ -1,0 +1,56 @@
+[
+ {
+  "name": "タケガワふれあい動物園",
+  "pref": "三重県",
+  "city": "松阪市",
+  "foundUrls": [
+   "https://www.matsusaka-kanko.com/org/org/%E4%B8%80%E7%A4%BE%E3%82%BF%E3%82%B1%E3%82%AC%E3%83%AF%E3%81%B5%E3%82%8C%E3%81%82%E3%81%84%E5%8B%95%E7%89%A9%E5%9C%92/",
+   "https://takegawafureaizoo.stores.jp/",
+   "https://yomotto.jp/2025/06/26/3092061/"
+  ],
+  "typeGuess": "zoo",
+  "note": "保護動物専門のふれあい動物園。松阪市新松ヶ島町から同市伊勢寺町2613-13へ移転計画中で、開園目安は2026年8～9月（用地の農地転用許可手続きが難航し当初予定の2026年春から延期）。移転元の現在の営業状況・移転先の開業実績は未確認のためreviewに近い扱いを推奨（後工程で公式サイト確認要）。"
+ },
+ {
+  "name": "鳥羽湾めぐりとイルカ島（日向島）",
+  "pref": "三重県",
+  "city": "鳥羽市",
+  "foundUrls": [
+   "https://shima-marineleisure.com/toba/island"
+  ],
+  "typeGuess": "aquarium",
+  "note": "鳥羽湾の無人島「日向島」の通称。入園無料。イルカ・アシカショー、イルカタッチ、カワウソ展示など生体展示・ふれあいを常設で実施。鳥羽水族館とは別法人（志摩マリンレジャー運営）の別施設。"
+ },
+ {
+  "name": "小さな水族館 びわこベース",
+  "pref": "滋賀県",
+  "city": "大津市木戸1383-1",
+  "foundUrls": [
+   "https://www.biwako-base.com/",
+   "https://shigatoco.com/toco/biwakobase/"
+  ],
+  "typeGuess": "水族館(淡水生物・生息域外保全)",
+  "note": "2022年7月開館。琵琶湖博物館元飼育員が運営。常時100種以上展示。開館日は金土日祝のみ。"
+ },
+ {
+  "name": "滋賀県南郷水産センター",
+  "pref": "滋賀県",
+  "city": "大津市黒津4-5-1",
+  "foundUrls": [
+   "http://www.suisan-center.com/",
+   "https://www.pref.shiga.lg.jp/gt-shiga/destination/316889.html"
+  ],
+  "typeGuess": "水族館・釣り／つかみどり体験施設",
+  "note": "1966年開館。生きた魚の展示・ふれあい・釣りが主体。現状は営業中（火曜定休、年始休み等あり）。"
+ },
+ {
+  "name": "山田牧場",
+  "pref": "滋賀県",
+  "city": "甲賀市信楽町神山2077",
+  "foundUrls": [
+   "https://www.no-fu-yamadabokujyou.com/"
+  ],
+  "typeGuess": "ふれあい牧場(牛・ポニー・ヤギ等)",
+  "note": "入場無料・年中無休。乳製品販売所併設。"
+ }
+]

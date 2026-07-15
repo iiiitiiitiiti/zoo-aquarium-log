@@ -1,0 +1,54 @@
+[
+ {
+  "name": "トキの森公園",
+  "pref": "新潟県",
+  "city": "佐渡市",
+  "foundUrls": [
+   "https://www.city.sado.niigata.jp/site/tokinomori/1161.html",
+   "https://sadotimes.sadokisen.co.jp/trip/035-2/"
+  ],
+  "typeGuess": "other",
+  "note": "トキ資料展示館＋トキふれあいプラザ（大型飛翔ケージ）。有料入館（大人500円）で常設展示・生態観察が主目的"
+ },
+ {
+  "name": "新潟市動物ふれあいセンター",
+  "pref": "新潟県",
+  "city": "新潟市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/日本の動物園一覧"
+  ],
+  "typeGuess": "other",
+  "note": "ふれあい施設。詳細未確認（後工程で現況・座標確認）"
+ },
+ {
+  "name": "イヨボヤ会館",
+  "pref": "新潟県",
+  "city": "村上市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/日本の水族館"
+  ],
+  "typeGuess": "aquarium",
+  "note": "鮭に関する展示館・淡水魚水槽。詳細未確認"
+ },
+ {
+  "name": "胎内昆虫の家",
+  "pref": "新潟県",
+  "city": "胎内市",
+  "foundUrls": [
+   "https://niigata-kankou.or.jp/spot/7309",
+   "https://www.city.tainai.niigata.jp/kurashi/kyoiku/bunka-sports/insect/"
+  ],
+  "typeGuess": "other",
+  "note": "生きた昆虫のふれあいコーナー・蝶園あり。冬季休館あり"
+ },
+ {
+  "name": "山古志アルパカ牧場",
+  "pref": "新潟県",
+  "city": "長岡市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/日本の動物園一覧"
+  ],
+  "typeGuess": "other",
+  "note": "アルパカのふれあい牧場。詳細未確認"
+ }
+]

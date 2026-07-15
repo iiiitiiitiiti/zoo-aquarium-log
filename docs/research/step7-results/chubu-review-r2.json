@@ -1,0 +1,98 @@
+[
+ {
+  "name": "足羽山公園遊園地",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "公式ページ https://www.city.fukui.lg.jp/kankou/zoo/sisetu/information.html を curl+抽出で逐語確認。「所在地 福井県福井市山奥町58－97」「休園日 毎週月曜日／12/29から翌年2月末日まで冬期間休園（ただしハピジャンは12/29から1/3まで）」「動物取扱業…有効期間の末日 2028年7月29日」が入力の記載と完全一致。ページ埋め込みGoogleマップのq=36.050838,136.2005184も入力座標と完全一致。"
+ },
+ {
+  "name": "ひみラボ水族館",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "公式サイト https://sites.google.com/site/himilab/ をcurl+抽出で確認。「現在、ひみラボ水族館は開館中です」（開館時間10-15:30、月曜休館、年末～3月中旬休館）を確認、トップページに「〒935-0113 富山県氷見市惣領1927」の記載あり住所一致。国土地理院AddressSearch APIに同住所を独自投入した結果もlat36.796585,lng136.942734で入力と完全一致。"
+ },
+ {
+  "name": "胎内昆虫の家",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "公式ページ https://www.city.tainai.niigata.jp/kurashi/kyoiku/bunka-sports/insect/ をcurl+抽出で確認。「所在地 〒959-2822 新潟県胎内市夏井1204-1」「休館日…冬期間（12月1日～3月19日）」が入力と一致（3月中旬閉館という入力note含め整合）。2026年夏の特別展案内あり閉鎖情報なし。国土地理院AddressSearch APIでも同住所からlng139.496033,lat38.031841を独自取得、入力座標と完全一致。"
+ },
+ {
+  "name": "ぎょぎょランド",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "公式サイト http://www.akatsukayama.jp/shisetsu.html（Shift_JISのためiconv変換して確認）で「ぎょぎょランド 開館時間：9:00-17:00 休館日：毎週火曜日・臨時休館日あり・年末年始」「〒442-0862 豊川市市田町東堤上1番地30」を確認、入力の住所・営業状況と一致。国土地理院AddressSearch APIでも同住所からlng137.360672,lat34.848289を独自取得、入力座標と完全一致。"
+ },
+ {
+  "name": "なかよしとんがり牧場",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "福井県公式ページ https://www.pref.fukui.lg.jp/doc/chikushi/fureai_taiken.html をcurlで確認。「〒913-0004 坂井市三国町平山68-34」の記載一致。ふれあい体験（ヤギ・ヒツジ）は無料・要予約で随時受付中、閉鎖情報なし。同ページでもウサギ・カモ・黒アルパカの記載は見当たらず、入力note「公式ページで一次確認できたのはヤギ・ヒツジのふれあいのみ」という記述と一致（一次調査班の限定表現は妥当）。国土地理院AddressSearch APIでも同住所からlng136.170792,lat36.241096を独自取得、入力座標と完全一致。"
+ },
+ {
+  "name": "竹島水族館",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "蒲郡市サイト https://www.city.gamagori.lg.jp/site/takesui/ は新HP（https://www.takesuideepsea.com/）へ移行済みの案内ページで、両サイトとも「〒443-0031 愛知県蒲郡市竹島町1-6」を確認。新HPの最新投稿（2026年7月時点）で「竹島水族館は毎日開館しています」と閉鎖情報なしを確認。国土地理院AddressSearch APIでも同住所からlng137.232391,lat34.817532を独自取得、入力座標と完全一致。なお現運営は「竹島開発株式会社」表記（市営施設だが運営主体の詳細はcheckedItems対象外のため参考情報）。"
+ },
+ {
+  "name": "蓼科アミューズメント水族館",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "公式サイト https://www.tateshina-aquarium.jp/ 及びアクセスページで「住所：長野県茅野市北山4035-2409」を確認、入力と一致。トップページのお知らせに2026年7月10日・15日付の営業関連投稿があり、通常営業中であることを確認（休館は計画休館・臨時休業の告知のみで閉園情報なし）。国土地理院AddressSearch APIでも同住所からlng138.25116,lat36.052063を独自取得、入力座標と完全一致。"
+ },
+ {
+  "name": "春日井市都市緑化植物園（グリーンピア春日井）動物ふれあい広場",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "春日井市公式ページ（植物園トップ・動物ふれあい広場ページ）で「所在地 春日井市細野町3249番地1」を確認、入力住所と一致。動物ふれあい広場ページでポニー・ヒツジ・ヤクシカ・チンチラ・コモンリスザル・ショウジョウトキ等の飼育を確認、入力adoptionBasisと整合。ただしadoptionBasis記載の「営業時間9:00-16:30」という具体的時間表記は現行ページ本文中には見当たらず確認できない（植物園全体の開園時間は9:00-18:00または9:00-17:00で別記載）。国土地理院AddressSearch APIでも同住所からlng137.063278,lat35.304325を独自取得、入力座標と完全一致。"
+ }
+]

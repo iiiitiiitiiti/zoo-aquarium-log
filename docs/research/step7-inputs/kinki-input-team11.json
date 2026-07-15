@@ -1,0 +1,57 @@
+[
+ {
+  "name": "奈良金魚ミュージアム（NARA KINGYO MUSEUM）",
+  "pref": "奈良県",
+  "city": "奈良市",
+  "foundUrls": [
+   "https://kingyomuseum.com/",
+   "https://guide-mina-ra.com/"
+  ],
+  "typeGuess": "aquarium",
+  "note": "ミ・ナーラ4階の常設金魚ミュージアム。いきものミュージアムと同建物同フロアだが、公式サイトで入場チケットが別売り（セット券は別途あり）のため別施設として計上。"
+ },
+ {
+  "name": "植村牧場",
+  "pref": "奈良県",
+  "city": "奈良市",
+  "foundUrls": [
+   "https://www.uemura-bokujyo.co.jp/",
+   "https://hug-nara.jp/report/18082.html"
+  ],
+  "typeGuess": "fureai_farm",
+  "note": "明治16年創業の牧場。乳牛約30頭・ヒツジ・ヤギを牛舎前で近距離から常設展示、「動物と触れ合う」観光牧場として紹介される。直売・レストラン併設。"
+ },
+ {
+  "name": "わんぱくどうぶつえん",
+  "pref": "奈良県",
+  "city": "山辺郡山添村",
+  "foundUrls": [
+   "https://www.wampakudobutsuen.com/park/",
+   "https://yamazoekanko.jp/spot/wanpaku-zoo/"
+  ],
+  "typeGuess": "zoo",
+  "note": "個人経営の小規模動物園（ベーカリーカフェ併設）。ヤギ・アヒル・ウサギ等を常設展示、入園無料。様々な事情で行き場を失った動物の保護も兼ねる。"
+ },
+ {
+  "name": "フォレストパーク神野山 めえめえ牧場",
+  "pref": "奈良県",
+  "city": "山辺郡山添村",
+  "foundUrls": [
+   "https://yamazoekanko.jp/spot/meemee-makiba/",
+   "http://yamatoji.nara-kankou.or.jp/02nature/10amusement/03east_area/mememakiba/"
+  ],
+  "typeGuess": "fureai_farm",
+  "note": "村営フォレストパーク神野山内の羊牧場。約50頭のヒツジを常設飼育、入場無料、餌やり可能。"
+ },
+ {
+  "name": "橿原市昆虫館",
+  "pref": "奈良県",
+  "city": "橿原市",
+  "foundUrls": [
+   "https://www.city.kashihara.nara.jp/kanko_bunka_sports/konchukan/index.html",
+   "https://www.jalan.net/kankou/spt_29205cc3310040546/"
+  ],
+  "typeGuess": "other",
+  "note": "奈良県唯一の自然史系昆虫館。カブトムシ・クワガタの生体展示、約600匹10種のチョウが舞う温室（蝶の温室）を常設。市立、有料。"
+ }
+]
