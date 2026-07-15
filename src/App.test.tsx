@@ -374,6 +374,17 @@ describe("App",()=>{
    await user.click(button);
    expect(screen.getByRole("heading",{name:"記録の統計"})).toBeInTheDocument();
   });
+  it("restores the list scroll position after returning from a facility detail",async()=>{
+   const user=userEvent.setup();
+   const scrollTo=vi.spyOn(window,"scrollTo").mockImplementation(()=>undefined);
+   render(<App visitStore={visitStore} />);
+   Object.defineProperty(window,"scrollY",{value:1200,writable:true,configurable:true});
+   window.dispatchEvent(new Event("scroll"));
+   await user.click(screen.getByRole("link",{name:/札幌市円山動物園/}));
+   expect(scrollTo).toHaveBeenLastCalledWith({top:0,left:0,behavior:"instant"});
+   await user.click(screen.getByRole("button",{name:/施設一覧/}));
+   expect(scrollTo).toHaveBeenLastCalledWith({top:1200,left:0,behavior:"instant"});
+  });
   it("restores the statistics view from the URL hash on reload",()=>{
    window.location.hash="#stats";
    render(<App visitStore={visitStore} />);
