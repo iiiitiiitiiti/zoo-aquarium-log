@@ -1,0 +1,112 @@
+{
+  "team": "hokkaido-team5",
+  "investigatedAt": "2026-07-15",
+  "facilities": [
+    {
+      "verdict": "include",
+      "name": "美深チョウザメ館",
+      "kana": "びふかちょうざめかん",
+      "pref": "北海道",
+      "city": "中川郡美深町",
+      "type": "aquarium",
+      "lat": 44.5437,
+      "lng": 142.3446,
+      "url": "https://www.town.bifuka.hokkaido.jp/cms/section/qlmcaj000000559v.html",
+      "sourceUrls": [
+        "https://www.town.bifuka.hokkaido.jp/cms/section/qlmcaj000000559v.html",
+        "https://www.bifukaonsen.com/sturgeon/"
+      ],
+      "status": "open",
+      "lastVerifiedAt": "2026-07-15",
+      "proposedId": "hokkaido_bifuka_sturgeon_hall",
+      "coordSource": "美深町公式サイト等に記載の住所『北海道中川郡美深町字紋穂内139番地（森林公園びふかアイランド内）』を国土地理院ジオコーディングAPIで変換（44.5437, 142.3446）。番地まで指定しても字レベルと同一座標。びふかアイランド内の代表点として妥当。",
+      "adoptionBasis": "古代魚チョウザメを中心に生きた水生生物を常設展示する小規模水族館。森林公園びふかアイランド内の独立した常設展示施設であり、動物展示が主目的のため包含基準に合致。",
+      "note": "森林公園びふかアイランド内、道の駅びふか隣接。入館無料。営業時間9:00-17:00、毎週月曜休館（祝日除く）。運営はびふか温泉（美深町の指定管理施設）。名称表記は『チョウザメ館』『美深町チョウザメ館』とする資料もある。"
+    },
+    {
+      "verdict": "include",
+      "name": "オホーツクとっかりセンター",
+      "kana": "おほーつくとっかりせんたー",
+      "pref": "北海道",
+      "city": "紋別市",
+      "type": "aquarium",
+      "lat": 44.3338,
+      "lng": 143.373,
+      "url": "https://o-tower.co.jp/tokkaricenter.html",
+      "sourceUrls": [
+        "https://o-tower.co.jp/tokkaricenter.html",
+        "https://tic.mombetsu.net/tourist-facilities/sealsland/"
+      ],
+      "status": "open",
+      "lastVerifiedAt": "2026-07-15",
+      "proposedId": "hokkaido_okhotsk_tokkari_center",
+      "coordSource": "運営会社（オホーツク・ガリンコタワー株式会社）公式サイト記載の住所『北海道紋別市海洋公園2番地』を国土地理院ジオコーディングAPIで変換（44.3338, 143.3730）。番地まで含めて解決。",
+      "adoptionBasis": "傷病・衰弱したアザラシの保護と野生復帰を目的とする国内唯一の専門施設で、アザラシランドとアザラシシーパラダイスの2施設からなり、生きたアザラシの常設展示・フィーディングタイム解説を主目的とするため包含基準に合致。共通入場券のため1施設として扱う。",
+      "note": "指定管理者はオホーツク・ガリンコタワー株式会社。営業時間10:00-16:00、年中無休（年末年始は要問合せ）。「とっかり」はアイヌ語でアザラシの意。1987年（昭和62年）に4頭の保護を機に開設。"
+    },
+    {
+      "verdict": "include",
+      "name": "丸瀬布昆虫生態館",
+      "kana": "まるせっぷこんちゅうせいたいかん",
+      "pref": "北海道",
+      "city": "紋別郡遠軽町",
+      "type": "other",
+      "lat": 43.917,
+      "lng": 143.329,
+      "url": "https://engaru.jp/tourism/page.php?id=414",
+      "sourceUrls": [
+        "https://engaru.jp/tourism/page.php?id=414",
+        "https://www.engaru-kankou.jp/view/konchu.html"
+      ],
+      "status": "open",
+      "lastVerifiedAt": "2026-07-15",
+      "proposedId": "hokkaido_maruseppu_insect_museum",
+      "coordSource": "遠軽町公式サイト等で確認した住所『北海道紋別郡遠軽町丸瀬布上武利68番地』を国土地理院ジオコーディングAPIで変換。番地を指定しても字レベルの座標（43.9170, 143.3290）から変化なし（丸瀬布森林公園いこいの森内の広域住所のため）。同公園内の代表点として妥当。",
+      "adoptionBasis": "カブトムシ・クワガタ・チョウ等を通年生体展示する常設の昆虫専門施設で、蝶が飛び交う「バタフライホール」を併設。動物（昆虫）展示が来園目的の中心のため包含基準に合致（昆虫館は既存マスタの前例に準拠しtype: other）。",
+      "note": "遠軽町教育委員会所管、丸瀬布森林公園いこいの森内。営業時間は通常期(4-10月)9:00-17:00、冬季(11-3月)10:00-16:00。毎週火曜休館（祝日の場合翌日、夏休み・GW中は無休）、年末年始休館。通年営業（季節休業ではない）。"
+    },
+    {
+      "verdict": "include",
+      "name": "世界の昆虫館パピヨンシャトー",
+      "kana": "せかいのこんちゅうかんぱぴよんしゃとー",
+      "pref": "北海道",
+      "city": "上川郡当麻町",
+      "type": "other",
+      "lat": 43.8364,
+      "lng": 142.5295,
+      "url": "http://www.papiyonsyatoo.com/",
+      "sourceUrls": [
+        "https://www.town.tohma.hokkaido.jp/all-about/03/03/1737",
+        "http://www.papiyonsyatoo.com/"
+      ],
+      "status": "open",
+      "lastVerifiedAt": "2026-07-15",
+      "proposedId": "hokkaido_papillon_chateau",
+      "coordSource": "施設情報サイト（Guidoor）記載の座標（43.836417, 142.529464）を採用。国土地理院APIは住所『北海道上川郡当麻町市街6区』が字レベルで解決できず当麻町中心部相当の座標（43.8278, 142.5081、施設から約2.3km）しか得られなかったため、当麻山中腹に位置する本施設の実態に近いGuidoor座標を代替採用。",
+      "adoptionBasis": "ヘラクレスオオカブト等の生体展示と国内外の蝶を中心とした標本展示（約1万点）を併設する常設の昆虫専門施設。動物（昆虫）展示が来園目的の中心のため包含基準に合致（昆虫館は既存マスタの前例に準拠しtype: other）。",
+      "note": "当麻山に位置する季節営業施設。営業期間は例年4月第4土曜〜10月第4日曜、9:00-17:00（営業期間中は無休）、冬期(10月末〜4月末)は定例休業。調査時点（2026-07-15）は例年の営業期間中に該当するためstatus: openとし、季節休業をnoteに記載。"
+    },
+    {
+      "verdict": "include",
+      "name": "ノースサファリサッポロ",
+      "kana": "のーすさふぁりさっぽろ",
+      "pref": "北海道",
+      "city": "札幌市南区",
+      "type": "zoo",
+      "lat": 42.9498,
+      "lng": 141.2248,
+      "url": "https://www.north-safari.com/",
+      "sourceUrls": [
+        "https://www.north-safari.com/news/3634/",
+        "https://www.hokkaido-np.co.jp/article/1217621/",
+        "https://ja.wikipedia.org/wiki/%E3%83%8E%E3%83%BC%E3%82%B9%E3%82%B5%E3%83%95%E3%82%A1%E3%83%AA%E3%82%B5%E3%83%83%E3%83%9D%E3%83%AD"
+      ],
+      "status": "closed",
+      "lastVerifiedAt": "2026-07-15",
+      "proposedId": "hokkaido_north_safari_sapporo",
+      "coordSource": "公式サイト等に記載の住所『北海道札幌市南区豊滝469-1』を国土地理院ジオコーディングAPIで変換（42.9498, 141.2248）。Wikipedia記載の座標（DMS表記: 北緯42度56分49.3秒 東経141度13分22.9秒 → 十進法換算42.9470, 141.2230）とおおむね整合（差約350m、同一施設内の範囲として妥当）。",
+      "adoptionBasis": "2005年開園、来園者が間近で動物と触れ合えることを特徴とした常設のサファリパーク型動物園（通称『日本一危険な動物園』）で、延べ200万人以上が来場。2025年9月30日に閉園したが、包含基準『閉園確認済みはclosedとして記録を保持する』に従いincludeとしてstatus: closedで記録。",
+      "note": "2025年9月30日閉園（20年の歴史に幕）。運営会社は有限会社サクセス観光。閉園理由は市街化調整区域での無許可建築物設置による都市計画法違反（開業前の2004年から違法建築が継続）。札幌市は2026年3月、違法建築物37棟すべての除却（2026年10月末までの撤去）を命じたが、運営会社は2026年6月にこれを『違法・不当』として行政不服審査請求を申し立て係争中。飼育動物は最大時640頭超から2026年3月末時点で219頭に減少したが、繁殖により2026年4月末時点で221〜226頭に増加、移転先の確保が難航しており2026年7月時点でも園内に動物が残置されたまま行政と係争が続いている。"
+    }
+  ]
+}
