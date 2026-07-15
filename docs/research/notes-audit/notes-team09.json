@@ -1,0 +1,89 @@
+{
+  "team": "notes-team09",
+  "investigatedAt": "2026-07-15",
+  "results": [
+    {
+      "facilityId": "shizuoka_hamamatsu_zoo",
+      "name": "浜松市動物園",
+      "finding": "note",
+      "proposedNote": "冬季は12月1日～2月28日が開園時間10:00～16:00の限定入園となり、毎年3月1日～3月19日ごろは臨時休園となる。2026年7月時点、公式サイトの案内による。",
+      "evidenceUrls": ["https://hamazoo.net/information.php"],
+      "statusCheck": "consistent",
+      "memo": "3月の休園を「毎年恒例」と明記した一次情報は見つからず、公式ページの記述は年を明示しない通年案内の形。過去にも同時期（3月中旬まで）の休園が報告されており、季節営業・定例整備の性格が強いと判断した。"
+    },
+    {
+      "facilityId": "shizuoka_izu_animal_kingdom",
+      "name": "伊豆アニマルキングダム",
+      "finding": "none",
+      "evidenceUrls": ["https://izu-animal-kingdom.com/", "https://izu-animal-kingdom.com/calendar-tickets/"],
+      "statusCheck": "consistent",
+      "memo": "公式サイトに変則休園の告知は確認できず。外部サイトに『不定休で年数日の休園あり』との記述はあるが、具体的日程・理由が一次情報で確認できないため記録対象外とした。公式情報未確認。"
+    },
+    {
+      "facilityId": "shizuoka_atagawa_banana_wani",
+      "name": "熱川バナナワニ園",
+      "finding": "none",
+      "evidenceUrls": ["https://bananawani.jp/information/"],
+      "statusCheck": "consistent",
+      "memo": "公式サイトで年中無休を案内。確認できた臨時休園情報は2020年のコロナ禍によるもののみで、現在は解消済みのため記録対象外。"
+    },
+    {
+      "facilityId": "shizuoka_rakujuen",
+      "name": "三島市立公園楽寿園",
+      "finding": "none",
+      "evidenceUrls": ["https://www.city.mishima.shizuoka.jp/site/rakujyuen/5429.html"],
+      "statusCheck": "consistent",
+      "memo": "毎週月曜定休（祝日の場合は翌平日に振替）と年末年始休園（12/27～1/2）のみ確認。いずれも記録対象外の定休日・年末年始休業に該当。長期整備休園の情報は見当たらなかった。"
+    },
+    {
+      "facilityId": "aichi_japan_monkey_centre",
+      "name": "日本モンキーセンター",
+      "finding": "note",
+      "proposedNote": "施設老朽化に伴う安全・動物福祉上の課題を理由に、2026年10月19日から全園休園に入る予定。8月31日まで通常営業、9月1日～10月18日は土日祝のみの営業となる。休園期間は3～4年程度の見込みで、再開時期は未定。2026年7月時点の公式発表による。",
+      "evidenceUrls": ["https://www.j-monkey.jp/news/20260313notice.html"],
+      "statusCheck": "consistent",
+      "memo": "現時点（2026年7月）ではまだ通常営業中のためstatus=openと矛盾しない。休園開始が近づいたら別途statusの更新が必要。隣接する遊園地『日本モンキーパーク』は本件休園と別施設で、通常営業を継続する見込み。"
+    },
+    {
+      "facilityId": "aichi_higashi_park_zoo",
+      "name": "東公園動物園",
+      "finding": "none",
+      "evidenceUrls": ["https://www.city.okazaki.lg.jp/zoo/index.html"],
+      "statusCheck": "consistent",
+      "memo": "毎週月曜定休（祝日の場合は翌平日）と年末年始休園（12/29～1/2）のみ確認。飼育環境改善のためのクラウドファンディングは実施されているが、休園を伴う改修予定の告知は確認できなかった。"
+    },
+    {
+      "facilityId": "aichi_kuragaike_zoo",
+      "name": "鞍ケ池公園動物園",
+      "finding": "none",
+      "evidenceUrls": ["https://kuragaikepark.com/", "https://www.city.toyota.aichi.jp/faq/kankou/1009254/1007004.html"],
+      "statusCheck": "consistent",
+      "memo": "鞍ケ池公園全体のリニューアルは2021年5月に完了済み。現時点で変則休園の告知は確認できなかった。"
+    },
+    {
+      "facilityId": "aichi_toyohashi_nonhoi_park",
+      "name": "豊橋総合動植物公園（のんほいパーク）",
+      "finding": "none",
+      "evidenceUrls": ["https://www.nonhoi.jp/"],
+      "statusCheck": "consistent",
+      "memo": "毎週月曜定休（祝日の場合は翌平日）のみ確認。工事・改装による長期休園の告知は公式サイトに見当たらなかった。"
+    },
+    {
+      "facilityId": "aichi_nagoya_port_aquarium",
+      "name": "名古屋港水族館",
+      "finding": "none",
+      "evidenceUrls": ["https://nagoyaaqua.jp/", "https://www.nikkei.com/article/DGXZQOFD073LE0X00C26A4000000/"],
+      "statusCheck": "consistent",
+      "memo": "水族館本体の休館予定は確認できず。同じガーデンふ頭内の名古屋港ビル・南極観測船ふじ等は2026アジア競技大会準備のため2026年8月1日～11月30日休館予定だが、水族館は対象外。老朽化に伴う大規模改修計画は名古屋港管理組合・愛知県・名古屋市で検討中との報道はあるが、具体的な休館日程は未確定（2026年7月時点）のため記録対象外とした。"
+    },
+    {
+      "facilityId": "aichi_higashiyama_zoo",
+      "name": "東山動植物園",
+      "finding": "note",
+      "proposedNote": "再生プランに基づく整備工事のため、植物園の温室（後館）が2025年度から2030年度（予定）まで閉鎖中。動植物園全体・動物園エリアの開園には影響なく通常通り営業している。2026年7月時点の公式サイトによる。",
+      "evidenceUrls": ["https://www.higashiyama.city.nagoya.jp/16_evolution/viewing/"],
+      "statusCheck": "consistent",
+      "memo": "休園ではなく園内一部施設（温室後館）の長期休館のため、記録対象の『工事・改装等による長期休園』に厳密に該当するか判断が分かれる可能性がある。動植物園全体は開園中でstatus=openと矛盾しないため、参考情報として記載した。"
+    }
+  ]
+}

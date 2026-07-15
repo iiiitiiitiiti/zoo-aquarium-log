@@ -1,0 +1,119 @@
+{
+  "team": "notes-team10",
+  "investigatedAt": "2026-07-15",
+  "results": [
+    {
+      "facilityId": "aichi_sealife_nagoya",
+      "name": "名古屋シーライフ水族館",
+      "finding": "note",
+      "proposedNote": "名古屋シーライフ水族館の休館日は「不定休」で、併設するレゴランド・ジャパンの共通パークカレンダーに準ずる。レゴランド本体は原則ほぼ毎日営業するが、閑散期には数日単位の休園日が設定されることがあり、2026年は1月20〜22日・1月27〜29日・5月12〜14日（いずれも3日間）の休園が確認された。単独の水族館としての定休日ではなく、パーク全体の稼働状況に連動する変則的な休園形態である点に注意が必要。2026年7月時点。",
+      "evidenceUrls": [
+        "https://www.legoland.jp/resort-guide/sealife-nagoya/",
+        "https://www.legoland.jp/en/operation/info/opening-hours/opening-hours-sea-life-nagoya/",
+        "https://www.legoland.jp/en/operation/info/opening-hours/opening-hours-legoland-japan/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "「定休日はパークカレンダーに準ずる」という記載を確認し、レゴランド本体の休園日連動があることを確認した。ただし公式の年間休園日一覧PDF（annual pass calendar）は直接取得できず、検索結果の断片情報に基づく。"
+    },
+    {
+      "facilityId": "aichi_hekinan_aquarium",
+      "name": "碧南海浜水族館",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.city.hekinan.lg.jp/aquarium/index.html",
+        "https://www.facebook.com/hekinansuizokukan/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "2階の学習エリアを対象に令和7年11月～令和8年3月にリニューアル工事を実施し、2026年3月12日に「学ぶ遊ぶひろば ぐるんちゃ」として既にリニューアルオープン済み（過去の解消済み休園のため記録対象外）。現行の定期休館日は毎週月曜と12/29～1/1のみで、それ以外の長期休館・改装告知は見当たらなかった。"
+    },
+    {
+      "facilityId": "mie_ise_sea_paradise",
+      "name": "ゼロ距離水族館 伊勢シーパラダイス",
+      "finding": "note",
+      "proposedNote": "伊勢シーパラダイスは法定点検のため毎年4月と12月に全館休館する。2026年は4月7日～8日（2日間）と12月8日～11日（4日間）が休館予定で、2024年も12月10日～13日（4日間）に同様の休館が確認できる年複数回の定例休館パターンである。休館中は駐車場を含め敷地内立入禁止。なお2021年に閉館した「志摩マリンランド」との混同でネット上に閉館の噂があるが、当館は現在も通常営業を継続している。2026年7月時点。",
+      "evidenceUrls": [
+        "https://ise-seaparadise.com/opening-hours/",
+        "https://omnibus-life.com/iseseaparadise/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "2024年の休館日程は二次情報（検索結果の要約）に基づく。閉館の噂は誤情報であることを確認済み。"
+    },
+    {
+      "facilityId": "mie_gokatsura_animal_park",
+      "name": "ごかつら池どうぶつパーク",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://gokatsura.jp/general-information/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "定期休園日は毎週火曜（祝日の場合は翌平日）のみで、冬季の縮小営業や長期休園・改装の告知は見当たらなかった。2024年6月にグランドオープンした比較的新しい施設のため長期休園の実績自体が乏しい可能性がある。"
+    },
+    {
+      "facilityId": "mie_toba_aquarium",
+      "name": "鳥羽水族館",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://aquarium.co.jp/",
+        "https://aquarium.co.jp/topics/260630_01"
+      ],
+      "statusCheck": "consistent",
+      "memo": "公式に「年中無休」と案内されている。2026年7月に確認された休業は館内レストラン（ベイサイド、花さんご）のみの休業で、水族館本体の休館ではない。"
+    },
+    {
+      "facilityId": "shiga_biwako_museum",
+      "name": "滋賀県立琵琶湖博物館",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.biwahaku.jp/",
+        "https://www.biwahaku.jp/guide/open.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "定期休館日は毎週月曜（祝日の場合は開館）。2026年3月8日（びわ湖マラソンに伴う休館、1日）と8月21日（施設管理都合による午前臨時休館、半日）が確認できたが、いずれも単発かつ連続日数の閾値に達しないため記録対象外と判断した。"
+    },
+    {
+      "facilityId": "kyoto_kyoto_city_zoo",
+      "name": "京都市動物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://zoo.city.kyoto.lg.jp/zoo/visitor/schedule/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "休園日は毎週月曜（祝日の場合は翌平日）と年末年始（12/28～1/1）のみ。長期休園・改装工事の告知は見当たらなかった。"
+    },
+    {
+      "facilityId": "kyoto_kyoto_aquarium",
+      "name": "京都水族館",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.kyoto-aquarium.com/lp/kyoto_business_status/",
+        "https://www.kyoto-aquarium.com/news/details/6159.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "貸し切り営業に伴う単発休館（例: 2025年10月25日）が不定期にあるが、いずれも1日単位で記録対象外。2026年6月からハンドウイルカ「テン」の妊娠に伴いイルカプログラムを休止中だが、これは展示・プログラムの休止であり施設全体の休館ではないため対象外と判断した。"
+    },
+    {
+      "facilityId": "osaka_satsukiyama_zoo",
+      "name": "池田市立五月山動物園",
+      "finding": "note",
+      "proposedNote": "新施設「Satsukiyama DAYZOO」へのリニューアル工事に伴い休園中。2025年11月に第1期（ウォンバット関連エリア）、2026年5月に第2期（「ウォンバットと仲間たち」）を期間限定公開した後、2026年5月22日から第3期工事のため全面休園に入った。公式サイトでは再開時期を「当面の間」としており、竣工・開園時期は2026年7月時点でも未定。現状は物販のみ営業中で、動物は仮設獣舎に移動済み。現status「suspended」は実態と一致している。2026年7月時点。",
+      "evidenceUrls": [
+        "https://www.satsukiyamazoo.com/visitor-information/",
+        "https://minoh.goguynet.jp/2026/07/01/satsukiyamadoubutsuen/",
+        "https://ikeda-hodo.com/archives/30206"
+      ],
+      "statusCheck": "consistent",
+      "memo": "再開の具体的な予定日（竣工時期）は一次情報でも確認できず「未定」が最新情報。既存収録の休園理由と整合しており、再開済みではないためstatus変更は不要と判断した。"
+    },
+    {
+      "facilityId": "osaka_kaiyukan",
+      "name": "海遊館",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.kaiyukan.com/info/hours/",
+        "https://www.kaiyukan.com/press/241219_newyear.pdf"
+      ],
+      "statusCheck": "consistent",
+      "memo": "毎年1月・2月に施設点検（電気設備点検含む）のため2日間程度の休館が年数回あるが（2026年は1/14-15）、いずれも連続2日間で「連続4日間程度」の閾値には達しないため記録対象外と判断した（他チーム調査のアクア・トトぎふの判断基準に準拠）。2026年6月からの再入館終了は運用ルール変更であり休館情報ではない。"
+    }
+  ]
+}
