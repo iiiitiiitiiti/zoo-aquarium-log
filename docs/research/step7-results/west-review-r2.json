@@ -1,0 +1,80 @@
+[
+ {
+  "name": "渋川動物公園",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "公式サイト https://www.shibukawazoo.com/ をcurlで再取得し「岡山県玉野市渋川3-1077-1」の逐語一致と「休日：年中無休」の記載を確認。国土地理院AddressSearch APIで「岡山県玉野市渋川三丁目」を検索した結果もcoordinates [133.896042,34.463223]で完全一致。"
+ },
+ {
+  "name": "真教寺公園",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {
+   "note": "追記提案: 公式サイト（jimdofree）のふれあい体験ページを再取得したところ、ページ冒頭に「ヤギ高齢化のため、当面の間ふれあい体験を中止させていただきます。」という告知があり、torican.jp記載の「現在は日曜のみ・ヤギの餌やりのみ」からさらに状況が進み、当面全面中止となっている可能性がある（ページ内には毎週日曜開催という旧来の説明文も残存し混在）。ただし本件はふれあい体験プログラムの状況であり、施設自体の開園状況・包含基準（20種100匹以上の動物展示）には影響しない。"
+  },
+  "evidence": "国土地理院AddressSearch APIで「鳥取県鳥取市戎町505」を検索しcoordinates [134.232224,35.498764]で完全一致を確認。torican.jp（curl再取得）で住所「鳥取県鳥取市戎町505-2」・名称「真教寺公園」を確認。公式サイト（jimdofree、curl再取得）で「20種類100匹以上の動物がいます」「〒680-0055 鳥取市戎町」を確認、お知らせページの更新は2026/7/7まで継続しており通常営業中。"
+ },
+ {
+  "name": "笠岡市立カブトガニ博物館",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "公式サイト https://www.city.kasaoka.okayama.jp/site/kabutogani/ をcurlで再取得し、名称「笠岡市立カブトガニ博物館」・住所「横島1946-2」の逐語一致を確認。休館・閉館の告知は見当たらず。国土地理院AddressSearch APIで「岡山県笠岡市横島1946」を検索した結果もcoordinates [133.521545,34.478863]で完全一致。"
+ },
+ {
+  "name": "瑞穂ハンザケ自然館",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "unchecked"
+  },
+  "corrections": {
+   "sourceUrls": "参考情報: sourceUrlsの一つ https://www.town.ohnan.lg.jp/www/contents/1001000000222/index.html を再取得したところ「お探しのページを見つけることができませんでした」という404相当のページになっていた（邑南町サイトの構成変更等によりリンク切れの可能性）。主要な公式サイト（ohtv.ne.jp）側は生きているため、status・address判定への影響はないが、二次情報源リンクの更新が望ましい。"
+  },
+  "evidence": "公式サイト http://www.ohtv.ne.jp/mizuho-hanzake/ をcurlで再取得し「〒696-0224 島根県邑智郡邑南町上亀谷475」「休館日：毎週月曜日・火曜日、祝日の翌日」の逐語一致を確認、閉館告知なし。国土地理院AddressSearch APIで「島根県邑智郡邑南町上亀谷」を検索した結果はcoordinates [132.519897,34.820454]で入力値と完全一致したが、これは大字レベルの代表点であり番地(475)単位の座標ではないため、番地精度としては確認できない（元記録のcoordSourceの記載通り）。"
+ },
+ {
+  "name": "高知県立足摺海洋館 SATOUMI",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {},
+  "evidence": "公式サイト https://kaiyoukan.jp/access.html をcurlで再取得し「〒787-0450 高知県土佐清水市三崎4032」の逐語一致を確認。トップページ(curl再取得)では「本日の営業時間 9:00～17:00」が表示されており、休館表示のブロックはHTMLコメント内の未使用テンプレートであることを確認、通常営業中。別施設「足摺海底館」の一時休館告知(2026/4/18付)も確認したがSATOUMI本体とは別料金・別運営で無関係。OpenStreetMap Nominatimを自分で再検索した結果、name=\"高知県立足摺海洋館「SATOUMI」\"(way/966116946)がlat 32.7913244, lon 132.8620216で、入力座標(32.791324,132.862022)と完全一致することを確認。"
+ },
+ {
+  "name": "広島もとまち水族館",
+  "reviewVerdict": "agree",
+  "checkedItems": {
+   "verdict": "match",
+   "status": "match",
+   "address": "match",
+   "coords": "match"
+  },
+  "corrections": {
+   "address": "微修正提案: 公式サイトの動物取扱業表示ページ・アクセスページでは建物名を「基町クレド・パセーラ 7F」と記載しており、入力の「パセーラ7F」は略称。番地(基町6-78)は完全一致するため実質的な誤りではないが、正式建物名に揃えるなら「広島県広島市中区基町6-78 基町クレド・パセーラ7F」への修正を提案する。"
+  },
+  "evidence": "https://aquarium-hiroshima.com/license/ をcurlで再取得し「事業所の所在地 広島県広島市中区基町6-78」「登録年月日 令和7年4月30日」の逐語一致を確認。トップページ(curl再取得)で「2025年10月に広島市中心部で開館」「本日の営業時間 10:00-19:00」、2026.07.13付のお知らせ更新を確認し通常営業中。国土地理院AddressSearch APIで「広島県広島市中区基町6-78」を検索した結果もcoordinates [132.457809,34.397648]で完全一致。"
+ }
+]
