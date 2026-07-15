@@ -1,0 +1,115 @@
+{
+  "team": "notes-team08",
+  "investigatedAt": "2026-07-15",
+  "results": [
+    {
+      "facilityId": "nagano_iida_zoo",
+      "name": "飯田市立動物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.city.iida.lg.jp/soshiki/171/iida-zoo.html",
+        "https://iidazoo.jp/news/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "公式サイト（iidazoo.jp）はWebFetchで403エラーとなり直接確認できなかったが、市公式ページで休園日が「毎週月曜日（休日の場合は火曜日）」のみと確認でき、検索結果でも冬季限定の長期休園・改装告知は見当たらなかった。"
+    },
+    {
+      "facilityId": "nagano_omachi_sanpaku_zoo",
+      "name": "市立大町山岳博物館付属園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.omachi-sanpaku.com/facility/garden/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "冬季（12～3月）は開園時間が9:00～16:30から10:00～16:00に短縮されるが、休園にはならず通年営業している。営業時間の季節変動は記録対象外と判断した。休園日は毎週月曜・祝日の翌日・年末年始のみで、7-8月は無休となる特例があるが変則休園には該当しない。"
+    },
+    {
+      "facilityId": "nagano_komoro_zoo",
+      "name": "小諸市動物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.city.komoro.lg.jp/komoro_zoo/riyouannai/15108.html",
+        "https://www.atpress.ne.jp/news/438274",
+        "https://www.city.komoro.lg.jp/komoro_zoo/index.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "第2期整備（獣舎建設工事）のため2025年6月1日～2026年3月末まで全面休園（期間中は日曜のみ散策券で入園可）し、2026年4月26日に開園100周年に合わせてリニューアルオープン済み。現在（2026年7月時点）は既に通常営業へ復帰しており、監査手順の「過去の解消済み休園」に該当するためnoteには記載しないが、直近の重要な経緯として記録した。現行の冬季（12月～3月第2週）は毎週水曜休園のみで、これは季節による定休日変動のため記録対象外。"
+    },
+    {
+      "facilityId": "nagano_suzaka_zoo",
+      "name": "須坂市動物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.city.suzaka.nagano.jp/suzaka_zoo/index.html",
+        "https://www.city.suzaka.nagano.jp/suzaka_zoo/oshirase/7631.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "定期休園日は毎週月曜（祝日の場合翌日）と年末年始（12/29～1/3）のみ。冬季の縮小営業や長期休園、改装工事の告知は見当たらなかった。"
+    },
+    {
+      "facilityId": "nagano_chausuyama_zoo",
+      "name": "長野市茶臼山動物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://chausuyama.com/",
+        "https://www.zoo-palette.com/%E5%90%84%E5%9C%92%E3%81%AE%E8%A9%B3%E7%B4%B0%E3%83%9A%E3%83%BC%E3%82%B8/%E8%8C%B6%E8%87%BC%E5%B1%B1%E5%8B%95%E7%89%A9%E5%9C%92-%E9%95%B7%E9%87%8E/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "冬季（12月～2月末）は毎週月曜と年末（12/29～31）が休園日という情報のみで、これは季節による定休日の曜日数変動の範囲内と判断した。公式サイト（chausuyama.com）の休園日詳細ページには直接到達できなかったため、二次情報での確認にとどまる。長期休園・改装告知は見当たらなかった。"
+    },
+    {
+      "facilityId": "gifu_aquatotto_aquarium",
+      "name": "世界淡水魚園水族館 アクア・トト ぎふ",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://aquatotto.com/about/open/",
+        "https://aquatotto.com/faq/faq-34705/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "2026年の休館日は河川環境楽園全体の休園に伴う単発の月曜日（3/9、4/13、6/8、7/13、12/14）のみで、いずれも1日単位。電気設備の法定点検（全館停電）が2027年1月12日・13日に予定されているが2日間のみで、監査手順の「連続5日間以上」「連続4日程度が年複数回」のいずれの閾値にも達しないため記録対象外と判断した。"
+    },
+    {
+      "facilityId": "shizuoka_izu_shaboten_zoo",
+      "name": "伊豆シャボテン動物公園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://izushaboten.com/information/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "公式サイトに「年中無休」と明記されており、長期休園・改装工事の告知は見当たらなかった。"
+    },
+    {
+      "facilityId": "shizuoka_nihondaira_zoo",
+      "name": "静岡市立日本平動物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.nhdzoo.jp/info/index.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "定期休園日は毎週月曜（祝日・振替休日の場合は翌平日）と12月29日～翌年1月1日のみ。2013年に全面リニューアル済みで、それ以降の長期休園・改装工事の告知は見当たらなかった。"
+    },
+    {
+      "facilityId": "shizuoka_tokai_univ_marine_museum",
+      "name": "東海大学海洋科学博物館",
+      "finding": "note",
+      "proposedNote": "1970年開館の本館は、2022年度で有料入館を終了し、2023年度以降は1階のみの事前予約制無料公開（教育団体向け）に縮小、2024年10月31日をもって一般公開を完全終了した。跡地周辺では静岡市が清水区日の出町に新たな海洋文化施設の整備を計画しており、東海大学はJAMSTEC等と展示監修等で協力する。博物館自体は教育・研究機関として存続するが一般公開の再開は確認できない。2026年7月時点。",
+      "evidenceUrls": [
+        "https://www.umi.muse-tokai.jp/news/single.php?id=6577",
+        "https://www.tokai.ac.jp/news/detail/post_384.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "跡地の新施設整備計画に関する詳細（開館時期・運営主体）は一次情報で確認できず、二次情報（ニュースサイト等）に基づく。閉館は継続中で再開の兆候はないため、現status「closed」は妥当と判断した。"
+    },
+    {
+      "facilityId": "shizuoka_fuji_safari_park",
+      "name": "富士サファリパーク",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.fujisafari.co.jp/news/notice/484047/",
+        "https://www.fujisafari.co.jp/schedule/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "公式告知で「施設点検およびメンテナンスのため」2026年2月2日～2月6日（5日間）に全面休園したことを確認したが、既に2月7日から通常営業に復帰済み（過去の解消済み休園）。過去の同種告知（2023～2025年）は検索で確認できず、毎年恒例の定例休園かどうか一次情報では判断できなかったため、noteには記載せず記録のみ残す。"
+    }
+  ]
+}
