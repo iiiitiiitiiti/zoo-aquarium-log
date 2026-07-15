@@ -26,7 +26,7 @@ describe("StatsPanel", () => {
     render(<StatsPanel stats={stats} onBack={() => undefined} />);
 
     expect(screen.getByRole("heading", { name: "記録の統計" })).toBeInTheDocument();
-    expect(screen.getByText("すべての施設・記録が対象です。")).toBeInTheDocument();
+    expect(screen.getByText("※閉園済みの館は母数から除外しています。")).toBeInTheDocument();
     expect(screen.getByText("42", { exact: true })).toBeInTheDocument();
     expect(screen.getByText("3 / 7 館")).toBeInTheDocument();
     expect(screen.getByText("動物園")).toBeInTheDocument();

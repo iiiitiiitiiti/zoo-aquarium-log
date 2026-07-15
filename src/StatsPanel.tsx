@@ -42,7 +42,7 @@ export default function StatsPanel({ stats, onBack }: { stats: StatsModel; onBac
         <button className="back-button" type="button" onClick={onBack}>← 施設一覧</button>
         <p className="eyebrow">FIELD STATISTICS</p>
         <h1>記録の統計</h1>
-        <p>すべての施設・記録が対象です。</p>
+        <p className="stats-note">※閉園済みの館は母数から除外しています。</p>
       </header>
 
       <section className="stats-section stats-summary" aria-labelledby="stats-summary-heading">
