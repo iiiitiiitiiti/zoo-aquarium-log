@@ -40,6 +40,15 @@ service cloud.firestore {
         && data.favorite is bool;
     }
 
+    function validFacilityNote(data) {
+      return data.keys().hasAll(["text", "updatedAt"])
+        && data.keys().hasOnly(["text", "updatedAt"])
+        && data.text is string
+        && data.text.size() >= 1
+        && data.text.size() <= 2000
+        && data.updatedAt == request.time;
+    }
+
     function validSourceUrl(value) {
       return value is string
         && value.size() >= 1
@@ -115,6 +124,12 @@ service cloud.firestore {
       allow read, delete: if isHousehold(hid);
       allow create, update: if isHousehold(hid)
         && validMark(request.resource.data);
+    }
+
+    match /households/{hid}/facilityNotes/{facilityId} {
+      allow read, delete: if isHousehold(hid);
+      allow create, update: if isHousehold(hid)
+        && validFacilityNote(request.resource.data);
     }
 
     match /households/{hid}/customFacilities/{facilityId} {
