@@ -45,6 +45,12 @@ export default function StatsPanel({ stats, onBack }: { stats: StatsModel; onBac
         <p className="stats-note">※閉園済みの館は母数から除外しています。</p>
       </header>
 
+      <nav className="stats-anchor-nav" aria-label="統計の項目">
+        <a href="#stats-type">種別別</a>
+        <a href="#stats-pref">都道府県別</a>
+        <a href="#stats-monthly">訪問数の推移</a>
+      </nav>
+
       <section className="stats-section stats-summary" aria-labelledby="stats-summary-heading">
         <p className="stats-kicker">OVERALL COMPLETION</p>
         <h2 id="stats-summary-heading">全体制覇率</h2>
@@ -52,7 +58,7 @@ export default function StatsPanel({ stats, onBack }: { stats: StatsModel; onBac
         <p className="stats-count">{stats.overall.visited} / {stats.overall.total} 館</p>
       </section>
 
-      <section className="stats-section" aria-labelledby="stats-type-heading">
+      <section id="stats-type" className="stats-section" aria-labelledby="stats-type-heading">
         <div className="stats-section-heading">
           <p className="stats-kicker">FACILITY TYPE</p>
           <h2 id="stats-type-heading">種別別</h2>
@@ -68,7 +74,7 @@ export default function StatsPanel({ stats, onBack }: { stats: StatsModel; onBac
         )}
       </section>
 
-      <section className="stats-section" aria-labelledby="stats-pref-heading">
+      <section id="stats-pref" className="stats-section" aria-labelledby="stats-pref-heading">
         <div className="stats-section-heading">
           <p className="stats-kicker">PREFECTURE</p>
           <h2 id="stats-pref-heading">都道府県別</h2>
@@ -84,7 +90,7 @@ export default function StatsPanel({ stats, onBack }: { stats: StatsModel; onBac
         )}
       </section>
 
-      <section className="stats-section stats-monthly-section" aria-labelledby="stats-monthly-heading">
+      <section id="stats-monthly" className="stats-section stats-monthly-section" aria-labelledby="stats-monthly-heading">
         <div className="stats-section-heading">
           <p className="stats-kicker">VISIT RECORDS</p>
           <h2 id="stats-monthly-heading">訪問数の推移</h2>
