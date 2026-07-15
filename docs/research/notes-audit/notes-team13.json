@@ -1,0 +1,114 @@
+{
+  "team": "notes-team13",
+  "investigatedAt": "2026-07-15",
+  "results": [
+    {
+      "facilityId": "hiroshima_fukuyama_zoo",
+      "name": "タカオ福山動物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.fukuyamazoo.jp/",
+        "https://www.city.fukuyama.hiroshima.jp/site/miryoku2023/287771.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "休園日は毎週火曜（祝日の場合は翌日）と年末年始（12/29〜1/3）のみの通常パターンで記録対象外。2026年度から命名権導入により「タカオ福山動物園」へ改称されたが施設運営自体に変更はない。長期休園・改装・閉園等の告知は確認されなかった。"
+    },
+    {
+      "facilityId": "yamaguchi_tokiwa_zoo",
+      "name": "ときわ動物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.tokiwapark.jp/zoo/info/kaienbi.html",
+        "https://www.tokiwapark.jp/zoo/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "通常休園日は毎週火曜。加えて2026年は4/13・4/20・5/11・5/18等の「園内施設休園日（振替）」があるが、いずれも単発の平日休園であり連続5日以上・連続4日程度の複数回パターンには該当しないため記録対象外。年末年始も開園する場合ありとの案内で、長期休園・改装・閉園の告知は確認されなかった。"
+    },
+    {
+      "facilityId": "yamaguchi_kaikyokan",
+      "name": "下関市立しものせき水族館「海響館」",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.kaikyokan.com/company.php",
+        "https://www.kaikyokan.com/cms/20250801open/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "大規模改修工事に伴い令和6年12月1日〜令和7年7月31日まで全館休館していたが、2025年8月1日に新展示「ひれあしビーチ」等とともにリニューアルオープン済み。2026年7月時点では全館営業中で、この休園は解消済みのため記録対象外。ペンギン村の「ふれあい広場」のみ一部観覧不可との情報があるが、動物展示全体は通常営業のためこちらも対象外。今後の追加休館予定を示す一次情報は確認できなかった（下関市個別施設計画PDFは内容確認不可だったため、追加の改修計画有無は未確認）。"
+    },
+    {
+      "facilityId": "yamaguchi_tokuyama_zoo",
+      "name": "周南市徳山動物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://tokuyama-zoo.jp/",
+        "https://www.city.shunan.lg.jp/site/tokuyamazoo-rn/125190.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "リニューアル事業は2013年度着手・2032年度完了予定の長期プロジェクトで、しゅうなんの里山ゾーン・ネイチャル・鳥類観察所・ペンギンプール・ゾウ舎第一期等を段階的に整備中。工事に伴い南園駐車場が閉鎖中など一部設備の使用制限はあるが、動物園自体は通常営業を継続しており、全体休園・長期休園は確認されなかったため記録対象外。"
+    },
+    {
+      "facilityId": "yamaguchi_akiyoshidai_safari",
+      "name": "秋吉台自然動物公園サファリランド",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://karusuto.com/notice/2025safarilandkyuenbi/",
+        "https://www.safariland.jp/yotei/index.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "基本は年中無休。2025年1〜2月には整備目的で1/15・1/22・1/29・2/5・2/12の毎週水曜（計5日、非連続）に休園した実績があるが、これが毎年恒例のパターンかは2026年の公式カレンダーで確認できなかった（2026年7月時点のカレンダーでは通常営業）。連続休園ではなく単発の週1日休園の集合であり、記録基準（連続5日以上／連続4日程度が複数回）に明確に合致するとは判断できないため見送り。"
+    },
+    {
+      "facilityId": "tokushima_tokushima_zoo",
+      "name": "とくしま動物園 STELLA PRESCHOOL ANIMAL KINGDOM",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://tokushimazoo.jp/guide/item.cgi?Id=3",
+        "https://tokushimazoo.jp/guide/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "休園日は毎週月曜（祝日の場合は翌平日）と年末年始（12/29〜1/1）のみで、季節による変則営業や長期休園のパターンは確認されなかった。改装・閉園等の告知も見当たらない。"
+    },
+    {
+      "facilityId": "kagawa_shikoku_aquarium",
+      "name": "四国水族館",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://shikoku-aquarium.jp/schedule/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "年中無休が基本で、冬季に短期のメンテナンス休館が設定される（次回2027年2月2日〜4日の3日間）。連続3日以下の単発メンテナンス休館は記録対象外の基準に該当するため見送り。長期休館・改装・閉館等の告知は確認されなかった。"
+    },
+    {
+      "facilityId": "ehime_tobe_zoo",
+      "name": "愛媛県立とべ動物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.tobezoo.com/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "スネークハウスの一部通行止め解除（2026年7月更新）、ホッキョクグマ舎の施設整備のお知らせ（2026年5月11日付）等はあるが、いずれも園内一部施設の工事であり動物展示全体は通常営業のため記録対象外。定例休園日の詳細な曜日は公式サイトの本文からは確認できなかったが、長期休園・改装・閉園の告知は見当たらなかった。"
+    },
+    {
+      "facilityId": "ehime_osakana_kan",
+      "name": "虹の森公園おさかな館",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://morinokuni.or.jp/pages/27/",
+        "https://morinokuni.or.jp/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "定休日は1月1日のみとの案内で、2026年7月時点でも夏休みイベント告知等通常運営を示す内容だった。長期休館・改修工事・閉館予定の一次情報は確認できなかった。公式情報未確認の部分あり（SNS等の速報は追いきれていない）。"
+    },
+    {
+      "facilityId": "kochi_wanpark_animal_land",
+      "name": "わんぱーくこうちアニマルランド",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.city.kochi.kochi.jp/deeps/17/1712/animal/",
+        "https://www.city.kochi.kochi.jp/map/48584.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "休園日は毎週水曜（祝日の場合は翌日）と12/28〜1/1のみの通常パターン。2024年10月にネーミングライツ導入で施設名表記が変更されたが運営内容に変化はない。大規模リニューアル工事や長期休園に関する情報は確認されなかった。"
+    }
+  ]
+}
