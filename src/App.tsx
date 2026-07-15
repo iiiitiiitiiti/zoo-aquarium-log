@@ -310,6 +310,13 @@ export default function App({
     setVisitStatus("all");
   };
 
+  const scrollToTop = () => {
+    if (typeof window === "undefined" || typeof window.scrollTo !== "function") return;
+    const prefersReducedMotion = typeof window.matchMedia === "function"
+      && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.scrollTo({ top: 0, left: 0, behavior: prefersReducedMotion ? "auto" : "smooth" });
+  };
+
   const openAddFacility = () => {
     setVisitEditing(false);
     setSelectedFacility(undefined);
@@ -614,6 +621,9 @@ export default function App({
         )}
       </section>
       <footer><p>掲載情報の確認日：2026年7月13日</p></footer>
+      <button className="back-to-top" type="button" onClick={scrollToTop} aria-label="ページの先頭へ戻る">
+        <span aria-hidden="true">↑</span>
+      </button>
     </main>
   );
 }
