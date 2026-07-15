@@ -8,6 +8,7 @@ import StatsPanel from "./StatsPanel";
 import { swUpdate } from "./swUpdate";
 import { buildStats } from "./stats";
 import type { CustomFacilityStore } from "./customFacilities";
+import type { FacilityNoteMap, FacilityNoteStore } from "./facilityNotes";
 import type { MarkMap, MarkStore } from "./marks";
 import { buildRouteHash, parseRouteHash, routesEqual, type Route } from "./route";
 import type { Facility, FacilityType } from "./types";
@@ -54,6 +55,7 @@ export default function App({
   photoStore,
   markStore,
   customFacilityStore,
+  facilityNoteStore,
   onSignOut,
   signingOut = false,
   signOutError = "",
@@ -62,6 +64,7 @@ export default function App({
   photoStore?: VisitPhotoStore;
   markStore?: MarkStore;
   customFacilityStore?: CustomFacilityStore;
+  facilityNoteStore?: FacilityNoteStore;
   onSignOut?: () => Promise<void>;
   signingOut?: boolean;
   signOutError?: string;
@@ -103,6 +106,8 @@ export default function App({
   const [visitError, setVisitError] = useState("");
   const [marks, setMarks] = useState<MarkMap>();
   const [marksError, setMarksError] = useState("");
+  const [notes, setNotes] = useState<FacilityNoteMap>();
+  const [notesError, setNotesError] = useState("");
   const [customFacilities, setCustomFacilities] = useState<Facility[]>();
   const [customFacilitiesError, setCustomFacilitiesError] = useState("");
 
@@ -134,6 +139,20 @@ export default function App({
     setMarks(undefined);
     return markStore.subscribe(setMarks, () => setMarksError("お気に入り設定を読み込めませんでした。通信環境を確認してください"));
   }, [markStore]);
+
+  useEffect(() => {
+    if (!facilityNoteStore) {
+      setNotes({});
+      setNotesError("");
+      return;
+    }
+    setNotes(undefined);
+    setNotesError("");
+    return facilityNoteStore.subscribe(
+      setNotes,
+      () => setNotesError("施設メモを読み込めませんでした。通信環境を確認してください"),
+    );
+  }, [facilityNoteStore]);
 
   useEffect(() => {
     if (!customFacilityStore) {
@@ -211,9 +230,11 @@ export default function App({
     (visitStore && visits === undefined)
     || (markStore && marks === undefined)
     || (customFacilityStore && customFacilities === undefined)
+    || (facilityNoteStore && notes === undefined)
     || visitError
     || marksError
     || customFacilitiesError
+    || notesError
     || typeof URL === "undefined"
     || typeof URL.createObjectURL !== "function",
   );
@@ -277,7 +298,7 @@ export default function App({
 
   const downloadExport = () => {
     if (exportNotReady || typeof URL === "undefined" || typeof URL.createObjectURL !== "function") return;
-    const data = buildExport(visits ?? [], marks ?? {}, customFacilities ?? []);
+    const data = buildExport(visits ?? [], marks ?? {}, customFacilities ?? [], notes ?? {});
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json;charset=utf-8" });
     const objectUrl = URL.createObjectURL(blob);
     const link = document.createElement("a");
@@ -344,6 +365,10 @@ export default function App({
         mark={marks?.[selectedFacility.id]}
         markStore={markStore}
         markLoadError={marksError}
+        note={notes?.[selectedFacility.id]}
+        noteStore={facilityNoteStore}
+        notesLoading={facilityNoteStore !== undefined && notes === undefined}
+        noteLoadError={notesError}
         customFacilityStore={customFacilityStore}
         backLabel={detailOrigin === "map" ? "← 地図に戻る" : "← 施設一覧"}
         onEditingChange={handleVisitEditingChange}
