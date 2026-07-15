@@ -311,6 +311,10 @@ export default function VisitPanel({
         <h1>{facility.name}</h1>
         <p>{facility.pref} {facility.city}</p>
         {facility.note && <p className="facility-note">{facility.note}</p>}
+        <div className="detail-hero-links" aria-label="施設情報">
+          <button className="facility-map-link" type="button" onClick={onShowOnMap}>地図で場所を見る</button>
+          <a className="facility-site-link" href={facility.url} target="_blank" rel="noreferrer">公式サイトを見る ↗</a>
+        </div>
         {markStore && (
           <div className="mark-toggles" role="group" aria-label="施設のマーク">
             <button
@@ -333,8 +337,6 @@ export default function VisitPanel({
             <button type="button" onClick={removeFacility}>この施設を削除</button>
           </div>
         )}
-        <button className="facility-map-link" type="button" onClick={onShowOnMap}>地図で場所を見る</button>
-        <a href={facility.url} target="_blank" rel="noreferrer">公式サイトを見る ↗</a>
       </header>
 
       <section className="visit-section" aria-labelledby="visit-heading">
