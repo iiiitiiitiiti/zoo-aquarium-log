@@ -1,8 +1,9 @@
 import type { Facility } from "./types";
+import type { FacilityNoteMap } from "./facilityNotes";
 import type { MarkMap } from "./marks";
 import type { Visit } from "./visits";
 
-export const EXPORT_SCHEMA_VERSION = 1 as const;
+export const EXPORT_SCHEMA_VERSION = 2 as const;
 
 export interface ExportVisit {
   id: string;
@@ -22,6 +23,12 @@ export interface ExportMark {
   favorite: boolean;
 }
 
+export interface ExportFacilityNote {
+  facilityId: string;
+  text: string;
+  updatedAt: string | null;
+}
+
 export interface ExportData {
   schemaVersion: typeof EXPORT_SCHEMA_VERSION;
   exportedAt: string;
@@ -29,10 +36,12 @@ export interface ExportData {
     visits: number;
     marks: number;
     customFacilities: number;
+    facilityNotes: number;
   };
   visits: ExportVisit[];
   marks: ExportMark[];
   customFacilities: Facility[];
+  facilityNotes: ExportFacilityNote[];
 }
 
 interface TimestampLike {
@@ -54,6 +63,7 @@ export function buildExport(
   visits: Visit[],
   marks: MarkMap,
   customFacilities: Facility[],
+  facilityNotes: FacilityNoteMap,
   now = new Date(),
 ): ExportData {
   const sortedVisits = [...visits]
@@ -78,6 +88,15 @@ export function buildExport(
     }));
   const sortedCustomFacilities = [...customFacilities]
     .sort((a, b) => a.id.localeCompare(b.id));
+  // v1 backups should be read as facilityNotes=[] when import support is added;
+  // counts are informational and should be recalculated from the arrays.
+  const sortedFacilityNotes = Object.entries(facilityNotes)
+    .sort(([facilityIdA], [facilityIdB]) => facilityIdA.localeCompare(facilityIdB))
+    .map(([facilityId, note]) => ({
+      facilityId,
+      text: note.text,
+      updatedAt: timestampToIso(note.updatedAt),
+    }));
 
   return {
     schemaVersion: EXPORT_SCHEMA_VERSION,
@@ -86,10 +105,12 @@ export function buildExport(
       visits: sortedVisits.length,
       marks: sortedMarks.length,
       customFacilities: sortedCustomFacilities.length,
+      facilityNotes: sortedFacilityNotes.length,
     },
     visits: sortedVisits,
     marks: sortedMarks,
     customFacilities: sortedCustomFacilities,
+    facilityNotes: sortedFacilityNotes,
   };
 }
 
