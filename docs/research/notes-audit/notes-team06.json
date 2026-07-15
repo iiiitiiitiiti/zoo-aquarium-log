@@ -1,0 +1,113 @@
+{
+  "team": "notes-team06",
+  "investigatedAt": "2026-07-15",
+  "results": [
+    {
+      "facilityId": "tokyo_inokashira_zoo",
+      "name": "井の頭自然文化園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.tokyo-zoo.net/zoo/ino/",
+        "https://www.tokyo-zoo.net/zoo/ino/hours_i.php"
+      ],
+      "statusCheck": "consistent",
+      "memo": "公式サイト（tokyo-zoo.net）の営業案内ページの一部URLは404となり直接確認できなかったが、Web検索でも長期休園・改装工事・閉園予定の告知は見当たらなかった。通常営業（毎週月曜休園、年末年始休園）と判断。"
+    },
+    {
+      "facilityId": "kanagawa_yomiuriland_ashikakan",
+      "name": "よみうりランドアシカ館",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://ameblo.jp/yomi-s/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "公式サイト（yomiuriland.com）は接続制限のため直接取得できなかった。アシカショー公式ブログ（ameblo.jp/yomi-s）の直近投稿では通常のショー運営を示唆する内容が確認でき、休止・移転の告知は見当たらなかった。旧アシカ館が閉鎖されショーが一時他ホールへ移転した経緯は数年前に解消済みの過去の変更であり、現行の長期休止情報ではない。遊園地本体とアシカ館の営業状況は区別して確認したが、いずれも通常営業とみられる（ただし一次情報である公式サイトを直接確認できていないため未確定要素あり）。"
+    },
+    {
+      "facilityId": "kanagawa_kawasui_aquarium",
+      "name": "カワスイ 川崎水族館",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://kawa-sui.com/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "商業施設「川崎ルフロン」の休業日に準じ、実質年中無休（定例休館日は1月1日のみ）。長期休園・改装による閉鎖の告知は見当たらなかった。"
+    },
+    {
+      "facilityId": "kanagawa_yumemigasaki_zoo",
+      "name": "夢見ヶ崎動物公園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.city.kawasaki.jp/shisei/category/288-7-22-0-0-0-0-0-0-0.html",
+        "https://www.yumemizoo.com/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "年中無休。2026年5～6月に駐車場進入路の工事があったが来園・休園に影響するものではなく記録対象外と判断。公式ページに長期休園の告知は見当たらない。"
+    },
+    {
+      "facilityId": "kanagawa_zoorasia",
+      "name": "よこはま動物園ズーラシア",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.hama-midorinokyokai.or.jp/zoo/zoorasia/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "公式サイトで長期休園・改装工事の告知は見当たらなかった。台風接近時などの単発の臨時休園事例はあるが、記録対象外（短期・不定期）と判断。"
+    },
+    {
+      "facilityId": "kanagawa_hakkeijima_seaparadise",
+      "name": "横浜・八景島シーパラダイス",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.seaparadise.co.jp/en/news/index.html",
+        "https://www.nikkei.com/article/DGXZRSP708411_S6A610C2000000/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "年中無休が基本方針。遊園地エリア「プレジャーランド」内の一部アトラクション（数機種）が改装のため運休中で、2026年8月1日に新エリア「OTO-RACTION PARK」としてリニューアルオープン予定。ただしこれは施設のごく一部のアトラクション運休にとどまり、水族館本体を含む施設全体の休園には該当しないため記録対象外と判断した。"
+    },
+    {
+      "facilityId": "kanagawa_nogeyama_zoo",
+      "name": "横浜市立野毛山動物園",
+      "finding": "note",
+      "proposedNote": "施設老朽化・バリアフリー対応等のための全面リニューアル工事に伴い、2027年1月7日から休園予定。再開は2029年前半を予定しているが未確定で、決まり次第公表するとされている。休園中も野毛山公園の散策地区・展望地区は利用可能。2026年7月時点。",
+      "evidenceUrls": [
+        "https://www.hama-midorinokyokai.or.jp/zoo/nogeyama/details/post-11877.php",
+        "https://www.kanaloco.jp/news/government/article-1255815.html",
+        "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/midori-koen/zoo_garden/nogezoo.html"
+      ],
+      "statusCheck": "consistent",
+      "memo": "休園開始（2027年1月7日）は本調査時点（2026年7月）でまだ先のため、現status「open」は実態と一致している。休園期間中は動物の一部がズーラシア・金沢動物園へ移動し展示・プログラムを補完する予定だが、これは移動先2園自体の休園情報ではないため両園のnoteには含めなかった。"
+    },
+    {
+      "facilityId": "kanagawa_kanazawa_zoo",
+      "name": "横浜市立金沢動物園",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.hama-midorinokyokai.or.jp/zoo/kanazawa/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "コアラ舎など個別動物舎の改修による一時非公開はあったが既に展示再開済み。施設全体の長期休園・改装告知は見当たらない。野毛山動物園の休園に伴い当園が動物の一部を受け入れる予定があるが、当園自体の休園には該当しない。"
+    },
+    {
+      "facilityId": "niigata_umigatari",
+      "name": "上越市立水族博物館 うみがたり",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://www.umigatari.jp/joetsu/",
+        "https://hamagojo.com/news/%E3%80%8C%E4%B8%8A%E8%B6%8A%E5%B8%82%E7%AB%8B%E6%B0%B4%E6%97%8F%E5%8D%9A%E7%89%A9%E9%A4%A8%E3%80%80%E3%81%86%E3%81%BF%E3%81%8C%E3%81%9F%E3%82%8A%E3%80%8D%E4%BC%91%E9%A4%A8%E6%97%A5%E3%81%AE%E3%81%8A/"
+      ],
+      "statusCheck": "consistent",
+      "memo": "2025年1月15・16日、2月5・6日など設備点検による休館は確認できたが、いずれも連続1～2日程度で連続5日以上には該当しない。施設全体の長期休園・改装予定の告知は見当たらなかった。"
+    },
+    {
+      "facilityId": "niigata_teradomari_aquarium",
+      "name": "長岡市寺泊水族博物館",
+      "finding": "none",
+      "evidenceUrls": [
+        "https://aquarium-teradomari.jp/guide"
+      ],
+      "statusCheck": "consistent",
+      "memo": "公式ご利用案内ページで休館日一覧を確認。年間8日程度の点検休館日が年間を通じて散在しており（例: 6/2、6/10、9/9、9/16、10/14など）、連続5日以上の休館ではない。季節営業・長期休園の告知もなく記録対象外と判断。"
+    }
+  ]
+}
