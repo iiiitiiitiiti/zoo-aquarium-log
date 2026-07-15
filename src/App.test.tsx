@@ -84,7 +84,25 @@ describe("App",()=>{
   await user.clear(screen.getByRole("searchbox")); await user.click(screen.getByRole("button",{name:"水族館"}));
   expect(screen.getByText("海遊館")).toBeInTheDocument();
  });
+ it("groups the list by prefecture while keeping facility numbers continuous",()=>{
+  render(<App />);
+  expect(screen.getByRole("heading",{name:"北海道",level:3})).toBeInTheDocument();
+  expect(screen.getByRole("heading",{name:"青森県",level:3})).toBeInTheDocument();
+  const groups=document.querySelectorAll<HTMLElement>(".prefecture-group");
+  expect(groups.length).toBeGreaterThan(1);
+  expect(groups[0].querySelector(".card-index")).toHaveTextContent("01");
+  expect(groups[1].querySelector(".card-index")).not.toHaveTextContent("01");
+ });
  it("shows guidance when there are no results",async()=>{ const user=userEvent.setup(); render(<App />); await user.click(screen.getByText("施設を探す")); await user.type(screen.getByRole("searchbox"),"存在しない"); expect(screen.getByText(/見つかりませんでした/)).toBeInTheDocument(); });
+ it("shows only matching prefecture headings after filtering",async()=>{
+  const user=userEvent.setup(); render(<App />);
+  await user.click(screen.getByText("施設を探す"));
+  await user.selectOptions(screen.getByRole("combobox",{name:"都道府県"}),"北海道");
+  expect(screen.getByRole("heading",{name:"北海道",level:3})).toBeInTheDocument();
+  expect(screen.queryByRole("heading",{name:"青森県",level:3})).not.toBeInTheDocument();
+  await user.type(screen.getByRole("searchbox"),"存在しない");
+  expect(screen.queryByRole("heading",{name:"北海道",level:3})).not.toBeInTheDocument();
+ });
  it("filters facilities by prefecture",async()=>{
   const user=userEvent.setup(); render(<App />);
   await user.click(screen.getByText("施設を探す"));
@@ -143,11 +161,11 @@ describe("App",()=>{
  });
  it("animates cards on the initial list but not after returning from a detail",async()=>{
   const user=userEvent.setup(); render(<App visitStore={visitStore} />);
-  expect(screen.getByRole("list")).toHaveClass("facility-list", "facility-list--animated");
+  expect(document.querySelector<HTMLElement>(".facility-list")).toHaveClass("facility-list", "facility-list--animated");
   await user.click(screen.getByRole("link",{name:/札幌市円山動物園/}));
   await user.click(screen.getByRole("button",{name:/施設一覧/}));
-  expect(screen.getByRole("list")).toHaveClass("facility-list");
-  expect(screen.getByRole("list")).not.toHaveClass("facility-list--animated");
+  expect(document.querySelector<HTMLElement>(".facility-list")).toHaveClass("facility-list");
+  expect(document.querySelector<HTMLElement>(".facility-list")).not.toHaveClass("facility-list--animated");
  });
  it("shows logout on the facility list but not the detail view",async()=>{
   const user=userEvent.setup();
@@ -414,7 +432,7 @@ describe("App",()=>{
    window.location.hash="#facility/hokkaido_maruyama_zoo";
    render(<App visitStore={visitStore} />);
    await user.click(screen.getByRole("button",{name:/施設一覧/}));
-   expect(screen.getByRole("list")).not.toHaveClass("facility-list--animated");
+   expect(document.querySelector<HTMLElement>(".facility-list")).not.toHaveClass("facility-list--animated");
   });
   it("restores a custom facility detail once custom facilities are loaded",async()=>{
    let emitCustomFacilities: ((facilities: typeof exportFacility[])=>void)|undefined;
