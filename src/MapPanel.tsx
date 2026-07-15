@@ -78,12 +78,14 @@ export default function MapPanel({
   shown,
   visitedIds,
   marks,
+  focusedFacilityId,
   onBack,
   onSelectFacility,
 }: {
   shown: Facility[];
   visitedIds: ReadonlySet<string>;
   marks: MarkMap;
+  focusedFacilityId?: string;
   onBack: () => void;
   onSelectFacility: (facility: Facility) => void;
 }) {
@@ -135,6 +137,9 @@ export default function MapPanel({
       .map((layer) => layer as FacilityMarker)
       .find((marker) => marker.isPopupOpen() && marker.facilityId)
       ?.facilityId;
+    const focusedFacility = focusedFacilityId
+      ? shown.find((facility) => facility.id === focusedFacilityId)
+      : undefined;
     clusterGroup.clearLayers();
     const markers = shown.map((facility) => {
       const appearance = pinAppearance(facility, visitedIds, marks);
@@ -151,12 +156,15 @@ export default function MapPanel({
       return marker;
     });
     clusterGroup.addLayers(markers);
-    if (openFacilityId) {
-      markers.find((marker) => marker.facilityId === openFacilityId)?.openPopup();
+    const requestedOpenFacilityId = focusedFacility?.id ?? openFacilityId;
+    if (requestedOpenFacilityId) {
+      markers.find((marker) => marker.facilityId === requestedOpenFacilityId)?.openPopup();
     }
 
     if (hasFitInitialViewRef.current) return;
-    if (shown.length === 1) {
+    if (focusedFacility) {
+      map.setView([focusedFacility.lat, focusedFacility.lng], 12);
+    } else if (shown.length === 1) {
       map.setView([shown[0].lat, shown[0].lng], 12);
     } else if (shown.length > 1) {
       map.fitBounds(
@@ -167,7 +175,7 @@ export default function MapPanel({
       map.setView([36.5, 137.5], 5);
     }
     hasFitInitialViewRef.current = true;
-  }, [marks, onSelectFacility, shown, visitedIds]);
+  }, [focusedFacilityId, marks, onSelectFacility, shown, visitedIds]);
 
   const legend = getPinLegend();
 

@@ -46,6 +46,8 @@ export default function VisitPanel({
   markLoadError = "",
   customFacilityStore,
   onEditFacility,
+  backLabel = "← 施設一覧",
+  onShowOnMap = () => undefined,
   onBack,
 }: {
   facility: Facility;
@@ -59,6 +61,8 @@ export default function VisitPanel({
   markLoadError?: string;
   customFacilityStore?: CustomFacilityStore;
   onEditFacility?: () => void;
+  backLabel?: string;
+  onShowOnMap?: () => void;
   onBack: () => void;
 }) {
   const [photoUrls, setPhotoUrls] = useState<Record<string, string>>({});
@@ -249,7 +253,7 @@ export default function VisitPanel({
   return (
     <main className="app-shell detail-shell">
       <header className="detail-hero">
-        <button className="back-button" type="button" onClick={onBack}>← 施設一覧</button>
+        <button className="back-button" type="button" onClick={onBack}>{backLabel}</button>
         <p className="eyebrow">VISIT FIELD NOTE</p>
         <h1>{facility.name}</h1>
         <p>{facility.pref} {facility.city}</p>
@@ -275,6 +279,7 @@ export default function VisitPanel({
             <button type="button" onClick={removeFacility}>この施設を削除</button>
           </div>
         )}
+        <button className="facility-map-link" type="button" onClick={onShowOnMap}>地図で場所を見る</button>
         <a href={facility.url} target="_blank" rel="noreferrer">公式サイトを見る ↗</a>
       </header>
 

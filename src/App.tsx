@@ -69,6 +69,8 @@ export default function App({
   const [searchOpen, setSearchOpen] = useState(false);
   const [quickActionsOpen, setQuickActionsOpen] = useState(false);
   const [mapOpen, setMapOpen] = useState(false);
+  const [detailOrigin, setDetailOrigin] = useState<"list" | "map">("list");
+  const [mapFocusFacilityId, setMapFocusFacilityId] = useState<string>();
   const [selectedFacility, setSelectedFacility] = useState<Facility>();
   const [facilityEditorOpen, setFacilityEditorOpen] = useState(false);
   const [editingFacility, setEditingFacility] = useState<Facility>();
@@ -178,9 +180,11 @@ export default function App({
     setFacilityEditorOpen(true);
   };
 
-  const openFacility = (facility: Facility) => {
+  const openFacility = (facility: Facility, origin: "list" | "map" = "list") => {
     setFacilityEditorOpen(false);
     setMapOpen(false);
+    setMapFocusFacilityId(undefined);
+    setDetailOrigin(origin);
     setSelectedFacility(facility);
   };
 
@@ -207,11 +211,12 @@ export default function App({
         shown={shown}
         visitedIds={visitedIds}
         marks={marks ?? {}}
-        onBack={() => setMapOpen(false)}
-        onSelectFacility={(facility) => {
+        focusedFacilityId={mapFocusFacilityId}
+        onBack={() => {
           setMapOpen(false);
-          openFacility(facility);
+          setMapFocusFacilityId(undefined);
         }}
+        onSelectFacility={(facility) => openFacility(facility, "map")}
       />
     );
   }
@@ -248,6 +253,12 @@ export default function App({
         markStore={markStore}
         markLoadError={marksError}
         customFacilityStore={customFacilityStore}
+        backLabel={detailOrigin === "map" ? "← 地図に戻る" : "← 施設一覧"}
+        onShowOnMap={() => {
+          setSelectedFacility(undefined);
+          setMapFocusFacilityId(selectedFacility.id);
+          setMapOpen(true);
+        }}
         onEditFacility={selectedFacility.id.startsWith("custom_") && customFacilityStore
           ? () => {
             setEditingFacility(selectedFacility);
@@ -255,7 +266,10 @@ export default function App({
             setFacilityEditorOpen(true);
           }
           : undefined}
-        onBack={() => setSelectedFacility(undefined)}
+        onBack={() => {
+          setSelectedFacility(undefined);
+          if (detailOrigin === "map") setMapOpen(true);
+        }}
       />
     );
   }
