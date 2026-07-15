@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import AddFacilityPanel from "./AddFacilityPanel";
 import { buildExport, buildExportFilename } from "./buildExport";
 import MapPanel from "./MapPanel";
@@ -110,6 +110,7 @@ export default function App({
   const [notesError, setNotesError] = useState("");
   const [customFacilities, setCustomFacilities] = useState<Facility[]>();
   const [customFacilitiesError, setCustomFacilitiesError] = useState("");
+  const listScrollYRef = useRef(0);
 
   useEffect(() => {
     swUpdate.setEditing(facilityEditorOpen || visitEditing);
@@ -270,6 +271,23 @@ export default function App({
   const handleVisitEditingChange = useCallback((editing: boolean) => {
     setVisitEditing(editing);
   }, []);
+
+  // 一覧のスクロール位置を保存し、詳細・地図・統計から戻ったときに復元する。
+  // 他画面へ入るときは先頭から表示する（stats.css の scroll-behavior:smooth を
+  // 避けるため instant で移動する）
+  const currentView = currentRoute.view;
+  useEffect(() => {
+    if (typeof window === "undefined" || currentView !== "list") return;
+    const saveListScroll = () => {
+      listScrollYRef.current = window.scrollY;
+    };
+    window.addEventListener("scroll", saveListScroll, { passive: true });
+    return () => window.removeEventListener("scroll", saveListScroll);
+  }, [currentView]);
+  useEffect(() => {
+    if (typeof window === "undefined" || typeof window.scrollTo !== "function") return;
+    window.scrollTo({ top: currentView === "list" ? listScrollYRef.current : 0, left: 0, behavior: "instant" });
+  }, [currentView]);
 
   const resetFilters = () => {
     setQuery("");
