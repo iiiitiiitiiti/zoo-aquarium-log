@@ -1,0 +1,109 @@
+{
+  "block": "千葉県(4巡目)",
+  "generatedAt": "2026-07-15",
+  "coverage": {
+    "sources": [
+      "汎用Web検索（いこーよ、じゃらんnet、公式サイト、市町村公式サイト等）",
+      "千葉県立中央博物館・同分館「海の博物館」公式サイト",
+      "千葉大学海洋バイオシステム研究センター（こみなと水族館）公式・かもナビ",
+      "館山市観光協会（\"渚の駅\"たてやま）、千葉県公式観光サイト ちば観光ナビ",
+      "千葉県立成田西陵高等学校公式サイト（部活動・昆虫館ページ）"
+    ],
+    "searchTermsUsed": [
+      "いすみ市・大多喜町・御宿町・勝浦市・鴨川市・南房総市・館山市 個別 動物/ふれあい/観光施設 検索",
+      "千葉 道の駅 動物 ふれあい",
+      "いすみ市観光協会 観光スポット一覧",
+      "大学・県立博物館附属の生体展示（研究機関附属施設という新角度）",
+      "高校・部活動運営の昆虫館・動物ふれあいゾーン（学校運営の限定公開施設という新角度）",
+      "個別牧場の見学可否確認（予約制/研究施設か観光施設かの裏取り）"
+    ],
+    "rounds": 1,
+    "note": "既存3巡（candidates-chiba.json 1-2巡目、candidates-chiba-round3.json 3巡目）とは異なる角度として、(1) 外房〜南房総の市町村別個別検索の深掘り、(2) 大学・県立博物館分館など研究機関附属の生体展示施設、(3) 高校部活動運営の限定公開型昆虫館、という3つの新戦略を実施。結果、新規『new』1件（こみなと水族館＝千葉大学海洋バイオシステム研究センター、鴨川市）、『review』4件（海の博物館＝勝浦市、\"渚の駅\"たてやま＝館山市、千葉県立中央博物館 小動物展示室＝千葉市、成田西陵高校昆虫館＝成田市）、『excluded』3件（尾形牧場・富山畜産ふれあい牧場＝南房総市、ファームリゾート御宿）を新たに発見した。特に重点確認としたいすみ市周辺では、既出の高秀牧場・いすみ環境と文化のさとセンター以外に新規実在施設は見つからず、いすみ市に限れば収束傾向が強い。ただし博物館附属・学校附属という角度で新規候補が出たため、千葉県全体としては『新規ゼロの巡』はまだ成立していない。次巡があるとすれば、review 4件の主目的判定（マスタ収録の要否）の確定と、木更津市・松戸市・柏市周辺の個別モール型施設の深掘りが残りうる。"
+  },
+  "candidates": [
+    {
+      "name": "こみなと水族館（千葉大学海洋バイオシステム研究センター）",
+      "pref": "千葉県",
+      "city": "鴨川市",
+      "foundUrls": ["https://www.kamonavi.jp/member/%E5%8D%83%E8%91%89%E5%A4%A7%E5%AD%A6%E6%B5%B7%E6%B4%8B%E3%83%90%E3%82%A4%E3%82%AA%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E7%A0%94%E7%A9%B6%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC/", "https://iko-yo.net/facilities/4791", "http://marine.biosystems.chiba-u.jp/"],
+      "typeGuess": "aquarium",
+      "disposition": "new",
+      "matchExistingId": null,
+      "note": "千葉大学附属の小規模水族館。入館無料、開館日は火〜木・土日（月・金・年末年始休館）。房総の海の生き物のミニ水族館、標本室、ふれあいコーナー（ヒトデ・ナマコ）を常設展示。既存3巡では未検出だった大学附属施設という角度の見落とし。一部情報源（更新時期不明）に小湊本部の正門〜駐車場間で土砂崩れによる通行制限の記述があり、現在の実際のアクセス可否は要現地確認。"
+    },
+    {
+      "name": "千葉県立中央博物館分館 海の博物館",
+      "pref": "千葉県",
+      "city": "勝浦市",
+      "foundUrls": ["https://www.chiba-muse.or.jp/UMIHAKU/", "https://maruchiba.jp/spot/detail_10393.html"],
+      "typeGuess": "aquarium",
+      "disposition": "review",
+      "matchExistingId": null,
+      "note": "房総の海をテーマとする自然史博物館。常設展示4コーナーの一つ「海と遊ぼう」等で周辺の磯にすむ魚・ヤドカリ・貝など約80種を水槽で常設展示。ただし館全体はジオラマ・標本・地形模型を含む総合自然史博物館であり、生体展示（水族館的要素）が施設全体の主目的と言い切れるか要判断。"
+    },
+    {
+      "name": "\"渚の駅\"たてやま（渚の博物館・海辺の広場）",
+      "pref": "千葉県",
+      "city": "館山市",
+      "foundUrls": ["https://maruchiba.jp/spot/detail_10427.html", "https://tateyamacity.com/archives/10505"],
+      "typeGuess": "aquarium",
+      "disposition": "review",
+      "matchExistingId": null,
+      "note": "館山市立博物館分館。「海辺の広場」に約40㎡の岩礁水槽（人工的に潮の満ち引きを再現、館山湾の生き物を常設展示、14:30に給餌）があるが、施設全体は漁業文化を紹介する博物館・さかなクンギャラリー・直売所「海のマルシェ」・レストランを含む複合観光交流拠点であり、生体展示が主目的の施設とは言い切れないため要判断。"
+    },
+    {
+      "name": "千葉県立中央博物館 小動物展示室",
+      "pref": "千葉県",
+      "city": "千葉市中央区",
+      "foundUrls": ["https://www.chiba-muse.or.jp/NATURAL/exhibition/page-1517498506207/", "https://www.chiba-muse.or.jp/NATURAL/eco_park/eco_park.htm"],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "生体展示が主目的でない",
+      "note": "常設展示「房総の自然誌」の一室で、カエル・ヘビ・水生昆虫・淡水魚等を飼育展示。ただし博物館全体は地質・植物・化石・房総の歴史等を扱う総合自然史博物館であり、小動物展示室は多数ある展示室の一つに過ぎず、生体展示が館全体の主目的とは言えない。"
+    },
+    {
+      "name": "千葉県立成田西陵高等学校 昆虫館・蝶の生態館",
+      "pref": "千葉県",
+      "city": "成田市",
+      "foundUrls": ["https://cms2.chiba-c.ed.jp/naritaseiryo-h/d1e59981c0cda641813b6cdf7c1cf8ea/%E9%83%A8%E6%B4%BB%E5%8B%95%E3%83%BB%E3%81%9D%E3%81%AE%E4%BB%96%E6%B4%BB%E5%8B%95/%E6%98%86%E8%99%AB%E9%A4%A8/", "https://www.gib-life.co.jp/st/about/kouken/kodomo/soc/post-18.html"],
+      "typeGuess": "other",
+      "disposition": "review",
+      "matchExistingId": null,
+      "note": "生物部（地域生物研究部）が運営する日本初の高校生運営昆虫館。昆虫飼育室・蝶の生態館・動物ふれあいゾーンで生きた昆虫・蝶・小動物を展示し、生徒が来場者に解説する。ただし一般公開は4〜9月の第4土曜10:00-15:00のみで、通年常設公開の観光・展示施設ではなく学校部活動の一環であるため、基準の『常設で一般来場できる』に該当するか要判断。"
+    },
+    {
+      "name": "尾形牧場",
+      "pref": "千葉県",
+      "city": "南房総市",
+      "foundUrls": ["https://www.navitime.co.jp/poi?spot=00004-12151200009"],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "予約制のみ・一般来場不可",
+      "note": "酪農体験牧場だが、体験はFAX・Eメールでの事前予約制のみと案内されており、随時来場・見学できる常設ふれあい施設ではない。"
+    },
+    {
+      "name": "富山畜産ふれあい牧場",
+      "pref": "千葉県",
+      "city": "南房総市",
+      "foundUrls": ["https://chiba-navi.net/travel/farm/hureaibokujo.htm"],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "研究施設が主目的",
+      "note": "農林水産省関東農政局管轄の公共牧場で、乳牛3,000頭以上を飼育し畜産研究を行う施設。牧場見学は可能だが、観光・ふれあいを主目的とする一般的な観光牧場とは性質が異なり、施設の主目的は畜産研究とみられる。"
+    },
+    {
+      "name": "ファームリゾート御宿",
+      "pref": "千葉県",
+      "city": "夷隅郡御宿町",
+      "foundUrls": ["https://satsuei-navi.com/farm-resort/"],
+      "typeGuess": "other",
+      "disposition": "excluded",
+      "matchExistingId": null,
+      "excludeReason": "生体展示が主目的でない",
+      "note": "4万5千坪の敷地を持つロケ撮影・貸切イベント向けリゾート施設（キャンプ・BBQ・ドッグラン・乗馬・撮影スタジオ等）。「動物の森」の記述はあるが、常設の生体展示を主目的とする一般来場型施設としての情報は確認できず、撮影・イベント利用が中心と判断。"
+    }
+  ]
+}

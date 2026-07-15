@@ -1,0 +1,102 @@
+{
+  "team": "hokkaido-team1",
+  "investigatedAt": "2026-07-15",
+  "facilities": [
+    {
+      "verdict": "include",
+      "name": "のぼりべつクマ牧場",
+      "kana": "のぼりべつくまぼくじょう",
+      "pref": "北海道",
+      "city": "登別市",
+      "type": "zoo",
+      "lat": 42.4862,
+      "lng": 141.1577,
+      "url": "https://bearpark.jp/",
+      "sourceUrls": ["https://bearpark.jp/"],
+      "status": "open",
+      "lastVerifiedAt": "2026-07-15",
+      "proposedId": "hokkaido_noboribetsu_bear_park",
+      "coordSource": "公式サイト記載の住所『北海道登別市登別温泉町224番地』（山麓駅・入場口）を国土地理院ジオコーディングAPIで変換（42.4862, 141.1577）。Wikipediaの座標（42.4902, 141.1592）はロープウェイで上った山頂側の牧場本体を指すとみられ、約500m北東にずれるが同一施設として整合的。来園者入口を代表点として採用。",
+      "adoptionBasis": "エゾヒグマの飼育展示を主目的とする常設のクマ牧場で、ヒグマ博物館・アイヌ資料館を併設。動物展示が来園目的の中心のため包含基準（牧場・ふれあい施設は動物展示が主目的なら含める）に合致。",
+      "note": "通年営業。毎年4月上旬〜下旬にロープウェイ法定点検・施設保守のため休園あり（2026年は4月6日〜4月24日予定）。調査時点（2026-07-15）は通常営業を確認。"
+    },
+    {
+      "verdict": "include",
+      "name": "昭和新山熊牧場",
+      "kana": "しょうわしんざんくまぼくじょう",
+      "pref": "北海道",
+      "city": "有珠郡壮瞥町",
+      "type": "zoo",
+      "lat": 42.5388,
+      "lng": 140.8612,
+      "url": "https://kumakuma.co.jp/",
+      "sourceUrls": ["https://kumakuma.co.jp/", "https://kumakuma.co.jp/access/"],
+      "status": "open",
+      "lastVerifiedAt": "2026-07-15",
+      "proposedId": "hokkaido_showa_shinzan_bear_ranch",
+      "coordSource": "北海道公式観光サイト（visit-hokkaido.jp）に掲載の地図リンクから取得した座標（42.5388, 140.8612）を採用。国土地理院APIは住所『北海道有珠郡壮瞥町字昭和新山183番地』では非該当（字レベルの住所が索引になし）。Wikipediaの昭和新山（火山）の座標（42.5425, 140.8644）は山頂を指し、本施設はその南西麓に位置するため約800mの差は地理的に妥当。",
+      "adoptionBasis": "ヒグマの飼育・エサやり体験を主目的とする常設施設で、動物展示が来園目的の中心のため包含基準に合致。",
+      "note": "公式サイトによれば年中無休（365日営業）。閉園・休園情報は確認されず。"
+    },
+    {
+      "verdict": "include",
+      "name": "サホロリゾート ベア・マウンテン",
+      "kana": "さほろりぞーとべあまうんてん",
+      "pref": "北海道",
+      "city": "上川郡新得町",
+      "type": "zoo",
+      "lat": 43.1781,
+      "lng": 142.8078,
+      "url": "https://bear-mt.jp/",
+      "sourceUrls": ["https://bear-mt.jp/information", "https://www.visit-hokkaido.jp/spot/detail_10455.html"],
+      "status": "open",
+      "lastVerifiedAt": "2026-07-15",
+      "proposedId": "hokkaido_sahoro_bear_mountain",
+      "coordSource": "Wikipedia日本語版インフォボックスの座標（43.17806, 142.80778）を採用。国土地理院APIは住所『北海道上川郡新得町狩勝高原』が字レベルで解決できず、新得町中心部の座標（43.0795, 142.8390、施設から約11km）しか得られなかったため不採用。",
+      "adoptionBasis": "エゾヒグマを間近で観察する日本初のヒグマサファリパーク。動物展示が来園目的の中心で、包含基準の「サファリパークを含める」に該当。",
+      "note": "季節営業。2026年シーズンは4月25日〜10月18日、9:00〜16:00（10月は15:00最終入場）。調査時点（2026-07-15）は営業期間中。冬季（10月下旬〜翌4月下旬）は定休、他に天候等による臨時休園あり。"
+    },
+    {
+      "verdict": "include",
+      "name": "函館公園動物施設",
+      "kana": "はこだてこうえんどうぶつしせつ",
+      "pref": "北海道",
+      "city": "函館市",
+      "type": "zoo",
+      "lat": 41.7555,
+      "lng": 140.7144,
+      "url": "https://www.hakodate-jts-kosya.jp/park/hakodate/animal/",
+      "sourceUrls": [
+        "https://www.hakodate-jts-kosya.jp/park/hakodate/animal/",
+        "https://www.hakodate-jts-kosya.jp/park/hakodate/"
+      ],
+      "status": "open",
+      "lastVerifiedAt": "2026-07-15",
+      "proposedId": "hokkaido_hakodate_park_zoo",
+      "coordSource": "指定管理者（函館市住宅都市施設公社）公式サイト記載の函館公園住所『函館市青柳町17番地』を国土地理院ジオコーディングAPIで変換（41.7555, 140.7144）。動物施設は公園内にあるため公園の代表点を採用。",
+      "adoptionBasis": "1938年開設、道内最古とされる常設の動物展示エリア。ミニチュアホース・ヤギ・ヤクシカ・モルモット等を無料公開しており、公園内の独立した常設展示エリアとして包含基準に合致。トラ・ライオン等の猛獣展示はなし。",
+      "note": "入園無料（函館公園自体も無料）。2025年1月に鳥インフルエンザ対策で市内の鳥獣監視重点区域指定に伴い一時閉鎖された事例があるが同年内に解除。公式サイトには『令和8年6月30日現在』の飼育動物一覧が掲載されており、調査時点で通常営業とみられる。詳細な開園時間・休園日は公式サイトに明記なし（未確認）。"
+    },
+    {
+      "verdict": "include",
+      "name": "栗山公園なかよし動物園",
+      "kana": "くりやまこうえんなかよしどうぶつえん",
+      "pref": "北海道",
+      "city": "夕張郡栗山町",
+      "type": "zoo",
+      "lat": 43.0673,
+      "lng": 141.7778,
+      "url": "https://t-daria.com/parktop/nakayoshi_zoo/",
+      "sourceUrls": [
+        "https://t-daria.com/parktop/nakayoshi_zoo/",
+        "https://www.town.kuriyama.hokkaido.jp/site/shizen/755.html"
+      ],
+      "status": "open",
+      "lastVerifiedAt": "2026-07-15",
+      "proposedId": "hokkaido_kuriyama_park_nakayoshi_zoo",
+      "coordSource": "栗山町公式サイト等に記載の住所『栗山町桜丘2丁目38番地5』を国土地理院ジオコーディングAPIで変換（丁目単位で解決: 43.0673, 141.7778）。",
+      "adoptionBasis": "ポニー・ヤギ・エゾシカ等約20種を展示する常設の入園無料動物園で、栗山公園に隣接する独立した展示エリア。動物展示が来園目的の中心のため包含基準に合致。",
+      "note": "季節営業。開園期間は例年4月29日〜11月3日（冬期休園）、開園時間は10:00〜17:00（9月以降は16:00閉園）。調査時点（2026-07-15）は営業期間中。2025年10月にクマ出没のため安全上の理由で一時休園した事例あり（定例の季節休園とは別）。"
+    }
+  ]
+}
