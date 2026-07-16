@@ -1,0 +1,87 @@
+{
+ "team": "R21",
+ "block": "review追調査",
+ "results": [
+  {
+   "verdict": "exclude",
+   "name": "そまのかわファーム",
+   "pref": "奈良県",
+   "city": "奈良市",
+   "adoptionBasis": "裁定1（大笹牧場の前例）。卵・米の生産販売が主体で動物は付随のため除外",
+   "sourceUrls": [
+    "https://www.somanokawa.jp/",
+    "https://www.city.nara.lg.jp/sightseeing/naraharu/181765.html"
+   ],
+   "note": "公式サイトの自己紹介は逐語で「奈良県で卵・お米の店頭販売、郵送販売、養鶏を行っています」。サイト構成も卵Q&A・タマゴレシピ・商品一覧・販売店舗・キッチンカフェで、動物展示・ふれあいの独立ページはなし。奈良農場店のトピック内に「その他農場では、馬や羊、烏骨鶏や名古屋コーチンへのエサやり体験が出来ます」とあるが『その他』の付随体験扱い。奈良市観光ページ（181765）も農場キッチン（飲食）としての紹介で動物への言及なし。来場の主目的は卵の直売・飲食であり、動物が付随する生産・販売主体の農場と判断。"
+  },
+  {
+   "verdict": "exclude",
+   "name": "山のオヤジの羊園",
+   "pref": "奈良県",
+   "city": "御所市",
+   "adoptionBasis": "基準10。実在（現況）を一次情報で確認できず",
+   "sourceUrls": [
+    "https://www.zoo-palette.com/nara/"
+   ],
+   "note": "確認できた情報源は集約サイトzoo-palette.com（「奈良県御所市小林。見晴らしの良い山間の放牧場でヒツジとポニーに会えます。ポニーにはエサやりができます」）とGoogle Mapsの地点登録（座標約34.4630, 135.7074）のみ。公式サイト・自治体観光ページ・営業時間・料金・運営者情報は複数回のWeb検索でも発見できず、常設で一般来場を受け入れる施設としての営業実態を一次情報で確認できなかった。"
+  },
+  {
+   "verdict": "include",
+   "name": "和歌山県立自然博物館",
+   "kana": "わかやまけんりつしぜんはくぶつかん",
+   "pref": "和歌山県",
+   "city": "海南市",
+   "type": "aquarium",
+   "lat": 34.158639,
+   "lng": 135.192083,
+   "url": "https://www.shizenhaku.wakayama-c.ed.jp/",
+   "sourceUrls": [
+    "https://www.shizenhaku.wakayama-c.ed.jp/exhibition.html",
+    "https://www.shizenhaku.wakayama-c.ed.jp/"
+   ],
+   "status": "open",
+   "lastVerifiedAt": "2026-07-16",
+   "proposedId": "wakayama_kenritsu_shizen_hakubutsukan",
+   "coordSource": "Wikipedia度分秒10進変換（北緯34度9分31.1秒 東経135度11分31.5秒。国土地理院API: 34.158043, 135.194794 とも近接一致）",
+   "address": "和歌山県海南市船尾370-1",
+   "addressSourceUrl": "https://www.shizenhaku.wakayama-c.ed.jp/exhibition.html",
+   "adoptionBasis": "裁定2（琵琶湖博物館の前例水準）。専用フロア規模の常設生体展示を公式サイト逐語で確認",
+   "note": "公式展示ページ逐語:「第1展示室は水の生き物の生体展示を行う水族館コーナーです。和歌山県内に住む約450種3000点の水の生き物を展示しています」「大水槽 黒潮の海 水量450t、ガラス幅15mの大水槽」。タッチコーナー・淡水コーナー等の複数水槽群を持ち、水族館として一般に案内される規模。第2展示室は標本中心だが第1展示室単独で前例水準を満たす。オオダイガハラサンショウウオの生体展示は「世界でここだけ」と公式記載。既存マスタ（430件）に同名・海南市所在の重複なし。"
+  },
+  {
+   "verdict": "include",
+   "name": "ドルフィンパーク（和歌山マリーナシティ ポルトヨーロッパ内）",
+   "kana": "どるふぃんぱーく",
+   "pref": "和歌山県",
+   "city": "和歌山市",
+   "type": "other",
+   "lat": 34.153873,
+   "lng": 135.175659,
+   "url": "http://www.marinacity.com/porto/",
+   "sourceUrls": [
+    "https://wakayamashimpo.co.jp/2013/03/20130307_23170.html",
+    "http://web.archive.org/web/20160529173615/http://www.marinacity.com:80/porto/",
+    "http://web.archive.org/web/20170429094740/http://www.marinacity.com:80/porto/"
+   ],
+   "status": "closed",
+   "lastVerifiedAt": "2026-07-16",
+   "proposedId": "wakayama_dolphin_park",
+   "coordSource": "国土地理院API（和歌山県和歌山市毛見1527）",
+   "address": "和歌山県和歌山市毛見1527 和歌山マリーナシティ",
+   "addressSourceUrl": "https://www.asoview.com/spot/spot0000034965/",
+   "adoptionBasis": "裁定3（名称を持つ独立した常設展示エリア、東南植物楽園の前例）＋閉園10年以内=closed基準",
+   "note": "わかやま新報2013-03-07記事逐語:「テーマパーク『ポルトヨーロッパ』に、運河を利用したイルカとの触れ合い体験施設『ドルフィンパーク』をオープンする」（2013-03-09開業、バンドウイルカ・カマイルカ）。Wayback Machineでポルトヨーロッパ公式トップに2016-05-29時点で掲載を確認、2017-04-29時点で消滅を確認（現行公式サイトにも記載なし）。複数の検索結果は2017-03-31営業終了と示すが、終了日そのものの一次情報逐語は未確認（閉鎖時期は2016年6月〜2017年4月の間で確実、いずれでも10年以内）。住所の一次情報が公式サイト消滅により得られず、asoview掲載住所（マリーナシティ所在地）を採用。ポルトヨーロッパ自体は既存マスタ未収録のため統合先なし。"
+  },
+  {
+   "verdict": "exclude",
+   "name": "ふれあい牧場テール",
+   "pref": "和歌山県",
+   "city": "有田川町",
+   "adoptionBasis": "基本基準の除外類型「移動動物園」に該当（公式サイトで確認）",
+   "sourceUrls": [
+    "http://www.arida-rs.com/tail/"
+   ],
+   "note": "公式サイト（SSL証明書エラーのため https://r.jina.ai/ プロキシ経由で取得）のトップページ見出しが逐語で「ふれあい牧場 出張移動動物園」、本文に「テールではお客様の指定先で動物園を開催し集客のお手伝いをいたします」。所在地は和歌山県有田郡有田川町徳田1693-1（運営: Arida-Recycle-Service Co.,Ltd.）で、ポニー・ロバ・牛・ヤギ・羊等を飼育するが、自施設での常設一般来場の案内はなく出張開催専業。"
+  }
+ ]
+}
