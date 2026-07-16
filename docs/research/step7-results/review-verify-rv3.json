@@ -1,0 +1,50 @@
+{"review": "Rv3", "block": "review147", "results": [
+  {
+    "name": "ノーザンホースパーク",
+    "sourceTeamFile": "review-team01.json",
+    "agree": true,
+    "checkedFields": ["verdict", "name", "city", "status", "address", "coords", "url"],
+    "findings": "一致。公式サイトを curl(HTTP200) で逐語確認。営業時間・料金ページ(https://www.northern-horsepark.jp/price/)およびアクセスページ(https://www.northern-horsepark.jp/access/)のフッターに『〒059-1361 北海道苫小牧市美沢114-7 TEL. 0144-58-2116』と明記され、record の address『北海道苫小牧市美沢114-7』・city『苫小牧市』と一致。候補台帳の誤り（栗山町等）が正しく苫小牧市へ修正済みであることを確認。name『ノーザンホースパーク』・url も公式トップと一致。verdict=include は妥当：楽しみ方の柱として『馬とふれあう』があり、観光ひき馬・観光馬車・ポニーサイクル等の馬との接触/展示を常設提供、入園料（大人1,200円・小人600円、冬期700/300、年間パスポート大人4,800円）を徴収する常設有料施設で、牧場・ふれあい基準に合致。status=open は妥当（2026年の無料シャトルバス時刻表・営業時間が現行掲示。トップに残る『臨時休園のお知らせ(2022-04-25更新)』は古いバナーで現行休止を示すものではない）。coords: 国土地理院AddressSearchで『北海道苫小牧市美沢114-7』を独立照会→141.737442,42.782604（番地一致）で record 値(lat42.782604,lng141.737442)と完全一致。なおアクセスページ埋め込みの pb(2d=141.5986,3d=42.7787) は新千歳空港側の送迎バス乗り場マーカーで施設本体ではないため座標採用に用いない旨を確認。",
+    "corrections": {}
+  },
+  {
+    "name": "Ark館ヶ森（館ヶ森アーク牧場）",
+    "sourceTeamFile": "review-team05.json",
+    "agree": false,
+    "checkedFields": ["verdict", "name", "city", "status", "address", "coords", "url"],
+    "findings": "座標に約3kmの誤りを確認したため不一致。公式サイト(https://www.arkfarm.co.jp/farm/animals/)を curl(HTTP200)で確認し『動物とふれあう 触れて、感じて、学ぶ。館ヶ森の雄大な自然のなかで動物とふれあう』の常設ナビを確認、営業時間・料金ページ(/farm/hours/)に『営業時間・入場料金』『入場料金のご案内（大人・こども4歳以上）』『休業12月上旬～3月中』の記載を確認、verdict=include（牧場・ふれあい基準）は妥当。name・city『一関市藤沢町』・url も妥当。address は公式お問い合わせページ(https://www.arkfarm.co.jp/contact/)本文で『〒029-3311 一関市藤沢町黄海衣井沢山9-15』を確認でき、record の『岩手県一関市藤沢町黄海字衣井沢山9-15』と実質一致（一次情報＝公式で裏付け取得）。coords: record は国土地理院APIが字『衣井沢山』を解決できず大字『黄海』centroid(141.292084,38.830864)を採った参考値。公式アクセスページ(https://www.arkfarm.co.jp/farm/access/)埋め込み Google マップ iframe の pb を独立抽出したところ、マーカー !1s0x5f88e7143fec8455 の !2z がデコードで『Ark館ヶ森』と一致し、中心座標は 2d=141.26199042460223(経度)・3d=38.816495205984744(緯度)。record 値と緯度約1.6km・経度約2.6km・合計約3.0km乖離し、公式埋め込みマーカー（優先順位1位）が施設本体を指すため record が明確に誤り。corrections で公式pb値へ修正する。",
+    "corrections": {"lat": 38.816495, "lng": 141.261990}
+  },
+  {
+    "name": "岩瀬牧場",
+    "sourceTeamFile": "review-team07.json",
+    "agree": true,
+    "checkedFields": ["verdict", "name", "city", "status", "address", "coords", "url"],
+    "findings": "一致。公式サイト(https://iwasefarm.jp/)を curl(HTTP200)で確認、フッターに『岩瀬牧場 〒969-0401 福島県岩瀬郡鏡石町桜町225 TEL :0248-62-6789』と明記され record の address・city『岩瀬郡鏡石町』と一致。name・url も一致。verdict=include は妥当：トップの主要4カテゴリ『食べる/動物/遊ぶ/花』のうち動物コーナーが常設で、本日の営業内容にも『動物コーナー…』が掲示、牧場・ふれあい基準に合致。status=open は妥当（2026-07-16時点で『本日の営業内容』表示、ブルーベリー狩り・トウモロコシ迷路等2026年イベント告知が現行）。coords: record 値(37.25375,140.365631)は国土地理院で『鏡石町桜町225番地』を解決した番地一致値。公式トップ/アクセスページ埋め込み iframe の pb マーカー !2z は『岩瀬牧場』で中心 2d=140.36552・3d=37.252339。両者の乖離は緯度約157m・経度約10m（合計約157m）で100mをやや超えるが、record は登録番地の正確なジオコーディング、公式ピンは牧場内の別地点（入口/事務所付近）で、いずれも広大な牧場敷地内に収まるため実質的な誤りではないと判断し record を維持（要検討として記録）。",
+    "corrections": {}
+  },
+  {
+    "name": "NASU FARM VILLAGE",
+    "sourceTeamFile": "review-team08.json",
+    "agree": false,
+    "checkedFields": ["verdict", "name", "city", "status", "address", "coords", "url"],
+    "findings": "座標に約1.3kmの誤りを確認したため不一致。公式サイト(https://nasufarmvillage.com/)を curl(HTTP200)で確認、about に『NASU FARM VILLAGEは、栃木県大田原市の大自然の中に位置しており、動物との触れ合い、レストランでのお食事をお楽しみ頂ける観光牧場です』『行き場のない保護馬たちにセカンドライフを提供する場』、horse activity に『現在14頭の保護馬』『ホーストレッキング/ホースセラピー/曳き馬/餌やり』を確認、verdict=include（牧場・ふれあい基準）は妥当。フッターに『〒324-0401 栃木県大田原市狭原1298-1』と明記され record の address・city『大田原市』と一致（公式一次情報で裏付け）。name・url も一致。status=open は妥当。coords: record 値(36.846161,140.111389)は国土地理院が大字『狭原』止まり（丁番地未解決）の参考値。公式トップ/アクセスページ埋め込み Google マップ iframe の pb を独立抽出、マーカー !1s0x6021d1ac301638b3 の !2z がデコードで『NASU FARM VILLAGE』と一致し中心 2d=140.09691267593388(経度)・3d=36.842591272235076(緯度)。record 値と緯度約400m・経度約1.29km・合計約1.35km乖離し、公式埋め込みマーカー（優先順位1位）が施設本体を指すため record が明確に誤り。corrections で公式pb値へ修正する。",
+    "corrections": {"lat": 36.842591, "lng": 140.096913}
+  },
+  {
+    "name": "和歌山県立自然博物館",
+    "sourceTeamFile": "review-team21.json",
+    "agree": true,
+    "checkedFields": ["verdict", "name", "city", "status", "address", "coords", "url"],
+    "findings": "一致。公式サイト(https://www.shizenhaku.wakayama-c.ed.jp/ および /exhibition.html)を curl(HTTP200)で確認、『〒642-0001 海南市船尾370-1』を明記、record の address・city『海南市』と一致。name・url も一致。verdict/type=aquarium(include) は妥当：展示ページに『第1展示室は水の生き物の生体展示を行う水族館コーナー』『和歌山県内に住む約450種3000点』『大水槽 黒潮の海 水量450t、ガラス幅15mの大水槽』を逐語確認でき、判定基準の『博物館の生体展示は水族館として一般に案内される規模のみ include』を満たす（琵琶湖博物館水準の前例に合致、専用フロア規模の常設生体展示）。status=open は妥当（サイト・展示ページ現行稼働）。coords: 独立に3系統照会。公式トップ/展示ページ埋め込み iframe の pb マーカー !2z はデコードで『和歌山県立自然博物館』、中心 2d=135.18954527703502・3d=34.1585902121054。record 値(34.158639,135.192083)は Wikipedia由来で公式ピンから経度約233m東。国土地理院『船尾370番地』は135.194794でさらに東（公式ピンから約300m）。3系統が東西約450mの帯に分布し、record 値はその中間に位置。100m超のため要検討として記録するが、いずれも同一施設近傍で record が明確な誤りとまでは言えないため record を維持（公式ピン値=34.158590,135.189545を参考併記）。",
+    "corrections": {}
+  },
+  {
+    "name": "北九州市立総合農事センター(花農丘公園)",
+    "sourceTeamFile": "review-team24.json",
+    "agree": true,
+    "checkedFields": ["verdict", "name", "city", "status", "address", "coords", "url"],
+    "findings": "一致。公式サイトを curl(HTTP200)で確認。アクセスページ(https://k-nouji.com/access/)およびトップに『〒802-0822 北九州市小倉南区横代東町一丁目６-１』を明記、record の address・city『小倉南区』と一致。name・url も一致。verdict=include は妥当：あそぶページ(https://k-nouji.com/play/)に『動物ふれあい広場 かわいい動物たちがたくさん!! カピバラやポニー、ヤギなど…九州で唯一、小倉牛の飼育の様子や長野県の天然記念物・木曽馬を見学…ヤギ・ポニーのえさやりや、子牛のミルクやり体験…週末にはポニー乗馬』と名称付き常設展示区画を逐語確認、公園内の独立常設展示エリア基準・牧場ふれあい基準に合致。status=open は妥当（開園時間9:00-17:00・入園無料が現行掲示）。coords: アクセスページ埋め込み Google マップ iframe の pb を独立抽出（2d=130.89882151540914・3d=33.83463338661325）、record 値(lat33.8346334,lng130.8988215)と完全一致。国土地理院『横代東町一丁目6番』(130.899704,33.834156)とは約97mだが、公式埋め込み地図の方が高精度で record 採用は妥当。",
+    "corrections": {}
+  }
+]}
