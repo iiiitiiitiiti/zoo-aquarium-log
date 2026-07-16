@@ -948,6 +948,9 @@ footer {
   .facility-card {
     transition: none;
   }
+}
+
+@media (prefers-reduced-motion: reduce) {
   .visit-photo-frame {
     transition: none;
   }
