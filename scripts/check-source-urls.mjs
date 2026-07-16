@@ -1,4 +1,5 @@
 import { readFile } from "node:fs/promises";
+import { pathToFileURL } from "node:url";
 
 const TIMEOUT_MS = 10000;
 const MIN_HOST_INTERVAL_MS = 500;
@@ -163,6 +164,8 @@ async function main() {
   }
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+// Windows では process.argv[1] がバックスラッシュ区切りのため、素の文字列比較だと
+// 一致せず main() が走らないまま exit 0 になる（2026-07-16 に偽陰性として発覚）
+if (import.meta.url === pathToFileURL(process.argv[1]).href) {
   main();
 }
