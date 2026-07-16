@@ -90,6 +90,7 @@ export default function VisitPanel({
   const entryRefs = useRef<Record<string, HTMLLIElement | null>>({});
   const [entryHeights, setEntryHeights] = useState<Record<string, number>>({});
   const [overflowingVisitIds, setOverflowingVisitIds] = useState<Set<string>>(() => new Set());
+  const [openMenuVisitId, setOpenMenuVisitId] = useState<string>();
   const [form, setForm] = useState<VisitFormState>();
   const [noteForm, setNoteForm] = useState<{ id?: string; text: string }>();
   const [error, setError] = useState("");
@@ -144,6 +145,23 @@ export default function VisitPanel({
   useEffect(() => {
     visits?.forEach((visit) => updateEntryOverflow(visit.id));
   }, [visits, photoUrls]);
+
+  useEffect(() => {
+    if (!openMenuVisitId) return;
+    function closeOnOutside(event: PointerEvent) {
+      if (event.target instanceof Element && event.target.closest(".visit-menu")) return;
+      setOpenMenuVisitId(undefined);
+    }
+    function closeOnEscape(event: KeyboardEvent) {
+      if (event.key === "Escape") setOpenMenuVisitId(undefined);
+    }
+    document.addEventListener("pointerdown", closeOnOutside);
+    document.addEventListener("keydown", closeOnEscape);
+    return () => {
+      document.removeEventListener("pointerdown", closeOnOutside);
+      document.removeEventListener("keydown", closeOnEscape);
+    };
+  }, [openMenuVisitId]);
 
   function openNewVisit() {
     revokePhotoPreview();
@@ -538,6 +556,38 @@ export default function VisitPanel({
                   <div className="visit-date">
                     <strong>{displayDate(visit.date)}</strong>
                     {visit.rating && <span aria-label={"評価" + visit.rating}>{"★".repeat(visit.rating)}</span>}
+                    <div className="visit-menu">
+                      <button
+                        type="button"
+                        className="visit-menu-button"
+                        aria-label={displayDate(visit.date) + "の記録の操作"}
+                        aria-haspopup="menu"
+                        aria-expanded={openMenuVisitId === visit.id}
+                        onClick={() => setOpenMenuVisitId((current) => current === visit.id ? undefined : visit.id)}
+                      >…</button>
+                      {openMenuVisitId === visit.id && (
+                        <div className="visit-menu-list" role="menu">
+                          <button
+                            type="button"
+                            role="menuitem"
+                            aria-label={displayDate(visit.date) + "の記録を編集"}
+                            onClick={() => {
+                              setOpenMenuVisitId(undefined);
+                              openEditVisit(visit);
+                            }}
+                          >編集</button>
+                          <button
+                            type="button"
+                            role="menuitem"
+                            aria-label={displayDate(visit.date) + "の記録を削除"}
+                            onClick={() => {
+                              setOpenMenuVisitId(undefined);
+                              removeVisit(visit);
+                            }}
+                          >削除</button>
+                        </div>
+                      )}
+                    </div>
                   </div>
                   {visit.memo && <div className="markdown-content" dangerouslySetInnerHTML={{ __html: renderMarkdown(visit.memo) }} />}
                   {visit.visitor && <small>一緒に行った人：{visit.visitor}</small>}
@@ -556,18 +606,6 @@ export default function VisitPanel({
                       </div>
                     </div>
                   )}
-                  <div className="visit-actions">
-                    <button
-                      type="button"
-                      aria-label={displayDate(visit.date) + "の記録を編集"}
-                      onClick={() => openEditVisit(visit)}
-                    >編集</button>
-                    <button
-                      type="button"
-                      aria-label={displayDate(visit.date) + "の記録を削除"}
-                      onClick={() => removeVisit(visit)}
-                    >削除</button>
-                  </div>
                   {collapsible && (
                     <button
                       type="button"
