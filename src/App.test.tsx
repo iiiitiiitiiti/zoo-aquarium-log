@@ -445,10 +445,12 @@ describe("App",()=>{
    expect(screen.getByRole("heading",{name:"札幌市円山動物園"})).toBeInTheDocument();
   });
   it("does not animate cards after returning from a detail restored from the URL hash",async()=>{
-   const user=userEvent.setup();
    window.history.replaceState(null,"",`${window.location.pathname}#facility/hokkaido_maruyama_zoo`);
    render(<App visitStore={visitStore} />);
-   await user.click(screen.getByRole("button",{name:/施設一覧/}));
+   act(() => {
+    window.history.replaceState(null, "", window.location.pathname);
+    window.dispatchEvent(new PopStateEvent("popstate"));
+   });
    await waitFor(() => expect(document.querySelector<HTMLElement>(".facility-list")).toBeInTheDocument());
    expect(document.querySelector<HTMLElement>(".facility-list")).not.toHaveClass("facility-list--animated");
   });
