@@ -1,4 +1,4 @@
-import { type ChangeEvent, type FormEvent, useEffect, useRef, useState } from "react";
+import { type ChangeEvent, type FormEvent, useEffect, useLayoutEffect, useRef, useState } from "react";
 import type { CustomFacilityStore } from "./customFacilities";
 import { MAX_FACILITY_NOTE_LENGTH, type FacilityNote, type FacilityNoteStore } from "./facilityNotes";
 import type { Mark, MarkFlag, MarkStore } from "./marks";
@@ -90,7 +90,9 @@ export default function VisitPanel({
   const entryRefs = useRef<Record<string, HTMLLIElement | null>>({});
   const [entryHeights, setEntryHeights] = useState<Record<string, number>>({});
   const [overflowingVisitIds, setOverflowingVisitIds] = useState<Set<string>>(() => new Set());
-  const [openMenuVisitId, setOpenMenuVisitId] = useState<string>();
+  const [loadedPhotoIds, setLoadedPhotoIds] = useState<Set<string>>(() => new Set());
+  // 開いている…メニュー。訪問記録は "visit-<id>"、施設メモは "note-<id>"
+  const [openMenuId, setOpenMenuId] = useState<string>();
   const [form, setForm] = useState<VisitFormState>();
   const [noteForm, setNoteForm] = useState<{ id?: string; text: string }>();
   const [error, setError] = useState("");
@@ -142,18 +144,19 @@ export default function VisitPanel({
     return () => { cancelled = true; };
   }, [photoStore, visits]);
 
-  useEffect(() => {
+  // 描画前に測定し、初回ペイント時点で折りたたみ要否を確定させる（後から畳まれるチラつき防止）
+  useLayoutEffect(() => {
     visits?.forEach((visit) => updateEntryOverflow(visit.id));
   }, [visits, photoUrls]);
 
   useEffect(() => {
-    if (!openMenuVisitId) return;
+    if (!openMenuId) return;
     function closeOnOutside(event: PointerEvent) {
       if (event.target instanceof Element && event.target.closest(".visit-menu")) return;
-      setOpenMenuVisitId(undefined);
+      setOpenMenuId(undefined);
     }
     function closeOnEscape(event: KeyboardEvent) {
-      if (event.key === "Escape") setOpenMenuVisitId(undefined);
+      if (event.key === "Escape") setOpenMenuId(undefined);
     }
     document.addEventListener("pointerdown", closeOnOutside);
     document.addEventListener("keydown", closeOnEscape);
@@ -161,7 +164,7 @@ export default function VisitPanel({
       document.removeEventListener("pointerdown", closeOnOutside);
       document.removeEventListener("keydown", closeOnEscape);
     };
-  }, [openMenuVisitId]);
+  }, [openMenuId]);
 
   function openNewVisit() {
     revokePhotoPreview();
@@ -192,6 +195,11 @@ export default function VisitPanel({
       else next.delete(visitId);
       return next;
     });
+  }
+
+  function markPhotoLoaded(visitId: string) {
+    setLoadedPhotoIds((current) => current.has(visitId) ? current : new Set(current).add(visitId));
+    updateEntryOverflow(visitId);
   }
 
   function toggleEntry(visitId: string) {
@@ -540,7 +548,9 @@ export default function VisitPanel({
           <ul className="visit-list">
             {visits.map((visit) => {
               const expanded = expandedVisitIds.has(visit.id);
-              const collapsible = overflowingVisitIds.has(visit.id) || expanded;
+              const measured = entryHeights[visit.id] !== undefined;
+              const waitingPhoto = Boolean(visit.photoPath) && !loadedPhotoIds.has(visit.id);
+              const collapsible = expanded || !measured || waitingPhoto || overflowingVisitIds.has(visit.id);
               return (
                 <li
                   key={visit.id}
@@ -562,17 +572,17 @@ export default function VisitPanel({
                         className="visit-menu-button"
                         aria-label={displayDate(visit.date) + "の記録の操作"}
                         aria-haspopup="menu"
-                        aria-expanded={openMenuVisitId === visit.id}
-                        onClick={() => setOpenMenuVisitId((current) => current === visit.id ? undefined : visit.id)}
+                        aria-expanded={openMenuId === "visit-" + visit.id}
+                        onClick={() => setOpenMenuId((current) => current === "visit-" + visit.id ? undefined : "visit-" + visit.id)}
                       >…</button>
-                      {openMenuVisitId === visit.id && (
+                      {openMenuId === "visit-" + visit.id && (
                         <div className="visit-menu-list" role="menu">
                           <button
                             type="button"
                             role="menuitem"
                             aria-label={displayDate(visit.date) + "の記録を編集"}
                             onClick={() => {
-                              setOpenMenuVisitId(undefined);
+                              setOpenMenuId(undefined);
                               openEditVisit(visit);
                             }}
                           >編集</button>
@@ -581,7 +591,7 @@ export default function VisitPanel({
                             role="menuitem"
                             aria-label={displayDate(visit.date) + "の記録を削除"}
                             onClick={() => {
-                              setOpenMenuVisitId(undefined);
+                              setOpenMenuId(undefined);
                               removeVisit(visit);
                             }}
                           >削除</button>
@@ -601,7 +611,8 @@ export default function VisitPanel({
                           alt={displayDate(visit.date) + "の訪問写真"}
                           loading="lazy"
                           decoding="async"
-                          onLoad={() => updateEntryOverflow(visit.id)}
+                          onLoad={() => markPhotoLoaded(visit.id)}
+                          onError={() => markPhotoLoaded(visit.id)}
                         />
                       </div>
                     </div>
@@ -664,22 +675,45 @@ export default function VisitPanel({
             <ul className="facility-user-note-list">
               {facilityNotes.map((facilityNote) => (
                 <li className="facility-user-note-card" key={facilityNote.id}>
+                  <div className="facility-user-note-head">
+                    <div className="visit-menu">
+                      <button
+                        type="button"
+                        className="visit-menu-button"
+                        aria-label={`施設メモ ${facilityNote.id} の操作`}
+                        aria-haspopup="menu"
+                        aria-expanded={openMenuId === "note-" + facilityNote.id}
+                        disabled={noteDeletingId !== undefined}
+                        onClick={() => setOpenMenuId((current) => current === "note-" + facilityNote.id ? undefined : "note-" + facilityNote.id)}
+                      >…</button>
+                      {openMenuId === "note-" + facilityNote.id && (
+                        <div className="visit-menu-list" role="menu">
+                          <button
+                            type="button"
+                            role="menuitem"
+                            aria-label={`施設メモ ${facilityNote.id} を編集`}
+                            disabled={noteDeletingId !== undefined}
+                            onClick={() => {
+                              setOpenMenuId(undefined);
+                              openNoteEditor(facilityNote);
+                            }}
+                          >編集</button>
+                          <button
+                            type="button"
+                            role="menuitem"
+                            aria-label={`施設メモ ${facilityNote.id} を削除`}
+                            disabled={noteDeletingId !== undefined}
+                            onClick={() => {
+                              setOpenMenuId(undefined);
+                              removeFacilityNote(facilityNote);
+                            }}
+                          >削除</button>
+                        </div>
+                      )}
+                    </div>
+                  </div>
                   <div className="facility-user-note-text markdown-content" dangerouslySetInnerHTML={{ __html: renderMarkdown(facilityNote.text) }} />
                   {displayNoteUpdatedAt(facilityNote) && <small className="facility-user-note-updated-at">{displayNoteUpdatedAt(facilityNote)}</small>}
-                  <div className="visit-actions">
-                    <button
-                      type="button"
-                      aria-label={`施設メモ ${facilityNote.id} を編集`}
-                      disabled={noteDeletingId !== undefined}
-                      onClick={() => openNoteEditor(facilityNote)}
-                    >編集</button>
-                    <button
-                      type="button"
-                      aria-label={`施設メモ ${facilityNote.id} を削除`}
-                      disabled={noteDeletingId !== undefined}
-                      onClick={() => removeFacilityNote(facilityNote)}
-                    >削除</button>
-                  </div>
                 </li>
               ))}
             </ul>
