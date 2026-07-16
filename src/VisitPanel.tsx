@@ -8,6 +8,8 @@ import type { Visit, VisitDraft, VisitStore } from "./visits";
 import { renderMarkdown } from "./markdown";
 
 const MAX_SOURCE_IMAGE_BYTES = 20 * 1024 * 1024;
+// styles.css の .visit-list > li.visit-entry--collapsible の max-height と揃えること
+const ENTRY_COLLAPSED_HEIGHT = 300;
 
 interface VisitFormState {
   id: string;
@@ -84,9 +86,10 @@ export default function VisitPanel({
   onBack: () => void;
 }) {
   const [photoUrls, setPhotoUrls] = useState<Record<string, string>>({});
-  const [expandedPhotoIds, setExpandedPhotoIds] = useState<Set<string>>(() => new Set());
-  const photoFrameRefs = useRef<Record<string, HTMLDivElement | null>>({});
-  const [photoFrameHeights, setPhotoFrameHeights] = useState<Record<string, number>>({});
+  const [expandedVisitIds, setExpandedVisitIds] = useState<Set<string>>(() => new Set());
+  const entryRefs = useRef<Record<string, HTMLLIElement | null>>({});
+  const [entryHeights, setEntryHeights] = useState<Record<string, number>>({});
+  const [overflowingVisitIds, setOverflowingVisitIds] = useState<Set<string>>(() => new Set());
   const [form, setForm] = useState<VisitFormState>();
   const [noteForm, setNoteForm] = useState<{ id?: string; text: string }>();
   const [error, setError] = useState("");
@@ -138,6 +141,10 @@ export default function VisitPanel({
     return () => { cancelled = true; };
   }, [photoStore, visits]);
 
+  useEffect(() => {
+    visits?.forEach((visit) => updateEntryOverflow(visit.id));
+  }, [visits, photoUrls]);
+
   function openNewVisit() {
     revokePhotoPreview();
     setError("");
@@ -152,17 +159,26 @@ export default function VisitPanel({
     });
   }
 
-  function updatePhotoFrameHeight(visitId: string) {
-    const frame = photoFrameRefs.current[visitId];
-    if (!frame || frame.scrollHeight <= 0) return;
-    setPhotoFrameHeights((current) => current[visitId] === frame.scrollHeight
+  function updateEntryOverflow(visitId: string) {
+    const entry = entryRefs.current[visitId];
+    if (!entry || entry.scrollHeight <= 0) return;
+    const height = entry.scrollHeight;
+    setEntryHeights((current) => current[visitId] === height
       ? current
-      : { ...current, [visitId]: frame.scrollHeight });
+      : { ...current, [visitId]: height });
+    setOverflowingVisitIds((current) => {
+      const overflowing = height > ENTRY_COLLAPSED_HEIGHT;
+      if (current.has(visitId) === overflowing) return current;
+      const next = new Set(current);
+      if (overflowing) next.add(visitId);
+      else next.delete(visitId);
+      return next;
+    });
   }
 
-  function togglePhoto(visitId: string) {
-    if (!expandedPhotoIds.has(visitId)) updatePhotoFrameHeight(visitId);
-    setExpandedPhotoIds((current) => {
+  function toggleEntry(visitId: string) {
+    if (!expandedVisitIds.has(visitId)) updateEntryOverflow(visitId);
+    setExpandedVisitIds((current) => {
       const next = new Set(current);
       if (next.has(visitId)) next.delete(visitId);
       else next.add(visitId);
@@ -504,56 +520,66 @@ export default function VisitPanel({
           </div>
         ) : (
           <ul className="visit-list">
-            {visits.map((visit) => (
-              <li key={visit.id}>
-                <div className="visit-date">
-                  <strong>{displayDate(visit.date)}</strong>
-                  {visit.rating && <span aria-label={"評価" + visit.rating}>{"★".repeat(visit.rating)}</span>}
-                </div>
-                {visit.memo && <div className="markdown-content" dangerouslySetInnerHTML={{ __html: renderMarkdown(visit.memo) }} />}
-                {visit.visitor && <small>一緒に行った人：{visit.visitor}</small>}
-                {photoUrls[visit.id] && (
-                  <div className="visit-photo-block">
-                    <div
-                      ref={(element) => { photoFrameRefs.current[visit.id] = element; }}
-                      className={`visit-photo-frame${expandedPhotoIds.has(visit.id) ? " visit-photo-frame--expanded" : ""}`}
-                      style={expandedPhotoIds.has(visit.id) && photoFrameHeights[visit.id]
-                        ? { maxHeight: String(photoFrameHeights[visit.id]) + "px" }
-                        : undefined}
-                    >
-                      <img
-                        id={`visit-photo-${visit.id}`}
-                        className="visit-photo"
-                        src={photoUrls[visit.id]}
-                        alt={displayDate(visit.date) + "の訪問写真"}
-                        loading="lazy"
-                        decoding="async"
-                        onLoad={() => updatePhotoFrameHeight(visit.id)}
-                      />
+            {visits.map((visit) => {
+              const expanded = expandedVisitIds.has(visit.id);
+              const collapsible = overflowingVisitIds.has(visit.id) || expanded;
+              return (
+                <li
+                  key={visit.id}
+                  id={`visit-entry-${visit.id}`}
+                  ref={(element) => { entryRefs.current[visit.id] = element; }}
+                  className={collapsible
+                    ? `visit-entry--collapsible${expanded ? " visit-entry--expanded" : ""}`
+                    : undefined}
+                  style={expanded && entryHeights[visit.id]
+                    ? { maxHeight: String(entryHeights[visit.id]) + "px" }
+                    : undefined}
+                >
+                  <div className="visit-date">
+                    <strong>{displayDate(visit.date)}</strong>
+                    {visit.rating && <span aria-label={"評価" + visit.rating}>{"★".repeat(visit.rating)}</span>}
+                  </div>
+                  {visit.memo && <div className="markdown-content" dangerouslySetInnerHTML={{ __html: renderMarkdown(visit.memo) }} />}
+                  {visit.visitor && <small>一緒に行った人：{visit.visitor}</small>}
+                  {photoUrls[visit.id] && (
+                    <div className="visit-photo-block">
+                      <div className="visit-photo-frame">
+                        <img
+                          id={`visit-photo-${visit.id}`}
+                          className="visit-photo"
+                          src={photoUrls[visit.id]}
+                          alt={displayDate(visit.date) + "の訪問写真"}
+                          loading="lazy"
+                          decoding="async"
+                          onLoad={() => updateEntryOverflow(visit.id)}
+                        />
+                      </div>
                     </div>
+                  )}
+                  <div className="visit-actions">
                     <button
                       type="button"
-                      className="visit-photo-toggle"
-                      aria-controls={`visit-photo-${visit.id}`}
-                      aria-expanded={expandedPhotoIds.has(visit.id)}
-                      onClick={() => togglePhoto(visit.id)}
-                    >{expandedPhotoIds.has(visit.id) ? "閉じる" : "続きを見る"}</button>
+                      aria-label={displayDate(visit.date) + "の記録を編集"}
+                      onClick={() => openEditVisit(visit)}
+                    >編集</button>
+                    <button
+                      type="button"
+                      aria-label={displayDate(visit.date) + "の記録を削除"}
+                      onClick={() => removeVisit(visit)}
+                    >削除</button>
                   </div>
-                )}
-                <div className="visit-actions">
-                  <button
-                    type="button"
-                    aria-label={displayDate(visit.date) + "の記録を編集"}
-                    onClick={() => openEditVisit(visit)}
-                  >編集</button>
-                  <button
-                    type="button"
-                    aria-label={displayDate(visit.date) + "の記録を削除"}
-                    onClick={() => removeVisit(visit)}
-                  >削除</button>
-                </div>
-              </li>
-            ))}
+                  {collapsible && (
+                    <button
+                      type="button"
+                      className="visit-entry-toggle"
+                      aria-controls={`visit-entry-${visit.id}`}
+                      aria-expanded={expanded}
+                      onClick={() => toggleEntry(visit.id)}
+                    >{expanded ? "閉じる" : "続きを見る"}</button>
+                  )}
+                </li>
+              );
+            })}
           </ul>
         )}
       </section>

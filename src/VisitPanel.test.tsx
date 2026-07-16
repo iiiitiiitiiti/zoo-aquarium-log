@@ -348,32 +348,47 @@ describe("VisitPanel", () => {
       .toHaveAttribute("src", "https://storage.example/second.webp");
   });
 
-  it("訪問写真を開閉して全体表示を切り替えられる", async () => {
-    const user = userEvent.setup();
-    const photoStore = {
-      upload: vi.fn(),
-      getUrl: vi.fn(async () => "https://storage.example/tall-photo.webp"),
-      remove: vi.fn(async () => undefined),
-    };
-    render(<VisitPanel {...({
-      facility,
-      store: new FakeVisitStore(),
-      visits: [{ ...existingVisit, photoPath: "households/test/visits/visit-1/photo.webp" }],
-      onBack: () => undefined,
-      photoStore,
-    } as any)} />);
+  it("300pxを超える記録は折りたたまれ、開閉を切り替えられる", async () => {
+    const scrollHeightSpy = vi.spyOn(Element.prototype, "scrollHeight", "get").mockReturnValue(800);
+    try {
+      const user = userEvent.setup();
+      render(<VisitPanel
+        facility={facility}
+        store={new FakeVisitStore()}
+        visits={[{ ...existingVisit, memo: "長いメモ\n".repeat(50) }]}
+        onBack={() => undefined}
+      />);
 
-    const image = await screen.findByRole("img", { name: "2026年7月1日の訪問写真" });
-    const toggle = screen.getByRole("button", { name: "続きを見る" });
-    expect(toggle).toHaveAttribute("aria-expanded", "false");
-    expect(image.closest(".visit-photo-frame")).not.toHaveClass("visit-photo-frame--expanded");
+      const toggle = await screen.findByRole("button", { name: "続きを見る" });
+      const entry = toggle.closest("li")!;
+      expect(toggle).toHaveAttribute("aria-expanded", "false");
+      expect(entry).toHaveClass("visit-entry--collapsible");
+      expect(entry).not.toHaveClass("visit-entry--expanded");
 
-    await user.click(toggle);
-    expect(screen.getByRole("button", { name: "閉じる" })).toHaveAttribute("aria-expanded", "true");
-    expect(image.closest(".visit-photo-frame")).toHaveClass("visit-photo-frame--expanded");
+      await user.click(toggle);
+      expect(screen.getByRole("button", { name: "閉じる" })).toHaveAttribute("aria-expanded", "true");
+      expect(entry).toHaveClass("visit-entry--expanded");
+      expect(entry).toHaveStyle({ maxHeight: "800px" });
 
-    await user.click(screen.getByRole("button", { name: "閉じる" }));
-    expect(screen.getByRole("button", { name: "続きを見る" })).toHaveAttribute("aria-expanded", "false");
+      await user.click(screen.getByRole("button", { name: "閉じる" }));
+      expect(screen.getByRole("button", { name: "続きを見る" })).toHaveAttribute("aria-expanded", "false");
+      expect(entry).not.toHaveClass("visit-entry--expanded");
+    } finally {
+      scrollHeightSpy.mockRestore();
+    }
+  });
+
+  it("300pxに収まる記録には「続きを見る」を表示しない", async () => {
+    const scrollHeightSpy = vi.spyOn(Element.prototype, "scrollHeight", "get").mockReturnValue(120);
+    try {
+      render(<VisitPanel facility={facility} store={new FakeVisitStore()} visits={[existingVisit]} onBack={() => undefined} />);
+
+      await screen.findByText("パンダに会えた");
+      expect(screen.queryByRole("button", { name: "続きを見る" })).not.toBeInTheDocument();
+      expect(document.querySelector(".visit-entry--collapsible")).not.toBeInTheDocument();
+    } finally {
+      scrollHeightSpy.mockRestore();
+    }
   });
 
   it("訪問写真を外して保存できる", async () => {
