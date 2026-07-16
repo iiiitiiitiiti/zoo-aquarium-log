@@ -964,7 +964,7 @@ footer {
   display: flex;
   justify-content: flex-end;
   gap: 8px;
-  margin-top: 13px;
+  margin-top: 8px;
 }
 .visit-actions button {
   padding: 6px 8px;
