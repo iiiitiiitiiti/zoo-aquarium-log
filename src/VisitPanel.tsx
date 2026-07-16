@@ -84,6 +84,8 @@ export default function VisitPanel({
 }) {
   const [photoUrls, setPhotoUrls] = useState<Record<string, string>>({});
   const [expandedPhotoIds, setExpandedPhotoIds] = useState<Set<string>>(() => new Set());
+  const photoFrameRefs = useRef<Record<string, HTMLDivElement | null>>({});
+  const [photoFrameHeights, setPhotoFrameHeights] = useState<Record<string, number>>({});
   const [form, setForm] = useState<VisitFormState>();
   const [noteForm, setNoteForm] = useState<string>();
   const [error, setError] = useState("");
@@ -148,7 +150,16 @@ export default function VisitPanel({
     });
   }
 
+  function updatePhotoFrameHeight(visitId: string) {
+    const frame = photoFrameRefs.current[visitId];
+    if (!frame || frame.scrollHeight <= 0) return;
+    setPhotoFrameHeights((current) => current[visitId] === frame.scrollHeight
+      ? current
+      : { ...current, [visitId]: frame.scrollHeight });
+  }
+
   function togglePhoto(visitId: string) {
+    if (!expandedPhotoIds.has(visitId)) updatePhotoFrameHeight(visitId);
     setExpandedPhotoIds((current) => {
       const next = new Set(current);
       if (next.has(visitId)) next.delete(visitId);
@@ -482,7 +493,13 @@ export default function VisitPanel({
                 {visit.visitor && <small>一緒に行った人：{visit.visitor}</small>}
                 {photoUrls[visit.id] && (
                   <div className="visit-photo-block">
-                    <div className={`visit-photo-frame${expandedPhotoIds.has(visit.id) ? " visit-photo-frame--expanded" : ""}`}>
+                    <div
+                      ref={(element) => { photoFrameRefs.current[visit.id] = element; }}
+                      className={`visit-photo-frame${expandedPhotoIds.has(visit.id) ? " visit-photo-frame--expanded" : ""}`}
+                      style={expandedPhotoIds.has(visit.id) && photoFrameHeights[visit.id]
+                        ? { maxHeight: String(photoFrameHeights[visit.id]) + "px" }
+                        : undefined}
+                    >
                       <img
                         id={`visit-photo-${visit.id}`}
                         className="visit-photo"
@@ -490,6 +507,7 @@ export default function VisitPanel({
                         alt={displayDate(visit.date) + "の訪問写真"}
                         loading="lazy"
                         decoding="async"
+                        onLoad={() => updatePhotoFrameHeight(visit.id)}
                       />
                     </div>
                     <button

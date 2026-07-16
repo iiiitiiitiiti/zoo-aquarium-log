@@ -1008,9 +1008,7 @@ footer {
 .visit-photo-frame .visit-photo {
   object-fit: contain;
 }
-.visit-photo-frame--expanded {
-  max-height: 10000px;
-}
+
 .visit-photo-toggle {
   display: block;
   margin: 8px auto 0;
