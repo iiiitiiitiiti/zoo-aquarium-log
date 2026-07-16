@@ -948,6 +948,9 @@ footer {
   .facility-card {
     transition: none;
   }
+  .visit-photo-frame {
+    transition: none;
+  }
 }
 
 /* ===== 訪問写真 ===== */
@@ -993,24 +996,21 @@ footer {
   margin-top: 12px;
 }
 .visit-photo-frame {
-  height: 160px;
+  max-height: 160px;
   overflow: hidden;
   border-radius: 10px;
   background: #f2f5f0;
+  transition: max-height 0.45s ease;
 }
 .visit-photo-frame .visit-photo {
-  height: 100%;
   object-fit: contain;
 }
 .visit-photo-frame--expanded {
-  height: auto;
-}
-.visit-photo-frame--expanded .visit-photo {
-  height: auto;
+  max-height: 10000px;
 }
 .visit-photo-toggle {
   display: block;
-  margin: 8px 0 0 auto;
+  margin: 8px auto 0;
   padding: 5px 0;
   border: 0;
   background: transparent;
