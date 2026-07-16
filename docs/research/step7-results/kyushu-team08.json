@@ -1,0 +1,101 @@
+{"team": "Q08", "block": "九州・沖縄", "results": [
+  {
+    "verdict": "include",
+    "name": "高千穂峡淡水魚水族館",
+    "kana": "たかちほきょうたんすいぎょすいぞくかん",
+    "pref": "宮崎県",
+    "city": "西臼杵郡高千穂町",
+    "type": "aquarium",
+    "lat": 32.7021433,
+    "lng": 131.3006718,
+    "url": "https://takachiho-kanko.info/sightseeing/11/",
+    "sourceUrls": ["https://takachiho-kanko.info/sightseeing/11/"],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-16",
+    "proposedId": "miyazaki_takachihokyo_tansuigyo_suizokukan",
+    "coordSource": "公式（高千穂町観光協会）ページ内Googleマップリンク(https://maps.app.goo.gl/BDaVxBxJAriw9qBv5)の解決先ピン座標を採用。GSI住所検索(向山60-1)は大字レベルの近似(32.667423,131.294937)で番地精度が低いため不採用。",
+    "address": "宮崎県西臼杵郡高千穂町向山60-1",
+    "addressSourceUrl": "https://takachiho-kanko.info/sightseeing/11/",
+    "adoptionBasis": "常設・一般来場可、五ヶ瀬川水系の淡水魚を中心とした展示を主目的とする水族館（包含基準の水族館に該当）",
+    "note": "玉垂の滝の湧水を利用し、五ヶ瀬川水系のヤマメ・ドンコ等に加え熱帯淡水魚等、計約100種を展示。開館9:00～16:00、定休日は第2・第4水曜＋12/31・1/1（2026年8月は8/5・8/26、9月は9/9・9/30も定休）。施設直通TELは0982-72-2269（ページ運営は高千穂町観光協会）。サイト内の「営業状況」は日次更新の当日情報であり恒常的な営業状態の根拠にはしていない。"
+  },
+  {
+    "verdict": "include",
+    "name": "奄美海洋展示館",
+    "kana": "あまみかいようてんじかん",
+    "pref": "鹿児島県",
+    "city": "奄美市",
+    "type": "aquarium",
+    "lat": 28.38316,
+    "lng": 129.467789,
+    "url": "https://ohama.marutani-amami.com/ocean-exhibition-hall",
+    "sourceUrls": [
+      "https://www.city.amami.lg.jp/kanko/shisetsu/kyoiku/003.html",
+      "https://ohama.marutani-amami.com/ocean-exhibition-hall"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-16",
+    "proposedId": "kagoshima_amami_kaiyo_tenjikan",
+    "coordSource": "GSI住所検索API（鹿児島県奄美市名瀬小宿字大浜701-1）。大字「名瀬小宿」レベルでの近似一致で、番地までの精度は未確認。",
+    "address": "鹿児島県奄美市名瀬小宿字大浜701-1",
+    "addressSourceUrl": "https://www.city.amami.lg.jp/kanko/shisetsu/kyoiku/003.html",
+    "adoptionBasis": "常設の海洋生物展示施設。奄美の海中地形を模した大水槽でウミガメ・熱帯魚、他にサンゴ・エビ・カニ等を展示する水族館（包含基準の水族館に該当）",
+    "note": "候補URLの奄美市公式ページ（2013年3月更新のまま）記載の旧公式サイト(http://www.synapse.ne.jp/kaiyo/)は現在プロバイダ会社(SYNAPSE)のサイトに転用されアクセス不能。現行の一次情報は大浜海浜公園の指定管理者(株式会社丸谷)による公式サイトで、開館9:30～18:00、休館は年末年始(12/31-1/1)と6月・12月中旬の整備休館3日間。コロナ禍の休館を経て運営継続中（2024年報道で来館70万人達成の記事あり）。"
+  },
+  {
+    "verdict": "include",
+    "name": "長崎鼻パーキングガーデン",
+    "kana": "ながさきばなぱーきんぐがーでん",
+    "pref": "鹿児島県",
+    "city": "指宿市",
+    "type": "zoo",
+    "lat": 31.16585,
+    "lng": 130.581161,
+    "url": "http://nagasakibana.com/",
+    "sourceUrls": ["http://nagasakibana.com/annai/", "http://nagasakibana.com/miryoku/"],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-16",
+    "proposedId": "kagoshima_nagasakibana_parking_garden",
+    "coordSource": "GSI住所検索API（鹿児島県指宿市山川岡児ケ水1571番地）。番地まで一致した結果を採用。",
+    "address": "〒891-0513 鹿児島県指宿市山川岡児ケ水1571-1",
+    "addressSourceUrl": "http://nagasakibana.com/annai/",
+    "adoptionBasis": "1966年開園の亜熱帯植物公園内で、原猿・鳥類等を放し飼い展示し、動物ショーも常設実施。動物取扱業（展示業）登録あり。動物展示が主要な来場目的（包含基準のふれあい施設・独立常設展示エリアに該当）",
+    "note": "国内初の本格的亜熱帯植物屋外植樹による「ジャングル化」した園内で動物を放し飼い、動物ショーを実施。動物取扱業登録証：鹿児島県H28指保第21号-4（(株)ヤマモトプレジャー、展示業、登録更新済）。開園8:00～17:00、年中無休。TEL 0993-35-0111。"
+  },
+  {
+    "verdict": "include",
+    "name": "鹿屋中央公園（小動物園）",
+    "kana": "かのやちゅうおうこうえん（しょうどうぶつえん）",
+    "pref": "鹿児島県",
+    "city": "鹿屋市",
+    "type": "zoo",
+    "lat": 31.381971,
+    "lng": 130.84838,
+    "url": "https://www.city.kanoya.lg.jp/kouhou/shisetsu/kanko/044.html",
+    "sourceUrls": [
+      "https://www.city.kanoya.lg.jp/kouhou/shisetsu/kanko/044.html",
+      "https://www.pref.kagoshima.jp/suisuinavi/22536.html"
+    ],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-16",
+    "proposedId": "kagoshima_kanoya_shodobutsuen",
+    "coordSource": "公式（鹿屋市）ページ内「Googleマップで地図を開く」リンク座標 (https://maps.google.co.jp/maps?q=31.381971,130.84838) をそのまま採用。",
+    "address": "鹿児島県鹿屋市向江町29-1",
+    "addressSourceUrl": "https://www.city.kanoya.lg.jp/kouhou/shisetsu/kanko/044.html",
+    "adoptionBasis": "鹿屋中央公園内の常設動物展示区画（鳥・ウサギ・山羊・モルモット等）。入園無料の独立した常設展示エリア（包含基準の動物園・独立常設展示エリアに該当）",
+    "note": "調査依頼の候補URL(012.html)は同公園本体のページで小動物園の記載がなく該当しない。正しい施設ページは044.html「鹿屋中央公園（小動物園）」。鳥・ウサギ・山羊・モルモット等を展示、開業時間9:00～16:30、休業日は年末年始（12/29～1/3）、利用料金無料。県サイト(pref.kagoshima.jp/suisuinavi)にも同様の動物種記載あり。1977年開設との情報は今回の一次情報では確認できず未検証。"
+  },
+  {
+    "verdict": "exclude",
+    "name": "おきなわワールドハブ博物公園",
+    "pref": "沖縄県",
+    "city": "南城市",
+    "adoptionBasis": "「おきなわワールド」全体は共通入場券（大人2,000円、入場は玉泉洞から）で運営される複合観光施設であり、ハブ博物公園単独の入園料・入口は存在しない。判定基準の『共通入場券なら原則1施設にまとめる』を適用すると、統合後の施設（おきなわワールド全体）の主目的は玉泉洞鍾乳洞・王国村であり、動物展示（ハブ博物公園）はその一区画にとどまるため、動物展示を主目的とする独立施設としての収録要件を満たさない",
+    "sourceUrls": [
+      "https://www.gyokusendo.co.jp/okinawaworld/fee/",
+      "https://www.gyokusendo.co.jp/okinawaworld/access/",
+      "https://www.gyokusendo.co.jp/okinawaworld/animal-handling/"
+    ],
+    "note": "公式サイト料金ページで「園内への入場はチケットのご購入が必要」「入場は玉泉洞からとなります」と明記、全区画共通の単一チケット制（大人2,000円/小人1,000円）。運営会社（株式会社南都）は動物取扱業登録（沖動展・販・貸・保第285号、展示・販売・貸出・保管、～2027年3月14日）を保有しハブ博物公園自体は稼働中だが、単独施設としては未収録が妥当と判断。動物展示に特化した独立施設として再整理したい場合は手動施設追加での対応を推奨。"
+  }
+]}

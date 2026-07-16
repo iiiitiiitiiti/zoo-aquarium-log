@@ -1,0 +1,50 @@
+{"review": "R2", "block": "九州・沖縄", "results": [
+  {
+    "name": "高千穂峡淡水魚水族館",
+    "sourceTeamFile": "kyushu-team08.json",
+    "agree": true,
+    "checkedFields": ["verdict", "name", "city", "status", "address", "coords", "url"],
+    "findings": "一致。curl(HTTP200)で公式ページ(https://takachiho-kanko.info/sightseeing/11/)本文を逐語確認し、title『高千穂峡淡水魚水族館 | 観る | 高千穂町観光協会【公式】』、住所『向山60-1』、TEL『0982-72-2269』、定休日『第2・第4水曜日・12月31日・1月1日（9月9日・30日も定休）』を確認、記録と一致。座標は記録が採用したGoogleマップ短縮URL(https://maps.app.goo.gl/BDaVxBxJAriw9qBv5)を自ら解決し、Googleマップの施設ページURLに埋め込まれたピン座標『3d32.7021433!4d131.3006718』を独立取得、記録値(32.7021433, 131.3006718)と完全一致を確認（GSI住所検索の大字レベル近似32.667423,131.294937とは約6km乖離するが、これは番地精度の限界であり記録のGoogleマップ採用判断は妥当）。verdict(include)は淡水魚を中心とした常設水族館という基準に照らして妥当。",
+    "corrections": {}
+  },
+  {
+    "name": "長崎鼻パーキングガーデン",
+    "sourceTeamFile": "kyushu-team08.json",
+    "agree": true,
+    "checkedFields": ["verdict", "name", "city", "status", "address", "coords", "url"],
+    "findings": "一致。curl(HTTP200)で公式ページ(http://nagasakibana.com/annai/)本文を逐語確認（UTF-8で正しくデコード）、title『長崎鼻パーキングガーデン ご利用案内-TOP』、開園時間『午前8:00～午後17:00』『年中無休』、動物取扱業登録証『鹿児島県H28指保第21号-4（株）ヤマモトプレジャー』を確認、記録と一致。住所(鹿児島県指宿市山川岡児ケ水1571-1)を国土地理院ジオコーディングAPIで独自照会した結果、座標(130.581161, 31.16585)＝経度/緯度で記録値(lat31.16585, lng130.581161)と完全一致（番地までヒット）。verdict(include)は放し飼い展示・動物ショー常設という基準に照らして妥当。",
+    "corrections": {}
+  },
+  {
+    "name": "ヤンバルクイナ生態展示学習施設 クイナの森",
+    "sourceTeamFile": "kyushu-team09.json",
+    "agree": true,
+    "checkedFields": ["verdict", "name", "city", "status", "address", "coords", "url"],
+    "findings": "一致。curl(HTTP200)で公式ページ(https://kuinapark.com/kuina, https://kuinapark.com/access)本文を確認、title『ヤンバルクイナ生態展示学習施設 クイナの森 | 安田くいなふれあい公園（公式）』、住所『国頭村字安田（あだ）1477-35』、休館日『毎週水曜日』、料金『国頭村民 高校生以上500円・小中学生100円』を確認、記録と一致。座標はaccessページのGoogleマップ埋め込みiframeのpbパラメータを自ら抽出（2d=128.29389714640837, 3d=26.741406382198733）、記録値(lat26.741406, lng128.293897)と完全一致（GSI大字レベル近似26.756895,128.289825とは約1.7km乖離するが、公式埋め込み地図の方が高精度であり記録の採用判断は妥当）。verdict(include)は希少種の生態展示学習施設という基準に照らして妥当。",
+    "corrections": {}
+  },
+  {
+    "name": "久米島ウミガメ館",
+    "sourceTeamFile": "kyushu-team09.json",
+    "agree": true,
+    "checkedFields": ["verdict", "name", "city", "status", "address", "coords", "url"],
+    "findings": "一致。curl(HTTP200)で公式サイト(https://kumejimataro.okinawa/)を確認、title『ホーム | 久米島ウミガメ館』、動物取扱業登録『所在地:沖縄県島尻郡久米島町字奥武170／種別：沖動展708号／有効期限：令和9年3月20日』、営業時間『9:00～17:00（入館締め切りは16:00）』、休館日『火曜日』を確認、記録と一致。2026年6月の臨時休館告知(archives/4841)も独自に取得し内容を確認、その後2026年6月25日付でイベント告知が出ていることから通常営業への復帰も裏付けられ、記録のstatus=open判定は妥当。座標はトップページのGoogleマップ埋め込みiframeのpbパラメータを自ら抽出（2d=126.826236, 3d=26.336447）、記録値(lat26.336447, lng126.826236)と完全一致。verdict(include)はウミガメ展示・ふれあいを主目的とする常設施設という基準に照らして妥当。",
+    "corrections": {}
+  },
+  {
+    "name": "DMMかりゆし水族館",
+    "sourceTeamFile": "kyushu-team10.json",
+    "agree": true,
+    "checkedFields": ["verdict", "name", "city", "status", "address", "coords", "url"],
+    "findings": "一致。curl(HTTP200)で公式トップページ(https://kariyushi-aquarium.com/)本文を確認、『本日の営業時間』欄に『09:00～19:00』『最終入館は閉館60分前』の静的表示を確認（記録の『09:00〜19:00』と一致）、また本文中にカワウソ・ナマケモノ・ペンギン・マイクロブタ等の陸生動物名を確認し、type=bothの妥当性を裏付け。住所は公式アクセスページ(https://kariyushi-aquarium.com/access/)で『豊見城市豊崎3-35』を確認。座標はアクセスページのGoogleマップ埋め込みiframeのpbパラメータを自ら抽出（2d=127.64837177541375, 3d=26.157728477105277）、記録値(lat26.157728, lng127.648372)と完全一致（GSI番地レベル近似26.157272,127.651207とは約300m差だが、公式埋め込み地図の方が高精度）。verdict(include)は妥当。",
+    "corrections": {}
+  },
+  {
+    "name": "平野アニマルテラス",
+    "sourceTeamFile": "kyushu-team10.json",
+    "agree": true,
+    "checkedFields": ["verdict", "name", "city", "status", "address", "coords", "url"],
+    "findings": "一致。公式サイト(https://www.hiranoanimalterrace.com/)へのcurl直接アクセスはCloudflareのボット対策で403となったが、https://r.jina.ai/ プロキシ経由で本文を逐語取得（title『Home | Hirano Animal Terrace』、施設紹介文で『平野』『アニマルテラス』『石垣島で唯一、いろいろな動物とふれあえる場所』を確認）、一般ユーザーには到達可能な稼働中サイトと判断。予約サイト(https://reserva.be/akashi1220)もjina.aiプロキシ経由で取得し、2026年7月17日〜28日分の実枠（一般¥2,000・貸切¥20,000）が現に予約可能であることを確認、記録のstatus=open・料金体系と一致。住所は予約サイトの『about』ページ本文『所在地 沖縄県石垣市平久保410』を確認、記録と一致。座標は国土地理院ジオコーディングAPIに同住所（字レベル）を独自照会した結果(124.319534, 24.578762)が記録値(lat24.578762, lng124.319534)と完全一致。verdict(include)は一般入場料金体系を持つ常設ふれあい展示という基準に照らして妥当。",
+    "corrections": {}
+  }
+]}
