@@ -1,0 +1,69 @@
+{"team": "R02", "block": "review追調査", "results": [
+  {
+    "verdict": "exclude",
+    "name": "安平町鹿公園",
+    "pref": "北海道",
+    "city": "勇払郡安平町",
+    "adoptionBasis": "基準3（植物園・公園内でも独立した常設展示エリアなら include、全体の付帯設備なら exclude）を適用。公式サイト(town.abira.lg.jp)の一次情報で、エゾシカの牧場は桜・水芭蕉・紅葉・ホタル池・遊歩道・ドッグラン・アスレチック・健康遊具・パークゴルフ場・キャンプ場と並ぶ、入園無料・単一入口の一般公園内の一機能として案内されており、独立した名称・別入口・別料金を持つ常設展示施設とは認められない。",
+    "sourceUrls": ["https://www.town.abira.lg.jp/midokoro/shisetsu/park/72"],
+    "note": "入力ノート通り「森林公園内のエゾシカ牧場コーナー」であることを一次情報で確認。公園全体が無料・共通入園のため、動物展示のみを切り出した独立施設としては扱わない。"
+  },
+  {
+    "verdict": "include",
+    "name": "札幌市豊平川さけ科学館",
+    "kana": "さっぽろしとよひらがわさけかがくかん",
+    "pref": "北海道",
+    "city": "札幌市南区",
+    "type": "aquarium",
+    "lat": 43.001045,
+    "lng": 141.343124,
+    "url": "https://salmon-museum.jp/",
+    "sourceUrls": ["https://salmon-museum.jp/facility", "https://salmon-museum.jp/access"],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-16",
+    "proposedId": "hokkaido_sapporo_sake_kagakukan",
+    "coordSource": "国土地理院API（住所: 北海道札幌市南区真駒内公園2-1）",
+    "address": "北海道札幌市南区真駒内公園2-1",
+    "addressSourceUrl": "https://salmon-museum.jp/facility",
+    "adoptionBasis": "基準2（学習館・博物館は『水族館・動物園として一般に案内される規模の生体展示』のみ include、琵琶湖博物館の前例水準）を適用。公式サイトの一次情報で、本館の飼育展示室（サケ科稚魚を種類別水槽で展示）、地下観察室（計7面・30トンの池を水族館のように横から観察）、さかな館（淡水魚・カエル・サンショウウオ・カメ等約30種類を常時展示）という複数の専用展示室・フロアを備え、前例水準を満たすと判断した。",
+    "note": "入館無料、指定管理者は公益財団法人札幌市公園緑化協会。入力noteの『教育施設寄りで基準適合が曖昧』との懸念に対し、一次情報で専用展示室の規模を確認しinclude判定とした。既存マスタに類似名の『hokkaido_shibetsu_salmon_museum（標津サーモン科学館）』があるが、所在地・運営者とも別物で重複しない。"
+  },
+  {
+    "verdict": "include",
+    "name": "アザラシシーパラダイス",
+    "kana": "あざらししーぱらだいす",
+    "pref": "北海道",
+    "city": "紋別市",
+    "type": "aquarium",
+    "lat": 44.33382,
+    "lng": 143.373032,
+    "url": "https://o-tower.co.jp/seaparadise.html",
+    "sourceUrls": ["https://o-tower.co.jp/seaparadise.html", "https://o-tower.co.jp/seaparadise2.html", "https://o-tower.co.jp/tokkaricenter.html", "https://tic.mombetsu.net/tourist-facilities/seaparadise/"],
+    "status": "open",
+    "lastVerifiedAt": "2026-07-16",
+    "proposedId": "hokkaido_mombetsu_seal_sea_paradise",
+    "coordSource": "国土地理院API（住所: 北海道紋別市海洋公園2番地）。既存マスタhokkaido_okhotsk_tokkari_center（lat44.3338/lng143.373）と同一区画。",
+    "address": "北海道紋別市海洋公園2番地",
+    "addressSourceUrl": "https://tic.mombetsu.net/tourist-facilities/seaparadise/",
+    "adoptionBasis": "基準8（野生動物の管理された餌付け観察苑、有料・常設・運営者管理あり）および『同一敷地でも別料金・別入口なら別施設』の原則を適用。公式(o-tower.co.jp)のアザラシランド/シーパラダイス各施設紹介ページでメインゲート・受付・飼育プールがそれぞれ独立していることを確認し、紋別観光振興公社（紋別観光案内所）のページで入館料がアザラシランド（大人400円）とシーパラダイス（大人500円/小人300円）で異なることを確認した。",
+    "note": "運営会社公式ページ(tokkaricenter.html)で『とっかりセンターは「アザラシランド」と「アザラシシーパラダイス」の2つの施設によって構成される』旨を確認。既存マスタのhokkaido_okhotsk_tokkari_center（url: tokkaricenter.html、保護飼育主体・日本で唯一の施設という説明文）はアザラシランドを指すとみられ、本施設（2015年開業・餌やり体験主体のシーパラダイス）とは別物のため重複しないと判断した。ただし既存マスタのnote欄に対象施設の明記が無く、命名が紛らわしいため、メインチームでの最終確認を推奨する。"
+  },
+  {
+    "verdict": "exclude",
+    "name": "氷海展望塔オホーツクタワー（ミニ水族館）",
+    "pref": "北海道",
+    "city": "紋別市",
+    "adoptionBasis": "基準2の考え方を準用（生体展示が主目的でない付随的な小規模展示は exclude）。公式サイト(o-tower.co.jp/okhotsktower.html)の一次情報で、当施設は『日本最北端＆最大級の海中展望塔』を主目的とし、3階パノラマ展望台+カフェ、2階4Dシアター、1階受付・乗り物・キッズルーム、海底階の海中観察窓+ミニ水族館という構成。ミニ水族館は海底階の一要素として一文で触れられるのみで、専用フロア・独立名称・別料金は無く、動物園・水族館として一般に案内される規模には達しない。",
+    "sourceUrls": ["https://o-tower.co.jp/okhotsktower.html"],
+    "note": "入館料・年間パスポートは展望塔全体で共通で、ミニ水族館単独の入場区分は確認できず。生体展示は主目的ではなく展望塔の一設備と判断した。オホーツクとっかりセンター（既存マスタ）・アザラシシーパラダイス（本チーム収録案、同じ海洋公園エリアの別運営棟）とは別施設で、いずれとも重複しない。"
+  },
+  {
+    "verdict": "exclude",
+    "name": "オホーツク流氷館",
+    "pref": "北海道",
+    "city": "網走市",
+    "adoptionBasis": "基準2の考え方を準用。公式サイト(ryuhyokan.com/facility/)の一次情報で、施設概要は『流氷とオホーツク海の生き物をテーマとした観光施設』とされ、流氷海中ライブ映像・5面シアター・流氷体感テラス（本物の流氷100t）・展望テラス・ショップ等が主要構成要素。クリオネ・フウセンウオ・ナメダンゴ等の生体展示は『オホーツクの生き物たち』という一区画で一文の紹介にとどまり、水槽数・専用フロアの記載が無く、水族館として一般に案内される規模とは認められない。",
+    "sourceUrls": ["https://www.ryuhyokan.com/facility/"],
+    "note": "近隣の『北海道立オホーツク流氷科学センター（GIZA）』はクリオネ飼育数日本一を謳う別施設で、本施設（オホーツク流氷館）とは異なる。入力noteの懸念どおり、生体展示は主目的の流氷体感・観光展示に付随する小規模コーナーと判断してexcludeとした。"
+  }
+]}
