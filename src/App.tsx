@@ -567,7 +567,6 @@ export default function App({
         <div className="results-heading">
           <h2>{hasListFilter ? `${shown.length}施設が該当` : `${allFacilities.length}施設を掲載`}</h2>
           <div className="results-heading-side">
-            <p>パイロット版</p>
             <div className="results-heading-actions">
               <button className="stats-toggle" type="button" onClick={() => setStatsOpen(true)} disabled={statsNotReady}>統計</button>
               <button className="map-toggle" type="button" onClick={() => {
