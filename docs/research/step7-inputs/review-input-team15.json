@@ -1,0 +1,55 @@
+[
+ {
+  "name": "清里ポニー牧場",
+  "pref": "山梨県",
+  "city": "北杜市",
+  "foundUrls": [
+   "https://yamanashi-mama.net/animal-spot/"
+  ],
+  "typeGuess": "other",
+  "note": "小規模なポニーふれあい体験施設。独立施設としての規模・常設性が未確認"
+ },
+ {
+  "name": "ふじさん牧場",
+  "pref": "山梨県",
+  "city": "富士吉田市",
+  "foundUrls": [
+   "https://fujiboku.com/",
+   "https://fujiyoshida.net/spot/37"
+  ],
+  "typeGuess": "other",
+  "note": "観光・体験牧場。カフェ・ドッグラン等も併設し、動物展示が主目的かどうか要判断"
+ },
+ {
+  "name": "長野市城山動物園（茶臼山動物園城山分園）",
+  "pref": "長野県",
+  "city": "長野市",
+  "foundUrls": [
+   "https://www.city.nagano.nagano.jp/n202500/kanko/p002602.html",
+   "https://zfc.jp/en/zoolist/238"
+  ],
+  "typeGuess": "zoo",
+  "note": "茶臼山動物園と同じ指定管理者が運営する分園。敷地は別（城山公園）で入場無料。既存施設の分園として1施設扱いにするか、別施設として登録するか要判断"
+ },
+ {
+  "name": "地獄谷野猿公苑",
+  "pref": "長野県",
+  "city": "山ノ内町",
+  "foundUrls": [
+   "https://jigokudani-yaenkoen.co.jp/guide/"
+  ],
+  "typeGuess": "other",
+  "note": "野生ニホンザルの生態観察施設。有料（大人800円）で動物観察が主目的だが、公式には一般的な動物園と異なると位置づけ。基準の『動物展示が主目的なら含める』に該当するか要判断"
+ },
+ {
+  "name": "波勝崎モンキーベイ",
+  "pref": "静岡県",
+  "city": "南伊豆町",
+  "foundUrls": [
+   "https://monkeybay.jp/",
+   "https://ja.wikipedia.org/wiki/波勝崎モンキーベイ"
+  ],
+  "typeGuess": "other",
+  "note": "野生ニホンザル約300匹の観察施設。有料（大人1200円）。地獄谷野猿公苑と同様、餌付けによる野生ザル観察施設で動物園扱いか要判断"
+ }
+]

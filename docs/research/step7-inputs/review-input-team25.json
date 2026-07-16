@@ -1,0 +1,54 @@
+[
+ {
+  "name": "むつごろう水族館",
+  "pref": "長崎県",
+  "city": "諫早市",
+  "foundUrls": [
+   "http://www.kantakunosato.co.jp/aquarium/20221001-aquarium/",
+   "https://sp.jorudan.co.jp/zoo_aqua/spot_13050.html"
+  ],
+  "typeGuess": "aquarium",
+  "note": "諫早ゆうゆうランド干拓の里内。2022年10月から休館中、2026年3月29日をもって完全閉館予定。suspended/closed判定はマスタ側で要判断"
+ },
+ {
+  "name": "対馬野生生物保護センター",
+  "pref": "長崎県",
+  "city": "対馬市",
+  "foundUrls": [
+   "https://www.env.go.jp/nature/kisho/wildlifecenter/tsushima.html",
+   "https://www.torayama-twcc.jp/"
+  ],
+  "typeGuess": "other",
+  "note": "環境省・県・市共同運営。ツシマヤマネコを常設公開しているが、性格は保護研究センターに近い。研究施設として除外対象か要判定"
+ },
+ {
+  "name": "月廻り公園",
+  "pref": "熊本県",
+  "city": "阿蘇郡高森町",
+  "foundUrls": [
+   "https://pandanocoto.com/article/zoo_pref/kumamoto"
+  ],
+  "typeGuess": "other",
+  "note": "動物展示の実態・規模を十分確認できておらずreview"
+ },
+ {
+  "name": "奄美観光ハブセンター",
+  "pref": "鹿児島県",
+  "city": "奄美市(奄美大島)",
+  "foundUrls": [
+   "https://www.kagoshima-kankou.com/guide/70266"
+  ],
+  "typeGuess": "other",
+  "note": "1974年設立、ハブ約40種を飼育・展示。ハブ対マングースショー等の観光施設要素が強く、爬虫類館として含めるか要判定。離島(奄美大島)"
+ },
+ {
+  "name": "徳之島フルーツガーデン",
+  "pref": "鹿児島県",
+  "city": "大島郡徳之島町",
+  "foundUrls": [
+   "https://nisikawa.net/fruitsgarden/"
+  ],
+  "typeGuess": "other",
+  "note": "亜熱帯植物園が主体。『動物などがいます』との記述はあるが独立した常設動物展示エリアの実態は未確認。離島(徳之島)"
+ }
+]

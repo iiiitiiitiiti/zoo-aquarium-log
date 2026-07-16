@@ -1,0 +1,57 @@
+[
+ {
+  "name": "動物ふれあいLuff",
+  "pref": "京都府",
+  "city": "京田辺市",
+  "foundUrls": [
+   "https://luff-safamily.com/",
+   "https://www.jalan.net/kankou/spt_guide000000225490/"
+  ],
+  "typeGuess": "other",
+  "note": "商業ビル内・予約制90分ふれあい体験（ミーアキャット等の小動物・エキゾチックアニマル）。動物カフェに近い業態で、常設の動物園・牧場と呼べるか要判断。"
+ },
+ {
+  "name": "舞鶴ふるるファーム",
+  "pref": "京都府",
+  "city": "舞鶴市",
+  "foundUrls": [
+   "https://fururufarm.com/",
+   "https://iko-yo.net/facilities/362"
+  ],
+  "typeGuess": "other",
+  "note": "農村体験・宿泊・飲食が中心の複合レジャー施設で、動物ふれあい（ウサギ・ヤギ・ヒツジ・ポニー）は体験メニューの一部。動物展示が来場の主目的と言えるか要確認。"
+ },
+ {
+  "name": "るり渓やぎ農園",
+  "pref": "京都府",
+  "city": "南丹市",
+  "foundUrls": [
+   "https://www.ruri-yagi.com/",
+   "https://www.jalan.net/kankou/spt_26213cb3512104010/"
+  ],
+  "typeGuess": "other",
+  "note": "山羊を飼育し乳製品（アイス・ヨーグルト・チーズ）を製造販売する循環型農業の会社。来場者向けふれあい・搾乳体験も行うが、酪農・製造販売が主業か観光ふれあい牧場かの位置づけ要確認。"
+ },
+ {
+  "name": "京都市青少年科学センター（チョウの家・淡水魚コーナー）",
+  "pref": "京都府",
+  "city": "京都市伏見区",
+  "foundUrls": [
+   "https://www.edu.city.kyoto.jp/science/",
+   "https://kids.rurubu.jp/article/91381/"
+  ],
+  "typeGuess": "other",
+  "note": "科学館内に年間通じて観察できる「チョウの家」（1日数回の限定公開時間あり）と鴨川の生き物を展示する淡水魚コーナーがある。施設全体の主目的は科学教育で、動物展示は展示の一部。独立した常設展示エリアとして計上すべきか要判断。"
+ },
+ {
+  "name": "大阪府立環境農林水産総合研究所 生物多様性センター",
+  "pref": "大阪府",
+  "city": "寝屋川市",
+  "foundUrls": [
+   "https://www.knsk-osaka.jp/biodiv/",
+   "https://iko-yo.net/facilities/19453"
+  ],
+  "typeGuess": "研究施設（一部一般公開）",
+  "note": "府立研究機関だが本館内に天然記念物イタセンパラ等の淡水魚を無料で常設展示し自由見学可。基準上『研究施設』除外に該当するか、公開展示の実態から含めるべきか要判定"
+ }
+]

@@ -1,0 +1,52 @@
+[
+ {
+  "name": "まいぱり宮古島熱帯果樹園",
+  "pref": "沖縄県",
+  "city": "宮古島市",
+  "foundUrls": [
+   "https://maipari.jp/"
+  ],
+  "typeGuess": "other",
+  "note": "熱帯果樹園が主体。宮古馬・ヤギとのふれあいパドックあり。離島(宮古島)、動物展示が主目的かは要判定"
+ },
+ {
+  "name": "OKINAWAフルーツらんど",
+  "pref": "沖縄県",
+  "city": "国頭郡本部町",
+  "foundUrls": [
+   "https://www.jalan.net/kankou/spt_47209ga3550154620/"
+  ],
+  "typeGuess": "other",
+  "note": "亜熱帯フルーツ・植物のテーマパークが主体。色鮮やかな鳥とのふれあいがあるが動物展示が主目的かは要判定"
+ },
+ {
+  "name": "やんばるライオン",
+  "pref": "沖縄県",
+  "city": "国頭郡国頭村",
+  "foundUrls": [
+   "https://360navi.com/okinawa/motobu/motobu-ostrich/"
+  ],
+  "typeGuess": "zoo",
+  "note": "やんばるの山中にある小規模動物園。ライオン・ヘビ等とのふれあい体験。詳細な運営実態・現況の確認が不十分"
+ },
+ {
+  "name": "八重山鍾乳洞動植物園",
+  "pref": "沖縄県",
+  "city": "石垣市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%8B%95%E7%89%A9%E5%9C%92%E4%B8%80%E8%A6%A7"
+  ],
+  "typeGuess": "other",
+  "note": "Wikipedia一覧記載のみで単独確認未了。鍾乳洞観光施設に動植物園が付随している可能性。離島(石垣島)"
+ },
+ {
+  "name": "亜熱帯植物楽園",
+  "pref": "沖縄県",
+  "city": "未確認(要確認)",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%8B%95%E7%89%A9%E5%9C%92%E4%B8%80%E8%A6%A7"
+  ],
+  "typeGuess": "other",
+  "note": "Wikipedia一覧記載のみで単独確認未了。東南植物楽園の旧称/別称の可能性もあり要精査(重複の可能性)"
+ }
+]

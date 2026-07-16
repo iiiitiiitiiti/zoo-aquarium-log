@@ -1,0 +1,58 @@
+[
+ {
+  "name": "鴻巣市コウノトリ野生復帰センター 天空の里",
+  "pref": "埼玉県",
+  "city": "鴻巣市",
+  "foundUrls": [
+   "https://www.city.kounosu.saitama.jp/site/konotori/",
+   "https://www.city.kounosu.saitama.jp/site/konotori/1294.html"
+  ],
+  "typeGuess": "other",
+  "note": "コウノトリの飼育・野生復帰（放鳥）を目的とする市の施設。一般公開・有料入館（大人100円）で個体を間近に観察可能だが、性格としては基準で除外対象の「研究施設」に近い面もあり要判断。"
+ },
+ {
+  "name": "加藤牧場",
+  "pref": "埼玉県",
+  "city": "日高市",
+  "foundUrls": [
+   "https://www.baffi.ne.jp/",
+   "https://chocotabi-saitama.jp/business/location/787/"
+  ],
+  "typeGuess": "other",
+  "note": "乳牛約200頭を飼育する酪農牧場。ジェラート等乳製品販売・牛や山羊の搾乳体験がメインで、動物展示が主目的とまでは言い切れず要判断。"
+ },
+ {
+  "name": "須藤牧場",
+  "pref": "千葉県",
+  "city": "館山市",
+  "foundUrls": [
+   "https://www.sudo-farm.com/",
+   "https://iko-yo.net/facilities/1604",
+   "https://tateyamacity.com/activities/doubutu/"
+  ],
+  "typeGuess": "牧場（酪農体験）",
+  "note": "乳牛・うさぎ・やぎ・ロバ・ポニーを飼育。営業時間10:00-16:00・不定休だが、バター作り等の「体験活動」は全て事前申込み制と案内されており、予約なしの一般見学・ふれあいが可能かは未確認。要判断。"
+ },
+ {
+  "name": "むつざわヤギ牧場",
+  "pref": "千葉県",
+  "city": "長生郡睦沢町",
+  "foundUrls": [
+   "https://mutsuzawa-yagi.com/",
+   "https://guide.6238.jp/yagi/"
+  ],
+  "typeGuess": "ふれあい牧場",
+  "note": "ヤギ約30頭を飼育。ふれあい体験は前日までの完全予約制・1時間1組限定・5月下旬〜11月下旬の季節営業のみで、随時開放はしていないと明記。常設性・一般来場性に疑問があり要判断。"
+ },
+ {
+  "name": "高秀牧場",
+  "pref": "千葉県",
+  "city": "いすみ市",
+  "foundUrls": [
+   "https://www.takahide-dairyfarm.com/",
+   "https://maruchiba.jp/gourmet/spot/detail_11935.html"
+  ],
+  "typeGuess": "牧場（乳製品直売・カフェ併設）",
+  "note": "乳牛約150頭を飼育する酪農牧場。牧場見学・乳搾り体験も提供するが、来場動機の中心はミルク工房のジェラート・チーズ販売とみられ、動物展示が主目的と言えるか要判断。"
+ }
+]

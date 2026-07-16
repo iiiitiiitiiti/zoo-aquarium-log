@@ -434,9 +434,9 @@
       "city": "最上郡真室川町",
       "foundUrls": ["https://www.nap-camp.com/mag/80275"],
       "typeGuess": "other",
-      "disposition": "review",
+      "disposition": "excluded",
       "matchExistingId": null,
-      "excludeReason": "",
+      "excludeReason": "公共育成牧場（肉牛預託）が主目的で、動物展示・ふれあいが主要な来場目的に非該当",
       "note": "公共育成牧場（肉牛約200頭）。一般見学は可能だが動物展示・ふれあいが主目的の施設か要確認。"
     },
     {

@@ -156,9 +156,9 @@
       "city": "小豆郡土庄町",
       "foundUrls": ["https://kodmap.com/spots/35", "https://shodoshima.or.jp/sightseeing/detail.php?id=181"],
       "typeGuess": "other",
-      "disposition": "review",
+      "disposition": "excluded",
       "matchExistingId": null,
-      "excludeReason": "",
+      "excludeReason": "来場主目的が参拝（小豆島大観音）の付随放牧エリアで、独立した動物展示施設に非該当（2026-07-16 ユーザー裁定: 参拝付随の動物舎は収録しない）",
       "note": "寺院（小豆島大観音）に付随するポニー・ヤギの放牧エリア。独立した動物展示施設と言えるか、来場主目的が観音像参拝かどうか要確認。"
     },
     {
@@ -266,9 +266,9 @@
       "city": "大洲市",
       "foundUrls": ["https://ehm-nagahama-h.esnet.ed.jp/page_20190218034526", "https://sakanato.jp/8917/"],
       "typeGuess": "aquarium",
-      "disposition": "review",
+      "disposition": "excluded",
       "matchExistingId": null,
-      "excludeReason": "",
+      "excludeReason": "一般公開が毎月第3土曜のみで「常設で一般来場できる」基準に非該当（2026-07-16 ユーザー裁定: 変則公開の学校運営館は収録しない）",
       "note": "高校の水族館部が運営する水族館。2024年4月移転。一般公開は毎月第3土曜日のみのため「常設で一般来場できる」基準に該当するか要確認。"
     },
     {
@@ -310,9 +310,9 @@
       "city": "松山市",
       "foundUrls": ["https://ja.wikipedia.org/wiki/愛媛県立道後動物園", "https://www.ehime-np.co.jp/article/news202212110033"],
       "typeGuess": "zoo",
-      "disposition": "review",
+      "disposition": "excluded",
       "matchExistingId": null,
-      "excludeReason": "",
+      "excludeReason": "1987年閉園（閉園から10年以上経過した施設は収録しない基準に該当）。とべ動物園（既存 ehime_tobe_zoo）へ移転・承継済み",
       "note": "1987年10月閉園、1988年4月に愛媛県立とべ動物園（既存マスタ ehime_tobe_zoo）として移転・承継。跡地は道後公園として整備済みで動物園機能なし。既存施設の前身として別レコードにすべきか、次工程で要判断。"
     },
     {
@@ -387,9 +387,9 @@
       "city": "土佐清水市",
       "foundUrls": ["https://www.city.tosashimizu.kochi.jp/kanko/g01_kaiteikan.html", "https://kaiteikan.jp/"],
       "typeGuess": "aquarium",
-      "disposition": "review",
+      "disposition": "excluded",
       "matchExistingId": null,
-      "excludeReason": "",
+      "excludeReason": "水槽展示ではなく天然海域を海中窓から観察する展望塔で、管理された生体の常設展示に非該当（2026-07-16 ユーザー裁定）",
       "note": "1972年開業の海中展望塔。天然海域を海中窓から観察・給餌する形式で、水槽展示ではないため「水族館」の定義に該当するか要確認。"
     },
     {

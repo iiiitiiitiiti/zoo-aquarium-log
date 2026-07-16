@@ -1,0 +1,55 @@
+[
+ {
+  "name": "上ノ原牧場カドーレ",
+  "pref": "広島県",
+  "city": "東広島市",
+  "foundUrls": [
+   "https://cadore.jp/"
+  ],
+  "typeGuess": "other",
+  "note": "牛飼い農家直営のジェラート・カフェ併設牧場。動物ふれあいは可能だが来園主目的がジェラート・カフェの可能性があり、含む基準の該当性は要判断"
+ },
+ {
+  "name": "トムミルクファーム",
+  "pref": "広島県",
+  "city": "東広島市",
+  "foundUrls": [
+   "https://tommilk.com/",
+   "https://hiroshima-life.com/tom-milk-farm/"
+  ],
+  "typeGuess": "other",
+  "note": "牧場カフェ。牛・ヤギ・ブタ・ロバ・羊とのふれあい広場ありだが来園主目的が乳製品・スイーツの可能性あり、要判断"
+ },
+ {
+  "name": "世羅高原ファームランド",
+  "pref": "広島県",
+  "city": "世羅町",
+  "foundUrls": [
+   "http://www.hiroshima-asobiba.net/park/sera-farmland.htm"
+  ],
+  "typeGuess": "other",
+  "note": "岡田牧場＋ジェラート工房Donnaの観光牧場。馬・ヤギ・ニワトリ・ウサギ等の小規模ふれあいあり、主目的の判断が必要"
+ },
+ {
+  "name": "久保アグリファーム",
+  "pref": "広島県",
+  "city": "広島市",
+  "foundUrls": [
+   "https://www.kuboagrifarm.co.jp/",
+   "https://www.maff.go.jp/chushi/syokuiku/kaiinjyouhou/4-3-8.html"
+  ],
+  "typeGuess": "other",
+  "note": "佐伯区湯来町の牧場。牛舎見学・ふれあい広場ありだがジェラート工房が主目的の可能性、要判断"
+ },
+ {
+  "name": "蜂ヶ峯総合公園（動物コーナー）",
+  "pref": "山口県",
+  "city": "和木町",
+  "foundUrls": [
+   "https://www.hachigamine-grand-park.com/park-infomation/",
+   "https://nh-times.jp/post-18758/"
+  ],
+  "typeGuess": "other",
+  "note": "バラ園・遊具・観覧車が中心の総合公園内にポニー・ミニウサギ・孔雀・インコの小規模動物コーナーを併設。動物展示が来園の主目的とは言い難く要判断"
+ }
+]

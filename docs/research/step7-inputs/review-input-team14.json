@@ -1,0 +1,55 @@
+[
+ {
+  "name": "新潟県愛鳥センター 紫雲寺さえずりの里",
+  "pref": "新潟県",
+  "city": "新発田市",
+  "foundUrls": [
+   "https://shiunjikinen-park.jp/guide/aicho",
+   "https://www.pref.niigata.lg.jp/site/aicho/"
+  ],
+  "typeGuess": "other",
+  "note": "野生鳥獣の保護・救護・調査研究が主目的の施設。屋外飼育舎で保護鳥を見学可能だが、動物園的な常設展示が主目的か要判断"
+ },
+ {
+  "name": "信濃川水系フィッシュハウス",
+  "pref": "新潟県",
+  "city": "魚沼市",
+  "foundUrls": [
+   "https://www.museum.or.jp/museum/2978",
+   "http://kako.com/blog/?p=54400"
+  ],
+  "typeGuess": "aquarium",
+  "note": "破間川ダム湖畔の淡水魚水族館。閉館・展示終了した施設をまとめたブログ記事に言及があり、現況（開館中か）が未確認"
+ },
+ {
+  "name": "富山県立山博物館 かもしか園",
+  "pref": "富山県",
+  "city": "立山町",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/日本の動物園一覧"
+  ],
+  "typeGuess": "other",
+  "note": "博物館付属のカモシカ小規模展示施設。独立施設として扱うべきか要判断"
+ },
+ {
+  "name": "丘の夢牧場 ふれあい広場",
+  "pref": "富山県",
+  "city": "富山市（婦中町）",
+  "foundUrls": [
+   "https://www.toyamashi-kankoukyoukai.jp/?tid=101021"
+  ],
+  "typeGuess": "other",
+  "note": "ニワトリ・ヤギ・ウサギ・ポニーの小規模ふれあいコーナー。牧場内の一部施設で規模・独立性が未確認"
+ },
+ {
+  "name": "ふれあい牧場フロンティア",
+  "pref": "富山県",
+  "city": "富山市",
+  "foundUrls": [
+   "https://frontier-horse.com/information/",
+   "https://iko-yo.net/facilities/100589"
+  ],
+  "typeGuess": "other",
+  "note": "ミラージュランド（遊園地）内の乗馬・ふれあい施設。動物展示より乗馬体験が主目的の可能性あり"
+ }
+]

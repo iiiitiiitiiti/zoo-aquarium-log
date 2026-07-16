@@ -1,0 +1,54 @@
+[
+ {
+  "name": "甲子園浜自然環境センター ミニミニ水族館",
+  "pref": "兵庫県",
+  "city": "西宮市",
+  "foundUrls": [
+   "https://aquarium.search-maps.com/areas/%E5%85%B5%E5%BA%AB%E7%9C%8C/"
+  ],
+  "typeGuess": "小規模水族館（環境学習施設付帯）",
+  "note": "自然環境センター内の小規模展示。主目的が動物展示か環境学習か要確認。"
+ },
+ {
+  "name": "マリンピア神戸 さかなの学校（神戸市立水産体験学習館）",
+  "pref": "兵庫県",
+  "city": "神戸市垂水区",
+  "foundUrls": [
+   "https://sakananogakko.com/",
+   "https://www.city.kobe.lg.jp/a67688/kenko/handicap/syakaikatdudou/barrierfree/shurui/bunka/03-10.html"
+  ],
+  "typeGuess": "小規模水族館（水産体験学習施設）",
+  "note": "入館無料の小さな水族館。漁業体験学習が主目的で動物展示は付帯的な可能性あり。要確認。"
+ },
+ {
+  "name": "赤穂市立海洋科学館・塩の国",
+  "pref": "兵庫県",
+  "city": "赤穂市",
+  "foundUrls": [
+   "http://www.ako-kaiyo.jp/",
+   "https://www.city.ako.lg.jp/edu/shougai/shisetsu/bunka/shionokuni.html"
+  ],
+  "typeGuess": "科学館（小規模水槽展示あり）",
+  "note": "主テーマは塩業・瀬戸内海学習で、瀬戸内の生物を見る水槽は一展示ゾーンのみ。動物展示が主目的とは言い難く要精査。"
+ },
+ {
+  "name": "いなみ野水辺の里公園 魚のおうち",
+  "pref": "兵庫県",
+  "city": "加古郡稲美町",
+  "foundUrls": [
+   "https://aquarium.search-maps.com/areas/%E5%85%B5%E5%BA%AB%E7%9C%8C/"
+  ],
+  "typeGuess": "小規模水族館（公園付帯施設）",
+  "note": "公園付帯の小規模淡水魚展示。詳細未確認。"
+ },
+ {
+  "name": "西宮市 環境学習サポートセンター ミニミニ水族館",
+  "pref": "兵庫県",
+  "city": "西宮市",
+  "foundUrls": [
+   "https://aquarium.search-maps.com/areas/%E5%85%B5%E5%BA%AB%E7%9C%8C/"
+  ],
+  "typeGuess": "小規模水族館（環境学習施設付帯）",
+  "note": "環境学習施設の付帯展示。要精査。"
+ }
+]

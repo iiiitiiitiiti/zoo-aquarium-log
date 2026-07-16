@@ -111,9 +111,9 @@
    "city": "前橋市",
    "foundUrls": ["https://www.maebashi-cvb.com/spot/1106"],
    "typeGuess": "ふれあい牧場・動物ふれあい施設",
-   "disposition": "review",
+   "disposition": "excluded",
    "matchExistingId": null,
-   "excludeReason": null,
+   "excludeReason": "犬（ペット種）専門のテーマパークで本アプリの主旨（動物園・水族館めぐり）と異なる業態（2026-07-16 ユーザー裁定: 犬猫系テーマパークは収録しない）",
    "note": "犬（約70種300頭）専門のふれあいテーマパーク。展示対象が家庭犬中心で通常の動物園基準と性格が異なるため含めるか要判断。"
   },
   {
@@ -188,9 +188,9 @@
    "city": "利根郡川場村",
    "foundUrls": ["https://denenplaza.co.jp/", "https://www.honda.co.jp/dog/travel/data/denenplazakawaba/"],
    "typeGuess": "ふれあい牧場・動物ふれあい施設",
-   "disposition": "review",
+   "disposition": "excluded",
    "matchExistingId": null,
-   "excludeReason": null,
+   "excludeReason": "常設の動物展示エリアの存在が確認できず（Phase A 調査で証拠不十分。ペットフレンドリー施設であって展示施設ではない）",
    "note": "検索では『ペットフレンドリーな道の駅』であることは確認できたが、常設の動物展示エリアの存在は確認できなかった。証拠不十分のためreview。"
   },
   {
@@ -265,9 +265,9 @@
    "city": "高崎市",
    "foundUrls": ["https://susanoo.ne.jp/", "https://news.yahoo.co.jp/expert/articles/2da20000b67e761e409fc8aaa1c0a72c7a71f86f"],
    "typeGuess": "鳥類園",
-   "disposition": "review",
+   "disposition": "excluded",
    "matchExistingId": null,
-   "excludeReason": null,
+   "excludeReason": "来場主目的が参拝の神社神苑内飼育で、独立した動物展示施設に非該当（2026-07-16 ユーザー裁定: 参拝付随の動物舎は収録しない）",
    "note": "神社の神苑内に白孔雀を2舎で飼育。来場主目的は参拝であり、独立した動物展示施設と呼べるか要判断。"
   },
   {

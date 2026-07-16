@@ -1,0 +1,53 @@
+[
+ {
+  "name": "むらかみ牧場",
+  "pref": "北海道",
+  "city": "恵庭市",
+  "foundUrls": [
+   "https://murakami-farm.com/"
+  ],
+  "typeGuess": "other",
+  "note": "乗馬・自然体験牧場。動物展示が主目的というより体験型牧場の性格が強い。"
+ },
+ {
+  "name": "アースドリーム角山農場",
+  "pref": "北海道",
+  "city": "江別市",
+  "foundUrls": [
+   "https://www.tondenfarm.co.jp/earth-dream-kakuyama/"
+  ],
+  "typeGuess": "other",
+  "note": "トンデンファーム運営。アルパカ・ウマ・ヒツジ・ヤギ・ミニブタ・ウサギ等の「ふれあい館」を持つ。レストラン併設の農場で主目的判定に要確認。"
+ },
+ {
+  "name": "サッポロさとらんど ふれあい牧場",
+  "pref": "北海道",
+  "city": "札幌市",
+  "foundUrls": [
+   "https://www.satoland.com/publics/index/17/"
+  ],
+  "typeGuess": "other",
+  "note": "市の農業体験交流施設内の小規模ふれあい牧場コーナー。施設全体としては農業体験が主目的。"
+ },
+ {
+  "name": "十和田市馬事公苑 駒っこランド",
+  "pref": "青森県",
+  "city": "十和田市",
+  "foundUrls": [
+   "https://komakkoland.jp/"
+  ],
+  "typeGuess": "other",
+  "note": "馬の展示・ふれあいが中心の馬事公苑。動物展示が主目的か、乗馬体験施設としての性格が強いか要判断。"
+ },
+ {
+  "name": "カワヨグリーン牧場",
+  "pref": "青森県",
+  "city": "上北郡おいらせ町",
+  "foundUrls": [
+   "https://kawayo.com/",
+   "https://www.town.oirase.aomori.jp/soshiki/2310/kawayo.html"
+  ],
+  "typeGuess": "other",
+  "note": "乳牛・馬・羊の放牧牧場。パークゴルフ等レジャー施設併設で、動物展示が主目的か要確認。"
+ }
+]
