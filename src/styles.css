@@ -328,7 +328,7 @@ body {
 }
 .results-heading {
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: space-between;
   margin: 0 4px 24px;
 }

@@ -152,6 +152,23 @@ describe("App",()=>{
   expect(screen.getByRole("heading",{name:"札幌市円山動物園"})).toBeInTheDocument();
   expect(screen.getByRole("link",{name:/公式サイト/})).toHaveAttribute("target","_blank");
  });
+ it("同期したブラウザ履歴で詳細画面を戻る・進むできる",async()=>{
+  window.history.replaceState(null,"",window.location.pathname);
+  window.history.pushState(null,"",`${window.location.pathname}#list`);
+  const user=userEvent.setup(); render(<App visitStore={visitStore} />);
+  await user.click(screen.getByRole("link",{name:/札幌市円山動物園/}));
+  expect(screen.getByRole("heading",{name:"札幌市円山動物園"})).toBeInTheDocument();
+  act(() => {
+    window.history.replaceState(window.history.state, "", `${window.location.pathname}#list`);
+    window.dispatchEvent(new PopStateEvent("popstate"));
+  });
+  await waitFor(()=>expect(screen.getByText(facilityCountText)).toBeInTheDocument());
+  act(() => {
+    window.history.replaceState(window.history.state, "", `${window.location.pathname}#facility/hokkaido_maruyama_zoo`);
+    window.dispatchEvent(new PopStateEvent("popstate"));
+  });
+  await waitFor(()=>expect(screen.getByRole("heading",{name:"札幌市円山動物園"})).toBeInTheDocument());
+ });
  it("opens a facility visit log and returns to the list",async()=>{
   const user=userEvent.setup(); render(<App visitStore={visitStore} />);
   await user.click(screen.getByRole("link",{name:/札幌市円山動物園/}));
@@ -429,9 +446,10 @@ describe("App",()=>{
   });
   it("does not animate cards after returning from a detail restored from the URL hash",async()=>{
    const user=userEvent.setup();
-   window.location.hash="#facility/hokkaido_maruyama_zoo";
+   window.history.replaceState(null,"",`${window.location.pathname}#facility/hokkaido_maruyama_zoo`);
    render(<App visitStore={visitStore} />);
    await user.click(screen.getByRole("button",{name:/施設一覧/}));
+   await waitFor(() => expect(document.querySelector<HTMLElement>(".facility-list")).toBeInTheDocument());
    expect(document.querySelector<HTMLElement>(".facility-list")).not.toHaveClass("facility-list--animated");
   });
   it("restores a custom facility detail once custom facilities are loaded",async()=>{

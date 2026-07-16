@@ -49,6 +49,7 @@ const typeLabels: Record<FacilityType, string> = {
   other: "その他",
 };
 type MapDisplayMode = "all" | "facility";
+const APP_MAP_FOCUS_KEY = "__zooAquariumLogMapFocus";
 
 export default function App({
   visitStore,
@@ -111,6 +112,7 @@ export default function App({
   const [customFacilities, setCustomFacilities] = useState<Facility[]>();
   const [customFacilitiesError, setCustomFacilitiesError] = useState("");
   const listScrollYRef = useRef(0);
+  const replaceNextRouteRef = useRef(false);
   const [animateListCards, setAnimateListCards] = useState(initialRoute.view === "list");
 
   useEffect(() => {
@@ -257,9 +259,39 @@ export default function App({
     || customFacilitiesError,
   );
 
+  // ブラウザの戻る・進むで変わったURLハッシュをReactの表示状態へ反映する。
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const syncRouteFromHistory = () => {
+      replaceNextRouteRef.current = false;
+      const route = parseRouteHash(window.location.hash);
+      setVisitEditing(false);
+      const mapFocusFromHistory = route.view === "map"
+        && window.history.state
+        && typeof window.history.state === "object"
+        && typeof (window.history.state as Record<string, unknown>)[APP_MAP_FOCUS_KEY] === "string"
+        ? (window.history.state as Record<string, unknown>)[APP_MAP_FOCUS_KEY] as string
+        : undefined;
+      setMapOpen(route.view === "map");
+      setStatsOpen(route.view === "stats");
+      setMapDisplayMode(route.view === "map" && route.focusFacilityId ? "facility" : "all");
+      setMapFocusFacilityId(route.view === "map" ? route.focusFacilityId ?? mapFocusFromHistory : undefined);
+      setFacilityEditorOpen(route.view === "addFacility");
+      setEditingFacility(undefined);
+      setSelectedFacility(undefined);
+      setDetailOrigin("list");
+      if (route.view === "facility" || route.view === "editFacility") {
+        setPendingRoute(route);
+      } else {
+        setPendingRoute(undefined);
+      }
+    };
+    window.addEventListener("popstate", syncRouteFromHistory);
+    return () => window.removeEventListener("popstate", syncRouteFromHistory);
+  }, []);
+
   // 表示中の画面を URL ハッシュへ反映する（レンダー分岐と同じ優先順で判定）。
-  // replaceState を使い履歴エントリは増やさない。統計画面内アンカー
-  // （#stats-type 等）は同一ルートなので書き換えない
+  // 統計画面内アンカー（#stats-type 等）は同一ルートなので書き換えない。
   const currentRoute: Route = mapOpen
     ? { view: "map", focusFacilityId: mapDisplayMode === "facility" ? mapFocusFacilityId : undefined }
     : statsOpen
@@ -275,7 +307,15 @@ export default function App({
   useEffect(() => {
     if (typeof window === "undefined") return;
     if (routesEqual(parseRouteHash(window.location.hash), parseRouteHash(desiredHash))) return;
-    window.history.replaceState(window.history.state, "", `${window.location.pathname}${window.location.search}${desiredHash}`);
+    const url = `${window.location.pathname}${window.location.search}${desiredHash}`;
+
+
+    if (replaceNextRouteRef.current) {
+      replaceNextRouteRef.current = false;
+      window.history.replaceState(window.history.state, "", url);
+      return;
+    }
+    window.history.pushState({ ...(window.history.state ?? {}) }, "", url);
   }, [desiredHash]);
 
   const handleVisitEditingChange = useCallback((editing: boolean) => {
@@ -325,6 +365,13 @@ export default function App({
   };
 
   const openFacility = (facility: Facility, origin: "list" | "map" = "list") => {
+    if (origin === "map" && typeof window !== "undefined") {
+      window.history.replaceState(
+        { ...(window.history.state ?? {}), [APP_MAP_FOCUS_KEY]: facility.id },
+        "",
+        `${window.location.pathname}${window.location.search}${window.location.hash}`,
+      );
+    }
     setVisitEditing(false);
     setFacilityEditorOpen(false);
     setMapOpen(false);
@@ -351,6 +398,12 @@ export default function App({
     }
   };
 
+  const goBack = (fallback: () => void) => {
+
+    replaceNextRouteRef.current = true;
+    fallback();
+  };
+
   if (mapOpen) {
     return (
       <MapPanel
@@ -358,18 +411,18 @@ export default function App({
         visitedIds={visitedIds}
         marks={marks ?? {}}
         focusedFacilityId={mapFocusFacilityId}
-        onBack={() => {
+        onBack={() => goBack(() => {
           setMapOpen(false);
           setMapDisplayMode("all");
           setMapFocusFacilityId(undefined);
-        }}
+        })}
         onSelectFacility={(facility) => openFacility(facility, "map")}
       />
     );
   }
 
   if (statsOpen) {
-    return <StatsPanel stats={stats} onBack={() => setStatsOpen(false)} />;
+    return <StatsPanel stats={stats} onBack={() => goBack(() => setStatsOpen(false))} />;
   }
 
   if (facilityEditorOpen && customFacilityStore) {
@@ -377,10 +430,10 @@ export default function App({
       <AddFacilityPanel
         store={customFacilityStore}
         initialFacility={editingFacility}
-        onBack={() => {
+        onBack={() => goBack(() => {
           setFacilityEditorOpen(false);
           setEditingFacility(undefined);
-        }}
+        })}
         onCreated={(facility) => {
           setFacilityEditorOpen(false);
           setEditingFacility(undefined);
@@ -424,11 +477,11 @@ export default function App({
             setFacilityEditorOpen(true);
           }
           : undefined}
-        onBack={() => {
+        onBack={() => goBack(() => {
           setVisitEditing(false);
           setSelectedFacility(undefined);
           if (detailOrigin === "map") setMapOpen(true);
-        }}
+        })}
       />
     );
   }
