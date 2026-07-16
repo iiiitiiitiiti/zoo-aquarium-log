@@ -1,6 +1,7 @@
 import { Timestamp } from "firebase/firestore";
 import { describe, expect, it } from "vitest";
 import { buildExport, buildExportFilename } from "./buildExport";
+import type { FacilityNote } from "./facilityNotes";
 import type { Facility } from "./types";
 import type { Visit } from "./visits";
 
@@ -30,27 +31,34 @@ function visit(overrides: Partial<Visit> = {}): Visit {
   };
 }
 
-const note = {
+const note: FacilityNote = {
+  id: "note-1",
+  facilityId: "custom_zoo",
   text: "駐車場は東園側。",
+  createdAt: Timestamp.fromDate(new Date("2026-07-02T01:02:03.000Z")),
   updatedAt: Timestamp.fromDate(new Date("2026-07-03T01:02:03.000Z")),
 };
+
+function notesFor(facilityId: string, id: string, text: string): FacilityNote {
+  return { ...note, facilityId, id, text };
+}
 
 describe("buildExport", () => {
   const now = new Date("2026-07-14T12:34:56.000Z");
 
-  it("converts visits, marks, custom facilities, facility notes, and timestamps into the export schema", () => {
+  it("converts visits, marks, custom facilities, multiple facility notes, and timestamps into the export schema", () => {
     const result = buildExport(
       [visit({ rating: 5, memo: "楽しかった", visitor: "家族", photoPath: "visits/visit-1/photo.webp" })],
       { deleted_custom_facility: { wishlist: true, favorite: false } },
       [customFacility],
-      { custom_zoo: note },
+      { custom_zoo: [note, { ...note, id: "note-2", text: "イルカショーは午後。", createdAt: null, updatedAt: null }] },
       now,
     );
 
     expect(result).toEqual({
-      schemaVersion: 2,
+      schemaVersion: 3,
       exportedAt: "2026-07-14T12:34:56.000Z",
-      counts: { visits: 1, marks: 1, customFacilities: 1, facilityNotes: 1 },
+      counts: { visits: 1, marks: 1, customFacilities: 1, facilityNotes: 2 },
       visits: [{
         id: "visit-1",
         facilityId: "deleted_custom_facility",
@@ -65,9 +73,17 @@ describe("buildExport", () => {
       marks: [{ facilityId: "deleted_custom_facility", wishlist: true, favorite: false }],
       customFacilities: [customFacility],
       facilityNotes: [{
+        id: "note-1",
         facilityId: "custom_zoo",
         text: "駐車場は東園側。",
+        createdAt: "2026-07-02T01:02:03.000Z",
         updatedAt: "2026-07-03T01:02:03.000Z",
+      }, {
+        id: "note-2",
+        facilityId: "custom_zoo",
+        text: "イルカショーは午後。",
+        createdAt: null,
+        updatedAt: null,
       }],
     });
   });
@@ -91,8 +107,8 @@ describe("buildExport", () => {
     const visits = [first, second];
     const customFacilities = [{ ...customFacility, id: "custom_b" }, { ...customFacility, id: "custom_a" }];
     const facilityNotes = {
-      note_b: { ...note, text: "B" },
-      note_a: { ...note, text: "A" },
+      note_b: [notesFor("facility-b", "note-b", "B")],
+      note_a: [notesFor("facility-a", "note-a", "A")],
     };
     const originalVisits = [...visits];
     const originalCustomFacilities = [...customFacilities];
@@ -111,7 +127,7 @@ describe("buildExport", () => {
     expect(result.visits.map((item) => item.id)).toEqual(["visit-a", "visit-b"]);
     expect(result.marks.map((item) => item.facilityId)).toEqual(["orphan_a", "orphan_b"]);
     expect(result.customFacilities.map((item) => item.id)).toEqual(["custom_a", "custom_b"]);
-    expect(result.facilityNotes.map((item) => item.facilityId)).toEqual(["note_a", "note_b"]);
+    expect(result.facilityNotes.map((item) => item.facilityId)).toEqual(["facility-a", "facility-b"]);
     expect(visits).toEqual(originalVisits);
     expect(customFacilities).toEqual(originalCustomFacilities);
   });
@@ -121,14 +137,14 @@ describe("buildExport", () => {
       [visit({ id: "visit-b", date: "2026-07-02" }), visit({ id: "visit-a", date: "2026-07-01" })],
       { mark_b: { wishlist: false, favorite: true }, mark_a: { wishlist: true, favorite: false } },
       [{ ...customFacility, id: "custom_b" }, { ...customFacility, id: "custom_a" }],
-      { note_b: { ...note, text: "B" }, note_a: { ...note, text: "A" } },
+      { note_b: [notesFor("facility-b", "note-b", "B")], note_a: [notesFor("facility-a", "note-a", "A")] },
       now,
     );
     const dataB = buildExport(
       [visit({ id: "visit-a", date: "2026-07-01" }), visit({ id: "visit-b", date: "2026-07-02" })],
       { mark_a: { wishlist: true, favorite: false }, mark_b: { wishlist: false, favorite: true } },
       [{ ...customFacility, id: "custom_a" }, { ...customFacility, id: "custom_b" }],
-      { note_a: { ...note, text: "A" }, note_b: { ...note, text: "B" } },
+      { note_a: [notesFor("facility-a", "note-a", "A")], note_b: [notesFor("facility-b", "note-b", "B")] },
       now,
     );
 
@@ -137,6 +153,7 @@ describe("buildExport", () => {
 
   it("supports empty exports and uses the local date in filenames", () => {
     expect(buildExport([], {}, [], {}, now)).toMatchObject({
+      schemaVersion: 3,
       counts: { visits: 0, marks: 0, customFacilities: 0, facilityNotes: 0 },
       visits: [],
       marks: [],

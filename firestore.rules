@@ -42,11 +42,16 @@ service cloud.firestore {
 
     function validFacilityNote(data) {
       return data.keys().hasAll(["text", "updatedAt"])
-        && data.keys().hasOnly(["text", "updatedAt"])
+        && data.keys().hasOnly(["facilityId", "text", "createdAt", "updatedAt"])
         && data.text is string
         && data.text.size() >= 1
         && data.text.size() <= 2000
-        && data.updatedAt == request.time;
+        && (!("facilityId" in data)
+          || (data.facilityId is string
+            && data.facilityId.size() >= 1
+            && data.facilityId.size() <= 128))
+        && (!("createdAt" in data) || data.createdAt is timestamp)
+        && data.updatedAt is timestamp;
     }
 
     function validSourceUrl(value) {
@@ -130,10 +135,20 @@ service cloud.firestore {
         && validMark(request.resource.data);
     }
 
-    match /households/{hid}/facilityNotes/{facilityId} {
+    match /households/{hid}/facilityNotes/{noteId} {
       allow read, delete: if isHousehold(hid);
-      allow create, update: if isHousehold(hid)
-        && validFacilityNote(request.resource.data);
+
+      allow create: if isHousehold(hid)
+        && validFacilityNote(request.resource.data)
+        && request.resource.data.keys().hasAll(["facilityId", "createdAt"])
+        && request.resource.data.createdAt == request.time
+        && request.resource.data.updatedAt == request.time;
+
+      allow update: if isHousehold(hid)
+        && validFacilityNote(request.resource.data)
+        && request.resource.data.updatedAt == request.time
+        && (!("createdAt" in resource.data)
+          || request.resource.data.createdAt == resource.data.createdAt);
     }
 
     match /households/{hid}/customFacilities/{facilityId} {
