@@ -964,8 +964,51 @@ footer {
 .visit-date {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 8px;
+}
+.visit-menu {
+  position: relative;
+  margin-left: auto;
+}
+.visit-menu-button {
+  padding: 2px 8px 8px;
+  border: 1px solid #ced8d2;
+  border-radius: 7px;
+  background: #fff;
+  color: #315046;
+  font:
+    700 14px/1 "LINE Seed JP",
+    sans-serif;
+}
+.visit-menu-list {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  z-index: 5;
+  display: grid;
+  min-width: 96px;
+  padding: 4px;
+  border: 1px solid #ced8d2;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 6px 16px #00000022;
+}
+.visit-menu-list button {
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: #315046;
+  font:
+    700 11px/1 "LINE Seed JP",
+    sans-serif;
+  text-align: left;
+}
+.visit-menu-list button:hover {
+  background: #f2f5f0;
+}
+.visit-menu-list button:last-child {
+  color: #9a3636;
 }
 .visit-date strong {
   font-size: 15px;

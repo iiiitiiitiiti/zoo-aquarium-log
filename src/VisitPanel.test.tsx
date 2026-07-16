@@ -264,7 +264,8 @@ describe("VisitPanel", () => {
     const store = new FakeVisitStore();
     render(<VisitPanel facility={facility} store={store} visits={[existingVisit]} onBack={() => undefined} />);
 
-    await user.click(await screen.findByRole("button", { name: "2026年7月1日の記録を編集" }));
+    await user.click(await screen.findByRole("button", { name: "2026年7月1日の記録の操作" }));
+    await user.click(await screen.findByRole("menuitem", { name: "2026年7月1日の記録を編集" }));
     const memo = screen.getByLabelText("メモ・感想");
     await user.clear(memo);
     await user.type(memo, "編集しました");
@@ -282,9 +283,11 @@ describe("VisitPanel", () => {
     vi.spyOn(window, "confirm").mockReturnValue(true);
     render(<VisitPanel facility={facility} store={store} visits={[existingVisit]} onBack={() => undefined} />);
 
-    await user.click(await screen.findByRole("button", { name: "2026年7月1日の記録を削除" }));
+    await user.click(await screen.findByRole("button", { name: "2026年7月1日の記録の操作" }));
+    await user.click(await screen.findByRole("menuitem", { name: "2026年7月1日の記録を削除" }));
 
     expect(store.removeCalls).toEqual(["visit-1"]);
+    expect(screen.queryByRole("menu")).not.toBeInTheDocument();
   });
 
   it("訪問写真を追加して保存し、記録一覧に表示できる", async () => {
@@ -402,7 +405,8 @@ describe("VisitPanel", () => {
     };
     render(<VisitPanel {...({ facility, store, visits: [{ ...existingVisit, photoPath }], onBack: () => undefined, photoStore } as any)} />);
 
-    await user.click(await screen.findByRole("button", { name: "2026年7月1日の記録を編集" }));
+    await user.click(await screen.findByRole("button", { name: "2026年7月1日の記録の操作" }));
+    await user.click(await screen.findByRole("menuitem", { name: "2026年7月1日の記録を編集" }));
     await user.click(screen.getByRole("button", { name: "写真を外す" }));
     await user.click(screen.getByRole("button", { name: "変更を保存" }));
 
