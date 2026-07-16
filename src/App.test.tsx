@@ -1,4 +1,4 @@
-import { act, render, screen, waitFor } from "@testing-library/react";
+import { act, fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { Timestamp } from "firebase/firestore";
 import userEvent from "@testing-library/user-event";
 import { afterEach, describe, expect, it, vi } from "vitest";
@@ -208,6 +208,27 @@ describe("App",()=>{
   expect(screen.getByText(target.name)).toBeInTheDocument();
   expect(screen.getByText("1施設が該当")).toBeInTheDocument();
  });
+ it("施設一覧から行きたい・お気に入りを切り替えられる",async()=>{
+  let emitMarks: ((marks: Record<string,{wishlist:boolean;favorite:boolean}>)=>void)|undefined;
+  let marks: Record<string,{wishlist:boolean;favorite:boolean}>={};
+  const markStore: MarkStore={
+   setFlag:vi.fn(async(facilityId,flag,value)=>{
+     marks={...marks,[facilityId]:{...(marks[facilityId]??{wishlist:false,favorite:false}),[flag]:value}};
+    emitMarks?.(marks);
+   }),
+   subscribe:(onMarks)=>{ emitMarks=onMarks; onMarks(marks); return ()=>undefined; },
+  };
+  render(<App visitStore={visitStore} markStore={markStore} />);
+  const wishlist=screen.getByRole("button",{name:"札幌市円山動物園を行きたいに設定"});
+  const favorite=screen.getByRole("button",{name:"札幌市円山動物園をお気に入りに設定"});
+  fireEvent.click(wishlist);
+  expect(markStore.setFlag).toHaveBeenNthCalledWith(1,"hokkaido_maruyama_zoo","wishlist",true);
+  expect(screen.getByRole("link",{name:/札幌市円山動物園/})).toBeInTheDocument();
+  await waitFor(()=>expect(wishlist).toHaveAttribute("aria-pressed","true"));
+  fireEvent.click(favorite);
+  expect(markStore.setFlag).toHaveBeenNthCalledWith(2,"hokkaido_maruyama_zoo","favorite",true);
+  await waitFor(()=>expect(favorite).toHaveAttribute("aria-pressed","true"));
+ }, 20000);
  it("disables visit filters until visit and mark snapshots arrive",async()=>{
   const user=userEvent.setup();
   let emitVisits: ((visits: never[])=>void)|undefined;

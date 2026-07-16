@@ -9,7 +9,7 @@ import { swUpdate } from "./swUpdate";
 import { buildStats } from "./stats";
 import type { CustomFacilityStore } from "./customFacilities";
 import type { FacilityNoteMap, FacilityNoteStore } from "./facilityNotes";
-import type { MarkMap, MarkStore } from "./marks";
+import type { MarkFlag, MarkMap, MarkStore } from "./marks";
 import { buildRouteHash, parseRouteHash, routesEqual, type Route } from "./route";
 import type { Facility, FacilityType } from "./types";
 import type { VisitPhotoStore } from "./visitPhotos";
@@ -107,6 +107,8 @@ export default function App({
   const [visitError, setVisitError] = useState("");
   const [marks, setMarks] = useState<MarkMap>();
   const [marksError, setMarksError] = useState("");
+  const [markActionError, setMarkActionError] = useState("");
+  const [savingMarkKeys, setSavingMarkKeys] = useState<Set<string>>(() => new Set());
   const [notes, setNotes] = useState<FacilityNoteMap>();
   const [notesError, setNotesError] = useState("");
   const [customFacilities, setCustomFacilities] = useState<Facility[]>();
@@ -348,6 +350,26 @@ export default function App({
     setPrefecture("all");
     setStatus("all");
     setVisitStatus("all");
+  };
+
+  const toggleFacilityMark = async (facilityId: string, flag: MarkFlag) => {
+    if (!markStore) return;
+    const key = `${facilityId}:${flag}`;
+    if (savingMarkKeys.has(key)) return;
+    const currentValue = marks?.[facilityId]?.[flag] === true;
+    setMarkActionError("");
+    setSavingMarkKeys((current) => new Set(current).add(key));
+    try {
+      await markStore.setFlag(facilityId, flag, !currentValue);
+    } catch {
+      setMarkActionError("マーク設定を保存できませんでした。もう一度お試しください");
+    } finally {
+      setSavingMarkKeys((current) => {
+        const next = new Set(current);
+        next.delete(key);
+        return next;
+      });
+    }
   };
 
   const scrollToTop = () => {
@@ -630,6 +652,7 @@ export default function App({
             </div>
           </div>
         </div>
+        {markActionError && <p className="mark-action-error" role="alert">{markActionError}</p>}
         {shown.length === 0 ? (
           <div className="empty">
             <span>◌</span>
@@ -644,26 +667,46 @@ export default function App({
                 <ul className={`facility-list${animateListCards ? " facility-list--animated" : ""}`}>
                   {group.map(({ facility, index }) => (
                     <li key={facility.id}>
-                      <a
-                        className="facility-card"
-                        href={`#facility/${facility.id}`}
-                        onClick={(event) => {
-                          event.preventDefault();
-                          openFacility(facility);
-                        }}
-                      >
-                        <div className="card-index">{String(index + 1).padStart(2, "0")}</div>
-                        <div className="card-body">
-                          <div className="badges">
-                            <span className={facility.type}>{typeLabels[facility.type]}</span>
-                            {facility.id.startsWith("custom_") && <span className="custom">手動追加</span>}
-                            <span className={facility.status}>{statusLabels[facility.status]}</span>
+                      <div className="facility-card">
+                        <a
+                          className="facility-card-link"
+                          href={`#facility/${facility.id}`}
+                          onClick={(event) => {
+                            event.preventDefault();
+                            openFacility(facility);
+                          }}
+                        >
+                          <div className="card-index">{String(index + 1).padStart(2, "0")}</div>
+                          <div className="card-body">
+                            <div className="badges">
+                              <span className={facility.type}>{typeLabels[facility.type]}</span>
+                              {facility.id.startsWith("custom_") && <span className="custom">手動追加</span>}
+                              <span className={facility.status}>{statusLabels[facility.status]}</span>
+                            </div>
+                            <h3>{facility.name}</h3>
+                            <p>{facility.pref} {facility.city}</p>
                           </div>
-                          <h3>{facility.name}</h3>
-                          <p>{facility.pref} {facility.city}</p>
-                        </div>
-                        <span className="card-arrow" aria-hidden="true">→</span>
-                      </a>
+                          <span className="card-arrow" aria-hidden="true">→</span>
+                        </a>
+                        {markStore && (
+                          <div className="facility-card-actions" role="group" aria-label={`${facility.name}のマーク`}>
+                            <button
+                              type="button"
+                              aria-label={`${facility.name}${marks?.[facility.id]?.wishlist === true ? "の行きたいを解除" : "を行きたいに設定"}`}
+                              aria-pressed={marks?.[facility.id]?.wishlist === true}
+                              disabled={marks === undefined || savingMarkKeys.has(`${facility.id}:wishlist`)}
+                              onClick={() => { void toggleFacilityMark(facility.id, "wishlist"); }}
+                            >♡ 行きたい</button>
+                            <button
+                              type="button"
+                              aria-label={`${facility.name}${marks?.[facility.id]?.favorite === true ? "のお気に入りを解除" : "をお気に入りに設定"}`}
+                              aria-pressed={marks?.[facility.id]?.favorite === true}
+                              disabled={marks === undefined || savingMarkKeys.has(`${facility.id}:favorite`)}
+                              onClick={() => { void toggleFacilityMark(facility.id, "favorite"); }}
+                            >★ お気に入り</button>
+                          </div>
+                        )}
+                      </div>
                     </li>
                   ))}
                 </ul>
