@@ -35,6 +35,24 @@ class FakeAuthClient implements AuthClient {
 }
 
 describe("AuthGate", () => {
+  it("認証状態が確定するとスプラッシュ準備完了イベントを送出する", () => {
+    const events: Event[] = [];
+    const onSplashReady = (event: Event) => events.push(event);
+    window.addEventListener("app:splash-ready", onSplashReady);
+
+    try {
+      const client = new FakeAuthClient();
+      render(<AuthGate client={client}>{() => <p>施設一覧</p>}</AuthGate>);
+
+      act(() => client.emit(false));
+      expect(events).toHaveLength(1);
+
+      act(() => client.emit(true));
+      expect(events).toHaveLength(2);
+    } finally {
+      window.removeEventListener("app:splash-ready", onSplashReady);
+    }
+  });
   it("認証確認中は読込表示を出す", () => {
     render(<AuthGate client={new FakeAuthClient()}>{() => <p>施設一覧</p>}</AuthGate>);
 

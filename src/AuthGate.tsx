@@ -29,6 +29,12 @@ export default function AuthGate({
 
   useEffect(() => client.onAuthStateChanged(setSignedIn), [client]);
 
+  useEffect(() => {
+    if (signedIn !== undefined) {
+      window.dispatchEvent(new CustomEvent("app:splash-ready"));
+    }
+  }, [signedIn]);
+
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (!password.trim()) {
