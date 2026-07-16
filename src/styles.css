@@ -971,7 +971,7 @@ footer {
   margin-left: auto;
 }
 .visit-menu-button {
-  padding: 2px 8px 8px;
+  padding: 2px 8px 2px 8px;
   border: 1px solid #ced8d2;
   border-radius: 7px;
   background: #fff;
