@@ -4,7 +4,7 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import type { Facility } from "./types";
 import type { Visit, VisitDraft, VisitStore } from "./visits";
 import type { CustomFacilityStore } from "./customFacilities";
-import type { FacilityNoteStore } from "./facilityNotes";
+import type { FacilityNote, FacilityNoteStore } from "./facilityNotes";
 import VisitPanel from "./VisitPanel";
 
 afterEach(() => vi.unstubAllGlobals());
@@ -62,15 +62,22 @@ const existingVisit = {
 const customFacility = { ...facility, id: "custom_facility" };
 
 class FakeFacilityNoteStore implements FacilityNoteStore {
-  saveCalls: { facilityId: string; text: string }[] = [];
-  async save(facilityId: string, text: string) {
-    this.saveCalls.push({ facilityId, text });
+  createCalls: { facilityId: string; text: string }[] = [];
+  updateCalls: { noteId: string; facilityId: string; text: string }[] = [];
+  removeCalls: string[] = [];
+  async create(facilityId: string, text: string) {
+    this.createCalls.push({ facilityId, text });
+  }
+  async update(noteId: string, facilityId: string, text: string) {
+    this.updateCalls.push({ noteId, facilityId, text });
+  }
+  async remove(noteId: string) {
+    this.removeCalls.push(noteId);
   }
   subscribe() {
     return () => undefined;
   }
 }
-
 describe("VisitPanel", () => {
   it("施設詳細から地図表示を依頼できる", async () => {
     const user = userEvent.setup();
@@ -105,31 +112,71 @@ describe("VisitPanel", () => {
     expect(container.querySelector(".facility-note")).toBeNull();
   });
 
-  it("施設メモを表示・編集・保存でき、編集中状態を集約して通知する", async () => {
+  it("施設メモを複数表示し、追加・編集・削除でき、編集中状態を集約して通知する", async () => {
     const user = userEvent.setup();
     const store = new FakeFacilityNoteStore();
     const onEditingChange = vi.fn();
+    const notes: FacilityNote[] = [
+      { id: "note-1", facilityId: facility.id, text: "駐車場は東園側。", createdAt: null, updatedAt: null },
+      { id: "note-2", facilityId: facility.id, text: "午後にイルカショー。", createdAt: null, updatedAt: null },
+    ];
     render(<VisitPanel
       facility={facility}
       store={new FakeVisitStore()}
       visits={[]}
-      note={{ text: "駐車場は東園側。", updatedAt: null }}
+      note={notes}
       noteStore={store}
       onEditingChange={onEditingChange}
       onBack={() => undefined}
     />);
 
     expect(screen.getByText("駐車場は東園側。")).toBeInTheDocument();
-    await user.click(screen.getByRole("button", { name: "編集" }));
+    expect(screen.getByText("午後にイルカショー。")).toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: "施設メモ note-1 を編集" }));
     expect(onEditingChange).toHaveBeenLastCalledWith(true);
     await user.clear(screen.getByRole("textbox", { name: "施設メモ" }));
     await user.type(screen.getByRole("textbox", { name: "施設メモ" }), "次回はイルカショーへ\n持ち物：帽子");
     await user.click(screen.getByRole("button", { name: "保存" }));
 
-    expect(store.saveCalls).toEqual([{ facilityId: facility.id, text: "次回はイルカショーへ\n持ち物：帽子" }]);
+    expect(store.updateCalls).toEqual([{
+      noteId: "note-1",
+      facilityId: facility.id,
+      text: "次回はイルカショーへ\n持ち物：帽子",
+    }]);
     expect(onEditingChange).toHaveBeenLastCalledWith(false);
+
+    vi.spyOn(window, "confirm").mockReturnValue(true);
+    await user.click(screen.getByRole("button", { name: "施設メモ note-2 を削除" }));
+    expect(store.removeCalls).toEqual(["note-2"]);
   });
 
+  it("施設メモがないときに追加できる", async () => {
+    const user = userEvent.setup();
+    const store = new FakeFacilityNoteStore();
+    render(<VisitPanel facility={facility} store={new FakeVisitStore()} visits={[]} note={[]} noteStore={store} onBack={() => undefined} />);
+
+    await user.click(screen.getByRole("button", { name: "メモを追加" }));
+    await user.type(screen.getByRole("textbox", { name: "施設メモ" }), "**次回**に行く");
+    await user.click(screen.getByRole("button", { name: "保存" }));
+
+    expect(store.createCalls).toEqual([{ facilityId: facility.id, text: "**次回**に行く" }]);
+  });
+
+  it("訪問メモと施設メモを安全なMarkdownとして表示する", () => {
+    const { container } = render(<VisitPanel
+      facility={facility}
+      store={new FakeVisitStore()}
+      visits={[{ ...existingVisit, memo: "**パンダ**\n\n- かわいい\n\n<script>alert(1)</script>" }]}
+      note={[{ id: "note-1", facilityId: facility.id, text: "[公式サイト](https://example.com)", createdAt: null, updatedAt: null }]}
+      noteStore={new FakeFacilityNoteStore()}
+      onBack={() => undefined}
+    />);
+
+    expect(container.querySelector(".markdown-content strong")).toHaveTextContent("パンダ");
+    expect(container.querySelector(".markdown-content ul")).toBeInTheDocument();
+    expect(container.querySelector(".markdown-content a")).toHaveAttribute("href", "https://example.com");
+    expect(container.querySelector("script")).toBeNull();
+  });
   it("施設メモの読み込み中とエラー時は編集できない", () => {
     const store = new FakeFacilityNoteStore();
     const { rerender } = render(<VisitPanel

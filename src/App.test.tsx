@@ -267,8 +267,10 @@ describe("App",()=>{
    subscribe:(onFacilities)=>{ onFacilities([exportFacility]); return ()=>undefined; },
   };
   const facilityNoteStore: FacilityNoteStore={
-   save:async()=>undefined,
-   subscribe:(onNotes)=>{ onNotes({[exportFacility.id]:{text:"次回はイルカショー",updatedAt:Timestamp.fromDate(new Date("2026-07-14T01:02:03.000Z"))}}); return ()=>undefined; },
+   create:async()=>undefined,
+   update:async()=>undefined,
+   remove:async()=>undefined,
+   subscribe:(onNotes)=>{ onNotes({[exportFacility.id]:[{id:"note-export",facilityId:exportFacility.id,text:"次回はイルカショー",createdAt:null,updatedAt:Timestamp.fromDate(new Date("2026-07-14T01:02:03.000Z"))}]}); return ()=>undefined; },
   };
   render(<App visitStore={exportVisitStore} markStore={markStore} customFacilityStore={customFacilityStore} facilityNoteStore={facilityNoteStore} />);
 
@@ -283,7 +285,7 @@ describe("App",()=>{
   expect(data.visits[0]).toMatchObject({facilityId:"deleted_custom_facility",memo:"日本語のメモ 🐘"});
   expect(data.marks).toEqual([{facilityId:"deleted_custom_facility",wishlist:true,favorite:false}]);
   expect(data.customFacilities[0]).toMatchObject({name:"家族の水族館"});
-  expect(data.facilityNotes).toEqual([{facilityId:"custom_export",text:"次回はイルカショー",updatedAt:"2026-07-14T01:02:03.000Z"}]);
+  expect(data.facilityNotes).toEqual([{id:"note-export",facilityId:"custom_export",text:"次回はイルカショー",createdAt:null,updatedAt:"2026-07-14T01:02:03.000Z"}]);
   await waitFor(()=>expect(revokeObjectURL).toHaveBeenCalledWith("blob:export"));
  });
  it("keeps export disabled until visits, marks, and custom facilities are ready",async()=>{

@@ -15,6 +15,7 @@ import {
   getDocs,
   serverTimestamp,
   setDoc,
+  updateDoc,
 } from "firebase/firestore";
 
 const PROJECT_ID = "demo-zoo-aquarium-log";
@@ -190,16 +191,23 @@ describe("Firestore household rules", () => {
   test("施設メモはserverTimestampと2000文字境界を検証し、削除を許可する", async () => {
     const db = testEnv.authenticatedContext(HOUSEHOLD_UID).firestore();
     const notes = collection(db, "households", HOUSEHOLD_UID, "facilityNotes");
-    const noteRef = doc(notes, "tokyo-ueno-zoo");
+    const noteRef = doc(notes, "new-note");
 
-    await assertSucceeds(setDoc(noteRef, { text: "家族メモ", updatedAt: serverTimestamp() }));
+    const valid = (text: string) => ({
+      facilityId: "tokyo-ueno-zoo",
+      text,
+      createdAt: serverTimestamp(),
+      updatedAt: serverTimestamp(),
+    });
+
+    await assertSucceeds(setDoc(noteRef, valid("家族メモ")));
     await assertSucceeds(deleteDoc(noteRef));
-    await assertFails(setDoc(doc(notes, "empty"), { text: "", updatedAt: serverTimestamp() }));
-    await assertSucceeds(setDoc(doc(notes, "space"), { text: " ", updatedAt: serverTimestamp() }));
-    await assertSucceeds(setDoc(doc(notes, "ascii-2000"), { text: "a".repeat(2000), updatedAt: serverTimestamp() }));
-    await assertFails(setDoc(doc(notes, "ascii-2001"), { text: "a".repeat(2001), updatedAt: serverTimestamp() }));
-    await assertSucceeds(setDoc(doc(notes, "emoji-1000"), { text: "🐼".repeat(1000), updatedAt: serverTimestamp() }));
-    await assertFails(setDoc(doc(notes, "emoji-1001"), { text: "🐼".repeat(1001), updatedAt: serverTimestamp() }));
+    await assertFails(setDoc(doc(notes, "empty"), valid("")));
+    await assertSucceeds(setDoc(doc(notes, "space"), valid(" ")));
+    await assertSucceeds(setDoc(doc(notes, "ascii-2000"), valid("a".repeat(2000))));
+    await assertFails(setDoc(doc(notes, "ascii-2001"), valid("a".repeat(2001))));
+    await assertSucceeds(setDoc(doc(notes, "emoji-1000"), valid("🐼".repeat(1000))));
+    await assertFails(setDoc(doc(notes, "emoji-1001"), valid("🐼".repeat(1001))));
   });
 
   test("施設メモの不正フィールド・時刻改ざん・別UIDを拒否する", async () => {
@@ -220,6 +228,30 @@ describe("Firestore household rules", () => {
     ));
   });
 
+  test("複数施設メモの作成・更新・削除を許可する", async () => {
+    const db = testEnv.authenticatedContext(HOUSEHOLD_UID).firestore();
+    const notes = collection(db, "households", HOUSEHOLD_UID, "facilityNotes");
+    const first = doc(notes);
+    const second = doc(notes);
+
+    await assertSucceeds(setDoc(first, {
+      facilityId: "tokyo-ueno-zoo",
+      text: "駐車場メモ",
+      createdAt: serverTimestamp(),
+      updatedAt: serverTimestamp(),
+    }));
+    await assertSucceeds(setDoc(second, {
+      facilityId: "tokyo-ueno-zoo",
+      text: "次回の予定",
+      createdAt: serverTimestamp(),
+      updatedAt: serverTimestamp(),
+    }));
+    await assertSucceeds(updateDoc(first, {
+      text: "駐車場メモを更新",
+      updatedAt: serverTimestamp(),
+    }));
+    await assertSucceeds(deleteDoc(second));
+  });
   test("未定義のサブコレクションは拒否する", async () => {
     const db = testEnv.authenticatedContext(HOUSEHOLD_UID).firestore();
 

@@ -3,7 +3,7 @@ import type { FacilityNoteMap } from "./facilityNotes";
 import type { MarkMap } from "./marks";
 import type { Visit } from "./visits";
 
-export const EXPORT_SCHEMA_VERSION = 2 as const;
+export const EXPORT_SCHEMA_VERSION = 3 as const;
 
 export interface ExportVisit {
   id: string;
@@ -24,8 +24,10 @@ export interface ExportMark {
 }
 
 export interface ExportFacilityNote {
+  id: string;
   facilityId: string;
   text: string;
+  createdAt: string | null;
   updatedAt: string | null;
 }
 
@@ -88,13 +90,22 @@ export function buildExport(
     }));
   const sortedCustomFacilities = [...customFacilities]
     .sort((a, b) => a.id.localeCompare(b.id));
-  // v1 backups should be read as facilityNotes=[] when import support is added;
+  // v1/v2 backups should be read as facilityNotes=[] when import support is added;
   // counts are informational and should be recalculated from the arrays.
-  const sortedFacilityNotes = Object.entries(facilityNotes)
-    .sort(([facilityIdA], [facilityIdB]) => facilityIdA.localeCompare(facilityIdB))
-    .map(([facilityId, note]) => ({
-      facilityId,
+  const sortedFacilityNotes = Object.values(facilityNotes)
+    .flat()
+    .sort((a, b) => {
+      const facilityOrder = a.facilityId.localeCompare(b.facilityId);
+      if (facilityOrder !== 0) return facilityOrder;
+      const updatedA = a.updatedAt?.toMillis() ?? 0;
+      const updatedB = b.updatedAt?.toMillis() ?? 0;
+      return updatedB - updatedA || a.id.localeCompare(b.id);
+    })
+    .map((note) => ({
+      id: note.id,
+      facilityId: note.facilityId,
       text: note.text,
+      createdAt: timestampToIso(note.createdAt),
       updatedAt: timestampToIso(note.updatedAt),
     }));
 

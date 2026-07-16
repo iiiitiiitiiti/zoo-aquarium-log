@@ -1272,6 +1272,57 @@ footer {
   }
 }
 
+/* ===== Markdown表示 ===== */
+.markdown-content {
+  color: #315046;
+  overflow-wrap: anywhere;
+  font-size: 13px;
+  line-height: 1.8;
+}
+.markdown-content > :first-child {
+  margin-top: 0;
+}
+.markdown-content > :last-child {
+  margin-bottom: 0;
+}
+.markdown-content p {
+  margin: 12px 0 8px;
+  white-space: normal;
+}
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3 {
+  margin: 14px 0 6px;
+  color: #315046;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.markdown-content ul,
+.markdown-content ol {
+  margin: 10px 0;
+  padding-left: 22px;
+}
+.markdown-content li + li {
+  margin-top: 3px;
+}
+.markdown-content a {
+  color: #2a7180;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.markdown-content code {
+  padding: 2px 5px;
+  border-radius: 4px;
+  background: #edf2ed;
+  font-size: 0.92em;
+}
+.markdown-content blockquote {
+  margin: 10px 0;
+  padding-left: 12px;
+  border-left: 3px solid #d28a20;
+  color: #66756d;
+}
+
 /* ===== 施設メモ（家族共有の施設ごとの覚え書き） ===== */
 .facility-user-note-section {
   padding: 0 16px 44px;
@@ -1284,6 +1335,13 @@ footer {
   color: #66756d;
   font-size: 12px;
 }
+.facility-user-note-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .facility-user-note-card {
   padding: 18px;
   border: 1px solid #d7ddd5;
@@ -1293,17 +1351,12 @@ footer {
 }
 .facility-user-note-text {
   margin: 0;
-  color: #315046;
-  font-size: 13px;
-  line-height: 1.8;
-  white-space: pre-wrap;
-  overflow-wrap: anywhere;
 }
-.facility-user-note-card small {
+.facility-user-note-updated-at {
   display: block;
-  margin-top: 12px;
-  color: #66756d;
-  font-size: 11px;
+  margin-top: 10px;
+  color: #9aa79f;
+  font-size: 10px;
 }
 .facility-user-note-section .visit-form {
   margin-bottom: 0;
