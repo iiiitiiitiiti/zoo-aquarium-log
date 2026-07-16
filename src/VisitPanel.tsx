@@ -83,6 +83,7 @@ export default function VisitPanel({
   onBack: () => void;
 }) {
   const [photoUrls, setPhotoUrls] = useState<Record<string, string>>({});
+  const [expandedPhotoIds, setExpandedPhotoIds] = useState<Set<string>>(() => new Set());
   const [form, setForm] = useState<VisitFormState>();
   const [noteForm, setNoteForm] = useState<string>();
   const [error, setError] = useState("");
@@ -144,6 +145,15 @@ export default function VisitPanel({
       memo: "",
       visitor: "",
       removePhoto: false,
+    });
+  }
+
+  function togglePhoto(visitId: string) {
+    setExpandedPhotoIds((current) => {
+      const next = new Set(current);
+      if (next.has(visitId)) next.delete(visitId);
+      else next.add(visitId);
+      return next;
     });
   }
 
@@ -471,13 +481,25 @@ export default function VisitPanel({
                 {visit.memo && <p>{visit.memo}</p>}
                 {visit.visitor && <small>一緒に行った人：{visit.visitor}</small>}
                 {photoUrls[visit.id] && (
-                  <img
-                    className="visit-photo"
-                    src={photoUrls[visit.id]}
-                    alt={displayDate(visit.date) + "の訪問写真"}
-                    loading="lazy"
-                    decoding="async"
-                  />
+                  <div className="visit-photo-block">
+                    <div className={`visit-photo-frame${expandedPhotoIds.has(visit.id) ? " visit-photo-frame--expanded" : ""}`}>
+                      <img
+                        id={`visit-photo-${visit.id}`}
+                        className="visit-photo"
+                        src={photoUrls[visit.id]}
+                        alt={displayDate(visit.date) + "の訪問写真"}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <button
+                      type="button"
+                      className="visit-photo-toggle"
+                      aria-controls={`visit-photo-${visit.id}`}
+                      aria-expanded={expandedPhotoIds.has(visit.id)}
+                      onClick={() => togglePhoto(visit.id)}
+                    >{expandedPhotoIds.has(visit.id) ? "閉じる" : "続きを見る"}</button>
+                  </div>
                 )}
                 <div className="visit-actions">
                   <button
