@@ -1,0 +1,55 @@
+[
+ {
+  "name": "郡山石筵ふれあい牧場",
+  "pref": "福島県",
+  "city": "郡山市",
+  "foundUrls": [
+   "https://www.fureai-bokujo.jp/",
+   "https://ja.wikipedia.org/wiki/郡山石筵ふれあい牧場"
+  ],
+  "typeGuess": "zoo",
+  "note": "敷地内に「家畜動物園」があり馬・ポニー・ロバ・めん羊等を展示。BBQ・サイクリング等も併設の複合観光牧場。"
+ },
+ {
+  "name": "岩瀬牧場",
+  "pref": "福島県",
+  "city": "岩瀬郡鏡石町",
+  "foundUrls": [
+   "https://iwasefarm.jp/",
+   "https://ja.wikipedia.org/wiki/岩瀬牧場"
+  ],
+  "typeGuess": "other",
+  "note": "日本初の西欧式牧場。馬・ウサギ・ヤギ等とふれあえる動物コーナーあり。"
+ },
+ {
+  "name": "水戸市森林公園 ふれあい牧場",
+  "pref": "茨城県",
+  "city": "水戸市",
+  "foundUrls": [
+   "https://www.city.mito.lg.jp/site/shinrinkoen/6249.html"
+  ],
+  "typeGuess": "other",
+  "note": "市立の大規模公園（恐竜広場・森林等が主要施設）内の一角にあるヤギ・ニワトリ・ウサギのふれあい牧場。動物展示が公園来場の主目的とは言い切れず要判断。"
+ },
+ {
+  "name": "モンスターズモンスター（旧サムライジャパンレプタイルズ）",
+  "pref": "茨城県",
+  "city": "土浦市",
+  "foundUrls": [
+   "https://monsters0808.base.shop/",
+   "https://note.com/zoo_aq_sf_oth/n/nc7159cbca7e8"
+  ],
+  "typeGuess": "other",
+  "note": "爬虫類・猛禽類・鳥類・小動物を扱うショップとふれあい動物園（要予約）を兼ねる。販売業（ペットショップ）とふれあい展示施設の複合形態のため要判断。"
+ },
+ {
+  "name": "茨城県鳥獣センター",
+  "pref": "茨城県",
+  "city": "那珂市",
+  "foundUrls": [
+   "https://www.pref.ibaraki.jp/seikatsukankyo/shizen/chojyuhogo/chojucenter.html"
+  ],
+  "typeGuess": "other",
+  "note": "傷病野生鳥獣の保護・野生復帰を目的とする県の施設。サル・クジャク・フクロウ等の収容個体をおりで見学可能。基準の除外類型「研究施設」に近い性格を持つため要判断。"
+ }
+]

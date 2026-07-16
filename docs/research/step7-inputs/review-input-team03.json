@@ -1,0 +1,53 @@
+[
+ {
+  "name": "厚岸グルメパーク ミニ水族館プティ",
+  "pref": "北海道",
+  "city": "厚岸郡厚岸町",
+  "foundUrls": [
+   "https://aquarium.search-maps.com/areas/北海道/"
+  ],
+  "typeGuess": "aquarium",
+  "note": "道の駅的な物産施設（厚岸グルメパーク）内の小型水族館。規模・独立性を要確認。"
+ },
+ {
+  "name": "網走市水産科学センター 川と湖の学習館",
+  "pref": "北海道",
+  "city": "網走市",
+  "foundUrls": [
+   "https://www.city.abashiri.hokkaido.jp/soshiki/16/1332.html"
+  ],
+  "typeGuess": "aquarium",
+  "note": "水槽約20基＋タッチプールを持つ市営学習施設。研究/教育施設としての性格もあり基準適合が曖昧。"
+ },
+ {
+  "name": "千歳さけますの森 さけます情報館",
+  "pref": "北海道",
+  "city": "千歳市",
+  "foundUrls": [
+   "https://aquarium.search-maps.com/areas/北海道/"
+  ],
+  "typeGuess": "aquarium",
+  "note": "サケ・マス情報館で、規模・生体常設展示の有無を要確認。"
+ },
+ {
+  "name": "ふるさといきものの里 オオムラサキ館",
+  "pref": "北海道",
+  "city": "夕張郡栗山町",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/ふるさといきものの里・オオムラサキ館",
+   "https://www.town.kuriyama.hokkaido.jp/site/shisetsu/770.html"
+  ],
+  "typeGuess": "other",
+  "note": "町営環境学習施設。オオムラサキ(国蝶)含む昆虫・水生生物30種以上を生体展示。学習施設色が強く基準適合が曖昧。"
+ },
+ {
+  "name": "ファームズ千代田 ふれあい牧場",
+  "pref": "北海道",
+  "city": "上川郡美瑛町",
+  "foundUrls": [
+   "https://fureai-sc.org/"
+  ],
+  "typeGuess": "other",
+  "note": "酪農教育ファーム。ポニー・ヤギ・ヒツジ等とのふれあいが目的の一つだが、酪農体験・展望台等も主要な訴求点で動物展示が主目的か曖昧。"
+ }
+]

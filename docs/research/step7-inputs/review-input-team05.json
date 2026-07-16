@@ -1,0 +1,53 @@
+[
+ {
+  "name": "間木ノ平グリーンファームふれあい牧場",
+  "pref": "青森県",
+  "city": "三戸郡新郷村",
+  "foundUrls": [
+   "https://www.japan47go.travel/ja/detail/46d00671-4af1-497d-9f5e-f67ff9ba4389"
+  ],
+  "typeGuess": "other",
+  "note": "牛・ヤギ・羊とのふれあい牧場。"
+ },
+ {
+  "name": "Ark館ヶ森（館ヶ森アーク牧場）",
+  "pref": "岩手県",
+  "city": "一関市藤沢町",
+  "foundUrls": [
+   "https://www.arkfarm.co.jp/en/farm/animals/",
+   "https://www.tohokukanko.jp/attractions/detail_1004281.html"
+  ],
+  "typeGuess": "other",
+  "note": "農業体験牧場で動物とのふれあいコーナーあり。飲食・農業体験が主目的の複合施設で、動物展示が主目的と言えるか要確認。"
+ },
+ {
+  "name": "室根高原ふれあい牧場",
+  "pref": "岩手県",
+  "city": "一関市",
+  "foundUrls": [
+   "https://www.nihon-kankou.or.jp/iwate/detail/03209cb3522080905"
+  ],
+  "typeGuess": "other",
+  "note": "乗馬・引き馬体験中心のふれあい牧場。"
+ },
+ {
+  "name": "くずまき高原牧場",
+  "pref": "岩手県",
+  "city": "岩手郡葛巻町",
+  "foundUrls": [
+   "https://kuzumaki.jp/"
+  ],
+  "typeGuess": "other",
+  "note": "酪農体験牧場でふれあい動物コーナーあり。畜産公社運営の公共牧場で、動物展示が主目的の施設か要確認。"
+ },
+ {
+  "name": "岩手県立水産科学館",
+  "pref": "岩手県",
+  "city": "宮古市",
+  "foundUrls": [
+   "https://www.city.miyako.iwate.jp/gyosei/soshiki/suisan/2/1/1/index.html"
+  ],
+  "typeGuess": "aquarium",
+  "note": "水産専門科学館で生体水槽15基を常設展示（小規模水族館としても案内される）。主目的が漁業学習展示か水族館的展示かで判断要。"
+ }
+]

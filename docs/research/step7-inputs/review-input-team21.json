@@ -1,0 +1,57 @@
+[
+ {
+  "name": "そまのかわファーム",
+  "pref": "奈良県",
+  "city": "奈良市",
+  "foundUrls": [
+   "https://www.somanokawa.jp/",
+   "https://www.city.nara.lg.jp/sightseeing/naraharu/181765.html"
+  ],
+  "typeGuess": "other",
+  "note": "養鶏を主業とする農場直売所。馬・ヒツジも飼育され「ちょっとした動物園みたいな雰囲気」と紹介されるが、主目的は卵の直売・農場体験であり動物展示が主目的とは言い切れず要確認。"
+ },
+ {
+  "name": "山のオヤジの羊園",
+  "pref": "奈良県",
+  "city": "御所市",
+  "foundUrls": [
+   "https://www.zoo-palette.com/nara/"
+  ],
+  "typeGuess": "fureai_farm",
+  "note": "集約サイトzoo-palette.comにのみ名称・所在市が記載され、公式サイトや独立した一次情報源を確認できなかった。実在・現況とも未確認のため要確認。"
+ },
+ {
+  "name": "和歌山県立自然博物館",
+  "pref": "和歌山県",
+  "city": "海南市",
+  "foundUrls": [
+   "https://www.shizenhaku.wakayama-c.ed.jp/",
+   "https://www.shizenhaku.wakayama-c.ed.jp/exhibition.html",
+   "https://www.wakayama-kanko.or.jp/spots/detail_672.html"
+  ],
+  "typeGuess": "自然史博物館(第一展示室が水族館型・第二展示室は標本中心)",
+  "note": "第一展示室は生きた水生生物約450種3000匹の水族館型展示（大水槽「黒潮の海」等）。ただし第二展示室は哺乳類・昆虫・化石等の標本中心で、施設全体としては総合自然史博物館。生体展示が「主目的」と言えるか、後工程で公式資料により要確認。"
+ },
+ {
+  "name": "ドルフィンパーク（和歌山マリーナシティ ポルトヨーロッパ内）",
+  "pref": "和歌山県",
+  "city": "和歌山市",
+  "foundUrls": [
+   "https://wakayamashimpo.co.jp/2013/03/20130307_23170.html",
+   "https://www.asoview.com/spot/spot0000034965/",
+   "https://www.marinacity.com/porto/guidecat/attraction/"
+  ],
+  "typeGuess": "ふれあい牧場(イルカタッチ・ボーティング施設)",
+  "note": "2013年3月開業のイルカふれあい施設（運河利用）。ただしポルトヨーロッパ公式サイトの現行アトラクション一覧（2026年時点）に記載がなく、閉鎖の可能性がある。公式サイトで最新の営業状況を要確認。"
+ },
+ {
+  "name": "ふれあい牧場テール",
+  "pref": "和歌山県",
+  "city": "有田川町",
+  "foundUrls": [
+   "http://www.arida-rs.com/tail/profile.html"
+  ],
+  "typeGuess": "ふれあい牧場(小動物)",
+  "note": "検索結果のスニペットで「和歌山県有田郡有田川町徳田1693-1・第一種動物取扱登録証を持つ動物施設」と紹介されているが、公式サイトがSSL証明書エラーで直接確認できず、他媒体での言及も見つけられなかった。現存・常設かどうか後工程で要確認。"
+ }
+]

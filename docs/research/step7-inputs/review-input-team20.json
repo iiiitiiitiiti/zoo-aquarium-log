@@ -1,0 +1,55 @@
+[
+ {
+  "name": "有馬富士自然学習センター",
+  "pref": "兵庫県",
+  "city": "三田市",
+  "foundUrls": [
+   "https://aquarium.search-maps.com/areas/%E5%85%B5%E5%BA%AB%E7%9C%8C/"
+  ],
+  "typeGuess": "自然学習施設（水槽展示あり）",
+  "note": "有馬富士公園内の自然学習施設。動物展示が主目的か要確認。"
+ },
+ {
+  "name": "青野ダム管理所 自然の水族館",
+  "pref": "兵庫県",
+  "city": "三田市",
+  "foundUrls": [
+   "https://aquarium.search-maps.com/areas/%E5%85%B5%E5%BA%AB%E7%9C%8C/"
+  ],
+  "typeGuess": "小規模水族館（ダム管理施設付帯）",
+  "note": "ダム管理所付帯の小規模淡水魚展示。詳細未確認。"
+ },
+ {
+  "name": "エール動物園",
+  "pref": "奈良県",
+  "city": "吉野郡下市町",
+  "foundUrls": [
+   "https://ale-workshop.jp/en/ale-zoo/",
+   "https://nara-shakyo.jp/pages/423/detail=1/b_id=2677/r_id=55/"
+  ],
+  "typeGuess": "other",
+  "note": "保護動物約20種60頭を収容する古民家＋農地のシェルター型施設。土日祝10-16時営業、入場1000円（ワンドリンク付）。運営元は「エールアニマルカフェ（動物カフェ）」表記も併用しており、動物園と動物カフェのどちらの業態に近いか要確認。"
+ },
+ {
+  "name": "鹿苑（ろくえん）",
+  "pref": "奈良県",
+  "city": "奈良市",
+  "foundUrls": [
+   "https://narashikanko.or.jp/spot/detail_10088.html",
+   "https://naradeer.com/event/rokuen.html"
+  ],
+  "typeGuess": "other",
+  "note": "特記事項対応。奈良公園の鹿（放し飼い）自体は対象外だが、鹿苑は一般財団法人奈良の鹿愛護会が運営する常設の鹿保護収容施設で、見学通路・展示パネルがあり一般公開されている（2026年2月に見学通路・展示リニューアル）。常設展示施設として扱えるか要判断。"
+ },
+ {
+  "name": "農業公園 信貴山のどか村",
+  "pref": "奈良県",
+  "city": "生駒郡三郷町",
+  "foundUrls": [
+   "https://www.sigisan-nodokamura.com/",
+   "https://www.town.sango.nara.jp/site/kanko/1289.html"
+  ],
+  "typeGuess": "other",
+  "note": "有料の農業公園。ヤギ・ヒツジの牧場や平飼い鶏の餌やり・卵拾いがあるが、収穫体験・BBQ・デイキャンプ・アスレチックなど動物以外の体験も多く、動物展示が来場の主目的と言えるか要確認。"
+ }
+]

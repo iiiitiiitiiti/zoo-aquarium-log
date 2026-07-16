@@ -1,0 +1,59 @@
+[
+ {
+  "name": "\"渚の駅\"たてやま（渚の博物館・海辺の広場）",
+  "pref": "千葉県",
+  "city": "館山市",
+  "foundUrls": [
+   "https://maruchiba.jp/spot/detail_10427.html",
+   "https://tateyamacity.com/archives/10505"
+  ],
+  "typeGuess": "aquarium",
+  "note": "館山市立博物館分館。「海辺の広場」に約40㎡の岩礁水槽（人工的に潮の満ち引きを再現、館山湾の生き物を常設展示、14:30に給餌）があるが、施設全体は漁業文化を紹介する博物館・さかなクンギャラリー・直売所「海のマルシェ」・レストランを含む複合観光交流拠点であり、生体展示が主目的の施設とは言い切れないため要判断。"
+ },
+ {
+  "name": "サユリワールド",
+  "pref": "千葉県",
+  "city": "市原市",
+  "foundUrls": [
+   "https://sayuri-world.com/",
+   "https://zounokuni.com/guide-sw/",
+   "https://zounokuni.com/info/"
+  ],
+  "typeGuess": "ふれあい牧場・動物園",
+  "note": "市原ぞうの国と隣接し無料シャトルバスで連絡。運営は同一グループ（アニマルワンダーリゾウト）だが単独チケット・単独ブランドあり。既存IDに含めるか別施設として起票するか要判断。"
+ },
+ {
+  "name": "ふなばしアンデルセン公園（どうぶつふれあい広場／ワンパク王国）",
+  "pref": "千葉県",
+  "city": "船橋市",
+  "foundUrls": [
+   "https://www.park-funabashi.or.jp/and/amap/wa-0014.html",
+   "https://www.park-funabashi.or.jp/and/amap/list2.html"
+  ],
+  "typeGuess": "ふれあい施設（公園内）",
+  "note": "都市公園（ワンパク王国ゾーン）内の常設ヤギ・ヒツジ・ウサギ・モルモットふれあい広場。公園全体が入園目的でありふれあい広場単体が主目的とは言い切れないため要判断。"
+ },
+ {
+  "name": "佐倉草ぶえの丘（ふれあい動物園）",
+  "pref": "千葉県",
+  "city": "佐倉市",
+  "foundUrls": [
+   "https://kusabue.shiteikanri-sakura.jp/",
+   "https://www.sakurashi-kankou.or.jp/facility/kusabue/",
+   "https://sakura-yotsukaido-yachimata.goguynet.jp/2025/06/03/kusabuenooka-doubutu/"
+  ],
+  "typeGuess": "ふれあい施設（公園内）",
+  "note": "日祝日のみ開催のふれあい動物園コーナー（ポニー・ウサギ・ヒヨコ・モルモット・カメ）。常設運営ではなく開催日限定のため要判断。"
+ },
+ {
+  "name": "アートアクアリウム美術館 GINZA",
+  "pref": "東京都",
+  "city": "中央区",
+  "foundUrls": [
+   "https://artaquarium.jp/",
+   "https://www.mistore.jp/store/ginza/shops/other/artaquarium/artaquarium_museum_ginza.html"
+  ],
+  "typeGuess": "aquarium",
+  "note": "銀座三越内、常設。約70種の金魚を光・音・香りで演出するアート展示。生体（金魚）を常設展示するが主目的が美術鑑賞であり、動物園・水族館としての生体展示教育目的と性格が異なるため要判断。"
+ }
+]

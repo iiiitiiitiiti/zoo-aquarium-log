@@ -1,0 +1,57 @@
+[
+ {
+  "name": "NASU FARM VILLAGE",
+  "pref": "栃木県",
+  "city": "大田原市",
+  "foundUrls": [
+   "https://nasufarmvillage.com/"
+  ],
+  "typeGuess": "other",
+  "note": "保護馬14頭を飼育するホースファーム。エサやり・トレッキング体験ありだが、乗馬・カフェ・レストランが主目的にも見え動物展示が主目的と言えるか要確認"
+ },
+ {
+  "name": "とちぎわんぱく公園(動物ふれあい広場)",
+  "pref": "栃木県",
+  "city": "下都賀郡壬生町",
+  "foundUrls": [
+   "https://www.tochigiji.or.jp/features/animal",
+   "https://www.park-tochigi.com/wanpaku/about",
+   "https://www.tochigiji.or.jp/spot/s7556"
+  ],
+  "typeGuess": "other",
+  "note": "とちぎ旅ネットの動物特集ページでは掲載されないが、いこーよ等ではポニー乗馬・うさぎふれあい広場ありと記載。公園公式の施設紹介ページには常設動物エリアの明記がなく、常設か期間限定イベントか情報源間で一致せず要確認"
+ },
+ {
+  "name": "ジャパンスネークセンター",
+  "pref": "群馬県",
+  "city": "太田市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%83%91%E3%83%B3%E3%82%B9%E3%83%8D%E3%83%BC%E3%82%AF%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC",
+   "https://www.snake-center.com/"
+  ],
+  "typeGuess": "爬虫類館",
+  "note": "毒蛇研究・血清製造を主目的とする研究機関（日本蛇族学術研究所）が運営するが、有料で一般公開・展示も行う複合施設。基準の『研究施設は除外』と『爬虫類館は含める』の境界線上のため要判断。"
+ },
+ {
+  "name": "道の駅ぐりーんふらわー牧場・大胡",
+  "pref": "群馬県",
+  "city": "前橋市",
+  "foundUrls": [
+   "https://www.maebashi-cvb.com/spot/3001",
+   "https://gnm-ukiuki.net/entry/2024/04/09/150000"
+  ],
+  "typeGuess": "ふれあい牧場・動物ふれあい施設",
+  "note": "道の駅に併設された小規模な牧場コーナー（羊・ポニー・ウサギ・鳥）。無料。来場主目的が道の駅・芝生広場である可能性が高く、動物展示が主目的と言えるか要判断。"
+ },
+ {
+  "name": "神津牧場",
+  "pref": "群馬県",
+  "city": "甘楽郡下仁田町",
+  "foundUrls": [
+   "https://www.town.shimonita.lg.jp/kanko/m03/m01/03.html",
+   "https://kanko.shimonita.jp/cuisine/jp/19"
+  ],
+  "typeGuess": "ふれあい牧場・動物ふれあい施設",
+  "note": "1887年創業の日本最古の洋式牧場。搾乳・バター作り・アルパカ散歩等の観光体験は充実するが、本来は酪農生産牧場であり来場主目的が『動物展示』と言えるか要判断。"
+ }
+]

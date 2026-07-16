@@ -1,0 +1,56 @@
+[
+ {
+  "name": "香川ヤギ牧場（三宅牧場）",
+  "pref": "香川県",
+  "city": "さぬき市",
+  "foundUrls": [
+   "https://makimiyake.jimdofree.com/香川ヤギ牧場/"
+  ],
+  "typeGuess": "other",
+  "note": "造園業者が2023年開設した小規模ヤギ放し飼い場（雄雌6頭、約1000㎡）。一般来場を主目的とする常設展示施設か要確認。"
+ },
+ {
+  "name": "しおのえふじかわ牧場",
+  "pref": "香川県",
+  "city": "高松市",
+  "foundUrls": [
+   "https://www.my-kagawa.jp/point/274/",
+   "https://iko-yo.net/facilities/19925"
+  ],
+  "typeGuess": "other",
+  "note": "乳製品手作り体験がメインの観光牧場。牛とのふれあいもあるが、来場主目的が動物展示か体験加工かは要確認。"
+ },
+ {
+  "name": "道の駅 伊方きらら館",
+  "pref": "愛媛県",
+  "city": "西宇和郡伊方町",
+  "foundUrls": [
+   "https://www.kirarakan.com/",
+   "https://www.kirarakan.com/施設紹介"
+  ],
+  "typeGuess": "aquarium",
+  "note": "道の駅内のふれあい水槽・バーチャル水族館「きららアクアリウム」。物産販売施設併設で来場主目的が水族館単体と言えるか要確認。"
+ },
+ {
+  "name": "みかめ海の駅 潮彩館",
+  "pref": "愛媛県",
+  "city": "西予市",
+  "foundUrls": [
+   "https://shiosaikan.jp/",
+   "https://www.city.seiyo.ehime.jp/kakuka/mikame_shisho/sangyo_kensetsu/11916.html"
+  ],
+  "typeGuess": "aquarium",
+  "note": "海の駅内でマンボウ・アオウミガメ・ミニヤギを展示・給餌。物産販売施設併設のため独立施設としての扱いを要確認。"
+ },
+ {
+  "name": "ほわいとファーム（野村農業公園）",
+  "pref": "愛媛県",
+  "city": "西予市",
+  "foundUrls": [
+   "https://whitefarm.info/",
+   "https://www.iyokannet.jp/spot/587"
+  ],
+  "typeGuess": "other",
+  "note": "乳製品手作り体験がメインの観光牧場。ヤギ・ウサギ等の小動物ふれあいエリアもあるが主目的が要確認。"
+ }
+]

@@ -1,0 +1,56 @@
+[
+ {
+  "name": "うなぎミュージアム & Cafe 雑魚寝館",
+  "pref": "大阪府",
+  "city": "堺市堺区",
+  "foundUrls": [
+   "https://zacconekan.amebaownd.com/",
+   "https://www.hotpepper.jp/mesitsu/entry/hashi87/17-00144"
+  ],
+  "typeGuess": "淡水魚展示（カフェ併設）",
+  "note": "約50水槽で世界のウナギ・日本産淡水魚を展示する一方、カフェ併設で名称にも『Cafe』を含む。開館日・営業実態の情報が資料により食い違う（毎月第3土曜のみとの記載あり）ため、飲食主目的の除外対象か常設展示型かは公式サイトでの確認が必要"
+ },
+ {
+  "name": "きしわだ自然資料館",
+  "pref": "大阪府",
+  "city": "岸和田市",
+  "foundUrls": [
+   "https://www.city.kishiwada.lg.jp/site/shizenshi/",
+   "https://ja.wikipedia.org/wiki/きしわだ自然資料館"
+  ],
+  "typeGuess": "自然史博物館（一部生体展示）",
+  "note": "主体は剥製・標本展示（3階等）だが、1階に大阪湾・河川の生き物を飼育する無料の水槽コーナーあり。生体展示が『主目的』と言えるか要現地・公式サイト確認"
+ },
+ {
+  "name": "淀川資料館",
+  "pref": "大阪府",
+  "city": "枚方市",
+  "foundUrls": [
+   "https://www.kkr.mlit.go.jp/yodogawa/shisetu/yodo-museum/",
+   "https://www.osaka-soundtrip.com/spot/other1398/"
+  ],
+  "typeGuess": "河川博物館（一部生体展示）",
+  "note": "日本初の河川博物館（治水・利水がテーマ）。『淀川の環境』コーナーにナマズ・ニホンウナギ・フナ等の飼育水槽あり。生体展示は付随的との見方もあり要判定"
+ },
+ {
+  "name": "淡路じゃのひれドルフィンファーム",
+  "pref": "兵庫県",
+  "city": "南あわじ市",
+  "foundUrls": [
+   "https://janohire.co.jp/interact/dolphin-farm/",
+   "https://www.awajishima-kanko.jp/manual/detail.html?bid=587"
+  ],
+  "typeGuess": "水族館類似（イルカふれあい施設）",
+  "note": "タッチ・スイム・トレーナー体験が中心で予約制の要素が強い。予約なしの常設一般見学が可能か公式サイトで要確認。"
+ },
+ {
+  "name": "丹波市立青垣いきものふれあいの里",
+  "pref": "兵庫県",
+  "city": "丹波市",
+  "foundUrls": [
+   "https://www.city.tamba.lg.jp/soshiki/shakaikyoikubunkazaika/gyomuannai/5/2/index.html"
+  ],
+  "typeGuess": "自然学習施設（淡水魚展示あり）",
+  "note": "約30種の淡水魚展示（オヤニラミ・カジカ等）とジオラマ・鳥類展示。主目的は自然環境学習で動物展示は一部。要精査。"
+ }
+]

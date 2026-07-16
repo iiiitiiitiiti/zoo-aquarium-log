@@ -1,0 +1,53 @@
+[
+ {
+  "name": "オーストリッチ展示圃",
+  "pref": "山形県",
+  "city": "西村山郡朝日町",
+  "foundUrls": [
+   "https://www.japan47go.travel/ja/detail/32f3ac2d-3259-495e-a2a0-ec512f50db5d"
+  ],
+  "typeGuess": "other",
+  "note": "ダチョウの飼育を見学できる展示圃。正式な動物園としての体裁か要確認。"
+ },
+ {
+  "name": "前森高原（わくわくファーム前森高原）",
+  "pref": "山形県",
+  "city": "最上郡最上町",
+  "foundUrls": [
+   "https://maemori.jp/",
+   "https://yamagatakanko.com/attractions/detail_146.html"
+  ],
+  "typeGuess": "other",
+  "note": "乗馬・ふれあい体験中心の観光牧場。キャンプ場等も併設の複合レジャー施設。"
+ },
+ {
+  "name": "ながめやま牧場小動物公園",
+  "pref": "山形県",
+  "city": "東置賜郡飯豊町",
+  "foundUrls": [
+   "https://souchi.lin.gr.jp/farm/pdf/nagameyama_f.pdf"
+  ],
+  "typeGuess": "zoo",
+  "note": "酪農牧場付設の小動物公園（ポニー等）。施設規模・常設性の詳細要確認。"
+ },
+ {
+  "name": "ムシテックワールド（ふくしま森の科学体験センター）",
+  "pref": "福島県",
+  "city": "須賀川市",
+  "foundUrls": [
+   "https://www.mushitec-fukushima.gr.jp/"
+  ],
+  "typeGuess": "other",
+  "note": "科学体験センターで生体カブトムシ・クワガタや県内の生き物を常設展示するが、主目的は科学教育。動物展示が主目的と言えるか要確認。"
+ },
+ {
+  "name": "磐梯高原南ヶ丘牧場",
+  "pref": "福島県",
+  "city": "耶麻郡猪苗代町",
+  "foundUrls": [
+   "https://www.bandaisan.or.jp/sight/minamigaokapasture/"
+  ],
+  "typeGuess": "other",
+  "note": "羊・馬・ウサギ・ヤギ等とふれあえる観光牧場。乳製品加工・パターゴルフ等も併設。"
+ }
+]

@@ -68,7 +68,7 @@
       "city": "成田市",
       "foundUrls": ["https://cms2.chiba-c.ed.jp/naritaseiryo-h/d1e59981c0cda641813b6cdf7c1cf8ea/%E9%83%A8%E6%B4%BB%E5%8B%95%E3%83%BB%E3%81%9D%E3%81%AE%E4%BB%96%E6%B4%BB%E5%8B%95/%E6%98%86%E8%99%AB%E9%A4%A8/", "https://www.gib-life.co.jp/st/about/kouken/kodomo/soc/post-18.html"],
       "typeGuess": "other",
-      "disposition": "review",
+      "disposition": "excluded", "excludeReason": "一般公開が月1回（4〜9月の第4土曜）のみで「常設で一般来場できる」基準に非該当（2026-07-16 ユーザー裁定: 変則公開の学校運営館は収録しない）",
       "matchExistingId": null,
       "note": "生物部（地域生物研究部）が運営する日本初の高校生運営昆虫館。昆虫飼育室・蝶の生態館・動物ふれあいゾーンで生きた昆虫・蝶・小動物を展示し、生徒が来場者に解説する。ただし一般公開は4〜9月の第4土曜10:00-15:00のみで、通年常設公開の観光・展示施設ではなく学校部活動の一環であるため、基準の『常設で一般来場できる』に該当するか要判断。"
     },

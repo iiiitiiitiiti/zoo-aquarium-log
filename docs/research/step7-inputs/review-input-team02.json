@@ -1,0 +1,52 @@
+[
+ {
+  "name": "安平町鹿公園",
+  "pref": "北海道",
+  "city": "勇払郡安平町",
+  "foundUrls": [
+   "https://www.town.abira.lg.jp/midokoro/shisetsu/park/72"
+  ],
+  "typeGuess": "other",
+  "note": "森林公園内のエゾシカ牧場コーナー。公園の一機能で独立性が曖昧。"
+ },
+ {
+  "name": "札幌市豊平川さけ科学館",
+  "pref": "北海道",
+  "city": "札幌市",
+  "foundUrls": [
+   "https://aquarium.search-maps.com/areas/北海道/"
+  ],
+  "typeGuess": "aquarium",
+  "note": "サケ科魚類専門の展示・学習施設。教育施設寄りで基準適合が曖昧。"
+ },
+ {
+  "name": "アザラシシーパラダイス",
+  "pref": "北海道",
+  "city": "紋別市",
+  "foundUrls": [
+   "https://o-tower.co.jp/seaparadise.html"
+  ],
+  "typeGuess": "other",
+  "note": "オホーツクとっかりセンターと同一の紋別市海洋公園エリア・同一運営会社(オホーツク・ガリンコタワー)の可能性があり、別施設か否か要現地確認。"
+ },
+ {
+  "name": "氷海展望塔オホーツクタワー（ミニ水族館）",
+  "pref": "北海道",
+  "city": "紋別市",
+  "foundUrls": [
+   "https://o-tower.co.jp/okhotsktower.html"
+  ],
+  "typeGuess": "other",
+  "note": "主目的は海中展望塔で、地階にミニ水族館（地元の魚・クリオネ等）を併設。展示が主目的とは言い切れず要確認。"
+ },
+ {
+  "name": "オホーツク流氷館",
+  "pref": "北海道",
+  "city": "網走市",
+  "foundUrls": [
+   "https://www.ryuhyokan.com/facility/"
+  ],
+  "typeGuess": "other",
+  "note": "流氷科学館だが、クリオネ・フウセンウオ等の常設生体水槽を持つ。主目的は科学展示で、生体展示が主目的か要確認。"
+ }
+]

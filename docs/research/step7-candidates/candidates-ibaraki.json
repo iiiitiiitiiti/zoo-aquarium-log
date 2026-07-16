@@ -197,9 +197,9 @@
       "city": "つくば市",
       "foundUrls": ["https://wanwan-land.co.jp/", "https://www.ibarakiguide.jp/spot.php?mode=detail&code=769"],
       "typeGuess": "other",
-      "disposition": "review",
+      "disposition": "excluded",
       "matchExistingId": null,
-      "excludeReason": "",
+      "excludeReason": "犬猫（ペット種）中心のテーマパークで本アプリの主旨と異なる業態（2026-07-16 ユーザー裁定: 犬猫系テーマパークは収録しない）",
       "note": "犬猫のテーマパーク（90犬種約1000頭＋猫約70匹）。生体展示館とふれあいパーク、レンタル散歩、ステージショーあり。展示動物が家庭動物（イヌ・ネコ）中心で野生種の動物園とは性格が異なるため、包含基準（動物園・水族館等）に含めるか要判断。"
     },
     {
@@ -219,9 +219,9 @@
       "city": "久慈郡大子町",
       "foundUrls": ["https://www.town.daigo.ibaraki.jp/page/page000022.html"],
       "typeGuess": "other",
-      "disposition": "review",
+      "disposition": "excluded",
       "matchExistingId": null,
-      "excludeReason": "",
+      "excludeReason": "畜産預託（乳用育成牛・繁殖和牛）が主目的の町営牧場で、来園者向け展示・ふれあい動線が確認できず",
       "note": "総面積70haの町営牧場。乳用育成牛・繁殖和牛の預託（畜産）事業が主目的で、放牧景観を一般に開放。ふれあい・餌やり等の来園者向け展示動線は確認できず、動物展示主目的の施設と言えるか要判断。"
     },
     {
@@ -241,9 +241,9 @@
       "city": "鹿嶋市",
       "foundUrls": ["https://kashimajingu.jp/guidance/境内案内/", "https://kashimashika.jp/shikaen/"],
       "typeGuess": "other",
-      "disposition": "review",
+      "disposition": "excluded",
       "matchExistingId": null,
-      "excludeReason": "",
+      "excludeReason": "来場主目的が参拝の神社境内飼育で、独立した動物展示施設に非該当（2026-07-16 ユーザー裁定: 参拝付随の動物舎は収録しない）",
       "note": "鹿島神宮境内の神鹿園。神鹿（シカ）約20頭。参拝の一部としての無料見学施設で、餌やりは原則禁止という情報もあり。主目的が宗教施設であり動物展示施設として扱うか要判断。"
     },
     {

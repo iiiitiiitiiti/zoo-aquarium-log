@@ -316,9 +316,9 @@
       "city": "西宮市",
       "foundUrls": ["https://aquarium.search-maps.com/areas/%E5%85%B5%E5%BA%AB%E7%9C%8C/"],
       "typeGuess": "自然学習施設（キャンプ場）",
-      "disposition": "review",
+      "disposition": "excluded",
       "matchExistingId": null,
-      "excludeReason": null,
+      "excludeReason": "主目的はキャンプ・自然体験施設で、動物展示が主目的に非該当",
       "note": "主目的はキャンプ・自然体験施設。動物展示が主目的とは考えにくいが水族館マップ掲載のため一応候補化。要精査、除外の可能性高い。"
     },
     {
@@ -360,9 +360,9 @@
       "city": "西脇市",
       "foundUrls": ["https://iko-yo.net/facilities?city_ids%5B%5D=528021&prefecture_ids%5B%5D=28"],
       "typeGuess": "観光農園（動物ふれあいあり）",
-      "disposition": "review",
+      "disposition": "excluded",
       "matchExistingId": null,
-      "excludeReason": null,
+      "excludeReason": "いちご狩り等の収穫体験が主目的の観光農園で、動物展示が主要な来場目的に非該当",
       "note": "いちご狩り等の収穫体験が主で動物ふれあいは一部。主目的が動物展示ではない可能性が高く除外候補。"
     },
     {

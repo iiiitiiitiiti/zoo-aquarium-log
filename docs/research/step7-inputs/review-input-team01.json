@@ -1,0 +1,52 @@
+[
+ {
+  "name": "ノーザンホースパーク",
+  "pref": "北海道",
+  "city": "夕張郡栗山町",
+  "foundUrls": [
+   "https://www.zoo-palette.com/北海道の動物園一覧/"
+  ],
+  "typeGuess": "other",
+  "note": "馬の乗馬・ふれあいテーマパーク。動物展示より乗馬体験が主目的の可能性があり基準適合が曖昧。"
+ },
+ {
+  "name": "えこりん村",
+  "pref": "北海道",
+  "city": "恵庭市",
+  "foundUrls": [
+   "https://www.zoo-palette.com/北海道の動物園一覧/"
+  ],
+  "typeGuess": "other",
+  "note": "庭園(銀河庭園)+「みどりの牧場」動物ふれあいエリアの複合施設。動物展示が主目的かどうか要確認。"
+ },
+ {
+  "name": "網走原生牧場観光センター",
+  "pref": "北海道",
+  "city": "網走市",
+  "foundUrls": [
+   "http://www.genseibokujou.co.jp/"
+  ],
+  "typeGuess": "other",
+  "note": "乗馬牧場+小動物ふれあいコーナー+レストランの複合観光牧場。動物展示が主目的か要確認。"
+ },
+ {
+  "name": "函館市熱帯植物園",
+  "pref": "北海道",
+  "city": "函館市",
+  "foundUrls": [
+   "https://hako-eco.com/"
+  ],
+  "typeGuess": "other",
+  "note": "植物園本体だが「サル山」でニホンザル36頭を常設飼育（冬季はサル山温泉）。独立展示エリアとして基準に該当しうる。"
+ },
+ {
+  "name": "いわみざわ公園 動物ふれあい広場",
+  "pref": "北海道",
+  "city": "岩見沢市",
+  "foundUrls": [
+   "https://iwamizawa-park.com/trim/animal/"
+  ],
+  "typeGuess": "other",
+  "note": "総合公園内の小動物ふれあいコーナー（モルモット・ウサギ・ミニブタ等）。規模小さく独立性が曖昧。"
+ }
+]

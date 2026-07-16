@@ -1,0 +1,54 @@
+[
+ {
+  "name": "大堂お猿公園",
+  "pref": "高知県",
+  "city": "大月町",
+  "foundUrls": [
+   "https://kochi-tabi.jp/search_spot_sightseeing.html?id=85",
+   "https://www.kochidon.net/shop/shop.shtml?s=715"
+  ],
+  "typeGuess": "zoo",
+  "note": "大堂海岸展望台ふもとで野生ニホンザル約200頭を餌付け。柵で囲われた常設展示施設ではなく野生猿の生息地のため、動物園の定義に該当するか要確認。"
+ },
+ {
+  "name": "北九州市立総合農事センター(花農丘公園)",
+  "pref": "福岡県",
+  "city": "北九州市",
+  "foundUrls": [
+   "https://k-nouji.com/",
+   "https://www.crossroadfukuoka.jp/spot/13126"
+  ],
+  "typeGuess": "zoo",
+  "note": "農業公園が主体だが木曽馬・小倉牛の放牧見学、ヤギ・ポニー・カピバラふれあいあり。動物展示が主目的か要判定"
+ },
+ {
+  "name": "宮ZOO",
+  "pref": "福岡県",
+  "city": "福津市",
+  "foundUrls": [
+   "https://imachika.com/item/5a3602fd23679c77efda4291/"
+  ],
+  "typeGuess": "zoo",
+  "note": "小規模個人経営の動物園。馬・ヤギ・カラス・ヘビ等。公式サイト未確認のため詳細要確認"
+ },
+ {
+  "name": "筑後川防災施設くるめウス",
+  "pref": "福岡県",
+  "city": "久留米市",
+  "foundUrls": [
+   "http://kurumeus.net/"
+  ],
+  "typeGuess": "aquarium",
+  "note": "筑後川の防災・学習施設に併設された無料のミニ淡水魚水族館。主目的は防災学習で水族館は付随的"
+ },
+ {
+  "name": "遠賀川河口堰ミニ水族館コーナー",
+  "pref": "福岡県",
+  "city": "中間市周辺",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E6%B0%B4%E6%97%8F%E9%A4%A8"
+  ],
+  "typeGuess": "aquarium",
+  "note": "Wikipedia一覧記載のみで単独確認未了。河口堰施設内のミニ展示コーナーとみられる"
+ }
+]

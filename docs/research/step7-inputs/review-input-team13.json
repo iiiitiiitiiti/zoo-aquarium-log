@@ -1,0 +1,56 @@
+[
+ {
+  "name": "荒川知水資料館 amoa",
+  "pref": "東京都",
+  "city": "北区",
+  "foundUrls": [
+   "https://www.ara-amoa.com/",
+   "https://kanko.city.kita.lg.jp/spot/243-2/"
+  ],
+  "typeGuess": "aquarium",
+  "note": "国交省荒川下流河川事務所敷地内、北区運営。荒川の治水・自然に関する資料館で、1階に荒川生息魚類の水槽展示あり。主目的は治水教育・資料展示であり生体展示は付随的なため要判断（基準の『研究施設』除外に近い性格）。"
+ },
+ {
+  "name": "川雑魚水族館",
+  "pref": "東京都",
+  "city": "豊島区",
+  "foundUrls": [
+   "https://aquarium.search-maps.com/places/170157d2e08/"
+  ],
+  "typeGuess": "aquarium",
+  "note": "サンシャインシティ内と記載のある小規模施設だが、単一の水族館まとめサイト以外に一次情報・現況（営業中か）を確認できず。要現地確認。"
+ },
+ {
+  "name": "茅ヶ崎ふれあい動物園",
+  "pref": "神奈川県",
+  "city": "茅ヶ崎市",
+  "foundUrls": [
+   "https://www.instagram.com/chigasaki_fureai_zoo/",
+   "https://iko-yo.net/facilities/184833"
+  ],
+  "typeGuess": "ふれあい動物園（民間・小規模）",
+  "note": "民間の小規模施設。トカゲ・カメレオン・カエル・チンチラ・フクロウ等を展示するが、カニ釣り・金魚すくい等アミューズメント要素もあり動物カフェ的業態の可能性。公式サイトでの詳細確認が必要"
+ },
+ {
+  "name": "観音崎自然博物館",
+  "pref": "神奈川県",
+  "city": "横須賀市",
+  "foundUrls": [
+   "https://kannonzaki-nature-museum.jimdofree.com/",
+   "https://ja.wikipedia.org/wiki/観音崎自然博物館"
+  ],
+  "typeGuess": "自然博物館（水槽・タッチプール併設）",
+  "note": "東京湾・三浦半島の自然がテーマの博物館。6mの淡水魚水槽（ミヤコタナゴ等）とタッチプールを常設展示するが、主目的が博物館か水族館かは要確認"
+ },
+ {
+  "name": "大和市自然観察センター・しらかしのいえ",
+  "pref": "神奈川県",
+  "city": "大和市",
+  "foundUrls": [
+   "https://www.yamato-zaidan.or.jp/shirakashi",
+   "https://www.pref.kanagawa.jp/docs/u5r/cnt/f550/tabi-098.html"
+  ],
+  "typeGuess": "自然観察センター（水槽併設）",
+  "note": "泉の森内の自然観察センター。在来種の魚・カエル・ヘビ等を水槽で常設展示するが、主目的が生物展示か自然学習かは要確認"
+ }
+]

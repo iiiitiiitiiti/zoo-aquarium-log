@@ -1,0 +1,56 @@
+[
+ {
+  "name": "愛知牧場 どうぶつ広場",
+  "pref": "愛知県",
+  "city": "日進市",
+  "foundUrls": [
+   "https://www.city.nisshin.lg.jp/department/toshisangyo/kanko/6/2/2_1/3119.html"
+  ],
+  "typeGuess": "other",
+  "note": "観光牧場。花畑・BBQ等も主要コンテンツで、動物ふれあいが主目的と言えるか要判断"
+ },
+ {
+  "name": "南部丘陵公園（小動物園エリア）",
+  "pref": "三重県",
+  "city": "四日市市",
+  "foundUrls": [
+   "http://mie.lin.gr.jp/fureai/farm007.htm",
+   "https://www.kankomie.or.jp/spot/3565"
+  ],
+  "typeGuess": "other",
+  "note": "四日市市最大の総合公園内に、ウサギ・モルモット・クジャク・ヤギ・ヒツジ等を飼育する「小動物園」コーナーあり（日曜13:30-14:30ふれあいタイム等）。公園全体はスポーツ施設等も含む総合公園で、動物展示が来園の主目的とまでは言えない可能性があり、独立施設として収録すべきか要判断。"
+ },
+ {
+  "name": "伊賀の里モクモク手づくりファーム（のんびり牧場ゾーン）",
+  "pref": "三重県",
+  "city": "伊賀市",
+  "foundUrls": [
+   "https://www.moku-moku.com/farm/nonbiri.html",
+   "https://www.moku-moku.com/"
+  ],
+  "typeGuess": "other",
+  "note": "農業公園。ミニブタの散歩・乳しぼり体験・ポニー乗馬等の動物ふれあいゾーンがあるが、施設全体は手作り体験・食・宿泊・買い物が中心で、動物展示が来園の主目的とは言い切れない大型複合施設。独立収録の要否は要判断。"
+ },
+ {
+  "name": "忠連谷ひつじの里",
+  "pref": "滋賀県",
+  "city": "東近江市池之脇町",
+  "foundUrls": [
+   "http://www.shigahochi.co.jp/info.php?type=article&id=A0015961",
+   "https://ameblo.jp/0365bk7kv/entry-12474421266.html"
+  ],
+  "typeGuess": "石窯パン工房併設のヒツジふれあい施設",
+  "note": "「ワイルドキッチン石窯パン工房」がメインでヒツジ十数頭は併設という位置づけに見える。動物展示が来場の主目的かどうか公式サイトで要確認。"
+ },
+ {
+  "name": "寿長生の郷 ヤギ農地",
+  "pref": "滋賀県",
+  "city": "大津市大石龍門4丁目",
+  "foundUrls": [
+   "https://shigatoco.com/toco/sunainosato/",
+   "https://co-trip.jp/article/654361"
+  ],
+  "typeGuess": "和菓子・里山施設内のヤギ放牧エリア",
+  "note": "叶匠寿庵の和菓子・里山散策施設で、ヤギは除草目的の放牧が人気アトラクション化したもの。主目的は和菓子・里山体験の可能性が高く要確認。"
+ }
+]

@@ -1,0 +1,55 @@
+[
+ {
+  "name": "草津温泉おさるの湯もみ処 おさ湯",
+  "pref": "群馬県",
+  "city": "吾妻郡草津町",
+  "foundUrls": [
+   "https://osayu.jp/",
+   "https://gunma-kanko.jp/features/110"
+  ],
+  "typeGuess": "ふれあい牧場・動物ふれあい施設",
+  "note": "1階は猿の湯もみショー（演芸主体）、2階でカピバラ・ウサギ等とふれあえる小動物コーナー『かぴ湯』。ショー興行の側面が強く、基準上の除外対象（移動動物園的な演芸施設）に近いか要判断。"
+ },
+ {
+  "name": "高崎公園動物舎",
+  "pref": "群馬県",
+  "city": "高崎市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%8B%95%E7%89%A9%E5%9C%92%E4%B8%80%E8%A6%A7"
+  ],
+  "typeGuess": "動物園",
+  "note": "Wikipedia『日本の動物園一覧』の群馬県欄に記載があるが、個別検索では実在・所在地・現況を確認できなかった。現地・一次情報での確認が必要。"
+ },
+ {
+  "name": "尾島公園動物舎",
+  "pref": "群馬県",
+  "city": "太田市",
+  "foundUrls": [
+   "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%8B%95%E7%89%A9%E5%9C%92%E4%B8%80%E8%A6%A7"
+  ],
+  "typeGuess": "動物園",
+  "note": "Wikipedia一覧で閉鎖施設として記載されているが、個別の一次情報での閉鎖確認は取れなかった。要現地・公式確認。"
+ },
+ {
+  "name": "深谷爬虫類館",
+  "pref": "埼玉県",
+  "city": "深谷市",
+  "foundUrls": [
+   "https://gustavewani.wixsite.com/fukayahachu",
+   "https://vegepark-fukaya.jp/spot/fukayahachurui"
+  ],
+  "typeGuess": "other",
+  "note": "爬虫類系YouTuber運営の爬虫類展示施設（トカゲ・ヘビ・カメ・ワニ等100種以上）。料金体系が「2,000円/時間、ドリンク1杯・餌代込み」という情報があり、動物カフェ的な業態（除外類型）に該当するか要現地確認。"
+ },
+ {
+  "name": "榎本牧場",
+  "pref": "埼玉県",
+  "city": "上尾市",
+  "foundUrls": [
+   "http://www.enoboku.com/",
+   "https://ushi-camera.com/farmguide/saitama/enoboku/"
+  ],
+  "typeGuess": "other",
+  "note": "農事組合法人の酪農牧場。ホルスタイン60〜70頭の牛舎見学・搾乳ロボット見学が中心で、ニワトリ・ミニブタ・ウサギ等とのふれあいコーナーも併設。入場無料。主目的が酪農体験/直売（ジェラート等）か動物展示かは要判断。"
+ }
+]
