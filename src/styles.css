@@ -196,7 +196,7 @@ body {
 .controls-title {
   color: #2f6b50;
   font-size: 15px;
-  font-weight: 800;
+  font-weight: 700;
 }
 .controls-meta {
   color: #6f7f77;
@@ -229,7 +229,7 @@ body {
   display: block;
   margin-bottom: 8px;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 700;
   color: #2f6b50;
 }
 .filter-group {
@@ -447,7 +447,7 @@ body {
   background: #dceff0;
   color: #205660;
   font-size: 10px;
-  font-weight: 800;
+  font-weight: 700;
 }
 .badges .zoo {
   background: #f6ddc9;
@@ -639,7 +639,7 @@ footer {
   margin-bottom: 8px;
   color: #2f6b50;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 700;
 }
 .auth-panel input {
   width: 100%;
@@ -659,7 +659,7 @@ footer {
   background: #2a7180;
   color: #fff;
   font:
-    800 14px/1 "LINE Seed JP",
+    700 14px/1 "LINE Seed JP",
     sans-serif;
 }
 .auth-panel button:disabled {
@@ -719,7 +719,7 @@ footer {
   background: transparent;
   color: #a8d8d7;
   font:
-    800 12px/1 "LINE Seed JP",
+    700 12px/1 "LINE Seed JP",
     sans-serif;
 }
 .detail-hero .eyebrow {
@@ -754,7 +754,7 @@ footer {
   background: #f7f4e80d;
   color: #a8d8d7;
   font:
-    800 12px/1 "LINE Seed JP",
+    700 12px/1 "LINE Seed JP",
     sans-serif;
   text-align: left;
 }
@@ -766,7 +766,7 @@ footer {
   margin-top: 0;
   color: #a8d8d7;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 700;
   text-underline-offset: 3px;
 }
 /* ===== 訪問記録（見出し・フォーム・一覧） ===== */
@@ -800,7 +800,7 @@ footer {
   background: #2a7180;
   color: #fff;
   font:
-    800 12px/1 "LINE Seed JP",
+    700 12px/1 "LINE Seed JP",
     sans-serif;
 }
 .visit-status,
@@ -831,7 +831,7 @@ footer {
   gap: 7px;
   color: #2f6b50;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 700;
 }
 .visit-form input,
 .visit-form select,
@@ -1131,7 +1131,7 @@ footer {
   background: #fff;
   color: #2a7180;
   font:
-    800 12px/1 "LINE Seed JP",
+    700 12px/1 "LINE Seed JP",
     sans-serif;
 }
 .empty-action {
@@ -1183,7 +1183,7 @@ footer {
   cursor: pointer;
   color: #2f6b50;
   font:
-    800 12px/1.2 "LINE Seed JP",
+    700 12px/1.2 "LINE Seed JP",
     sans-serif;
   text-align: left;
 }
@@ -1223,7 +1223,7 @@ footer {
   background: #fff;
   color: #2a7180;
   font:
-    800 12px/1.2 "LINE Seed JP",
+    700 12px/1.2 "LINE Seed JP",
     sans-serif;
 }
 .quick-action:disabled {
