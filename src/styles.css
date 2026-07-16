@@ -146,7 +146,7 @@ body {
   content: "";
   position: absolute;
   left: 22px;
-  top: 26px;
+  top: 21px;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -561,7 +561,7 @@ footer {
   position: absolute;
   width: 14px;
   height: 14px;
-  right: 112px;
+  right: 157px;
   top: 82px;
   border-radius: 50%;
   background: #a8d8d7;
