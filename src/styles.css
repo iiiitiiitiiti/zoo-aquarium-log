@@ -330,7 +330,7 @@ body {
   display: flex;
   align-items: end;
   justify-content: space-between;
-  margin: 0 4px 14px;
+  margin: 0 4px 24px;
 }
 .results-heading h2 {
   margin: 0;
@@ -343,11 +343,11 @@ body {
 }
 .prefecture-groups {
   display: grid;
-  gap: 18px;
+  gap: 24px;
 }
 .prefecture-group {
   display: grid;
-  gap: 10px;
+  gap: 16px;
 }
 .prefecture-heading {
   margin: 0 4px;
