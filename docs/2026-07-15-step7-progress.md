@@ -1,4 +1,4 @@
-# ステップ7 調査進捗（2026-07-15 東北ブロック完了・関東から再開）
+# ステップ7 調査進捗（2026-07-16 review 追調査ブロック完了 — **ステップ7完全終了**）
 
 `docs/2026-07-15-step7-phase-a-results.md` の再開手順に基づき Phase B を開始し、北海道ブロックの調査完了時点でユーザー判断により一時停止した。本書が次回再開の入口。
 
@@ -90,7 +90,19 @@
 - 調査結果（supplement-aichi-aniani.json）: 既収録「ぎょぎょランド」と開館時間・休館日・無料入場・動物取扱業登録（豊川市赤塚山公園名義の単一登録）がすべて共通の「同一施設内の2ゾーン」とみられる
 - ユーザー裁定（2026-07-16）: **新規収録せず**、既存 aichi_gyogyo_land の note に「同じ赤塚山公園内に、小動物とふれあえる『アニアニまある』がある」旨を付記して反映済み
 
-## review 147件の追調査 — 調査完了・Phase R 直前で中断（2026-07-16 Windows・ユーザー指示で Mac へ引き継ぎ）
+## review 追調査ブロック 完了（2026-07-16 Mac）— ステップ7完全終了
+
+- **Phase R**: Rv1（リスク include 9件100%）= agree 6・**include→exclude 変更3**（甲子園浜・西宮環境学習サポートセンター・厚岸プティ。「水族館級のみ」基準の厳密適用。いなみ野は独立水族園で include 維持）＋地獄谷野猿公苑の座標精度化／Rv2（境界・closed 10件）= **agree 10・disagree 0**。トムミルクファーム入園無料を一次確定、ドルフィンパーク和歌山の閉鎖を 2016年12月〜2017年4月（10年以内）と特定／Rv3（層化6件ゼロベース）= agree 4・座標修正2（Ark館ヶ森 約3km・NASU FARM VILLAGE 約1.35km。いずれも GSI 大字代表点→公式埋め込み地図ピンへ）。台帳は review-verify-rv1〜rv3.json
+- **ユーザー裁定**（詳細は step7-pending-decisions.md §5）: Phase R の exclude 変更3件を承認／hold 10件 = include 4（おさ湯・鴻巣天空の里・鹿苑・対馬野生生物保護センター。ユーザー判断2件はいずれも include）・exclude 6／アートアクアリウム GINZA = exclude 確定
+- **hold→include 4件の収録用フィールド補完**: review-hold-complete.json（おさ湯は type=other、対馬は公開個体「かなた」が2026年4月から公開一時中止・展示室は開館継続を note 化）
+- **Phase D**: 43件マージで **430→473件**（include 42−exclude変更3＋hold include 4。closed 2件〔むつごろう水族館・ドルフィンパーク和歌山〕含む）。ID 正規化1件（aichi_aichibokujo→aichi_bokujo）、kana カタカナ混入1件・〒プレフィックス1件修正、note 38件をユーザー向け要約で収録。既存 hokkaido_okhotsk_tokkari_center の名称を「オホーツクとっかりセンター アザラシランド」へ明確化（シーパラダイスとの棲み分け）
+- **検証**: test:data 18・check:duplicates（真の重複0。とっかり×シーパラ3m等は裁定済み正当ペア）・check-geo（新規43件すべて inside。久米島ウミガメ館の outside はマージ前からの境界ボックス起因で座標自体は九州 Phase R 検証済み）・lint・全139テスト・build 通過。※pull 直後は dompurify 未導入で lint が落ちるため要 npm install（今回実施済み）
+- **デプロイ**: 4c7673b を main へ push、GitHub Pages ワークフロー success
+- **Gate 3**: check:links 全956 URL 中 931 到達可（reachable 888＋redirected 43）。新規43件関連の問題は fta-shonan の一時 network_error（再検で200）と、ファームズ千代田の入場料告知 URL 404（サイト再構築による permalink 変更 → https://fureai-sc.org/admission-fee-info/ へ差し替え済み）のみ。blocked 7件は既知のボット対策（平野アニマルテラス等は Phase R でプロキシ実在確認済み）。既存分の not_found 9・network_error 7・timeout 2 は次回定期監査で URL 差し替え・移転確認の対象。地図プロット目視: 新規43件を Leaflet でプロットし、対馬・奄美・沖縄本島北部を含む全点が正しい位置にあることを確認（closed 2件の位置も正当）
+
+**ステップ7（施設マスタ全件整備）はこれで完全終了。** 全都道府県収録・473件。今後は定期監査（URL 劣化・休閉園の追跡）フェーズへ移行する。
+
+## review 147件の追調査 — 調査完了・Phase R 直前で中断（2026-07-16 Windows・ユーザー指示で Mac へ引き継ぎ・**上記完了により解消**）
 
 ### 完了済み
 
