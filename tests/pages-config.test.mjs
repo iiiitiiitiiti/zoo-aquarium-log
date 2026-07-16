@@ -16,3 +16,14 @@ test("GitHub Pages workflow builds and deploys the repository base", async () =>
   assert.match(config, /id:\s*base/);
   assert.match(index, /rel="apple-touch-icon" href="%BASE_URL%apple-touch-icon\.png"/);
 });
+
+test("スプラッシュは指定アイコンと自然な動きの演出を使う", async () => {
+  const index = await readFile(new URL("../index.html", import.meta.url), "utf8");
+
+  assert.match(index, /<img[^>]+class="splash-icon"[^>]+src="\.\/assets\/icon\.png"/);
+  assert.match(index, /class="splash-orbit splash-orbit-one"/);
+  assert.match(index, /class="splash-particle-field"/);
+  assert.match(index, /@keyframes splash-icon-reveal/);
+  assert.match(index, /@keyframes splash-orbit-spin/);
+  assert.match(index, /prefers-reduced-motion: reduce/);
+});
