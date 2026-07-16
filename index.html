@@ -396,9 +396,11 @@
       (() => {
         const startedAt = performance.now();
         const minimumVisibleMs = 600;
+        const postReadyVisibleMs = 2000;
         const timeoutMs = 10000;
         let state = "visible";
         let readyReceived = false;
+        let readyAt;
         let fadeTimer;
         let removalTimer;
         let stalledTimer;
@@ -427,13 +429,18 @@
 
         const scheduleFade = () => {
           window.clearTimeout(fadeTimer);
-          const waitMs = Math.max(0, startedAt + minimumVisibleMs - performance.now());
+          const targetTime = readyAt === undefined
+            ? startedAt + minimumVisibleMs
+            : readyAt + postReadyVisibleMs;
+          const waitMs = Math.max(0, targetTime - performance.now());
           fadeTimer = window.setTimeout(startFade, waitMs);
         };
 
         const onSplashReady = () => {
           if (state === "removed" || state === "hiding") return;
+          if (readyReceived) return;
           readyReceived = true;
+          readyAt = performance.now();
           const splash = getSplash();
           const status = splash?.querySelector(".splash-status");
           const reload = splash?.querySelector(".splash-reload");
