@@ -85,13 +85,18 @@ describe("FirestoreVisitStore", () => {
       received.push(visits.map((visit) => visit.facilityId));
     }, () => undefined);
 
+    // Emulator の既知バグ（firebase-tools#8654）で、購読確立中に書き込むと
+    // Listen ストリームが RESET/CANCELLED され初回配信が大幅に遅れることがある。
+    // 購読確立（初回スナップショット）を待ってから書き込み、待機も長めに取る
+    await vi.waitFor(() => expect(received.length).toBeGreaterThan(0), { timeout: 10_000 });
+
     await store.create({
       id: "visit-subscribe-all",
       facilityId: "osaka-kaiyukan",
       date: "2026-07-14",
     });
 
-    await vi.waitFor(() => expect(received.at(-1)).toEqual(["osaka-kaiyukan"]));
+    await vi.waitFor(() => expect(received.at(-1)).toEqual(["osaka-kaiyukan"]), { timeout: 10_000 });
     unsubscribe();
     await store.remove("visit-subscribe-all");
   });
