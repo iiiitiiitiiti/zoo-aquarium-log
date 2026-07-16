@@ -1,6 +1,6 @@
 {"team": "R10", "block": "review追調査", "results": [
   {
-    "verdict": "hold",
+    "verdict": "include",
     "name": "鴻巣市コウノトリ野生復帰センター 天空の里",
     "pref": "埼玉県",
     "city": "鴻巣市",
@@ -10,7 +10,7 @@
       "https://www.city.kounosu.saitama.jp/site/konotori/",
       "https://www.city.kounosu.saitama.jp/site/konotori/1292.html"
     ],
-    "note": "施設の一次目的は「鴻巣生まれのヒナを放鳥し野生復帰に寄与すること」（市公式説明）で、飼育に関する取組は埼玉県こども動物自然公園に協力を得ている。事業所所在地は埼玉県鴻巣市明用632（動物取扱業表示ページに記載、環境課の住所と同一）。駐車場はコスモスアリーナふきあげと共用（鴻巣市明用636-1）。既存マスタに兵庫県立コウノトリの郷公園（id: hyogo_kounotori_no_sato_koen, type: zoo, 2026-07-15検証済み）が既にincludeされており、同種コウノトリの野生復帰事業を目的としながら一般公開展示施設として収録されている前例がある。性格が酷似するため、最終判断ではこの前例との整合性（type=zoo/other、includeとの統一）を検討されたい。座標・詳細address未確定（hold時点では収集していない）。"
+    "note": "施設の一次目的は「鴻巣生まれのヒナを放鳥し野生復帰に寄与すること」（市公式説明）で、飼育に関する取組は埼玉県こども動物自然公園に協力を得ている。事業所所在地は埼玉県鴻巣市明用632（動物取扱業表示ページに記載、環境課の住所と同一）。駐車場はコスモスアリーナふきあげと共用（鴻巣市明用636-1）。既存マスタに兵庫県立コウノトリの郷公園（id: hyogo_kounotori_no_sato_koen, type: zoo, 2026-07-15検証済み）が既にincludeされており、同種コウノトリの野生復帰事業を目的としながら一般公開展示施設として収録されている前例がある。性格が酷似するため、最終判断ではこの前例との整合性（type=zoo/other、includeとの統一）を検討されたい。座標・詳細address未確定（hold時点では収集していない）。 【2026-07-16 ユーザー裁定で hold→include。既存 hyogo_kounotori_no_sato_koen と同型（展示・動物取扱業登録・入園料あり）。収録用フィールドは review-hold-complete.json で補完】"
   },
   {
     "verdict": "include",
