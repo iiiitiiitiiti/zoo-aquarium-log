@@ -936,6 +936,31 @@ footer {
   background: #fff;
   box-shadow: 0 3px 0 #dce5dc;
 }
+/* max-height は VisitPanel.tsx の ENTRY_COLLAPSED_HEIGHT と揃えること */
+.visit-list > li.visit-entry--collapsible {
+  position: relative;
+  max-height: 300px;
+  overflow: hidden;
+  transition: max-height 0.45s ease;
+}
+.visit-entry-toggle {
+  position: sticky;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  margin: 8px 0 0;
+  padding: 18px 0 5px;
+  border: 0;
+  background: linear-gradient(to bottom, #fff0, #fff 55%);
+  /* 折りたたみ時、ボタンと li 下端の間（padding ぶん）に下の内容が透けるのを覆う */
+  box-shadow: 0 16px 0 #fff;
+  color: #2a7180;
+  font:
+    700 12px/1 "LINE Seed JP",
+    sans-serif;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 .visit-date {
   display: flex;
   align-items: center;
@@ -989,7 +1014,7 @@ footer {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .visit-photo-frame {
+  .visit-list > li.visit-entry--collapsible {
     transition: none;
   }
 }
@@ -1037,28 +1062,11 @@ footer {
   margin-top: 12px;
 }
 .visit-photo-frame {
-  max-height: 160px;
-  overflow: hidden;
   border-radius: 10px;
   background: #f2f5f0;
-  transition: max-height 0.45s ease;
 }
 .visit-photo-frame .visit-photo {
   object-fit: contain;
-}
-
-.visit-photo-toggle {
-  display: block;
-  margin: 8px auto 0;
-  padding: 5px 0;
-  border: 0;
-  background: transparent;
-  color: #2a7180;
-  font:
-    700 12px/1 "LINE Seed JP",
-    sans-serif;
-  text-decoration: underline;
-  text-underline-offset: 3px;
 }
 /* ===== 施設の補足（変則休園などの note） ===== */
 .facility-note {
