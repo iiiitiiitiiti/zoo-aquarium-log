@@ -1401,6 +1401,11 @@ footer {
   background: #fff;
   box-shadow: 0 3px 0 #dce5dc;
 }
+.facility-user-note-head {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 6px;
+}
 .facility-user-note-text {
   margin: 0;
 }

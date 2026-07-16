@@ -132,7 +132,8 @@ describe("VisitPanel", () => {
 
     expect(screen.getByText("駐車場は東園側。")).toBeInTheDocument();
     expect(screen.getByText("午後にイルカショー。")).toBeInTheDocument();
-    await user.click(screen.getByRole("button", { name: "施設メモ note-1 を編集" }));
+    await user.click(screen.getByRole("button", { name: "施設メモ note-1 の操作" }));
+    await user.click(screen.getByRole("menuitem", { name: "施設メモ note-1 を編集" }));
     expect(onEditingChange).toHaveBeenLastCalledWith(true);
     await user.clear(screen.getByRole("textbox", { name: "施設メモ" }));
     await user.type(screen.getByRole("textbox", { name: "施設メモ" }), "次回はイルカショーへ\n持ち物：帽子");
@@ -146,7 +147,8 @@ describe("VisitPanel", () => {
     expect(onEditingChange).toHaveBeenLastCalledWith(false);
 
     vi.spyOn(window, "confirm").mockReturnValue(true);
-    await user.click(screen.getByRole("button", { name: "施設メモ note-2 を削除" }));
+    await user.click(screen.getByRole("button", { name: "施設メモ note-2 の操作" }));
+    await user.click(screen.getByRole("menuitem", { name: "施設メモ note-2 を削除" }));
     expect(store.removeCalls).toEqual(["note-2"]);
   });
 
