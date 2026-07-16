@@ -301,6 +301,34 @@ describe("VisitPanel", () => {
       .toHaveAttribute("src", "https://storage.example/second.webp");
   });
 
+  it("訪問写真を開閉して全体表示を切り替えられる", async () => {
+    const user = userEvent.setup();
+    const photoStore = {
+      upload: vi.fn(),
+      getUrl: vi.fn(async () => "https://storage.example/tall-photo.webp"),
+      remove: vi.fn(async () => undefined),
+    };
+    render(<VisitPanel {...({
+      facility,
+      store: new FakeVisitStore(),
+      visits: [{ ...existingVisit, photoPath: "households/test/visits/visit-1/photo.webp" }],
+      onBack: () => undefined,
+      photoStore,
+    } as any)} />);
+
+    const image = await screen.findByRole("img", { name: "2026年7月1日の訪問写真" });
+    const toggle = screen.getByRole("button", { name: "続きを見る" });
+    expect(toggle).toHaveAttribute("aria-expanded", "false");
+    expect(image.closest(".visit-photo-frame")).not.toHaveClass("visit-photo-frame--expanded");
+
+    await user.click(toggle);
+    expect(screen.getByRole("button", { name: "閉じる" })).toHaveAttribute("aria-expanded", "true");
+    expect(image.closest(".visit-photo-frame")).toHaveClass("visit-photo-frame--expanded");
+
+    await user.click(screen.getByRole("button", { name: "閉じる" }));
+    expect(screen.getByRole("button", { name: "続きを見る" })).toHaveAttribute("aria-expanded", "false");
+  });
+
   it("訪問写真を外して保存できる", async () => {
     const user = userEvent.setup();
     const store = new FakeVisitStore();

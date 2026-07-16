@@ -981,10 +981,45 @@ footer {
 .visit-photo {
   display: block;
   width: 100%;
-  max-height: 240px;
-  object-fit: cover;
-  margin-top: 12px;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
   border-radius: 10px;
+}
+.visit-photo-preview {
+  max-height: 240px;
+}
+.visit-photo-block {
+  margin-top: 12px;
+}
+.visit-photo-frame {
+  height: 160px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #f2f5f0;
+}
+.visit-photo-frame .visit-photo {
+  height: 100%;
+  object-fit: contain;
+}
+.visit-photo-frame--expanded {
+  height: auto;
+}
+.visit-photo-frame--expanded .visit-photo {
+  height: auto;
+}
+.visit-photo-toggle {
+  display: block;
+  margin: 8px 0 0 auto;
+  padding: 5px 0;
+  border: 0;
+  background: transparent;
+  color: #2a7180;
+  font:
+    700 12px/1 "LINE Seed JP",
+    sans-serif;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 /* ===== 施設の補足（変則休園などの note） ===== */
 .facility-note {
