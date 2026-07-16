@@ -116,4 +116,7 @@
 - 補遺（アニアニまある）も裁定済み・反映済み
 - 保留・裁定待ち: なし（docs/research/step7-pending-decisions.md は全件裁定済み）
 - **残る唯一の未着手**: review 144件（+千葉4巡目の3件 = 147件）のユーザー裁定。収録と決まった分のみ追加調査（調査5〜17班規模の見込み）。ここが完了すればステップ7（施設マスタ全件整備）は完了
-- Gate 3 の check:links 全件・地図プロット目視は 2026-07-16 のブロック完了時に実施（結果は Daily Worklog と本書コミットの記録参照）
+- Gate 3（2026-07-16 実施）:
+  - **check:links 全件**: ユニーク845 URL 中 823 到達可（reachable 785＋redirected 38）。新規43件に関わる問題は平野アニマルテラスの blocked（Cloudflare/reserva.be のボット対策。Phase R でプロキシ経由の実在確認済み）のみ。既存分に not_found 8・network_error 6・timeout 1 があり、**次回の定期監査でURL差し替え・移転確認の対象**（明細は check:links の再実行で再現可能。主な not_found: navelpark・notoaqua news・farmpark ドイツの森・gakuyukan・penguin-aqua news 等）
+  - **check:links の偽陰性バグを発見・修正**: Windows では実行ガードのパス比較が不一致で main() が走らず常に exit 0 だった（pathToFileURL 比較へ修正）。過去の Windows セッションでの check:links「問題なし」報告は無効
+  - **地図プロット目視**: 九州・沖縄61件（既存18＋新規43）を Leaflet でプロットし目視確認。離島（壱岐・奄美大島・久米島・宮古島・石垣島）の座標がすべて正しい島上にあり、海上落下・本島ずれなし
