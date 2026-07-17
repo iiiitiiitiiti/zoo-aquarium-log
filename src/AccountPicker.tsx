@@ -12,6 +12,7 @@ export interface AccountPickerProps {
   switching?: boolean;
   switchTargetUid?: string;
   switchError?: string;
+  onBeforeSwitch?: () => boolean;
 }
 
 export default function AccountPicker({
@@ -25,6 +26,7 @@ export default function AccountPicker({
   switching = false,
   switchTargetUid,
   switchError = "",
+  onBeforeSwitch,
 }: AccountPickerProps) {
   const [activeUid, setActiveUid] = useState(selectedUid);
   const [switchPassword, setSwitchPassword] = useState("");
@@ -52,6 +54,7 @@ export default function AccountPicker({
 
   async function handleSwitch() {
     if (!canSwitch || !selectedAccount) return;
+    if (onBeforeSwitch && !onBeforeSwitch()) return;
     await onSwitchAccount?.(
       selectedAccount.uid,
       isRemembered ? undefined : switchPassword,

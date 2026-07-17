@@ -444,6 +444,25 @@ export default function App({
     fallback();
   };
 
+  const accountPicker = accounts && currentUid ? (
+    <AccountPicker
+      accounts={accounts}
+      selectedUid={currentUid}
+      currentUid={currentUid}
+      rememberedAccountUids={rememberedAccountUids}
+      onSelect={() => undefined}
+      onSwitchAccount={onSwitchAccount}
+      onForgetRememberedAccount={onForgetRememberedAccount}
+      switching={switching}
+      switchTargetUid={switchTargetUid}
+      switchError={switchError}
+      onBeforeSwitch={() => {
+        if (!visitEditing && !facilityEditorOpen) return true;
+        return typeof window === "undefined"
+          || window.confirm("編集中の内容は破棄されます。世帯を切り替えますか？");
+      }}
+    />
+  ) : null;
   if (mapOpen) {
     return (
       <MapPanel
@@ -467,7 +486,9 @@ export default function App({
 
   if (facilityEditorOpen && customFacilityStore) {
     return (
-      <AddFacilityPanel
+      <div className="app-account-switcher-view">
+        {accountPicker}
+        <AddFacilityPanel
         store={customFacilityStore}
         initialFacility={editingFacility}
         onBack={() => goBack(() => {
@@ -480,13 +501,16 @@ export default function App({
           setSelectedFacility(facility);
         }}
       />
+      </div>
     );
   }
 
   if (selectedFacility && visitStore) {
     const selectedVisits = visits?.filter((visit) => visit.facilityId === selectedFacility.id) ?? [];
     return (
-      <VisitPanel
+      <div className="app-account-switcher-view">
+        {accountPicker}
+        <VisitPanel
         facility={selectedFacility}
         store={visitStore}
         visits={selectedVisits}
@@ -523,6 +547,7 @@ export default function App({
           if (detailOrigin === "map") setMapOpen(true);
         })}
       />
+      </div>
     );
   }
 
@@ -531,20 +556,7 @@ export default function App({
       <header className="hero">
         <div className="hero-session">
           <p className="eyebrow">FAMILY FIELD NOTE</p>
-          {accounts && currentUid && (
-            <AccountPicker
-              accounts={accounts}
-              selectedUid={currentUid}
-              currentUid={currentUid}
-              rememberedAccountUids={rememberedAccountUids}
-              onSelect={() => undefined}
-              onSwitchAccount={onSwitchAccount}
-              onForgetRememberedAccount={onForgetRememberedAccount}
-              switching={switching}
-              switchTargetUid={switchTargetUid}
-              switchError={switchError}
-            />
-          )}
+          {accountPicker}
           {onSignOut && (
             <button
               className="session-button"

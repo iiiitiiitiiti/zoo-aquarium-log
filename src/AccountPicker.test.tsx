@@ -74,4 +74,27 @@ describe("AccountPicker", () => {
     await user.click(screen.getByRole("button", { name: "世帯Bの記憶を削除" }));
     expect(onForget).toHaveBeenCalledWith("household-b");
   });
+
+  it("cancels a switch when editing confirmation is declined", async () => {
+    const user = userEvent.setup();
+    const onSwitchAccount = vi.fn(async () => undefined);
+    const onBeforeSwitch = vi.fn(() => false);
+    render(
+      <AccountPicker
+        accounts={accounts}
+        selectedUid="household-a"
+        currentUid="household-a"
+        onSelect={() => undefined}
+        onSwitchAccount={onSwitchAccount}
+        onBeforeSwitch={onBeforeSwitch}
+      />,
+    );
+
+    await user.click(screen.getByRole("button", { name: "世帯B" }));
+    await user.type(screen.getByLabelText("世帯Bの合言葉"), "switch-pass");
+    await user.click(screen.getByRole("button", { name: "世帯Bへ切り替える" }));
+
+    expect(onBeforeSwitch).toHaveBeenCalledOnce();
+    expect(onSwitchAccount).not.toHaveBeenCalled();
+  });
 });
