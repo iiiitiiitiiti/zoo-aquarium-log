@@ -1,4 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import AccountPicker from "./AccountPicker";
+import type { AccountConfig } from "./accounts";
 import AddFacilityPanel from "./AddFacilityPanel";
 import { buildExport, buildExportFilename } from "./buildExport";
 import MapPanel from "./MapPanel";
@@ -57,6 +59,14 @@ export default function App({
   markStore,
   customFacilityStore,
   facilityNoteStore,
+  accounts,
+  currentUid,
+  rememberedAccountUids,
+  onSwitchAccount,
+  onForgetRememberedAccount,
+  switching,
+  switchTargetUid,
+  switchError,
   onSignOut,
   signingOut = false,
   signOutError = "",
@@ -66,6 +76,14 @@ export default function App({
   markStore?: MarkStore;
   customFacilityStore?: CustomFacilityStore;
   facilityNoteStore?: FacilityNoteStore;
+  accounts?: AccountConfig[];
+  currentUid?: string;
+  rememberedAccountUids?: string[];
+  onSwitchAccount?: (uid: string, password?: string) => Promise<void>;
+  onForgetRememberedAccount?: (uid: string) => void;
+  switching?: boolean;
+  switchTargetUid?: string;
+  switchError?: string;
   onSignOut?: () => Promise<void>;
   signingOut?: boolean;
   signOutError?: string;
@@ -513,6 +531,20 @@ export default function App({
       <header className="hero">
         <div className="hero-session">
           <p className="eyebrow">FAMILY FIELD NOTE</p>
+          {accounts && currentUid && (
+            <AccountPicker
+              accounts={accounts}
+              selectedUid={currentUid}
+              currentUid={currentUid}
+              rememberedAccountUids={rememberedAccountUids}
+              onSelect={() => undefined}
+              onSwitchAccount={onSwitchAccount}
+              onForgetRememberedAccount={onForgetRememberedAccount}
+              switching={switching}
+              switchTargetUid={switchTargetUid}
+              switchError={switchError}
+            />
+          )}
           {onSignOut && (
             <button
               className="session-button"

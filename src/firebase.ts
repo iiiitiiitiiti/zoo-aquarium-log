@@ -9,9 +9,6 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 import type { AuthClient } from "./AuthGate";
 
-export const HOUSEHOLD_UID = "cbs9TeeZukMBRkHg5iIw9aMXw1W2";
-const HOUSEHOLD_EMAIL = "2190agiatotomijuf@gmail.com";
-
 const app = initializeApp({
   apiKey: "AIzaSyByfq88sTzMdLqpiwznMHIuqc9ALwDIXxU",
   authDomain: "zoo-aquarium-log.firebaseapp.com",
@@ -27,11 +24,11 @@ export const storage = getStorage(app);
 
 export const firebaseAuthClient: AuthClient = {
   onAuthStateChanged(listener) {
-    return onAuthStateChanged(auth, (user) => listener(user?.uid === HOUSEHOLD_UID));
+    return onAuthStateChanged(auth, (user) => listener(user?.uid ?? null));
   },
-  async signIn(password) {
-    const credential = await signInWithEmailAndPassword(auth, HOUSEHOLD_EMAIL, password);
-    if (credential.user.uid !== HOUSEHOLD_UID) {
+  async signIn(email, password, expectedUid) {
+    const credential = await signInWithEmailAndPassword(auth, email, password);
+    if (credential.user.uid !== expectedUid) {
       await signOut(auth);
       throw new Error("Unexpected household account");
     }

@@ -49,6 +49,96 @@
 .hero-session .eyebrow {
   margin: 0;
 }
+.account-picker {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 8px;
+}
+.hero-session .account-picker {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+.account-picker-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.account-picker-option {
+  width: auto;
+  margin: 0;
+  padding: 7px 10px;
+  border: 1px solid #a8d8d766;
+  border-radius: 999px;
+  background: #f7f4e80d;
+  color: #a8d8d7;
+  font: 700 11px/1.2 "LINE Seed JP", sans-serif;
+}
+.account-picker-option.is-selected {
+  border-color: #f7f4e8;
+  background: #f7f4e8;
+  color: #18352d;
+}
+.account-picker-option:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+.account-picker-switch {
+  display: grid;
+  gap: 8px;
+  max-width: 260px;
+}
+.account-picker-switch label {
+  margin: 0;
+  color: #dce9e4;
+  font-size: 11px;
+}
+.account-picker-switch input {
+  margin-top: 4px;
+  padding: 8px 10px;
+  border: 1px solid #a8d8d766;
+  border-radius: 8px;
+  background: #f7f4e81a;
+  color: #f7f4e8;
+  font: inherit;
+}
+.account-picker-submit,
+.account-picker-forget {
+  width: fit-content;
+  margin: 0;
+  padding: 7px 10px;
+  border: 1px solid #a8d8d766;
+  border-radius: 999px;
+  background: transparent;
+  color: #f7f4e8;
+  font: 700 11px/1.2 "LINE Seed JP", sans-serif;
+}
+.account-picker-forget {
+  border: 0;
+  padding-inline: 0;
+  color: #a8d8d7;
+  text-decoration: underline;
+}
+.auth-panel .account-picker {
+  margin-bottom: 18px;
+  padding: 16px;
+  border-radius: 18px;
+  background: #f7f4e8;
+  color: #18231f;
+}
+.auth-panel .account-picker-option {
+  border-color: #b9c8c0;
+  background: #fff;
+  color: #2f6b50;
+}
+.auth-panel .account-picker-option.is-selected {
+  border-color: #2f6b50;
+  background: #2f6b50;
+  color: #fff;
+}
+.auth-panel .account-picker-option:disabled {
+  color: #799083;
+}
 .session-button {
   flex: 0 0 auto;
   padding: 8px 10px;

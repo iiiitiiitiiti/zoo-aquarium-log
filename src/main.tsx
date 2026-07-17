@@ -1,9 +1,9 @@
 import { registerSW } from "virtual:pwa-register";
-import { StrictMode } from "react";
+import { StrictMode, useMemo } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
-import AuthGate from "./AuthGate";
-import { db, firebaseAuthClient, HOUSEHOLD_UID, storage } from "./firebase";
+import AuthGate, { type AuthSessionControls } from "./AuthGate";
+import { db, firebaseAuthClient, storage } from "./firebase";
 import { FirestoreCustomFacilityStore } from "./customFacilities";
 import { FirestoreFacilityNoteStore } from "./facilityNotes";
 import { FirestoreMarkStore } from "./marks";
@@ -28,25 +28,25 @@ const updateServiceWorker = registerSW({
   },
 });
 swUpdate.setUpdater(updateServiceWorker);
-const visitStore = new FirestoreVisitStore(db, HOUSEHOLD_UID);
-const photoStore = new FirebaseVisitPhotoStore(storage, HOUSEHOLD_UID);
-const markStore = new FirestoreMarkStore(db, HOUSEHOLD_UID);
-const customFacilityStore = new FirestoreCustomFacilityStore(db, HOUSEHOLD_UID);
-const facilityNoteStore = new FirestoreFacilityNoteStore(db, HOUSEHOLD_UID);
+
+function AuthenticatedApp({ uid, controls }: { uid: string; controls: AuthSessionControls }) {
+  const stores = useMemo(() => ({
+    visitStore: new FirestoreVisitStore(db, uid),
+    photoStore: new FirebaseVisitPhotoStore(storage, uid),
+    markStore: new FirestoreMarkStore(db, uid),
+    customFacilityStore: new FirestoreCustomFacilityStore(db, uid),
+    facilityNoteStore: new FirestoreFacilityNoteStore(db, uid),
+  }), [uid]);
+
+  return <App {...stores} {...controls} />;
+}
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <div className="site-stage">
       <AuthGate client={firebaseAuthClient}>
         {(controls) => (
-          <App
-            visitStore={visitStore}
-            photoStore={photoStore}
-            markStore={markStore}
-            customFacilityStore={customFacilityStore}
-            facilityNoteStore={facilityNoteStore}
-            {...controls}
-          />
+          <AuthenticatedApp key={controls.uid} uid={controls.uid} controls={controls} />
         )}
       </AuthGate>
     </div>

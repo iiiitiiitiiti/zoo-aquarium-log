@@ -1,28 +1,29 @@
 import { act, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { describe, expect, it } from "vitest";
+import { beforeEach, describe, expect, it } from "vitest";
 import AuthGate, { type AuthClient, type AuthSessionControls } from "./AuthGate";
+import { ACCOUNTS } from "./accounts";
 
 class FakeAuthClient implements AuthClient {
-  private listener: ((signedIn: boolean) => void) | undefined;
+  private listener: ((uid: string | null) => void) | undefined;
   signInCalls: string[] = [];
   signInError: Error | undefined;
   signOutCalls = 0;
   signOutError: Error | undefined;
   signOutPromise: Promise<void> | undefined;
 
-  onAuthStateChanged(listener: (signedIn: boolean) => void) {
+  onAuthStateChanged(listener: (uid: string | null) => void) {
     this.listener = listener;
     return () => {
       this.listener = undefined;
     };
   }
 
-  emit(signedIn: boolean) {
-    this.listener?.(signedIn);
+  emit(signedIn: boolean | string | null) {
+    this.listener?.(typeof signedIn === "boolean" ? (signedIn ? ACCOUNTS[0].uid : null) : signedIn);
   }
 
-  async signIn(password: string) {
+  async signIn(_email: string, password: string, _expectedUid: string) {
     this.signInCalls.push(password);
     if (this.signInError) throw this.signInError;
   }
@@ -35,6 +36,7 @@ class FakeAuthClient implements AuthClient {
 }
 
 describe("AuthGate", () => {
+  beforeEach(() => window.localStorage.clear());
   it("認証状態が確定するとスプラッシュ準備完了イベントを送出する", () => {
     const events: Event[] = [];
     const onSplashReady = (event: Event) => events.push(event);
