@@ -17,6 +17,11 @@ import type { Facility, FacilityType } from "./types";
 import type { VisitPhotoStore } from "./visitPhotos";
 import type { Visit, VisitStore } from "./visits";
 import VisitPanel from "./VisitPanel";
+import {
+  applyAnimationsEnabled,
+  persistAnimationsEnabled,
+  readAnimationsEnabled,
+} from "./animationPreference";
 import "./app-map.css";
 
 const facilities = facilitiesJson as Facility[];
@@ -114,6 +119,7 @@ export default function App({
   const [facilityEditorOpen, setFacilityEditorOpen] = useState(initialRoute.view === "addFacility");
   const [editingFacility, setEditingFacility] = useState<Facility>();
   const [visitEditing, setVisitEditing] = useState(false);
+  const [animationsEnabled, setAnimationsEnabled] = useState(readAnimationsEnabled);
   const [pendingRoute, setPendingRoute] = useState<Route | undefined>(() => {
     if (initialRoute.view === "facility" && !facilities.some((facility) => facility.id === initialRoute.facilityId)) {
       return initialRoute;
@@ -138,6 +144,10 @@ export default function App({
   useEffect(() => {
     swUpdate.setEditing(facilityEditorOpen || visitEditing);
   }, [facilityEditorOpen, visitEditing]);
+
+  useEffect(() => {
+    applyAnimationsEnabled(animationsEnabled);
+  }, [animationsEnabled]);
 
   useEffect(() => {
     if (!visitStore) {
@@ -392,9 +402,12 @@ export default function App({
 
   const scrollToTop = () => {
     if (typeof window === "undefined" || typeof window.scrollTo !== "function") return;
-    const prefersReducedMotion = typeof window.matchMedia === "function"
-      && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    window.scrollTo({ top: 0, left: 0, behavior: prefersReducedMotion ? "auto" : "smooth" });
+    window.scrollTo({ top: 0, left: 0, behavior: animationsEnabled ? "smooth" : "auto" });
+  };
+
+  const updateAnimationsEnabled = (enabled: boolean) => {
+    setAnimationsEnabled(enabled);
+    persistAnimationsEnabled(enabled);
   };
 
   const openAddFacility = () => {
@@ -678,6 +691,14 @@ export default function App({
             )}
             <button className="quick-action" type="button" onClick={downloadExport} disabled={exportNotReady}>JSONを保存</button>
           </div>
+          <label className="animation-setting">
+            <input
+              type="checkbox"
+              checked={animationsEnabled}
+              onChange={(event) => updateAnimationsEnabled(event.target.checked)}
+            />
+            <span>アニメーションを表示</span>
+          </label>
           <p className="location-note export-note">写真データは含まれません。訪問日・メモ・評価・行きたい/お気に入り・手動追加した施設情報が対象です。</p>
           <p className="app-version">バージョン {__APP_VERSION__}</p>
         </div>

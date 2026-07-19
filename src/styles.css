@@ -653,15 +653,13 @@ footer {
     display: none;
   }
 }
-@media (prefers-reduced-motion: no-preference) {
-  .facility-list--animated .facility-card {
-    animation: rise 0.35s ease both;
-  }
-  @keyframes rise {
-    from {
-      opacity: 0;
-      transform: translateY(8px);
-    }
+.facility-list--animated .facility-card {
+  animation: rise 0.35s ease both;
+}
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
   }
 }
 :focus-visible {
@@ -1144,21 +1142,6 @@ footer {
 .visit-actions button:last-child {
   color: #9a3636;
 }
-@media (prefers-reduced-motion: reduce) {
-  .controls-body {
-    transition: none;
-  }
-  .facility-card {
-    transition: none;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .visit-list > li.visit-entry--collapsible {
-    transition: none;
-  }
-}
-
 /* ===== 訪問写真 ===== */
 .visit-photo-field {
   display: grid;
@@ -1381,6 +1364,21 @@ footer {
 .quick-actions-body .export-note {
   margin: 8px 4px 0;
 }
+.animation-setting {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 4px 0;
+  color: #315046;
+  font-size: 12px;
+  font-weight: 700;
+}
+.animation-setting input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: #2f6b50;
+}
 .app-version {
   margin: 10px 4px 0;
   color: #9aa79f;
@@ -1393,16 +1391,6 @@ footer {
 .quick-actions {
   border-radius: 16px;
 }
-@media (prefers-reduced-motion: reduce) {
-  .controls-body,
-  .quick-actions-body {
-    transition: none;
-  }
-  .facility-card,
-  .back-to-top {
-    transition: none;
-  }
-}
 .controls-summary,
 .quick-actions-summary {
   transition: background-color 0.2s ease;
@@ -1413,11 +1401,14 @@ footer {
     background: #eaf5ef;
   }
 }
-@media (prefers-reduced-motion: reduce) {
-  .controls-summary,
-  .quick-actions-summary {
-    transition: none;
-  }
+html[data-animations="off"] {
+  scroll-behavior: auto !important;
+}
+html[data-animations="off"] *,
+html[data-animations="off"] *::before,
+html[data-animations="off"] *::after {
+  animation: none !important;
+  transition: none !important;
 }
 
 /* ===== Markdown表示 ===== */

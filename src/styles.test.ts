@@ -47,7 +47,6 @@ describe("responsive styles", () => {
     expect(styles).toMatch(/\.facility-card\{[^}]*transition:background-color 0\.2s ease/);
     expect(styles).toContain("@media(hover:hover) and (pointer:fine){.facility-card:hover{background:#eaf5ef}}");
     expect(styles).not.toMatch(/(^|\})\.facility-card:hover\{background:#eaf5ef\}/);
-    expect(styles).toContain("@media(prefers-reduced-motion:reduce){.controls-body{transition:none}.facility-card{transition:none}}");
   });
 
   it("keeps visit date and rating controls side by side on narrow screens", () => {
@@ -78,7 +77,6 @@ describe("responsive styles", () => {
   it("animates the facility search accordion", () => {
     expect(styles).toContain(".controls-body{max-height:0;opacity:0;");
     expect(styles).toContain(".controls.is-open .controls-body{max-height:720px;opacity:1;");
-    expect(styles).toContain("@media(prefers-reduced-motion:reduce){.controls-body,.quick-actions-body{transition:none}");
   });
 
   it("styles the filter reset button", () => {
@@ -111,7 +109,12 @@ describe("responsive styles", () => {
   it("hovers the collapsed accordions like facility cards on pointer devices", () => {
     expect(styles).toContain(".controls-summary,.quick-actions-summary{transition:background-color 0.2s ease}");
     expect(styles).toContain("@media(hover:hover) and (pointer:fine){.controls:not(.is-open) .controls-summary:hover,.quick-actions:not(.is-open) .quick-actions-summary:hover{background:#eaf5ef}}");
-    expect(styles).toContain("@media(prefers-reduced-motion:reduce){.controls-summary,.quick-actions-summary{transition:none}}");
+  });
+
+  it("uses the app-level animation preference instead of the system setting", () => {
+    expect(styles).toContain('html[data-animations="off"]{scroll-behavior:auto !important}');
+    expect(styles).toContain('html[data-animations="off"] *,html[data-animations="off"] *::before,html[data-animations="off"] *::after{animation:none !important;transition:none !important}');
+    expect(styles).not.toContain("prefers-reduced-motion");
   });
 
 });

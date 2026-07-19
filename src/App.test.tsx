@@ -69,6 +69,7 @@ async function openQuickActions(user: ReturnType<typeof userEvent.setup>) {
 }
 
 afterEach(() => {
+ document.documentElement.removeAttribute("data-animations");
  vi.restoreAllMocks();
  vi.unstubAllGlobals();
 });
@@ -384,6 +385,17 @@ describe("App",()=>{
   expect(actions.compareDocumentPosition(resultsHeading) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
   expect(screen.queryByRole("button",{name:"掲載されていない施設を追加"})).not.toBeInTheDocument();
  });
+  it("shows animations by default and lets the user turn them off",async()=>{
+   const user=userEvent.setup();
+   render(<App />);
+   await openQuickActions(user);
+   const checkbox=screen.getByRole("checkbox",{name:"アニメーションを表示"});
+   expect(checkbox).toBeChecked();
+   expect(document.documentElement).toHaveAttribute("data-animations","on");
+   await user.click(checkbox);
+   expect(checkbox).not.toBeChecked();
+   expect(document.documentElement).toHaveAttribute("data-animations","off");
+  });
   it("opens the filtered facilities on the map and returns to the list",async()=>{
    const user=userEvent.setup();
    render(<App />);
