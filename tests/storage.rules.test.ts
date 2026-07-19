@@ -59,16 +59,17 @@ describe("Storage household rules", () => {
 
   test("WebP以外の形式と5MB超の写真を拒否する", async () => {
     const storage = testEnv.authenticatedContext(HOUSEHOLD_UID).storage();
-    const basePath = `households/${HOUSEHOLD_UID}/visits/visit-2`;
+    const photoPath = (visitId: string) =>
+      `households/${HOUSEHOLD_UID}/visits/${visitId}/photo.webp`;
 
     await assertSucceeds(
-      storage.ref(`${basePath}/limit.webp`).put(photoData(5 * 1024 * 1024), { contentType: "image/webp" }),
+      storage.ref(photoPath("visit-2")).put(photoData(5 * 1024 * 1024), { contentType: "image/webp" }),
     );
     await assertFails(
-      storage.ref(`${basePath}/too-large.webp`).put(photoData(5 * 1024 * 1024 + 1), { contentType: "image/webp" }),
+      storage.ref(photoPath("visit-3")).put(photoData(5 * 1024 * 1024 + 1), { contentType: "image/webp" }),
     );
     await assertFails(
-      storage.ref(`${basePath}/wrong-type.jpg`).put(photoData(), { contentType: "image/jpeg" }),
+      storage.ref(photoPath("visit-4")).put(photoData(), { contentType: "image/jpeg" }),
     );
   });
 });
