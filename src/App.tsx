@@ -482,6 +482,7 @@ export default function App({
         shown={mapShown}
         visitedIds={visitedIds}
         marks={marks ?? {}}
+        animationsEnabled={animationsEnabled}
         focusedFacilityId={mapFocusFacilityId}
         onBack={() => goBack(() => {
           setMapOpen(false);

@@ -27,6 +27,18 @@ const badgeSymbols: Record<PinBadge, string> = {
   wishlist: "♡",
 };
 type FacilityMarker = L.Marker & { facilityId?: string };
+type MapSnapshot = {
+  center: L.LatLng;
+  zoom: number;
+  openFacilityId?: string;
+};
+
+function disableMapPanAnimations(map: L.Map) {
+  const panBy = map.panBy.bind(map);
+  const panTo = map.panTo.bind(map);
+  map.panBy = (offset, options) => panBy(offset, { ...options, animate: false });
+  map.panTo = (center, options) => panTo(center, { ...options, animate: false });
+}
 
 function appendTextRow(parent: HTMLElement, label: string, value: string) {
   const row = document.createElement("p");
@@ -78,6 +90,7 @@ export default function MapPanel({
   shown,
   visitedIds,
   marks,
+  animationsEnabled = true,
   focusedFacilityId,
   onBack,
   onSelectFacility,
@@ -85,6 +98,7 @@ export default function MapPanel({
   shown: Facility[];
   visitedIds: ReadonlySet<string>;
   marks: MarkMap;
+  animationsEnabled?: boolean;
   focusedFacilityId?: string;
   onBack: () => void;
   onSelectFacility: (facility: Facility) => void;
@@ -93,14 +107,24 @@ export default function MapPanel({
   const mapRef = useRef<L.Map | undefined>(undefined);
   const clusterGroupRef = useRef<L.MarkerClusterGroup | undefined>(undefined);
   const hasFitInitialViewRef = useRef(false);
+  const mapSnapshotRef = useRef<MapSnapshot | undefined>(undefined);
 
   useEffect(() => {
     const container = mapContainerRef.current;
     if (!container) return;
 
-    const map = L.map(container, { zoomControl: false });
+    const previousSnapshot = mapSnapshotRef.current;
+    const map = L.map(container, {
+      zoomControl: false,
+      zoomAnimation: animationsEnabled,
+      fadeAnimation: animationsEnabled,
+      markerZoomAnimation: animationsEnabled,
+      inertia: animationsEnabled,
+    });
+    if (!animationsEnabled) disableMapPanAnimations(map);
     const clusterGroup = L.markerClusterGroup({
       disableClusteringAtZoom: 15,
+      animate: animationsEnabled,
       iconCreateFunction: (cluster) => L.divIcon({
         className: "map-cluster-icon",
         html: `<span>${cluster.getChildCount()}</span>`,
@@ -111,6 +135,11 @@ export default function MapPanel({
     clusterGroup.addTo(map);
     mapRef.current = map;
     clusterGroupRef.current = clusterGroup;
+    if (previousSnapshot) {
+      map.setView(previousSnapshot.center, previousSnapshot.zoom, { animate: false });
+      hasFitInitialViewRef.current = true;
+    }
+    mapSnapshotRef.current = previousSnapshot;
     map.invalidateSize();
 
     const invalidateSize = () => map.invalidateSize();
@@ -121,12 +150,25 @@ export default function MapPanel({
     return () => {
       window.removeEventListener("resize", invalidateSize);
       visualViewport?.removeEventListener("resize", invalidateSize);
+      try {
+        const center = map.getCenter();
+        const zoom = map.getZoom();
+        const openFacilityId = clusterGroup.getLayers()
+          .map((layer) => layer as FacilityMarker)
+          .find((marker) => marker.isPopupOpen() && marker.facilityId)
+          ?.facilityId;
+        if (center && Number.isFinite(zoom)) {
+          mapSnapshotRef.current = { center, zoom, openFacilityId };
+        }
+      } catch {
+        mapSnapshotRef.current = undefined;
+      }
       clusterGroupRef.current = undefined;
       mapRef.current = undefined;
       hasFitInitialViewRef.current = false;
       map.remove();
     };
-  }, []);
+  }, [animationsEnabled]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -157,25 +199,27 @@ export default function MapPanel({
     });
     clusterGroup.addLayers(markers);
     const requestedOpenFacilityId = focusedFacility?.id ?? openFacilityId;
-    if (requestedOpenFacilityId) {
-      markers.find((marker) => marker.facilityId === requestedOpenFacilityId)?.openPopup();
+    const restoredOpenFacilityId = mapSnapshotRef.current?.openFacilityId;
+    if (requestedOpenFacilityId ?? restoredOpenFacilityId) {
+      markers.find((marker) => marker.facilityId === (requestedOpenFacilityId ?? restoredOpenFacilityId))?.openPopup();
     }
+    mapSnapshotRef.current = undefined;
 
     if (hasFitInitialViewRef.current) return;
     if (focusedFacility) {
-      map.setView([focusedFacility.lat, focusedFacility.lng], 12);
+      map.setView([focusedFacility.lat, focusedFacility.lng], 12, { animate: animationsEnabled });
     } else if (shown.length === 1) {
-      map.setView([shown[0].lat, shown[0].lng], 12);
+      map.setView([shown[0].lat, shown[0].lng], 12, { animate: animationsEnabled });
     } else if (shown.length > 1) {
       map.fitBounds(
         L.latLngBounds(shown.map((facility) => [facility.lat, facility.lng] as L.LatLngTuple)),
-        { padding: [24, 24] },
+        { padding: [24, 24], animate: animationsEnabled },
       );
     } else {
-      map.setView([36.5, 137.5], 5);
+      map.setView([36.5, 137.5], 5, { animate: animationsEnabled });
     }
     hasFitInitialViewRef.current = true;
-  }, [focusedFacilityId, marks, onSelectFacility, shown, visitedIds]);
+  }, [animationsEnabled, focusedFacilityId, marks, onSelectFacility, shown, visitedIds]);
 
   const legend = getPinLegend();
 
