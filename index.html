@@ -11,6 +11,18 @@
     <link rel="icon" href="%BASE_URL%favicon.ico" />
     <link rel="apple-touch-icon" href="%BASE_URL%apple-touch-icon.png" />
     <title>動物園・水族館ログ</title>
+    <script>
+      (() => {
+        const storageKey = "zoo-aquarium-log:animations-enabled:v1";
+        let enabled = true;
+        try {
+          enabled = window.localStorage.getItem(storageKey) !== "false";
+        } catch {
+          // localStorage unavailable or blocked: animations remain enabled by default.
+        }
+        document.documentElement.dataset.animations = enabled ? "on" : "off";
+      })();
+    </script>
     <style>
       #splash {
         position: fixed;
@@ -373,26 +385,18 @@
         to { box-shadow: 0 0 0 13px #a8d8d700; }
       }
 
-      @media (prefers-reduced-motion: reduce) {
-        #splash,
-        #splash::before,
-        #splash::after,
-        #splash *,
-        #splash *::before,
-        #splash *::after {
-          animation-duration: 0.001ms !important;
-          animation-iteration-count: 1 !important;
-          transition-duration: 0ms !important;
-        }
+      html[data-animations="off"] #splash,
+      html[data-animations="off"] #splash::before,
+      html[data-animations="off"] #splash::after,
+      html[data-animations="off"] #splash *,
+      html[data-animations="off"] #splash *::before,
+      html[data-animations="off"] #splash *::after {
+        animation: none !important;
+        transition: none !important;
+      }
 
-        .splash-emblem,
-        .splash-copy,
-        .splash-status-row,
-        .splash-icon {
-          opacity: 1;
-          filter: none;
-          transform: none;
-        }
+      html[data-animations="off"] #splash {
+        scroll-behavior: auto;
       }
     </style>
     <script>

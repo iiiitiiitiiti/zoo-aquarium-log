@@ -12,6 +12,6 @@ describe("statistics navigation styles", () => {
     expect(styles).toContain(".stats-anchor-link{display:flex;align-items:center;justify-content:space-between");
     expect(styles).toContain('.stats-anchor-arrow{display:block;width:14px;height:8px;background:url("./assets/Vector.svg") center/contain no-repeat');
     expect(styles).toContain("html{scroll-behavior:smooth}");
-    expect(styles).toContain("@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}");
+    expect(styles).not.toContain("prefers-reduced-motion");
   });
 });
