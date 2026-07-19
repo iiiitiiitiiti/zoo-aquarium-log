@@ -6,6 +6,7 @@ export default defineConfig({
     fileParallelism: false,
     include: [
       "tests/firestore.rules.test.ts",
+      "tests/storage.rules.test.ts",
       "tests/visits.integration.test.ts",
       "tests/marks.integration.test.ts",
       "tests/facilityNotes.integration.test.ts",
