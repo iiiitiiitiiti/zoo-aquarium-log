@@ -1,9 +1,8 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import AccountPicker from "./AccountPicker";
 import type { AccountConfig } from "./accounts";
 import AddFacilityPanel from "./AddFacilityPanel";
 import { buildExport, buildExportFilename } from "./buildExport";
-import MapPanel from "./MapPanel";
 import facilitiesJson from "./data/facilities.json";
 import { filterFacilities, type VisitStatusFilter } from "./filterFacilities";
 import StatsPanel from "./StatsPanel";
@@ -57,6 +56,7 @@ const typeLabels: Record<FacilityType, string> = {
 };
 type MapDisplayMode = "all" | "facility";
 const APP_MAP_FOCUS_KEY = "__zooAquariumLogMapFocus";
+const MapPanel = lazy(() => import("./MapPanel"));
 
 export default function App({
   visitStore,
@@ -478,19 +478,21 @@ export default function App({
   ) : null;
   if (mapOpen) {
     return (
-      <MapPanel
-        shown={mapShown}
-        visitedIds={visitedIds}
-        marks={marks ?? {}}
-        animationsEnabled={animationsEnabled}
-        focusedFacilityId={mapFocusFacilityId}
-        onBack={() => goBack(() => {
-          setMapOpen(false);
-          setMapDisplayMode("all");
-          setMapFocusFacilityId(undefined);
-        })}
-        onSelectFacility={(facility) => openFacility(facility, "map")}
-      />
+      <Suspense fallback={<main className="app-shell map-shell"><div className="map-content"><p className="map-empty" role="status">地図を読み込んでいます</p></div></main>}>
+        <MapPanel
+          shown={mapShown}
+          visitedIds={visitedIds}
+          marks={marks ?? {}}
+          animationsEnabled={animationsEnabled}
+          focusedFacilityId={mapFocusFacilityId}
+          onBack={() => goBack(() => {
+            setMapOpen(false);
+            setMapDisplayMode("all");
+            setMapFocusFacilityId(undefined);
+          })}
+          onSelectFacility={(facility) => openFacility(facility, "map")}
+        />
+      </Suspense>
     );
   }
 
