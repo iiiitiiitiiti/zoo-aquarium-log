@@ -19,7 +19,7 @@
 npm install
 npm run dev
 npm run test:data
-npm run test:rules  # Firestore / Storage Emulator の実行に Java Runtime が必要
+npm run test:rules  # Firestore / Storage Emulator の実行に Java 21 以上が必要
 npm test -- --run
 npm run build
 ```
