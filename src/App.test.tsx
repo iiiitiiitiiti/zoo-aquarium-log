@@ -402,7 +402,7 @@ describe("App",()=>{
    await user.click(screen.getByRole("button",{name:/施設を探す/}));
    await user.type(screen.getByRole("searchbox"),"上野");
    await user.click(screen.getByRole("button",{name:"地図で見る"}));
-   expect(screen.getByRole("heading",{name:"施設マップ"})).toBeInTheDocument();
+   expect(await screen.findByRole("heading",{name:"施設マップ"})).toBeInTheDocument();
    expect(screen.getByText("1施設を表示")).toBeInTheDocument();
    expect(screen.getByText("恩賜上野動物園")).toBeInTheDocument();
    await user.click(screen.getByRole("button",{name:"← 施設一覧"}));
@@ -415,7 +415,7 @@ describe("App",()=>{
    await user.click(screen.getByRole("button",{name:"詳細を見る"}));
    expect(screen.getByRole("button",{name:"← 地図に戻る"})).toBeInTheDocument();
    await user.click(screen.getByRole("button",{name:"← 地図に戻る"}));
-   expect(screen.getByRole("heading",{name:"施設マップ"})).toBeInTheDocument();
+   expect(await screen.findByRole("heading",{name:"施設マップ"})).toBeInTheDocument();
    expect(screen.getByTestId("map-focus")).toHaveTextContent(facilitiesJson[0].id);
    expect(screen.getByText(`${facilitiesJson.length}施設を表示`)).toBeInTheDocument();
   });
@@ -424,7 +424,7 @@ describe("App",()=>{
    render(<App visitStore={visitStore} />);
    await user.click(screen.getByRole("link",{name:/札幌市円山動物園/}));
    await user.click(screen.getByRole("button",{name:"地図で場所を見る"}));
-   expect(screen.getByRole("heading",{name:"施設マップ"})).toBeInTheDocument();
+   expect(await screen.findByRole("heading",{name:"施設マップ"})).toBeInTheDocument();
    expect(screen.getByTestId("map-focus")).toHaveTextContent("hokkaido_maruyama_zoo");
    expect(screen.getByText("1施設を表示")).toBeInTheDocument();
    expect(screen.getByText("札幌市円山動物園")).toBeInTheDocument();
@@ -468,10 +468,10 @@ describe("App",()=>{
    render(<App visitStore={visitStore} />);
    expect(screen.getByRole("heading",{name:"記録の統計"})).toBeInTheDocument();
   });
-  it("restores the map view with focus from the URL hash on reload",()=>{
+  it("restores the map view with focus from the URL hash on reload",async()=>{
    window.location.hash="#map/hokkaido_maruyama_zoo";
    render(<App visitStore={visitStore} />);
-   expect(screen.getByRole("heading",{name:"施設マップ"})).toBeInTheDocument();
+   expect(await screen.findByRole("heading",{name:"施設マップ"})).toBeInTheDocument();
    expect(screen.getByTestId("map-focus")).toHaveTextContent("hokkaido_maruyama_zoo");
   });
   it("restores a facility detail from the URL hash on reload",()=>{
