@@ -44,7 +44,7 @@ function initialState(initialFacility?: Facility): FacilityFormState {
       address: initialFacility.address ?? "",
       type: initialFacility.type,
       status: initialFacility.status,
-      url: initialFacility.url,
+      url: initialFacility.url ?? "",
       lat: initialFacility.lat,
       lng: initialFacility.lng,
       lastVerifiedAt: initialFacility.lastVerifiedAt,

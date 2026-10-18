@@ -57,6 +57,12 @@ test("rejects invalid coordinates, URLs, and verification dates", () => {
   assert.ok(errors.some((error) => error.includes("確認日")));
 });
 
+test("accepts a facility without an official URL", () => {
+  const { url: _url, ...withoutUrl } = validFacility;
+  assert.deepEqual(validateFacilities([withoutUrl]), []);
+  assert.ok(validateFacilities([{ ...validFacility, url: "" }]).some((error) => error.includes("公式URL")));
+});
+
 test("accepts an optional note and rejects malformed notes", () => {
   assert.deepEqual(validateFacilities([{ ...validFacility, note: "冬季（12〜3月）は定例休園。2026-07-15時点。" }]), []);
   for (const note of [123, "", "   ", "あ".repeat(501)]) {

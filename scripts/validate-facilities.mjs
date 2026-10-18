@@ -40,7 +40,7 @@ export function validateFacilities(facilities) {
     if (typeof facility?.lat === "number" && typeof facility?.lng === "number" && !isInsideAnyBox(facility.lat, facility.lng, japanBounds)) {
       errors.push(`${label}: 座標が日本の範囲外です`);
     }
-    if (!isHttpUrl(facility?.url)) errors.push(`${label}: 公式URLが不正です`);
+    if (facility?.url !== undefined && !isHttpUrl(facility.url)) errors.push(`${label}: 公式URLが不正です`);
     if (!Array.isArray(facility?.sourceUrls) || facility.sourceUrls.length === 0 || facility.sourceUrls.some((url) => !isHttpUrl(url))) errors.push(`${label}: 一次情報URLを1件以上指定してください`);
     if (!datePattern.test(facility?.lastVerifiedAt ?? "")) errors.push(`${label}: 確認日はYYYY-MM-DD形式にしてください`);
     if (facility?.note !== undefined && (typeof facility.note !== "string" || facility.note.trim() === "" || facility.note.length > 500)) {

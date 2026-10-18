@@ -25,14 +25,15 @@ function classifyResponse(response) {
 }
 
 /**
- * URL1件を1回だけ検査する。HEADが405/501ならGETにフォールバックする。
+ * URL1件を1回だけ検査する。HEADが404/405/410/501ならGETにフォールバックする。
+ * HEADにだけ404を返すサーバーがあるため（例: notoaqua.jp/news/important）。
  */
 async function checkUrlOnce(url) {
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), TIMEOUT_MS);
   try {
     let response = await fetch(url, { method: "HEAD", redirect: "follow", signal: controller.signal });
-    if (response.status === 405 || response.status === 501) {
+    if ([404, 405, 410, 501].includes(response.status)) {
       response = await fetch(url, { method: "GET", redirect: "follow", signal: controller.signal });
     }
     return classifyResponse(response);

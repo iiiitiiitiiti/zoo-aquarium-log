@@ -98,6 +98,17 @@ describe("VisitPanel", () => {
     render(<VisitPanel facility={facility} store={new FakeVisitStore()} visits={[]} onBack={() => undefined} />);
     expect(screen.getByText("東京都 台東区")).toBeInTheDocument();
   });
+  it("公式サイトのURLがない施設では公式サイトへのリンクを出さない", () => {
+    const { rerender } = render(<VisitPanel facility={facility} store={new FakeVisitStore()} visits={[]} onBack={() => undefined} />);
+    expect(screen.getByRole("link", { name: /公式サイト/ })).toHaveAttribute("href", facility.url);
+
+    const { url: _url, ...withoutUrl } = facility;
+    rerender(<VisitPanel facility={withoutUrl} store={new FakeVisitStore()} visits={[]} onBack={() => undefined} />);
+    expect(screen.queryByRole("link", { name: /公式サイト/ })).toBeNull();
+
+    rerender(<VisitPanel facility={{ ...facility, url: "" }} store={new FakeVisitStore()} visits={[]} onBack={() => undefined} />);
+    expect(screen.queryByRole("link", { name: /公式サイト/ })).toBeNull();
+  });
 
   it("施設の補足（note）があれば表示する", () => {
     const noted = { ...facility, note: "冬季（12〜3月）は定例休園。2026-07-15時点。" };

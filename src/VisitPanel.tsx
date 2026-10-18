@@ -397,7 +397,7 @@ export default function VisitPanel({
         {facility.note && <p className="facility-note">{facility.note}</p>}
         <div className="detail-hero-links" aria-label="施設情報">
           <button className="facility-map-link" type="button" onClick={onShowOnMap}>地図で場所を見る</button>
-          <a className="facility-site-link" href={facility.url} target="_blank" rel="noreferrer">公式サイトを見る ↗</a>
+          {facility.url && <a className="facility-site-link" href={facility.url} target="_blank" rel="noreferrer">公式サイトを見る ↗</a>}
         </div>
         {markStore && (
           <div className="mark-toggles" role="group" aria-label="施設のマーク">
