@@ -1,0 +1,29 @@
+# 前に Discord へ送った更新のお知らせを書き換える（docs/decisions/005）。手で動かす。
+# 送り先はシークレットにしか無いので、書き換えもここで行う。
+name: Edit Discord post
+on:
+  workflow_dispatch:
+    inputs:
+      message:
+        description: 投稿のリンクか番号。空なら最後に送った投稿
+        required: false
+        default: ""
+      content:
+        description: 新しい本文（全文）。空なら今の本文を見るだけ
+        required: false
+        default: ""
+permissions:
+  contents: read
+  actions: read
+jobs:
+  edit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Edit the post
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          MESSAGE: ${{ inputs.message }}
+          CONTENT: ${{ inputs.content }}
+          GH_TOKEN: ${{ github.token }}
+        run: bash .github/edit-discord-post.sh

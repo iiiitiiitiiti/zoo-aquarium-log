@@ -9,6 +9,7 @@
 #   WORKFLOW_FILE        この流れのファイル名（前の成功を探すのに使う）
 #   GH_TOKEN GITHUB_REPOSITORY GITHUB_SHA  GitHub Actions が渡す
 #   COMMITS              前の成功が見つからないときに使う、この push のコミット（JSON）
+#   POST_ID_FILE         送った投稿の番号を書き出すファイル。空なら書き出さない（edit-discord-post.sh が読む）
 # 確かめるとき:
 #   DRY_RUN=1  送らずに送る中身を出す
 #   PREV_SHA   前の公開のコミットを指定する（空にすると「見つからない」ときの動きになる）
@@ -54,5 +55,11 @@ if [ -n "${DRY_RUN:-}" ]; then
   exit 0
 fi
 
-printf '%s' "$PAYLOAD" | curl -fsS --retry 3 -H "Content-Type: application/json" -d @- "$URL" > /dev/null
-echo "Discord に知らせました"
+# wait=true で送った投稿が返る。その番号は、あとで投稿を書き換えるときに使う
+case "$URL" in *\?*) SEP='&' ;; *) SEP='?' ;; esac
+RESPONSE=$(printf '%s' "$PAYLOAD" | curl -fsS --retry 3 -H "Content-Type: application/json" -d @- "${URL}${SEP}wait=true")
+POST_ID=$(printf '%s' "$RESPONSE" | jq -r '.id // ""' 2>/dev/null || true)
+echo "Discord に知らせました（投稿の番号: ${POST_ID:-不明}）"
+if [ -n "${POST_ID_FILE:-}" ] && [ -n "$POST_ID" ]; then
+  printf '%s\n' "$POST_ID" > "$POST_ID_FILE"
+fi

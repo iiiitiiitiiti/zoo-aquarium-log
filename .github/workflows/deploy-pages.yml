@@ -63,4 +63,13 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           APP_NAME: 動物園・水族館ログ
           WORKFLOW_FILE: deploy-pages.yml
+          POST_ID_FILE: discord-post.txt
         run: bash .github/notify-discord.sh
+      # 送った投稿の番号を残す。edit-discord-post.yml が「最後の投稿」を書き換えるときに読む（docs/decisions/005）
+      - name: Keep the post id for later edits
+        uses: actions/upload-artifact@v4
+        with:
+          name: discord-post
+          path: discord-post.txt
+          retention-days: 90
+          if-no-files-found: ignore
