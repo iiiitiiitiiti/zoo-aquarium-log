@@ -1,5 +1,7 @@
 ## 005. 送った更新のお知らせは、手で動かす GitHub の流れで書き換える
 
+> 同じ日に、かけいぼの版へ置き換えた（006。本人の決定）。この記録の作りとコマンドはもう使えない。手で動かす GitHub の流れで書き換えるという方針は 006 でも同じである。
+
 - 日付: 2026-11-25
 - 対象: `.github/workflows/edit-discord-post.yml`・`.github/edit-discord-post.sh`・`.github/notify-discord.sh`・`deploy-pages.yml` の `notify`
 
