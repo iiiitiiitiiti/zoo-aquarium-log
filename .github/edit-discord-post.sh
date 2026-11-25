@@ -57,6 +57,7 @@ if [ -z "${CONTENT:-}" ]; then
   STATUS=$(call "$BODY" "$ENDPOINT")
   if [ "$STATUS" != 200 ]; then
     echo "投稿 $POST_ID を読めませんでした（$STATUS）。このウェブフックが送った投稿か確かめてください" >&2
+    echo "Discord の返事: $(jq -r '.message // ""' "$BODY" 2>/dev/null)" >&2
     exit 1
   fi
   echo "投稿 $POST_ID の今の本文:"
@@ -81,6 +82,7 @@ fi
 STATUS=$(printf '%s' "$PAYLOAD" | call "$BODY" -X PATCH -H "Content-Type: application/json" -d @- "$ENDPOINT")
 if [ "$STATUS" != 200 ]; then
   echo "投稿 $POST_ID を書き換えられませんでした（$STATUS）。このウェブフックが送った投稿か確かめてください" >&2
+  echo "Discord の返事: $(jq -r '.message // ""' "$BODY" 2>/dev/null)" >&2
   exit 1
 fi
 echo "投稿 $POST_ID を書き換えました。今の本文:"
